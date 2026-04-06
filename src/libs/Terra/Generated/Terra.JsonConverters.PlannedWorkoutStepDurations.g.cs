@@ -12,66 +12,91 @@ namespace Terra.JsonConverters
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
 
             var readerCopy = reader;
-            var discriminator = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.PlannedWorkoutStepDurationsDiscriminator>(ref readerCopy, options);
+            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.PlannedWorkoutStepDurationsDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.PlannedWorkoutStepDurationsDiscriminator> ??
+                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Terra.PlannedWorkoutStepDurationsDiscriminator)}");
+            var discriminator = global::System.Text.Json.JsonSerializer.Deserialize(ref readerCopy, discriminatorTypeInfo);
 
             global::Terra.PlannedWorkoutStepDuration? plannedWorkoutStepDuration = default;
             if (discriminator?.Type == global::Terra.PlannedWorkoutStepDurationsDiscriminatorType.PlannedWorkoutStepDuration)
             {
-                plannedWorkoutStepDuration = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.PlannedWorkoutStepDuration>(ref reader, options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.PlannedWorkoutStepDuration), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.PlannedWorkoutStepDuration> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Terra.PlannedWorkoutStepDuration)}");
+                plannedWorkoutStepDuration = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::Terra.TimePlannedWorkoutStepDuration? timePlannedWorkoutStepDuration = default;
             if (discriminator?.Type == global::Terra.PlannedWorkoutStepDurationsDiscriminatorType.TimePlannedWorkoutStepDuration)
             {
-                timePlannedWorkoutStepDuration = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.TimePlannedWorkoutStepDuration>(ref reader, options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.TimePlannedWorkoutStepDuration), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.TimePlannedWorkoutStepDuration> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Terra.TimePlannedWorkoutStepDuration)}");
+                timePlannedWorkoutStepDuration = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::Terra.PowerAbovePlannedWorkoutStepDuration? powerAbovePlannedWorkoutStepDuration = default;
             if (discriminator?.Type == global::Terra.PlannedWorkoutStepDurationsDiscriminatorType.PowerAbovePlannedWorkoutStepDuration)
             {
-                powerAbovePlannedWorkoutStepDuration = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.PowerAbovePlannedWorkoutStepDuration>(ref reader, options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.PowerAbovePlannedWorkoutStepDuration), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.PowerAbovePlannedWorkoutStepDuration> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Terra.PowerAbovePlannedWorkoutStepDuration)}");
+                powerAbovePlannedWorkoutStepDuration = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::Terra.PowerBelowPlannedWorkoutStepDuration? powerBelowPlannedWorkoutStepDuration = default;
             if (discriminator?.Type == global::Terra.PlannedWorkoutStepDurationsDiscriminatorType.PowerBelowPlannedWorkoutStepDuration)
             {
-                powerBelowPlannedWorkoutStepDuration = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.PowerBelowPlannedWorkoutStepDuration>(ref reader, options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.PowerBelowPlannedWorkoutStepDuration), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.PowerBelowPlannedWorkoutStepDuration> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Terra.PowerBelowPlannedWorkoutStepDuration)}");
+                powerBelowPlannedWorkoutStepDuration = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::Terra.FixedRestPlannedWorkoutStepDuration? fixedRestPlannedWorkoutStepDuration = default;
             if (discriminator?.Type == global::Terra.PlannedWorkoutStepDurationsDiscriminatorType.FixedRestPlannedWorkoutStepDuration)
             {
-                fixedRestPlannedWorkoutStepDuration = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.FixedRestPlannedWorkoutStepDuration>(ref reader, options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.FixedRestPlannedWorkoutStepDuration), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.FixedRestPlannedWorkoutStepDuration> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Terra.FixedRestPlannedWorkoutStepDuration)}");
+                fixedRestPlannedWorkoutStepDuration = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::Terra.CaloriesPlannedWorkoutStepDuration? caloriesPlannedWorkoutStepDuration = default;
             if (discriminator?.Type == global::Terra.PlannedWorkoutStepDurationsDiscriminatorType.CaloriesPlannedWorkoutStepDuration)
             {
-                caloriesPlannedWorkoutStepDuration = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.CaloriesPlannedWorkoutStepDuration>(ref reader, options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CaloriesPlannedWorkoutStepDuration), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CaloriesPlannedWorkoutStepDuration> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Terra.CaloriesPlannedWorkoutStepDuration)}");
+                caloriesPlannedWorkoutStepDuration = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::Terra.HRAbovePlannedWorkoutStepDuration? hRAbovePlannedWorkoutStepDuration = default;
             if (discriminator?.Type == global::Terra.PlannedWorkoutStepDurationsDiscriminatorType.HRAbovePlannedWorkoutStepDuration)
             {
-                hRAbovePlannedWorkoutStepDuration = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.HRAbovePlannedWorkoutStepDuration>(ref reader, options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.HRAbovePlannedWorkoutStepDuration), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.HRAbovePlannedWorkoutStepDuration> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Terra.HRAbovePlannedWorkoutStepDuration)}");
+                hRAbovePlannedWorkoutStepDuration = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::Terra.HRBelowPlannedWorkoutStepDuration? hRBelowPlannedWorkoutStepDuration = default;
             if (discriminator?.Type == global::Terra.PlannedWorkoutStepDurationsDiscriminatorType.HRBelowPlannedWorkoutStepDuration)
             {
-                hRBelowPlannedWorkoutStepDuration = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.HRBelowPlannedWorkoutStepDuration>(ref reader, options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.HRBelowPlannedWorkoutStepDuration), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.HRBelowPlannedWorkoutStepDuration> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Terra.HRBelowPlannedWorkoutStepDuration)}");
+                hRBelowPlannedWorkoutStepDuration = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::Terra.RepsPlannedWorkoutStepDuration? repsPlannedWorkoutStepDuration = default;
             if (discriminator?.Type == global::Terra.PlannedWorkoutStepDurationsDiscriminatorType.RepsPlannedWorkoutStepDuration)
             {
-                repsPlannedWorkoutStepDuration = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.RepsPlannedWorkoutStepDuration>(ref reader, options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.RepsPlannedWorkoutStepDuration), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.RepsPlannedWorkoutStepDuration> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Terra.RepsPlannedWorkoutStepDuration)}");
+                repsPlannedWorkoutStepDuration = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::Terra.DistancePlannedWorkoutStepDuration? distancePlannedWorkoutStepDuration = default;
             if (discriminator?.Type == global::Terra.PlannedWorkoutStepDurationsDiscriminatorType.DistancePlannedWorkoutStepDuration)
             {
-                distancePlannedWorkoutStepDuration = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.DistancePlannedWorkoutStepDuration>(ref reader, options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.DistancePlannedWorkoutStepDuration), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.DistancePlannedWorkoutStepDuration> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Terra.DistancePlannedWorkoutStepDuration)}");
+                distancePlannedWorkoutStepDuration = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::Terra.StepsPlannedWorkoutStepDuration? stepsPlannedWorkoutStepDuration = default;
             if (discriminator?.Type == global::Terra.PlannedWorkoutStepDurationsDiscriminatorType.StepsPlannedWorkoutStepDuration)
             {
-                stepsPlannedWorkoutStepDuration = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.StepsPlannedWorkoutStepDuration>(ref reader, options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StepsPlannedWorkoutStepDuration), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StepsPlannedWorkoutStepDuration> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Terra.StepsPlannedWorkoutStepDuration)}");
+                stepsPlannedWorkoutStepDuration = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
 
             var __value = new global::Terra.PlannedWorkoutStepDurations(
@@ -108,51 +133,74 @@ namespace Terra.JsonConverters
             global::Terra.PlannedWorkoutStepDurations value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             if (value.IsPlannedWorkoutStepDuration)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PlannedWorkoutStepDuration, typeof(global::Terra.PlannedWorkoutStepDuration), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.PlannedWorkoutStepDuration), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.PlannedWorkoutStepDuration?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.PlannedWorkoutStepDuration).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PlannedWorkoutStepDuration!, typeInfo);
             }
             else if (value.IsTimePlannedWorkoutStepDuration)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TimePlannedWorkoutStepDuration, typeof(global::Terra.TimePlannedWorkoutStepDuration), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.TimePlannedWorkoutStepDuration), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.TimePlannedWorkoutStepDuration?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.TimePlannedWorkoutStepDuration).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TimePlannedWorkoutStepDuration!, typeInfo);
             }
             else if (value.IsPowerAbovePlannedWorkoutStepDuration)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PowerAbovePlannedWorkoutStepDuration, typeof(global::Terra.PowerAbovePlannedWorkoutStepDuration), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.PowerAbovePlannedWorkoutStepDuration), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.PowerAbovePlannedWorkoutStepDuration?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.PowerAbovePlannedWorkoutStepDuration).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PowerAbovePlannedWorkoutStepDuration!, typeInfo);
             }
             else if (value.IsPowerBelowPlannedWorkoutStepDuration)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PowerBelowPlannedWorkoutStepDuration, typeof(global::Terra.PowerBelowPlannedWorkoutStepDuration), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.PowerBelowPlannedWorkoutStepDuration), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.PowerBelowPlannedWorkoutStepDuration?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.PowerBelowPlannedWorkoutStepDuration).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PowerBelowPlannedWorkoutStepDuration!, typeInfo);
             }
             else if (value.IsFixedRestPlannedWorkoutStepDuration)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FixedRestPlannedWorkoutStepDuration, typeof(global::Terra.FixedRestPlannedWorkoutStepDuration), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.FixedRestPlannedWorkoutStepDuration), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.FixedRestPlannedWorkoutStepDuration?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.FixedRestPlannedWorkoutStepDuration).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FixedRestPlannedWorkoutStepDuration!, typeInfo);
             }
             else if (value.IsCaloriesPlannedWorkoutStepDuration)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CaloriesPlannedWorkoutStepDuration, typeof(global::Terra.CaloriesPlannedWorkoutStepDuration), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CaloriesPlannedWorkoutStepDuration), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CaloriesPlannedWorkoutStepDuration?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CaloriesPlannedWorkoutStepDuration).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CaloriesPlannedWorkoutStepDuration!, typeInfo);
             }
             else if (value.IsHRAbovePlannedWorkoutStepDuration)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.HRAbovePlannedWorkoutStepDuration, typeof(global::Terra.HRAbovePlannedWorkoutStepDuration), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.HRAbovePlannedWorkoutStepDuration), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.HRAbovePlannedWorkoutStepDuration?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.HRAbovePlannedWorkoutStepDuration).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.HRAbovePlannedWorkoutStepDuration!, typeInfo);
             }
             else if (value.IsHRBelowPlannedWorkoutStepDuration)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.HRBelowPlannedWorkoutStepDuration, typeof(global::Terra.HRBelowPlannedWorkoutStepDuration), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.HRBelowPlannedWorkoutStepDuration), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.HRBelowPlannedWorkoutStepDuration?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.HRBelowPlannedWorkoutStepDuration).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.HRBelowPlannedWorkoutStepDuration!, typeInfo);
             }
             else if (value.IsRepsPlannedWorkoutStepDuration)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.RepsPlannedWorkoutStepDuration, typeof(global::Terra.RepsPlannedWorkoutStepDuration), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.RepsPlannedWorkoutStepDuration), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.RepsPlannedWorkoutStepDuration?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.RepsPlannedWorkoutStepDuration).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.RepsPlannedWorkoutStepDuration!, typeInfo);
             }
             else if (value.IsDistancePlannedWorkoutStepDuration)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.DistancePlannedWorkoutStepDuration, typeof(global::Terra.DistancePlannedWorkoutStepDuration), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.DistancePlannedWorkoutStepDuration), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.DistancePlannedWorkoutStepDuration?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.DistancePlannedWorkoutStepDuration).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.DistancePlannedWorkoutStepDuration!, typeInfo);
             }
             else if (value.IsStepsPlannedWorkoutStepDuration)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StepsPlannedWorkoutStepDuration, typeof(global::Terra.StepsPlannedWorkoutStepDuration), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StepsPlannedWorkoutStepDuration), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StepsPlannedWorkoutStepDuration?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StepsPlannedWorkoutStepDuration).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StepsPlannedWorkoutStepDuration!, typeInfo);
             }
         }
     }

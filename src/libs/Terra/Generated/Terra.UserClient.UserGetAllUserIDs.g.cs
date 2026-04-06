@@ -106,13 +106,13 @@ namespace Terra
                     if (ReadResponseAsString)
                     {
                         __content_400 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_400 = global::Terra.UserGetAllUserIDsResponse2.FromJson(__content_400, JsonSerializerOptions);
+                        __value_400 = global::Terra.UserGetAllUserIDsResponse2.FromJson(__content_400, JsonSerializerContext);
                     }
                     else
                     {
                         __content_400 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_400 = global::Terra.UserGetAllUserIDsResponse2.FromJson(__content_400, JsonSerializerOptions);
+                        __value_400 = global::Terra.UserGetAllUserIDsResponse2.FromJson(__content_400, JsonSerializerContext);
                     }
                 }
                 catch (global::System.Exception __ex)
@@ -156,7 +156,7 @@ namespace Terra
                     __response.EnsureSuccessStatusCode();
 
                     return
-                        global::Terra.OneOf<global::Terra.UserGetAllUserIDsResponseVariant1, global::Terra.UserGetAllUserIDsResponseVariant2>.FromJson(__content, JsonSerializerOptions) ??
+                        global::Terra.OneOf<global::Terra.UserGetAllUserIDsResponseVariant1, global::Terra.UserGetAllUserIDsResponseVariant2>.FromJson(__content, JsonSerializerContext) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
                 }
                 catch (global::System.Exception __ex)
@@ -186,7 +186,7 @@ namespace Terra
                     ).ConfigureAwait(false);
 
                     return
-                        await global::Terra.OneOf<global::Terra.UserGetAllUserIDsResponseVariant1, global::Terra.UserGetAllUserIDsResponseVariant2>.FromJsonStreamAsync(__content, JsonSerializerOptions).ConfigureAwait(false) ??
+                        await global::Terra.OneOf<global::Terra.UserGetAllUserIDsResponseVariant1, global::Terra.UserGetAllUserIDsResponseVariant2>.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
                 }
                 catch (global::System.Exception __ex)

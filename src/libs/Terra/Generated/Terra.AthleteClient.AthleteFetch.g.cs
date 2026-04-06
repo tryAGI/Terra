@@ -106,13 +106,13 @@ namespace Terra
                     if (ReadResponseAsString)
                     {
                         __content_400 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_400 = global::Terra.AthleteFetchResponse2.FromJson(__content_400, JsonSerializerOptions);
+                        __value_400 = global::Terra.AthleteFetchResponse2.FromJson(__content_400, JsonSerializerContext);
                     }
                     else
                     {
                         __content_400 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_400 = global::Terra.AthleteFetchResponse2.FromJson(__content_400, JsonSerializerOptions);
+                        __value_400 = global::Terra.AthleteFetchResponse2.FromJson(__content_400, JsonSerializerContext);
                     }
                 }
                 catch (global::System.Exception __ex)
@@ -144,13 +144,13 @@ namespace Terra
                     if (ReadResponseAsString)
                     {
                         __content_401 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_401 = global::Terra.AthleteFetchResponse3.FromJson(__content_401, JsonSerializerOptions);
+                        __value_401 = global::Terra.AthleteFetchResponse3.FromJson(__content_401, JsonSerializerContext);
                     }
                     else
                     {
                         __content_401 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_401 = global::Terra.AthleteFetchResponse3.FromJson(__content_401, JsonSerializerOptions);
+                        __value_401 = global::Terra.AthleteFetchResponse3.FromJson(__content_401, JsonSerializerContext);
                     }
                 }
                 catch (global::System.Exception __ex)
@@ -182,13 +182,13 @@ namespace Terra
                     if (ReadResponseAsString)
                     {
                         __content_404 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_404 = global::Terra.AthleteFetchResponse4.FromJson(__content_404, JsonSerializerOptions);
+                        __value_404 = global::Terra.AthleteFetchResponse4.FromJson(__content_404, JsonSerializerContext);
                     }
                     else
                     {
                         __content_404 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_404 = global::Terra.AthleteFetchResponse4.FromJson(__content_404, JsonSerializerOptions);
+                        __value_404 = global::Terra.AthleteFetchResponse4.FromJson(__content_404, JsonSerializerContext);
                     }
                 }
                 catch (global::System.Exception __ex)
@@ -232,7 +232,7 @@ namespace Terra
                     __response.EnsureSuccessStatusCode();
 
                     return
-                        global::Terra.OneOf<global::Terra.AthleteCollection, global::Terra.NoDataReturned, global::Terra.DataSentToWebhook>.FromJson(__content, JsonSerializerOptions) ??
+                        global::Terra.OneOf<global::Terra.AthleteCollection, global::Terra.NoDataReturned, global::Terra.DataSentToWebhook>.FromJson(__content, JsonSerializerContext) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
                 }
                 catch (global::System.Exception __ex)
@@ -262,7 +262,7 @@ namespace Terra
                     ).ConfigureAwait(false);
 
                     return
-                        await global::Terra.OneOf<global::Terra.AthleteCollection, global::Terra.NoDataReturned, global::Terra.DataSentToWebhook>.FromJsonStreamAsync(__content, JsonSerializerOptions).ConfigureAwait(false) ??
+                        await global::Terra.OneOf<global::Terra.AthleteCollection, global::Terra.NoDataReturned, global::Terra.DataSentToWebhook>.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
                 }
                 catch (global::System.Exception __ex)
