@@ -12,7 +12,8 @@ namespace Terra.JsonConverters
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             using var __jsonDocument = global::System.Text.Json.JsonDocument.ParseValue(ref reader);
             var __rawJson = __jsonDocument.RootElement.GetRawText();
@@ -194,7 +195,9 @@ namespace Terra.JsonConverters
                 {
                     try
                     {
-                        healthcheck = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.HealthcheckEvent>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.HealthcheckEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.HealthcheckEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.HealthcheckEvent).Name}");
+                        healthcheck = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -207,7 +210,9 @@ namespace Terra.JsonConverters
                 {
                     try
                     {
-                        authSuccess = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.AuthSuccessEvent>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.AuthSuccessEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.AuthSuccessEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.AuthSuccessEvent).Name}");
+                        authSuccess = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -220,7 +225,9 @@ namespace Terra.JsonConverters
                 {
                     try
                     {
-                        authError = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.AuthErrorEvent>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.AuthErrorEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.AuthErrorEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.AuthErrorEvent).Name}");
+                        authError = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -233,7 +240,9 @@ namespace Terra.JsonConverters
                 {
                     try
                     {
-                        deauth = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.DeauthEvent>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.DeauthEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.DeauthEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.DeauthEvent).Name}");
+                        deauth = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -246,7 +255,9 @@ namespace Terra.JsonConverters
                 {
                     try
                     {
-                        userReauth = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.UserReauthEvent>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.UserReauthEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.UserReauthEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.UserReauthEvent).Name}");
+                        userReauth = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -259,7 +270,9 @@ namespace Terra.JsonConverters
                 {
                     try
                     {
-                        accessRevoked = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.AccessRevokedEvent>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.AccessRevokedEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.AccessRevokedEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.AccessRevokedEvent).Name}");
+                        accessRevoked = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -272,7 +285,9 @@ namespace Terra.JsonConverters
                 {
                     try
                     {
-                        connectionError = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.ConnectionErrorEvent>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.ConnectionErrorEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.ConnectionErrorEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.ConnectionErrorEvent).Name}");
+                        connectionError = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -285,7 +300,9 @@ namespace Terra.JsonConverters
                 {
                     try
                     {
-                        googleNoDatasource = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.GoogleNoDatasourceEvent>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.GoogleNoDatasourceEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.GoogleNoDatasourceEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.GoogleNoDatasourceEvent).Name}");
+                        googleNoDatasource = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -298,7 +315,9 @@ namespace Terra.JsonConverters
                 {
                     try
                     {
-                        permissionChange = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.PermissionChangeEvent>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.PermissionChangeEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.PermissionChangeEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.PermissionChangeEvent).Name}");
+                        permissionChange = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -311,7 +330,9 @@ namespace Terra.JsonConverters
                 {
                     try
                     {
-                        processing = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.ProcessingEvent>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.ProcessingEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.ProcessingEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.ProcessingEvent).Name}");
+                        processing = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -324,7 +345,9 @@ namespace Terra.JsonConverters
                 {
                     try
                     {
-                        largeRequestProcessing = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.LargeRequestProcessingEvent>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.LargeRequestProcessingEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.LargeRequestProcessingEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.LargeRequestProcessingEvent).Name}");
+                        largeRequestProcessing = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -337,7 +360,9 @@ namespace Terra.JsonConverters
                 {
                     try
                     {
-                        largeRequestSending = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.LargeRequestSendingEvent>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.LargeRequestSendingEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.LargeRequestSendingEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.LargeRequestSendingEvent).Name}");
+                        largeRequestSending = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -350,7 +375,9 @@ namespace Terra.JsonConverters
                 {
                     try
                     {
-                        rateLimitHit = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.RateLimitHitEvent>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.RateLimitHitEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.RateLimitHitEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.RateLimitHitEvent).Name}");
+                        rateLimitHit = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -363,7 +390,9 @@ namespace Terra.JsonConverters
                 {
                     try
                     {
-                        activity = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.ActivityEvent>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.ActivityEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.ActivityEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.ActivityEvent).Name}");
+                        activity = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -376,7 +405,9 @@ namespace Terra.JsonConverters
                 {
                     try
                     {
-                        athlete = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.AthleteEvent>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.AthleteEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.AthleteEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.AthleteEvent).Name}");
+                        athlete = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -389,7 +420,9 @@ namespace Terra.JsonConverters
                 {
                     try
                     {
-                        body = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.BodyEvent>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.BodyEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.BodyEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.BodyEvent).Name}");
+                        body = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -402,7 +435,9 @@ namespace Terra.JsonConverters
                 {
                     try
                     {
-                        daily = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.DailyEvent>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.DailyEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.DailyEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.DailyEvent).Name}");
+                        daily = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -415,7 +450,9 @@ namespace Terra.JsonConverters
                 {
                     try
                     {
-                        menstruation = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.MenstruationEvent>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.MenstruationEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.MenstruationEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.MenstruationEvent).Name}");
+                        menstruation = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -428,7 +465,9 @@ namespace Terra.JsonConverters
                 {
                     try
                     {
-                        nutrition = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.NutritionEvent>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.NutritionEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.NutritionEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.NutritionEvent).Name}");
+                        nutrition = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -441,7 +480,9 @@ namespace Terra.JsonConverters
                 {
                     try
                     {
-                        sleep = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.SleepEvent>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.SleepEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.SleepEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.SleepEvent).Name}");
+                        sleep = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -454,7 +495,9 @@ namespace Terra.JsonConverters
                 {
                     try
                     {
-                        s3Payload = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.S3PayloadEvent>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.S3PayloadEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.S3PayloadEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.S3PayloadEvent).Name}");
+                        s3Payload = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -469,7 +512,9 @@ namespace Terra.JsonConverters
             {
                 try
                 {
-                    healthcheck = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.HealthcheckEvent>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.HealthcheckEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.HealthcheckEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.HealthcheckEvent).Name}");
+                    healthcheck = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -480,7 +525,9 @@ namespace Terra.JsonConverters
 
                 try
                 {
-                    authSuccess = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.AuthSuccessEvent>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.AuthSuccessEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.AuthSuccessEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.AuthSuccessEvent).Name}");
+                    authSuccess = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -491,7 +538,9 @@ namespace Terra.JsonConverters
 
                 try
                 {
-                    authError = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.AuthErrorEvent>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.AuthErrorEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.AuthErrorEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.AuthErrorEvent).Name}");
+                    authError = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -502,7 +551,9 @@ namespace Terra.JsonConverters
 
                 try
                 {
-                    deauth = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.DeauthEvent>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.DeauthEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.DeauthEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.DeauthEvent).Name}");
+                    deauth = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -513,7 +564,9 @@ namespace Terra.JsonConverters
 
                 try
                 {
-                    userReauth = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.UserReauthEvent>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.UserReauthEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.UserReauthEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.UserReauthEvent).Name}");
+                    userReauth = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -524,7 +577,9 @@ namespace Terra.JsonConverters
 
                 try
                 {
-                    accessRevoked = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.AccessRevokedEvent>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.AccessRevokedEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.AccessRevokedEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.AccessRevokedEvent).Name}");
+                    accessRevoked = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -535,7 +590,9 @@ namespace Terra.JsonConverters
 
                 try
                 {
-                    connectionError = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.ConnectionErrorEvent>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.ConnectionErrorEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.ConnectionErrorEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.ConnectionErrorEvent).Name}");
+                    connectionError = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -546,7 +603,9 @@ namespace Terra.JsonConverters
 
                 try
                 {
-                    googleNoDatasource = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.GoogleNoDatasourceEvent>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.GoogleNoDatasourceEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.GoogleNoDatasourceEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.GoogleNoDatasourceEvent).Name}");
+                    googleNoDatasource = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -557,7 +616,9 @@ namespace Terra.JsonConverters
 
                 try
                 {
-                    permissionChange = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.PermissionChangeEvent>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.PermissionChangeEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.PermissionChangeEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.PermissionChangeEvent).Name}");
+                    permissionChange = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -568,7 +629,9 @@ namespace Terra.JsonConverters
 
                 try
                 {
-                    processing = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.ProcessingEvent>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.ProcessingEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.ProcessingEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.ProcessingEvent).Name}");
+                    processing = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -579,7 +642,9 @@ namespace Terra.JsonConverters
 
                 try
                 {
-                    largeRequestProcessing = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.LargeRequestProcessingEvent>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.LargeRequestProcessingEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.LargeRequestProcessingEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.LargeRequestProcessingEvent).Name}");
+                    largeRequestProcessing = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -590,7 +655,9 @@ namespace Terra.JsonConverters
 
                 try
                 {
-                    largeRequestSending = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.LargeRequestSendingEvent>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.LargeRequestSendingEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.LargeRequestSendingEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.LargeRequestSendingEvent).Name}");
+                    largeRequestSending = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -601,7 +668,9 @@ namespace Terra.JsonConverters
 
                 try
                 {
-                    rateLimitHit = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.RateLimitHitEvent>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.RateLimitHitEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.RateLimitHitEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.RateLimitHitEvent).Name}");
+                    rateLimitHit = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -612,7 +681,9 @@ namespace Terra.JsonConverters
 
                 try
                 {
-                    activity = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.ActivityEvent>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.ActivityEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.ActivityEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.ActivityEvent).Name}");
+                    activity = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -623,7 +694,9 @@ namespace Terra.JsonConverters
 
                 try
                 {
-                    athlete = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.AthleteEvent>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.AthleteEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.AthleteEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.AthleteEvent).Name}");
+                    athlete = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -634,7 +707,9 @@ namespace Terra.JsonConverters
 
                 try
                 {
-                    body = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.BodyEvent>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.BodyEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.BodyEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.BodyEvent).Name}");
+                    body = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -645,7 +720,9 @@ namespace Terra.JsonConverters
 
                 try
                 {
-                    daily = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.DailyEvent>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.DailyEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.DailyEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.DailyEvent).Name}");
+                    daily = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -656,7 +733,9 @@ namespace Terra.JsonConverters
 
                 try
                 {
-                    menstruation = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.MenstruationEvent>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.MenstruationEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.MenstruationEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.MenstruationEvent).Name}");
+                    menstruation = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -667,7 +746,9 @@ namespace Terra.JsonConverters
 
                 try
                 {
-                    nutrition = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.NutritionEvent>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.NutritionEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.NutritionEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.NutritionEvent).Name}");
+                    nutrition = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -678,7 +759,9 @@ namespace Terra.JsonConverters
 
                 try
                 {
-                    sleep = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.SleepEvent>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.SleepEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.SleepEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.SleepEvent).Name}");
+                    sleep = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -689,7 +772,9 @@ namespace Terra.JsonConverters
 
                 try
                 {
-                    s3Payload = global::System.Text.Json.JsonSerializer.Deserialize<global::Terra.S3PayloadEvent>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.S3PayloadEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.S3PayloadEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.S3PayloadEvent).Name}");
+                    s3Payload = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -752,91 +837,134 @@ namespace Terra.JsonConverters
             global::Terra.WebhookEventType value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             if (value.IsHealthcheck)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Healthcheck, typeof(global::Terra.HealthcheckEvent), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.HealthcheckEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.HealthcheckEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.HealthcheckEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Healthcheck!, typeInfo);
             }
             else if (value.IsAuthSuccess)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AuthSuccess, typeof(global::Terra.AuthSuccessEvent), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.AuthSuccessEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.AuthSuccessEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.AuthSuccessEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AuthSuccess!, typeInfo);
             }
             else if (value.IsAuthError)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AuthError, typeof(global::Terra.AuthErrorEvent), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.AuthErrorEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.AuthErrorEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.AuthErrorEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AuthError!, typeInfo);
             }
             else if (value.IsDeauth)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Deauth, typeof(global::Terra.DeauthEvent), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.DeauthEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.DeauthEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.DeauthEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Deauth!, typeInfo);
             }
             else if (value.IsUserReauth)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UserReauth, typeof(global::Terra.UserReauthEvent), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.UserReauthEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.UserReauthEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.UserReauthEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UserReauth!, typeInfo);
             }
             else if (value.IsAccessRevoked)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AccessRevoked, typeof(global::Terra.AccessRevokedEvent), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.AccessRevokedEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.AccessRevokedEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.AccessRevokedEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AccessRevoked!, typeInfo);
             }
             else if (value.IsConnectionError)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ConnectionError, typeof(global::Terra.ConnectionErrorEvent), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.ConnectionErrorEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.ConnectionErrorEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.ConnectionErrorEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ConnectionError!, typeInfo);
             }
             else if (value.IsGoogleNoDatasource)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.GoogleNoDatasource, typeof(global::Terra.GoogleNoDatasourceEvent), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.GoogleNoDatasourceEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.GoogleNoDatasourceEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.GoogleNoDatasourceEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.GoogleNoDatasource!, typeInfo);
             }
             else if (value.IsPermissionChange)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PermissionChange, typeof(global::Terra.PermissionChangeEvent), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.PermissionChangeEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.PermissionChangeEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.PermissionChangeEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PermissionChange!, typeInfo);
             }
             else if (value.IsProcessing)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Processing, typeof(global::Terra.ProcessingEvent), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.ProcessingEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.ProcessingEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.ProcessingEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Processing!, typeInfo);
             }
             else if (value.IsLargeRequestProcessing)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.LargeRequestProcessing, typeof(global::Terra.LargeRequestProcessingEvent), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.LargeRequestProcessingEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.LargeRequestProcessingEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.LargeRequestProcessingEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.LargeRequestProcessing!, typeInfo);
             }
             else if (value.IsLargeRequestSending)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.LargeRequestSending, typeof(global::Terra.LargeRequestSendingEvent), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.LargeRequestSendingEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.LargeRequestSendingEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.LargeRequestSendingEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.LargeRequestSending!, typeInfo);
             }
             else if (value.IsRateLimitHit)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.RateLimitHit, typeof(global::Terra.RateLimitHitEvent), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.RateLimitHitEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.RateLimitHitEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.RateLimitHitEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.RateLimitHit!, typeInfo);
             }
             else if (value.IsActivity)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Activity, typeof(global::Terra.ActivityEvent), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.ActivityEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.ActivityEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.ActivityEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Activity!, typeInfo);
             }
             else if (value.IsAthlete)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Athlete, typeof(global::Terra.AthleteEvent), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.AthleteEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.AthleteEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.AthleteEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Athlete!, typeInfo);
             }
             else if (value.IsBody)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Body, typeof(global::Terra.BodyEvent), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.BodyEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.BodyEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.BodyEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Body!, typeInfo);
             }
             else if (value.IsDaily)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Daily, typeof(global::Terra.DailyEvent), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.DailyEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.DailyEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.DailyEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Daily!, typeInfo);
             }
             else if (value.IsMenstruation)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Menstruation, typeof(global::Terra.MenstruationEvent), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.MenstruationEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.MenstruationEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.MenstruationEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Menstruation!, typeInfo);
             }
             else if (value.IsNutrition)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Nutrition, typeof(global::Terra.NutritionEvent), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.NutritionEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.NutritionEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.NutritionEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Nutrition!, typeInfo);
             }
             else if (value.IsSleep)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Sleep, typeof(global::Terra.SleepEvent), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.SleepEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.SleepEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.SleepEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Sleep!, typeInfo);
             }
             else if (value.IsS3Payload)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.S3Payload, typeof(global::Terra.S3PayloadEvent), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.S3PayloadEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.S3PayloadEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.S3PayloadEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.S3Payload!, typeInfo);
             }
         }
     }
