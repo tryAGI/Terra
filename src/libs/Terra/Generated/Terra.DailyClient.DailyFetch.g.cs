@@ -5,6 +5,25 @@ namespace Terra
 {
     public partial class DailyClient
     {
+
+
+        private static readonly global::Terra.EndPointSecurityRequirement s_DailyFetchSecurityRequirement0 =
+            new global::Terra.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Terra.EndPointAuthorizationRequirement[]
+                {                    new global::Terra.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Terra.EndPointSecurityRequirement[] s_DailyFetchSecurityRequirements =
+            new global::Terra.EndPointSecurityRequirement[]
+            {                s_DailyFetchSecurityRequirement0,
+            };
         partial void PrepareDailyFetchArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string userId,
@@ -58,6 +77,12 @@ namespace Terra
                 toWebhook: ref toWebhook,
                 withSamples: ref withSamples);
 
+
+            var __authorizations = global::Terra.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_DailyFetchSecurityRequirements,
+                operationName: "DailyFetchAsync");
+
             var __pathBuilder = new global::Terra.PathBuilder(
                 path: "/daily",
                 baseUri: HttpClient.BaseAddress); 
@@ -67,7 +92,7 @@ namespace Terra
                 .AddOptionalParameter("end_date", endDate?.ToString())
                 .AddOptionalParameter("to_webhook", toWebhook?.ToString().ToLowerInvariant())
                 .AddOptionalParameter("with_samples", withSamples?.ToString().ToLowerInvariant()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -77,7 +102,7 @@ namespace Terra
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

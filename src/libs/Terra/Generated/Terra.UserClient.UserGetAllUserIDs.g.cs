@@ -5,6 +5,25 @@ namespace Terra
 {
     public partial class UserClient
     {
+
+
+        private static readonly global::Terra.EndPointSecurityRequirement s_UserGetAllUserIDsSecurityRequirement0 =
+            new global::Terra.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Terra.EndPointAuthorizationRequirement[]
+                {                    new global::Terra.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Terra.EndPointSecurityRequirement[] s_UserGetAllUserIDsSecurityRequirements =
+            new global::Terra.EndPointSecurityRequirement[]
+            {                s_UserGetAllUserIDsSecurityRequirement0,
+            };
         partial void PrepareUserGetAllUserIDsArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref int? page,
@@ -43,13 +62,19 @@ namespace Terra
                 page: ref page,
                 perPage: ref perPage);
 
+
+            var __authorizations = global::Terra.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_UserGetAllUserIDsSecurityRequirements,
+                operationName: "UserGetAllUserIDsAsync");
+
             var __pathBuilder = new global::Terra.PathBuilder(
                 path: "/subscriptions",
                 baseUri: HttpClient.BaseAddress); 
             __pathBuilder
                 .AddOptionalParameter("page", page?.ToString())
                 .AddOptionalParameter("per_page", perPage?.ToString()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -59,7 +84,7 @@ namespace Terra
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

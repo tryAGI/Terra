@@ -5,6 +5,25 @@ namespace Terra
 {
     public partial class PlannedWorkoutClient
     {
+
+
+        private static readonly global::Terra.EndPointSecurityRequirement s_PlannedWorkoutFetchSecurityRequirement0 =
+            new global::Terra.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Terra.EndPointAuthorizationRequirement[]
+                {                    new global::Terra.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Terra.EndPointSecurityRequirement[] s_PlannedWorkoutFetchSecurityRequirements =
+            new global::Terra.EndPointSecurityRequirement[]
+            {                s_PlannedWorkoutFetchSecurityRequirement0,
+            };
         partial void PreparePlannedWorkoutFetchArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string userId,
@@ -53,6 +72,12 @@ namespace Terra
                 endDate: ref endDate,
                 toWebhook: ref toWebhook);
 
+
+            var __authorizations = global::Terra.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_PlannedWorkoutFetchSecurityRequirements,
+                operationName: "PlannedWorkoutFetchAsync");
+
             var __pathBuilder = new global::Terra.PathBuilder(
                 path: "/plannedWorkout",
                 baseUri: HttpClient.BaseAddress); 
@@ -61,7 +86,7 @@ namespace Terra
                 .AddRequiredParameter("start_date", startDate.ToString() ?? string.Empty)
                 .AddOptionalParameter("end_date", endDate?.ToString())
                 .AddOptionalParameter("to_webhook", toWebhook?.ToString().ToLowerInvariant()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -71,7 +96,7 @@ namespace Terra
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")
