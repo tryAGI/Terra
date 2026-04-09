@@ -5,6 +5,25 @@ namespace Terra
 {
     public partial class AuthenticationClient
     {
+
+
+        private static readonly global::Terra.EndPointSecurityRequirement s_AuthenticationGenerateAuthTokenSecurityRequirement0 =
+            new global::Terra.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Terra.EndPointAuthorizationRequirement[]
+                {                    new global::Terra.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Terra.EndPointSecurityRequirement[] s_AuthenticationGenerateAuthTokenSecurityRequirements =
+            new global::Terra.EndPointSecurityRequirement[]
+            {                s_AuthenticationGenerateAuthTokenSecurityRequirement0,
+            };
         partial void PrepareAuthenticationGenerateAuthTokenArguments(
             global::System.Net.Http.HttpClient httpClient);
         partial void PrepareAuthenticationGenerateAuthTokenRequest(
@@ -33,9 +52,15 @@ namespace Terra
             PrepareAuthenticationGenerateAuthTokenArguments(
                 httpClient: HttpClient);
 
+
+            var __authorizations = global::Terra.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_AuthenticationGenerateAuthTokenSecurityRequirements,
+                operationName: "AuthenticationGenerateAuthTokenAsync");
+
             var __pathBuilder = new global::Terra.PathBuilder(
                 path: "/auth/generateAuthToken",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
@@ -45,7 +70,7 @@ namespace Terra
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

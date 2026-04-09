@@ -5,6 +5,25 @@ namespace Terra
 {
     public partial class PlannedWorkoutClient
     {
+
+
+        private static readonly global::Terra.EndPointSecurityRequirement s_PlannedWorkoutWriteSecurityRequirement0 =
+            new global::Terra.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Terra.EndPointAuthorizationRequirement[]
+                {                    new global::Terra.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Terra.EndPointSecurityRequirement[] s_PlannedWorkoutWriteSecurityRequirements =
+            new global::Terra.EndPointSecurityRequirement[]
+            {                s_PlannedWorkoutWriteSecurityRequirement0,
+            };
         partial void PreparePlannedWorkoutWriteArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string userId,
@@ -46,12 +65,18 @@ namespace Terra
                 userId: ref userId,
                 request: request);
 
+
+            var __authorizations = global::Terra.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_PlannedWorkoutWriteSecurityRequirements,
+                operationName: "PlannedWorkoutWriteAsync");
+
             var __pathBuilder = new global::Terra.PathBuilder(
                 path: "/plannedWorkout",
                 baseUri: HttpClient.BaseAddress); 
             __pathBuilder
                 .AddRequiredParameter("user_id", userId) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
@@ -61,7 +86,7 @@ namespace Terra
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

@@ -5,6 +5,25 @@ namespace Terra
 {
     public partial class IntegrationsClient
     {
+
+
+        private static readonly global::Terra.EndPointSecurityRequirement s_IntegrationsDetailedFetchSecurityRequirement0 =
+            new global::Terra.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Terra.EndPointAuthorizationRequirement[]
+                {                    new global::Terra.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Terra.EndPointSecurityRequirement[] s_IntegrationsDetailedFetchSecurityRequirements =
+            new global::Terra.EndPointSecurityRequirement[]
+            {                s_IntegrationsDetailedFetchSecurityRequirement0,
+            };
         partial void PrepareIntegrationsDetailedFetchArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref bool? sdk);
@@ -38,12 +57,18 @@ namespace Terra
                 httpClient: HttpClient,
                 sdk: ref sdk);
 
+
+            var __authorizations = global::Terra.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_IntegrationsDetailedFetchSecurityRequirements,
+                operationName: "IntegrationsDetailedFetchAsync");
+
             var __pathBuilder = new global::Terra.PathBuilder(
                 path: "/integrations/detailed",
                 baseUri: HttpClient.BaseAddress); 
             __pathBuilder
                 .AddOptionalParameter("sdk", sdk?.ToString().ToLowerInvariant()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -53,7 +78,7 @@ namespace Terra
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

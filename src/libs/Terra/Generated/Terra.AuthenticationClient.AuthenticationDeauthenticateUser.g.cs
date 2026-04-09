@@ -5,6 +5,25 @@ namespace Terra
 {
     public partial class AuthenticationClient
     {
+
+
+        private static readonly global::Terra.EndPointSecurityRequirement s_AuthenticationDeauthenticateUserSecurityRequirement0 =
+            new global::Terra.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Terra.EndPointAuthorizationRequirement[]
+                {                    new global::Terra.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Terra.EndPointSecurityRequirement[] s_AuthenticationDeauthenticateUserSecurityRequirements =
+            new global::Terra.EndPointSecurityRequirement[]
+            {                s_AuthenticationDeauthenticateUserSecurityRequirement0,
+            };
         partial void PrepareAuthenticationDeauthenticateUserArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string userId);
@@ -38,12 +57,18 @@ namespace Terra
                 httpClient: HttpClient,
                 userId: ref userId);
 
+
+            var __authorizations = global::Terra.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_AuthenticationDeauthenticateUserSecurityRequirements,
+                operationName: "AuthenticationDeauthenticateUserAsync");
+
             var __pathBuilder = new global::Terra.PathBuilder(
                 path: "/auth/deauthenticateUser",
                 baseUri: HttpClient.BaseAddress); 
             __pathBuilder
                 .AddRequiredParameter("user_id", userId) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Delete,
@@ -53,7 +78,7 @@ namespace Terra
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")
