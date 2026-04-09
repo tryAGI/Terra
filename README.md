@@ -2,7 +2,7 @@
   <h1>Terra</h1>
   <p class="docs-hero-lead">Modern .NET SDK for Terra generated from the provider's OpenAPI definition with AutoSDK.</p>
   <div class="docs-badge-row">
-    <a href="https://www.nuget.org/packages/Terra/"><img alt="Nuget package" src="https://img.shields.io/nuget/vpre/Terra"></a>
+    <a href="https://www.nuget.org/packages/tryAGI.Terra/"><img alt="Nuget package" src="https://img.shields.io/nuget/vpre/tryAGI.Terra"></a>
     <a href="https://github.com/tryAGI/Terra/actions/workflows/dotnet.yml"><img alt="dotnet" src="https://github.com/tryAGI/Terra/actions/workflows/dotnet.yml/badge.svg?branch=main"></a>
     <a href="https://github.com/tryAGI/Terra/blob/main/LICENSE.txt"><img alt="License: MIT" src="https://img.shields.io/github/license/tryAGI/Terra"></a>
     <a href="https://discord.gg/Ca2xhfBf3v"><img alt="Discord" src="https://img.shields.io/discord/1115206893015662663?label=Discord&amp;logo=discord&amp;logoColor=white&amp;color=d82679"></a>

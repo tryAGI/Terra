@@ -8,7 +8,7 @@ The Terra SDK provides integration with [Microsoft.Extensions.AI](https://learn.
 ## Installation
 
 ```bash
-dotnet add package Terra
+dotnet add package tryAGI.Terra
 ```
 
 ## Usage
