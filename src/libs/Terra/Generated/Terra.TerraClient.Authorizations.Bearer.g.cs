@@ -25,6 +25,7 @@ namespace Terra
             Authorizations.Add(new global::Terra.EndPointAuthorization
             {
                 Type = "Http",
+                SchemeId = "HttpBearer",
                 Location = "Header",
                 Name = "Bearer",
                 Value = apiKey,
