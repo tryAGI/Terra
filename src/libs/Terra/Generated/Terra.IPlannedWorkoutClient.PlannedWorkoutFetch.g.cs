@@ -12,6 +12,7 @@ namespace Terra
         /// <param name="startDate"></param>
         /// <param name="endDate"></param>
         /// <param name="toWebhook"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Terra.OneOf<global::Terra.PlannedWorkoutFetchResponse2, global::Terra.NoDataReturned, global::Terra.DataSentToWebhook>> PlannedWorkoutFetchAsync(
@@ -19,6 +20,7 @@ namespace Terra
             global::Terra.OneOf<int?, global::System.DateTime?> startDate,
             global::Terra.OneOf<int?, global::System.DateTime?>? endDate = default,
             bool? toWebhook = default,
+            global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
