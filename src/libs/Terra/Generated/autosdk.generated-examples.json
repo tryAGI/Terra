@@ -1,0 +1,37 @@
+{
+  "Examples": [
+    {
+      "Order": 1,
+      "Title": "Generate an authentication link",
+      "Slug": "authentication-authenticateuser",
+      "Description": "Creates a login link that allows end users to connect their fitness tracking account",
+      "Language": "http",
+      "Code": "### Generate an authentication link\n# @name Authentication_AuthenticateUser\nPOST {{host}}/auth/authenticateUser?resource=FITBIT\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022language\u0022: \u0022string\u0022,\n  \u0022reference_id\u0022: \u0022string\u0022,\n  \u0022auth_success_redirect_url\u0022: \u0022string\u0022,\n  \u0022auth_failure_redirect_url\u0022: \u0022string\u0022\n}\n\n## Responses\n# 200\n# Description: Returned when authentication link could be successfully generated\n# Content-Type: application/json\n# 400\n# Description: Returned when one or more parameters is malformed - an appropriate error message will be returned\n# Content-Type: application/json\n# 404\n# Description: Returned when a parameter does not exist on Terra\u0027s end (e.g. resource)\n# Content-Type: application/json",
+      "Format": "http",
+      "OperationId": "Authentication_AuthenticateUser",
+      "Setup": null
+    },
+    {
+      "Order": 2,
+      "Title": "Generates an authentication token for the Terra mobile SDKs",
+      "Slug": "authentication-generateauthtoken",
+      "Description": "Creates a token to be used with initConnection() functions in the Terra mobile SDKs in order to create a user record for Apple Health or Samsung Health (or equivalent)",
+      "Language": "csharp",
+      "Code": "using var client = new TerraClient(apiKey);\nvar response = await client.Authentication.AuthenticationGenerateAuthTokenAsync();\n\n// Example response:\n// {\n//   \u0022status\u0022: \u0022success\u0022,\n//   \u0022token\u0022: \u0022250c68b9c21b78e40e7a3285a2d538d3bc24aabd3b4c76a782fb0a571ca4501d\u0022,\n//   \u0022expires_in\u0022: 180\n// }",
+      "Format": "sdk",
+      "OperationId": "Authentication_GenerateAuthToken",
+      "Setup": "This example assumes \u0060using Terra;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
+    },
+    {
+      "Order": 3,
+      "Title": "Get all Terra User IDs",
+      "Slug": "user-getalluserids",
+      "Description": "Used to query for information for all Terra User IDs. Supports optional pagination via \u0060page\u0060 and \u0060per_page\u0060. If \u0060page\u0060 is not provided, it returns all users in one go (backwards compatibility).",
+      "Language": "csharp",
+      "Code": "using var client = new TerraClient(apiKey);\n\nvar response = await client.User.UserGetAllUserIDsAsync(\n    page: 0,\n    perPage: 500\n);",
+      "Format": "sdk",
+      "OperationId": "User_GetAllUserIDs",
+      "Setup": "This example assumes \u0060using Terra;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
+    }
+  ]
+}
