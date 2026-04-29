@@ -146,8 +146,8 @@ namespace Terra
                 PreparePlannedWorkoutFetchRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    userId: userId,
-                    startDate: startDate,
+                    userId: userId!,
+                    startDate: startDate!,
                     endDate: endDate,
                     toWebhook: toWebhook);
 
