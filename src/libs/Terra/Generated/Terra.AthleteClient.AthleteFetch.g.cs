@@ -134,7 +134,7 @@ namespace Terra
                 PrepareAthleteFetchRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    userId: userId,
+                    userId: userId!,
                     toWebhook: toWebhook);
 
                 return __httpRequest;
