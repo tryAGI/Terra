@@ -43,7 +43,7 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public ActivityClient Activity => new ActivityClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ActivityClient Activity => new ActivityClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -52,7 +52,7 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public AthleteClient Athlete => new AthleteClient(HttpClient, authorizations: Authorizations, options: Options)
+        public AthleteClient Athlete => new AthleteClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -61,7 +61,7 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public AuthenticationClient Authentication => new AuthenticationClient(HttpClient, authorizations: Authorizations, options: Options)
+        public AuthenticationClient Authentication => new AuthenticationClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -70,7 +70,7 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public BodyClient Body => new BodyClient(HttpClient, authorizations: Authorizations, options: Options)
+        public BodyClient Body => new BodyClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -79,7 +79,7 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public DailyClient Daily => new DailyClient(HttpClient, authorizations: Authorizations, options: Options)
+        public DailyClient Daily => new DailyClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -88,7 +88,7 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public IntegrationsClient Integrations => new IntegrationsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public IntegrationsClient Integrations => new IntegrationsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -97,7 +97,7 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public MenstruationClient Menstruation => new MenstruationClient(HttpClient, authorizations: Authorizations, options: Options)
+        public MenstruationClient Menstruation => new MenstruationClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -106,7 +106,7 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public NutritionClient Nutrition => new NutritionClient(HttpClient, authorizations: Authorizations, options: Options)
+        public NutritionClient Nutrition => new NutritionClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -115,7 +115,7 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public PlannedWorkoutClient PlannedWorkout => new PlannedWorkoutClient(HttpClient, authorizations: Authorizations, options: Options)
+        public PlannedWorkoutClient PlannedWorkout => new PlannedWorkoutClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -124,7 +124,7 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public SleepClient Sleep => new SleepClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SleepClient Sleep => new SleepClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -133,7 +133,7 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public UserClient User => new UserClient(HttpClient, authorizations: Authorizations, options: Options)
+        public UserClient User => new UserClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -172,10 +172,10 @@ namespace Terra
         /// <param name="options">Client-wide request defaults such as headers, query parameters, retries, and timeout.</param>
         /// <param name="disposeHttpClient">Dispose the HttpClient when the instance is disposed. True by default.</param>
         public TerraClient(
-            global::System.Net.Http.HttpClient? httpClient = null,
-            global::System.Uri? baseUri = null,
-            global::System.Collections.Generic.List<global::Terra.EndPointAuthorization>? authorizations = null,
-            global::Terra.AutoSDKClientOptions? options = null,
+            global::System.Net.Http.HttpClient? httpClient,
+            global::System.Uri? baseUri,
+            global::System.Collections.Generic.List<global::Terra.EndPointAuthorization>? authorizations,
+            global::Terra.AutoSDKClientOptions? options,
             bool disposeHttpClient = true)
         {
 

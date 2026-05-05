@@ -72,10 +72,10 @@ namespace Terra
         /// <param name="options">Client-wide request defaults such as headers, query parameters, retries, and timeout.</param>
         /// <param name="disposeHttpClient">Dispose the HttpClient when the instance is disposed. True by default.</param>
         public AthleteClient(
-            global::System.Net.Http.HttpClient? httpClient = null,
-            global::System.Uri? baseUri = null,
-            global::System.Collections.Generic.List<global::Terra.EndPointAuthorization>? authorizations = null,
-            global::Terra.AutoSDKClientOptions? options = null,
+            global::System.Net.Http.HttpClient? httpClient,
+            global::System.Uri? baseUri,
+            global::System.Collections.Generic.List<global::Terra.EndPointAuthorization>? authorizations,
+            global::Terra.AutoSDKClientOptions? options,
             bool disposeHttpClient = true)
         {
 

@@ -24,6 +24,21 @@ namespace Terra
         /// Used to delete Body metrics the user has registered on their account
         /// </summary>
         /// <param name="userId"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Terra.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse<global::Terra.BodyDeleteResponse>> BodyDeleteAsResponseAsync(
+            string userId,
+
+            global::Terra.BodyDeleteRequest request,
+            global::Terra.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Delete body metrics for a given user ID<br/>
+        /// Used to delete Body metrics the user has registered on their account
+        /// </summary>
+        /// <param name="userId"></param>
         /// <param name="logIds">
         /// List of identifiers for body metrics entries to be deleted
         /// </param>
