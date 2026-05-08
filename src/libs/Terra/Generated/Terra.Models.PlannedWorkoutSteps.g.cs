@@ -34,6 +34,19 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickPlannedWorkoutStep(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.PlannedWorkoutStep? value)
+        {
+            value = PlannedWorkoutStep;
+            return IsPlannedWorkoutStep;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.PlannedWorkoutRepeatStep? PlannedWorkoutRepeatStep { get; init; }
 #else
@@ -47,6 +60,19 @@ namespace Terra
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PlannedWorkoutRepeatStep))]
 #endif
         public bool IsPlannedWorkoutRepeatStep => PlannedWorkoutRepeatStep != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickPlannedWorkoutRepeatStep(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.PlannedWorkoutRepeatStep? value)
+        {
+            value = PlannedWorkoutRepeatStep;
+            return IsPlannedWorkoutRepeatStep;
+        }
 
         /// <summary>
         /// 
@@ -68,6 +94,19 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickSwimmingPlannedWorkoutStep(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.SwimmingPlannedWorkoutStep? value)
+        {
+            value = SwimmingPlannedWorkoutStep;
+            return IsSwimmingPlannedWorkoutStep;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.CardioPlannedWorkoutStep? CardioPlannedWorkoutStep { get; init; }
 #else
@@ -81,6 +120,19 @@ namespace Terra
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CardioPlannedWorkoutStep))]
 #endif
         public bool IsCardioPlannedWorkoutStep => CardioPlannedWorkoutStep != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickCardioPlannedWorkoutStep(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.CardioPlannedWorkoutStep? value)
+        {
+            value = CardioPlannedWorkoutStep;
+            return IsCardioPlannedWorkoutStep;
+        }
 
         /// <summary>
         /// 
@@ -102,6 +154,19 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickStrengthPlannedWorkoutStep(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.StrengthPlannedWorkoutStep? value)
+        {
+            value = StrengthPlannedWorkoutStep;
+            return IsStrengthPlannedWorkoutStep;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.YogaPlannedWorkoutStep? YogaPlannedWorkoutStep { get; init; }
 #else
@@ -115,6 +180,19 @@ namespace Terra
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(YogaPlannedWorkoutStep))]
 #endif
         public bool IsYogaPlannedWorkoutStep => YogaPlannedWorkoutStep != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickYogaPlannedWorkoutStep(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.YogaPlannedWorkoutStep? value)
+        {
+            value = YogaPlannedWorkoutStep;
+            return IsYogaPlannedWorkoutStep;
+        }
 
         /// <summary>
         /// 
@@ -136,6 +214,19 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickPilatesPlannedWorkoutStep(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.PilatesPlannedWorkoutStep? value)
+        {
+            value = PilatesPlannedWorkoutStep;
+            return IsPilatesPlannedWorkoutStep;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.RunningPlannedWorkoutStep? RunningPlannedWorkoutStep { get; init; }
 #else
@@ -153,6 +244,19 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickRunningPlannedWorkoutStep(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.RunningPlannedWorkoutStep? value)
+        {
+            value = RunningPlannedWorkoutStep;
+            return IsRunningPlannedWorkoutStep;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.CyclingPlannedWorkoutStep? CyclingPlannedWorkoutStep { get; init; }
 #else
@@ -166,6 +270,19 @@ namespace Terra
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CyclingPlannedWorkoutStep))]
 #endif
         public bool IsCyclingPlannedWorkoutStep => CyclingPlannedWorkoutStep != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickCyclingPlannedWorkoutStep(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.CyclingPlannedWorkoutStep? value)
+        {
+            value = CyclingPlannedWorkoutStep;
+            return IsCyclingPlannedWorkoutStep;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -399,15 +516,15 @@ namespace Terra
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Terra.PlannedWorkoutStep?, TResult>? plannedWorkoutStep = null,
-            global::System.Func<global::Terra.PlannedWorkoutRepeatStep?, TResult>? plannedWorkoutRepeatStep = null,
-            global::System.Func<global::Terra.SwimmingPlannedWorkoutStep?, TResult>? swimmingPlannedWorkoutStep = null,
-            global::System.Func<global::Terra.CardioPlannedWorkoutStep?, TResult>? cardioPlannedWorkoutStep = null,
-            global::System.Func<global::Terra.StrengthPlannedWorkoutStep?, TResult>? strengthPlannedWorkoutStep = null,
-            global::System.Func<global::Terra.YogaPlannedWorkoutStep?, TResult>? yogaPlannedWorkoutStep = null,
-            global::System.Func<global::Terra.PilatesPlannedWorkoutStep?, TResult>? pilatesPlannedWorkoutStep = null,
-            global::System.Func<global::Terra.RunningPlannedWorkoutStep?, TResult>? runningPlannedWorkoutStep = null,
-            global::System.Func<global::Terra.CyclingPlannedWorkoutStep?, TResult>? cyclingPlannedWorkoutStep = null,
+            global::System.Func<global::Terra.PlannedWorkoutStep, TResult>? plannedWorkoutStep = null,
+            global::System.Func<global::Terra.PlannedWorkoutRepeatStep, TResult>? plannedWorkoutRepeatStep = null,
+            global::System.Func<global::Terra.SwimmingPlannedWorkoutStep, TResult>? swimmingPlannedWorkoutStep = null,
+            global::System.Func<global::Terra.CardioPlannedWorkoutStep, TResult>? cardioPlannedWorkoutStep = null,
+            global::System.Func<global::Terra.StrengthPlannedWorkoutStep, TResult>? strengthPlannedWorkoutStep = null,
+            global::System.Func<global::Terra.YogaPlannedWorkoutStep, TResult>? yogaPlannedWorkoutStep = null,
+            global::System.Func<global::Terra.PilatesPlannedWorkoutStep, TResult>? pilatesPlannedWorkoutStep = null,
+            global::System.Func<global::Terra.RunningPlannedWorkoutStep, TResult>? runningPlannedWorkoutStep = null,
+            global::System.Func<global::Terra.CyclingPlannedWorkoutStep, TResult>? cyclingPlannedWorkoutStep = null,
             bool validate = true)
         {
             if (validate)
@@ -459,15 +576,81 @@ namespace Terra
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Terra.PlannedWorkoutStep?>? plannedWorkoutStep = null,
-            global::System.Action<global::Terra.PlannedWorkoutRepeatStep?>? plannedWorkoutRepeatStep = null,
-            global::System.Action<global::Terra.SwimmingPlannedWorkoutStep?>? swimmingPlannedWorkoutStep = null,
-            global::System.Action<global::Terra.CardioPlannedWorkoutStep?>? cardioPlannedWorkoutStep = null,
-            global::System.Action<global::Terra.StrengthPlannedWorkoutStep?>? strengthPlannedWorkoutStep = null,
-            global::System.Action<global::Terra.YogaPlannedWorkoutStep?>? yogaPlannedWorkoutStep = null,
-            global::System.Action<global::Terra.PilatesPlannedWorkoutStep?>? pilatesPlannedWorkoutStep = null,
-            global::System.Action<global::Terra.RunningPlannedWorkoutStep?>? runningPlannedWorkoutStep = null,
-            global::System.Action<global::Terra.CyclingPlannedWorkoutStep?>? cyclingPlannedWorkoutStep = null,
+            global::System.Action<global::Terra.PlannedWorkoutStep>? plannedWorkoutStep = null,
+
+            global::System.Action<global::Terra.PlannedWorkoutRepeatStep>? plannedWorkoutRepeatStep = null,
+
+            global::System.Action<global::Terra.SwimmingPlannedWorkoutStep>? swimmingPlannedWorkoutStep = null,
+
+            global::System.Action<global::Terra.CardioPlannedWorkoutStep>? cardioPlannedWorkoutStep = null,
+
+            global::System.Action<global::Terra.StrengthPlannedWorkoutStep>? strengthPlannedWorkoutStep = null,
+
+            global::System.Action<global::Terra.YogaPlannedWorkoutStep>? yogaPlannedWorkoutStep = null,
+
+            global::System.Action<global::Terra.PilatesPlannedWorkoutStep>? pilatesPlannedWorkoutStep = null,
+
+            global::System.Action<global::Terra.RunningPlannedWorkoutStep>? runningPlannedWorkoutStep = null,
+
+            global::System.Action<global::Terra.CyclingPlannedWorkoutStep>? cyclingPlannedWorkoutStep = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsPlannedWorkoutStep)
+            {
+                plannedWorkoutStep?.Invoke(PlannedWorkoutStep!);
+            }
+            else if (IsPlannedWorkoutRepeatStep)
+            {
+                plannedWorkoutRepeatStep?.Invoke(PlannedWorkoutRepeatStep!);
+            }
+            else if (IsSwimmingPlannedWorkoutStep)
+            {
+                swimmingPlannedWorkoutStep?.Invoke(SwimmingPlannedWorkoutStep!);
+            }
+            else if (IsCardioPlannedWorkoutStep)
+            {
+                cardioPlannedWorkoutStep?.Invoke(CardioPlannedWorkoutStep!);
+            }
+            else if (IsStrengthPlannedWorkoutStep)
+            {
+                strengthPlannedWorkoutStep?.Invoke(StrengthPlannedWorkoutStep!);
+            }
+            else if (IsYogaPlannedWorkoutStep)
+            {
+                yogaPlannedWorkoutStep?.Invoke(YogaPlannedWorkoutStep!);
+            }
+            else if (IsPilatesPlannedWorkoutStep)
+            {
+                pilatesPlannedWorkoutStep?.Invoke(PilatesPlannedWorkoutStep!);
+            }
+            else if (IsRunningPlannedWorkoutStep)
+            {
+                runningPlannedWorkoutStep?.Invoke(RunningPlannedWorkoutStep!);
+            }
+            else if (IsCyclingPlannedWorkoutStep)
+            {
+                cyclingPlannedWorkoutStep?.Invoke(CyclingPlannedWorkoutStep!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Terra.PlannedWorkoutStep>? plannedWorkoutStep = null,
+            global::System.Action<global::Terra.PlannedWorkoutRepeatStep>? plannedWorkoutRepeatStep = null,
+            global::System.Action<global::Terra.SwimmingPlannedWorkoutStep>? swimmingPlannedWorkoutStep = null,
+            global::System.Action<global::Terra.CardioPlannedWorkoutStep>? cardioPlannedWorkoutStep = null,
+            global::System.Action<global::Terra.StrengthPlannedWorkoutStep>? strengthPlannedWorkoutStep = null,
+            global::System.Action<global::Terra.YogaPlannedWorkoutStep>? yogaPlannedWorkoutStep = null,
+            global::System.Action<global::Terra.PilatesPlannedWorkoutStep>? pilatesPlannedWorkoutStep = null,
+            global::System.Action<global::Terra.RunningPlannedWorkoutStep>? runningPlannedWorkoutStep = null,
+            global::System.Action<global::Terra.CyclingPlannedWorkoutStep>? cyclingPlannedWorkoutStep = null,
             bool validate = true)
         {
             if (validate)
