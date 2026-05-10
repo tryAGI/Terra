@@ -659,6 +659,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static WebhookEventType FromHealthcheck(global::Terra.HealthcheckEvent? value) => new WebhookEventType(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WebhookEventType(global::Terra.AuthSuccessEvent value) => new WebhookEventType((global::Terra.AuthSuccessEvent?)value);
 
         /// <summary>
@@ -673,6 +678,11 @@ namespace Terra
         {
             AuthSuccess = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WebhookEventType FromAuthSuccess(global::Terra.AuthSuccessEvent? value) => new WebhookEventType(value);
 
         /// <summary>
         /// 
@@ -695,6 +705,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static WebhookEventType FromAuthError(global::Terra.AuthErrorEvent? value) => new WebhookEventType(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WebhookEventType(global::Terra.DeauthEvent value) => new WebhookEventType((global::Terra.DeauthEvent?)value);
 
         /// <summary>
@@ -709,6 +724,11 @@ namespace Terra
         {
             Deauth = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WebhookEventType FromDeauth(global::Terra.DeauthEvent? value) => new WebhookEventType(value);
 
         /// <summary>
         /// 
@@ -731,6 +751,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static WebhookEventType FromUserReauth(global::Terra.UserReauthEvent? value) => new WebhookEventType(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WebhookEventType(global::Terra.AccessRevokedEvent value) => new WebhookEventType((global::Terra.AccessRevokedEvent?)value);
 
         /// <summary>
@@ -745,6 +770,11 @@ namespace Terra
         {
             AccessRevoked = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WebhookEventType FromAccessRevoked(global::Terra.AccessRevokedEvent? value) => new WebhookEventType(value);
 
         /// <summary>
         /// 
@@ -767,6 +797,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static WebhookEventType FromConnectionError(global::Terra.ConnectionErrorEvent? value) => new WebhookEventType(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WebhookEventType(global::Terra.GoogleNoDatasourceEvent value) => new WebhookEventType((global::Terra.GoogleNoDatasourceEvent?)value);
 
         /// <summary>
@@ -781,6 +816,11 @@ namespace Terra
         {
             GoogleNoDatasource = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WebhookEventType FromGoogleNoDatasource(global::Terra.GoogleNoDatasourceEvent? value) => new WebhookEventType(value);
 
         /// <summary>
         /// 
@@ -803,6 +843,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static WebhookEventType FromPermissionChange(global::Terra.PermissionChangeEvent? value) => new WebhookEventType(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WebhookEventType(global::Terra.ProcessingEvent value) => new WebhookEventType((global::Terra.ProcessingEvent?)value);
 
         /// <summary>
@@ -817,6 +862,11 @@ namespace Terra
         {
             Processing = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WebhookEventType FromProcessing(global::Terra.ProcessingEvent? value) => new WebhookEventType(value);
 
         /// <summary>
         /// 
@@ -839,6 +889,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static WebhookEventType FromLargeRequestProcessing(global::Terra.LargeRequestProcessingEvent? value) => new WebhookEventType(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WebhookEventType(global::Terra.LargeRequestSendingEvent value) => new WebhookEventType((global::Terra.LargeRequestSendingEvent?)value);
 
         /// <summary>
@@ -853,6 +908,11 @@ namespace Terra
         {
             LargeRequestSending = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WebhookEventType FromLargeRequestSending(global::Terra.LargeRequestSendingEvent? value) => new WebhookEventType(value);
 
         /// <summary>
         /// 
@@ -875,6 +935,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static WebhookEventType FromRateLimitHit(global::Terra.RateLimitHitEvent? value) => new WebhookEventType(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WebhookEventType(global::Terra.ActivityEvent value) => new WebhookEventType((global::Terra.ActivityEvent?)value);
 
         /// <summary>
@@ -889,6 +954,11 @@ namespace Terra
         {
             Activity = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WebhookEventType FromActivity(global::Terra.ActivityEvent? value) => new WebhookEventType(value);
 
         /// <summary>
         /// 
@@ -911,6 +981,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static WebhookEventType FromAthlete(global::Terra.AthleteEvent? value) => new WebhookEventType(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WebhookEventType(global::Terra.BodyEvent value) => new WebhookEventType((global::Terra.BodyEvent?)value);
 
         /// <summary>
@@ -925,6 +1000,11 @@ namespace Terra
         {
             Body = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WebhookEventType FromBody(global::Terra.BodyEvent? value) => new WebhookEventType(value);
 
         /// <summary>
         /// 
@@ -947,6 +1027,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static WebhookEventType FromDaily(global::Terra.DailyEvent? value) => new WebhookEventType(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WebhookEventType(global::Terra.MenstruationEvent value) => new WebhookEventType((global::Terra.MenstruationEvent?)value);
 
         /// <summary>
@@ -961,6 +1046,11 @@ namespace Terra
         {
             Menstruation = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WebhookEventType FromMenstruation(global::Terra.MenstruationEvent? value) => new WebhookEventType(value);
 
         /// <summary>
         /// 
@@ -983,6 +1073,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static WebhookEventType FromNutrition(global::Terra.NutritionEvent? value) => new WebhookEventType(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WebhookEventType(global::Terra.SleepEvent value) => new WebhookEventType((global::Terra.SleepEvent?)value);
 
         /// <summary>
@@ -1001,6 +1096,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static WebhookEventType FromSleep(global::Terra.SleepEvent? value) => new WebhookEventType(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WebhookEventType(global::Terra.S3PayloadEvent value) => new WebhookEventType((global::Terra.S3PayloadEvent?)value);
 
         /// <summary>
@@ -1015,6 +1115,11 @@ namespace Terra
         {
             S3Payload = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WebhookEventType FromS3Payload(global::Terra.S3PayloadEvent? value) => new WebhookEventType(value);
 
         /// <summary>
         /// 

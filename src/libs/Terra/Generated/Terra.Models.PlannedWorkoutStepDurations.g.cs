@@ -364,6 +364,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static PlannedWorkoutStepDurations FromPlannedWorkoutStepDuration(global::Terra.PlannedWorkoutStepDuration? value) => new PlannedWorkoutStepDurations(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PlannedWorkoutStepDurations(global::Terra.TimePlannedWorkoutStepDuration value) => new PlannedWorkoutStepDurations((global::Terra.TimePlannedWorkoutStepDuration?)value);
 
         /// <summary>
@@ -378,6 +383,11 @@ namespace Terra
         {
             TimePlannedWorkoutStepDuration = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PlannedWorkoutStepDurations FromTimePlannedWorkoutStepDuration(global::Terra.TimePlannedWorkoutStepDuration? value) => new PlannedWorkoutStepDurations(value);
 
         /// <summary>
         /// 
@@ -400,6 +410,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static PlannedWorkoutStepDurations FromPowerAbovePlannedWorkoutStepDuration(global::Terra.PowerAbovePlannedWorkoutStepDuration? value) => new PlannedWorkoutStepDurations(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PlannedWorkoutStepDurations(global::Terra.PowerBelowPlannedWorkoutStepDuration value) => new PlannedWorkoutStepDurations((global::Terra.PowerBelowPlannedWorkoutStepDuration?)value);
 
         /// <summary>
@@ -414,6 +429,11 @@ namespace Terra
         {
             PowerBelowPlannedWorkoutStepDuration = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PlannedWorkoutStepDurations FromPowerBelowPlannedWorkoutStepDuration(global::Terra.PowerBelowPlannedWorkoutStepDuration? value) => new PlannedWorkoutStepDurations(value);
 
         /// <summary>
         /// 
@@ -436,6 +456,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static PlannedWorkoutStepDurations FromFixedRestPlannedWorkoutStepDuration(global::Terra.FixedRestPlannedWorkoutStepDuration? value) => new PlannedWorkoutStepDurations(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PlannedWorkoutStepDurations(global::Terra.CaloriesPlannedWorkoutStepDuration value) => new PlannedWorkoutStepDurations((global::Terra.CaloriesPlannedWorkoutStepDuration?)value);
 
         /// <summary>
@@ -450,6 +475,11 @@ namespace Terra
         {
             CaloriesPlannedWorkoutStepDuration = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PlannedWorkoutStepDurations FromCaloriesPlannedWorkoutStepDuration(global::Terra.CaloriesPlannedWorkoutStepDuration? value) => new PlannedWorkoutStepDurations(value);
 
         /// <summary>
         /// 
@@ -472,6 +502,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static PlannedWorkoutStepDurations FromHRAbovePlannedWorkoutStepDuration(global::Terra.HRAbovePlannedWorkoutStepDuration? value) => new PlannedWorkoutStepDurations(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PlannedWorkoutStepDurations(global::Terra.HRBelowPlannedWorkoutStepDuration value) => new PlannedWorkoutStepDurations((global::Terra.HRBelowPlannedWorkoutStepDuration?)value);
 
         /// <summary>
@@ -486,6 +521,11 @@ namespace Terra
         {
             HRBelowPlannedWorkoutStepDuration = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PlannedWorkoutStepDurations FromHRBelowPlannedWorkoutStepDuration(global::Terra.HRBelowPlannedWorkoutStepDuration? value) => new PlannedWorkoutStepDurations(value);
 
         /// <summary>
         /// 
@@ -508,6 +548,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static PlannedWorkoutStepDurations FromRepsPlannedWorkoutStepDuration(global::Terra.RepsPlannedWorkoutStepDuration? value) => new PlannedWorkoutStepDurations(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PlannedWorkoutStepDurations(global::Terra.DistancePlannedWorkoutStepDuration value) => new PlannedWorkoutStepDurations((global::Terra.DistancePlannedWorkoutStepDuration?)value);
 
         /// <summary>
@@ -526,6 +571,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static PlannedWorkoutStepDurations FromDistancePlannedWorkoutStepDuration(global::Terra.DistancePlannedWorkoutStepDuration? value) => new PlannedWorkoutStepDurations(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PlannedWorkoutStepDurations(global::Terra.StepsPlannedWorkoutStepDuration value) => new PlannedWorkoutStepDurations((global::Terra.StepsPlannedWorkoutStepDuration?)value);
 
         /// <summary>
@@ -540,6 +590,11 @@ namespace Terra
         {
             StepsPlannedWorkoutStepDuration = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PlannedWorkoutStepDurations FromStepsPlannedWorkoutStepDuration(global::Terra.StepsPlannedWorkoutStepDuration? value) => new PlannedWorkoutStepDurations(value);
 
         /// <summary>
         /// 
