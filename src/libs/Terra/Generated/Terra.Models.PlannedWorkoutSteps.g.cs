@@ -304,6 +304,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static PlannedWorkoutSteps FromPlannedWorkoutStep(global::Terra.PlannedWorkoutStep? value) => new PlannedWorkoutSteps(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PlannedWorkoutSteps(global::Terra.PlannedWorkoutRepeatStep value) => new PlannedWorkoutSteps((global::Terra.PlannedWorkoutRepeatStep?)value);
 
         /// <summary>
@@ -318,6 +323,11 @@ namespace Terra
         {
             PlannedWorkoutRepeatStep = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PlannedWorkoutSteps FromPlannedWorkoutRepeatStep(global::Terra.PlannedWorkoutRepeatStep? value) => new PlannedWorkoutSteps(value);
 
         /// <summary>
         /// 
@@ -340,6 +350,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static PlannedWorkoutSteps FromSwimmingPlannedWorkoutStep(global::Terra.SwimmingPlannedWorkoutStep? value) => new PlannedWorkoutSteps(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PlannedWorkoutSteps(global::Terra.CardioPlannedWorkoutStep value) => new PlannedWorkoutSteps((global::Terra.CardioPlannedWorkoutStep?)value);
 
         /// <summary>
@@ -354,6 +369,11 @@ namespace Terra
         {
             CardioPlannedWorkoutStep = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PlannedWorkoutSteps FromCardioPlannedWorkoutStep(global::Terra.CardioPlannedWorkoutStep? value) => new PlannedWorkoutSteps(value);
 
         /// <summary>
         /// 
@@ -376,6 +396,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static PlannedWorkoutSteps FromStrengthPlannedWorkoutStep(global::Terra.StrengthPlannedWorkoutStep? value) => new PlannedWorkoutSteps(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PlannedWorkoutSteps(global::Terra.YogaPlannedWorkoutStep value) => new PlannedWorkoutSteps((global::Terra.YogaPlannedWorkoutStep?)value);
 
         /// <summary>
@@ -390,6 +415,11 @@ namespace Terra
         {
             YogaPlannedWorkoutStep = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PlannedWorkoutSteps FromYogaPlannedWorkoutStep(global::Terra.YogaPlannedWorkoutStep? value) => new PlannedWorkoutSteps(value);
 
         /// <summary>
         /// 
@@ -412,6 +442,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static PlannedWorkoutSteps FromPilatesPlannedWorkoutStep(global::Terra.PilatesPlannedWorkoutStep? value) => new PlannedWorkoutSteps(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PlannedWorkoutSteps(global::Terra.RunningPlannedWorkoutStep value) => new PlannedWorkoutSteps((global::Terra.RunningPlannedWorkoutStep?)value);
 
         /// <summary>
@@ -430,6 +465,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static PlannedWorkoutSteps FromRunningPlannedWorkoutStep(global::Terra.RunningPlannedWorkoutStep? value) => new PlannedWorkoutSteps(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PlannedWorkoutSteps(global::Terra.CyclingPlannedWorkoutStep value) => new PlannedWorkoutSteps((global::Terra.CyclingPlannedWorkoutStep?)value);
 
         /// <summary>
@@ -444,6 +484,11 @@ namespace Terra
         {
             CyclingPlannedWorkoutStep = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PlannedWorkoutSteps FromCyclingPlannedWorkoutStep(global::Terra.CyclingPlannedWorkoutStep? value) => new PlannedWorkoutSteps(value);
 
         /// <summary>
         /// 

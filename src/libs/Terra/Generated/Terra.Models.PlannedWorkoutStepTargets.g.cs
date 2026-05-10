@@ -334,6 +334,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static PlannedWorkoutStepTargets FromPlannedWorkoutStepTarget(global::Terra.PlannedWorkoutStepTarget? value) => new PlannedWorkoutStepTargets(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PlannedWorkoutStepTargets(global::Terra.CadencePlannedWorkoutStepTarget value) => new PlannedWorkoutStepTargets((global::Terra.CadencePlannedWorkoutStepTarget?)value);
 
         /// <summary>
@@ -348,6 +353,11 @@ namespace Terra
         {
             CadencePlannedWorkoutStepTarget = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PlannedWorkoutStepTargets FromCadencePlannedWorkoutStepTarget(global::Terra.CadencePlannedWorkoutStepTarget? value) => new PlannedWorkoutStepTargets(value);
 
         /// <summary>
         /// 
@@ -370,6 +380,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static PlannedWorkoutStepTargets FromHRPlannedWorkoutStepTarget(global::Terra.HRPlannedWorkoutStepTarget? value) => new PlannedWorkoutStepTargets(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PlannedWorkoutStepTargets(global::Terra.PowerPlannedWorkoutStepTarget value) => new PlannedWorkoutStepTargets((global::Terra.PowerPlannedWorkoutStepTarget?)value);
 
         /// <summary>
@@ -384,6 +399,11 @@ namespace Terra
         {
             PowerPlannedWorkoutStepTarget = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PlannedWorkoutStepTargets FromPowerPlannedWorkoutStepTarget(global::Terra.PowerPlannedWorkoutStepTarget? value) => new PlannedWorkoutStepTargets(value);
 
         /// <summary>
         /// 
@@ -406,6 +426,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static PlannedWorkoutStepTargets FromSpeedPlannedWorkoutStepTarget(global::Terra.SpeedPlannedWorkoutStepTarget? value) => new PlannedWorkoutStepTargets(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PlannedWorkoutStepTargets(global::Terra.PacePlannedWorkoutStepTarget value) => new PlannedWorkoutStepTargets((global::Terra.PacePlannedWorkoutStepTarget?)value);
 
         /// <summary>
@@ -420,6 +445,11 @@ namespace Terra
         {
             PacePlannedWorkoutStepTarget = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PlannedWorkoutStepTargets FromPacePlannedWorkoutStepTarget(global::Terra.PacePlannedWorkoutStepTarget? value) => new PlannedWorkoutStepTargets(value);
 
         /// <summary>
         /// 
@@ -442,6 +472,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static PlannedWorkoutStepTargets FromTSSPlannedWorkoutStepTarget(global::Terra.TSSPlannedWorkoutStepTarget? value) => new PlannedWorkoutStepTargets(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PlannedWorkoutStepTargets(global::Terra.IFPlannedWorkoutStepTarget value) => new PlannedWorkoutStepTargets((global::Terra.IFPlannedWorkoutStepTarget?)value);
 
         /// <summary>
@@ -456,6 +491,11 @@ namespace Terra
         {
             IFPlannedWorkoutStepTarget = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PlannedWorkoutStepTargets FromIFPlannedWorkoutStepTarget(global::Terra.IFPlannedWorkoutStepTarget? value) => new PlannedWorkoutStepTargets(value);
 
         /// <summary>
         /// 
@@ -478,6 +518,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static PlannedWorkoutStepTargets FromRepetitionPlannedWorkoutStepTarget(global::Terra.RepetitionPlannedWorkoutStepTarget? value) => new PlannedWorkoutStepTargets(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PlannedWorkoutStepTargets(global::Terra.SwimStrokePlannedWorkoutStepTarget value) => new PlannedWorkoutStepTargets((global::Terra.SwimStrokePlannedWorkoutStepTarget?)value);
 
         /// <summary>
@@ -492,6 +537,11 @@ namespace Terra
         {
             SwimStrokePlannedWorkoutStepTarget = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PlannedWorkoutStepTargets FromSwimStrokePlannedWorkoutStepTarget(global::Terra.SwimStrokePlannedWorkoutStepTarget? value) => new PlannedWorkoutStepTargets(value);
 
         /// <summary>
         /// 
