@@ -653,6 +653,7 @@ namespace Terra.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.HealthcheckEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.HealthcheckEvent> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.HealthcheckEvent).Name}");
                     healthcheck = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -663,9 +664,13 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (healthcheck == null && authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && googleNoDatasource == null && permissionChange == null && processing == null && largeRequestProcessing == null && largeRequestSending == null && rateLimitHit == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.AuthSuccessEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.AuthSuccessEvent> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.AuthSuccessEvent).Name}");
                     authSuccess = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -676,9 +681,13 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (healthcheck == null && authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && googleNoDatasource == null && permissionChange == null && processing == null && largeRequestProcessing == null && largeRequestSending == null && rateLimitHit == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.AuthErrorEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.AuthErrorEvent> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.AuthErrorEvent).Name}");
                     authError = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -689,9 +698,13 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (healthcheck == null && authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && googleNoDatasource == null && permissionChange == null && processing == null && largeRequestProcessing == null && largeRequestSending == null && rateLimitHit == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.DeauthEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.DeauthEvent> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.DeauthEvent).Name}");
                     deauth = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -702,9 +715,13 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (healthcheck == null && authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && googleNoDatasource == null && permissionChange == null && processing == null && largeRequestProcessing == null && largeRequestSending == null && rateLimitHit == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.UserReauthEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.UserReauthEvent> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.UserReauthEvent).Name}");
                     userReauth = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -715,9 +732,13 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (healthcheck == null && authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && googleNoDatasource == null && permissionChange == null && processing == null && largeRequestProcessing == null && largeRequestSending == null && rateLimitHit == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.AccessRevokedEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.AccessRevokedEvent> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.AccessRevokedEvent).Name}");
                     accessRevoked = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -728,9 +749,13 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (healthcheck == null && authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && googleNoDatasource == null && permissionChange == null && processing == null && largeRequestProcessing == null && largeRequestSending == null && rateLimitHit == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.ConnectionErrorEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.ConnectionErrorEvent> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.ConnectionErrorEvent).Name}");
                     connectionError = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -741,9 +766,13 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (healthcheck == null && authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && googleNoDatasource == null && permissionChange == null && processing == null && largeRequestProcessing == null && largeRequestSending == null && rateLimitHit == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.GoogleNoDatasourceEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.GoogleNoDatasourceEvent> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.GoogleNoDatasourceEvent).Name}");
                     googleNoDatasource = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -754,9 +783,13 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (healthcheck == null && authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && googleNoDatasource == null && permissionChange == null && processing == null && largeRequestProcessing == null && largeRequestSending == null && rateLimitHit == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.PermissionChangeEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.PermissionChangeEvent> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.PermissionChangeEvent).Name}");
                     permissionChange = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -767,9 +800,13 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (healthcheck == null && authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && googleNoDatasource == null && permissionChange == null && processing == null && largeRequestProcessing == null && largeRequestSending == null && rateLimitHit == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.ProcessingEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.ProcessingEvent> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.ProcessingEvent).Name}");
                     processing = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -780,9 +817,13 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (healthcheck == null && authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && googleNoDatasource == null && permissionChange == null && processing == null && largeRequestProcessing == null && largeRequestSending == null && rateLimitHit == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.LargeRequestProcessingEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.LargeRequestProcessingEvent> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.LargeRequestProcessingEvent).Name}");
                     largeRequestProcessing = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -793,9 +834,13 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (healthcheck == null && authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && googleNoDatasource == null && permissionChange == null && processing == null && largeRequestProcessing == null && largeRequestSending == null && rateLimitHit == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.LargeRequestSendingEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.LargeRequestSendingEvent> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.LargeRequestSendingEvent).Name}");
                     largeRequestSending = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -806,9 +851,13 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (healthcheck == null && authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && googleNoDatasource == null && permissionChange == null && processing == null && largeRequestProcessing == null && largeRequestSending == null && rateLimitHit == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.RateLimitHitEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.RateLimitHitEvent> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.RateLimitHitEvent).Name}");
                     rateLimitHit = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -819,9 +868,13 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (healthcheck == null && authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && googleNoDatasource == null && permissionChange == null && processing == null && largeRequestProcessing == null && largeRequestSending == null && rateLimitHit == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.ActivityEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.ActivityEvent> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.ActivityEvent).Name}");
                     activity = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -832,9 +885,13 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (healthcheck == null && authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && googleNoDatasource == null && permissionChange == null && processing == null && largeRequestProcessing == null && largeRequestSending == null && rateLimitHit == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.AthleteEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.AthleteEvent> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.AthleteEvent).Name}");
                     athlete = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -845,9 +902,13 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (healthcheck == null && authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && googleNoDatasource == null && permissionChange == null && processing == null && largeRequestProcessing == null && largeRequestSending == null && rateLimitHit == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.BodyEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.BodyEvent> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.BodyEvent).Name}");
                     body = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -858,9 +919,13 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (healthcheck == null && authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && googleNoDatasource == null && permissionChange == null && processing == null && largeRequestProcessing == null && largeRequestSending == null && rateLimitHit == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.DailyEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.DailyEvent> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.DailyEvent).Name}");
                     daily = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -871,9 +936,13 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (healthcheck == null && authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && googleNoDatasource == null && permissionChange == null && processing == null && largeRequestProcessing == null && largeRequestSending == null && rateLimitHit == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.MenstruationEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.MenstruationEvent> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.MenstruationEvent).Name}");
                     menstruation = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -884,9 +953,13 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (healthcheck == null && authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && googleNoDatasource == null && permissionChange == null && processing == null && largeRequestProcessing == null && largeRequestSending == null && rateLimitHit == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.NutritionEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.NutritionEvent> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.NutritionEvent).Name}");
                     nutrition = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -897,9 +970,13 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (healthcheck == null && authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && googleNoDatasource == null && permissionChange == null && processing == null && largeRequestProcessing == null && largeRequestSending == null && rateLimitHit == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.SleepEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.SleepEvent> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.SleepEvent).Name}");
                     sleep = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -910,9 +987,13 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (healthcheck == null && authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && googleNoDatasource == null && permissionChange == null && processing == null && largeRequestProcessing == null && largeRequestSending == null && rateLimitHit == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.S3PayloadEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.S3PayloadEvent> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.S3PayloadEvent).Name}");
                     s3Payload = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
