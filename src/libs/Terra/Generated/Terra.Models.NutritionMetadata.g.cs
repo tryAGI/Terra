@@ -74,5 +74,6 @@ namespace Terra
         public NutritionMetadata()
         {
         }
+
     }
 }

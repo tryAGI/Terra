@@ -129,5 +129,6 @@ namespace Terra
         public PowerPlannedWorkoutStepTarget()
         {
         }
+
     }
 }

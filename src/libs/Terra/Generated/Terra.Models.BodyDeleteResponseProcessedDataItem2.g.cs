@@ -52,5 +52,6 @@ namespace Terra
         public BodyDeleteResponseProcessedDataItem2()
         {
         }
+
     }
 }

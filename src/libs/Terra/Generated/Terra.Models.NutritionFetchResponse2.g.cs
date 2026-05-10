@@ -57,5 +57,6 @@ namespace Terra
         public NutritionFetchResponse2()
         {
         }
+
     }
 }

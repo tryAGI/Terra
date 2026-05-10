@@ -42,5 +42,6 @@ namespace Terra
         public NutritionWriteRequest()
         {
         }
+
     }
 }

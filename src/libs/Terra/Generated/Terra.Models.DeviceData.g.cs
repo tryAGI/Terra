@@ -158,5 +158,6 @@ namespace Terra
         public DeviceData()
         {
         }
+
     }
 }

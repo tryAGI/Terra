@@ -112,5 +112,6 @@ namespace Terra
         public AuthErrorEvent()
         {
         }
+
     }
 }

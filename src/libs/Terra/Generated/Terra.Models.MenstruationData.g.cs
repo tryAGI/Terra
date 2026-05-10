@@ -179,5 +179,6 @@ namespace Terra
         public MenstruationData()
         {
         }
+
     }
 }

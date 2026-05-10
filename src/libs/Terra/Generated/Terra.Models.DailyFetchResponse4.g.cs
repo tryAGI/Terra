@@ -44,5 +44,6 @@ namespace Terra
         public DailyFetchResponse4()
         {
         }
+
     }
 }

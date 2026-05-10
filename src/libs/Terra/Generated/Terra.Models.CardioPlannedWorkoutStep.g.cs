@@ -131,5 +131,6 @@ namespace Terra
         public CardioPlannedWorkoutStep()
         {
         }
+
     }
 }

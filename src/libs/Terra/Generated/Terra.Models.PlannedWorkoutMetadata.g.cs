@@ -235,5 +235,6 @@ namespace Terra
         public PlannedWorkoutMetadata()
         {
         }
+
     }
 }

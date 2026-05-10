@@ -53,5 +53,6 @@ namespace Terra
         public AuthenticationGenerateWidgetSessionResponse2()
         {
         }
+
     }
 }

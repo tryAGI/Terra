@@ -47,6 +47,13 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public global::Terra.PlannedWorkoutStep PickPlannedWorkoutStep() => IsPlannedWorkoutStep
+            ? PlannedWorkoutStep!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PlannedWorkoutStep' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.PlannedWorkoutRepeatStep? PlannedWorkoutRepeatStep { get; init; }
 #else
@@ -73,6 +80,13 @@ namespace Terra
             value = PlannedWorkoutRepeatStep;
             return IsPlannedWorkoutRepeatStep;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.PlannedWorkoutRepeatStep PickPlannedWorkoutRepeatStep() => IsPlannedWorkoutRepeatStep
+            ? PlannedWorkoutRepeatStep!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PlannedWorkoutRepeatStep' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -107,6 +121,13 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public global::Terra.SwimmingPlannedWorkoutStep PickSwimmingPlannedWorkoutStep() => IsSwimmingPlannedWorkoutStep
+            ? SwimmingPlannedWorkoutStep!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SwimmingPlannedWorkoutStep' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.CardioPlannedWorkoutStep? CardioPlannedWorkoutStep { get; init; }
 #else
@@ -133,6 +154,13 @@ namespace Terra
             value = CardioPlannedWorkoutStep;
             return IsCardioPlannedWorkoutStep;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.CardioPlannedWorkoutStep PickCardioPlannedWorkoutStep() => IsCardioPlannedWorkoutStep
+            ? CardioPlannedWorkoutStep!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CardioPlannedWorkoutStep' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -167,6 +195,13 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public global::Terra.StrengthPlannedWorkoutStep PickStrengthPlannedWorkoutStep() => IsStrengthPlannedWorkoutStep
+            ? StrengthPlannedWorkoutStep!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthPlannedWorkoutStep' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.YogaPlannedWorkoutStep? YogaPlannedWorkoutStep { get; init; }
 #else
@@ -193,6 +228,13 @@ namespace Terra
             value = YogaPlannedWorkoutStep;
             return IsYogaPlannedWorkoutStep;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.YogaPlannedWorkoutStep PickYogaPlannedWorkoutStep() => IsYogaPlannedWorkoutStep
+            ? YogaPlannedWorkoutStep!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'YogaPlannedWorkoutStep' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -227,6 +269,13 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public global::Terra.PilatesPlannedWorkoutStep PickPilatesPlannedWorkoutStep() => IsPilatesPlannedWorkoutStep
+            ? PilatesPlannedWorkoutStep!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PilatesPlannedWorkoutStep' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.RunningPlannedWorkoutStep? RunningPlannedWorkoutStep { get; init; }
 #else
@@ -257,6 +306,13 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public global::Terra.RunningPlannedWorkoutStep PickRunningPlannedWorkoutStep() => IsRunningPlannedWorkoutStep
+            ? RunningPlannedWorkoutStep!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RunningPlannedWorkoutStep' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.CyclingPlannedWorkoutStep? CyclingPlannedWorkoutStep { get; init; }
 #else
@@ -283,6 +339,13 @@ namespace Terra
             value = CyclingPlannedWorkoutStep;
             return IsCyclingPlannedWorkoutStep;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.CyclingPlannedWorkoutStep PickCyclingPlannedWorkoutStep() => IsCyclingPlannedWorkoutStep
+            ? CyclingPlannedWorkoutStep!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CyclingPlannedWorkoutStep' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

@@ -142,5 +142,6 @@ namespace Terra
         public StrengthPlannedWorkoutStep()
         {
         }
+
     }
 }

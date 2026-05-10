@@ -40,6 +40,13 @@ namespace Terra
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.HealthcheckEvent PickHealthcheck() => IsHealthcheck
+            ? Healthcheck!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Healthcheck' but the value was {ToString()}.");
+
+        /// <summary>
         /// Authentication success event
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Terra
             value = AuthSuccess;
             return IsAuthSuccess;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.AuthSuccessEvent PickAuthSuccess() => IsAuthSuccess
+            ? AuthSuccess!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AuthSuccess' but the value was {ToString()}.");
 
         /// <summary>
         /// Authentication error event
@@ -100,6 +114,13 @@ namespace Terra
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.AuthErrorEvent PickAuthError() => IsAuthError
+            ? AuthError!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AuthError' but the value was {ToString()}.");
+
+        /// <summary>
         /// User deauthentication event
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -128,6 +149,13 @@ namespace Terra
             value = Deauth;
             return IsDeauth;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.DeauthEvent PickDeauth() => IsDeauth
+            ? Deauth!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Deauth' but the value was {ToString()}.");
 
         /// <summary>
         /// User re-authentication event
@@ -160,6 +188,13 @@ namespace Terra
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.UserReauthEvent PickUserReauth() => IsUserReauth
+            ? UserReauth!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UserReauth' but the value was {ToString()}.");
+
+        /// <summary>
         /// Access revoked event when a user revokes access through the provider
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -188,6 +223,13 @@ namespace Terra
             value = AccessRevoked;
             return IsAccessRevoked;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.AccessRevokedEvent PickAccessRevoked() => IsAccessRevoked
+            ? AccessRevoked!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AccessRevoked' but the value was {ToString()}.");
 
         /// <summary>
         /// Connection error event
@@ -220,6 +262,13 @@ namespace Terra
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.ConnectionErrorEvent PickConnectionError() => IsConnectionError
+            ? ConnectionError!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ConnectionError' but the value was {ToString()}.");
+
+        /// <summary>
         /// Google no datasource event
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -248,6 +297,13 @@ namespace Terra
             value = GoogleNoDatasource;
             return IsGoogleNoDatasource;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.GoogleNoDatasourceEvent PickGoogleNoDatasource() => IsGoogleNoDatasource
+            ? GoogleNoDatasource!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GoogleNoDatasource' but the value was {ToString()}.");
 
         /// <summary>
         /// Permission change event
@@ -280,6 +336,13 @@ namespace Terra
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.PermissionChangeEvent PickPermissionChange() => IsPermissionChange
+            ? PermissionChange!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PermissionChange' but the value was {ToString()}.");
+
+        /// <summary>
         /// Processing event returned when data is being fetched asynchronously
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -308,6 +371,13 @@ namespace Terra
             value = Processing;
             return IsProcessing;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.ProcessingEvent PickProcessing() => IsProcessing
+            ? Processing!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Processing' but the value was {ToString()}.");
 
         /// <summary>
         /// Large request processing event
@@ -340,6 +410,13 @@ namespace Terra
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.LargeRequestProcessingEvent PickLargeRequestProcessing() => IsLargeRequestProcessing
+            ? LargeRequestProcessing!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'LargeRequestProcessing' but the value was {ToString()}.");
+
+        /// <summary>
         /// Large request sending event
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -368,6 +445,13 @@ namespace Terra
             value = LargeRequestSending;
             return IsLargeRequestSending;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.LargeRequestSendingEvent PickLargeRequestSending() => IsLargeRequestSending
+            ? LargeRequestSending!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'LargeRequestSending' but the value was {ToString()}.");
 
         /// <summary>
         /// Rate limit hit event
@@ -400,6 +484,13 @@ namespace Terra
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.RateLimitHitEvent PickRateLimitHit() => IsRateLimitHit
+            ? RateLimitHit!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RateLimitHit' but the value was {ToString()}.");
+
+        /// <summary>
         /// Activity data event
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -428,6 +519,13 @@ namespace Terra
             value = Activity;
             return IsActivity;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.ActivityEvent PickActivity() => IsActivity
+            ? Activity!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Activity' but the value was {ToString()}.");
 
         /// <summary>
         /// Athlete data event
@@ -460,6 +558,13 @@ namespace Terra
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.AthleteEvent PickAthlete() => IsAthlete
+            ? Athlete!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Athlete' but the value was {ToString()}.");
+
+        /// <summary>
         /// Body data event
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -488,6 +593,13 @@ namespace Terra
             value = Body;
             return IsBody;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.BodyEvent PickBody() => IsBody
+            ? Body!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Body' but the value was {ToString()}.");
 
         /// <summary>
         /// Daily data event
@@ -520,6 +632,13 @@ namespace Terra
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.DailyEvent PickDaily() => IsDaily
+            ? Daily!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Daily' but the value was {ToString()}.");
+
+        /// <summary>
         /// Menstruation data event
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -548,6 +667,13 @@ namespace Terra
             value = Menstruation;
             return IsMenstruation;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.MenstruationEvent PickMenstruation() => IsMenstruation
+            ? Menstruation!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Menstruation' but the value was {ToString()}.");
 
         /// <summary>
         /// Nutrition data event
@@ -580,6 +706,13 @@ namespace Terra
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.NutritionEvent PickNutrition() => IsNutrition
+            ? Nutrition!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Nutrition' but the value was {ToString()}.");
+
+        /// <summary>
         /// Sleep data event
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -610,6 +743,13 @@ namespace Terra
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.SleepEvent PickSleep() => IsSleep
+            ? Sleep!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Sleep' but the value was {ToString()}.");
+
+        /// <summary>
         /// S3 Upload event with data download URL
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -638,6 +778,13 @@ namespace Terra
             value = S3Payload;
             return IsS3Payload;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.S3PayloadEvent PickS3Payload() => IsS3Payload
+            ? S3Payload!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'S3Payload' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

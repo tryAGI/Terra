@@ -77,5 +77,6 @@ namespace Terra
         public ECGReading()
         {
         }
+
     }
 }

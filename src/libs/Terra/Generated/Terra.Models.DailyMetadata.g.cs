@@ -86,5 +86,6 @@ namespace Terra
         public DailyMetadata()
         {
         }
+
     }
 }

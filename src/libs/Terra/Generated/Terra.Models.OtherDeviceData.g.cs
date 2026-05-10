@@ -133,5 +133,6 @@ namespace Terra
         public OtherDeviceData()
         {
         }
+
     }
 }

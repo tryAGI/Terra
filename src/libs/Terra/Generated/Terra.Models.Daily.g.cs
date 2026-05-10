@@ -148,5 +148,6 @@ namespace Terra
         public Daily()
         {
         }
+
     }
 }
