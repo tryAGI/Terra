@@ -169,5 +169,6 @@ namespace Terra
         public ActivityMetadata()
         {
         }
+
     }
 }

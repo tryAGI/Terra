@@ -110,5 +110,6 @@ namespace Terra
         public GlucoseData()
         {
         }
+
     }
 }

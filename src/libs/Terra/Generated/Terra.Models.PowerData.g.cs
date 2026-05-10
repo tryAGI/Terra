@@ -69,5 +69,6 @@ namespace Terra
         public PowerData()
         {
         }
+
     }
 }

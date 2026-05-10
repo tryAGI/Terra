@@ -265,5 +265,6 @@ namespace Terra
         public MeasurementDataSample()
         {
         }
+
     }
 }

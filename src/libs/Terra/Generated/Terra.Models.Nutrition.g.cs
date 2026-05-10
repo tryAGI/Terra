@@ -71,5 +71,6 @@ namespace Terra
         public Nutrition()
         {
         }
+
     }
 }

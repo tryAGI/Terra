@@ -99,5 +99,6 @@ namespace Terra
         public DailyDistanceData()
         {
         }
+
     }
 }

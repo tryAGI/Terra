@@ -128,5 +128,6 @@ namespace Terra
         public AwakeDurations()
         {
         }
+
     }
 }

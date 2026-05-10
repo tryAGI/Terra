@@ -53,5 +53,6 @@ namespace Terra
         public PlannedWorkoutWriteResponse3()
         {
         }
+
     }
 }

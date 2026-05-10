@@ -41,5 +41,6 @@ namespace Terra
         public BloodPressureData()
         {
         }
+
     }
 }

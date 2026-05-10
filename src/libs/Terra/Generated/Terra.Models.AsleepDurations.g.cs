@@ -100,5 +100,6 @@ namespace Terra
         public AsleepDurations()
         {
         }
+
     }
 }

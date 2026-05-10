@@ -101,5 +101,6 @@ namespace Terra
         public SpeedPlannedWorkoutStepTarget()
         {
         }
+
     }
 }

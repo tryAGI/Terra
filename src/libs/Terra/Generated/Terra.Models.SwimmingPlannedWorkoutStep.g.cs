@@ -132,5 +132,6 @@ namespace Terra
         public SwimmingPlannedWorkoutStep()
         {
         }
+
     }
 }

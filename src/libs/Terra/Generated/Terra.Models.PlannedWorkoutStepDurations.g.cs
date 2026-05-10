@@ -47,6 +47,13 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public global::Terra.PlannedWorkoutStepDuration PickPlannedWorkoutStepDuration() => IsPlannedWorkoutStepDuration
+            ? PlannedWorkoutStepDuration!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PlannedWorkoutStepDuration' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.TimePlannedWorkoutStepDuration? TimePlannedWorkoutStepDuration { get; init; }
 #else
@@ -73,6 +80,13 @@ namespace Terra
             value = TimePlannedWorkoutStepDuration;
             return IsTimePlannedWorkoutStepDuration;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.TimePlannedWorkoutStepDuration PickTimePlannedWorkoutStepDuration() => IsTimePlannedWorkoutStepDuration
+            ? TimePlannedWorkoutStepDuration!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TimePlannedWorkoutStepDuration' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -107,6 +121,13 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public global::Terra.PowerAbovePlannedWorkoutStepDuration PickPowerAbovePlannedWorkoutStepDuration() => IsPowerAbovePlannedWorkoutStepDuration
+            ? PowerAbovePlannedWorkoutStepDuration!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PowerAbovePlannedWorkoutStepDuration' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.PowerBelowPlannedWorkoutStepDuration? PowerBelowPlannedWorkoutStepDuration { get; init; }
 #else
@@ -133,6 +154,13 @@ namespace Terra
             value = PowerBelowPlannedWorkoutStepDuration;
             return IsPowerBelowPlannedWorkoutStepDuration;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.PowerBelowPlannedWorkoutStepDuration PickPowerBelowPlannedWorkoutStepDuration() => IsPowerBelowPlannedWorkoutStepDuration
+            ? PowerBelowPlannedWorkoutStepDuration!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PowerBelowPlannedWorkoutStepDuration' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -167,6 +195,13 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public global::Terra.FixedRestPlannedWorkoutStepDuration PickFixedRestPlannedWorkoutStepDuration() => IsFixedRestPlannedWorkoutStepDuration
+            ? FixedRestPlannedWorkoutStepDuration!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FixedRestPlannedWorkoutStepDuration' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.CaloriesPlannedWorkoutStepDuration? CaloriesPlannedWorkoutStepDuration { get; init; }
 #else
@@ -193,6 +228,13 @@ namespace Terra
             value = CaloriesPlannedWorkoutStepDuration;
             return IsCaloriesPlannedWorkoutStepDuration;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.CaloriesPlannedWorkoutStepDuration PickCaloriesPlannedWorkoutStepDuration() => IsCaloriesPlannedWorkoutStepDuration
+            ? CaloriesPlannedWorkoutStepDuration!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CaloriesPlannedWorkoutStepDuration' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -227,6 +269,13 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public global::Terra.HRAbovePlannedWorkoutStepDuration PickHRAbovePlannedWorkoutStepDuration() => IsHRAbovePlannedWorkoutStepDuration
+            ? HRAbovePlannedWorkoutStepDuration!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'HRAbovePlannedWorkoutStepDuration' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.HRBelowPlannedWorkoutStepDuration? HRBelowPlannedWorkoutStepDuration { get; init; }
 #else
@@ -253,6 +302,13 @@ namespace Terra
             value = HRBelowPlannedWorkoutStepDuration;
             return IsHRBelowPlannedWorkoutStepDuration;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.HRBelowPlannedWorkoutStepDuration PickHRBelowPlannedWorkoutStepDuration() => IsHRBelowPlannedWorkoutStepDuration
+            ? HRBelowPlannedWorkoutStepDuration!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'HRBelowPlannedWorkoutStepDuration' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -287,6 +343,13 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public global::Terra.RepsPlannedWorkoutStepDuration PickRepsPlannedWorkoutStepDuration() => IsRepsPlannedWorkoutStepDuration
+            ? RepsPlannedWorkoutStepDuration!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RepsPlannedWorkoutStepDuration' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.DistancePlannedWorkoutStepDuration? DistancePlannedWorkoutStepDuration { get; init; }
 #else
@@ -317,6 +380,13 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public global::Terra.DistancePlannedWorkoutStepDuration PickDistancePlannedWorkoutStepDuration() => IsDistancePlannedWorkoutStepDuration
+            ? DistancePlannedWorkoutStepDuration!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'DistancePlannedWorkoutStepDuration' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StepsPlannedWorkoutStepDuration? StepsPlannedWorkoutStepDuration { get; init; }
 #else
@@ -343,6 +413,13 @@ namespace Terra
             value = StepsPlannedWorkoutStepDuration;
             return IsStepsPlannedWorkoutStepDuration;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StepsPlannedWorkoutStepDuration PickStepsPlannedWorkoutStepDuration() => IsStepsPlannedWorkoutStepDuration
+            ? StepsPlannedWorkoutStepDuration!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'StepsPlannedWorkoutStepDuration' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

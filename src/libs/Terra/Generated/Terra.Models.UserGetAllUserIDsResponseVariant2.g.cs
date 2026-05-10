@@ -39,5 +39,6 @@ namespace Terra
         public UserGetAllUserIDsResponseVariant2()
         {
         }
+
     }
 }

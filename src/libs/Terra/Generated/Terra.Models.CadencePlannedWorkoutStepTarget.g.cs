@@ -87,5 +87,6 @@ namespace Terra
         public CadencePlannedWorkoutStepTarget()
         {
         }
+
     }
 }

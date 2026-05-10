@@ -47,6 +47,13 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public global::Terra.PlannedWorkoutStepTarget PickPlannedWorkoutStepTarget() => IsPlannedWorkoutStepTarget
+            ? PlannedWorkoutStepTarget!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PlannedWorkoutStepTarget' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.CadencePlannedWorkoutStepTarget? CadencePlannedWorkoutStepTarget { get; init; }
 #else
@@ -73,6 +80,13 @@ namespace Terra
             value = CadencePlannedWorkoutStepTarget;
             return IsCadencePlannedWorkoutStepTarget;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.CadencePlannedWorkoutStepTarget PickCadencePlannedWorkoutStepTarget() => IsCadencePlannedWorkoutStepTarget
+            ? CadencePlannedWorkoutStepTarget!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CadencePlannedWorkoutStepTarget' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -107,6 +121,13 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public global::Terra.HRPlannedWorkoutStepTarget PickHRPlannedWorkoutStepTarget() => IsHRPlannedWorkoutStepTarget
+            ? HRPlannedWorkoutStepTarget!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'HRPlannedWorkoutStepTarget' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.PowerPlannedWorkoutStepTarget? PowerPlannedWorkoutStepTarget { get; init; }
 #else
@@ -133,6 +154,13 @@ namespace Terra
             value = PowerPlannedWorkoutStepTarget;
             return IsPowerPlannedWorkoutStepTarget;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.PowerPlannedWorkoutStepTarget PickPowerPlannedWorkoutStepTarget() => IsPowerPlannedWorkoutStepTarget
+            ? PowerPlannedWorkoutStepTarget!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PowerPlannedWorkoutStepTarget' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -167,6 +195,13 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public global::Terra.SpeedPlannedWorkoutStepTarget PickSpeedPlannedWorkoutStepTarget() => IsSpeedPlannedWorkoutStepTarget
+            ? SpeedPlannedWorkoutStepTarget!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SpeedPlannedWorkoutStepTarget' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.PacePlannedWorkoutStepTarget? PacePlannedWorkoutStepTarget { get; init; }
 #else
@@ -193,6 +228,13 @@ namespace Terra
             value = PacePlannedWorkoutStepTarget;
             return IsPacePlannedWorkoutStepTarget;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.PacePlannedWorkoutStepTarget PickPacePlannedWorkoutStepTarget() => IsPacePlannedWorkoutStepTarget
+            ? PacePlannedWorkoutStepTarget!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PacePlannedWorkoutStepTarget' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -227,6 +269,13 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public global::Terra.TSSPlannedWorkoutStepTarget PickTSSPlannedWorkoutStepTarget() => IsTSSPlannedWorkoutStepTarget
+            ? TSSPlannedWorkoutStepTarget!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TSSPlannedWorkoutStepTarget' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.IFPlannedWorkoutStepTarget? IFPlannedWorkoutStepTarget { get; init; }
 #else
@@ -253,6 +302,13 @@ namespace Terra
             value = IFPlannedWorkoutStepTarget;
             return IsIFPlannedWorkoutStepTarget;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.IFPlannedWorkoutStepTarget PickIFPlannedWorkoutStepTarget() => IsIFPlannedWorkoutStepTarget
+            ? IFPlannedWorkoutStepTarget!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'IFPlannedWorkoutStepTarget' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -287,6 +343,13 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public global::Terra.RepetitionPlannedWorkoutStepTarget PickRepetitionPlannedWorkoutStepTarget() => IsRepetitionPlannedWorkoutStepTarget
+            ? RepetitionPlannedWorkoutStepTarget!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RepetitionPlannedWorkoutStepTarget' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.SwimStrokePlannedWorkoutStepTarget? SwimStrokePlannedWorkoutStepTarget { get; init; }
 #else
@@ -313,6 +376,13 @@ namespace Terra
             value = SwimStrokePlannedWorkoutStepTarget;
             return IsSwimStrokePlannedWorkoutStepTarget;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.SwimStrokePlannedWorkoutStepTarget PickSwimStrokePlannedWorkoutStepTarget() => IsSwimStrokePlannedWorkoutStepTarget
+            ? SwimStrokePlannedWorkoutStepTarget!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SwimStrokePlannedWorkoutStepTarget' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

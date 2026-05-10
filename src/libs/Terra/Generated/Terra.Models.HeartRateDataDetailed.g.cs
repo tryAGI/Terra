@@ -63,5 +63,6 @@ namespace Terra
         public HeartRateDataDetailed()
         {
         }
+
     }
 }

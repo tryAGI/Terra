@@ -48,5 +48,6 @@ namespace Terra
         public DistanceData()
         {
         }
+
     }
 }

@@ -119,5 +119,6 @@ namespace Terra
         public PlannedWorkoutRepeatStep()
         {
         }
+
     }
 }

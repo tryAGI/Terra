@@ -44,5 +44,6 @@ namespace Terra
         public ActivityFetchResponse4()
         {
         }
+
     }
 }
