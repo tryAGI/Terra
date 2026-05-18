@@ -409,6 +409,18 @@ namespace Terra
 
             typeof(global::Terra.JsonConverters.MenstruationFetchResponseStatus2NullableJsonConverter),
 
+            typeof(global::Terra.JsonConverters.HormoneFetchResponseTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.HormoneFetchResponseTypeNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.HormoneFetchResponseStatusJsonConverter),
+
+            typeof(global::Terra.JsonConverters.HormoneFetchResponseStatusNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.HormoneFetchResponseStatus2JsonConverter),
+
+            typeof(global::Terra.JsonConverters.HormoneFetchResponseStatus2NullableJsonConverter),
+
             typeof(global::Terra.JsonConverters.NutritionFetchResponseStatusJsonConverter),
 
             typeof(global::Terra.JsonConverters.NutritionFetchResponseStatusNullableJsonConverter),
@@ -543,6 +555,8 @@ namespace Terra
 
             typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.MenstruationFetchResponse2, global::Terra.NoDataReturned, global::Terra.DataSentToWebhook, global::Terra.RequestProcessing, global::Terra.RateLimitRequestProcessing, global::Terra.LargeRequestProcessingEvent>),
 
+            typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.HormoneFetchResponse2, global::Terra.NoDataReturned>),
+
             typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.NutritionFetchResponse2, global::Terra.NoDataReturned, global::Terra.DataSentToWebhook, global::Terra.RequestProcessing, global::Terra.RateLimitRequestProcessing, global::Terra.LargeRequestProcessingEvent>),
 
             typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.SleepFetchResponse2, global::Terra.NoDataReturned, global::Terra.DataSentToWebhook, global::Terra.RequestProcessing, global::Terra.RateLimitRequestProcessing, global::Terra.LargeRequestProcessingEvent>),
@@ -619,6 +633,9 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.Menstruation))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.MenstruationMetadata))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.MenstruationData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.HormoneSample))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.Connection))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.Nutrition))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.DrinkSample>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.DrinkSample))]
@@ -892,7 +909,6 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.ActivityWriteRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.BodyWriteRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.BodyDeleteRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.NutritionWriteRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.NutritionDeleteRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.PlannedWorkoutWriteRequest))]
@@ -970,6 +986,15 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.MenstruationFetchResponse4))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.MenstruationFetchResponse5))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.MenstruationFetchResponseStatus2), TypeInfoPropertyName = "MenstruationFetchResponseStatus22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.HormoneFetchResponse2, global::Terra.NoDataReturned>), TypeInfoPropertyName = "OneOfHormoneFetchResponse2NoDataReturned2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.HormoneFetchResponse2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.HormoneSample>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.HormoneFetchResponseType), TypeInfoPropertyName = "HormoneFetchResponseType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.HormoneFetchResponse3))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.HormoneFetchResponseStatus), TypeInfoPropertyName = "HormoneFetchResponseStatus2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.HormoneFetchResponse4))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.HormoneFetchResponse5))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.HormoneFetchResponseStatus2), TypeInfoPropertyName = "HormoneFetchResponseStatus22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.NutritionFetchResponse2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.NutritionFetchResponse3))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.NutritionFetchResponseStatus), TypeInfoPropertyName = "NutritionFetchResponseStatus2_3")]
@@ -1042,19 +1067,8 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.IntegrationsFetchResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.IntegrationsFetchResponseStatus), TypeInfoPropertyName = "IntegrationsFetchResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.DeviceData>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.DrinkSample>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.Meal>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.PlannedWorkoutStepTargets>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.PlannedWorkoutStepDurations>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.PlannedWorkoutStepTarget>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.PlannedWorkoutStep>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.PlannedWorkoutStepDuration>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.PlannedWorkoutSteps>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.IntegrationProvider>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.ActivityLevelSample>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.CalorieSample>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.DeviceDataType>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.OtherDeviceData>))]
     internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -1462,6 +1476,18 @@ namespace Terra
 
             typeof(global::Terra.JsonConverters.MenstruationFetchResponseStatus2NullableJsonConverter),
 
+            typeof(global::Terra.JsonConverters.HormoneFetchResponseTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.HormoneFetchResponseTypeNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.HormoneFetchResponseStatusJsonConverter),
+
+            typeof(global::Terra.JsonConverters.HormoneFetchResponseStatusNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.HormoneFetchResponseStatus2JsonConverter),
+
+            typeof(global::Terra.JsonConverters.HormoneFetchResponseStatus2NullableJsonConverter),
+
             typeof(global::Terra.JsonConverters.NutritionFetchResponseStatusJsonConverter),
 
             typeof(global::Terra.JsonConverters.NutritionFetchResponseStatusNullableJsonConverter),
@@ -1596,6 +1622,8 @@ namespace Terra
 
             typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.MenstruationFetchResponse2, global::Terra.NoDataReturned, global::Terra.DataSentToWebhook, global::Terra.RequestProcessing, global::Terra.RateLimitRequestProcessing, global::Terra.LargeRequestProcessingEvent>),
 
+            typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.HormoneFetchResponse2, global::Terra.NoDataReturned>),
+
             typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.NutritionFetchResponse2, global::Terra.NoDataReturned, global::Terra.DataSentToWebhook, global::Terra.RequestProcessing, global::Terra.RateLimitRequestProcessing, global::Terra.LargeRequestProcessingEvent>),
 
             typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.SleepFetchResponse2, global::Terra.NoDataReturned, global::Terra.DataSentToWebhook, global::Terra.RequestProcessing, global::Terra.RateLimitRequestProcessing, global::Terra.LargeRequestProcessingEvent>),
@@ -1620,6 +1648,18 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.MenstruationFetchResponse2, global::Terra.NoDataReturned, global::Terra.DataSentToWebhook, global::Terra.RequestProcessing, global::Terra.RateLimitRequestProcessing, global::Terra.LargeRequestProcessingEvent>?), TypeInfoPropertyName = "LargeRequestProcessingEvent_9f8b86c4685314ca")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.NutritionFetchResponse2, global::Terra.NoDataReturned, global::Terra.DataSentToWebhook, global::Terra.RequestProcessing, global::Terra.RateLimitRequestProcessing, global::Terra.LargeRequestProcessingEvent>?), TypeInfoPropertyName = "LargeRequestProcessingEvent_0fd0ba0101febaa0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.SleepFetchResponse2, global::Terra.NoDataReturned, global::Terra.DataSentToWebhook, global::Terra.RequestProcessing, global::Terra.RateLimitRequestProcessing, global::Terra.LargeRequestProcessingEvent>?), TypeInfoPropertyName = "LargeRequestProcessingEvent_93fa810547fca6c9")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.Meal>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.PlannedWorkoutStepTargets>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.PlannedWorkoutStepDurations>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.PlannedWorkoutStepTarget>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.PlannedWorkoutStep>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.PlannedWorkoutStepDuration>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.PlannedWorkoutSteps>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.IntegrationProvider>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.ActivityLevelSample>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.CalorieSample>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.DeviceDataType>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.OtherDeviceData>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.DistanceSample>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.ElevationSample>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.FloorsClimbedSample>))]
@@ -1665,10 +1705,10 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.Sleep>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.Menstruation>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.Body>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.PlannedWorkout>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.BodyDeleteResponseProcessedDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.BodyDeleteResponseProcessedDataItem2>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.HormoneSample>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.NutritionDeleteResponseProcessedDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.NutritionDeleteResponseProcessedDataItem2>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.PlannedWorkoutDeleteResponseProcessedDataItem>))]
@@ -1914,6 +1954,12 @@ namespace Terra
             options.Converters.Add(new global::Terra.JsonConverters.MenstruationFetchResponseStatusNullableJsonConverter());
             options.Converters.Add(new global::Terra.JsonConverters.MenstruationFetchResponseStatus2JsonConverter());
             options.Converters.Add(new global::Terra.JsonConverters.MenstruationFetchResponseStatus2NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.HormoneFetchResponseTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.HormoneFetchResponseTypeNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.HormoneFetchResponseStatusJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.HormoneFetchResponseStatusNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.HormoneFetchResponseStatus2JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.HormoneFetchResponseStatus2NullableJsonConverter());
             options.Converters.Add(new global::Terra.JsonConverters.NutritionFetchResponseStatusJsonConverter());
             options.Converters.Add(new global::Terra.JsonConverters.NutritionFetchResponseStatusNullableJsonConverter());
             options.Converters.Add(new global::Terra.JsonConverters.NutritionFetchResponseStatus2JsonConverter());
@@ -1981,6 +2027,7 @@ namespace Terra
             options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.BodyFetchResponse2, global::Terra.NoDataReturned, global::Terra.DataSentToWebhook, global::Terra.RequestProcessing, global::Terra.RateLimitRequestProcessing, global::Terra.LargeRequestProcessingEvent>());
             options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.DailyFetchResponse2, global::Terra.NoDataReturned, global::Terra.DataSentToWebhook, global::Terra.RequestProcessing, global::Terra.RateLimitRequestProcessing, global::Terra.LargeRequestProcessingEvent>());
             options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.MenstruationFetchResponse2, global::Terra.NoDataReturned, global::Terra.DataSentToWebhook, global::Terra.RequestProcessing, global::Terra.RateLimitRequestProcessing, global::Terra.LargeRequestProcessingEvent>());
+            options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.HormoneFetchResponse2, global::Terra.NoDataReturned>());
             options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.NutritionFetchResponse2, global::Terra.NoDataReturned, global::Terra.DataSentToWebhook, global::Terra.RequestProcessing, global::Terra.RateLimitRequestProcessing, global::Terra.LargeRequestProcessingEvent>());
             options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.SleepFetchResponse2, global::Terra.NoDataReturned, global::Terra.DataSentToWebhook, global::Terra.RequestProcessing, global::Terra.RateLimitRequestProcessing, global::Terra.LargeRequestProcessingEvent>());
             options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.PlannedWorkoutFetchResponse2, global::Terra.NoDataReturned, global::Terra.DataSentToWebhook>());

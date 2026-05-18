@@ -33,6 +33,9 @@ namespace Terra
 
         /// <inheritdoc/>
         public global::Terra.AutoSDKClientOptions Options { get; }
+
+
+        internal global::Terra.AutoSDKServerConfiguration AutoSDKServerConfiguration { get; set; } = new global::Terra.AutoSDKServerConfiguration();
         /// <summary>
         /// 
         /// </summary>
@@ -105,6 +108,8 @@ namespace Terra
             Authorizations = authorizations ?? new global::System.Collections.Generic.List<global::Terra.EndPointAuthorization>();
             Options = options ?? new global::Terra.AutoSDKClientOptions();
             _disposeHttpClient = disposeHttpClient;
+
+            AutoSDKServerConfiguration.ExplicitBaseUri = baseUri ?? httpClient?.BaseAddress;
 
             Initialized(HttpClient);
         }
