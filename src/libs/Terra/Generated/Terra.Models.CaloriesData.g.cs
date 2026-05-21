@@ -85,5 +85,6 @@ namespace Terra
         public CaloriesData()
         {
         }
+
     }
 }

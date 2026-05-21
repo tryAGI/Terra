@@ -34,6 +34,26 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickPlannedWorkoutStepDuration(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.PlannedWorkoutStepDuration? value)
+        {
+            value = PlannedWorkoutStepDuration;
+            return IsPlannedWorkoutStepDuration;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.PlannedWorkoutStepDuration PickPlannedWorkoutStepDuration() => IsPlannedWorkoutStepDuration
+            ? PlannedWorkoutStepDuration!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PlannedWorkoutStepDuration' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.TimePlannedWorkoutStepDuration? TimePlannedWorkoutStepDuration { get; init; }
 #else
@@ -47,6 +67,26 @@ namespace Terra
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TimePlannedWorkoutStepDuration))]
 #endif
         public bool IsTimePlannedWorkoutStepDuration => TimePlannedWorkoutStepDuration != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTimePlannedWorkoutStepDuration(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.TimePlannedWorkoutStepDuration? value)
+        {
+            value = TimePlannedWorkoutStepDuration;
+            return IsTimePlannedWorkoutStepDuration;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.TimePlannedWorkoutStepDuration PickTimePlannedWorkoutStepDuration() => IsTimePlannedWorkoutStepDuration
+            ? TimePlannedWorkoutStepDuration!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TimePlannedWorkoutStepDuration' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -68,6 +108,26 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickPowerAbovePlannedWorkoutStepDuration(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.PowerAbovePlannedWorkoutStepDuration? value)
+        {
+            value = PowerAbovePlannedWorkoutStepDuration;
+            return IsPowerAbovePlannedWorkoutStepDuration;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.PowerAbovePlannedWorkoutStepDuration PickPowerAbovePlannedWorkoutStepDuration() => IsPowerAbovePlannedWorkoutStepDuration
+            ? PowerAbovePlannedWorkoutStepDuration!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PowerAbovePlannedWorkoutStepDuration' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.PowerBelowPlannedWorkoutStepDuration? PowerBelowPlannedWorkoutStepDuration { get; init; }
 #else
@@ -81,6 +141,26 @@ namespace Terra
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PowerBelowPlannedWorkoutStepDuration))]
 #endif
         public bool IsPowerBelowPlannedWorkoutStepDuration => PowerBelowPlannedWorkoutStepDuration != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickPowerBelowPlannedWorkoutStepDuration(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.PowerBelowPlannedWorkoutStepDuration? value)
+        {
+            value = PowerBelowPlannedWorkoutStepDuration;
+            return IsPowerBelowPlannedWorkoutStepDuration;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.PowerBelowPlannedWorkoutStepDuration PickPowerBelowPlannedWorkoutStepDuration() => IsPowerBelowPlannedWorkoutStepDuration
+            ? PowerBelowPlannedWorkoutStepDuration!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PowerBelowPlannedWorkoutStepDuration' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -102,6 +182,26 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickFixedRestPlannedWorkoutStepDuration(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.FixedRestPlannedWorkoutStepDuration? value)
+        {
+            value = FixedRestPlannedWorkoutStepDuration;
+            return IsFixedRestPlannedWorkoutStepDuration;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.FixedRestPlannedWorkoutStepDuration PickFixedRestPlannedWorkoutStepDuration() => IsFixedRestPlannedWorkoutStepDuration
+            ? FixedRestPlannedWorkoutStepDuration!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FixedRestPlannedWorkoutStepDuration' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.CaloriesPlannedWorkoutStepDuration? CaloriesPlannedWorkoutStepDuration { get; init; }
 #else
@@ -115,6 +215,26 @@ namespace Terra
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CaloriesPlannedWorkoutStepDuration))]
 #endif
         public bool IsCaloriesPlannedWorkoutStepDuration => CaloriesPlannedWorkoutStepDuration != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickCaloriesPlannedWorkoutStepDuration(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.CaloriesPlannedWorkoutStepDuration? value)
+        {
+            value = CaloriesPlannedWorkoutStepDuration;
+            return IsCaloriesPlannedWorkoutStepDuration;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.CaloriesPlannedWorkoutStepDuration PickCaloriesPlannedWorkoutStepDuration() => IsCaloriesPlannedWorkoutStepDuration
+            ? CaloriesPlannedWorkoutStepDuration!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CaloriesPlannedWorkoutStepDuration' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -136,6 +256,26 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickHRAbovePlannedWorkoutStepDuration(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.HRAbovePlannedWorkoutStepDuration? value)
+        {
+            value = HRAbovePlannedWorkoutStepDuration;
+            return IsHRAbovePlannedWorkoutStepDuration;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.HRAbovePlannedWorkoutStepDuration PickHRAbovePlannedWorkoutStepDuration() => IsHRAbovePlannedWorkoutStepDuration
+            ? HRAbovePlannedWorkoutStepDuration!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'HRAbovePlannedWorkoutStepDuration' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.HRBelowPlannedWorkoutStepDuration? HRBelowPlannedWorkoutStepDuration { get; init; }
 #else
@@ -149,6 +289,26 @@ namespace Terra
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(HRBelowPlannedWorkoutStepDuration))]
 #endif
         public bool IsHRBelowPlannedWorkoutStepDuration => HRBelowPlannedWorkoutStepDuration != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickHRBelowPlannedWorkoutStepDuration(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.HRBelowPlannedWorkoutStepDuration? value)
+        {
+            value = HRBelowPlannedWorkoutStepDuration;
+            return IsHRBelowPlannedWorkoutStepDuration;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.HRBelowPlannedWorkoutStepDuration PickHRBelowPlannedWorkoutStepDuration() => IsHRBelowPlannedWorkoutStepDuration
+            ? HRBelowPlannedWorkoutStepDuration!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'HRBelowPlannedWorkoutStepDuration' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -170,6 +330,26 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickRepsPlannedWorkoutStepDuration(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.RepsPlannedWorkoutStepDuration? value)
+        {
+            value = RepsPlannedWorkoutStepDuration;
+            return IsRepsPlannedWorkoutStepDuration;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.RepsPlannedWorkoutStepDuration PickRepsPlannedWorkoutStepDuration() => IsRepsPlannedWorkoutStepDuration
+            ? RepsPlannedWorkoutStepDuration!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RepsPlannedWorkoutStepDuration' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.DistancePlannedWorkoutStepDuration? DistancePlannedWorkoutStepDuration { get; init; }
 #else
@@ -187,6 +367,26 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickDistancePlannedWorkoutStepDuration(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.DistancePlannedWorkoutStepDuration? value)
+        {
+            value = DistancePlannedWorkoutStepDuration;
+            return IsDistancePlannedWorkoutStepDuration;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.DistancePlannedWorkoutStepDuration PickDistancePlannedWorkoutStepDuration() => IsDistancePlannedWorkoutStepDuration
+            ? DistancePlannedWorkoutStepDuration!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'DistancePlannedWorkoutStepDuration' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StepsPlannedWorkoutStepDuration? StepsPlannedWorkoutStepDuration { get; init; }
 #else
@@ -200,6 +400,26 @@ namespace Terra
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StepsPlannedWorkoutStepDuration))]
 #endif
         public bool IsStepsPlannedWorkoutStepDuration => StepsPlannedWorkoutStepDuration != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickStepsPlannedWorkoutStepDuration(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.StepsPlannedWorkoutStepDuration? value)
+        {
+            value = StepsPlannedWorkoutStepDuration;
+            return IsStepsPlannedWorkoutStepDuration;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StepsPlannedWorkoutStepDuration PickStepsPlannedWorkoutStepDuration() => IsStepsPlannedWorkoutStepDuration
+            ? StepsPlannedWorkoutStepDuration!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'StepsPlannedWorkoutStepDuration' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -217,6 +437,11 @@ namespace Terra
         {
             PlannedWorkoutStepDuration = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PlannedWorkoutStepDurations FromPlannedWorkoutStepDuration(global::Terra.PlannedWorkoutStepDuration? value) => new PlannedWorkoutStepDurations(value);
 
         /// <summary>
         /// 
@@ -239,6 +464,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static PlannedWorkoutStepDurations FromTimePlannedWorkoutStepDuration(global::Terra.TimePlannedWorkoutStepDuration? value) => new PlannedWorkoutStepDurations(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PlannedWorkoutStepDurations(global::Terra.PowerAbovePlannedWorkoutStepDuration value) => new PlannedWorkoutStepDurations((global::Terra.PowerAbovePlannedWorkoutStepDuration?)value);
 
         /// <summary>
@@ -253,6 +483,11 @@ namespace Terra
         {
             PowerAbovePlannedWorkoutStepDuration = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PlannedWorkoutStepDurations FromPowerAbovePlannedWorkoutStepDuration(global::Terra.PowerAbovePlannedWorkoutStepDuration? value) => new PlannedWorkoutStepDurations(value);
 
         /// <summary>
         /// 
@@ -275,6 +510,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static PlannedWorkoutStepDurations FromPowerBelowPlannedWorkoutStepDuration(global::Terra.PowerBelowPlannedWorkoutStepDuration? value) => new PlannedWorkoutStepDurations(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PlannedWorkoutStepDurations(global::Terra.FixedRestPlannedWorkoutStepDuration value) => new PlannedWorkoutStepDurations((global::Terra.FixedRestPlannedWorkoutStepDuration?)value);
 
         /// <summary>
@@ -289,6 +529,11 @@ namespace Terra
         {
             FixedRestPlannedWorkoutStepDuration = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PlannedWorkoutStepDurations FromFixedRestPlannedWorkoutStepDuration(global::Terra.FixedRestPlannedWorkoutStepDuration? value) => new PlannedWorkoutStepDurations(value);
 
         /// <summary>
         /// 
@@ -311,6 +556,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static PlannedWorkoutStepDurations FromCaloriesPlannedWorkoutStepDuration(global::Terra.CaloriesPlannedWorkoutStepDuration? value) => new PlannedWorkoutStepDurations(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PlannedWorkoutStepDurations(global::Terra.HRAbovePlannedWorkoutStepDuration value) => new PlannedWorkoutStepDurations((global::Terra.HRAbovePlannedWorkoutStepDuration?)value);
 
         /// <summary>
@@ -325,6 +575,11 @@ namespace Terra
         {
             HRAbovePlannedWorkoutStepDuration = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PlannedWorkoutStepDurations FromHRAbovePlannedWorkoutStepDuration(global::Terra.HRAbovePlannedWorkoutStepDuration? value) => new PlannedWorkoutStepDurations(value);
 
         /// <summary>
         /// 
@@ -347,6 +602,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static PlannedWorkoutStepDurations FromHRBelowPlannedWorkoutStepDuration(global::Terra.HRBelowPlannedWorkoutStepDuration? value) => new PlannedWorkoutStepDurations(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PlannedWorkoutStepDurations(global::Terra.RepsPlannedWorkoutStepDuration value) => new PlannedWorkoutStepDurations((global::Terra.RepsPlannedWorkoutStepDuration?)value);
 
         /// <summary>
@@ -361,6 +621,11 @@ namespace Terra
         {
             RepsPlannedWorkoutStepDuration = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PlannedWorkoutStepDurations FromRepsPlannedWorkoutStepDuration(global::Terra.RepsPlannedWorkoutStepDuration? value) => new PlannedWorkoutStepDurations(value);
 
         /// <summary>
         /// 
@@ -383,6 +648,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static PlannedWorkoutStepDurations FromDistancePlannedWorkoutStepDuration(global::Terra.DistancePlannedWorkoutStepDuration? value) => new PlannedWorkoutStepDurations(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PlannedWorkoutStepDurations(global::Terra.StepsPlannedWorkoutStepDuration value) => new PlannedWorkoutStepDurations((global::Terra.StepsPlannedWorkoutStepDuration?)value);
 
         /// <summary>
@@ -397,6 +667,11 @@ namespace Terra
         {
             StepsPlannedWorkoutStepDuration = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PlannedWorkoutStepDurations FromStepsPlannedWorkoutStepDuration(global::Terra.StepsPlannedWorkoutStepDuration? value) => new PlannedWorkoutStepDurations(value);
 
         /// <summary>
         /// 
@@ -477,17 +752,17 @@ namespace Terra
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Terra.PlannedWorkoutStepDuration?, TResult>? plannedWorkoutStepDuration = null,
-            global::System.Func<global::Terra.TimePlannedWorkoutStepDuration?, TResult>? timePlannedWorkoutStepDuration = null,
-            global::System.Func<global::Terra.PowerAbovePlannedWorkoutStepDuration?, TResult>? powerAbovePlannedWorkoutStepDuration = null,
-            global::System.Func<global::Terra.PowerBelowPlannedWorkoutStepDuration?, TResult>? powerBelowPlannedWorkoutStepDuration = null,
-            global::System.Func<global::Terra.FixedRestPlannedWorkoutStepDuration?, TResult>? fixedRestPlannedWorkoutStepDuration = null,
-            global::System.Func<global::Terra.CaloriesPlannedWorkoutStepDuration?, TResult>? caloriesPlannedWorkoutStepDuration = null,
-            global::System.Func<global::Terra.HRAbovePlannedWorkoutStepDuration?, TResult>? hRAbovePlannedWorkoutStepDuration = null,
-            global::System.Func<global::Terra.HRBelowPlannedWorkoutStepDuration?, TResult>? hRBelowPlannedWorkoutStepDuration = null,
-            global::System.Func<global::Terra.RepsPlannedWorkoutStepDuration?, TResult>? repsPlannedWorkoutStepDuration = null,
-            global::System.Func<global::Terra.DistancePlannedWorkoutStepDuration?, TResult>? distancePlannedWorkoutStepDuration = null,
-            global::System.Func<global::Terra.StepsPlannedWorkoutStepDuration?, TResult>? stepsPlannedWorkoutStepDuration = null,
+            global::System.Func<global::Terra.PlannedWorkoutStepDuration, TResult>? plannedWorkoutStepDuration = null,
+            global::System.Func<global::Terra.TimePlannedWorkoutStepDuration, TResult>? timePlannedWorkoutStepDuration = null,
+            global::System.Func<global::Terra.PowerAbovePlannedWorkoutStepDuration, TResult>? powerAbovePlannedWorkoutStepDuration = null,
+            global::System.Func<global::Terra.PowerBelowPlannedWorkoutStepDuration, TResult>? powerBelowPlannedWorkoutStepDuration = null,
+            global::System.Func<global::Terra.FixedRestPlannedWorkoutStepDuration, TResult>? fixedRestPlannedWorkoutStepDuration = null,
+            global::System.Func<global::Terra.CaloriesPlannedWorkoutStepDuration, TResult>? caloriesPlannedWorkoutStepDuration = null,
+            global::System.Func<global::Terra.HRAbovePlannedWorkoutStepDuration, TResult>? hRAbovePlannedWorkoutStepDuration = null,
+            global::System.Func<global::Terra.HRBelowPlannedWorkoutStepDuration, TResult>? hRBelowPlannedWorkoutStepDuration = null,
+            global::System.Func<global::Terra.RepsPlannedWorkoutStepDuration, TResult>? repsPlannedWorkoutStepDuration = null,
+            global::System.Func<global::Terra.DistancePlannedWorkoutStepDuration, TResult>? distancePlannedWorkoutStepDuration = null,
+            global::System.Func<global::Terra.StepsPlannedWorkoutStepDuration, TResult>? stepsPlannedWorkoutStepDuration = null,
             bool validate = true)
         {
             if (validate)
@@ -547,17 +822,95 @@ namespace Terra
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Terra.PlannedWorkoutStepDuration?>? plannedWorkoutStepDuration = null,
-            global::System.Action<global::Terra.TimePlannedWorkoutStepDuration?>? timePlannedWorkoutStepDuration = null,
-            global::System.Action<global::Terra.PowerAbovePlannedWorkoutStepDuration?>? powerAbovePlannedWorkoutStepDuration = null,
-            global::System.Action<global::Terra.PowerBelowPlannedWorkoutStepDuration?>? powerBelowPlannedWorkoutStepDuration = null,
-            global::System.Action<global::Terra.FixedRestPlannedWorkoutStepDuration?>? fixedRestPlannedWorkoutStepDuration = null,
-            global::System.Action<global::Terra.CaloriesPlannedWorkoutStepDuration?>? caloriesPlannedWorkoutStepDuration = null,
-            global::System.Action<global::Terra.HRAbovePlannedWorkoutStepDuration?>? hRAbovePlannedWorkoutStepDuration = null,
-            global::System.Action<global::Terra.HRBelowPlannedWorkoutStepDuration?>? hRBelowPlannedWorkoutStepDuration = null,
-            global::System.Action<global::Terra.RepsPlannedWorkoutStepDuration?>? repsPlannedWorkoutStepDuration = null,
-            global::System.Action<global::Terra.DistancePlannedWorkoutStepDuration?>? distancePlannedWorkoutStepDuration = null,
-            global::System.Action<global::Terra.StepsPlannedWorkoutStepDuration?>? stepsPlannedWorkoutStepDuration = null,
+            global::System.Action<global::Terra.PlannedWorkoutStepDuration>? plannedWorkoutStepDuration = null,
+
+            global::System.Action<global::Terra.TimePlannedWorkoutStepDuration>? timePlannedWorkoutStepDuration = null,
+
+            global::System.Action<global::Terra.PowerAbovePlannedWorkoutStepDuration>? powerAbovePlannedWorkoutStepDuration = null,
+
+            global::System.Action<global::Terra.PowerBelowPlannedWorkoutStepDuration>? powerBelowPlannedWorkoutStepDuration = null,
+
+            global::System.Action<global::Terra.FixedRestPlannedWorkoutStepDuration>? fixedRestPlannedWorkoutStepDuration = null,
+
+            global::System.Action<global::Terra.CaloriesPlannedWorkoutStepDuration>? caloriesPlannedWorkoutStepDuration = null,
+
+            global::System.Action<global::Terra.HRAbovePlannedWorkoutStepDuration>? hRAbovePlannedWorkoutStepDuration = null,
+
+            global::System.Action<global::Terra.HRBelowPlannedWorkoutStepDuration>? hRBelowPlannedWorkoutStepDuration = null,
+
+            global::System.Action<global::Terra.RepsPlannedWorkoutStepDuration>? repsPlannedWorkoutStepDuration = null,
+
+            global::System.Action<global::Terra.DistancePlannedWorkoutStepDuration>? distancePlannedWorkoutStepDuration = null,
+
+            global::System.Action<global::Terra.StepsPlannedWorkoutStepDuration>? stepsPlannedWorkoutStepDuration = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsPlannedWorkoutStepDuration)
+            {
+                plannedWorkoutStepDuration?.Invoke(PlannedWorkoutStepDuration!);
+            }
+            else if (IsTimePlannedWorkoutStepDuration)
+            {
+                timePlannedWorkoutStepDuration?.Invoke(TimePlannedWorkoutStepDuration!);
+            }
+            else if (IsPowerAbovePlannedWorkoutStepDuration)
+            {
+                powerAbovePlannedWorkoutStepDuration?.Invoke(PowerAbovePlannedWorkoutStepDuration!);
+            }
+            else if (IsPowerBelowPlannedWorkoutStepDuration)
+            {
+                powerBelowPlannedWorkoutStepDuration?.Invoke(PowerBelowPlannedWorkoutStepDuration!);
+            }
+            else if (IsFixedRestPlannedWorkoutStepDuration)
+            {
+                fixedRestPlannedWorkoutStepDuration?.Invoke(FixedRestPlannedWorkoutStepDuration!);
+            }
+            else if (IsCaloriesPlannedWorkoutStepDuration)
+            {
+                caloriesPlannedWorkoutStepDuration?.Invoke(CaloriesPlannedWorkoutStepDuration!);
+            }
+            else if (IsHRAbovePlannedWorkoutStepDuration)
+            {
+                hRAbovePlannedWorkoutStepDuration?.Invoke(HRAbovePlannedWorkoutStepDuration!);
+            }
+            else if (IsHRBelowPlannedWorkoutStepDuration)
+            {
+                hRBelowPlannedWorkoutStepDuration?.Invoke(HRBelowPlannedWorkoutStepDuration!);
+            }
+            else if (IsRepsPlannedWorkoutStepDuration)
+            {
+                repsPlannedWorkoutStepDuration?.Invoke(RepsPlannedWorkoutStepDuration!);
+            }
+            else if (IsDistancePlannedWorkoutStepDuration)
+            {
+                distancePlannedWorkoutStepDuration?.Invoke(DistancePlannedWorkoutStepDuration!);
+            }
+            else if (IsStepsPlannedWorkoutStepDuration)
+            {
+                stepsPlannedWorkoutStepDuration?.Invoke(StepsPlannedWorkoutStepDuration!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Terra.PlannedWorkoutStepDuration>? plannedWorkoutStepDuration = null,
+            global::System.Action<global::Terra.TimePlannedWorkoutStepDuration>? timePlannedWorkoutStepDuration = null,
+            global::System.Action<global::Terra.PowerAbovePlannedWorkoutStepDuration>? powerAbovePlannedWorkoutStepDuration = null,
+            global::System.Action<global::Terra.PowerBelowPlannedWorkoutStepDuration>? powerBelowPlannedWorkoutStepDuration = null,
+            global::System.Action<global::Terra.FixedRestPlannedWorkoutStepDuration>? fixedRestPlannedWorkoutStepDuration = null,
+            global::System.Action<global::Terra.CaloriesPlannedWorkoutStepDuration>? caloriesPlannedWorkoutStepDuration = null,
+            global::System.Action<global::Terra.HRAbovePlannedWorkoutStepDuration>? hRAbovePlannedWorkoutStepDuration = null,
+            global::System.Action<global::Terra.HRBelowPlannedWorkoutStepDuration>? hRBelowPlannedWorkoutStepDuration = null,
+            global::System.Action<global::Terra.RepsPlannedWorkoutStepDuration>? repsPlannedWorkoutStepDuration = null,
+            global::System.Action<global::Terra.DistancePlannedWorkoutStepDuration>? distancePlannedWorkoutStepDuration = null,
+            global::System.Action<global::Terra.StepsPlannedWorkoutStepDuration>? stepsPlannedWorkoutStepDuration = null,
             bool validate = true)
         {
             if (validate)

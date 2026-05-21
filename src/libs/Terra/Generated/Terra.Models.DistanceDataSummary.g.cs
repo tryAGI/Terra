@@ -81,5 +81,6 @@ namespace Terra
         public DistanceDataSummary()
         {
         }
+
     }
 }

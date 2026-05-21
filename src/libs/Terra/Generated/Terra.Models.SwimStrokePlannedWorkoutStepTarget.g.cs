@@ -59,5 +59,6 @@ namespace Terra
         public SwimStrokePlannedWorkoutStepTarget()
         {
         }
+
     }
 }

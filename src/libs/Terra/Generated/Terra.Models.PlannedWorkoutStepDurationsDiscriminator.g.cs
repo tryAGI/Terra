@@ -40,5 +40,6 @@ namespace Terra
         public PlannedWorkoutStepDurationsDiscriminator()
         {
         }
+
     }
 }

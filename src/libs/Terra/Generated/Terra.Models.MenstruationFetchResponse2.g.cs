@@ -57,5 +57,6 @@ namespace Terra
         public MenstruationFetchResponse2()
         {
         }
+
     }
 }

@@ -97,5 +97,6 @@ namespace Terra
         public SnoringData()
         {
         }
+
     }
 }

@@ -60,5 +60,6 @@ namespace Terra
         public UserGetInfoForUserIDResponse2()
         {
         }
+
     }
 }

@@ -102,5 +102,6 @@ namespace Terra
         public IntegrationProviderTypes()
         {
         }
+
     }
 }

@@ -27,6 +27,26 @@ namespace Terra
         public bool IsHealthcheck => Healthcheck != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickHealthcheck(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.HealthcheckEvent? value)
+        {
+            value = Healthcheck;
+            return IsHealthcheck;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.HealthcheckEvent PickHealthcheck() => IsHealthcheck
+            ? Healthcheck!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Healthcheck' but the value was {ToString()}.");
+
+        /// <summary>
         /// Authentication success event
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +62,26 @@ namespace Terra
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AuthSuccess))]
 #endif
         public bool IsAuthSuccess => AuthSuccess != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAuthSuccess(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.AuthSuccessEvent? value)
+        {
+            value = AuthSuccess;
+            return IsAuthSuccess;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.AuthSuccessEvent PickAuthSuccess() => IsAuthSuccess
+            ? AuthSuccess!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AuthSuccess' but the value was {ToString()}.");
 
         /// <summary>
         /// Authentication error event
@@ -61,6 +101,26 @@ namespace Terra
         public bool IsAuthError => AuthError != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAuthError(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.AuthErrorEvent? value)
+        {
+            value = AuthError;
+            return IsAuthError;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.AuthErrorEvent PickAuthError() => IsAuthError
+            ? AuthError!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AuthError' but the value was {ToString()}.");
+
+        /// <summary>
         /// User deauthentication event
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -76,6 +136,26 @@ namespace Terra
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Deauth))]
 #endif
         public bool IsDeauth => Deauth != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickDeauth(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.DeauthEvent? value)
+        {
+            value = Deauth;
+            return IsDeauth;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.DeauthEvent PickDeauth() => IsDeauth
+            ? Deauth!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Deauth' but the value was {ToString()}.");
 
         /// <summary>
         /// User re-authentication event
@@ -95,6 +175,26 @@ namespace Terra
         public bool IsUserReauth => UserReauth != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickUserReauth(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.UserReauthEvent? value)
+        {
+            value = UserReauth;
+            return IsUserReauth;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.UserReauthEvent PickUserReauth() => IsUserReauth
+            ? UserReauth!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UserReauth' but the value was {ToString()}.");
+
+        /// <summary>
         /// Access revoked event when a user revokes access through the provider
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -110,6 +210,26 @@ namespace Terra
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AccessRevoked))]
 #endif
         public bool IsAccessRevoked => AccessRevoked != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAccessRevoked(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.AccessRevokedEvent? value)
+        {
+            value = AccessRevoked;
+            return IsAccessRevoked;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.AccessRevokedEvent PickAccessRevoked() => IsAccessRevoked
+            ? AccessRevoked!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AccessRevoked' but the value was {ToString()}.");
 
         /// <summary>
         /// Connection error event
@@ -129,6 +249,26 @@ namespace Terra
         public bool IsConnectionError => ConnectionError != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickConnectionError(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.ConnectionErrorEvent? value)
+        {
+            value = ConnectionError;
+            return IsConnectionError;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.ConnectionErrorEvent PickConnectionError() => IsConnectionError
+            ? ConnectionError!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ConnectionError' but the value was {ToString()}.");
+
+        /// <summary>
         /// Google no datasource event
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -144,6 +284,26 @@ namespace Terra
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GoogleNoDatasource))]
 #endif
         public bool IsGoogleNoDatasource => GoogleNoDatasource != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickGoogleNoDatasource(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.GoogleNoDatasourceEvent? value)
+        {
+            value = GoogleNoDatasource;
+            return IsGoogleNoDatasource;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.GoogleNoDatasourceEvent PickGoogleNoDatasource() => IsGoogleNoDatasource
+            ? GoogleNoDatasource!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GoogleNoDatasource' but the value was {ToString()}.");
 
         /// <summary>
         /// Permission change event
@@ -163,6 +323,26 @@ namespace Terra
         public bool IsPermissionChange => PermissionChange != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickPermissionChange(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.PermissionChangeEvent? value)
+        {
+            value = PermissionChange;
+            return IsPermissionChange;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.PermissionChangeEvent PickPermissionChange() => IsPermissionChange
+            ? PermissionChange!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PermissionChange' but the value was {ToString()}.");
+
+        /// <summary>
         /// Processing event returned when data is being fetched asynchronously
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -178,6 +358,26 @@ namespace Terra
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Processing))]
 #endif
         public bool IsProcessing => Processing != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickProcessing(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.ProcessingEvent? value)
+        {
+            value = Processing;
+            return IsProcessing;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.ProcessingEvent PickProcessing() => IsProcessing
+            ? Processing!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Processing' but the value was {ToString()}.");
 
         /// <summary>
         /// Large request processing event
@@ -197,6 +397,26 @@ namespace Terra
         public bool IsLargeRequestProcessing => LargeRequestProcessing != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickLargeRequestProcessing(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.LargeRequestProcessingEvent? value)
+        {
+            value = LargeRequestProcessing;
+            return IsLargeRequestProcessing;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.LargeRequestProcessingEvent PickLargeRequestProcessing() => IsLargeRequestProcessing
+            ? LargeRequestProcessing!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'LargeRequestProcessing' but the value was {ToString()}.");
+
+        /// <summary>
         /// Large request sending event
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -212,6 +432,26 @@ namespace Terra
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LargeRequestSending))]
 #endif
         public bool IsLargeRequestSending => LargeRequestSending != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickLargeRequestSending(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.LargeRequestSendingEvent? value)
+        {
+            value = LargeRequestSending;
+            return IsLargeRequestSending;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.LargeRequestSendingEvent PickLargeRequestSending() => IsLargeRequestSending
+            ? LargeRequestSending!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'LargeRequestSending' but the value was {ToString()}.");
 
         /// <summary>
         /// Rate limit hit event
@@ -231,6 +471,26 @@ namespace Terra
         public bool IsRateLimitHit => RateLimitHit != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickRateLimitHit(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.RateLimitHitEvent? value)
+        {
+            value = RateLimitHit;
+            return IsRateLimitHit;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.RateLimitHitEvent PickRateLimitHit() => IsRateLimitHit
+            ? RateLimitHit!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RateLimitHit' but the value was {ToString()}.");
+
+        /// <summary>
         /// Activity data event
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -246,6 +506,26 @@ namespace Terra
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Activity))]
 #endif
         public bool IsActivity => Activity != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickActivity(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.ActivityEvent? value)
+        {
+            value = Activity;
+            return IsActivity;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.ActivityEvent PickActivity() => IsActivity
+            ? Activity!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Activity' but the value was {ToString()}.");
 
         /// <summary>
         /// Athlete data event
@@ -265,6 +545,26 @@ namespace Terra
         public bool IsAthlete => Athlete != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAthlete(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.AthleteEvent? value)
+        {
+            value = Athlete;
+            return IsAthlete;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.AthleteEvent PickAthlete() => IsAthlete
+            ? Athlete!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Athlete' but the value was {ToString()}.");
+
+        /// <summary>
         /// Body data event
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -280,6 +580,26 @@ namespace Terra
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Body))]
 #endif
         public bool IsBody => Body != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickBody(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.BodyEvent? value)
+        {
+            value = Body;
+            return IsBody;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.BodyEvent PickBody() => IsBody
+            ? Body!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Body' but the value was {ToString()}.");
 
         /// <summary>
         /// Daily data event
@@ -299,6 +619,26 @@ namespace Terra
         public bool IsDaily => Daily != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickDaily(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.DailyEvent? value)
+        {
+            value = Daily;
+            return IsDaily;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.DailyEvent PickDaily() => IsDaily
+            ? Daily!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Daily' but the value was {ToString()}.");
+
+        /// <summary>
         /// Menstruation data event
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -314,6 +654,26 @@ namespace Terra
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Menstruation))]
 #endif
         public bool IsMenstruation => Menstruation != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickMenstruation(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.MenstruationEvent? value)
+        {
+            value = Menstruation;
+            return IsMenstruation;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.MenstruationEvent PickMenstruation() => IsMenstruation
+            ? Menstruation!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Menstruation' but the value was {ToString()}.");
 
         /// <summary>
         /// Nutrition data event
@@ -333,6 +693,26 @@ namespace Terra
         public bool IsNutrition => Nutrition != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickNutrition(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.NutritionEvent? value)
+        {
+            value = Nutrition;
+            return IsNutrition;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.NutritionEvent PickNutrition() => IsNutrition
+            ? Nutrition!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Nutrition' but the value was {ToString()}.");
+
+        /// <summary>
         /// Sleep data event
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -350,6 +730,26 @@ namespace Terra
         public bool IsSleep => Sleep != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickSleep(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.SleepEvent? value)
+        {
+            value = Sleep;
+            return IsSleep;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.SleepEvent PickSleep() => IsSleep
+            ? Sleep!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Sleep' but the value was {ToString()}.");
+
+        /// <summary>
         /// S3 Upload event with data download URL
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -365,6 +765,26 @@ namespace Terra
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(S3Payload))]
 #endif
         public bool IsS3Payload => S3Payload != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickS3Payload(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.S3PayloadEvent? value)
+        {
+            value = S3Payload;
+            return IsS3Payload;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.S3PayloadEvent PickS3Payload() => IsS3Payload
+            ? S3Payload!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'S3Payload' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -382,6 +802,11 @@ namespace Terra
         {
             Healthcheck = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WebhookEventType FromHealthcheck(global::Terra.HealthcheckEvent? value) => new WebhookEventType(value);
 
         /// <summary>
         /// 
@@ -404,6 +829,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static WebhookEventType FromAuthSuccess(global::Terra.AuthSuccessEvent? value) => new WebhookEventType(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WebhookEventType(global::Terra.AuthErrorEvent value) => new WebhookEventType((global::Terra.AuthErrorEvent?)value);
 
         /// <summary>
@@ -418,6 +848,11 @@ namespace Terra
         {
             AuthError = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WebhookEventType FromAuthError(global::Terra.AuthErrorEvent? value) => new WebhookEventType(value);
 
         /// <summary>
         /// 
@@ -440,6 +875,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static WebhookEventType FromDeauth(global::Terra.DeauthEvent? value) => new WebhookEventType(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WebhookEventType(global::Terra.UserReauthEvent value) => new WebhookEventType((global::Terra.UserReauthEvent?)value);
 
         /// <summary>
@@ -454,6 +894,11 @@ namespace Terra
         {
             UserReauth = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WebhookEventType FromUserReauth(global::Terra.UserReauthEvent? value) => new WebhookEventType(value);
 
         /// <summary>
         /// 
@@ -476,6 +921,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static WebhookEventType FromAccessRevoked(global::Terra.AccessRevokedEvent? value) => new WebhookEventType(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WebhookEventType(global::Terra.ConnectionErrorEvent value) => new WebhookEventType((global::Terra.ConnectionErrorEvent?)value);
 
         /// <summary>
@@ -490,6 +940,11 @@ namespace Terra
         {
             ConnectionError = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WebhookEventType FromConnectionError(global::Terra.ConnectionErrorEvent? value) => new WebhookEventType(value);
 
         /// <summary>
         /// 
@@ -512,6 +967,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static WebhookEventType FromGoogleNoDatasource(global::Terra.GoogleNoDatasourceEvent? value) => new WebhookEventType(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WebhookEventType(global::Terra.PermissionChangeEvent value) => new WebhookEventType((global::Terra.PermissionChangeEvent?)value);
 
         /// <summary>
@@ -526,6 +986,11 @@ namespace Terra
         {
             PermissionChange = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WebhookEventType FromPermissionChange(global::Terra.PermissionChangeEvent? value) => new WebhookEventType(value);
 
         /// <summary>
         /// 
@@ -548,6 +1013,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static WebhookEventType FromProcessing(global::Terra.ProcessingEvent? value) => new WebhookEventType(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WebhookEventType(global::Terra.LargeRequestProcessingEvent value) => new WebhookEventType((global::Terra.LargeRequestProcessingEvent?)value);
 
         /// <summary>
@@ -562,6 +1032,11 @@ namespace Terra
         {
             LargeRequestProcessing = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WebhookEventType FromLargeRequestProcessing(global::Terra.LargeRequestProcessingEvent? value) => new WebhookEventType(value);
 
         /// <summary>
         /// 
@@ -584,6 +1059,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static WebhookEventType FromLargeRequestSending(global::Terra.LargeRequestSendingEvent? value) => new WebhookEventType(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WebhookEventType(global::Terra.RateLimitHitEvent value) => new WebhookEventType((global::Terra.RateLimitHitEvent?)value);
 
         /// <summary>
@@ -598,6 +1078,11 @@ namespace Terra
         {
             RateLimitHit = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WebhookEventType FromRateLimitHit(global::Terra.RateLimitHitEvent? value) => new WebhookEventType(value);
 
         /// <summary>
         /// 
@@ -620,6 +1105,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static WebhookEventType FromActivity(global::Terra.ActivityEvent? value) => new WebhookEventType(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WebhookEventType(global::Terra.AthleteEvent value) => new WebhookEventType((global::Terra.AthleteEvent?)value);
 
         /// <summary>
@@ -634,6 +1124,11 @@ namespace Terra
         {
             Athlete = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WebhookEventType FromAthlete(global::Terra.AthleteEvent? value) => new WebhookEventType(value);
 
         /// <summary>
         /// 
@@ -656,6 +1151,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static WebhookEventType FromBody(global::Terra.BodyEvent? value) => new WebhookEventType(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WebhookEventType(global::Terra.DailyEvent value) => new WebhookEventType((global::Terra.DailyEvent?)value);
 
         /// <summary>
@@ -670,6 +1170,11 @@ namespace Terra
         {
             Daily = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WebhookEventType FromDaily(global::Terra.DailyEvent? value) => new WebhookEventType(value);
 
         /// <summary>
         /// 
@@ -692,6 +1197,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static WebhookEventType FromMenstruation(global::Terra.MenstruationEvent? value) => new WebhookEventType(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WebhookEventType(global::Terra.NutritionEvent value) => new WebhookEventType((global::Terra.NutritionEvent?)value);
 
         /// <summary>
@@ -706,6 +1216,11 @@ namespace Terra
         {
             Nutrition = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WebhookEventType FromNutrition(global::Terra.NutritionEvent? value) => new WebhookEventType(value);
 
         /// <summary>
         /// 
@@ -728,6 +1243,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static WebhookEventType FromSleep(global::Terra.SleepEvent? value) => new WebhookEventType(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WebhookEventType(global::Terra.S3PayloadEvent value) => new WebhookEventType((global::Terra.S3PayloadEvent?)value);
 
         /// <summary>
@@ -742,6 +1262,11 @@ namespace Terra
         {
             S3Payload = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WebhookEventType FromS3Payload(global::Terra.S3PayloadEvent? value) => new WebhookEventType(value);
 
         /// <summary>
         /// 
@@ -859,27 +1384,27 @@ namespace Terra
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Terra.HealthcheckEvent?, TResult>? healthcheck = null,
-            global::System.Func<global::Terra.AuthSuccessEvent?, TResult>? authSuccess = null,
-            global::System.Func<global::Terra.AuthErrorEvent?, TResult>? authError = null,
-            global::System.Func<global::Terra.DeauthEvent?, TResult>? deauth = null,
-            global::System.Func<global::Terra.UserReauthEvent?, TResult>? userReauth = null,
-            global::System.Func<global::Terra.AccessRevokedEvent?, TResult>? accessRevoked = null,
-            global::System.Func<global::Terra.ConnectionErrorEvent?, TResult>? connectionError = null,
-            global::System.Func<global::Terra.GoogleNoDatasourceEvent?, TResult>? googleNoDatasource = null,
-            global::System.Func<global::Terra.PermissionChangeEvent?, TResult>? permissionChange = null,
-            global::System.Func<global::Terra.ProcessingEvent?, TResult>? processing = null,
-            global::System.Func<global::Terra.LargeRequestProcessingEvent?, TResult>? largeRequestProcessing = null,
-            global::System.Func<global::Terra.LargeRequestSendingEvent?, TResult>? largeRequestSending = null,
-            global::System.Func<global::Terra.RateLimitHitEvent?, TResult>? rateLimitHit = null,
-            global::System.Func<global::Terra.ActivityEvent?, TResult>? activity = null,
-            global::System.Func<global::Terra.AthleteEvent?, TResult>? athlete = null,
-            global::System.Func<global::Terra.BodyEvent?, TResult>? body = null,
-            global::System.Func<global::Terra.DailyEvent?, TResult>? daily = null,
-            global::System.Func<global::Terra.MenstruationEvent?, TResult>? menstruation = null,
-            global::System.Func<global::Terra.NutritionEvent?, TResult>? nutrition = null,
-            global::System.Func<global::Terra.SleepEvent?, TResult>? sleep = null,
-            global::System.Func<global::Terra.S3PayloadEvent?, TResult>? s3Payload = null,
+            global::System.Func<global::Terra.HealthcheckEvent, TResult>? healthcheck = null,
+            global::System.Func<global::Terra.AuthSuccessEvent, TResult>? authSuccess = null,
+            global::System.Func<global::Terra.AuthErrorEvent, TResult>? authError = null,
+            global::System.Func<global::Terra.DeauthEvent, TResult>? deauth = null,
+            global::System.Func<global::Terra.UserReauthEvent, TResult>? userReauth = null,
+            global::System.Func<global::Terra.AccessRevokedEvent, TResult>? accessRevoked = null,
+            global::System.Func<global::Terra.ConnectionErrorEvent, TResult>? connectionError = null,
+            global::System.Func<global::Terra.GoogleNoDatasourceEvent, TResult>? googleNoDatasource = null,
+            global::System.Func<global::Terra.PermissionChangeEvent, TResult>? permissionChange = null,
+            global::System.Func<global::Terra.ProcessingEvent, TResult>? processing = null,
+            global::System.Func<global::Terra.LargeRequestProcessingEvent, TResult>? largeRequestProcessing = null,
+            global::System.Func<global::Terra.LargeRequestSendingEvent, TResult>? largeRequestSending = null,
+            global::System.Func<global::Terra.RateLimitHitEvent, TResult>? rateLimitHit = null,
+            global::System.Func<global::Terra.ActivityEvent, TResult>? activity = null,
+            global::System.Func<global::Terra.AthleteEvent, TResult>? athlete = null,
+            global::System.Func<global::Terra.BodyEvent, TResult>? body = null,
+            global::System.Func<global::Terra.DailyEvent, TResult>? daily = null,
+            global::System.Func<global::Terra.MenstruationEvent, TResult>? menstruation = null,
+            global::System.Func<global::Terra.NutritionEvent, TResult>? nutrition = null,
+            global::System.Func<global::Terra.SleepEvent, TResult>? sleep = null,
+            global::System.Func<global::Terra.S3PayloadEvent, TResult>? s3Payload = null,
             bool validate = true)
         {
             if (validate)
@@ -979,27 +1504,165 @@ namespace Terra
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Terra.HealthcheckEvent?>? healthcheck = null,
-            global::System.Action<global::Terra.AuthSuccessEvent?>? authSuccess = null,
-            global::System.Action<global::Terra.AuthErrorEvent?>? authError = null,
-            global::System.Action<global::Terra.DeauthEvent?>? deauth = null,
-            global::System.Action<global::Terra.UserReauthEvent?>? userReauth = null,
-            global::System.Action<global::Terra.AccessRevokedEvent?>? accessRevoked = null,
-            global::System.Action<global::Terra.ConnectionErrorEvent?>? connectionError = null,
-            global::System.Action<global::Terra.GoogleNoDatasourceEvent?>? googleNoDatasource = null,
-            global::System.Action<global::Terra.PermissionChangeEvent?>? permissionChange = null,
-            global::System.Action<global::Terra.ProcessingEvent?>? processing = null,
-            global::System.Action<global::Terra.LargeRequestProcessingEvent?>? largeRequestProcessing = null,
-            global::System.Action<global::Terra.LargeRequestSendingEvent?>? largeRequestSending = null,
-            global::System.Action<global::Terra.RateLimitHitEvent?>? rateLimitHit = null,
-            global::System.Action<global::Terra.ActivityEvent?>? activity = null,
-            global::System.Action<global::Terra.AthleteEvent?>? athlete = null,
-            global::System.Action<global::Terra.BodyEvent?>? body = null,
-            global::System.Action<global::Terra.DailyEvent?>? daily = null,
-            global::System.Action<global::Terra.MenstruationEvent?>? menstruation = null,
-            global::System.Action<global::Terra.NutritionEvent?>? nutrition = null,
-            global::System.Action<global::Terra.SleepEvent?>? sleep = null,
-            global::System.Action<global::Terra.S3PayloadEvent?>? s3Payload = null,
+            global::System.Action<global::Terra.HealthcheckEvent>? healthcheck = null,
+
+            global::System.Action<global::Terra.AuthSuccessEvent>? authSuccess = null,
+
+            global::System.Action<global::Terra.AuthErrorEvent>? authError = null,
+
+            global::System.Action<global::Terra.DeauthEvent>? deauth = null,
+
+            global::System.Action<global::Terra.UserReauthEvent>? userReauth = null,
+
+            global::System.Action<global::Terra.AccessRevokedEvent>? accessRevoked = null,
+
+            global::System.Action<global::Terra.ConnectionErrorEvent>? connectionError = null,
+
+            global::System.Action<global::Terra.GoogleNoDatasourceEvent>? googleNoDatasource = null,
+
+            global::System.Action<global::Terra.PermissionChangeEvent>? permissionChange = null,
+
+            global::System.Action<global::Terra.ProcessingEvent>? processing = null,
+
+            global::System.Action<global::Terra.LargeRequestProcessingEvent>? largeRequestProcessing = null,
+
+            global::System.Action<global::Terra.LargeRequestSendingEvent>? largeRequestSending = null,
+
+            global::System.Action<global::Terra.RateLimitHitEvent>? rateLimitHit = null,
+
+            global::System.Action<global::Terra.ActivityEvent>? activity = null,
+
+            global::System.Action<global::Terra.AthleteEvent>? athlete = null,
+
+            global::System.Action<global::Terra.BodyEvent>? body = null,
+
+            global::System.Action<global::Terra.DailyEvent>? daily = null,
+
+            global::System.Action<global::Terra.MenstruationEvent>? menstruation = null,
+
+            global::System.Action<global::Terra.NutritionEvent>? nutrition = null,
+
+            global::System.Action<global::Terra.SleepEvent>? sleep = null,
+
+            global::System.Action<global::Terra.S3PayloadEvent>? s3Payload = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsHealthcheck)
+            {
+                healthcheck?.Invoke(Healthcheck!);
+            }
+            else if (IsAuthSuccess)
+            {
+                authSuccess?.Invoke(AuthSuccess!);
+            }
+            else if (IsAuthError)
+            {
+                authError?.Invoke(AuthError!);
+            }
+            else if (IsDeauth)
+            {
+                deauth?.Invoke(Deauth!);
+            }
+            else if (IsUserReauth)
+            {
+                userReauth?.Invoke(UserReauth!);
+            }
+            else if (IsAccessRevoked)
+            {
+                accessRevoked?.Invoke(AccessRevoked!);
+            }
+            else if (IsConnectionError)
+            {
+                connectionError?.Invoke(ConnectionError!);
+            }
+            else if (IsGoogleNoDatasource)
+            {
+                googleNoDatasource?.Invoke(GoogleNoDatasource!);
+            }
+            else if (IsPermissionChange)
+            {
+                permissionChange?.Invoke(PermissionChange!);
+            }
+            else if (IsProcessing)
+            {
+                processing?.Invoke(Processing!);
+            }
+            else if (IsLargeRequestProcessing)
+            {
+                largeRequestProcessing?.Invoke(LargeRequestProcessing!);
+            }
+            else if (IsLargeRequestSending)
+            {
+                largeRequestSending?.Invoke(LargeRequestSending!);
+            }
+            else if (IsRateLimitHit)
+            {
+                rateLimitHit?.Invoke(RateLimitHit!);
+            }
+            else if (IsActivity)
+            {
+                activity?.Invoke(Activity!);
+            }
+            else if (IsAthlete)
+            {
+                athlete?.Invoke(Athlete!);
+            }
+            else if (IsBody)
+            {
+                body?.Invoke(Body!);
+            }
+            else if (IsDaily)
+            {
+                daily?.Invoke(Daily!);
+            }
+            else if (IsMenstruation)
+            {
+                menstruation?.Invoke(Menstruation!);
+            }
+            else if (IsNutrition)
+            {
+                nutrition?.Invoke(Nutrition!);
+            }
+            else if (IsSleep)
+            {
+                sleep?.Invoke(Sleep!);
+            }
+            else if (IsS3Payload)
+            {
+                s3Payload?.Invoke(S3Payload!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Terra.HealthcheckEvent>? healthcheck = null,
+            global::System.Action<global::Terra.AuthSuccessEvent>? authSuccess = null,
+            global::System.Action<global::Terra.AuthErrorEvent>? authError = null,
+            global::System.Action<global::Terra.DeauthEvent>? deauth = null,
+            global::System.Action<global::Terra.UserReauthEvent>? userReauth = null,
+            global::System.Action<global::Terra.AccessRevokedEvent>? accessRevoked = null,
+            global::System.Action<global::Terra.ConnectionErrorEvent>? connectionError = null,
+            global::System.Action<global::Terra.GoogleNoDatasourceEvent>? googleNoDatasource = null,
+            global::System.Action<global::Terra.PermissionChangeEvent>? permissionChange = null,
+            global::System.Action<global::Terra.ProcessingEvent>? processing = null,
+            global::System.Action<global::Terra.LargeRequestProcessingEvent>? largeRequestProcessing = null,
+            global::System.Action<global::Terra.LargeRequestSendingEvent>? largeRequestSending = null,
+            global::System.Action<global::Terra.RateLimitHitEvent>? rateLimitHit = null,
+            global::System.Action<global::Terra.ActivityEvent>? activity = null,
+            global::System.Action<global::Terra.AthleteEvent>? athlete = null,
+            global::System.Action<global::Terra.BodyEvent>? body = null,
+            global::System.Action<global::Terra.DailyEvent>? daily = null,
+            global::System.Action<global::Terra.MenstruationEvent>? menstruation = null,
+            global::System.Action<global::Terra.NutritionEvent>? nutrition = null,
+            global::System.Action<global::Terra.SleepEvent>? sleep = null,
+            global::System.Action<global::Terra.S3PayloadEvent>? s3Payload = null,
             bool validate = true)
         {
             if (validate)

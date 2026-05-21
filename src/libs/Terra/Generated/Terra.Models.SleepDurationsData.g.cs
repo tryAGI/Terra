@@ -82,5 +82,6 @@ namespace Terra
         public SleepDurationsData()
         {
         }
+
     }
 }

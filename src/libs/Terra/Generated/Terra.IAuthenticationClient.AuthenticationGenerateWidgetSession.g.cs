@@ -21,6 +21,19 @@ namespace Terra
         /// Generate an authentication link, using the Terra Authentication Widget<br/>
         /// Generates a link to redirect an end user to for them to select an integration and log in with their fitness data provider
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Terra.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse<global::Terra.AuthenticationGenerateWidgetSessionResponse>> AuthenticationGenerateWidgetSessionAsResponseAsync(
+
+            global::Terra.WidgetSessionParams request,
+            global::Terra.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Generate an authentication link, using the Terra Authentication Widget<br/>
+        /// Generates a link to redirect an end user to for them to select an integration and log in with their fitness data provider
+        /// </summary>
         /// <param name="providers">
         /// Comma separated list of providers to display on the device selection page. This overrides your selected sources on your dashboard<br/>
         /// Example: GARMIN,FITBIT,OURA,WITHINGS,SUUNTO

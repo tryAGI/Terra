@@ -72,5 +72,6 @@ namespace Terra
         public PositionSample()
         {
         }
+
     }
 }
