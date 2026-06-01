@@ -47,7 +47,7 @@ namespace Terra
 
         /// <summary>
         /// Retrieve hormone data for a given connection ID<br/>
-        /// Fetches hormone test events (LH, E3G, PDG, HCG, FSH) for a given connection. Each entry is one test event; hormones not measured at that event appear as null. v3 endpoint, uses x-terra-client-id and x-terra-client-secret headers for authentication.
+        /// Fetches hormone test events (LH, E3G, PDG, HCG, FSH) for a given connection. Each entry is one test event; hormones not measured at that event appear as null. Uses x-terra-client-id and x-terra-client-secret headers for authentication.
         /// </summary>
         /// <param name="connectionId"></param>
         /// <param name="startDate"></param>
@@ -74,7 +74,7 @@ namespace Terra
         }
         /// <summary>
         /// Retrieve hormone data for a given connection ID<br/>
-        /// Fetches hormone test events (LH, E3G, PDG, HCG, FSH) for a given connection. Each entry is one test event; hormones not measured at that event appear as null. v3 endpoint, uses x-terra-client-id and x-terra-client-secret headers for authentication.
+        /// Fetches hormone test events (LH, E3G, PDG, HCG, FSH) for a given connection. Each entry is one test event; hormones not measured at that event appear as null. Uses x-terra-client-id and x-terra-client-secret headers for authentication.
         /// </summary>
         /// <param name="connectionId"></param>
         /// <param name="startDate"></param>
@@ -122,7 +122,7 @@ namespace Terra
 
                             var __pathBuilder = new global::Terra.PathBuilder(
                                 path: $"/connections/{connectionId}/hormone",
-                                baseUri: HttpClient.BaseAddress ?? new global::System.Uri("https://api.tryterra.co/v3", global::System.UriKind.RelativeOrAbsolute));
+                                baseUri: HttpClient.BaseAddress);
                             __pathBuilder
                                 .AddRequiredParameter("start_date", startDate.ToString("yyyy-MM-dd"))
                                 .AddOptionalParameter("end_date", endDate?.ToString("yyyy-MM-dd"))

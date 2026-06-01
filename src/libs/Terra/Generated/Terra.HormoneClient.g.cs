@@ -12,7 +12,7 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public const string DefaultBaseUrl = "https://api.tryterra.co/v3";
+        public const string DefaultBaseUrl = "https://access.tryterra.co/api/v2";
 
         private bool _disposeHttpClient = true;
 
@@ -33,9 +33,6 @@ namespace Terra
 
         /// <inheritdoc/>
         public global::Terra.AutoSDKClientOptions Options { get; }
-
-
-        internal global::Terra.AutoSDKServerConfiguration AutoSDKServerConfiguration { get; set; } = new global::Terra.AutoSDKServerConfiguration();
         /// <summary>
         /// 
         /// </summary>
@@ -104,15 +101,10 @@ namespace Terra
         {
 
             HttpClient = httpClient ?? new global::System.Net.Http.HttpClient();
-            if (baseUri is not null)
-            {
-                HttpClient.BaseAddress ??= baseUri;
-            }
+            HttpClient.BaseAddress ??= baseUri ?? new global::System.Uri(DefaultBaseUrl);
             Authorizations = authorizations ?? new global::System.Collections.Generic.List<global::Terra.EndPointAuthorization>();
             Options = options ?? new global::Terra.AutoSDKClientOptions();
             _disposeHttpClient = disposeHttpClient;
-
-            AutoSDKServerConfiguration.ExplicitBaseUri = baseUri ?? httpClient?.BaseAddress;
 
             Initialized(HttpClient);
         }

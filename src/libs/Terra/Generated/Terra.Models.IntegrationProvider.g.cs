@@ -26,9 +26,9 @@ namespace Terra
 
         /// <summary>
         /// URL for the provider's icon image<br/>
-        /// Example: https://api.tryterra.co/v2/static/assets/img/app_icons/mapmyfitness.webp
+        /// Example: https://access.tryterra.co/api/v2/static/assets/img/app_icons/mapmyfitness.webp
         /// </summary>
-        /// <example>https://api.tryterra.co/v2/static/assets/img/app_icons/mapmyfitness.webp</example>
+        /// <example>https://access.tryterra.co/api/v2/static/assets/img/app_icons/mapmyfitness.webp</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("icon")]
         public string? Icon { get; set; }
 
@@ -73,7 +73,7 @@ namespace Terra
         /// </param>
         /// <param name="icon">
         /// URL for the provider's icon image<br/>
-        /// Example: https://api.tryterra.co/v2/static/assets/img/app_icons/mapmyfitness.webp
+        /// Example: https://access.tryterra.co/api/v2/static/assets/img/app_icons/mapmyfitness.webp
         /// </param>
         /// <param name="setup">
         /// Indicates how the integration is set up<br/>

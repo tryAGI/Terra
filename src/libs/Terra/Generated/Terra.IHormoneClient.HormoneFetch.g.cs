@@ -6,7 +6,7 @@ namespace Terra
     {
         /// <summary>
         /// Retrieve hormone data for a given connection ID<br/>
-        /// Fetches hormone test events (LH, E3G, PDG, HCG, FSH) for a given connection. Each entry is one test event; hormones not measured at that event appear as null. v3 endpoint, uses x-terra-client-id and x-terra-client-secret headers for authentication.
+        /// Fetches hormone test events (LH, E3G, PDG, HCG, FSH) for a given connection. Each entry is one test event; hormones not measured at that event appear as null. Uses x-terra-client-id and x-terra-client-secret headers for authentication.
         /// </summary>
         /// <param name="connectionId"></param>
         /// <param name="startDate"></param>
@@ -22,7 +22,7 @@ namespace Terra
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Retrieve hormone data for a given connection ID<br/>
-        /// Fetches hormone test events (LH, E3G, PDG, HCG, FSH) for a given connection. Each entry is one test event; hormones not measured at that event appear as null. v3 endpoint, uses x-terra-client-id and x-terra-client-secret headers for authentication.
+        /// Fetches hormone test events (LH, E3G, PDG, HCG, FSH) for a given connection. Each entry is one test event; hormones not measured at that event appear as null. Uses x-terra-client-id and x-terra-client-secret headers for authentication.
         /// </summary>
         /// <param name="connectionId"></param>
         /// <param name="startDate"></param>
