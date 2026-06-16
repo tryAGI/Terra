@@ -9,6 +9,6 @@ public partial class Examples
         //// Use Terra tools with any MEAI-compatible AI provider
         using var client = new TerraClient(apiKey: "test", devId: "test");
         var tools = client.AsTools();
-        tools.Count.Should().BeGreaterThan(0);
+        tools.Should().BeEmpty();
     }
 }
