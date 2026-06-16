@@ -2,6 +2,8 @@ namespace Terra;
 
 public sealed partial class TerraClient
 {
+    private static readonly global::System.Uri DefaultTerraBaseUri = new("https://api.tryterra.co/v2");
+
     /// <summary>
     /// Creates a new TerraClient with dual-header authentication.<br/>
     /// Terra API requires both an API key (x-api-key header) and 
@@ -17,7 +19,7 @@ public sealed partial class TerraClient
         string devId,
         global::System.Net.Http.HttpClient? httpClient = null,
         global::System.Uri? baseUri = null,
-        bool disposeHttpClient = true) : this(apiKey, httpClient, baseUri, authorizations: null, disposeHttpClient)
+        bool disposeHttpClient = true) : this(apiKey, httpClient, baseUri ?? DefaultTerraBaseUri, authorizations: null, disposeHttpClient)
     {
         devId = devId ?? throw new global::System.ArgumentNullException(nameof(devId));
 
