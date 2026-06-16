@@ -4,7 +4,6 @@
 namespace Terra
 {
     /// <summary>
-    /// The Terra API<br/>
     /// If no httpClient is provided, a new one will be created.<br/>
     /// If no baseUri is provided, the default baseUri from OpenAPI spec will be used.
     /// </summary>
@@ -13,7 +12,7 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public const string DefaultBaseUrl = "https://api.tryterra.co/v2";
+        public const string DefaultBaseUrl = "";
 
         private bool _disposeHttpClient = true;
 
@@ -21,7 +20,7 @@ namespace Terra
         public global::System.Net.Http.HttpClient HttpClient { get; }
 
         /// <inheritdoc/>
-        public System.Uri? BaseUri => ResolveDisplayedBaseUri();
+        public System.Uri? BaseUri => HttpClient.BaseAddress;
 
         /// <inheritdoc/>
         public global::System.Collections.Generic.List<global::Terra.EndPointAuthorization> Authorizations { get; }
@@ -34,162 +33,11 @@ namespace Terra
 
         /// <inheritdoc/>
         public global::Terra.AutoSDKClientOptions Options { get; }
-
-
-        internal global::Terra.AutoSDKServerConfiguration AutoSDKServerConfiguration { get; set; } = new global::Terra.AutoSDKServerConfiguration();
         /// <summary>
         /// 
         /// </summary>
         public global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext { get; set; } = global::Terra.SourceGenerationContext.Default;
 
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public ActivityClient Activity => new ActivityClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
-        {
-            ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
-            AutoSDKServerConfiguration = AutoSDKServerConfiguration,
-        };
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public AthleteClient Athlete => new AthleteClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
-        {
-            ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
-            AutoSDKServerConfiguration = AutoSDKServerConfiguration,
-        };
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public AuthenticationClient Authentication => new AuthenticationClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
-        {
-            ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
-            AutoSDKServerConfiguration = AutoSDKServerConfiguration,
-        };
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public BodyClient Body => new BodyClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
-        {
-            ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
-            AutoSDKServerConfiguration = AutoSDKServerConfiguration,
-        };
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public DailyClient Daily => new DailyClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
-        {
-            ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
-            AutoSDKServerConfiguration = AutoSDKServerConfiguration,
-        };
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public HormoneClient Hormone => new HormoneClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
-        {
-            ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
-            AutoSDKServerConfiguration = AutoSDKServerConfiguration,
-        };
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public IntegrationsClient Integrations => new IntegrationsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
-        {
-            ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
-            AutoSDKServerConfiguration = AutoSDKServerConfiguration,
-        };
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public MenstruationClient Menstruation => new MenstruationClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
-        {
-            ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
-            AutoSDKServerConfiguration = AutoSDKServerConfiguration,
-        };
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public NutritionClient Nutrition => new NutritionClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
-        {
-            ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
-            AutoSDKServerConfiguration = AutoSDKServerConfiguration,
-        };
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public PlannedWorkoutClient PlannedWorkout => new PlannedWorkoutClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
-        {
-            ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
-            AutoSDKServerConfiguration = AutoSDKServerConfiguration,
-        };
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public SleepClient Sleep => new SleepClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
-        {
-            ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
-            AutoSDKServerConfiguration = AutoSDKServerConfiguration,
-        };
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public UserClient User => new UserClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
-        {
-            ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
-            AutoSDKServerConfiguration = AutoSDKServerConfiguration,
-        };
-
-
-        private static readonly global::Terra.AutoSDKServer[] s_availableServers = new global::Terra.AutoSDKServer[]
-        {            new global::Terra.AutoSDKServer(
-                id: "https-api-tryterra-co-v2",
-                name: "api.tryterra.co v2",
-                url: "https://api.tryterra.co/v2",
-                description: ""),
-            new global::Terra.AutoSDKServer(
-                id: "https-api-tryterra-co-v3",
-                name: "api.tryterra.co v3",
-                url: "https://api.tryterra.co/v3",
-                description: ""),
-        };
-
-        /// <summary>
-        /// The server options available for this client.
-        /// </summary>
-        public global::System.Collections.Generic.IReadOnlyList<global::Terra.AutoSDKServer> AvailableServers => s_availableServers;
-
-        /// <summary>
-        /// The currently selected server for this client, if any.
-        /// </summary>
-        public global::Terra.AutoSDKServer? SelectedServer
-        {
-            get => ResolveSelectedServer();
-            set => SelectServer(value);
-        }
 
         /// <summary>
         /// Creates a new instance of the TerraClient.
@@ -253,15 +101,10 @@ namespace Terra
         {
 
             HttpClient = httpClient ?? new global::System.Net.Http.HttpClient();
-            if (baseUri is not null)
-            {
-                HttpClient.BaseAddress ??= baseUri;
-            }
+            HttpClient.BaseAddress ??= baseUri ?? new global::System.Uri(DefaultBaseUrl);
             Authorizations = authorizations ?? new global::System.Collections.Generic.List<global::Terra.EndPointAuthorization>();
             Options = options ?? new global::Terra.AutoSDKClientOptions();
             _disposeHttpClient = disposeHttpClient;
-
-            AutoSDKServerConfiguration.ExplicitBaseUri = baseUri ?? httpClient?.BaseAddress;
 
             Initialized(HttpClient);
         }
@@ -289,117 +132,5 @@ namespace Terra
             global::System.Net.Http.HttpClient client,
             global::System.Net.Http.HttpResponseMessage response,
             ref string content);
-
-
-        /// <summary>
-        /// Selects one of the generated server options by id.
-        /// </summary>
-        public bool TrySelectServer(string serverId)
-        {
-            if (string.IsNullOrWhiteSpace(serverId))
-            {
-                return false;
-            }
-
-            foreach (var server in s_availableServers)
-            {
-                if (string.Equals(server.Id, serverId, global::System.StringComparison.OrdinalIgnoreCase))
-                {
-                    AutoSDKServerConfiguration.SelectedServer = server;
-                    AutoSDKServerConfiguration.ExplicitBaseUri = null;
-                    return true;
-                }
-            }
-
-            return false;
-        }
-
-        /// <summary>
-        /// Clears the currently selected server.
-        /// </summary>
-        public void ClearSelectedServer()
-        {
-            AutoSDKServerConfiguration.SelectedServer = null;
-        }
-
-        private global::Terra.AutoSDKServer? ResolveSelectedServer()
-        {
-            var selectedServer = AutoSDKServerConfiguration.SelectedServer;
-            if (selectedServer is null)
-            {
-                return null;
-            }
-
-            foreach (var server in s_availableServers)
-            {
-                if (string.Equals(server.Id, selectedServer.Id, global::System.StringComparison.Ordinal))
-                {
-                    return server;
-                }
-            }
-
-            return null;
-        }
-
-        private void SelectServer(global::Terra.AutoSDKServer? server)
-        {
-            if (server is null)
-            {
-                AutoSDKServerConfiguration.SelectedServer = null;
-                return;
-            }
-
-            foreach (var candidate in s_availableServers)
-            {
-                if (string.Equals(candidate.Id, server.Id, global::System.StringComparison.Ordinal))
-                {
-                    AutoSDKServerConfiguration.SelectedServer = candidate;
-                    AutoSDKServerConfiguration.ExplicitBaseUri = null;
-                    return;
-                }
-            }
-
-            throw new global::System.ArgumentException("The provided server is not available for this client.", nameof(server));
-        }
-
-        private global::System.Uri? ResolveDisplayedBaseUri()
-        {
-            if (AutoSDKServerConfiguration.ExplicitBaseUri is global::System.Uri explicitBaseUri)
-            {
-                return explicitBaseUri;
-            }
-
-            return ResolveSelectedServer()?.Uri ?? (s_availableServers.Length > 0 ? s_availableServers[0].Uri : HttpClient.BaseAddress);
-        }
-
-        private global::System.Uri? ResolveBaseUri(
-            global::Terra.AutoSDKServer[] servers,
-            string defaultBaseUrl)
-        {
-            if (AutoSDKServerConfiguration.ExplicitBaseUri is global::System.Uri explicitBaseUri)
-            {
-                return explicitBaseUri;
-            }
-
-            if (AutoSDKServerConfiguration.SelectedServer is global::Terra.AutoSDKServer selectedServer)
-            {
-                foreach (var server in servers)
-                {
-                    if (string.Equals(server.Id, selectedServer.Id, global::System.StringComparison.Ordinal))
-                    {
-                        return server.Uri;
-                    }
-                }
-            }
-
-            if (servers.Length > 0)
-            {
-                return servers[0].Uri;
-            }
-
-            return string.IsNullOrWhiteSpace(defaultBaseUrl)
-                ? HttpClient.BaseAddress
-                : new global::System.Uri(defaultBaseUrl, global::System.UriKind.RelativeOrAbsolute);
-        }
     }
 }
