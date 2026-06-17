@@ -1,3 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
 install_autosdk_cli() {
   dotnet tool update --global autosdk.cli --prerelease >/dev/null 2>&1 || \
     dotnet tool install --global autosdk.cli --prerelease
@@ -11,8 +14,14 @@ fetch_spec() {
 }
 
 install_autosdk_cli
+
+spec_tmp="$(mktemp openapi.yaml.XXXXXX)"
+trap 'rm -f "$spec_tmp"' EXIT
+fetch_spec -o "$spec_tmp" https://raw.githubusercontent.com/tryterra/openapi/refs/heads/master/v5-bundled.yaml
+mv "$spec_tmp" openapi.yaml
+trap - EXIT
+
 rm -rf Generated
-fetch_spec -o openapi.yaml https://raw.githubusercontent.com/tryterra/openapi/refs/heads/master/v5-bundled.yaml
 
 # Convert OpenAPI 3.1.0 to 3.0.3 (AutoSDK requires 3.0.x)
 python3 - openapi.yaml << 'PYEOF'
