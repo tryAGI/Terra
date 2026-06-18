@@ -21,10 +21,9 @@ namespace Terra
         public double? Weight { get; set; }
 
         /// <summary>
-        /// Weight display unit for strength exercises
+        /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("weight_display_unit")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Terra.JsonConverters.WeightUnitJsonConverter))]
         public global::Terra.WeightUnit? WeightDisplayUnit { get; set; }
 
         /// <summary>
@@ -48,9 +47,7 @@ namespace Terra
         /// <param name="weight">
         /// Weight to lift
         /// </param>
-        /// <param name="weightDisplayUnit">
-        /// Weight display unit for strength exercises
-        /// </param>
+        /// <param name="weightDisplayUnit"></param>
         /// <param name="exerciseCategory">
         /// Garmin Training API exerciseCategory string (e.g. BENCH_PRESS, SQUAT)
         /// </param>

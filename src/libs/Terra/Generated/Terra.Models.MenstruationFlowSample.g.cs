@@ -17,7 +17,7 @@ namespace Terra
         public string? Timestamp { get; set; }
 
         /// <summary>
-        /// Flag indicating the strength of the user's menstrual flow
+        /// Flag indicating the strength of the user's menstrual flow.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("flow")]
         public double? Flow { get; set; }
@@ -36,7 +36,7 @@ namespace Terra
         /// Example: 2022-11-23T09:00:00.000000+02:00
         /// </param>
         /// <param name="flow">
-        /// Flag indicating the strength of the user's menstrual flow
+        /// Flag indicating the strength of the user's menstrual flow.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

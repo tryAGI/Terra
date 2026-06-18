@@ -28,10 +28,10 @@ namespace Terra
         public required global::Terra.NutritionMetadata Metadata { get; set; }
 
         /// <summary>
-        /// 
+        /// Summative nutritional information for a given day.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("summary")]
-        public global::Terra.NutritionSummary? Summary { get; set; }
+        public global::Terra.NutritionSummary2? Summary { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -49,7 +49,9 @@ namespace Terra
         /// <param name="meals">
         /// Information on individual foods consumed throughout a given day.
         /// </param>
-        /// <param name="summary"></param>
+        /// <param name="summary">
+        /// Summative nutritional information for a given day.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -57,7 +59,7 @@ namespace Terra
             global::Terra.NutritionMetadata metadata,
             global::System.Collections.Generic.IList<global::Terra.DrinkSample>? drinkSamples,
             global::System.Collections.Generic.IList<global::Terra.Meal>? meals,
-            global::Terra.NutritionSummary? summary)
+            global::Terra.NutritionSummary2? summary)
         {
             this.DrinkSamples = drinkSamples;
             this.Meals = meals;

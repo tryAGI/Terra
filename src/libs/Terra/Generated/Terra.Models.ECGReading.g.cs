@@ -23,7 +23,7 @@ namespace Terra
         public double? AvgHrBpm { get; set; }
 
         /// <summary>
-        /// Flag indicating the atrial fibrillation classification of the individual
+        /// User's afib classification throught the day.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("afib_classification")]
         public double? AfibClassification { get; set; }
@@ -51,7 +51,7 @@ namespace Terra
         /// Example: 72.5
         /// </param>
         /// <param name="afibClassification">
-        /// Flag indicating the atrial fibrillation classification of the individual
+        /// User's afib classification throught the day.
         /// </param>
         /// <param name="rawSignal">
         /// List of raw ECG readings sampled through the day.

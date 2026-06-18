@@ -17,10 +17,9 @@ namespace Terra
         public int? PeriodLengthDays { get; set; }
 
         /// <summary>
-        /// Represents menstrual cycle phases.
+        /// Phase in associated cycle, (i.e. menstruation, fertile etc).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("current_phase")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Terra.JsonConverters.MenstrualPhaseJsonConverter))]
         public global::Terra.MenstrualPhase? CurrentPhase { get; set; }
 
         /// <summary>
@@ -107,7 +106,7 @@ namespace Terra
         /// Example: 5
         /// </param>
         /// <param name="currentPhase">
-        /// Represents menstrual cycle phases.
+        /// Phase in associated cycle, (i.e. menstruation, fertile etc).
         /// </param>
         /// <param name="lengthOfCurrentPhaseDays">
         /// Length of current phase.<br/>

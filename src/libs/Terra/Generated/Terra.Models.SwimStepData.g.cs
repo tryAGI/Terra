@@ -9,17 +9,15 @@ namespace Terra
     public sealed partial class SwimStepData
     {
         /// <summary>
-        /// Swim stroke for a swimming step
+        /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("stroke_type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Terra.JsonConverters.SwimStrokeTypeJsonConverter))]
         public global::Terra.SwimStrokeType? StrokeType { get; set; }
 
         /// <summary>
-        /// Swim drill type
+        /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("drill_type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Terra.JsonConverters.DrillTypeJsonConverter))]
         public global::Terra.DrillType? DrillType { get; set; }
 
         /// <summary>
@@ -37,12 +35,8 @@ namespace Terra
         /// <summary>
         /// Initializes a new instance of the <see cref="SwimStepData" /> class.
         /// </summary>
-        /// <param name="strokeType">
-        /// Swim stroke for a swimming step
-        /// </param>
-        /// <param name="drillType">
-        /// Swim drill type
-        /// </param>
+        /// <param name="strokeType"></param>
+        /// <param name="drillType"></param>
         /// <param name="equipment"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

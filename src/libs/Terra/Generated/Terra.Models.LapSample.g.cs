@@ -65,10 +65,11 @@ namespace Terra
         public string? EndTime { get; set; }
 
         /// <summary>
-        /// Stroke type used for the workout step (e.g. breaststroke)
+        /// Stroke type - only relevant for swimming activities<br/>
+        /// Example: freestyle
         /// </summary>
+        /// <example>freestyle</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("stroke_type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Terra.JsonConverters.StrokeTypeJsonConverter))]
         public global::Terra.StrokeType? StrokeType { get; set; }
 
         /// <summary>
@@ -109,7 +110,8 @@ namespace Terra
         /// Example: 2022-10-28T10:00:00.000000+01:00
         /// </param>
         /// <param name="strokeType">
-        /// Stroke type used for the workout step (e.g. breaststroke)
+        /// Stroke type - only relevant for swimming activities<br/>
+        /// Example: freestyle
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

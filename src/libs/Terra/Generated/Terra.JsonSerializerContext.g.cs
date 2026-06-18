@@ -393,6 +393,14 @@ namespace Terra
 
             typeof(global::Terra.JsonConverters.BodyEventTypeNullableJsonConverter),
 
+            typeof(global::Terra.JsonConverters.PlannedWorkoutEventTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.PlannedWorkoutEventTypeNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.HormoneEventTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.HormoneEventTypeNullableJsonConverter),
+
             typeof(global::Terra.JsonConverters.AuthenticationAuthenticateUserResponseStatusJsonConverter),
 
             typeof(global::Terra.JsonConverters.AuthenticationAuthenticateUserResponseStatusNullableJsonConverter),
@@ -496,8 +504,9 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.JsonSerializerContextTypes))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutTemplate))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(object))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSport), TypeInfoPropertyName = "WorkoutSport2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.EnvironmentType), TypeInfoPropertyName = "EnvironmentType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.EnvironmentType))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(double))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.StepBlock>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StepBlock))]
@@ -544,8 +553,8 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.TemperatureData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.GlucoseData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.Daily))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.DailyDataEnrichment))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.DailyDistanceData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.DailyDataEnrichment2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.DailyDistanceData2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.DailyMetadata))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.ScoresData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StressData))]
@@ -562,15 +571,15 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.Meal>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.Meal))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.NutritionMetadata))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.NutritionSummary))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.NutritionSummary2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.Sleep))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SleepDataEnrichment))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SleepDataEnrichment2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SleepMetadata))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.ReadinessData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.RespirationData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SleepScores))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SleepDurationsData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SleepTemperatureData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SleepTemperatureData2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthSuccessEvent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthErrorEvent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.PermissionChangeEvent))]
@@ -588,6 +597,8 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SleepEvent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.MenstruationEvent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.BodyEvent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.PlannedWorkoutEvent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.HormoneEvent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.IntegrationsResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.IntegrationProvider>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.IntegrationProvider))]
@@ -813,6 +824,10 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.Menstruation>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.BodyEventType), TypeInfoPropertyName = "BodyEventType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.Body>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.PlannedWorkoutEventType), TypeInfoPropertyName = "PlannedWorkoutEventType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.PlannedWorkout>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.HormoneEventType), TypeInfoPropertyName = "HormoneEventType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.HormoneSample>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationAuthenticateUserRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserModifyUserRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutsPlanWorkoutRequest))]
@@ -847,7 +862,6 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutsDeleteWorkoutResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutsPlanWorkoutResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutsPlanWorkoutResponseStatus), TypeInfoPropertyName = "WorkoutsPlanWorkoutResponseStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.PlannedWorkout>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.UserGetInfoForUserIDResponse2, global::System.Collections.Generic.IList<global::Terra.TerraUser>>), TypeInfoPropertyName = "OneOfUserGetInfoForUserIDResponse2IListTerraUser2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserGetInfoForUserIDResponse2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AllOf<global::Terra.TerraUser, global::Terra.UserGetInfoForUserIDResponseUser>), TypeInfoPropertyName = "AllOfTerraUserUserGetInfoForUserIDResponseUser2")]
@@ -919,8 +933,9 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.Sleep>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.Menstruation>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.Body>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.WorkoutTemplate>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.PlannedWorkout>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.HormoneSample>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.WorkoutTemplate>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.UserGetInfoForUserIDResponse2, global::System.Collections.Generic.List<global::Terra.TerraUser>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.TerraUser>))]
     public sealed partial class SourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext

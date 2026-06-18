@@ -21,7 +21,7 @@ namespace Terra
         public global::System.Collections.Generic.IList<global::Terra.ECGReading>? EcgSignal { get; set; }
 
         /// <summary>
-        /// 
+        /// Object containing heart rate data.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("heart_rate_data")]
         public global::Terra.HeartRateData? HeartRateData { get; set; }
@@ -53,7 +53,9 @@ namespace Terra
         /// <param name="ecgSignal">
         /// List of ECGReadings sampled through the day.
         /// </param>
-        /// <param name="heartRateData"></param>
+        /// <param name="heartRateData">
+        /// Object containing heart rate data.
+        /// </param>
         /// <param name="pulseWaveVelocitySamples">
         /// List of Pulse Wave Velocity measurements sampled throughout the day. This represents a measurement of arterial stiffness that is an independent predictor of cardiovascular risk.
         /// </param>

@@ -79,7 +79,7 @@ namespace Terra
         public double? StressDurationSeconds { get; set; }
 
         /// <summary>
-        /// Represents stress level ranges.
+        /// Stress rating for the day.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("stress_rating")]
         public double? StressRating { get; set; }
@@ -135,7 +135,7 @@ namespace Terra
         /// Example: 5400
         /// </param>
         /// <param name="stressRating">
-        /// Represents stress level ranges.
+        /// Stress rating for the day.
         /// </param>
         /// <param name="bodyBatterySamples">
         /// Array of Body Battery data points sampled throughout the day.
