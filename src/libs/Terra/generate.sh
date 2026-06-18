@@ -17,7 +17,7 @@ install_autosdk_cli
 
 spec_tmp="$(mktemp openapi.yaml.XXXXXX)"
 trap 'rm -f "$spec_tmp"' EXIT
-fetch_spec -o "$spec_tmp" https://raw.githubusercontent.com/tryterra/openapi/refs/heads/master/v5-bundled.yaml
+fetch_spec -o "$spec_tmp" https://raw.githubusercontent.com/tryterra/openapi/refs/heads/master/dist/core/v2-bundled.yaml
 mv "$spec_tmp" openapi.yaml
 trap - EXIT
 

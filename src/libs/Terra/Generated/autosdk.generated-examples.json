@@ -1,0 +1,268 @@
+{
+  "Examples": [
+    {
+      "Order": 1,
+      "Title": "Retrieve activity data for a given user ID",
+      "Slug": "activity-fetch",
+      "Description": "Fetches completed workout sessions, with a defined start and end time and activity type (e.g. running, cycling, etc.)",
+      "Language": "http",
+      "Code": "### Retrieve activity data for a given user ID\n# @name Activity_Fetch\nGET {{host}}/activity?user_id={{user_id}}\u0026start_date={{start_date}}\u0026end_date={{end_date}}\u0026to_webhook={{to_webhook}}\u0026with_samples={{with_samples}}\nAuthorization: Bearer {{token}}\nAccept: application/json, application/problem\u002Bjson\n\n## Responses\n# 200\n# Description: Returned upon successful data request\n# Content-Type: application/json\n# 400\n# Description: One or more parameters is malformed. The \u0060detail\u0060 field describes the specific problem.\n# Content-Type: application/problem\u002Bjson\n# 401\n# Description: Authentication credentials are missing or invalid.\n# Content-Type: application/problem\u002Bjson\n# 404\n# Description: A referenced resource does not exist on Terra\u0027s end.\n# Content-Type: application/problem\u002Bjson",
+      "Format": "http",
+      "OperationId": "Activity_Fetch",
+      "Setup": null
+    },
+    {
+      "Order": 2,
+      "Title": "Retrieve user profile info for a given user ID",
+      "Slug": "athlete-fetch",
+      "Description": "Fetches relevant profile info such as first \u0026 last name, birth date etc. for a given user ID",
+      "Language": "http",
+      "Code": "### Retrieve user profile info for a given user ID\n# @name Athlete_Fetch\nGET {{host}}/athlete?user_id={{user_id}}\u0026to_webhook={{to_webhook}}\nAuthorization: Bearer {{token}}\nAccept: application/json, application/problem\u002Bjson\n\n## Responses\n# 200\n# Description: Returned upon successful data request\n# Content-Type: application/json\n# 400\n# Description: One or more parameters is malformed. The \u0060detail\u0060 field describes the specific problem.\n# Content-Type: application/problem\u002Bjson\n# 401\n# Description: Authentication credentials are missing or invalid.\n# Content-Type: application/problem\u002Bjson\n# 404\n# Description: A referenced resource does not exist on Terra\u0027s end.\n# Content-Type: application/problem\u002Bjson",
+      "Format": "http",
+      "OperationId": "Athlete_Fetch",
+      "Setup": null
+    },
+    {
+      "Order": 3,
+      "Title": "Generate an authentication link",
+      "Slug": "authentication-authenticateuser",
+      "Description": "Creates a login link that allows end users to connect their fitness tracking account",
+      "Language": "http",
+      "Code": "### Generate an authentication link\n# @name Authentication_AuthenticateUser\nPOST {{host}}/auth/authenticateUser?resource=FITBIT\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json, application/problem\u002Bjson\n\n{\n  \u0022language\u0022: \u0022string\u0022,\n  \u0022reference_id\u0022: \u0022string\u0022,\n  \u0022auth_success_redirect_url\u0022: \u0022string\u0022,\n  \u0022auth_failure_redirect_url\u0022: \u0022string\u0022\n}\n\n## Responses\n# 200\n# Description: Returned when authentication link could be successfully generated\n# Content-Type: application/json\n# 400\n# Description: One or more parameters is malformed. The \u0060detail\u0060 field describes the specific problem.\n# Content-Type: application/problem\u002Bjson\n# 404\n# Description: A referenced resource does not exist on Terra\u0027s end.\n# Content-Type: application/problem\u002Bjson",
+      "Format": "http",
+      "OperationId": "Authentication_AuthenticateUser",
+      "Setup": null
+    },
+    {
+      "Order": 4,
+      "Title": "Deauthenticates a user and deletes any cached data for them",
+      "Slug": "authentication-deauthenticateuser",
+      "Description": "Deletes all records of the user on Terra\u0027s end, revoking Terra\u0027s access to their data",
+      "Language": "http",
+      "Code": "### Deauthenticates a user and deletes any cached data for them\n# @name Authentication_DeauthenticateUser\nDELETE {{host}}/auth/deauthenticateUser?user_id={{user_id}}\nAuthorization: Bearer {{token}}\nAccept: application/json, application/problem\u002Bjson\n\n## Responses\n# 200\n# Description: Returned when user is successfully deauthenticated and data is deleted\n# Content-Type: application/json\n# 404\n# Description: A referenced resource does not exist on Terra\u0027s end.\n# Content-Type: application/problem\u002Bjson",
+      "Format": "http",
+      "OperationId": "Authentication_DeauthenticateUser",
+      "Setup": null
+    },
+    {
+      "Order": 5,
+      "Title": "Generates an authentication token for the Terra mobile SDKs",
+      "Slug": "authentication-generateauthtoken",
+      "Description": "Creates a token to be used with initConnection() functions in the Terra mobile SDKs in order to create a user record for Apple Health or Samsung Health (or equivalent)",
+      "Language": "csharp",
+      "Code": "using var client = new TerraClient(apiKey);\nvar response = await client.Authentication.AuthenticationGenerateAuthTokenAsync();\n\n// Example response:\n// {\n//   \u0022status\u0022: \u0022success\u0022,\n//   \u0022token\u0022: \u0022250c68b9c21b78e40e7a3285a2d538d3bc24aabd3b4c76a782fb0a571ca4501d\u0022,\n//   \u0022expires_in\u0022: 180\n// }",
+      "Format": "sdk",
+      "OperationId": "Authentication_GenerateAuthToken",
+      "Setup": "This example assumes \u0060using Terra;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
+    },
+    {
+      "Order": 6,
+      "Title": "Generate an authentication link, using the Terra Authentication Widget",
+      "Slug": "authentication-generatewidgetsession",
+      "Description": "Generates a link to redirect an end user to for them to select an integration and log in with their fitness data provider",
+      "Language": "http",
+      "Code": "### Generate an authentication link, using the Terra Authentication Widget\n# @name Authentication_GenerateWidgetSession\nPOST {{host}}/auth/generateWidgetSession\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json, application/problem\u002Bjson\n\n{\n  \u0022providers\u0022: \u0022GARMIN,FITBIT,OURA,WITHINGS,SUUNTO\u0022,\n  \u0022language\u0022: \u0022en\u0022,\n  \u0022reference_id\u0022: \u0022user123@email.com\u0022,\n  \u0022auth_success_redirect_url\u0022: \u0022https://myapp.com/success\u0022,\n  \u0022auth_failure_redirect_url\u0022: \u0022https://myapp.com/failure\u0022\n}\n\n## Responses\n# 200\n# Description: Returned when authentication link could be successfully generated\n# Content-Type: application/json\n# 400\n# Description: One or more parameters is malformed. The \u0060detail\u0060 field describes the specific problem.\n# Content-Type: application/problem\u002Bjson",
+      "Format": "http",
+      "OperationId": "Authentication_GenerateWidgetSession",
+      "Setup": null
+    },
+    {
+      "Order": 7,
+      "Title": "Retrieve body metrics for a given user ID",
+      "Slug": "body-fetch",
+      "Description": "Fetches body metrics such as weight, height, body fat percentage etc. for a given user ID",
+      "Language": "http",
+      "Code": "### Retrieve body metrics for a given user ID\n# @name Body_Fetch\nGET {{host}}/body?user_id={{user_id}}\u0026start_date={{start_date}}\u0026end_date={{end_date}}\u0026to_webhook={{to_webhook}}\u0026with_samples={{with_samples}}\nAuthorization: Bearer {{token}}\nAccept: application/json, application/problem\u002Bjson\n\n## Responses\n# 200\n# Description: Returned upon successful data request\n# Content-Type: application/json\n# 400\n# Description: One or more parameters is malformed. The \u0060detail\u0060 field describes the specific problem.\n# Content-Type: application/problem\u002Bjson\n# 401\n# Description: Authentication credentials are missing or invalid.\n# Content-Type: application/problem\u002Bjson\n# 404\n# Description: A referenced resource does not exist on Terra\u0027s end.\n# Content-Type: application/problem\u002Bjson",
+      "Format": "http",
+      "OperationId": "Body_Fetch",
+      "Setup": null
+    },
+    {
+      "Order": 8,
+      "Title": "Retrieve daily activity summaries for a given user ID",
+      "Slug": "daily-fetch",
+      "Description": "Fetches daily summaries of activity metrics such as steps, distance, calories burned etc. for a given user ID",
+      "Language": "http",
+      "Code": "### Retrieve daily activity summaries for a given user ID\n# @name Daily_Fetch\nGET {{host}}/daily?user_id={{user_id}}\u0026start_date={{start_date}}\u0026end_date={{end_date}}\u0026to_webhook={{to_webhook}}\u0026with_samples={{with_samples}}\nAuthorization: Bearer {{token}}\nAccept: application/json, application/problem\u002Bjson\n\n## Responses\n# 200\n# Description: Returned upon successful data request\n# Content-Type: application/json\n# 400\n# Description: One or more parameters is malformed. The \u0060detail\u0060 field describes the specific problem.\n# Content-Type: application/problem\u002Bjson\n# 401\n# Description: Authentication credentials are missing or invalid.\n# Content-Type: application/problem\u002Bjson\n# 404\n# Description: A referenced resource does not exist on Terra\u0027s end.\n# Content-Type: application/problem\u002Bjson",
+      "Format": "http",
+      "OperationId": "Daily_Fetch",
+      "Setup": null
+    },
+    {
+      "Order": 9,
+      "Title": "Retrieve menstruation data for a given user ID",
+      "Slug": "menstruation-fetch",
+      "Description": "Fetches menstruation data such as cycle length, period length, ovulation date etc. for a given user ID",
+      "Language": "http",
+      "Code": "### Retrieve menstruation data for a given user ID\n# @name Menstruation_Fetch\nGET {{host}}/menstruation?user_id={{user_id}}\u0026start_date={{start_date}}\u0026end_date={{end_date}}\u0026to_webhook={{to_webhook}}\u0026with_samples={{with_samples}}\nAuthorization: Bearer {{token}}\nAccept: application/json, application/problem\u002Bjson\n\n## Responses\n# 200\n# Description: Returned upon successful data request\n# Content-Type: application/json\n# 400\n# Description: One or more parameters is malformed. The \u0060detail\u0060 field describes the specific problem.\n# Content-Type: application/problem\u002Bjson\n# 401\n# Description: Authentication credentials are missing or invalid.\n# Content-Type: application/problem\u002Bjson\n# 404\n# Description: A referenced resource does not exist on Terra\u0027s end.\n# Content-Type: application/problem\u002Bjson",
+      "Format": "http",
+      "OperationId": "Menstruation_Fetch",
+      "Setup": null
+    },
+    {
+      "Order": 10,
+      "Title": "Retrieve nutrition log data for a given user ID",
+      "Slug": "nutrition-fetch",
+      "Description": "Fetches nutrition log data such as meal type, calories, macronutrients etc. for a given user ID",
+      "Language": "http",
+      "Code": "### Retrieve nutrition log data for a given user ID\n# @name Nutrition_Fetch\nGET {{host}}/nutrition?user_id={{user_id}}\u0026start_date={{start_date}}\u0026end_date={{end_date}}\u0026to_webhook={{to_webhook}}\u0026with_samples={{with_samples}}\nAuthorization: Bearer {{token}}\nAccept: application/json, application/problem\u002Bjson\n\n## Responses\n# 200\n# Description: Returned upon successful data request\n# Content-Type: application/json\n# 400\n# Description: One or more parameters is malformed. The \u0060detail\u0060 field describes the specific problem.\n# Content-Type: application/problem\u002Bjson\n# 401\n# Description: Authentication credentials are missing or invalid.\n# Content-Type: application/problem\u002Bjson\n# 404\n# Description: A referenced resource does not exist on Terra\u0027s end.\n# Content-Type: application/problem\u002Bjson",
+      "Format": "http",
+      "OperationId": "Nutrition_Fetch",
+      "Setup": null
+    },
+    {
+      "Order": 11,
+      "Title": "Retrieve sleep sessions for a given user ID",
+      "Slug": "sleep-fetch",
+      "Description": "Fetches sleep data such as sleep duration, sleep stages, sleep quality etc. for a given user ID, for sleep sessions with a defined start and end time",
+      "Language": "http",
+      "Code": "### Retrieve sleep sessions for a given user ID\n# @name Sleep_Fetch\nGET {{host}}/sleep?user_id={{user_id}}\u0026start_date={{start_date}}\u0026end_date={{end_date}}\u0026to_webhook={{to_webhook}}\u0026with_samples={{with_samples}}\nAuthorization: Bearer {{token}}\nAccept: application/json, application/problem\u002Bjson\n\n## Responses\n# 200\n# Description: Returned upon successful data request\n# Content-Type: application/json\n# 400\n# Description: One or more parameters is malformed. The \u0060detail\u0060 field describes the specific problem.\n# Content-Type: application/problem\u002Bjson\n# 401\n# Description: Authentication credentials are missing or invalid.\n# Content-Type: application/problem\u002Bjson\n# 404\n# Description: A referenced resource does not exist on Terra\u0027s end.\n# Content-Type: application/problem\u002Bjson",
+      "Format": "http",
+      "OperationId": "Sleep_Fetch",
+      "Setup": null
+    },
+    {
+      "Order": 12,
+      "Title": "Get all Terra User IDs",
+      "Slug": "user-getalluserids",
+      "Description": "Used to query for information for all Terra User IDs. Supports optional pagination via \u0060page\u0060 and \u0060per_page\u0060. If \u0060page\u0060 is not provided, it returns all users in one go (backwards compatibility).",
+      "Language": "csharp",
+      "Code": "using var client = new TerraClient(apiKey);\n\nvar response = await client.User.UserGetAllUserIDsAsync(\n    page: 0,\n    perPage: 500\n);",
+      "Format": "sdk",
+      "OperationId": "User_GetAllUserIDs",
+      "Setup": "This example assumes \u0060using Terra;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
+    },
+    {
+      "Order": 13,
+      "Title": "Get information for multiple user IDs",
+      "Slug": "user-getinfoformultipleuserids",
+      "Description": "Used to query for information for multiple Terra User IDs",
+      "Language": "http",
+      "Code": "### Get information for multiple user IDs\n# @name User_GetInfoForMultipleUserIDs\nPOST {{host}}/bulkUserInfo\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json, application/problem\u002Bjson\n\n[\n  \u0022string\u0022\n]\n\n## Responses\n# 200\n# Description: Returned upon successful request\n# Content-Type: application/json\n# 400\n# Description: One or more parameters is malformed. The \u0060detail\u0060 field describes the specific problem.\n# Content-Type: application/problem\u002Bjson\n# 404\n# Description: A referenced resource does not exist on Terra\u0027s end.\n# Content-Type: application/problem\u002Bjson",
+      "Format": "http",
+      "OperationId": "User_GetInfoForMultipleUserIDs",
+      "Setup": null
+    },
+    {
+      "Order": 14,
+      "Title": "Get information for a single user ID or multiple users by reference ID",
+      "Slug": "user-getinfoforuserid",
+      "Description": "Used to query for information on one Terra user ID, or to query for all registered Terra User objects under one reference ID",
+      "Language": "csharp",
+      "Code": "using var client = new TerraClient(apiKey);\nvar response = await client.User.UserGetInfoForUserIDAsync();",
+      "Format": "sdk",
+      "OperationId": "User_GetInfoForUserID",
+      "Setup": "This example assumes \u0060using Terra;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
+    },
+    {
+      "Order": 15,
+      "Title": "Modify user",
+      "Slug": "user-modifyuser",
+      "Description": "Update a Terra user\u0027s reference_id or active status",
+      "Language": "http",
+      "Code": "### Modify user\n# @name User_ModifyUser\nPATCH {{host}}/users/{{user_id}}\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json, application/problem\u002Bjson\n\n{\n  \u0022reference_id\u0022: \u0022updatedUser123\u0022,\n  \u0022active\u0022: true\n}\n\n## Responses\n# 200\n# Description: Returned upon successful user modification\n# Content-Type: application/json\n# 400\n# Description: One or more parameters is malformed. The \u0060detail\u0060 field describes the specific problem.\n# Content-Type: application/problem\u002Bjson",
+      "Format": "http",
+      "OperationId": "User_ModifyUser",
+      "Setup": null
+    },
+    {
+      "Order": 16,
+      "Title": "Create a workout template",
+      "Slug": "workouts-createworkout",
+      "Description": "Stores a reusable workout template. Plan it onto a user\u0027s calendar with \u0060POST /workouts/{workout_id}/plan\u0060 \u2014 the template itself carries no date and is not pushed to any provider until planned.",
+      "Language": "http",
+      "Code": "### Create a workout template\n# @name Workouts_CreateWorkout\nPOST {{host}}/workouts\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json, application/problem\u002Bjson\n\n{\n  \u0022name\u0022: \u0022string\u0022,\n  \u0022description\u0022: \u0022string\u0022,\n  \u0022sport\u0022: \u0022running\u0022,\n  \u0022environment\u0022: \u0022indoor\u0022,\n  \u0022pool_length_meters\u0022: 0,\n  \u0022step_blocks\u0022: [\n    {\n      \u0022completion_condition\u0022: {},\n      \u0022steps\u0022: []\n    }\n  ],\n  \u0022estimated_duration_seconds\u0022: 0,\n  \u0022estimated_distance_meters\u0022: 0,\n  \u0022estimated_calories\u0022: 0,\n  \u0022workout_id\u0022: \u0022string\u0022\n}\n\n## Responses\n# 200\n# Description: Template stored\n# Content-Type: application/json\n# 400\n# Description: One or more parameters is malformed. The \u0060detail\u0060 field describes the specific problem.\n# Content-Type: application/problem\u002Bjson\n# 401\n# Description: Authentication credentials are missing or invalid.\n# Content-Type: application/problem\u002Bjson",
+      "Format": "http",
+      "OperationId": "Workouts_CreateWorkout",
+      "Setup": null
+    },
+    {
+      "Order": 17,
+      "Title": "Delete a planned workout",
+      "Slug": "workouts-deleteplannedworkout",
+      "Description": "Removes the planned workout from the user\u0027s calendar and from the connected provider.",
+      "Language": "http",
+      "Code": "### Delete a planned workout\n# @name Workouts_DeletePlannedWorkout\nDELETE {{host}}/plannedWorkouts/{{planned_workout_id}}\nAuthorization: Bearer {{token}}\nAccept: application/problem\u002Bjson\n\n## Responses\n# 204\n# Description: Planned workout deleted\n# 401\n# Description: Authentication credentials are missing or invalid.\n# Content-Type: application/problem\u002Bjson\n# 404\n# Description: A referenced resource does not exist on Terra\u0027s end.\n# Content-Type: application/problem\u002Bjson",
+      "Format": "http",
+      "OperationId": "Workouts_DeletePlannedWorkout",
+      "Setup": null
+    },
+    {
+      "Order": 18,
+      "Title": "Delete a workout template",
+      "Slug": "workouts-deleteworkout",
+      "Description": "Deletes the template and cascades deletion of every planned workout created from it, including removal from connected providers.",
+      "Language": "http",
+      "Code": "### Delete a workout template\n# @name Workouts_DeleteWorkout\nDELETE {{host}}/workouts/{{workout_id}}\nAuthorization: Bearer {{token}}\nAccept: application/json, application/problem\u002Bjson\n\n## Responses\n# 204\n# Description: Template and all planned instances deleted\n# 207\n# Description: Some provider-side deletions failed; the template is retained. Retry to complete the cascade.\n\n# Content-Type: application/json\n# 401\n# Description: Authentication credentials are missing or invalid.\n# Content-Type: application/problem\u002Bjson\n# 404\n# Description: A referenced resource does not exist on Terra\u0027s end.\n# Content-Type: application/problem\u002Bjson\n# 424\n# Description: Provider-side deletion could not be performed; retry later.\n# Content-Type: application/problem\u002Bjson",
+      "Format": "http",
+      "OperationId": "Workouts_DeleteWorkout",
+      "Setup": null
+    },
+    {
+      "Order": 19,
+      "Title": "Get a planned workout",
+      "Slug": "workouts-getplannedworkout",
+      "Description": "Generated from OpenAPI examples.",
+      "Language": "http",
+      "Code": "### Get a planned workout\n# @name Workouts_GetPlannedWorkout\nGET {{host}}/plannedWorkouts/{{planned_workout_id}}\nAuthorization: Bearer {{token}}\nAccept: application/json, application/problem\u002Bjson\n\n## Responses\n# 200\n# Description: The planned workout\n# Content-Type: application/json\n# 401\n# Description: Authentication credentials are missing or invalid.\n# Content-Type: application/problem\u002Bjson\n# 404\n# Description: A referenced resource does not exist on Terra\u0027s end.\n# Content-Type: application/problem\u002Bjson",
+      "Format": "http",
+      "OperationId": "Workouts_GetPlannedWorkout",
+      "Setup": null
+    },
+    {
+      "Order": 20,
+      "Title": "Get a workout template",
+      "Slug": "workouts-getworkout",
+      "Description": "Generated from OpenAPI examples.",
+      "Language": "http",
+      "Code": "### Get a workout template\n# @name Workouts_GetWorkout\nGET {{host}}/workouts/{{workout_id}}\nAuthorization: Bearer {{token}}\nAccept: application/json, application/problem\u002Bjson\n\n## Responses\n# 200\n# Description: The stored template\n# Content-Type: application/json\n# 401\n# Description: Authentication credentials are missing or invalid.\n# Content-Type: application/problem\u002Bjson\n# 404\n# Description: A referenced resource does not exist on Terra\u0027s end.\n# Content-Type: application/problem\u002Bjson",
+      "Format": "http",
+      "OperationId": "Workouts_GetWorkout",
+      "Setup": null
+    },
+    {
+      "Order": 21,
+      "Title": "List planned workouts for a user",
+      "Slug": "workouts-listplannedworkouts",
+      "Description": "Returns the user\u0027s planned workouts, including workouts created on the provider side (is_external true) where the provider exposes them.",
+      "Language": "http",
+      "Code": "### List planned workouts for a user\n# @name Workouts_ListPlannedWorkouts\nGET {{host}}/plannedWorkouts?user_id={{user_id}}\nAuthorization: Bearer {{token}}\nAccept: application/json, application/problem\u002Bjson\n\n## Responses\n# 200\n# Description: Planned workouts for the connection\n# Content-Type: application/json\n# 400\n# Description: One or more parameters is malformed. The \u0060detail\u0060 field describes the specific problem.\n# Content-Type: application/problem\u002Bjson\n# 401\n# Description: Authentication credentials are missing or invalid.\n# Content-Type: application/problem\u002Bjson\n# 404\n# Description: A referenced resource does not exist on Terra\u0027s end.\n# Content-Type: application/problem\u002Bjson",
+      "Format": "http",
+      "OperationId": "Workouts_ListPlannedWorkouts",
+      "Setup": null
+    },
+    {
+      "Order": 22,
+      "Title": "List workout templates",
+      "Slug": "workouts-listworkouts",
+      "Description": "Returns every workout template stored for your developer account.",
+      "Language": "csharp",
+      "Code": "using var client = new TerraClient(apiKey);\nvar response = await client.Workouts.WorkoutsListWorkoutsAsync();",
+      "Format": "sdk",
+      "OperationId": "Workouts_ListWorkouts",
+      "Setup": "This example assumes \u0060using Terra;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
+    },
+    {
+      "Order": 23,
+      "Title": "Plan a workout onto a user\u0027s calendar",
+      "Slug": "workouts-planworkout",
+      "Description": "Schedules the workout template for a user on a given date and pushes it to the user\u0027s connected provider (or queues it for SDK delivery). Athlete metrics personalise zone-based targets for this plan only.",
+      "Language": "http",
+      "Code": "### Plan a workout onto a user\u0027s calendar\n# @name Workouts_PlanWorkout\nPOST {{host}}/workouts/{{workout_id}}/plan?user_id={{user_id}}\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json, application/problem\u002Bjson\n\n{\n  \u0022planned_date\u0022: \u00222025-01-01\u0022,\n  \u0022ftp\u0022: 0,\n  \u0022max_heart_rate\u0022: 0,\n  \u0022threshold_heart_rate\u0022: 0,\n  \u0022threshold_speed\u0022: 0,\n  \u0022pool_length_meters\u0022: 0\n}\n\n## Responses\n# 201\n# Description: Planned workout created and pushed (or queued for SDK delivery)\n# Content-Type: application/json\n# 400\n# Description: One or more parameters is malformed. The \u0060detail\u0060 field describes the specific problem.\n# Content-Type: application/problem\u002Bjson\n# 401\n# Description: Authentication credentials are missing or invalid.\n# Content-Type: application/problem\u002Bjson\n# 404\n# Description: A referenced resource does not exist on Terra\u0027s end.\n# Content-Type: application/problem\u002Bjson\n# 424\n# Description: The provider rejected the workout push; retry later.\n# Content-Type: application/problem\u002Bjson",
+      "Format": "http",
+      "OperationId": "Workouts_PlanWorkout",
+      "Setup": null
+    },
+    {
+      "Order": 24,
+      "Title": "Reschedule a planned workout",
+      "Slug": "workouts-updateplannedworkout",
+      "Description": "Generated from OpenAPI examples.",
+      "Language": "http",
+      "Code": "### Reschedule a planned workout\n# @name Workouts_UpdatePlannedWorkout\nPATCH {{host}}/plannedWorkouts/{{planned_workout_id}}\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json, application/problem\u002Bjson\n\n{\n  \u0022planned_date\u0022: \u00222025-01-01\u0022\n}\n\n## Responses\n# 200\n# Description: Updated planned workout\n# Content-Type: application/json\n# 400\n# Description: One or more parameters is malformed. The \u0060detail\u0060 field describes the specific problem.\n# Content-Type: application/problem\u002Bjson\n# 401\n# Description: Authentication credentials are missing or invalid.\n# Content-Type: application/problem\u002Bjson\n# 404\n# Description: A referenced resource does not exist on Terra\u0027s end.\n# Content-Type: application/problem\u002Bjson",
+      "Format": "http",
+      "OperationId": "Workouts_UpdatePlannedWorkout",
+      "Setup": null
+    }
+  ]
+}

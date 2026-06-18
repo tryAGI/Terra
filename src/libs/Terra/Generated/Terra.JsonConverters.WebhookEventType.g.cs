@@ -1,0 +1,993 @@
+#nullable enable
+#pragma warning disable CS0618 // Type or member is obsolete
+
+namespace Terra.JsonConverters
+{
+    /// <inheritdoc />
+    public class WebhookEventTypeJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Terra.WebhookEventType>
+    {
+        /// <inheritdoc />
+        public override global::Terra.WebhookEventType Read(
+            ref global::System.Text.Json.Utf8JsonReader reader,
+            global::System.Type typeToConvert,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+
+            using var __jsonDocument = global::System.Text.Json.JsonDocument.ParseValue(ref reader);
+            var __rawJson = __jsonDocument.RootElement.GetRawText();
+            var __jsonProps = new global::System.Collections.Generic.HashSet<string>();
+            if (__jsonDocument.RootElement.ValueKind == global::System.Text.Json.JsonValueKind.Object)
+            {
+                foreach (var __jsonProp in __jsonDocument.RootElement.EnumerateObject())
+                {
+                    __jsonProps.Add(__jsonProp.Name);
+                    if (__jsonProp.Value.ValueKind == global::System.Text.Json.JsonValueKind.Object)
+                    {
+                        foreach (var __nestedJsonProp in __jsonProp.Value.EnumerateObject())
+                        {
+                            __jsonProps.Add(__jsonProp.Name + "." + __nestedJsonProp.Name);
+                        }
+                    }
+
+                }
+            }
+
+            var __score0 = 0;
+            if (__jsonProps.Contains("flow_id")) __score0++;
+            if (__jsonProps.Contains("message")) __score0++;
+            if (__jsonProps.Contains("status")) __score0++;
+            if (__jsonProps.Contains("type")) __score0++;
+            if (__jsonProps.Contains("user")) __score0++;
+            if (__jsonProps.Contains("user.active")) __score0++;
+            if (__jsonProps.Contains("user.created_at")) __score0++;
+            if (__jsonProps.Contains("user.last_webhook_update")) __score0++;
+            if (__jsonProps.Contains("user.provider")) __score0++;
+            if (__jsonProps.Contains("user.reference_id")) __score0++;
+            if (__jsonProps.Contains("user.scopes")) __score0++;
+            if (__jsonProps.Contains("user.user_id")) __score0++;
+            if (__jsonProps.Contains("widget_session_id")) __score0++;
+            var __score1 = 0;
+            if (__jsonProps.Contains("flow_id")) __score1++;
+            if (__jsonProps.Contains("reason")) __score1++;
+            if (__jsonProps.Contains("reference_id")) __score1++;
+            if (__jsonProps.Contains("status")) __score1++;
+            if (__jsonProps.Contains("type")) __score1++;
+            var __score2 = 0;
+            if (__jsonProps.Contains("message")) __score2++;
+            if (__jsonProps.Contains("status")) __score2++;
+            if (__jsonProps.Contains("type")) __score2++;
+            if (__jsonProps.Contains("user")) __score2++;
+            if (__jsonProps.Contains("user.active")) __score2++;
+            if (__jsonProps.Contains("user.created_at")) __score2++;
+            if (__jsonProps.Contains("user.last_webhook_update")) __score2++;
+            if (__jsonProps.Contains("user.provider")) __score2++;
+            if (__jsonProps.Contains("user.reference_id")) __score2++;
+            if (__jsonProps.Contains("user.scopes")) __score2++;
+            if (__jsonProps.Contains("user.user_id")) __score2++;
+            var __score3 = 0;
+            if (__jsonProps.Contains("message")) __score3++;
+            if (__jsonProps.Contains("new_user")) __score3++;
+            if (__jsonProps.Contains("new_user.active")) __score3++;
+            if (__jsonProps.Contains("new_user.created_at")) __score3++;
+            if (__jsonProps.Contains("new_user.last_webhook_update")) __score3++;
+            if (__jsonProps.Contains("new_user.provider")) __score3++;
+            if (__jsonProps.Contains("new_user.reference_id")) __score3++;
+            if (__jsonProps.Contains("new_user.scopes")) __score3++;
+            if (__jsonProps.Contains("new_user.user_id")) __score3++;
+            if (__jsonProps.Contains("old_user")) __score3++;
+            if (__jsonProps.Contains("old_user.active")) __score3++;
+            if (__jsonProps.Contains("old_user.created_at")) __score3++;
+            if (__jsonProps.Contains("old_user.last_webhook_update")) __score3++;
+            if (__jsonProps.Contains("old_user.provider")) __score3++;
+            if (__jsonProps.Contains("old_user.reference_id")) __score3++;
+            if (__jsonProps.Contains("old_user.scopes")) __score3++;
+            if (__jsonProps.Contains("old_user.user_id")) __score3++;
+            if (__jsonProps.Contains("status")) __score3++;
+            if (__jsonProps.Contains("type")) __score3++;
+            var __score4 = 0;
+            if (__jsonProps.Contains("message")) __score4++;
+            if (__jsonProps.Contains("status")) __score4++;
+            if (__jsonProps.Contains("type")) __score4++;
+            if (__jsonProps.Contains("user")) __score4++;
+            if (__jsonProps.Contains("user.active")) __score4++;
+            if (__jsonProps.Contains("user.created_at")) __score4++;
+            if (__jsonProps.Contains("user.last_webhook_update")) __score4++;
+            if (__jsonProps.Contains("user.provider")) __score4++;
+            if (__jsonProps.Contains("user.reference_id")) __score4++;
+            if (__jsonProps.Contains("user.scopes")) __score4++;
+            if (__jsonProps.Contains("user.user_id")) __score4++;
+            var __score5 = 0;
+            if (__jsonProps.Contains("message")) __score5++;
+            if (__jsonProps.Contains("status")) __score5++;
+            if (__jsonProps.Contains("type")) __score5++;
+            if (__jsonProps.Contains("user")) __score5++;
+            if (__jsonProps.Contains("user.active")) __score5++;
+            if (__jsonProps.Contains("user.created_at")) __score5++;
+            if (__jsonProps.Contains("user.last_webhook_update")) __score5++;
+            if (__jsonProps.Contains("user.provider")) __score5++;
+            if (__jsonProps.Contains("user.reference_id")) __score5++;
+            if (__jsonProps.Contains("user.scopes")) __score5++;
+            if (__jsonProps.Contains("user.user_id")) __score5++;
+            var __score6 = 0;
+            if (__jsonProps.Contains("message")) __score6++;
+            if (__jsonProps.Contains("scopes_added")) __score6++;
+            if (__jsonProps.Contains("scopes_removed")) __score6++;
+            if (__jsonProps.Contains("status")) __score6++;
+            if (__jsonProps.Contains("type")) __score6++;
+            if (__jsonProps.Contains("user")) __score6++;
+            if (__jsonProps.Contains("user.active")) __score6++;
+            if (__jsonProps.Contains("user.created_at")) __score6++;
+            if (__jsonProps.Contains("user.last_webhook_update")) __score6++;
+            if (__jsonProps.Contains("user.provider")) __score6++;
+            if (__jsonProps.Contains("user.reference_id")) __score6++;
+            if (__jsonProps.Contains("user.scopes")) __score6++;
+            if (__jsonProps.Contains("user.user_id")) __score6++;
+            if (__jsonProps.Contains("version")) __score6++;
+            var __score7 = 0;
+            if (__jsonProps.Contains("message")) __score7++;
+            if (__jsonProps.Contains("reference")) __score7++;
+            if (__jsonProps.Contains("status")) __score7++;
+            if (__jsonProps.Contains("type")) __score7++;
+            if (__jsonProps.Contains("user")) __score7++;
+            if (__jsonProps.Contains("user.active")) __score7++;
+            if (__jsonProps.Contains("user.created_at")) __score7++;
+            if (__jsonProps.Contains("user.last_webhook_update")) __score7++;
+            if (__jsonProps.Contains("user.provider")) __score7++;
+            if (__jsonProps.Contains("user.reference_id")) __score7++;
+            if (__jsonProps.Contains("user.scopes")) __score7++;
+            if (__jsonProps.Contains("user.user_id")) __score7++;
+            var __score8 = 0;
+            if (__jsonProps.Contains("expected_payloads")) __score8++;
+            if (__jsonProps.Contains("message")) __score8++;
+            if (__jsonProps.Contains("reference")) __score8++;
+            if (__jsonProps.Contains("type")) __score8++;
+            if (__jsonProps.Contains("user")) __score8++;
+            if (__jsonProps.Contains("user.active")) __score8++;
+            if (__jsonProps.Contains("user.created_at")) __score8++;
+            if (__jsonProps.Contains("user.last_webhook_update")) __score8++;
+            if (__jsonProps.Contains("user.provider")) __score8++;
+            if (__jsonProps.Contains("user.reference_id")) __score8++;
+            if (__jsonProps.Contains("user.scopes")) __score8++;
+            if (__jsonProps.Contains("user.user_id")) __score8++;
+            var __score9 = 0;
+            if (__jsonProps.Contains("data")) __score9++;
+            if (__jsonProps.Contains("type")) __score9++;
+            if (__jsonProps.Contains("user")) __score9++;
+            if (__jsonProps.Contains("user.active")) __score9++;
+            if (__jsonProps.Contains("user.created_at")) __score9++;
+            if (__jsonProps.Contains("user.last_webhook_update")) __score9++;
+            if (__jsonProps.Contains("user.provider")) __score9++;
+            if (__jsonProps.Contains("user.reference_id")) __score9++;
+            if (__jsonProps.Contains("user.scopes")) __score9++;
+            if (__jsonProps.Contains("user.user_id")) __score9++;
+            if (__jsonProps.Contains("version")) __score9++;
+            var __score10 = 0;
+            if (__jsonProps.Contains("athlete")) __score10++;
+            if (__jsonProps.Contains("athlete.age")) __score10++;
+            if (__jsonProps.Contains("athlete.bio")) __score10++;
+            if (__jsonProps.Contains("athlete.city")) __score10++;
+            if (__jsonProps.Contains("athlete.country")) __score10++;
+            if (__jsonProps.Contains("athlete.date_of_birth")) __score10++;
+            if (__jsonProps.Contains("athlete.devices")) __score10++;
+            if (__jsonProps.Contains("athlete.email")) __score10++;
+            if (__jsonProps.Contains("athlete.first_name")) __score10++;
+            if (__jsonProps.Contains("athlete.gender")) __score10++;
+            if (__jsonProps.Contains("athlete.joined_provider")) __score10++;
+            if (__jsonProps.Contains("athlete.last_name")) __score10++;
+            if (__jsonProps.Contains("athlete.sex")) __score10++;
+            if (__jsonProps.Contains("athlete.state")) __score10++;
+            if (__jsonProps.Contains("type")) __score10++;
+            if (__jsonProps.Contains("user")) __score10++;
+            if (__jsonProps.Contains("user.active")) __score10++;
+            if (__jsonProps.Contains("user.created_at")) __score10++;
+            if (__jsonProps.Contains("user.last_webhook_update")) __score10++;
+            if (__jsonProps.Contains("user.provider")) __score10++;
+            if (__jsonProps.Contains("user.reference_id")) __score10++;
+            if (__jsonProps.Contains("user.scopes")) __score10++;
+            if (__jsonProps.Contains("user.user_id")) __score10++;
+            if (__jsonProps.Contains("version")) __score10++;
+            var __score11 = 0;
+            if (__jsonProps.Contains("data")) __score11++;
+            if (__jsonProps.Contains("type")) __score11++;
+            if (__jsonProps.Contains("user")) __score11++;
+            if (__jsonProps.Contains("user.active")) __score11++;
+            if (__jsonProps.Contains("user.created_at")) __score11++;
+            if (__jsonProps.Contains("user.last_webhook_update")) __score11++;
+            if (__jsonProps.Contains("user.provider")) __score11++;
+            if (__jsonProps.Contains("user.reference_id")) __score11++;
+            if (__jsonProps.Contains("user.scopes")) __score11++;
+            if (__jsonProps.Contains("user.user_id")) __score11++;
+            if (__jsonProps.Contains("version")) __score11++;
+            var __score12 = 0;
+            if (__jsonProps.Contains("data")) __score12++;
+            if (__jsonProps.Contains("type")) __score12++;
+            if (__jsonProps.Contains("user")) __score12++;
+            if (__jsonProps.Contains("user.active")) __score12++;
+            if (__jsonProps.Contains("user.created_at")) __score12++;
+            if (__jsonProps.Contains("user.last_webhook_update")) __score12++;
+            if (__jsonProps.Contains("user.provider")) __score12++;
+            if (__jsonProps.Contains("user.reference_id")) __score12++;
+            if (__jsonProps.Contains("user.scopes")) __score12++;
+            if (__jsonProps.Contains("user.user_id")) __score12++;
+            if (__jsonProps.Contains("version")) __score12++;
+            var __score13 = 0;
+            if (__jsonProps.Contains("data")) __score13++;
+            if (__jsonProps.Contains("type")) __score13++;
+            if (__jsonProps.Contains("user")) __score13++;
+            if (__jsonProps.Contains("user.active")) __score13++;
+            if (__jsonProps.Contains("user.created_at")) __score13++;
+            if (__jsonProps.Contains("user.last_webhook_update")) __score13++;
+            if (__jsonProps.Contains("user.provider")) __score13++;
+            if (__jsonProps.Contains("user.reference_id")) __score13++;
+            if (__jsonProps.Contains("user.scopes")) __score13++;
+            if (__jsonProps.Contains("user.user_id")) __score13++;
+            if (__jsonProps.Contains("version")) __score13++;
+            var __score14 = 0;
+            if (__jsonProps.Contains("data")) __score14++;
+            if (__jsonProps.Contains("type")) __score14++;
+            if (__jsonProps.Contains("user")) __score14++;
+            if (__jsonProps.Contains("user.active")) __score14++;
+            if (__jsonProps.Contains("user.created_at")) __score14++;
+            if (__jsonProps.Contains("user.last_webhook_update")) __score14++;
+            if (__jsonProps.Contains("user.provider")) __score14++;
+            if (__jsonProps.Contains("user.reference_id")) __score14++;
+            if (__jsonProps.Contains("user.scopes")) __score14++;
+            if (__jsonProps.Contains("user.user_id")) __score14++;
+            if (__jsonProps.Contains("version")) __score14++;
+            var __score15 = 0;
+            if (__jsonProps.Contains("data")) __score15++;
+            if (__jsonProps.Contains("type")) __score15++;
+            if (__jsonProps.Contains("user")) __score15++;
+            if (__jsonProps.Contains("user.active")) __score15++;
+            if (__jsonProps.Contains("user.created_at")) __score15++;
+            if (__jsonProps.Contains("user.last_webhook_update")) __score15++;
+            if (__jsonProps.Contains("user.provider")) __score15++;
+            if (__jsonProps.Contains("user.reference_id")) __score15++;
+            if (__jsonProps.Contains("user.scopes")) __score15++;
+            if (__jsonProps.Contains("user.user_id")) __score15++;
+            if (__jsonProps.Contains("version")) __score15++;
+            var __score16 = 0;
+            if (__jsonProps.Contains("expires_in")) __score16++;
+            if (__jsonProps.Contains("status")) __score16++;
+            if (__jsonProps.Contains("type")) __score16++;
+            if (__jsonProps.Contains("url")) __score16++;
+            var __bestScore = 0;
+            var __bestIndex = -1;
+            if (__score0 > __bestScore) { __bestScore = __score0; __bestIndex = 0; }
+            if (__score1 > __bestScore) { __bestScore = __score1; __bestIndex = 1; }
+            if (__score2 > __bestScore) { __bestScore = __score2; __bestIndex = 2; }
+            if (__score3 > __bestScore) { __bestScore = __score3; __bestIndex = 3; }
+            if (__score4 > __bestScore) { __bestScore = __score4; __bestIndex = 4; }
+            if (__score5 > __bestScore) { __bestScore = __score5; __bestIndex = 5; }
+            if (__score6 > __bestScore) { __bestScore = __score6; __bestIndex = 6; }
+            if (__score7 > __bestScore) { __bestScore = __score7; __bestIndex = 7; }
+            if (__score8 > __bestScore) { __bestScore = __score8; __bestIndex = 8; }
+            if (__score9 > __bestScore) { __bestScore = __score9; __bestIndex = 9; }
+            if (__score10 > __bestScore) { __bestScore = __score10; __bestIndex = 10; }
+            if (__score11 > __bestScore) { __bestScore = __score11; __bestIndex = 11; }
+            if (__score12 > __bestScore) { __bestScore = __score12; __bestIndex = 12; }
+            if (__score13 > __bestScore) { __bestScore = __score13; __bestIndex = 13; }
+            if (__score14 > __bestScore) { __bestScore = __score14; __bestIndex = 14; }
+            if (__score15 > __bestScore) { __bestScore = __score15; __bestIndex = 15; }
+            if (__score16 > __bestScore) { __bestScore = __score16; __bestIndex = 16; }
+
+            global::Terra.AuthSuccessEvent? authSuccess = default;
+            global::Terra.AuthErrorEvent? authError = default;
+            global::Terra.DeauthEvent? deauth = default;
+            global::Terra.UserReauthEvent? userReauth = default;
+            global::Terra.AccessRevokedEvent? accessRevoked = default;
+            global::Terra.ConnectionErrorEvent? connectionError = default;
+            global::Terra.PermissionChangeEvent? permissionChange = default;
+            global::Terra.LargeRequestProcessingEvent? largeRequestProcessing = default;
+            global::Terra.LargeRequestSendingEvent? largeRequestSending = default;
+            global::Terra.ActivityEvent? activity = default;
+            global::Terra.AthleteEvent? athlete = default;
+            global::Terra.BodyEvent? body = default;
+            global::Terra.DailyEvent? daily = default;
+            global::Terra.MenstruationEvent? menstruation = default;
+            global::Terra.NutritionEvent? nutrition = default;
+            global::Terra.SleepEvent? sleep = default;
+            global::Terra.S3PayloadEvent? s3Payload = default;
+            if (__bestIndex >= 0)
+            {
+                if (__bestIndex == 0)
+                {
+                    try
+                    {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.AuthSuccessEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.AuthSuccessEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.AuthSuccessEvent).Name}");
+                        authSuccess = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+                else if (__bestIndex == 1)
+                {
+                    try
+                    {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.AuthErrorEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.AuthErrorEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.AuthErrorEvent).Name}");
+                        authError = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+                else if (__bestIndex == 2)
+                {
+                    try
+                    {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.DeauthEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.DeauthEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.DeauthEvent).Name}");
+                        deauth = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+                else if (__bestIndex == 3)
+                {
+                    try
+                    {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.UserReauthEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.UserReauthEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.UserReauthEvent).Name}");
+                        userReauth = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+                else if (__bestIndex == 4)
+                {
+                    try
+                    {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.AccessRevokedEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.AccessRevokedEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.AccessRevokedEvent).Name}");
+                        accessRevoked = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+                else if (__bestIndex == 5)
+                {
+                    try
+                    {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.ConnectionErrorEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.ConnectionErrorEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.ConnectionErrorEvent).Name}");
+                        connectionError = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+                else if (__bestIndex == 6)
+                {
+                    try
+                    {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.PermissionChangeEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.PermissionChangeEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.PermissionChangeEvent).Name}");
+                        permissionChange = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+                else if (__bestIndex == 7)
+                {
+                    try
+                    {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.LargeRequestProcessingEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.LargeRequestProcessingEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.LargeRequestProcessingEvent).Name}");
+                        largeRequestProcessing = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+                else if (__bestIndex == 8)
+                {
+                    try
+                    {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.LargeRequestSendingEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.LargeRequestSendingEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.LargeRequestSendingEvent).Name}");
+                        largeRequestSending = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+                else if (__bestIndex == 9)
+                {
+                    try
+                    {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.ActivityEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.ActivityEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.ActivityEvent).Name}");
+                        activity = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+                else if (__bestIndex == 10)
+                {
+                    try
+                    {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.AthleteEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.AthleteEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.AthleteEvent).Name}");
+                        athlete = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+                else if (__bestIndex == 11)
+                {
+                    try
+                    {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.BodyEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.BodyEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.BodyEvent).Name}");
+                        body = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+                else if (__bestIndex == 12)
+                {
+                    try
+                    {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.DailyEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.DailyEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.DailyEvent).Name}");
+                        daily = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+                else if (__bestIndex == 13)
+                {
+                    try
+                    {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.MenstruationEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.MenstruationEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.MenstruationEvent).Name}");
+                        menstruation = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+                else if (__bestIndex == 14)
+                {
+                    try
+                    {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.NutritionEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.NutritionEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.NutritionEvent).Name}");
+                        nutrition = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+                else if (__bestIndex == 15)
+                {
+                    try
+                    {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.SleepEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.SleepEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.SleepEvent).Name}");
+                        sleep = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+                else if (__bestIndex == 16)
+                {
+                    try
+                    {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.S3PayloadEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.S3PayloadEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.S3PayloadEvent).Name}");
+                        s3Payload = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+            }
+
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.AuthSuccessEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.AuthSuccessEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.AuthSuccessEvent).Name}");
+                    authSuccess = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.AuthErrorEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.AuthErrorEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.AuthErrorEvent).Name}");
+                    authError = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.DeauthEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.DeauthEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.DeauthEvent).Name}");
+                    deauth = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.UserReauthEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.UserReauthEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.UserReauthEvent).Name}");
+                    userReauth = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.AccessRevokedEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.AccessRevokedEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.AccessRevokedEvent).Name}");
+                    accessRevoked = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.ConnectionErrorEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.ConnectionErrorEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.ConnectionErrorEvent).Name}");
+                    connectionError = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.PermissionChangeEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.PermissionChangeEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.PermissionChangeEvent).Name}");
+                    permissionChange = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.LargeRequestProcessingEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.LargeRequestProcessingEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.LargeRequestProcessingEvent).Name}");
+                    largeRequestProcessing = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.LargeRequestSendingEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.LargeRequestSendingEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.LargeRequestSendingEvent).Name}");
+                    largeRequestSending = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.ActivityEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.ActivityEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.ActivityEvent).Name}");
+                    activity = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.AthleteEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.AthleteEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.AthleteEvent).Name}");
+                    athlete = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.BodyEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.BodyEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.BodyEvent).Name}");
+                    body = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.DailyEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.DailyEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.DailyEvent).Name}");
+                    daily = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.MenstruationEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.MenstruationEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.MenstruationEvent).Name}");
+                    menstruation = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.NutritionEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.NutritionEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.NutritionEvent).Name}");
+                    nutrition = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.SleepEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.SleepEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.SleepEvent).Name}");
+                    sleep = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && s3Payload == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.S3PayloadEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.S3PayloadEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.S3PayloadEvent).Name}");
+                    s3Payload = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            var __value = new global::Terra.WebhookEventType(
+                authSuccess,
+
+                authError,
+
+                deauth,
+
+                userReauth,
+
+                accessRevoked,
+
+                connectionError,
+
+                permissionChange,
+
+                largeRequestProcessing,
+
+                largeRequestSending,
+
+                activity,
+
+                athlete,
+
+                body,
+
+                daily,
+
+                menstruation,
+
+                nutrition,
+
+                sleep,
+
+                s3Payload
+                );
+
+            return __value;
+        }
+
+        /// <inheritdoc />
+        public override void Write(
+            global::System.Text.Json.Utf8JsonWriter writer,
+            global::Terra.WebhookEventType value,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+
+            if (value.IsAuthSuccess)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.AuthSuccessEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.AuthSuccessEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.AuthSuccessEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AuthSuccess!, typeInfo);
+            }
+            else if (value.IsAuthError)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.AuthErrorEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.AuthErrorEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.AuthErrorEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AuthError!, typeInfo);
+            }
+            else if (value.IsDeauth)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.DeauthEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.DeauthEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.DeauthEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Deauth!, typeInfo);
+            }
+            else if (value.IsUserReauth)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.UserReauthEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.UserReauthEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.UserReauthEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UserReauth!, typeInfo);
+            }
+            else if (value.IsAccessRevoked)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.AccessRevokedEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.AccessRevokedEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.AccessRevokedEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AccessRevoked!, typeInfo);
+            }
+            else if (value.IsConnectionError)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.ConnectionErrorEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.ConnectionErrorEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.ConnectionErrorEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ConnectionError!, typeInfo);
+            }
+            else if (value.IsPermissionChange)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.PermissionChangeEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.PermissionChangeEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.PermissionChangeEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PermissionChange!, typeInfo);
+            }
+            else if (value.IsLargeRequestProcessing)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.LargeRequestProcessingEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.LargeRequestProcessingEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.LargeRequestProcessingEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.LargeRequestProcessing!, typeInfo);
+            }
+            else if (value.IsLargeRequestSending)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.LargeRequestSendingEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.LargeRequestSendingEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.LargeRequestSendingEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.LargeRequestSending!, typeInfo);
+            }
+            else if (value.IsActivity)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.ActivityEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.ActivityEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.ActivityEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Activity!, typeInfo);
+            }
+            else if (value.IsAthlete)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.AthleteEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.AthleteEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.AthleteEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Athlete!, typeInfo);
+            }
+            else if (value.IsBody)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.BodyEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.BodyEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.BodyEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Body!, typeInfo);
+            }
+            else if (value.IsDaily)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.DailyEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.DailyEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.DailyEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Daily!, typeInfo);
+            }
+            else if (value.IsMenstruation)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.MenstruationEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.MenstruationEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.MenstruationEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Menstruation!, typeInfo);
+            }
+            else if (value.IsNutrition)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.NutritionEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.NutritionEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.NutritionEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Nutrition!, typeInfo);
+            }
+            else if (value.IsSleep)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.SleepEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.SleepEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.SleepEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Sleep!, typeInfo);
+            }
+            else if (value.IsS3Payload)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.S3PayloadEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.S3PayloadEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.S3PayloadEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.S3Payload!, typeInfo);
+            }
+        }
+    }
+}
