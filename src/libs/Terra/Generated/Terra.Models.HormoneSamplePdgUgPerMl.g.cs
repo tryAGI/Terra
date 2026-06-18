@@ -1,0 +1,20 @@
+
+#nullable enable
+
+namespace Terra
+{
+    /// <summary>
+    /// Pregnanediol glucuronide reading, micrograms per millilitre. Urinary progesterone metabolite, confirms ovulation.<br/>
+    /// Example: 2.4
+    /// </summary>
+    public sealed partial class HormoneSamplePdgUgPerMl
+    {
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+    }
+}

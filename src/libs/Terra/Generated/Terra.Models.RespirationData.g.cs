@@ -9,19 +9,19 @@ namespace Terra
     public sealed partial class RespirationData
     {
         /// <summary>
-        /// 
+        /// Object containing information on breathing rate for the sleep session.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("breaths_data")]
         public global::Terra.BreathsData? BreathsData { get; set; }
 
         /// <summary>
-        /// 
+        /// Object containing information on saturation metrics for the sleep session.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("oxygen_saturation_data")]
         public global::Terra.OxygenSaturationData? OxygenSaturationData { get; set; }
 
         /// <summary>
-        /// 
+        /// Object containing information on snoring metrics for the sleep session.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("snoring_data")]
         public global::Terra.SnoringData? SnoringData { get; set; }
@@ -35,9 +35,15 @@ namespace Terra
         /// <summary>
         /// Initializes a new instance of the <see cref="RespirationData" /> class.
         /// </summary>
-        /// <param name="breathsData"></param>
-        /// <param name="oxygenSaturationData"></param>
-        /// <param name="snoringData"></param>
+        /// <param name="breathsData">
+        /// Object containing information on breathing rate for the sleep session.
+        /// </param>
+        /// <param name="oxygenSaturationData">
+        /// Object containing information on saturation metrics for the sleep session.
+        /// </param>
+        /// <param name="snoringData">
+        /// Object containing information on snoring metrics for the sleep session.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif

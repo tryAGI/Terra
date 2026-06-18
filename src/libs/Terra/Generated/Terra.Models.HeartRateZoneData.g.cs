@@ -9,7 +9,7 @@ namespace Terra
     public sealed partial class HeartRateZoneData
     {
         /// <summary>
-        /// Represents the heart rate zone the user is currently in during a workout or activity
+        /// Heart rate zone designation
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("zone")]
         public double? Zone { get; set; }
@@ -56,7 +56,7 @@ namespace Terra
         /// Initializes a new instance of the <see cref="HeartRateZoneData" /> class.
         /// </summary>
         /// <param name="zone">
-        /// Represents the heart rate zone the user is currently in during a workout or activity
+        /// Heart rate zone designation
         /// </param>
         /// <param name="startPercentage">
         /// Start percentage (based off user's max HR) of the HR zone<br/>

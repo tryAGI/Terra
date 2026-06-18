@@ -27,10 +27,8 @@ namespace Terra
         public required string StartTime { get; set; }
 
         /// <summary>
-        /// Indicates whether the timestamps in this payload are localized (LOCAL) or in UTC.<br/>
-        /// Example: 0
+        /// 
         /// </summary>
-        /// <example>0</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("timestamp_localization")]
         public double? TimestampLocalization { get; set; }
 
@@ -61,10 +59,7 @@ namespace Terra
         /// <param name="uploadType">
         /// The type of upload for the associated workout, providing information on how the workout data was recorded or entered
         /// </param>
-        /// <param name="timestampLocalization">
-        /// Indicates whether the timestamps in this payload are localized (LOCAL) or in UTC.<br/>
-        /// Example: 0
-        /// </param>
+        /// <param name="timestampLocalization"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif

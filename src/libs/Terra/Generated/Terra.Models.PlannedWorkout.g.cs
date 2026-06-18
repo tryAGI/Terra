@@ -57,7 +57,7 @@ namespace Terra
         public bool? IsExternal { get; set; }
 
         /// <summary>
-        /// Athlete-specific metrics used to personalise workout targets for one planned workout
+        /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("athlete_metrics")]
         public global::Terra.AthleteMetrics? AthleteMetrics { get; set; }
@@ -95,9 +95,7 @@ namespace Terra
         /// <param name="isExternal">
         /// True when the workout was created on the provider side rather than through Terra
         /// </param>
-        /// <param name="athleteMetrics">
-        /// Athlete-specific metrics used to personalise workout targets for one planned workout
-        /// </param>
+        /// <param name="athleteMetrics"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif

@@ -43,9 +43,7 @@ namespace Terra
         /// <param name="sport">
         /// Sport a workout template targets. Indoor/outdoor is expressed separately via environment.
         /// </param>
-        /// <param name="environment">
-        /// Environment a workout takes place in
-        /// </param>
+        /// <param name="environment"></param>
         /// <param name="poolLengthMeters">
         /// Pool length in meters, for swim workouts
         /// </param>

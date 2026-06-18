@@ -9,13 +9,13 @@ namespace Terra
     public sealed partial class SleepDurationsData
     {
         /// <summary>
-        /// 
+        /// Object containing information on the duration the user spent asleep during the sleep recording session.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("asleep")]
         public global::Terra.AsleepDurations? Asleep { get; set; }
 
         /// <summary>
-        /// 
+        /// Object containing information on the duration the user spent awake during the sleep recording session.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("awake")]
         public global::Terra.AwakeDurations? Awake { get; set; }
@@ -27,7 +27,7 @@ namespace Terra
         public global::System.Collections.Generic.IList<global::Terra.SleepHypnogramSample>? HypnogramSamples { get; set; }
 
         /// <summary>
-        /// 
+        /// Object containing information on the miscellaneous duration data for the sleep recording session.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("other")]
         public global::Terra.OtherSleepDurations? Other { get; set; }
@@ -49,12 +49,18 @@ namespace Terra
         /// <summary>
         /// Initializes a new instance of the <see cref="SleepDurationsData" /> class.
         /// </summary>
-        /// <param name="asleep"></param>
-        /// <param name="awake"></param>
+        /// <param name="asleep">
+        /// Object containing information on the duration the user spent asleep during the sleep recording session.
+        /// </param>
+        /// <param name="awake">
+        /// Object containing information on the duration the user spent awake during the sleep recording session.
+        /// </param>
         /// <param name="hypnogramSamples">
         /// List of sleep stage (Hypnogram) samples recorded during the user's sleep session.
         /// </param>
-        /// <param name="other"></param>
+        /// <param name="other">
+        /// Object containing information on the miscellaneous duration data for the sleep recording session.
+        /// </param>
         /// <param name="sleepEfficiency">
         /// Sleep efficiency of the user given as a percentage, measured as time spent asleep divided by time spent in bed.<br/>
         /// Example: 87.5

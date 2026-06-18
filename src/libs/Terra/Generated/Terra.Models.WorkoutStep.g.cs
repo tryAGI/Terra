@@ -42,13 +42,13 @@ namespace Terra
         public global::System.Collections.Generic.IList<global::Terra.StepControl>? Controls { get; set; }
 
         /// <summary>
-        /// Strength-exercise details for a step
+        /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("strength")]
         public global::Terra.StrengthData? Strength { get; set; }
 
         /// <summary>
-        /// Swimming details for a step
+        /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("swimming")]
         public global::Terra.SwimStepData? Swimming { get; set; }
@@ -77,12 +77,8 @@ namespace Terra
         /// <param name="controls">
         /// Equipment controls applied during the step
         /// </param>
-        /// <param name="strength">
-        /// Strength-exercise details for a step
-        /// </param>
-        /// <param name="swimming">
-        /// Swimming details for a step
-        /// </param>
+        /// <param name="strength"></param>
+        /// <param name="swimming"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif

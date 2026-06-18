@@ -27,10 +27,8 @@ namespace Terra
         public required string StartTime { get; set; }
 
         /// <summary>
-        /// Indicates whether the timestamps in this payload are localized (LOCAL) or in UTC.<br/>
-        /// Example: 0
+        /// 
         /// </summary>
-        /// <example>0</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("timestamp_localization")]
         public double? TimestampLocalization { get; set; }
 
@@ -51,10 +49,7 @@ namespace Terra
         /// The start time of the associated day, in ISO8601 format with microsecond precision. Will always fall on midnight of any given day, and will always be equal to 24h before end_time. TimeZone info will be provided whenever possible. If absent, the time corresponds to the user's local time.<br/>
         /// Example: 1999-11-23T09:00:00.000000+02:00
         /// </param>
-        /// <param name="timestampLocalization">
-        /// Indicates whether the timestamps in this payload are localized (LOCAL) or in UTC.<br/>
-        /// Example: 0
-        /// </param>
+        /// <param name="timestampLocalization"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif

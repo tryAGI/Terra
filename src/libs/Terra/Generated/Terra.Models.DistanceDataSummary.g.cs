@@ -15,7 +15,7 @@ namespace Terra
         public int? DistanceMeters { get; set; }
 
         /// <summary>
-        /// 
+        /// Object containing information on the elevation of the user throughout the workout.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("elevation")]
         public global::Terra.ElevationData? Elevation { get; set; }
@@ -33,7 +33,7 @@ namespace Terra
         public int? Steps { get; set; }
 
         /// <summary>
-        /// 
+        /// Summary information of the user's swimming statistics for the workout, if applicable.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("swimming")]
         public global::Terra.SwimmingData? Swimming { get; set; }
@@ -50,14 +50,18 @@ namespace Terra
         /// <param name="distanceMeters">
         /// Total distance covered by the user throughout the workout.
         /// </param>
-        /// <param name="elevation"></param>
+        /// <param name="elevation">
+        /// Object containing information on the elevation of the user throughout the workout.
+        /// </param>
         /// <param name="floorsClimbed">
         /// Total number of elevation gain in floors climbed equivalent throughout the workout, as determined by the fitness data provider.
         /// </param>
         /// <param name="steps">
         /// Total number of steps performed during the workout.
         /// </param>
-        /// <param name="swimming"></param>
+        /// <param name="swimming">
+        /// Summary information of the user's swimming statistics for the workout, if applicable.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif

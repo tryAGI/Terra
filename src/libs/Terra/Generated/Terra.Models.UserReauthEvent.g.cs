@@ -23,7 +23,7 @@ namespace Terra
         public required global::Terra.TerraUser NewUser { get; set; }
 
         /// <summary>
-        /// 
+        /// The old user record that will be deleted, when available
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("old_user")]
         public global::Terra.TerraUser? OldUser { get; set; }
@@ -56,7 +56,9 @@ namespace Terra
         /// Information about the re-authentication
         /// </param>
         /// <param name="type"></param>
-        /// <param name="oldUser"></param>
+        /// <param name="oldUser">
+        /// The old user record that will be deleted, when available
+        /// </param>
         /// <param name="status">
         /// Status of the re-authentication
         /// </param>

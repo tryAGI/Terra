@@ -9,13 +9,13 @@ namespace Terra
     public sealed partial class HeartRateData
     {
         /// <summary>
-        /// 
+        /// Object containing detailed heart rate information for the associated workout.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("detailed")]
         public global::Terra.HeartRateDataDetailed? Detailed { get; set; }
 
         /// <summary>
-        /// 
+        /// Object containing summary heart rate information for the associated workout.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("summary")]
         public global::Terra.HeartRateDataSummary? Summary { get; set; }
@@ -29,8 +29,12 @@ namespace Terra
         /// <summary>
         /// Initializes a new instance of the <see cref="HeartRateData" /> class.
         /// </summary>
-        /// <param name="detailed"></param>
-        /// <param name="summary"></param>
+        /// <param name="detailed">
+        /// Object containing detailed heart rate information for the associated workout.
+        /// </param>
+        /// <param name="summary">
+        /// Object containing summary heart rate information for the associated workout.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif

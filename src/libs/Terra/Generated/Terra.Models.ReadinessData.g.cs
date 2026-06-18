@@ -17,7 +17,7 @@ namespace Terra
         public int? Readiness { get; set; }
 
         /// <summary>
-        /// User's recovery score for a given day, resulting from the sleep session
+        /// User's recovery score for a given day, resulting from the sleep session - takes Enum value.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("recovery_level")]
         public double? RecoveryLevel { get; set; }
@@ -36,7 +36,7 @@ namespace Terra
         /// Example: 85
         /// </param>
         /// <param name="recoveryLevel">
-        /// User's recovery score for a given day, resulting from the sleep session
+        /// User's recovery score for a given day, resulting from the sleep session - takes Enum value.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

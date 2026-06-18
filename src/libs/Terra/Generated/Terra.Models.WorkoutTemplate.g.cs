@@ -30,10 +30,9 @@ namespace Terra
         public required global::Terra.WorkoutSport Sport { get; set; }
 
         /// <summary>
-        /// Environment a workout takes place in
+        /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("environment")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Terra.JsonConverters.EnvironmentTypeJsonConverter))]
         public global::Terra.EnvironmentType? Environment { get; set; }
 
         /// <summary>
@@ -92,9 +91,7 @@ namespace Terra
         /// <param name="description">
         /// Description of the workout
         /// </param>
-        /// <param name="environment">
-        /// Environment a workout takes place in
-        /// </param>
+        /// <param name="environment"></param>
         /// <param name="poolLengthMeters">
         /// Pool length in meters, for swim workouts
         /// </param>

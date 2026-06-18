@@ -16,7 +16,7 @@ namespace Terra
         public required global::Terra.MenstruationMetadata Metadata { get; set; }
 
         /// <summary>
-        /// 
+        /// Object containing information on user's menstruation for a given day.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("menstruation_data")]
         public global::Terra.MenstruationData? MenstruationData { get; set; }
@@ -31,7 +31,9 @@ namespace Terra
         /// Initializes a new instance of the <see cref="Menstruation" /> class.
         /// </summary>
         /// <param name="metadata"></param>
-        /// <param name="menstruationData"></param>
+        /// <param name="menstruationData">
+        /// Object containing information on user's menstruation for a given day.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif

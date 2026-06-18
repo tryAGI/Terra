@@ -9,13 +9,13 @@ namespace Terra
     public sealed partial class DistanceData
     {
         /// <summary>
-        /// 
+        /// Object containing detailed distance information - this may included second-by-second samples.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("detailed")]
         public global::Terra.DistanceDataDetailed? Detailed { get; set; }
 
         /// <summary>
-        /// 
+        /// Object containing summary information related to distance covered throughout the workout.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("summary")]
         public global::Terra.DistanceDataSummary? Summary { get; set; }
@@ -29,8 +29,12 @@ namespace Terra
         /// <summary>
         /// Initializes a new instance of the <see cref="DistanceData" /> class.
         /// </summary>
-        /// <param name="detailed"></param>
-        /// <param name="summary"></param>
+        /// <param name="detailed">
+        /// Object containing detailed distance information - this may included second-by-second samples.
+        /// </param>
+        /// <param name="summary">
+        /// Object containing summary information related to distance covered throughout the workout.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
