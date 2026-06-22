@@ -156,17 +156,6 @@
     },
     {
       "Order": 15,
-      "Title": "Modify user",
-      "Slug": "user-modifyuser",
-      "Description": "Update a Terra user\u0027s reference_id or active status",
-      "Language": "http",
-      "Code": "### Modify user\n# @name User_ModifyUser\nPATCH {{host}}/users/{{user_id}}\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json, application/problem\u002Bjson\n\n{\n  \u0022reference_id\u0022: \u0022updatedUser123\u0022,\n  \u0022active\u0022: true\n}\n\n## Responses\n# 200\n# Description: Returned upon successful user modification\n# Content-Type: application/json\n# 400\n# Description: One or more parameters is malformed. The \u0060detail\u0060 field describes the specific problem.\n# Content-Type: application/problem\u002Bjson",
-      "Format": "http",
-      "OperationId": "User_ModifyUser",
-      "Setup": null
-    },
-    {
-      "Order": 16,
       "Title": "Create a workout template",
       "Slug": "workouts-createworkout",
       "Description": "Stores a reusable workout template. Plan it onto a user\u0027s calendar with \u0060POST /workouts/{workout_id}/plan\u0060 \u2014 the template itself carries no date and is not pushed to any provider until planned.",
@@ -177,7 +166,7 @@
       "Setup": null
     },
     {
-      "Order": 17,
+      "Order": 16,
       "Title": "Delete a planned workout",
       "Slug": "workouts-deleteplannedworkout",
       "Description": "Removes the planned workout from the user\u0027s calendar and from the connected provider.",
@@ -188,7 +177,7 @@
       "Setup": null
     },
     {
-      "Order": 18,
+      "Order": 17,
       "Title": "Delete a workout template",
       "Slug": "workouts-deleteworkout",
       "Description": "Deletes the template and cascades deletion of every planned workout created from it, including removal from connected providers.",
@@ -199,7 +188,7 @@
       "Setup": null
     },
     {
-      "Order": 19,
+      "Order": 18,
       "Title": "Get a planned workout",
       "Slug": "workouts-getplannedworkout",
       "Description": "Generated from OpenAPI examples.",
@@ -210,7 +199,7 @@
       "Setup": null
     },
     {
-      "Order": 20,
+      "Order": 19,
       "Title": "Get a workout template",
       "Slug": "workouts-getworkout",
       "Description": "Generated from OpenAPI examples.",
@@ -221,7 +210,7 @@
       "Setup": null
     },
     {
-      "Order": 21,
+      "Order": 20,
       "Title": "List planned workouts for a user",
       "Slug": "workouts-listplannedworkouts",
       "Description": "Returns the user\u0027s planned workouts, including workouts created on the provider side (is_external true) where the provider exposes them.",
@@ -232,7 +221,7 @@
       "Setup": null
     },
     {
-      "Order": 22,
+      "Order": 21,
       "Title": "List workout templates",
       "Slug": "workouts-listworkouts",
       "Description": "Returns every workout template stored for your developer account.",
@@ -243,7 +232,7 @@
       "Setup": "This example assumes \u0060using Terra;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
     },
     {
-      "Order": 23,
+      "Order": 22,
       "Title": "Plan a workout onto a user\u0027s calendar",
       "Slug": "workouts-planworkout",
       "Description": "Schedules the workout template for a user on a given date and pushes it to the user\u0027s connected provider (or queues it for SDK delivery). Athlete metrics personalise zone-based targets for this plan only.",
@@ -254,7 +243,7 @@
       "Setup": null
     },
     {
-      "Order": 24,
+      "Order": 23,
       "Title": "Reschedule a planned workout",
       "Slug": "workouts-updateplannedworkout",
       "Description": "Generated from OpenAPI examples.",

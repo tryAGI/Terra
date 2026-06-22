@@ -409,10 +409,6 @@ namespace Terra
 
             typeof(global::Terra.JsonConverters.AuthenticationGenerateWidgetSessionResponseStatusNullableJsonConverter),
 
-            typeof(global::Terra.JsonConverters.UserModifyUserResponseStatusJsonConverter),
-
-            typeof(global::Terra.JsonConverters.UserModifyUserResponseStatusNullableJsonConverter),
-
             typeof(global::Terra.JsonConverters.AuthenticationDeauthenticateUserResponseStatusJsonConverter),
 
             typeof(global::Terra.JsonConverters.AuthenticationDeauthenticateUserResponseStatusNullableJsonConverter),
@@ -829,7 +825,6 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.HormoneEventType), TypeInfoPropertyName = "HormoneEventType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.HormoneSample>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationAuthenticateUserRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserModifyUserRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutsPlanWorkoutRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutsUpdatePlannedWorkoutRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<int?, global::System.DateTime?>), TypeInfoPropertyName = "OneOfInt32DateTime2")]
@@ -838,8 +833,6 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationAuthenticateUserResponseStatus), TypeInfoPropertyName = "AuthenticationAuthenticateUserResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationGenerateWidgetSessionResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationGenerateWidgetSessionResponseStatus), TypeInfoPropertyName = "AuthenticationGenerateWidgetSessionResponseStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserModifyUserResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserModifyUserResponseStatus), TypeInfoPropertyName = "UserModifyUserResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationDeauthenticateUserResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationDeauthenticateUserResponseStatus), TypeInfoPropertyName = "AuthenticationDeauthenticateUserResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationGenerateAuthTokenResponse))]
