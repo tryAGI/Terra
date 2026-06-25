@@ -156,6 +156,17 @@
     },
     {
       "Order": 15,
+      "Title": "Resend a previously delivered webhook payload",
+      "Slug": "webhooks-resendpayload",
+      "Description": "Re-dispatches a stored normalised payload to your configured webhook\ndestinations, identified by the original webhook event ID. The user\nand data type are read from the stored payload itself, so only the\nevent ID is required.",
+      "Language": "http",
+      "Code": "### Resend a previously delivered webhook payload\n# @name Webhooks_ResendPayload\nPOST {{host}}/payload/resend\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json, application/problem\u002Bjson\n\n{\n  \u0022event_id\u0022: \u00225b04b6a4-09bd-4fc4-8bbb-6c44f0a2c0ef\u0022\n}\n\n## Responses\n# 200\n# Description: Returned when the payload was successfully re-queued for delivery.\n# Content-Type: application/json\n# 400\n# Description: One or more parameters is malformed. The \u0060detail\u0060 field describes the specific problem.\n# Content-Type: application/problem\u002Bjson",
+      "Format": "http",
+      "OperationId": "Webhooks_ResendPayload",
+      "Setup": null
+    },
+    {
+      "Order": 16,
       "Title": "Create a workout template",
       "Slug": "workouts-createworkout",
       "Description": "Stores a reusable workout template. Plan it onto a user\u0027s calendar with \u0060POST /workouts/{workout_id}/plan\u0060 \u2014 the template itself carries no date and is not pushed to any provider until planned.",
@@ -166,7 +177,7 @@
       "Setup": null
     },
     {
-      "Order": 16,
+      "Order": 17,
       "Title": "Delete a planned workout",
       "Slug": "workouts-deleteplannedworkout",
       "Description": "Removes the planned workout from the user\u0027s calendar and from the connected provider.",
@@ -177,7 +188,7 @@
       "Setup": null
     },
     {
-      "Order": 17,
+      "Order": 18,
       "Title": "Delete a workout template",
       "Slug": "workouts-deleteworkout",
       "Description": "Deletes the template and cascades deletion of every planned workout created from it, including removal from connected providers.",
@@ -188,7 +199,7 @@
       "Setup": null
     },
     {
-      "Order": 18,
+      "Order": 19,
       "Title": "Get a planned workout",
       "Slug": "workouts-getplannedworkout",
       "Description": "Generated from OpenAPI examples.",
@@ -199,7 +210,7 @@
       "Setup": null
     },
     {
-      "Order": 19,
+      "Order": 20,
       "Title": "Get a workout template",
       "Slug": "workouts-getworkout",
       "Description": "Generated from OpenAPI examples.",
@@ -210,7 +221,7 @@
       "Setup": null
     },
     {
-      "Order": 20,
+      "Order": 21,
       "Title": "List planned workouts for a user",
       "Slug": "workouts-listplannedworkouts",
       "Description": "Returns the user\u0027s planned workouts, including workouts created on the provider side (is_external true) where the provider exposes them.",
@@ -221,7 +232,7 @@
       "Setup": null
     },
     {
-      "Order": 21,
+      "Order": 22,
       "Title": "List workout templates",
       "Slug": "workouts-listworkouts",
       "Description": "Returns every workout template stored for your developer account.",
@@ -232,7 +243,7 @@
       "Setup": "This example assumes \u0060using Terra;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
     },
     {
-      "Order": 22,
+      "Order": 23,
       "Title": "Plan a workout onto a user\u0027s calendar",
       "Slug": "workouts-planworkout",
       "Description": "Schedules the workout template for a user on a given date and pushes it to the user\u0027s connected provider (or queues it for SDK delivery). Athlete metrics personalise zone-based targets for this plan only.",
@@ -243,7 +254,7 @@
       "Setup": null
     },
     {
-      "Order": 23,
+      "Order": 24,
       "Title": "Reschedule a planned workout",
       "Slug": "workouts-updateplannedworkout",
       "Description": "Generated from OpenAPI examples.",

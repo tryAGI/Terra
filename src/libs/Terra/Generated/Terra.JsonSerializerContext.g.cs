@@ -425,6 +425,10 @@ namespace Terra
 
             typeof(global::Terra.JsonConverters.UserGetInfoForUserIDResponseStatusNullableJsonConverter),
 
+            typeof(global::Terra.JsonConverters.WebhooksResendPayloadResponseStatusJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WebhooksResendPayloadResponseStatusNullableJsonConverter),
+
             typeof(global::Terra.JsonConverters.IntegrationsFetchResponseStatusJsonConverter),
 
             typeof(global::Terra.JsonConverters.IntegrationsFetchResponseStatusNullableJsonConverter),
@@ -827,6 +831,7 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationAuthenticateUserRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutsPlanWorkoutRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutsUpdatePlannedWorkoutRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WebhooksResendPayloadRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<int?, global::System.DateTime?>), TypeInfoPropertyName = "OneOfInt32DateTime2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(long))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationAuthenticateUserResponse))]
@@ -865,6 +870,8 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserGetAllUserIDsResponseVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserGetAllUserIDsResponseVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserGetAllUserIDsResponseVariant2Data))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WebhooksResendPayloadResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WebhooksResendPayloadResponseStatus), TypeInfoPropertyName = "WebhooksResendPayloadResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.IntegrationsFetchResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.IntegrationsFetchResponseStatus), TypeInfoPropertyName = "IntegrationsFetchResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.StepBlock>))]
