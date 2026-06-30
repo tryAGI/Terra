@@ -25,12 +25,10 @@ namespace Terra
         public double? DrinkVolume { get; set; }
 
         /// <summary>
-        /// Unit of measurement for the drink<br/>
-        /// Example: ml
+        /// Unit of measurement for the drink volume.
         /// </summary>
-        /// <example>ml</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("drink_unit")]
-        public string? DrinkUnit { get; set; }
+        public double? DrinkUnit { get; set; }
 
         /// <summary>
         /// Name of drink consumed.<br/>
@@ -58,8 +56,7 @@ namespace Terra
         /// Example: 250
         /// </param>
         /// <param name="drinkUnit">
-        /// Unit of measurement for the drink<br/>
-        /// Example: ml
+        /// Unit of measurement for the drink volume.
         /// </param>
         /// <param name="drinkName">
         /// Name of drink consumed.<br/>
@@ -71,7 +68,7 @@ namespace Terra
         public DrinkSample(
             string? timestamp,
             double? drinkVolume,
-            string? drinkUnit,
+            double? drinkUnit,
             string? drinkName)
         {
             this.Timestamp = timestamp;

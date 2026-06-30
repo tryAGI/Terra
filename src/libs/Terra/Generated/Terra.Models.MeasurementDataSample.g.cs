@@ -46,7 +46,7 @@ namespace Terra
         /// </summary>
         /// <example>25</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("estimated_fitness_age")]
-        public string? EstimatedFitnessAge { get; set; }
+        public int? EstimatedFitnessAge { get; set; }
 
         /// <summary>
         /// User's skin fold measurement.<br/>
@@ -143,6 +143,22 @@ namespace Terra
         public string? UserNotes { get; set; }
 
         /// <summary>
+        /// Visceral fat level of the user.<br/>
+        /// Example: 8
+        /// </summary>
+        /// <example>8</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("visceral_fat_level")]
+        public double? VisceralFatLevel { get; set; }
+
+        /// <summary>
+        /// Categorical visceral fat rating of the user.<br/>
+        /// Example: normal
+        /// </summary>
+        /// <example>normal</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("visceral_fat_category")]
+        public string? VisceralFatCategory { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -218,6 +234,14 @@ namespace Terra
         /// <param name="userNotes">
         /// User notes associated with the measurement.
         /// </param>
+        /// <param name="visceralFatLevel">
+        /// Visceral fat level of the user.<br/>
+        /// Example: 8
+        /// </param>
+        /// <param name="visceralFatCategory">
+        /// Categorical visceral fat rating of the user.<br/>
+        /// Example: normal
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -226,7 +250,7 @@ namespace Terra
             double? bmi,
             double? bmr,
             double? rmr,
-            string? estimatedFitnessAge,
+            int? estimatedFitnessAge,
             double? skinFoldMm,
             double? bodyfatPercentage,
             double? weightKg,
@@ -238,7 +262,9 @@ namespace Terra
             double? insulinUnits,
             string? insulinType,
             string? urineColor,
-            string? userNotes)
+            string? userNotes,
+            double? visceralFatLevel,
+            string? visceralFatCategory)
         {
             this.MeasurementTime = measurementTime;
             this.Bmi = bmi;
@@ -257,6 +283,8 @@ namespace Terra
             this.InsulinType = insulinType;
             this.UrineColor = urineColor;
             this.UserNotes = userNotes;
+            this.VisceralFatLevel = visceralFatLevel;
+            this.VisceralFatCategory = visceralFatCategory;
         }
 
         /// <summary>

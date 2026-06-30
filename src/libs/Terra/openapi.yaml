@@ -1810,19 +1810,18 @@ components:
           - type: 'null'
           description: User's gender.
           example: male
-        joined_provider:
+        account_creation_date:
           anyOf:
           - type: string
           - type: 'null'
-          description: User's account creation date.
+          description: User's account creation date with the provider, in ISO8601 format.
           example: '2023-01-15'
-        devices:
+        provider_user_id:
           anyOf:
-          - type: array
-            items:
-              $ref: '#/components/schemas/DeviceData'
+          - type: string
           - type: 'null'
-          description: Array of devices associated with the user's account.
+          description: The user's unique identifier as assigned by the data provider.
+          example: a1b2c3d4e5
     AthleteCollection:
       type: object
       properties:
@@ -2118,14 +2117,10 @@ components:
           - type: 'null'
           description: Object containing information on the user's respiration throughout the sleep session.
         scores:
-          type: object
-          properties:
-            sleep:
-              anyOf:
-              - type: number
-              - type: 'null'
-              description: User's sleep score.
-          description: User's sleep score
+          anyOf:
+          - $ref: '#/components/schemas/SleepScores'
+          - type: 'null'
+          description: Scores summarising the user's sleep session.
         sleep_durations_data:
           anyOf:
           - $ref: '#/components/schemas/SleepDurationsData'
@@ -2303,10 +2298,17 @@ components:
           description: Time with which the record is associated, in ISO8601 format with microsecond precision. TimeZone info will be provided whenever possible. If absent, the time corresponds to the user's
             local time.
           example: '2022-11-23T09:00:00.000000+02:00'
-        level:
+        activity_level:
           anyOf:
           - $ref: '#/components/schemas/ActivityLevel'
           - type: 'null'
+          description: The user's activity level for the sample.
+        timer_duration_seconds:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Duration the activity-level timer has been running, in seconds.
+          example: 60
     ActiveDurationsData:
       type: object
       properties:
@@ -2424,14 +2426,64 @@ components:
           - type: number
           - type: 'null'
           description: Total calories burned including BMR and activity.
+    RecordFloat:
+      type: object
+      properties: {}
+      unevaluatedProperties:
+        type: number
     DataEnrichment:
       type: object
       properties:
-        stress_score:
+        efficiency_score:
           anyOf:
-          - type: integer
+          - type: number
           - type: 'null'
-          description: User's stress score.
+          description: Efficiency score for the workout.
+          example: 82
+        efficiency_contributors:
+          anyOf:
+          - $ref: '#/components/schemas/RecordFloat'
+          - type: 'null'
+          description: Map of contributing factor name to its weighted contribution to the efficiency score.
+        strain_score:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Strain score for the workout.
+          example: 14.5
+        strain_contributors:
+          anyOf:
+          - $ref: '#/components/schemas/RecordFloat'
+          - type: 'null'
+          description: Map of contributing factor name to its weighted contribution to the strain score.
+        rcrs_score:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Recovery-corrected relative strain (RCRS) score for the workout.
+          example: 9
+        rcrs_contributors:
+          anyOf:
+          - $ref: '#/components/schemas/RecordFloat'
+          - type: 'null'
+          description: Map of contributing factor name to its weighted contribution to the RCRS score.
+        trimp_score:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Training impulse (TRIMP) score for the workout.
+          example: 120
+        trimp_contributors:
+          anyOf:
+          - $ref: '#/components/schemas/RecordFloat'
+          - type: 'null'
+          description: Map of contributing factor name to its weighted contribution to the TRIMP score.
+      $defs:
+        RecordFloat:
+          type: object
+          properties: {}
+          unevaluatedProperties:
+            type: number
     DeviceDataType:
       type: string
       enum:
@@ -2479,11 +2531,6 @@ components:
           - type: 'null'
           description: Device Software Version.
           example: 5.2.1
-        activation_timestamp:
-          anyOf:
-          - type: string
-          - type: 'null'
-          description: Activation timestamp of the device, if applicable.
         data_provided:
           anyOf:
           - type: array
@@ -2542,11 +2589,6 @@ components:
               $ref: '#/components/schemas/OtherDeviceData'
           - type: 'null'
           description: Data pertaining to other devices which may have contributed data for this workout.
-        sensor_state:
-          anyOf:
-          - type: string
-          - type: 'null'
-          description: Sensor state of the device.
         serial_number:
           anyOf:
           - type: string
@@ -2615,7 +2657,7 @@ components:
           example: '2022-11-23T09:00:00.000000+02:00'
         floors_climbed:
           anyOf:
-          - type: integer
+          - type: number
           - type: 'null'
           description: Cumulative number of elevation gain measured in floors climbed up to associated timestamp, since the start of the payload
           example: 5
@@ -2637,7 +2679,7 @@ components:
           example: '2022-11-23T09:00:00.000000+02:00'
         steps:
           anyOf:
-          - type: integer
+          - type: number
           - type: 'null'
           description: Cumulative number of steps taken up to associated timestamp, since the start of the payload
         timer_duration_seconds:
@@ -2747,7 +2789,7 @@ components:
       properties:
         distance_meters:
           anyOf:
-          - type: integer
+          - type: number
           - type: 'null'
           description: Total distance covered by the user throughout the workout.
         elevation:
@@ -2888,25 +2930,15 @@ components:
               $ref: '#/components/schemas/HeartRateVariabilityDataSampleSDNN'
           - type: 'null'
           description: Array of HeartRate Variability data samples recorded for the user during the workout, computed using SDNN.
-    HeartRateZone:
-      type: number
-      enum:
-      - 0
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
-      - 6
-      description: Represents the heart rate zone the user is currently in during a workout or activity
     HeartRateZoneData:
       type: object
       properties:
         zone:
           anyOf:
-          - $ref: '#/components/schemas/HeartRateZone'
+          - type: integer
           - type: 'null'
-          description: Heart rate zone designation
+          description: Heart rate zone designation, as a zero-based zone index.
+          example: 2
         start_percentage:
           anyOf:
           - type: number
@@ -3004,15 +3036,6 @@ components:
           - $ref: '#/components/schemas/HeartRateDataSummary'
           - type: 'null'
           description: Object containing summary heart rate information for the associated workout.
-    StrokeType:
-      type: string
-      enum:
-      - other
-      - freestyle
-      - backstroke
-      - breaststroke
-      - butterfly
-      description: Stroke type used for the workout step (e.g. breaststroke)
     LapSample:
       type: object
       properties:
@@ -3062,10 +3085,22 @@ components:
           example: '2022-10-28T10:00:00.000000+01:00'
         stroke_type:
           anyOf:
-          - $ref: '#/components/schemas/StrokeType'
+          - type: string
           - type: 'null'
           description: Stroke type - only relevant for swimming activities
           example: freestyle
+        avg_watts:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Average power output during the lap, in watts.
+          example: 210
+        active_duration_seconds:
+          anyOf:
+          - type: integer
+          - type: 'null'
+          description: Active duration of the lap, in seconds.
+          example: 120
     LapData:
       type: object
       properties:
@@ -3584,6 +3619,12 @@ components:
           - type: 'null'
           description: VO2Max for the given user.
           example: 45.5
+        day_avg_vo2max_ml_per_min_per_kg:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Day-average VO2 max, in millilitres per minute per kilogram.
+          example: 44
     PolylineMapData:
       type: object
       properties:
@@ -3797,6 +3838,18 @@ components:
               $ref: '#/components/schemas/BloodPressureSample'
           - type: 'null'
           description: List of Blood Pressure measurements sampled throughout the day.
+        day_avg_systolic_bp:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Day-average systolic blood pressure, in mmHg.
+          example: 120
+        day_avg_diastolic_bp:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Day-average diastolic blood pressure, in mmHg.
+          example: 80
     AFibFlag:
       type: number
       enum:
@@ -3968,6 +4021,12 @@ components:
               $ref: '#/components/schemas/HydrationMeasurementSample'
           - type: 'null'
           description: User's hydration level samples throughout the day.
+        day_avg_hydration_kg:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Day-average body hydration, in kilograms.
+          example: 42
     KetoneSampleType:
       type: number
       enum:
@@ -4007,6 +4066,12 @@ components:
               $ref: '#/components/schemas/KetoneSample'
           - type: 'null'
           description: List of ketone data sampled through the day.
+        day_avg_ketone_mg_per_dL:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Day-average ketone concentration, in mg/dL.
+          example: 1.2
     MeasurementDataSample:
       type: object
       properties:
@@ -4038,10 +4103,10 @@ components:
           example: 2000
         estimated_fitness_age:
           anyOf:
-          - type: string
+          - type: integer
           - type: 'null'
           description: Estimate of how fit the user is compared to their actual age, as measured by the device.
-          example: '25'
+          example: 25
         skin_fold_mm:
           anyOf:
           - type: number
@@ -4117,6 +4182,18 @@ components:
           - type: string
           - type: 'null'
           description: User notes associated with the measurement.
+        visceral_fat_level:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Visceral fat level of the user.
+          example: 8
+        visceral_fat_category:
+          anyOf:
+          - type: string
+          - type: 'null'
+          description: Categorical visceral fat rating of the user.
+          example: normal
     MeasurementsData:
       type: object
       properties:
@@ -4127,6 +4204,90 @@ components:
               $ref: '#/components/schemas/MeasurementDataSample'
           - type: 'null'
           description: List of body metrics & measurements taken throughout the associated day.
+        day_avg_bmi:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Day-average body mass index (BMI).
+          example: 22.5
+        day_avg_bmr:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Day-average basal metabolic rate (BMR), in kilocalories.
+          example: 1600
+        day_avg_rmr:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Day-average resting metabolic rate (RMR), in kilocalories.
+          example: 1500
+        day_avg_estimated_fitness_age:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Day-average estimated fitness age, in years.
+          example: 30
+        day_avg_skin_fold_mm:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Day-average skin fold thickness, in millimetres.
+          example: 12.5
+        day_avg_bodyfat_percentage:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Day-average body-fat percentage.
+          example: 18.2
+        day_avg_weight_kg:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Day-average weight, in kilograms.
+          example: 70.5
+        day_avg_height_cm:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Day-average height, in centimetres.
+          example: 175
+        day_avg_bone_mass_g:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Day-average bone mass, in grams.
+          example: 3200
+        day_avg_muscle_mass_g:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Day-average muscle mass, in grams.
+          example: 32000
+        day_avg_lean_mass_g:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Day-average lean mass, in grams.
+          example: 55000
+        day_avg_water_percentage:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Day-average body-water percentage.
+          example: 55
+        day_avg_insulin_units:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Day-average insulin, in units.
+          example: 0
+        day_avg_visceral_fat_level:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Day-average visceral fat level.
+          example: 8
     BodyMetadata:
       type: object
       properties:
@@ -4187,6 +4348,24 @@ components:
               $ref: '#/components/schemas/TemperatureSample'
           - type: 'null'
           description: List of skin temperature measurements sampled throughout the day.
+        day_avg_ambient_temperature_celsius:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Day-average ambient temperature, in degrees Celsius.
+          example: 21.5
+        day_avg_body_temperature_celsius:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Day-average body temperature, in degrees Celsius.
+          example: 36.7
+        day_avg_skin_temperature_celsius:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Day-average skin temperature, in degrees Celsius.
+          example: 33.2
     GlucoseFlag:
       type: number
       enum:
@@ -4216,7 +4395,7 @@ components:
           example: '2022-11-23T09:00:00.000000+02:00'
         blood_glucose_mg_per_dL:
           anyOf:
-          - type: integer
+          - type: number
           - type: 'null'
           description: User's blood glucose reading
           example: 95
@@ -4243,27 +4422,27 @@ components:
           example: 9
         percentile_5:
           anyOf:
-          - type: integer
+          - type: number
           - type: 'null'
           description: Percentile 5 of the glucose level at the given time of day.
         percentile_25:
           anyOf:
-          - type: integer
+          - type: number
           - type: 'null'
           description: Percentile 25 of the glucose level at the given time of day.
         percentile_50:
           anyOf:
-          - type: integer
+          - type: number
           - type: 'null'
           description: Percentile 50 of the glucose level at the given time of day.
         percentile_75:
           anyOf:
-          - type: integer
+          - type: number
           - type: 'null'
           description: Percentile 75 of the glucose level at the given time of day.
         percentile_95:
           anyOf:
-          - type: integer
+          - type: number
           - type: 'null'
           description: Percentile 95 of the glucose level at the given time of day.
     GlucoseData:
@@ -4290,6 +4469,19 @@ components:
           - type: 'null'
           description: User's average glucose level throughout the day.
           example: 92.5
+        day_avg_detailed_blood_glucose_mg_per_dL:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: User's average glucose level throughout the day, computed from the higher-frequency detailed sample stream.
+          example: 91
+        day_avg_blood_glucose_mg_per_dl:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Deprecated lower-case alias of day_avg_blood_glucose_mg_per_dL, retained for backwards compatibility. Always carries the same value as that field.
+          deprecated: true
+          example: 92.5
         gmi:
           anyOf:
           - type: number
@@ -4313,86 +4505,87 @@ components:
               $ref: '#/components/schemas/DailyPatternSample'
           - type: 'null'
           description: List of glucose percentile samples throughout the day.
-    DataContributor:
-      type: object
-      properties:
-        contributor_name:
-          type: string
-          description: Name of the factor contributing to the score.
-        contributor_score:
-          type: number
-          description: Numerical score representing the contribution of this factor.
-      required:
-      - contributor_name
-      - contributor_score
     DailyDataEnrichment:
       type: object
       properties:
-        cardiovascular_contributors:
-          anyOf:
-          - type: array
-            items:
-              $ref: '#/components/schemas/DataContributor'
-          - type: 'null'
-          description: Array of factors contributing to cardiovascular score.
-        cardiovascular_score:
-          anyOf:
-          - type: number
-          - type: 'null'
-          description: Cardiovascular health score for the day.
-        immune_contributors:
-          anyOf:
-          - type: array
-            items:
-              $ref: '#/components/schemas/DataContributor'
-          - type: 'null'
-          description: Array of factors contributing to immune index.
-        immune_index:
-          anyOf:
-          - type: number
-          - type: 'null'
-          description: Immune system health index for the day.
-        readiness_contributors:
-          anyOf:
-          - type: array
-            items:
-              $ref: '#/components/schemas/DataContributor'
-          - type: 'null'
-          description: Array of factors contributing to readiness score.
-        readiness_score:
-          anyOf:
-          - type: number
-          - type: 'null'
-          description: Readiness score for the day.
-        respiratory_contributors:
-          anyOf:
-          - type: array
-            items:
-              $ref: '#/components/schemas/DataContributor'
-          - type: 'null'
-          description: Array of factors contributing to respiratory score.
-        respiratory_score:
-          anyOf:
-          - type: number
-          - type: 'null'
-          description: Respiratory health score for the day.
-        start_time:
-          anyOf:
-          - type: string
-          - type: 'null'
-          description: Start time for the data enrichment calculation period.
-        stress_contributors:
-          anyOf:
-          - type: array
-            items:
-              $ref: '#/components/schemas/DataContributor'
-          - type: 'null'
-          description: Array of factors contributing to stress score.
         total_stress_score:
           anyOf:
           - type: number
           - type: 'null'
           description: Total stress score for the day.
+          example: 45
+        stress_contributors:
+          anyOf:
+          - $ref: '#/components/schemas/RecordFloat'
+          - type: 'null'
+          description: Map of contributing factor name to its weighted contribution to the stress score.
+        respiratory_score:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Respiratory health score for the day.
+          example: 88
+        respiratory_contributors:
+          anyOf:
+          - $ref: '#/components/schemas/RecordFloat'
+          - type: 'null'
+          description: Map of contributing factor name to its weighted contribution to the respiratory score.
+        immune_index:
+          anyOf:
+          - type: integer
+          - type: 'null'
+          description: Immune system health index for the day.
+          example: 72
+        immune_contributors:
+          anyOf:
+          - $ref: '#/components/schemas/RecordFloat'
+          - type: 'null'
+          description: Map of contributing factor name to its weighted contribution to the immune index.
+        resilience_score:
+          anyOf:
+          - type: integer
+          - type: 'null'
+          description: Resilience score for the day.
+          example: 65
+        resilience_contributors:
+          anyOf:
+          - $ref: '#/components/schemas/RecordFloat'
+          - type: 'null'
+          description: Map of contributing factor name to its weighted contribution to the resilience score.
+        strain_index:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Strain index for the day.
+          example: 12.5
+        strain_traffic_light:
+          anyOf:
+          - type: string
+          - type: 'null'
+          description: Categorical strain rating for the day (e.g. GREEN, AMBER, RED).
+          example: GREEN
+        strain_contributors:
+          anyOf:
+          - $ref: '#/components/schemas/RecordFloat'
+          - type: 'null'
+          description: Map of contributing factor name to its weighted contribution to the strain index.
+        total_stress_score_v2:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Total stress score for the day, computed by the v2 model.
+          example: 43
+        total_stress_score_v2_contributors:
+          anyOf:
+          - $ref: '#/components/schemas/RecordFloat'
+          - type: 'null'
+          description: Map of contributing factor name to its weighted contribution to the v2 total stress score.
+      $defs:
+        RecordFloat:
+          type: object
+          properties: {}
+          unevaluatedProperties:
+            type: number
     DailyDistanceData:
       type: object
       properties:
@@ -4482,14 +4675,6 @@ components:
           maximum: 100
           description: Sleep score for the given day, pertaining to the previous night's sleep.
           example: 85
-        biological_age:
-          anyOf:
-          - type: number
-          - type: 'null'
-          minimum: 0
-          maximum: 100
-          description: Biological age computed for the given day.
-          example: 27
     StressSample:
       type: object
       properties:
@@ -4655,19 +4840,19 @@ components:
       required:
       - end_time
       - start_time
-    MenstrualPhase:
-      type: string
+    MenstruationInterval:
+      type: number
       enum:
-      - menstrual
-      - follicular
-      - ovulation
-      - luteal
-      - pms
-      - fertile
-      - first_trimester
-      - second_trimester
-      - third_trimester
-      - unknown
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
       description: Represents menstrual cycle phases.
     MenstruationFlow:
       type: number
@@ -4694,6 +4879,26 @@ components:
           - $ref: '#/components/schemas/MenstruationFlow'
           - type: 'null'
           description: Flag indicating the strength of the user's menstrual flow.
+    MenstruationIntervalSample:
+      type: object
+      properties:
+        start_timestamp:
+          anyOf:
+          - type: string
+          - type: 'null'
+          description: Start of the cycle-phase interval, in ISO8601 format.
+          example: '2022-11-23T09:00:00.000000+02:00'
+        end_timestamp:
+          anyOf:
+          - type: string
+          - type: 'null'
+          description: End of the cycle-phase interval, in ISO8601 format.
+          example: '2022-11-28T09:00:00.000000+02:00'
+        phase:
+          anyOf:
+          - $ref: '#/components/schemas/MenstruationInterval'
+          - type: 'null'
+          description: Cycle phase covered by this interval.
     MenstruationData:
       type: object
       properties:
@@ -4705,7 +4910,7 @@ components:
           example: 5
         current_phase:
           anyOf:
-          - $ref: '#/components/schemas/MenstrualPhase'
+          - $ref: '#/components/schemas/MenstruationInterval'
           - type: 'null'
           description: Phase in associated cycle, (i.e. menstruation, fertile etc).
         length_of_current_phase_days:
@@ -4746,16 +4951,16 @@ components:
           example: '2022-12-12T14:03:05.000000-05:00'
         cycle_length_days:
           anyOf:
-          - type: string
+          - type: integer
           - type: 'null'
           description: Total cycle length in days.
-          example: '28'
+          example: 28
         is_predicted_cycle:
           anyOf:
-          - type: string
+          - type: boolean
           - type: 'null'
           description: Flag indicating whether associated object is a prediction or user-logged information.
-          example: 'true'
+          example: true
         menstruation_flow:
           anyOf:
           - type: array
@@ -4763,6 +4968,48 @@ components:
               $ref: '#/components/schemas/MenstruationFlowSample'
           - type: 'null'
           description: List of user logs of information related to the strength of user's menstrual flow.
+        intervals:
+          anyOf:
+          - type: array
+            items:
+              $ref: '#/components/schemas/MenstruationIntervalSample'
+          - type: 'null'
+          description: List of cycle phase intervals, each spanning a contiguous date range within the cycle.
+        fertility_window_start:
+          anyOf:
+          - type: string
+          - type: 'null'
+          description: Start of the fertility window, in ISO8601 format.
+          example: '2022-11-12'
+        fertility_window_end:
+          anyOf:
+          - type: string
+          - type: 'null'
+          description: End of the fertility window, in ISO8601 format.
+          example: '2022-11-17'
+        ovulation_day:
+          anyOf:
+          - type: string
+          - type: 'null'
+          description: Predicted ovulation day, in ISO8601 format.
+          example: '2022-11-15'
+    NutritionUnits:
+      type: number
+      enum:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 10
+      - 11
+      - 12
+      description: Represents units used for nutrition measurements
     DrinkSample:
       type: object
       properties:
@@ -4781,10 +5028,9 @@ components:
           example: 250
         drink_unit:
           anyOf:
-          - type: string
+          - $ref: '#/components/schemas/NutritionUnits'
           - type: 'null'
-          description: Unit of measurement for the drink
-          example: ml
+          description: Unit of measurement for the drink volume.
         drink_name:
           anyOf:
           - type: string
@@ -4812,6 +5058,12 @@ components:
           - type: 'null'
           description: Calcium content of the associated food(s).
           example: 1000
+        sodium_mg:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Sodium content of the associated food(s).
+          example: 2300
         chloride_mg:
           anyOf:
           - type: number
@@ -5081,23 +5333,6 @@ components:
       - 5
       - 6
       description: Enum representing the category the consumed food/meal falls under (i.e. Breakfast/Lunch/Dinner etc)
-    NutritionUnits:
-      type: number
-      enum:
-      - 0
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
-      - 6
-      - 7
-      - 8
-      - 9
-      - 10
-      - 11
-      - 12
-      description: Represents units used for nutrition measurements
     NutritionQuantity:
       type: object
       properties:
@@ -5266,16 +5501,56 @@ components:
     SleepDataEnrichment:
       type: object
       properties:
-        sleep_contributors:
-          anyOf:
-          - type: array
-            items:
-              $ref: '#/components/schemas/DataContributor'
-          - type: 'null'
         sleep_score:
           anyOf:
           - type: number
           - type: 'null'
+          description: Sleep score for the session.
+          example: 85
+        sleep_contributors:
+          anyOf:
+          - $ref: '#/components/schemas/RecordFloat'
+          - type: 'null'
+          description: Map of contributing factor name to its weighted contribution to the sleep score.
+        readiness_score:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Readiness score resulting from the sleep session.
+          example: 82
+        readiness_contributors:
+          anyOf:
+          - $ref: '#/components/schemas/RecordFloat'
+          - type: 'null'
+          description: Map of contributing factor name to its weighted contribution to the readiness score.
+        sleep_score_v2:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Sleep score for the session, computed by the v2 model.
+          example: 84
+        sleep_score_v2_contributors:
+          anyOf:
+          - $ref: '#/components/schemas/RecordFloat'
+          - type: 'null'
+          description: Map of contributing factor name to its weighted contribution to the v2 sleep score.
+        respiratory_score_v2:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Respiratory score for the session, computed by the v2 model.
+          example: 90
+        respiratory_score_v2_contributors:
+          anyOf:
+          - $ref: '#/components/schemas/RecordFloat'
+          - type: 'null'
+          description: Map of contributing factor name to its weighted contribution to the v2 respiratory score.
+      $defs:
+        RecordFloat:
+          type: object
+          properties: {}
+          unevaluatedProperties:
+            type: number
     SleepUploadType:
       type: number
       enum:
@@ -5320,23 +5595,12 @@ components:
       - end_time
       - start_time
       - upload_type
-    RecoveryLevel:
-      type: number
-      enum:
-      - 0
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
-      - 6
-      description: User's recovery score for a given day, resulting from the sleep session
     ReadinessData:
       type: object
       properties:
         readiness:
           anyOf:
-          - type: integer
+          - type: number
           - type: 'null'
           minimum: 0
           maximum: 100
@@ -5344,9 +5608,9 @@ components:
           example: 85
         recovery_level:
           anyOf:
-          - $ref: '#/components/schemas/RecoveryLevel'
+          - type: number
           - type: 'null'
-          description: User's recovery score for a given day, resulting from the sleep session - takes Enum value.
+          description: User's recovery score for a given day, resulting from the sleep session.
     BreathSample:
       type: object
       properties:
@@ -5511,6 +5775,15 @@ components:
           - $ref: '#/components/schemas/SnoringData'
           - type: 'null'
           description: Object containing information on snoring metrics for the sleep session.
+    SleepScores:
+      type: object
+      properties:
+        sleep:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: User's sleep score for the session.
+          example: 85
     AsleepDurations:
       type: object
       properties:

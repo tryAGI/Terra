@@ -97,18 +97,20 @@ namespace Terra
         public string? Gender { get; set; }
 
         /// <summary>
-        /// User's account creation date.<br/>
+        /// User's account creation date with the provider, in ISO8601 format.<br/>
         /// Example: 2023-01-15
         /// </summary>
         /// <example>2023-01-15</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("joined_provider")]
-        public string? JoinedProvider { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("account_creation_date")]
+        public string? AccountCreationDate { get; set; }
 
         /// <summary>
-        /// Array of devices associated with the user's account.
+        /// The user's unique identifier as assigned by the data provider.<br/>
+        /// Example: a1b2c3d4e5
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("devices")]
-        public global::System.Collections.Generic.IList<global::Terra.DeviceData>? Devices { get; set; }
+        /// <example>a1b2c3d4e5</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("provider_user_id")]
+        public string? ProviderUserId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -163,12 +165,13 @@ namespace Terra
         /// User's gender.<br/>
         /// Example: male
         /// </param>
-        /// <param name="joinedProvider">
-        /// User's account creation date.<br/>
+        /// <param name="accountCreationDate">
+        /// User's account creation date with the provider, in ISO8601 format.<br/>
         /// Example: 2023-01-15
         /// </param>
-        /// <param name="devices">
-        /// Array of devices associated with the user's account.
+        /// <param name="providerUserId">
+        /// The user's unique identifier as assigned by the data provider.<br/>
+        /// Example: a1b2c3d4e5
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -185,8 +188,8 @@ namespace Terra
             string? dateOfBirth,
             string? firstName,
             string? gender,
-            string? joinedProvider,
-            global::System.Collections.Generic.IList<global::Terra.DeviceData>? devices)
+            string? accountCreationDate,
+            string? providerUserId)
         {
             this.Age = age;
             this.Country = country;
@@ -199,8 +202,8 @@ namespace Terra
             this.DateOfBirth = dateOfBirth;
             this.FirstName = firstName;
             this.Gender = gender;
-            this.JoinedProvider = joinedProvider;
-            this.Devices = devices;
+            this.AccountCreationDate = accountCreationDate;
+            this.ProviderUserId = providerUserId;
         }
 
         /// <summary>

@@ -17,10 +17,18 @@ namespace Terra
         public string? Timestamp { get; set; }
 
         /// <summary>
-        /// 
+        /// The user's activity level for the sample.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("level")]
-        public double? Level { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("activity_level")]
+        public double? ActivityLevel { get; set; }
+
+        /// <summary>
+        /// Duration the activity-level timer has been running, in seconds.<br/>
+        /// Example: 60
+        /// </summary>
+        /// <example>60</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("timer_duration_seconds")]
+        public double? TimerDurationSeconds { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -35,16 +43,24 @@ namespace Terra
         /// Time with which the record is associated, in ISO8601 format with microsecond precision. TimeZone info will be provided whenever possible. If absent, the time corresponds to the user's local time.<br/>
         /// Example: 2022-11-23T09:00:00.000000+02:00
         /// </param>
-        /// <param name="level"></param>
+        /// <param name="activityLevel">
+        /// The user's activity level for the sample.
+        /// </param>
+        /// <param name="timerDurationSeconds">
+        /// Duration the activity-level timer has been running, in seconds.<br/>
+        /// Example: 60
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ActivityLevelSample(
             string? timestamp,
-            double? level)
+            double? activityLevel,
+            double? timerDurationSeconds)
         {
             this.Timestamp = timestamp;
-            this.Level = level;
+            this.ActivityLevel = activityLevel;
+            this.TimerDurationSeconds = timerDurationSeconds;
         }
 
         /// <summary>

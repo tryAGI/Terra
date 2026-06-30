@@ -4,7 +4,7 @@
 namespace Terra
 {
     /// <summary>
-    /// Array of factors contributing to stress score.
+    /// Map of contributing factor name to its weighted contribution to the stress score.
     /// </summary>
     public sealed partial class DailyDataEnrichmentStressContributors
     {

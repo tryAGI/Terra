@@ -4,7 +4,8 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    /// Sleep score for the session.<br/>
+    /// Example: 85
     /// </summary>
     public sealed partial class SleepDataEnrichmentSleepScore
     {

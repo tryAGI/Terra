@@ -4,7 +4,7 @@
 namespace Terra
 {
     /// <summary>
-    /// User's recovery score for a given day, resulting from the sleep session - takes Enum value.
+    /// User's recovery score for a given day, resulting from the sleep session.
     /// </summary>
     public sealed partial class ReadinessDataRecoveryLevel
     {

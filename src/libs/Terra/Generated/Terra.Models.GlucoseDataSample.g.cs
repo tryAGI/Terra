@@ -22,7 +22,7 @@ namespace Terra
         /// </summary>
         /// <example>95</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("blood_glucose_mg_per_dL")]
-        public int? BloodGlucoseMgPerDL { get; set; }
+        public double? BloodGlucoseMgPerDL { get; set; }
 
         /// <summary>
         /// Flag indicating state of user's blood glucose level
@@ -64,7 +64,7 @@ namespace Terra
 #endif
         public GlucoseDataSample(
             string? timestamp,
-            int? bloodGlucoseMgPerDL,
+            double? bloodGlucoseMgPerDL,
             double? glucoseLevelFlag,
             double? trendArrow)
         {

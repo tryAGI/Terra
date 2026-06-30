@@ -4,7 +4,7 @@
 namespace Terra
 {
     /// <summary>
-    /// Array of factors contributing to respiratory score.
+    /// Map of contributing factor name to its weighted contribution to the respiratory score.
     /// </summary>
     public sealed partial class DailyDataEnrichmentRespiratoryContributors
     {

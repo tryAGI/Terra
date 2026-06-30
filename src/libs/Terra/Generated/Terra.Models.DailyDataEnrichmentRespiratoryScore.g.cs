@@ -4,7 +4,8 @@
 namespace Terra
 {
     /// <summary>
-    /// Respiratory health score for the day.
+    /// Respiratory health score for the day.<br/>
+    /// Example: 88
     /// </summary>
     public sealed partial class DailyDataEnrichmentRespiratoryScore
     {

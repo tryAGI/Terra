@@ -33,14 +33,6 @@ namespace Terra
         public double? Sleep { get; set; }
 
         /// <summary>
-        /// Biological age computed for the given day.<br/>
-        /// Example: 27
-        /// </summary>
-        /// <example>27</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("biological_age")]
-        public double? BiologicalAge { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -61,23 +53,17 @@ namespace Terra
         /// Sleep score for the given day, pertaining to the previous night's sleep.<br/>
         /// Example: 85
         /// </param>
-        /// <param name="biologicalAge">
-        /// Biological age computed for the given day.<br/>
-        /// Example: 27
-        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ScoresData(
             double? activity,
             double? recovery,
-            double? sleep,
-            double? biologicalAge)
+            double? sleep)
         {
             this.Activity = activity;
             this.Recovery = recovery;
             this.Sleep = sleep;
-            this.BiologicalAge = biologicalAge;
         }
 
         /// <summary>

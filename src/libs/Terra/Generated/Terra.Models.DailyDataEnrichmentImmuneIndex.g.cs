@@ -4,7 +4,8 @@
 namespace Terra
 {
     /// <summary>
-    /// Immune system health index for the day.
+    /// Immune system health index for the day.<br/>
+    /// Example: 72
     /// </summary>
     public sealed partial class DailyDataEnrichmentImmuneIndex
     {

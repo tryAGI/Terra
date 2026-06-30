@@ -4,8 +4,7 @@
 namespace Terra
 {
     /// <summary>
-    /// Unit of measurement for the drink<br/>
-    /// Example: ml
+    /// Unit of measurement for the drink volume.
     /// </summary>
     public sealed partial class DrinkSampleDrinkUnit
     {

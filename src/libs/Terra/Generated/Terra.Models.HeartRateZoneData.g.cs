@@ -9,10 +9,12 @@ namespace Terra
     public sealed partial class HeartRateZoneData
     {
         /// <summary>
-        /// Heart rate zone designation
+        /// Heart rate zone designation, as a zero-based zone index.<br/>
+        /// Example: 2
         /// </summary>
+        /// <example>2</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("zone")]
-        public double? Zone { get; set; }
+        public int? Zone { get; set; }
 
         /// <summary>
         /// Start percentage (based off user's max HR) of the HR zone<br/>
@@ -56,7 +58,8 @@ namespace Terra
         /// Initializes a new instance of the <see cref="HeartRateZoneData" /> class.
         /// </summary>
         /// <param name="zone">
-        /// Heart rate zone designation
+        /// Heart rate zone designation, as a zero-based zone index.<br/>
+        /// Example: 2
         /// </param>
         /// <param name="startPercentage">
         /// Start percentage (based off user's max HR) of the HR zone<br/>
@@ -78,7 +81,7 @@ namespace Terra
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public HeartRateZoneData(
-            double? zone,
+            int? zone,
             double? startPercentage,
             double? endPercentage,
             string? name,

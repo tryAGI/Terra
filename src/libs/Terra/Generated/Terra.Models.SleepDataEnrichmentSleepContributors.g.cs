@@ -4,7 +4,7 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    /// Map of contributing factor name to its weighted contribution to the sleep score.
     /// </summary>
     public sealed partial class SleepDataEnrichmentSleepContributors
     {
