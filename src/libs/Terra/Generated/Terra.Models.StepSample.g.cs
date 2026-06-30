@@ -20,7 +20,7 @@ namespace Terra
         /// Cumulative number of steps taken up to associated timestamp, since the start of the payload
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("steps")]
-        public int? Steps { get; set; }
+        public double? Steps { get; set; }
 
         /// <summary>
         /// Time elapsed since the start of the workout, subtracting time during which the recording was paused
@@ -52,7 +52,7 @@ namespace Terra
 #endif
         public StepSample(
             string? timestamp,
-            int? steps,
+            double? steps,
             double? timerDurationSeconds)
         {
             this.Timestamp = timestamp;

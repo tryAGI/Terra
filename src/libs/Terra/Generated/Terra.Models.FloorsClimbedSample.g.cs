@@ -22,7 +22,7 @@ namespace Terra
         /// </summary>
         /// <example>5</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("floors_climbed")]
-        public int? FloorsClimbed { get; set; }
+        public double? FloorsClimbed { get; set; }
 
         /// <summary>
         /// Time elapsed since the start of the workout, subtracting time during which the recording was paused<br/>
@@ -58,7 +58,7 @@ namespace Terra
 #endif
         public FloorsClimbedSample(
             string? timestamp,
-            int? floorsClimbed,
+            double? floorsClimbed,
             double? timerDurationSeconds)
         {
             this.Timestamp = timestamp;

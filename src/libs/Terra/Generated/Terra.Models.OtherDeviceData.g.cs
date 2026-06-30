@@ -49,12 +49,6 @@ namespace Terra
         public string? SoftwareVersion { get; set; }
 
         /// <summary>
-        /// Activation timestamp of the device, if applicable.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("activation_timestamp")]
-        public string? ActivationTimestamp { get; set; }
-
-        /// <summary>
         /// Data provided by the device, as enumerated types.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data_provided")]
@@ -95,9 +89,6 @@ namespace Terra
         /// Device Software Version.<br/>
         /// Example: 5.2.1
         /// </param>
-        /// <param name="activationTimestamp">
-        /// Activation timestamp of the device, if applicable.
-        /// </param>
         /// <param name="dataProvided">
         /// Data provided by the device, as enumerated types.
         /// </param>
@@ -113,7 +104,6 @@ namespace Terra
             string? serialNumber,
             string? name,
             string? softwareVersion,
-            string? activationTimestamp,
             global::System.Collections.Generic.IList<global::Terra.DeviceDataType>? dataProvided,
             string? lastUploadDate)
         {
@@ -122,7 +112,6 @@ namespace Terra
             this.SerialNumber = serialNumber;
             this.Name = name;
             this.SoftwareVersion = softwareVersion;
-            this.ActivationTimestamp = activationTimestamp;
             this.DataProvided = dataProvided;
             this.LastUploadDate = lastUploadDate;
         }

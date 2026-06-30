@@ -4,7 +4,8 @@
 namespace Terra
 {
     /// <summary>
-    /// Heart rate zone designation
+    /// Heart rate zone designation, as a zero-based zone index.<br/>
+    /// Example: 2
     /// </summary>
     public sealed partial class HeartRateZoneDataZone
     {

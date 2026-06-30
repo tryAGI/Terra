@@ -37,6 +37,14 @@ namespace Terra
         public double? Vo2maxMlPerMinPerKg { get; set; }
 
         /// <summary>
+        /// Day-average VO2 max, in millilitres per minute per kilogram.<br/>
+        /// Example: 44
+        /// </summary>
+        /// <example>44</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("day_avg_vo2max_ml_per_min_per_kg")]
+        public double? DayAvgVo2maxMlPerMinPerKg { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -59,6 +67,10 @@ namespace Terra
         /// VO2Max for the given user.<br/>
         /// Example: 45.5
         /// </param>
+        /// <param name="dayAvgVo2maxMlPerMinPerKg">
+        /// Day-average VO2 max, in millilitres per minute per kilogram.<br/>
+        /// Example: 44
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -66,12 +78,14 @@ namespace Terra
             double? avgSaturationPercentage,
             global::System.Collections.Generic.IList<global::Terra.OxygenSaturationSample>? saturationSamples,
             global::System.Collections.Generic.IList<global::Terra.Vo2MaxSample>? vo2Samples,
-            double? vo2maxMlPerMinPerKg)
+            double? vo2maxMlPerMinPerKg,
+            double? dayAvgVo2maxMlPerMinPerKg)
         {
             this.AvgSaturationPercentage = avgSaturationPercentage;
             this.SaturationSamples = saturationSamples;
             this.Vo2Samples = vo2Samples;
             this.Vo2maxMlPerMinPerKg = vo2maxMlPerMinPerKg;
+            this.DayAvgVo2maxMlPerMinPerKg = dayAvgVo2maxMlPerMinPerKg;
         }
 
         /// <summary>

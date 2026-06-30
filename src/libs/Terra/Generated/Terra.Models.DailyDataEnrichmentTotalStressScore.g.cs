@@ -4,7 +4,8 @@
 namespace Terra
 {
     /// <summary>
-    /// Total stress score for the day.
+    /// Total stress score for the day.<br/>
+    /// Example: 45
     /// </summary>
     public sealed partial class DailyDataEnrichmentTotalStressScore
     {

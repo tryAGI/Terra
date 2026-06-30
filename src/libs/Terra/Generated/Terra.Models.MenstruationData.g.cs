@@ -20,7 +20,7 @@ namespace Terra
         /// Phase in associated cycle, (i.e. menstruation, fertile etc).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("current_phase")]
-        public global::Terra.MenstrualPhase? CurrentPhase { get; set; }
+        public double? CurrentPhase { get; set; }
 
         /// <summary>
         /// Length of current phase.<br/>
@@ -76,7 +76,7 @@ namespace Terra
         /// </summary>
         /// <example>28</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("cycle_length_days")]
-        public string? CycleLengthDays { get; set; }
+        public int? CycleLengthDays { get; set; }
 
         /// <summary>
         /// Flag indicating whether associated object is a prediction or user-logged information.<br/>
@@ -84,13 +84,43 @@ namespace Terra
         /// </summary>
         /// <example>true</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("is_predicted_cycle")]
-        public string? IsPredictedCycle { get; set; }
+        public bool? IsPredictedCycle { get; set; }
 
         /// <summary>
         /// List of user logs of information related to the strength of user's menstrual flow.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("menstruation_flow")]
         public global::System.Collections.Generic.IList<global::Terra.MenstruationFlowSample>? MenstruationFlow { get; set; }
+
+        /// <summary>
+        /// List of cycle phase intervals, each spanning a contiguous date range within the cycle.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("intervals")]
+        public global::System.Collections.Generic.IList<global::Terra.MenstruationIntervalSample>? Intervals { get; set; }
+
+        /// <summary>
+        /// Start of the fertility window, in ISO8601 format.<br/>
+        /// Example: 2022-11-12
+        /// </summary>
+        /// <example>2022-11-12</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("fertility_window_start")]
+        public string? FertilityWindowStart { get; set; }
+
+        /// <summary>
+        /// End of the fertility window, in ISO8601 format.<br/>
+        /// Example: 2022-11-17
+        /// </summary>
+        /// <example>2022-11-17</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("fertility_window_end")]
+        public string? FertilityWindowEnd { get; set; }
+
+        /// <summary>
+        /// Predicted ovulation day, in ISO8601 format.<br/>
+        /// Example: 2022-11-15
+        /// </summary>
+        /// <example>2022-11-15</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ovulation_day")]
+        public string? OvulationDay { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -143,21 +173,40 @@ namespace Terra
         /// <param name="menstruationFlow">
         /// List of user logs of information related to the strength of user's menstrual flow.
         /// </param>
+        /// <param name="intervals">
+        /// List of cycle phase intervals, each spanning a contiguous date range within the cycle.
+        /// </param>
+        /// <param name="fertilityWindowStart">
+        /// Start of the fertility window, in ISO8601 format.<br/>
+        /// Example: 2022-11-12
+        /// </param>
+        /// <param name="fertilityWindowEnd">
+        /// End of the fertility window, in ISO8601 format.<br/>
+        /// Example: 2022-11-17
+        /// </param>
+        /// <param name="ovulationDay">
+        /// Predicted ovulation day, in ISO8601 format.<br/>
+        /// Example: 2022-11-15
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public MenstruationData(
             int? periodLengthDays,
-            global::Terra.MenstrualPhase? currentPhase,
+            double? currentPhase,
             int? lengthOfCurrentPhaseDays,
             int? daysUntilNextPhase,
             string? periodStartDate,
             int? predictedCycleLengthDays,
             int? dayInCycle,
             string? lastUpdatedTime,
-            string? cycleLengthDays,
-            string? isPredictedCycle,
-            global::System.Collections.Generic.IList<global::Terra.MenstruationFlowSample>? menstruationFlow)
+            int? cycleLengthDays,
+            bool? isPredictedCycle,
+            global::System.Collections.Generic.IList<global::Terra.MenstruationFlowSample>? menstruationFlow,
+            global::System.Collections.Generic.IList<global::Terra.MenstruationIntervalSample>? intervals,
+            string? fertilityWindowStart,
+            string? fertilityWindowEnd,
+            string? ovulationDay)
         {
             this.PeriodLengthDays = periodLengthDays;
             this.CurrentPhase = currentPhase;
@@ -170,6 +219,10 @@ namespace Terra
             this.CycleLengthDays = cycleLengthDays;
             this.IsPredictedCycle = isPredictedCycle;
             this.MenstruationFlow = menstruationFlow;
+            this.Intervals = intervals;
+            this.FertilityWindowStart = fertilityWindowStart;
+            this.FertilityWindowEnd = fertilityWindowEnd;
+            this.OvulationDay = ovulationDay;
         }
 
         /// <summary>

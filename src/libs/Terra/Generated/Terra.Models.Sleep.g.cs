@@ -46,10 +46,10 @@ namespace Terra
         public global::Terra.RespirationData? RespirationData { get; set; }
 
         /// <summary>
-        /// User's sleep score
+        /// Scores summarising the user's sleep session.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("scores")]
-        public global::Terra.SleepScores? Scores { get; set; }
+        public global::Terra.SleepScores2? Scores { get; set; }
 
         /// <summary>
         /// Object containing information on the user's duration spent in various sleep stages.
@@ -89,7 +89,7 @@ namespace Terra
         /// Object containing information on the user's respiration throughout the sleep session.
         /// </param>
         /// <param name="scores">
-        /// User's sleep score
+        /// Scores summarising the user's sleep session.
         /// </param>
         /// <param name="sleepDurationsData">
         /// Object containing information on the user's duration spent in various sleep stages.
@@ -107,7 +107,7 @@ namespace Terra
             global::Terra.HeartRateData? heartRateData,
             global::Terra.ReadinessData? readinessData,
             global::Terra.RespirationData? respirationData,
-            global::Terra.SleepScores? scores,
+            global::Terra.SleepScores2? scores,
             global::Terra.SleepDurationsData? sleepDurationsData,
             global::Terra.SleepTemperatureData2? temperatureData)
         {

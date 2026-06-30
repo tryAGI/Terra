@@ -14,10 +14,10 @@ namespace Terra
         /// </summary>
         /// <example>85</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("readiness")]
-        public int? Readiness { get; set; }
+        public double? Readiness { get; set; }
 
         /// <summary>
-        /// User's recovery score for a given day, resulting from the sleep session - takes Enum value.
+        /// User's recovery score for a given day, resulting from the sleep session.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("recovery_level")]
         public double? RecoveryLevel { get; set; }
@@ -36,13 +36,13 @@ namespace Terra
         /// Example: 85
         /// </param>
         /// <param name="recoveryLevel">
-        /// User's recovery score for a given day, resulting from the sleep session - takes Enum value.
+        /// User's recovery score for a given day, resulting from the sleep session.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ReadinessData(
-            int? readiness,
+            double? readiness,
             double? recoveryLevel)
         {
             this.Readiness = readiness;

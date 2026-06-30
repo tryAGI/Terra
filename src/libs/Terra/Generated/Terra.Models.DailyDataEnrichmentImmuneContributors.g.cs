@@ -4,7 +4,7 @@
 namespace Terra
 {
     /// <summary>
-    /// Array of factors contributing to immune index.
+    /// Map of contributing factor name to its weighted contribution to the immune index.
     /// </summary>
     public sealed partial class DailyDataEnrichmentImmuneContributors
     {

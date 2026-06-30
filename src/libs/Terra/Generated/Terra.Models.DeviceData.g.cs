@@ -59,12 +59,6 @@ namespace Terra
         public global::System.Collections.Generic.IList<global::Terra.OtherDeviceData>? OtherDevices { get; set; }
 
         /// <summary>
-        /// Sensor state of the device.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sensor_state")]
-        public string? SensorState { get; set; }
-
-        /// <summary>
         /// Device Serial Number.<br/>
         /// Example: GR123456789
         /// </summary>
@@ -114,9 +108,6 @@ namespace Terra
         /// <param name="otherDevices">
         /// Data pertaining to other devices which may have contributed data for this workout.
         /// </param>
-        /// <param name="sensorState">
-        /// Sensor state of the device.
-        /// </param>
         /// <param name="serialNumber">
         /// Device Serial Number.<br/>
         /// Example: GR123456789
@@ -136,7 +127,6 @@ namespace Terra
             string? manufacturer,
             string? name,
             global::System.Collections.Generic.IList<global::Terra.OtherDeviceData>? otherDevices,
-            string? sensorState,
             string? serialNumber,
             string? softwareVersion)
         {
@@ -147,7 +137,6 @@ namespace Terra
             this.Manufacturer = manufacturer;
             this.Name = name;
             this.OtherDevices = otherDevices;
-            this.SensorState = sensorState;
             this.SerialNumber = serialNumber;
             this.SoftwareVersion = softwareVersion;
         }

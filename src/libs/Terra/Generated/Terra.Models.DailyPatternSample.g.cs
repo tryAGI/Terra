@@ -20,31 +20,31 @@ namespace Terra
         /// Percentile 5 of the glucose level at the given time of day.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("percentile_5")]
-        public int? Percentile5 { get; set; }
+        public double? Percentile5 { get; set; }
 
         /// <summary>
         /// Percentile 25 of the glucose level at the given time of day.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("percentile_25")]
-        public int? Percentile25 { get; set; }
+        public double? Percentile25 { get; set; }
 
         /// <summary>
         /// Percentile 50 of the glucose level at the given time of day.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("percentile_50")]
-        public int? Percentile50 { get; set; }
+        public double? Percentile50 { get; set; }
 
         /// <summary>
         /// Percentile 75 of the glucose level at the given time of day.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("percentile_75")]
-        public int? Percentile75 { get; set; }
+        public double? Percentile75 { get; set; }
 
         /// <summary>
         /// Percentile 95 of the glucose level at the given time of day.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("percentile_95")]
-        public int? Percentile95 { get; set; }
+        public double? Percentile95 { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -79,11 +79,11 @@ namespace Terra
 #endif
         public DailyPatternSample(
             int? timeFromMidnight,
-            int? percentile5,
-            int? percentile25,
-            int? percentile50,
-            int? percentile75,
-            int? percentile95)
+            double? percentile5,
+            double? percentile25,
+            double? percentile50,
+            double? percentile75,
+            double? percentile95)
         {
             this.TimeFromMidnight = timeFromMidnight;
             this.Percentile5 = percentile5;

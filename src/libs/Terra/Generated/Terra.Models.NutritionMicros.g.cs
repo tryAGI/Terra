@@ -33,6 +33,14 @@ namespace Terra
         public double? CalciumMg { get; set; }
 
         /// <summary>
+        /// Sodium content of the associated food(s).<br/>
+        /// Example: 2300
+        /// </summary>
+        /// <example>2300</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("sodium_mg")]
+        public double? SodiumMg { get; set; }
+
+        /// <summary>
         /// Chloride content of the associated food(s).<br/>
         /// Example: 2300
         /// </summary>
@@ -397,6 +405,10 @@ namespace Terra
         /// Calcium content of the associated food(s).<br/>
         /// Example: 1000
         /// </param>
+        /// <param name="sodiumMg">
+        /// Sodium content of the associated food(s).<br/>
+        /// Example: 2300
+        /// </param>
         /// <param name="chlorideMg">
         /// Chloride content of the associated food(s).<br/>
         /// Example: 2300
@@ -576,6 +588,7 @@ namespace Terra
             double? biotinMg,
             double? caffeineMg,
             double? calciumMg,
+            double? sodiumMg,
             double? chlorideMg,
             double? chromiumMg,
             double? copperMg,
@@ -623,6 +636,7 @@ namespace Terra
             this.BiotinMg = biotinMg;
             this.CaffeineMg = caffeineMg;
             this.CalciumMg = calciumMg;
+            this.SodiumMg = sodiumMg;
             this.ChlorideMg = chlorideMg;
             this.ChromiumMg = chromiumMg;
             this.CopperMg = copperMg;

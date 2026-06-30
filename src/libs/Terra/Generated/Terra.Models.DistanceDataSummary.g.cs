@@ -12,7 +12,7 @@ namespace Terra
         /// Total distance covered by the user throughout the workout.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("distance_meters")]
-        public int? DistanceMeters { get; set; }
+        public double? DistanceMeters { get; set; }
 
         /// <summary>
         /// Object containing information on the elevation of the user throughout the workout.
@@ -66,7 +66,7 @@ namespace Terra
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public DistanceDataSummary(
-            int? distanceMeters,
+            double? distanceMeters,
             global::Terra.ElevationData? elevation,
             int? floorsClimbed,
             int? steps,

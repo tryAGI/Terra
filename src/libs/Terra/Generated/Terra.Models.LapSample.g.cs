@@ -70,7 +70,23 @@ namespace Terra
         /// </summary>
         /// <example>freestyle</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("stroke_type")]
-        public global::Terra.StrokeType? StrokeType { get; set; }
+        public string? StrokeType { get; set; }
+
+        /// <summary>
+        /// Average power output during the lap, in watts.<br/>
+        /// Example: 210
+        /// </summary>
+        /// <example>210</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("avg_watts")]
+        public double? AvgWatts { get; set; }
+
+        /// <summary>
+        /// Active duration of the lap, in seconds.<br/>
+        /// Example: 120
+        /// </summary>
+        /// <example>120</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("active_duration_seconds")]
+        public int? ActiveDurationSeconds { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -113,6 +129,14 @@ namespace Terra
         /// Stroke type - only relevant for swimming activities<br/>
         /// Example: freestyle
         /// </param>
+        /// <param name="avgWatts">
+        /// Average power output during the lap, in watts.<br/>
+        /// Example: 210
+        /// </param>
+        /// <param name="activeDurationSeconds">
+        /// Active duration of the lap, in seconds.<br/>
+        /// Example: 120
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -124,7 +148,9 @@ namespace Terra
             double? distanceMeters,
             int? totalStrokes,
             string? endTime,
-            global::Terra.StrokeType? strokeType)
+            string? strokeType,
+            double? avgWatts,
+            int? activeDurationSeconds)
         {
             this.Calories = calories;
             this.AvgHrBpm = avgHrBpm;
@@ -134,6 +160,8 @@ namespace Terra
             this.TotalStrokes = totalStrokes;
             this.EndTime = endTime;
             this.StrokeType = strokeType;
+            this.AvgWatts = avgWatts;
+            this.ActiveDurationSeconds = activeDurationSeconds;
         }
 
         /// <summary>
