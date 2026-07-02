@@ -43,6 +43,14 @@ namespace Terra
         public required string Message { get; set; }
 
         /// <summary>
+        /// Payload schema version<br/>
+        /// Example: 2022-03-16
+        /// </summary>
+        /// <example>2022-03-16</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("version")]
+        public string? Version { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -62,6 +70,10 @@ namespace Terra
         /// <param name="status">
         /// Status of the re-authentication
         /// </param>
+        /// <param name="version">
+        /// Payload schema version<br/>
+        /// Example: 2022-03-16
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -70,13 +82,15 @@ namespace Terra
             string message,
             global::Terra.UserReauthEventType type,
             global::Terra.TerraUser? oldUser,
-            global::Terra.UserReauthEventStatus status)
+            global::Terra.UserReauthEventStatus status,
+            string? version)
         {
             this.Type = type;
             this.NewUser = newUser ?? throw new global::System.ArgumentNullException(nameof(newUser));
             this.OldUser = oldUser;
             this.Status = status;
             this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
+            this.Version = version;
         }
 
         /// <summary>
