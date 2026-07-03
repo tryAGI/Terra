@@ -4,7 +4,7 @@
 namespace Terra
 {
     /// <summary>
-    /// One layered result: verbatim `source`, normalized `biomarker` identity, one typed `measurement`, and the `interpretation`. `measurement` and `interpretation` are byte-identical to the webhook payload.
+    /// One layered result: verbatim source, normalized biomarker identity, one typed measurement, and the interpretation. measurement and interpretation are byte-identical to the webhook payload.
     /// </summary>
     public sealed partial class LabReportResult
     {
@@ -23,7 +23,7 @@ namespace Terra
         public required global::Terra.LabReportBiomarker Biomarker { get; set; }
 
         /// <summary>
-        /// The single typed value of a result. Exactly one value field is set, named by `type`.
+        /// The single typed value of a result. Exactly one value field is set, named by type.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("measurement")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -58,7 +58,7 @@ namespace Terra
         /// The normalized identity layer.
         /// </param>
         /// <param name="measurement">
-        /// The single typed value of a result. Exactly one value field is set, named by `type`.
+        /// The single typed value of a result. Exactly one value field is set, named by type.
         /// </param>
         /// <param name="interpretation">
         /// The per-result abnormality layer.

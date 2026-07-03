@@ -16,13 +16,13 @@ namespace Terra
         public required string DestinationId { get; set; }
 
         /// <summary>
-        /// The destination's type (e.g. `webhook`, `s3`).
+        /// The destination's type (e.g. webhook, s3).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("destination_type")]
         public string? DestinationType { get; set; }
 
         /// <summary>
-        /// `pending`, `delivered`, or `failed`.
+        /// pending, delivered, or failed.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -52,13 +52,13 @@ namespace Terra
         /// </summary>
         /// <param name="destinationId"></param>
         /// <param name="status">
-        /// `pending`, `delivered`, or `failed`.
+        /// pending, delivered, or failed.
         /// </param>
         /// <param name="attemptCount">
         /// Retry count — 0 on the first attempt, incremented per retry.
         /// </param>
         /// <param name="destinationType">
-        /// The destination's type (e.g. `webhook`, `s3`).
+        /// The destination's type (e.g. webhook, s3).
         /// </param>
         /// <param name="lastError">
         /// Most recent delivery error; omitted when delivered.

@@ -18,13 +18,13 @@ namespace Terra
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("age_lower")]
-        public long? AgeLower { get; set; }
+        public int? AgeLower { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("age_upper")]
-        public long? AgeUpper { get; set; }
+        public int? AgeUpper { get; set; }
 
         /// <summary>
         /// 
@@ -36,13 +36,13 @@ namespace Terra
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gestational_week_lower")]
-        public long? GestationalWeekLower { get; set; }
+        public int? GestationalWeekLower { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gestational_week_upper")]
-        public long? GestationalWeekUpper { get; set; }
+        public int? GestationalWeekUpper { get; set; }
 
         /// <summary>
         /// 
@@ -85,11 +85,11 @@ namespace Terra
 #endif
         public LabReportRangeContext(
             string? sex,
-            long? ageLower,
-            long? ageUpper,
+            int? ageLower,
+            int? ageUpper,
             string? pregnancyStatus,
-            long? gestationalWeekLower,
-            long? gestationalWeekUpper,
+            int? gestationalWeekLower,
+            int? gestationalWeekUpper,
             string? cyclePhase,
             string? referencePopulation,
             global::System.Collections.Generic.IList<string>? modifiers)

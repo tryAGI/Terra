@@ -9,7 +9,7 @@ namespace Terra
     public sealed partial class LabReportInterpretation
     {
         /// <summary>
-        /// Coded signal (`high`/`low`/`normal`), or null when there is no signal.
+        /// Coded signal (high/low/normal), or null when there is no signal.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("flag")]
         public string? Flag { get; set; }
@@ -21,7 +21,7 @@ namespace Terra
         public string? FlagRaw { get; set; }
 
         /// <summary>
-        /// Provenance of `flag` — `report`, `computed`, or `none`.
+        /// Provenance of flag — report, computed, or none.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("source")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -43,10 +43,10 @@ namespace Terra
         /// Initializes a new instance of the <see cref="LabReportInterpretation" /> class.
         /// </summary>
         /// <param name="source">
-        /// Provenance of `flag` — `report`, `computed`, or `none`.
+        /// Provenance of flag — report, computed, or none.
         /// </param>
         /// <param name="flag">
-        /// Coded signal (`high`/`low`/`normal`), or null when there is no signal.
+        /// Coded signal (high/low/normal), or null when there is no signal.
         /// </param>
         /// <param name="flagRaw">
         /// The lab's verbatim flag.
