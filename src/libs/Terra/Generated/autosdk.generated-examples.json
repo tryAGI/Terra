@@ -90,6 +90,72 @@
     },
     {
       "Order": 9,
+      "Title": "Delete a lab report session",
+      "Slug": "labreports-delete",
+      "Description": "Soft-delete a session. It is marked deleted immediately; associated storage is cleaned up by a background process.",
+      "Language": "csharp",
+      "Code": "using var client = new TerraClient(apiKey);\n\nawait client.LabReports.LabReportsDeleteAsync(\n    sessionId: \u0022297405620317847552\u0022\n);",
+      "Format": "sdk",
+      "OperationId": "LabReports_Delete",
+      "Setup": "This example assumes \u0060using Terra;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
+    },
+    {
+      "Order": 10,
+      "Title": "List lab report sessions",
+      "Slug": "labreports-list",
+      "Description": "List lab report sessions for your account, with optional reference, upload, and inclusive date-range filters. Use the date filters to narrow large result sets.",
+      "Language": "csharp",
+      "Code": "using var client = new TerraClient(apiKey);\nvar response = await client.LabReports.LabReportsListAsync();",
+      "Format": "sdk",
+      "OperationId": "LabReports_List",
+      "Setup": "This example assumes \u0060using Terra;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
+    },
+    {
+      "Order": 11,
+      "Title": "List delivery outcomes",
+      "Slug": "labreports-listdeliveries",
+      "Description": "The per-destination delivery state for a report. Each opted-in destination is tracked independently, so one failure never hides delivery to the others (and is why a session can be \u0060partially_sent\u0060).",
+      "Language": "csharp",
+      "Code": "using var client = new TerraClient(apiKey);\n\nvar response = await client.LabReports.LabReportsListDeliveriesAsync(\n    sessionId: \u0022297405620317847552\u0022\n);",
+      "Format": "sdk",
+      "OperationId": "LabReports_ListDeliveries",
+      "Setup": "This example assumes \u0060using Terra;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
+    },
+    {
+      "Order": 12,
+      "Title": "List input files",
+      "Slug": "labreports-listfiles",
+      "Description": "The uploaded input files and report thumbnail, with freshly minted presigned download URLs. URLs expire; fetch again to mint new ones.",
+      "Language": "csharp",
+      "Code": "using var client = new TerraClient(apiKey);\n\nvar response = await client.LabReports.LabReportsListFilesAsync(\n    sessionId: \u0022297405620317847552\u0022\n);",
+      "Format": "sdk",
+      "OperationId": "LabReports_ListFiles",
+      "Setup": "This example assumes \u0060using Terra;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
+    },
+    {
+      "Order": 13,
+      "Title": "Retrieve a lab report session",
+      "Slug": "labreports-retrieve",
+      "Description": "Retrieve a report\u0027s metadata, results, reference ranges, and status history. Immutable and cacheable \u2014 presigned file URLs and mutable per-destination delivery state live on the \u0060/files\u0060 and \u0060/deliveries\u0060 sub-resources.",
+      "Language": "csharp",
+      "Code": "using var client = new TerraClient(apiKey);\n\nvar response = await client.LabReports.LabReportsRetrieveAsync(\n    sessionId: \u0022297405620317847552\u0022\n);",
+      "Format": "sdk",
+      "OperationId": "LabReports_Retrieve",
+      "Setup": "This example assumes \u0060using Terra;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
+    },
+    {
+      "Order": 14,
+      "Title": "Upload a lab report",
+      "Slug": "labreports-upload",
+      "Description": "Upload a single lab report file (PDF, PNG, JPEG, GIF, or WebP) as multipart form data. Returns an \u0060upload_id\u0060; a single upload may fan out to multiple sessions, so learn the \u0060session_id\u0060(s) from the webhook events or from \u0060GET /lab-reports?upload_id=...\u0060.",
+      "Language": "http",
+      "Code": "### Upload a lab report\n# @name LabReports_Upload\nPOST {{host}}/lab-reports?reference_id=patient_456\nAuthorization: Bearer {{token}}\nContent-Type: multipart/form-data\nAccept: application/json, application/problem\u002Bjson\n\n## Responses\n# 202\n# Description: Upload accepted for processing.\n# Content-Type: application/json\n# 400\n# Description: One or more parameters is malformed. The \u0060detail\u0060 field describes the specific problem.\n# Content-Type: application/problem\u002Bjson\n# 401\n# Description: Authentication credentials are missing or invalid.\n# Content-Type: application/problem\u002Bjson\n# 403\n# Description: The credential is not authorized for this operation.\n# Content-Type: application/json\n# 413\n# Description: The uploaded payload exceeds the size limit.\n# Content-Type: application/json",
+      "Format": "http",
+      "OperationId": "LabReports_Upload",
+      "Setup": null
+    },
+    {
+      "Order": 15,
       "Title": "Retrieve menstruation data for a given user ID",
       "Slug": "menstruation-fetch",
       "Description": "Fetches menstruation data such as cycle length, period length, ovulation date etc. for a given user ID",
@@ -100,7 +166,7 @@
       "Setup": null
     },
     {
-      "Order": 10,
+      "Order": 16,
       "Title": "Retrieve nutrition log data for a given user ID",
       "Slug": "nutrition-fetch",
       "Description": "Fetches nutrition log data such as meal type, calories, macronutrients etc. for a given user ID",
@@ -111,7 +177,7 @@
       "Setup": null
     },
     {
-      "Order": 11,
+      "Order": 17,
       "Title": "Retrieve sleep sessions for a given user ID",
       "Slug": "sleep-fetch",
       "Description": "Fetches sleep data such as sleep duration, sleep stages, sleep quality etc. for a given user ID, for sleep sessions with a defined start and end time",
@@ -122,7 +188,7 @@
       "Setup": null
     },
     {
-      "Order": 12,
+      "Order": 18,
       "Title": "Get all Terra User IDs",
       "Slug": "user-getalluserids",
       "Description": "Used to query for information for all Terra User IDs. Supports optional pagination via \u0060page\u0060 and \u0060per_page\u0060. If \u0060page\u0060 is not provided, it returns all users in one go (backwards compatibility).",
@@ -133,7 +199,7 @@
       "Setup": "This example assumes \u0060using Terra;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
     },
     {
-      "Order": 13,
+      "Order": 19,
       "Title": "Get information for multiple user IDs",
       "Slug": "user-getinfoformultipleuserids",
       "Description": "Used to query for information for multiple Terra User IDs",
@@ -144,7 +210,7 @@
       "Setup": null
     },
     {
-      "Order": 14,
+      "Order": 20,
       "Title": "Get information for a single user ID or multiple users by reference ID",
       "Slug": "user-getinfoforuserid",
       "Description": "Used to query for information on one Terra user ID, or to query for all registered Terra User objects under one reference ID",
@@ -155,7 +221,7 @@
       "Setup": "This example assumes \u0060using Terra;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
     },
     {
-      "Order": 15,
+      "Order": 21,
       "Title": "Resend a previously delivered webhook payload",
       "Slug": "webhooks-resendpayload",
       "Description": "Re-dispatches a stored normalised payload to your configured webhook\ndestinations, identified by the original webhook event ID. The user\nand data type are read from the stored payload itself, so only the\nevent ID is required.",
@@ -166,7 +232,7 @@
       "Setup": null
     },
     {
-      "Order": 16,
+      "Order": 22,
       "Title": "Create a workout template",
       "Slug": "workouts-createworkout",
       "Description": "Stores a reusable workout template. Plan it onto a user\u0027s calendar with \u0060POST /workouts/{workout_id}/plan\u0060 \u2014 the template itself carries no date and is not pushed to any provider until planned.",
@@ -177,7 +243,7 @@
       "Setup": null
     },
     {
-      "Order": 17,
+      "Order": 23,
       "Title": "Delete a planned workout",
       "Slug": "workouts-deleteplannedworkout",
       "Description": "Removes the planned workout from the user\u0027s calendar and from the connected provider.",
@@ -188,7 +254,7 @@
       "Setup": null
     },
     {
-      "Order": 18,
+      "Order": 24,
       "Title": "Delete a workout template",
       "Slug": "workouts-deleteworkout",
       "Description": "Deletes the template and cascades deletion of every planned workout created from it, including removal from connected providers.",
@@ -199,7 +265,7 @@
       "Setup": null
     },
     {
-      "Order": 19,
+      "Order": 25,
       "Title": "Get a planned workout",
       "Slug": "workouts-getplannedworkout",
       "Description": "Generated from OpenAPI examples.",
@@ -210,7 +276,7 @@
       "Setup": null
     },
     {
-      "Order": 20,
+      "Order": 26,
       "Title": "Get a workout template",
       "Slug": "workouts-getworkout",
       "Description": "Generated from OpenAPI examples.",
@@ -221,7 +287,7 @@
       "Setup": null
     },
     {
-      "Order": 21,
+      "Order": 27,
       "Title": "List planned workouts for a user",
       "Slug": "workouts-listplannedworkouts",
       "Description": "Returns the user\u0027s planned workouts, including workouts created on the provider side (is_external true) where the provider exposes them.",
@@ -232,7 +298,7 @@
       "Setup": null
     },
     {
-      "Order": 22,
+      "Order": 28,
       "Title": "List workout templates",
       "Slug": "workouts-listworkouts",
       "Description": "Returns every workout template stored for your developer account.",
@@ -243,7 +309,7 @@
       "Setup": "This example assumes \u0060using Terra;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
     },
     {
-      "Order": 23,
+      "Order": 29,
       "Title": "Plan a workout onto a user\u0027s calendar",
       "Slug": "workouts-planworkout",
       "Description": "Schedules the workout template for a user on a given date and pushes it to the user\u0027s connected provider (or queues it for SDK delivery). Athlete metrics personalise zone-based targets for this plan only.",
@@ -254,7 +320,7 @@
       "Setup": null
     },
     {
-      "Order": 24,
+      "Order": 30,
       "Title": "Reschedule a planned workout",
       "Slug": "workouts-updateplannedworkout",
       "Description": "Generated from OpenAPI examples.",

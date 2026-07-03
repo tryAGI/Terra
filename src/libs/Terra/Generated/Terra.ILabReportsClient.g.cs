@@ -4,11 +4,10 @@
 namespace Terra
 {
     /// <summary>
-    /// The Terra API (v2 surface, served at access.tryterra.co/api/v2).<br/>
     /// If no httpClient is provided, a new one will be created.<br/>
     /// If no baseUri is provided, the default baseUri from OpenAPI spec will be used.
     /// </summary>
-    public partial interface ITerraClient : global::System.IDisposable
+    public partial interface ILabReportsClient : global::System.IDisposable
     {
         /// <summary>
         /// The HttpClient instance.
@@ -44,71 +43,6 @@ namespace Terra
         /// </summary>
         global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext { get; set; }
 
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public ActivityClient Activity { get; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public AthleteClient Athlete { get; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public AuthenticationClient Authentication { get; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public BodyClient Body { get; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public DailyClient Daily { get; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public IntegrationsClient Integrations { get; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public LabReportsClient LabReports { get; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public MenstruationClient Menstruation { get; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public NutritionClient Nutrition { get; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public SleepClient Sleep { get; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public UserClient User { get; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public WebhooksClient Webhooks { get; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public WorkoutsClient Workouts { get; }
 
     }
 }
