@@ -4,7 +4,7 @@
 namespace Terra
 {
     /// <summary>
-    /// One reference range. `type` describes the range, not a verdict on the result.
+    /// One reference range. type describes the range, not a verdict on the result.
     /// </summary>
     public sealed partial class LabReportReferenceRange
     {

@@ -33,7 +33,7 @@ namespace Terra
         public string? Units { get; set; }
 
         /// <summary>
-        /// Verbatim flag; the coded form is under `interpretation`.
+        /// Verbatim flag; the coded form is under interpretation.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("flag")]
         public string? Flag { get; set; }
@@ -72,7 +72,7 @@ namespace Terra
         /// </param>
         /// <param name="units"></param>
         /// <param name="flag">
-        /// Verbatim flag; the coded form is under `interpretation`.
+        /// Verbatim flag; the coded form is under interpretation.
         /// </param>
         /// <param name="method"></param>
         /// <param name="notes"></param>

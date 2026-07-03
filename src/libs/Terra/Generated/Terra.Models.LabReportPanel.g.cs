@@ -4,16 +4,16 @@
 namespace Terra
 {
     /// <summary>
-    /// A report-level grouping that results reference by `panel_id`.
+    /// A report-level grouping that results reference by panel_id.
     /// </summary>
     public sealed partial class LabReportPanel
     {
         /// <summary>
-        /// Report-local ordinal; matches `LabReportBiomarker.panel_id`.
+        /// Report-local ordinal; matches LabReportBiomarker.panel_id.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required long Id { get; set; }
+        public required int Id { get; set; }
 
         /// <summary>
         /// Verbatim panel header as printed on the report.
@@ -37,7 +37,7 @@ namespace Terra
         /// Initializes a new instance of the <see cref="LabReportPanel" /> class.
         /// </summary>
         /// <param name="id">
-        /// Report-local ordinal; matches `LabReportBiomarker.panel_id`.
+        /// Report-local ordinal; matches LabReportBiomarker.panel_id.
         /// </param>
         /// <param name="name">
         /// Verbatim panel header as printed on the report.
@@ -49,7 +49,7 @@ namespace Terra
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public LabReportPanel(
-            long id,
+            int id,
             string? name,
             string? key)
         {

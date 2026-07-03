@@ -9,7 +9,7 @@ namespace Terra
     public sealed partial class LabReportBiomarker
     {
         /// <summary>
-        /// Canonical biomarker slug, or null when unmatched — the sole no-match signal. Do not key off `loinc_code`, which can be null on a match.
+        /// Canonical biomarker slug, or null when unmatched — the sole no-match signal. Do not key off loinc_code, which can be null on a match.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("key")]
         public string? Key { get; set; }
@@ -27,10 +27,10 @@ namespace Terra
         public string? LoincCode { get; set; }
 
         /// <summary>
-        /// References `panels[].id` on the enclosing session.
+        /// References panels[].id on the enclosing session.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("panel_id")]
-        public long? PanelId { get; set; }
+        public int? PanelId { get; set; }
 
         /// <summary>
         /// 
@@ -54,14 +54,14 @@ namespace Terra
         /// Initializes a new instance of the <see cref="LabReportBiomarker" /> class.
         /// </summary>
         /// <param name="key">
-        /// Canonical biomarker slug, or null when unmatched — the sole no-match signal. Do not key off `loinc_code`, which can be null on a match.
+        /// Canonical biomarker slug, or null when unmatched — the sole no-match signal. Do not key off loinc_code, which can be null on a match.
         /// </param>
         /// <param name="displayName"></param>
         /// <param name="loincCode">
         /// LOINC code; omitted when the matched biomarker has no LOINC mapping.
         /// </param>
         /// <param name="panelId">
-        /// References `panels[].id` on the enclosing session.
+        /// References panels[].id on the enclosing session.
         /// </param>
         /// <param name="panelKey"></param>
         /// <param name="specimen"></param>
@@ -72,7 +72,7 @@ namespace Terra
             string? key,
             string? displayName,
             string? loincCode,
-            long? panelId,
+            int? panelId,
             string? panelKey,
             string? specimen)
         {

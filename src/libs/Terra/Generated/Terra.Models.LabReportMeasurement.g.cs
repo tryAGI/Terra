@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// The single typed value of a result. Exactly one value field is set, named by `type`.
+    /// The single typed value of a result. Exactly one value field is set, named by type.
     /// </summary>
     public sealed partial class LabReportMeasurement
     {
         /// <summary>
-        /// One of `numeric`, `bounded`, `qualitative`, `text`, `absent`.<br/>
+        /// One of numeric, bounded, qualitative, text, absent.<br/>
         /// Example: numeric
         /// </summary>
         /// <example>numeric</example>
@@ -24,7 +24,7 @@ namespace Terra
         public double? Numeric { get; set; }
 
         /// <summary>
-        /// A one-sided bound. operator is `lt` or `gt`; value is the magnitude (e.g. lt with 0.5 means "&lt;0.5").
+        /// A one-sided bound. operator is lt or gt; value is the magnitude (e.g. lt with 0.5 means &lt;0.5).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bounded")]
         public global::Terra.LabReportBoundedValue? Bounded { get; set; }
@@ -69,12 +69,12 @@ namespace Terra
         /// Initializes a new instance of the <see cref="LabReportMeasurement" /> class.
         /// </summary>
         /// <param name="type">
-        /// One of `numeric`, `bounded`, `qualitative`, `text`, `absent`.<br/>
+        /// One of numeric, bounded, qualitative, text, absent.<br/>
         /// Example: numeric
         /// </param>
         /// <param name="numeric"></param>
         /// <param name="bounded">
-        /// A one-sided bound. operator is `lt` or `gt`; value is the magnitude (e.g. lt with 0.5 means "&lt;0.5").
+        /// A one-sided bound. operator is lt or gt; value is the magnitude (e.g. lt with 0.5 means &lt;0.5).
         /// </param>
         /// <param name="qualitative"></param>
         /// <param name="text"></param>

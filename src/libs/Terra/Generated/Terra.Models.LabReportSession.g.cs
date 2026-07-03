@@ -4,7 +4,7 @@
 namespace Terra
 {
     /// <summary>
-    /// A lab report session. Returned in full on retrieve; list items carry the summary fields only (no `results`/`panels`).
+    /// A lab report session. Returned in full on retrieve; list items carry the summary fields only (no results/panels).
     /// </summary>
     public sealed partial class LabReportSession
     {
@@ -38,7 +38,7 @@ namespace Terra
         public required string ReportType { get; set; }
 
         /// <summary>
-        /// Current status as a clean lowercase string (open enum), e.g. `processing`, `sent`, `partially_sent`, `failed`.<br/>
+        /// Current status as a clean lowercase string (open enum), e.g. processing, sent, partially_sent, failed.<br/>
         /// Example: sent
         /// </summary>
         /// <example>sent</example>
@@ -59,25 +59,25 @@ namespace Terra
         public global::System.DateTime? UpdatedAt { get; set; }
 
         /// <summary>
-        /// Date printed on the report (`YYYY-MM-DD`); omitted if not extracted.
+        /// Date printed on the report (YYYY-MM-DD); omitted if not extracted.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("report_date")]
         public string? ReportDate { get; set; }
 
         /// <summary>
-        /// Time printed on the report (`HH:MM`, 24-hour); omitted if not extracted.
+        /// Time printed on the report (HH:MM, 24-hour); omitted if not extracted.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("report_time")]
         public string? ReportTime { get; set; }
 
         /// <summary>
-        /// Specimen collection date (`YYYY-MM-DD`); omitted if not extracted.
+        /// Specimen collection date (YYYY-MM-DD); omitted if not extracted.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("collection_date")]
         public string? CollectionDate { get; set; }
 
         /// <summary>
-        /// Specimen collection time (`HH:MM`, 24-hour); omitted if not extracted.
+        /// Specimen collection time (HH:MM, 24-hour); omitted if not extracted.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("collection_time")]
         public string? CollectionTime { get; set; }
@@ -99,7 +99,7 @@ namespace Terra
         /// Patient age in years; omitted if unknown.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("patient_age_at_collection")]
-        public long? PatientAgeAtCollection { get; set; }
+        public int? PatientAgeAtCollection { get; set; }
 
         /// <summary>
         /// Clean lowercase string (open enum); omitted if unspecified.<br/>
@@ -119,7 +119,7 @@ namespace Terra
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("results_count")]
-        public long? ResultsCount { get; set; }
+        public int? ResultsCount { get; set; }
 
         /// <summary>
         /// 
@@ -131,7 +131,7 @@ namespace Terra
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("file_count")]
-        public long? FileCount { get; set; }
+        public int? FileCount { get; set; }
 
         /// <summary>
         /// 
@@ -146,7 +146,7 @@ namespace Terra
         public global::System.Collections.Generic.IList<global::Terra.LabReportResult>? Results { get; set; }
 
         /// <summary>
-        /// Report-level panels that results reference by `panel_id`. Omitted if the report has no panel grouping.
+        /// Report-level panels that results reference by panel_id. Omitted if the report has no panel grouping.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("panels")]
         public global::System.Collections.Generic.IList<global::Terra.LabReportPanel>? Panels { get; set; }
@@ -174,7 +174,7 @@ namespace Terra
         /// Example: lab
         /// </param>
         /// <param name="currentStatus">
-        /// Current status as a clean lowercase string (open enum), e.g. `processing`, `sent`, `partially_sent`, `failed`.<br/>
+        /// Current status as a clean lowercase string (open enum), e.g. processing, sent, partially_sent, failed.<br/>
         /// Example: sent
         /// </param>
         /// <param name="uploadId"></param>
@@ -184,16 +184,16 @@ namespace Terra
         /// <param name="uploadedAt"></param>
         /// <param name="updatedAt"></param>
         /// <param name="reportDate">
-        /// Date printed on the report (`YYYY-MM-DD`); omitted if not extracted.
+        /// Date printed on the report (YYYY-MM-DD); omitted if not extracted.
         /// </param>
         /// <param name="reportTime">
-        /// Time printed on the report (`HH:MM`, 24-hour); omitted if not extracted.
+        /// Time printed on the report (HH:MM, 24-hour); omitted if not extracted.
         /// </param>
         /// <param name="collectionDate">
-        /// Specimen collection date (`YYYY-MM-DD`); omitted if not extracted.
+        /// Specimen collection date (YYYY-MM-DD); omitted if not extracted.
         /// </param>
         /// <param name="collectionTime">
-        /// Specimen collection time (`HH:MM`, 24-hour); omitted if not extracted.
+        /// Specimen collection time (HH:MM, 24-hour); omitted if not extracted.
         /// </param>
         /// <param name="reportLocale">
         /// Example: en-GB
@@ -215,7 +215,7 @@ namespace Terra
         /// The layered biomarker results. Populated on retrieve, not on list.
         /// </param>
         /// <param name="panels">
-        /// Report-level panels that results reference by `panel_id`. Omitted if the report has no panel grouping.
+        /// Report-level panels that results reference by panel_id. Omitted if the report has no panel grouping.
         /// </param>
         /// <param name="reportNotes"></param>
 #if NET7_0_OR_GREATER
@@ -235,12 +235,12 @@ namespace Terra
             string? collectionTime,
             string? reportLocale,
             string? labName,
-            long? patientAgeAtCollection,
+            int? patientAgeAtCollection,
             string? patientSex,
             long? inputBytes,
-            long? resultsCount,
+            int? resultsCount,
             long? outputBytes,
-            long? fileCount,
+            int? fileCount,
             global::System.Collections.Generic.IList<global::Terra.LabReportStatusEntry>? statusHistory,
             global::System.Collections.Generic.IList<global::Terra.LabReportResult>? results,
             global::System.Collections.Generic.IList<global::Terra.LabReportPanel>? panels,
