@@ -267,10 +267,34 @@ namespace Terra.JsonConverters
             if (__jsonProps.Contains("user.user_id")) __score17++;
             if (__jsonProps.Contains("version")) __score17++;
             var __score18 = 0;
-            if (__jsonProps.Contains("expires_in")) __score18++;
-            if (__jsonProps.Contains("status")) __score18++;
+            if (__jsonProps.Contains("data")) __score18++;
+            if (__jsonProps.Contains("data.panels")) __score18++;
+            if (__jsonProps.Contains("data.reference_id")) __score18++;
+            if (__jsonProps.Contains("data.report_date")) __score18++;
+            if (__jsonProps.Contains("data.report_locale")) __score18++;
+            if (__jsonProps.Contains("data.report_notes")) __score18++;
+            if (__jsonProps.Contains("data.report_time")) __score18++;
+            if (__jsonProps.Contains("data.results")) __score18++;
+            if (__jsonProps.Contains("data.results_count")) __score18++;
+            if (__jsonProps.Contains("data.session_id")) __score18++;
+            if (__jsonProps.Contains("event_id")) __score18++;
+            if (__jsonProps.Contains("occurred_at")) __score18++;
             if (__jsonProps.Contains("type")) __score18++;
-            if (__jsonProps.Contains("url")) __score18++;
+            if (__jsonProps.Contains("upload_id")) __score18++;
+            var __score19 = 0;
+            if (__jsonProps.Contains("data")) __score19++;
+            if (__jsonProps.Contains("data.error")) __score19++;
+            if (__jsonProps.Contains("data.reference_id")) __score19++;
+            if (__jsonProps.Contains("data.session_id")) __score19++;
+            if (__jsonProps.Contains("event_id")) __score19++;
+            if (__jsonProps.Contains("occurred_at")) __score19++;
+            if (__jsonProps.Contains("type")) __score19++;
+            if (__jsonProps.Contains("upload_id")) __score19++;
+            var __score20 = 0;
+            if (__jsonProps.Contains("expires_in")) __score20++;
+            if (__jsonProps.Contains("status")) __score20++;
+            if (__jsonProps.Contains("type")) __score20++;
+            if (__jsonProps.Contains("url")) __score20++;
             var __bestScore = 0;
             var __bestIndex = -1;
             if (__score0 > __bestScore) { __bestScore = __score0; __bestIndex = 0; }
@@ -292,6 +316,8 @@ namespace Terra.JsonConverters
             if (__score16 > __bestScore) { __bestScore = __score16; __bestIndex = 16; }
             if (__score17 > __bestScore) { __bestScore = __score17; __bestIndex = 17; }
             if (__score18 > __bestScore) { __bestScore = __score18; __bestIndex = 18; }
+            if (__score19 > __bestScore) { __bestScore = __score19; __bestIndex = 19; }
+            if (__score20 > __bestScore) { __bestScore = __score20; __bestIndex = 20; }
 
             global::Terra.AuthSuccessEvent? authSuccess = default;
             global::Terra.AuthErrorEvent? authError = default;
@@ -311,6 +337,8 @@ namespace Terra.JsonConverters
             global::Terra.SleepEvent? sleep = default;
             global::Terra.PlannedWorkoutEvent? plannedWorkout = default;
             global::Terra.HormoneEvent? hormone = default;
+            global::Terra.LabReportCompletedEvent? labReportCompleted = default;
+            global::Terra.LabReportFailedEvent? labReportFailed = default;
             global::Terra.S3PayloadEvent? s3Payload = default;
             if (__bestIndex >= 0)
             {
@@ -588,6 +616,36 @@ namespace Terra.JsonConverters
                 {
                     try
                     {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.LabReportCompletedEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.LabReportCompletedEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.LabReportCompletedEvent).Name}");
+                        labReportCompleted = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+                else if (__bestIndex == 19)
+                {
+                    try
+                    {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.LabReportFailedEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.LabReportFailedEvent> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.LabReportFailedEvent).Name}");
+                        labReportFailed = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+                else if (__bestIndex == 20)
+                {
+                    try
+                    {
                         var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.S3PayloadEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.S3PayloadEvent> ??
                                        throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.S3PayloadEvent).Name}");
                         s3Payload = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -601,7 +659,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && s3Payload == null)
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && labReportCompleted == null && labReportFailed == null && s3Payload == null)
             {
                 try
                 {
@@ -618,7 +676,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && s3Payload == null)
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && labReportCompleted == null && labReportFailed == null && s3Payload == null)
             {
                 try
                 {
@@ -635,7 +693,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && s3Payload == null)
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && labReportCompleted == null && labReportFailed == null && s3Payload == null)
             {
                 try
                 {
@@ -652,7 +710,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && s3Payload == null)
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && labReportCompleted == null && labReportFailed == null && s3Payload == null)
             {
                 try
                 {
@@ -669,7 +727,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && s3Payload == null)
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && labReportCompleted == null && labReportFailed == null && s3Payload == null)
             {
                 try
                 {
@@ -686,7 +744,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && s3Payload == null)
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && labReportCompleted == null && labReportFailed == null && s3Payload == null)
             {
                 try
                 {
@@ -703,7 +761,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && s3Payload == null)
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && labReportCompleted == null && labReportFailed == null && s3Payload == null)
             {
                 try
                 {
@@ -720,7 +778,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && s3Payload == null)
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && labReportCompleted == null && labReportFailed == null && s3Payload == null)
             {
                 try
                 {
@@ -737,7 +795,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && s3Payload == null)
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && labReportCompleted == null && labReportFailed == null && s3Payload == null)
             {
                 try
                 {
@@ -754,7 +812,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && s3Payload == null)
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && labReportCompleted == null && labReportFailed == null && s3Payload == null)
             {
                 try
                 {
@@ -771,7 +829,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && s3Payload == null)
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && labReportCompleted == null && labReportFailed == null && s3Payload == null)
             {
                 try
                 {
@@ -788,7 +846,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && s3Payload == null)
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && labReportCompleted == null && labReportFailed == null && s3Payload == null)
             {
                 try
                 {
@@ -805,7 +863,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && s3Payload == null)
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && labReportCompleted == null && labReportFailed == null && s3Payload == null)
             {
                 try
                 {
@@ -822,7 +880,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && s3Payload == null)
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && labReportCompleted == null && labReportFailed == null && s3Payload == null)
             {
                 try
                 {
@@ -839,7 +897,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && s3Payload == null)
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && labReportCompleted == null && labReportFailed == null && s3Payload == null)
             {
                 try
                 {
@@ -856,7 +914,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && s3Payload == null)
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && labReportCompleted == null && labReportFailed == null && s3Payload == null)
             {
                 try
                 {
@@ -873,7 +931,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && s3Payload == null)
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && labReportCompleted == null && labReportFailed == null && s3Payload == null)
             {
                 try
                 {
@@ -890,7 +948,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && s3Payload == null)
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && labReportCompleted == null && labReportFailed == null && s3Payload == null)
             {
                 try
                 {
@@ -907,7 +965,41 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && s3Payload == null)
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && labReportCompleted == null && labReportFailed == null && s3Payload == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.LabReportCompletedEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.LabReportCompletedEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.LabReportCompletedEvent).Name}");
+                    labReportCompleted = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && labReportCompleted == null && labReportFailed == null && s3Payload == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.LabReportFailedEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.LabReportFailedEvent> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.LabReportFailedEvent).Name}");
+                    labReportFailed = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (authSuccess == null && authError == null && deauth == null && userReauth == null && accessRevoked == null && connectionError == null && permissionChange == null && largeRequestProcessing == null && largeRequestSending == null && activity == null && athlete == null && body == null && daily == null && menstruation == null && nutrition == null && sleep == null && plannedWorkout == null && hormone == null && labReportCompleted == null && labReportFailed == null && s3Payload == null)
             {
                 try
                 {
@@ -960,6 +1052,10 @@ namespace Terra.JsonConverters
                 plannedWorkout,
 
                 hormone,
+
+                labReportCompleted,
+
+                labReportFailed,
 
                 s3Payload
                 );
@@ -1083,6 +1179,18 @@ namespace Terra.JsonConverters
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.HormoneEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.HormoneEvent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.HormoneEvent).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.Hormone!, typeInfo);
+            }
+            else if (value.IsLabReportCompleted)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.LabReportCompletedEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.LabReportCompletedEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.LabReportCompletedEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.LabReportCompleted!, typeInfo);
+            }
+            else if (value.IsLabReportFailed)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.LabReportFailedEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.LabReportFailedEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.LabReportFailedEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.LabReportFailed!, typeInfo);
             }
             else if (value.IsS3Payload)
             {
