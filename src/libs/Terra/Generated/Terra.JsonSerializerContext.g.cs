@@ -385,6 +385,14 @@ namespace Terra
 
             typeof(global::Terra.JsonConverters.BodyEventTypeNullableJsonConverter),
 
+            typeof(global::Terra.JsonConverters.LabReportCompletedEventTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.LabReportCompletedEventTypeNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.LabReportFailedEventTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.LabReportFailedEventTypeNullableJsonConverter),
+
             typeof(global::Terra.JsonConverters.PlannedWorkoutEventTypeJsonConverter),
 
             typeof(global::Terra.JsonConverters.PlannedWorkoutEventTypeNullableJsonConverter),
@@ -424,6 +432,8 @@ namespace Terra
             typeof(global::Terra.JsonConverters.IntegrationsFetchResponseStatusJsonConverter),
 
             typeof(global::Terra.JsonConverters.IntegrationsFetchResponseStatusNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.LabReportWebhookJsonConverter),
 
             typeof(global::Terra.JsonConverters.WorkoutSportJsonConverter),
 
@@ -590,6 +600,9 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.BodyEvent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.PlannedWorkoutEvent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.HormoneEvent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportWebhook), TypeInfoPropertyName = "LabReportWebhook2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportCompletedEvent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportFailedEvent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.IntegrationsResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.IntegrationProvider>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.IntegrationProvider))]
@@ -843,6 +856,14 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.Menstruation>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.BodyEventType), TypeInfoPropertyName = "BodyEventType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.Body>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportEventResultSource))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportEventResult))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportEventData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.LabReportEventResult>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportCompletedEventType), TypeInfoPropertyName = "LabReportCompletedEventType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportEventError))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportFailureData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportFailedEventType), TypeInfoPropertyName = "LabReportFailedEventType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.PlannedWorkoutEventType), TypeInfoPropertyName = "PlannedWorkoutEventType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.PlannedWorkout>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.HormoneEventType), TypeInfoPropertyName = "HormoneEventType2")]
@@ -958,6 +979,7 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.Sleep>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.Menstruation>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.Body>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.LabReportEventResult>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.PlannedWorkout>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.HormoneSample>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.WorkoutTemplate>))]
