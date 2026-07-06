@@ -5,8 +5,8 @@ namespace Terra
     public partial interface IAuthenticationClient
     {
         /// <summary>
-        /// Deauthenticates a user and deletes any cached data for them<br/>
-        /// Deletes all records of the user on Terra's end, revoking Terra's access to their data
+        /// Deauthenticate a user<br/>
+        /// Deletes every record Terra holds for the user, including any cached data, and revokes Terra's access to their provider data.
         /// </summary>
         /// <param name="userId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -17,8 +17,8 @@ namespace Terra
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Deauthenticates a user and deletes any cached data for them<br/>
-        /// Deletes all records of the user on Terra's end, revoking Terra's access to their data
+        /// Deauthenticate a user<br/>
+        /// Deletes every record Terra holds for the user, including any cached data, and revokes Terra's access to their provider data.
         /// </summary>
         /// <param name="userId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>

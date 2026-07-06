@@ -5,7 +5,7 @@ namespace Terra
     public partial interface IAuthenticationClient
     {
         /// <summary>
-        /// Generates an authentication token for the Terra mobile SDKs<br/>
+        /// Generate a mobile SDK auth token<br/>
         /// Creates a token to be used with initConnection() functions in the Terra mobile SDKs in order to create a user record for Apple Health or Samsung Health (or equivalent)
         /// </summary>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -15,7 +15,7 @@ namespace Terra
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Generates an authentication token for the Terra mobile SDKs<br/>
+        /// Generate a mobile SDK auth token<br/>
         /// Creates a token to be used with initConnection() functions in the Terra mobile SDKs in order to create a user record for Apple Health or Samsung Health (or equivalent)
         /// </summary>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>

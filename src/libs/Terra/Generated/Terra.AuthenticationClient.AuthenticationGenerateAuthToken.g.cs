@@ -40,7 +40,7 @@ namespace Terra
             ref string content);
 
         /// <summary>
-        /// Generates an authentication token for the Terra mobile SDKs<br/>
+        /// Generate a mobile SDK auth token<br/>
         /// Creates a token to be used with initConnection() functions in the Terra mobile SDKs in order to create a user record for Apple Health or Samsung Health (or equivalent)
         /// </summary>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -58,7 +58,7 @@ namespace Terra
             return __response.Body;
         }
         /// <summary>
-        /// Generates an authentication token for the Terra mobile SDKs<br/>
+        /// Generate a mobile SDK auth token<br/>
         /// Creates a token to be used with initConnection() functions in the Terra mobile SDKs in order to create a user record for Apple Health or Samsung Health (or equivalent)
         /// </summary>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
