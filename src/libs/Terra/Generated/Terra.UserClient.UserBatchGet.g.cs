@@ -3,11 +3,11 @@
 
 namespace Terra
 {
-    public partial class AuthenticationClient
+    public partial class UserClient
     {
 
 
-        private static readonly global::Terra.EndPointSecurityRequirement s_AuthenticationDeauthenticateUserSecurityRequirement0 =
+        private static readonly global::Terra.EndPointSecurityRequirement s_UserBatchGetSecurityRequirement0 =
             new global::Terra.EndPointSecurityRequirement
             {
                 Authorizations = new global::Terra.EndPointAuthorizationRequirement[]
@@ -21,41 +21,43 @@ namespace Terra
                     },
                 },
             };
-        private static readonly global::Terra.EndPointSecurityRequirement[] s_AuthenticationDeauthenticateUserSecurityRequirements =
+        private static readonly global::Terra.EndPointSecurityRequirement[] s_UserBatchGetSecurityRequirements =
             new global::Terra.EndPointSecurityRequirement[]
-            {                s_AuthenticationDeauthenticateUserSecurityRequirement0,
+            {                s_UserBatchGetSecurityRequirement0,
             };
-        partial void PrepareAuthenticationDeauthenticateUserArguments(
+        partial void PrepareUserBatchGetArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref string userId);
-        partial void PrepareAuthenticationDeauthenticateUserRequest(
+            global::System.Collections.Generic.IList<string> request);
+        partial void PrepareUserBatchGetRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            string userId);
-        partial void ProcessAuthenticationDeauthenticateUserResponse(
+            global::System.Collections.Generic.IList<string> request);
+        partial void ProcessUserBatchGetResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
-        partial void ProcessAuthenticationDeauthenticateUserResponseContent(
+        partial void ProcessUserBatchGetResponseContent(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
         /// <summary>
-        /// Deauthenticate a user<br/>
-        /// Deletes every record Terra holds for the user, including any cached data, and revokes Terra's access to their provider data.
+        /// Get info for multiple users<br/>
+        /// Returns the Terra users for a batch of user IDs.
         /// </summary>
-        /// <param name="userId"></param>
+        /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Terra.AuthenticationDeauthenticateUserResponse> AuthenticationDeauthenticateUserAsync(
-            string userId,
+        public async global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Terra.TerraUser>> UserBatchGetAsync(
+
+            global::System.Collections.Generic.IList<string> request,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __response = await AuthenticationDeauthenticateUserAsResponseAsync(
-                userId: userId,
+            var __response = await UserBatchGetAsResponseAsync(
+
+                request: request,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -63,29 +65,32 @@ namespace Terra
             return __response.Body;
         }
         /// <summary>
-        /// Deauthenticate a user<br/>
-        /// Deletes every record Terra holds for the user, including any cached data, and revokes Terra's access to their provider data.
+        /// Get info for multiple users<br/>
+        /// Returns the Terra users for a batch of user IDs.
         /// </summary>
-        /// <param name="userId"></param>
+        /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse<global::Terra.AuthenticationDeauthenticateUserResponse>> AuthenticationDeauthenticateUserAsResponseAsync(
-            string userId,
+        public async global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Terra.TerraUser>>> UserBatchGetAsResponseAsync(
+
+            global::System.Collections.Generic.IList<string> request,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            request = request ?? throw new global::System.ArgumentNullException(nameof(request));
+
             PrepareArguments(
                 client: HttpClient);
-            PrepareAuthenticationDeauthenticateUserArguments(
+            PrepareUserBatchGetArguments(
                 httpClient: HttpClient,
-                userId: ref userId);
+                request: request);
 
 
             var __authorizations = global::Terra.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_AuthenticationDeauthenticateUserSecurityRequirements,
-                operationName: "AuthenticationDeauthenticateUserAsync");
+                securityRequirements: s_UserBatchGetSecurityRequirements,
+                operationName: "UserBatchGetAsync");
 
             using var __timeoutCancellationTokenSource = global::Terra.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -105,18 +110,15 @@ namespace Terra
             {
 
                             var __pathBuilder = new global::Terra.PathBuilder(
-                                path: "/auth/deauthenticateUser",
+                                path: "/bulkUserInfo",
                                 baseUri: HttpClient.BaseAddress);
-                            __pathBuilder
-                                .AddRequiredParameter("user_id", userId)
-                                ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Terra.AutoSDKRequestOptionsSupport.AppendQueryParameters(
                     path: __path,
                     clientParameters: Options.QueryParameters,
                     requestParameters: requestOptions?.QueryParameters);
                 var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
-                    method: global::System.Net.Http.HttpMethod.Delete,
+                    method: global::System.Net.Http.HttpMethod.Post,
                     requestUri: new global::System.Uri(__path, global::System.UriKind.RelativeOrAbsolute));
 #if NET6_0_OR_GREATER
                 __httpRequest.Version = global::System.Net.HttpVersion.Version11;
@@ -139,6 +141,12 @@ namespace Terra
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
                 } 
             }
+                            var __httpRequestContentBody = global::System.Text.Json.JsonSerializer.Serialize(request, request.GetType(), JsonSerializerContext);
+                            var __httpRequestContent = new global::System.Net.Http.StringContent(
+                                content: __httpRequestContentBody,
+                                encoding: global::System.Text.Encoding.UTF8,
+                                mediaType: "application/json");
+                            __httpRequest.Content = __httpRequestContent;
                 global::Terra.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,
                     clientHeaders: Options.Headers,
@@ -147,10 +155,10 @@ namespace Terra
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareAuthenticationDeauthenticateUserRequest(
+                PrepareUserBatchGetRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    userId: userId!);
+                    request: request);
 
                 return __httpRequest;
             }
@@ -167,10 +175,10 @@ namespace Terra
                     await global::Terra.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::Terra.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "AuthenticationDeauthenticateUser",
-                                methodName: "AuthenticationDeauthenticateUserAsync",
-                                pathTemplate: "\"/auth/deauthenticateUser\"",
-                                httpMethod: "DELETE",
+                                operationId: "UserBatchGet",
+                                methodName: "UserBatchGetAsync",
+                                pathTemplate: "\"/bulkUserInfo\"",
+                                httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -201,10 +209,10 @@ namespace Terra
                         await global::Terra.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Terra.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "AuthenticationDeauthenticateUser",
-                                methodName: "AuthenticationDeauthenticateUserAsync",
-                                pathTemplate: "\"/auth/deauthenticateUser\"",
-                                httpMethod: "DELETE",
+                                operationId: "UserBatchGet",
+                                methodName: "UserBatchGetAsync",
+                                pathTemplate: "\"/bulkUserInfo\"",
+                                httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -242,10 +250,10 @@ namespace Terra
                         await global::Terra.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Terra.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "AuthenticationDeauthenticateUser",
-                                methodName: "AuthenticationDeauthenticateUserAsync",
-                                pathTemplate: "\"/auth/deauthenticateUser\"",
-                                httpMethod: "DELETE",
+                                operationId: "UserBatchGet",
+                                methodName: "UserBatchGetAsync",
+                                pathTemplate: "\"/bulkUserInfo\"",
+                                httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -282,7 +290,7 @@ namespace Terra
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessAuthenticationDeauthenticateUserResponse(
+                ProcessUserBatchGetResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -290,10 +298,10 @@ namespace Terra
                     await global::Terra.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::Terra.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "AuthenticationDeauthenticateUser",
-                                methodName: "AuthenticationDeauthenticateUserAsync",
-                                pathTemplate: "\"/auth/deauthenticateUser\"",
-                                httpMethod: "DELETE",
+                                operationId: "UserBatchGet",
+                                methodName: "UserBatchGetAsync",
+                                pathTemplate: "\"/bulkUserInfo\"",
+                                httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -312,10 +320,10 @@ namespace Terra
                     await global::Terra.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Terra.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "AuthenticationDeauthenticateUser",
-                                methodName: "AuthenticationDeauthenticateUserAsync",
-                                pathTemplate: "\"/auth/deauthenticateUser\"",
-                                httpMethod: "DELETE",
+                                operationId: "UserBatchGet",
+                                methodName: "UserBatchGetAsync",
+                                pathTemplate: "\"/bulkUserInfo\"",
+                                httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -329,6 +337,43 @@ namespace Terra
                                 retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
+                            // One or more parameters is malformed. The `detail` field describes the specific problem.
+                            if ((int)__response.StatusCode == 400)
+                            {
+                                string? __content_400 = null;
+                                global::System.Exception? __exception_400 = null;
+                                global::Terra.Problem? __value_400 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_400 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __value_400 = global::Terra.Problem.FromJson(__content_400, JsonSerializerContext);
+                                    }
+                                    else
+                                    {
+                                        __content_400 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+
+                                        __value_400 = global::Terra.Problem.FromJson(__content_400, JsonSerializerContext);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_400 = __ex;
+                                }
+
+
+                                throw global::Terra.ApiException<global::Terra.Problem>.Create(
+                                    statusCode: __response.StatusCode,
+                                    message: __content_400 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_400,
+                                    responseBody: __content_400,
+                                    responseObject: __value_400,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value));
+                            }
                             // A referenced resource does not exist on Terra's end.
                             if ((int)__response.StatusCode == 404)
                             {
@@ -379,7 +424,7 @@ namespace Terra
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
-                                ProcessAuthenticationDeauthenticateUserResponseContent(
+                                ProcessUserBatchGetResponseContent(
                                     httpClient: HttpClient,
                                     httpResponseMessage: __response,
                                     content: ref __content);
@@ -388,9 +433,9 @@ namespace Terra
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Terra.AuthenticationDeauthenticateUserResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = (global::System.Collections.Generic.IList<global::Terra.TerraUser>?)global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::System.Collections.Generic.IList<global::Terra.TerraUser>), JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Terra.AutoSDKHttpResponse<global::Terra.AuthenticationDeauthenticateUserResponse>(
+                                    return new global::Terra.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Terra.TerraUser>>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Terra.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -420,9 +465,9 @@ namespace Terra
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Terra.AuthenticationDeauthenticateUserResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = (global::System.Collections.Generic.IList<global::Terra.TerraUser>?)await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, typeof(global::System.Collections.Generic.IList<global::Terra.TerraUser>), JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Terra.AutoSDKHttpResponse<global::Terra.AuthenticationDeauthenticateUserResponse>(
+                                    return new global::Terra.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Terra.TerraUser>>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Terra.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,

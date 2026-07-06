@@ -2,30 +2,34 @@
 
 namespace Terra
 {
-    public partial interface IWorkoutsClient
+    public partial interface IAthleteClient
     {
         /// <summary>
-        /// List planned workouts<br/>
-        /// Returns the user's planned workouts, including workouts created on the provider side (is_external true) where the provider exposes them.
+        /// Retrieve athlete profile<br/>
+        /// Returns the user profile, such as first and last name, birth date and gender.
         /// </summary>
         /// <param name="userId"></param>
+        /// <param name="toWebhook"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Terra.PlannedWorkout>> WorkoutsListPlannedWorkoutsAsync(
+        global::System.Threading.Tasks.Task<global::Terra.OneOf<global::Terra.AthleteCollection, global::Terra.DataSentToWebhook>> AthleteGetAsync(
             string userId,
+            bool? toWebhook = default,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// List planned workouts<br/>
-        /// Returns the user's planned workouts, including workouts created on the provider side (is_external true) where the provider exposes them.
+        /// Retrieve athlete profile<br/>
+        /// Returns the user profile, such as first and last name, birth date and gender.
         /// </summary>
         /// <param name="userId"></param>
+        /// <param name="toWebhook"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Terra.PlannedWorkout>>> WorkoutsListPlannedWorkoutsAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse<global::Terra.OneOf<global::Terra.AthleteCollection, global::Terra.DataSentToWebhook>>> AthleteGetAsResponseAsync(
             string userId,
+            bool? toWebhook = default,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

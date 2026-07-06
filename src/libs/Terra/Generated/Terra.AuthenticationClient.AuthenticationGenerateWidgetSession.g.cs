@@ -42,8 +42,8 @@ namespace Terra
             ref string content);
 
         /// <summary>
-        /// Generate an authentication link, using the Terra Authentication Widget<br/>
-        /// Generates a link to redirect an end user to for them to select an integration and log in with their fitness data provider
+        /// Generate a Terra Widget session link<br/>
+        /// Returns a Terra Widget session with a hosted URL where the end user selects a provider and logs in.
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -65,8 +65,8 @@ namespace Terra
             return __response.Body;
         }
         /// <summary>
-        /// Generate an authentication link, using the Terra Authentication Widget<br/>
-        /// Generates a link to redirect an end user to for them to select an integration and log in with their fitness data provider
+        /// Generate a Terra Widget session link<br/>
+        /// Returns a Terra Widget session with a hosted URL where the end user selects a provider and logs in.
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -471,8 +471,8 @@ namespace Terra
             }
         }
         /// <summary>
-        /// Generate an authentication link, using the Terra Authentication Widget<br/>
-        /// Generates a link to redirect an end user to for them to select an integration and log in with their fitness data provider
+        /// Generate a Terra Widget session link<br/>
+        /// Returns a Terra Widget session with a hosted URL where the end user selects a provider and logs in.
         /// </summary>
         /// <param name="providers">
         /// Comma separated list of providers to display on the device selection page. This overrides your selected sources on your dashboard<br/>

@@ -42,7 +42,7 @@ namespace Terra
             ref string content);
 
         /// <summary>
-        /// List planned workouts for a user<br/>
+        /// List planned workouts<br/>
         /// Returns the user's planned workouts, including workouts created on the provider side (is_external true) where the provider exposes them.
         /// </summary>
         /// <param name="userId"></param>
@@ -63,7 +63,7 @@ namespace Terra
             return __response.Body;
         }
         /// <summary>
-        /// List planned workouts for a user<br/>
+        /// List planned workouts<br/>
         /// Returns the user's planned workouts, including workouts created on the provider side (is_external true) where the provider exposes them.
         /// </summary>
         /// <param name="userId"></param>

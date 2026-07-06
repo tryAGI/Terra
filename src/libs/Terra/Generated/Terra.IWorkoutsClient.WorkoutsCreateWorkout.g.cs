@@ -6,7 +6,7 @@ namespace Terra
     {
         /// <summary>
         /// Create a workout template<br/>
-        /// Stores a reusable workout template. Plan it onto a user's calendar with `POST /workouts/{workout_id}/plan` — the template itself carries no date and is not pushed to any provider until planned.
+        /// Stores a reusable workout template. Plan it onto a user's calendar with `POST /workouts/{workout_id}/plan`; the template itself carries no date and is not pushed to any provider until planned.
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -19,7 +19,7 @@ namespace Terra
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create a workout template<br/>
-        /// Stores a reusable workout template. Plan it onto a user's calendar with `POST /workouts/{workout_id}/plan` — the template itself carries no date and is not pushed to any provider until planned.
+        /// Stores a reusable workout template. Plan it onto a user's calendar with `POST /workouts/{workout_id}/plan`; the template itself carries no date and is not pushed to any provider until planned.
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -32,7 +32,7 @@ namespace Terra
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create a workout template<br/>
-        /// Stores a reusable workout template. Plan it onto a user's calendar with `POST /workouts/{workout_id}/plan` — the template itself carries no date and is not pushed to any provider until planned.
+        /// Stores a reusable workout template. Plan it onto a user's calendar with `POST /workouts/{workout_id}/plan`; the template itself carries no date and is not pushed to any provider until planned.
         /// </summary>
         /// <param name="name">
         /// Name of the workout

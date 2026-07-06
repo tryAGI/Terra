@@ -421,17 +421,17 @@ namespace Terra
 
             typeof(global::Terra.JsonConverters.WorkoutsPlanWorkoutResponseStatusNullableJsonConverter),
 
-            typeof(global::Terra.JsonConverters.UserGetInfoForUserIDResponseStatusJsonConverter),
+            typeof(global::Terra.JsonConverters.UserGetResponseStatusJsonConverter),
 
-            typeof(global::Terra.JsonConverters.UserGetInfoForUserIDResponseStatusNullableJsonConverter),
+            typeof(global::Terra.JsonConverters.UserGetResponseStatusNullableJsonConverter),
 
             typeof(global::Terra.JsonConverters.WebhooksResendPayloadResponseStatusJsonConverter),
 
             typeof(global::Terra.JsonConverters.WebhooksResendPayloadResponseStatusNullableJsonConverter),
 
-            typeof(global::Terra.JsonConverters.IntegrationsFetchResponseStatusJsonConverter),
+            typeof(global::Terra.JsonConverters.IntegrationsListResponseStatusJsonConverter),
 
-            typeof(global::Terra.JsonConverters.IntegrationsFetchResponseStatusNullableJsonConverter),
+            typeof(global::Terra.JsonConverters.IntegrationsListResponseStatusNullableJsonConverter),
 
             typeof(global::Terra.JsonConverters.LabReportWebhookJsonConverter),
 
@@ -481,25 +481,25 @@ namespace Terra
 
             typeof(global::Terra.JsonConverters.OneOfJsonConverter<int?, global::System.DateTime?>),
 
-            typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.ActivityFetchResponse2, global::Terra.DataSentToWebhook>),
+            typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.ActivityGetResponse2, global::Terra.DataSentToWebhook>),
 
             typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.AthleteCollection, global::Terra.DataSentToWebhook>),
 
-            typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.BodyFetchResponse2, global::Terra.DataSentToWebhook>),
+            typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.BodyGetResponse2, global::Terra.DataSentToWebhook>),
 
-            typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.DailyFetchResponse2, global::Terra.DataSentToWebhook>),
+            typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.DailyGetResponse2, global::Terra.DataSentToWebhook>),
 
-            typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.MenstruationFetchResponse2, global::Terra.DataSentToWebhook>),
+            typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.MenstruationGetResponse2, global::Terra.DataSentToWebhook>),
 
-            typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.NutritionFetchResponse2, global::Terra.DataSentToWebhook>),
+            typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.NutritionGetResponse2, global::Terra.DataSentToWebhook>),
 
-            typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.SleepFetchResponse2, global::Terra.DataSentToWebhook>),
+            typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.SleepGetResponse2, global::Terra.DataSentToWebhook>),
 
-            typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.UserGetInfoForUserIDResponse2, global::System.Collections.Generic.IList<global::Terra.TerraUser>>),
+            typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.UserGetResponse2, global::System.Collections.Generic.IList<global::Terra.TerraUser>>),
 
-            typeof(global::Terra.JsonConverters.AllOfJsonConverter<global::Terra.TerraUser, global::Terra.UserGetInfoForUserIDResponseUser>),
+            typeof(global::Terra.JsonConverters.AllOfJsonConverter<global::Terra.TerraUser, global::Terra.UserGetResponseUser>),
 
-            typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.UserGetAllUserIDsResponseVariant1, global::Terra.UserGetAllUserIDsResponseVariant2>),
+            typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.UserListResponseVariant1, global::Terra.UserListResponseVariant2>),
 
             typeof(global::Terra.JsonConverters.UnixTimestampJsonConverter),
         })]
@@ -881,39 +881,39 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationDeauthenticateUserResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationDeauthenticateUserResponseStatus), TypeInfoPropertyName = "AuthenticationDeauthenticateUserResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationGenerateAuthTokenResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.ActivityFetchResponse2, global::Terra.DataSentToWebhook>), TypeInfoPropertyName = "OneOfActivityFetchResponse2DataSentToWebhook2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.ActivityFetchResponse2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.ActivityGetResponse2, global::Terra.DataSentToWebhook>), TypeInfoPropertyName = "OneOfActivityGetResponse2DataSentToWebhook2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.ActivityGetResponse2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.AthleteCollection, global::Terra.DataSentToWebhook>), TypeInfoPropertyName = "OneOfAthleteCollectionDataSentToWebhook2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.BodyFetchResponse2, global::Terra.DataSentToWebhook>), TypeInfoPropertyName = "OneOfBodyFetchResponse2DataSentToWebhook2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.BodyFetchResponse2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.DailyFetchResponse2, global::Terra.DataSentToWebhook>), TypeInfoPropertyName = "OneOfDailyFetchResponse2DataSentToWebhook2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.DailyFetchResponse2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.MenstruationFetchResponse2, global::Terra.DataSentToWebhook>), TypeInfoPropertyName = "OneOfMenstruationFetchResponse2DataSentToWebhook2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.MenstruationFetchResponse2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.NutritionFetchResponse2, global::Terra.DataSentToWebhook>), TypeInfoPropertyName = "OneOfNutritionFetchResponse2DataSentToWebhook2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.NutritionFetchResponse2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.SleepFetchResponse2, global::Terra.DataSentToWebhook>), TypeInfoPropertyName = "OneOfSleepFetchResponse2DataSentToWebhook2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SleepFetchResponse2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.BodyGetResponse2, global::Terra.DataSentToWebhook>), TypeInfoPropertyName = "OneOfBodyGetResponse2DataSentToWebhook2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.BodyGetResponse2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.DailyGetResponse2, global::Terra.DataSentToWebhook>), TypeInfoPropertyName = "OneOfDailyGetResponse2DataSentToWebhook2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.DailyGetResponse2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.MenstruationGetResponse2, global::Terra.DataSentToWebhook>), TypeInfoPropertyName = "OneOfMenstruationGetResponse2DataSentToWebhook2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.MenstruationGetResponse2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.NutritionGetResponse2, global::Terra.DataSentToWebhook>), TypeInfoPropertyName = "OneOfNutritionGetResponse2DataSentToWebhook2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.NutritionGetResponse2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.SleepGetResponse2, global::Terra.DataSentToWebhook>), TypeInfoPropertyName = "OneOfSleepGetResponse2DataSentToWebhook2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SleepGetResponse2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutsCreateWorkoutResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutsCreateWorkoutResponseStatus), TypeInfoPropertyName = "WorkoutsCreateWorkoutResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.WorkoutTemplate>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutsDeleteWorkoutResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutsPlanWorkoutResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutsPlanWorkoutResponseStatus), TypeInfoPropertyName = "WorkoutsPlanWorkoutResponseStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.UserGetInfoForUserIDResponse2, global::System.Collections.Generic.IList<global::Terra.TerraUser>>), TypeInfoPropertyName = "OneOfUserGetInfoForUserIDResponse2IListTerraUser2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserGetInfoForUserIDResponse2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AllOf<global::Terra.TerraUser, global::Terra.UserGetInfoForUserIDResponseUser>), TypeInfoPropertyName = "AllOfTerraUserUserGetInfoForUserIDResponseUser2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserGetInfoForUserIDResponseUser))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserGetInfoForUserIDResponseStatus), TypeInfoPropertyName = "UserGetInfoForUserIDResponseStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.UserGetResponse2, global::System.Collections.Generic.IList<global::Terra.TerraUser>>), TypeInfoPropertyName = "OneOfUserGetResponse2IListTerraUser2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserGetResponse2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AllOf<global::Terra.TerraUser, global::Terra.UserGetResponseUser>), TypeInfoPropertyName = "AllOfTerraUserUserGetResponseUser2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserGetResponseUser))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserGetResponseStatus), TypeInfoPropertyName = "UserGetResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.TerraUser>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.UserGetAllUserIDsResponseVariant1, global::Terra.UserGetAllUserIDsResponseVariant2>), TypeInfoPropertyName = "OneOfUserGetAllUserIDsResponseVariant1UserGetAllUserIDsResponseVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserGetAllUserIDsResponseVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserGetAllUserIDsResponseVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserGetAllUserIDsResponseVariant2Data))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.UserListResponseVariant1, global::Terra.UserListResponseVariant2>), TypeInfoPropertyName = "OneOfUserListResponseVariant1UserListResponseVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserListResponseVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserListResponseVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserListResponseVariant2Data))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WebhooksResendPayloadResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WebhooksResendPayloadResponseStatus), TypeInfoPropertyName = "WebhooksResendPayloadResponseStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.IntegrationsFetchResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.IntegrationsFetchResponseStatus), TypeInfoPropertyName = "IntegrationsFetchResponseStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.IntegrationsListResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.IntegrationsListResponseStatus), TypeInfoPropertyName = "IntegrationsListResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.StepBlock>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.DrinkSample>))]
@@ -983,7 +983,7 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.PlannedWorkout>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.HormoneSample>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.WorkoutTemplate>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.UserGetInfoForUserIDResponse2, global::System.Collections.Generic.List<global::Terra.TerraUser>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.UserGetResponse2, global::System.Collections.Generic.List<global::Terra.TerraUser>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.TerraUser>))]
     public sealed partial class SourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
     {

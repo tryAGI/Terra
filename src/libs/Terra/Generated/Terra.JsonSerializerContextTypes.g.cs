@@ -1536,11 +1536,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OneOf<global::Terra.ActivityFetchResponse2, global::Terra.DataSentToWebhook>? Type377 { get; set; }
+        public global::Terra.OneOf<global::Terra.ActivityGetResponse2, global::Terra.DataSentToWebhook>? Type377 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.ActivityFetchResponse2? Type378 { get; set; }
+        public global::Terra.ActivityGetResponse2? Type378 { get; set; }
         /// <summary>
         /// 
         /// </summary>
@@ -1548,43 +1548,43 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OneOf<global::Terra.BodyFetchResponse2, global::Terra.DataSentToWebhook>? Type380 { get; set; }
+        public global::Terra.OneOf<global::Terra.BodyGetResponse2, global::Terra.DataSentToWebhook>? Type380 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.BodyFetchResponse2? Type381 { get; set; }
+        public global::Terra.BodyGetResponse2? Type381 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OneOf<global::Terra.DailyFetchResponse2, global::Terra.DataSentToWebhook>? Type382 { get; set; }
+        public global::Terra.OneOf<global::Terra.DailyGetResponse2, global::Terra.DataSentToWebhook>? Type382 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.DailyFetchResponse2? Type383 { get; set; }
+        public global::Terra.DailyGetResponse2? Type383 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OneOf<global::Terra.MenstruationFetchResponse2, global::Terra.DataSentToWebhook>? Type384 { get; set; }
+        public global::Terra.OneOf<global::Terra.MenstruationGetResponse2, global::Terra.DataSentToWebhook>? Type384 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.MenstruationFetchResponse2? Type385 { get; set; }
+        public global::Terra.MenstruationGetResponse2? Type385 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OneOf<global::Terra.NutritionFetchResponse2, global::Terra.DataSentToWebhook>? Type386 { get; set; }
+        public global::Terra.OneOf<global::Terra.NutritionGetResponse2, global::Terra.DataSentToWebhook>? Type386 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.NutritionFetchResponse2? Type387 { get; set; }
+        public global::Terra.NutritionGetResponse2? Type387 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OneOf<global::Terra.SleepFetchResponse2, global::Terra.DataSentToWebhook>? Type388 { get; set; }
+        public global::Terra.OneOf<global::Terra.SleepGetResponse2, global::Terra.DataSentToWebhook>? Type388 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.SleepFetchResponse2? Type389 { get; set; }
+        public global::Terra.SleepGetResponse2? Type389 { get; set; }
         /// <summary>
         /// 
         /// </summary>
@@ -1612,23 +1612,23 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OneOf<global::Terra.UserGetInfoForUserIDResponse2, global::System.Collections.Generic.IList<global::Terra.TerraUser>>? Type396 { get; set; }
+        public global::Terra.OneOf<global::Terra.UserGetResponse2, global::System.Collections.Generic.IList<global::Terra.TerraUser>>? Type396 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.UserGetInfoForUserIDResponse2? Type397 { get; set; }
+        public global::Terra.UserGetResponse2? Type397 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AllOf<global::Terra.TerraUser, global::Terra.UserGetInfoForUserIDResponseUser>? Type398 { get; set; }
+        public global::Terra.AllOf<global::Terra.TerraUser, global::Terra.UserGetResponseUser>? Type398 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.UserGetInfoForUserIDResponseUser? Type399 { get; set; }
+        public global::Terra.UserGetResponseUser? Type399 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.UserGetInfoForUserIDResponseStatus? Type400 { get; set; }
+        public global::Terra.UserGetResponseStatus? Type400 { get; set; }
         /// <summary>
         /// 
         /// </summary>
@@ -1636,19 +1636,19 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OneOf<global::Terra.UserGetAllUserIDsResponseVariant1, global::Terra.UserGetAllUserIDsResponseVariant2>? Type402 { get; set; }
+        public global::Terra.OneOf<global::Terra.UserListResponseVariant1, global::Terra.UserListResponseVariant2>? Type402 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.UserGetAllUserIDsResponseVariant1? Type403 { get; set; }
+        public global::Terra.UserListResponseVariant1? Type403 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.UserGetAllUserIDsResponseVariant2? Type404 { get; set; }
+        public global::Terra.UserListResponseVariant2? Type404 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.UserGetAllUserIDsResponseVariant2Data? Type405 { get; set; }
+        public global::Terra.UserListResponseVariant2Data? Type405 { get; set; }
         /// <summary>
         /// 
         /// </summary>
@@ -1660,11 +1660,11 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.IntegrationsFetchResponse? Type408 { get; set; }
+        public global::Terra.IntegrationsListResponse? Type408 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.IntegrationsFetchResponseStatus? Type409 { get; set; }
+        public global::Terra.IntegrationsListResponseStatus? Type409 { get; set; }
 
         /// <summary>
         /// 
@@ -1945,7 +1945,7 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OneOf<global::Terra.UserGetInfoForUserIDResponse2, global::System.Collections.Generic.List<global::Terra.TerraUser>>? ListType69 { get; set; }
+        public global::Terra.OneOf<global::Terra.UserGetResponse2, global::System.Collections.Generic.List<global::Terra.TerraUser>>? ListType69 { get; set; }
         /// <summary>
         /// 
         /// </summary>

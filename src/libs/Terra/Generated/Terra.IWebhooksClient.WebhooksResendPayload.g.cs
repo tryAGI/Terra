@@ -5,7 +5,7 @@ namespace Terra
     public partial interface IWebhooksClient
     {
         /// <summary>
-        /// Resend a previously delivered webhook payload<br/>
+        /// Resend a webhook payload<br/>
         /// Re-dispatches a stored normalised payload to your configured webhook<br/>
         /// destinations, identified by the original webhook event ID. The user<br/>
         /// and data type are read from the stored payload itself, so only the<br/>
@@ -21,7 +21,7 @@ namespace Terra
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Resend a previously delivered webhook payload<br/>
+        /// Resend a webhook payload<br/>
         /// Re-dispatches a stored normalised payload to your configured webhook<br/>
         /// destinations, identified by the original webhook event ID. The user<br/>
         /// and data type are read from the stored payload itself, so only the<br/>
@@ -37,7 +37,7 @@ namespace Terra
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Resend a previously delivered webhook payload<br/>
+        /// Resend a webhook payload<br/>
         /// Re-dispatches a stored normalised payload to your configured webhook<br/>
         /// destinations, identified by the original webhook event ID. The user<br/>
         /// and data type are read from the stored payload itself, so only the<br/>
