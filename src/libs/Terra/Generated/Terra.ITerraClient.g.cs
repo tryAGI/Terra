@@ -103,11 +103,6 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public WebhooksClient Webhooks { get; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         public WorkoutsClient Workouts { get; }
 
     }
