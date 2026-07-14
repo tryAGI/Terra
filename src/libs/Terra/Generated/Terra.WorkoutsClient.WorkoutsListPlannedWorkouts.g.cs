@@ -27,11 +27,15 @@ namespace Terra
             };
         partial void PrepareWorkoutsListPlannedWorkoutsArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref string userId);
+            ref string userId,
+            ref global::System.DateTime? startDate,
+            ref global::System.DateTime? endDate);
         partial void PrepareWorkoutsListPlannedWorkoutsRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            string userId);
+            string userId,
+            global::System.DateTime? startDate,
+            global::System.DateTime? endDate);
         partial void ProcessWorkoutsListPlannedWorkoutsResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -43,19 +47,25 @@ namespace Terra
 
         /// <summary>
         /// List planned workouts<br/>
-        /// Returns the user's planned workouts, including workouts created on the provider side (is_external true) where the provider exposes them.
+        /// Returns the user's planned workouts, including workouts created on the provider side (is_external true) where the provider exposes them. External workouts carry their full body (title, description, planned metrics, structured steps) under `details`; they are fetched live from the provider and are not stored by Terra. Note that providers may limit how far ahead planned workouts are visible.
         /// </summary>
         /// <param name="userId"></param>
+        /// <param name="startDate"></param>
+        /// <param name="endDate"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Terra.PlannedWorkout>> WorkoutsListPlannedWorkoutsAsync(
             string userId,
+            global::System.DateTime? startDate = default,
+            global::System.DateTime? endDate = default,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             var __response = await WorkoutsListPlannedWorkoutsAsResponseAsync(
                 userId: userId,
+                startDate: startDate,
+                endDate: endDate,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -64,14 +74,18 @@ namespace Terra
         }
         /// <summary>
         /// List planned workouts<br/>
-        /// Returns the user's planned workouts, including workouts created on the provider side (is_external true) where the provider exposes them.
+        /// Returns the user's planned workouts, including workouts created on the provider side (is_external true) where the provider exposes them. External workouts carry their full body (title, description, planned metrics, structured steps) under `details`; they are fetched live from the provider and are not stored by Terra. Note that providers may limit how far ahead planned workouts are visible.
         /// </summary>
         /// <param name="userId"></param>
+        /// <param name="startDate"></param>
+        /// <param name="endDate"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Terra.PlannedWorkout>>> WorkoutsListPlannedWorkoutsAsResponseAsync(
             string userId,
+            global::System.DateTime? startDate = default,
+            global::System.DateTime? endDate = default,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -79,7 +93,9 @@ namespace Terra
                 client: HttpClient);
             PrepareWorkoutsListPlannedWorkoutsArguments(
                 httpClient: HttpClient,
-                userId: ref userId);
+                userId: ref userId,
+                startDate: ref startDate,
+                endDate: ref endDate);
 
 
             var __authorizations = global::Terra.EndPointSecurityResolver.ResolveAuthorizations(
@@ -109,6 +125,8 @@ namespace Terra
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
                                 .AddRequiredParameter("user_id", userId)
+                                .AddOptionalParameter("start_date", startDate?.ToString("yyyy-MM-dd"))
+                                .AddOptionalParameter("end_date", endDate?.ToString("yyyy-MM-dd"))
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Terra.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -150,7 +168,9 @@ namespace Terra
                 PrepareWorkoutsListPlannedWorkoutsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    userId: userId!);
+                    userId: userId!,
+                    startDate: startDate,
+                    endDate: endDate);
 
                 return __httpRequest;
             }
