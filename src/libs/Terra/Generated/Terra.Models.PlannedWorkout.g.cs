@@ -63,6 +63,12 @@ namespace Terra
         public global::Terra.AthleteMetrics? AthleteMetrics { get; set; }
 
         /// <summary>
+        /// Full workout body (title, description, planned metrics, structured steps) fetched live from the provider. Present only for external workouts (is_external true).
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("details")]
+        public global::Terra.PlannedWorkoutDetails? Details { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -96,6 +102,9 @@ namespace Terra
         /// True when the workout was created on the provider side rather than through Terra
         /// </param>
         /// <param name="athleteMetrics"></param>
+        /// <param name="details">
+        /// Full workout body (title, description, planned metrics, structured steps) fetched live from the provider. Present only for external workouts (is_external true).
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -108,7 +117,8 @@ namespace Terra
             string? createdAt,
             string? lastUpdatedAt,
             bool? isExternal,
-            global::Terra.AthleteMetrics? athleteMetrics)
+            global::Terra.AthleteMetrics? athleteMetrics,
+            global::Terra.PlannedWorkoutDetails? details)
         {
             this.PlannedWorkoutId = plannedWorkoutId;
             this.WorkoutId = workoutId;
@@ -119,6 +129,7 @@ namespace Terra
             this.LastUpdatedAt = lastUpdatedAt;
             this.IsExternal = isExternal;
             this.AthleteMetrics = athleteMetrics;
+            this.Details = details;
         }
 
         /// <summary>

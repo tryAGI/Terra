@@ -1304,355 +1304,391 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WebhookEvent? Type319 { get; set; }
+        public global::Terra.PlannedWorkoutDetailsMetadata? Type319 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AuthSuccessEventType? Type320 { get; set; }
+        public global::Terra.PlannedWorkoutDetailsStepDuration? Type320 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AuthSuccessEventStatus? Type321 { get; set; }
+        public global::Terra.PlannedWorkoutDetailsStepTarget? Type321 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AuthErrorEventType? Type322 { get; set; }
+        public global::Terra.PlannedWorkoutDetailsStep? Type322 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AuthErrorEventStatus? Type323 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.PlannedWorkoutDetailsStepDuration>? Type323 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.DeauthEventType? Type324 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.PlannedWorkoutDetailsStepTarget>? Type324 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.DeauthEventStatus? Type325 { get; set; }
+        public global::System.Collections.Generic.IList<int>? Type325 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.UserReauthEventType? Type326 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.PlannedWorkoutDetailsStep>? Type326 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.UserReauthEventStatus? Type327 { get; set; }
+        public global::Terra.PlannedWorkoutDetails? Type327 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AccessRevokedEventType? Type328 { get; set; }
+        public global::Terra.WebhookEvent? Type328 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AccessRevokedEventStatus? Type329 { get; set; }
+        public global::Terra.AuthSuccessEventType? Type329 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.PermissionChangeEventType? Type330 { get; set; }
+        public global::Terra.AuthSuccessEventStatus? Type330 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.PermissionChangeEventStatus? Type331 { get; set; }
+        public global::Terra.AuthErrorEventType? Type331 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.ConnectionErrorEventType? Type332 { get; set; }
+        public global::Terra.AuthErrorEventStatus? Type332 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.ConnectionErrorEventStatus? Type333 { get; set; }
+        public global::Terra.DeauthEventType? Type333 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LargeRequestSendingEventType? Type334 { get; set; }
+        public global::Terra.DeauthEventStatus? Type334 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LargeRequestProcessingEventType? Type335 { get; set; }
+        public global::Terra.UserReauthEventType? Type335 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LargeRequestProcessingEventStatus? Type336 { get; set; }
+        public global::Terra.UserReauthEventStatus? Type336 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.S3PayloadEventType? Type337 { get; set; }
+        public global::Terra.AccessRevokedEventType? Type337 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.S3PayloadEventStatus? Type338 { get; set; }
+        public global::Terra.AccessRevokedEventStatus? Type338 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.ActivityEventType? Type339 { get; set; }
+        public global::Terra.PermissionChangeEventType? Type339 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.Activity>? Type340 { get; set; }
+        public global::Terra.PermissionChangeEventStatus? Type340 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AthleteEventType? Type341 { get; set; }
+        public global::Terra.ConnectionErrorEventType? Type341 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.NutritionEventType? Type342 { get; set; }
+        public global::Terra.ConnectionErrorEventStatus? Type342 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.Nutrition>? Type343 { get; set; }
+        public global::Terra.LargeRequestSendingEventType? Type343 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.DailyEventType? Type344 { get; set; }
+        public global::Terra.LargeRequestProcessingEventType? Type344 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.Daily>? Type345 { get; set; }
+        public global::Terra.LargeRequestProcessingEventStatus? Type345 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.SleepEventType? Type346 { get; set; }
+        public global::Terra.S3PayloadEventType? Type346 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.Sleep>? Type347 { get; set; }
+        public global::Terra.S3PayloadEventStatus? Type347 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.MenstruationEventType? Type348 { get; set; }
+        public global::Terra.ActivityEventType? Type348 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.Menstruation>? Type349 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.Activity>? Type349 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.BodyEventType? Type350 { get; set; }
+        public global::Terra.AthleteEventType? Type350 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.Body>? Type351 { get; set; }
+        public global::Terra.NutritionEventType? Type351 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportEventResultSource? Type352 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.Nutrition>? Type352 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportEventResult? Type353 { get; set; }
+        public global::Terra.DailyEventType? Type353 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportEventData? Type354 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.Daily>? Type354 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.LabReportEventResult>? Type355 { get; set; }
+        public global::Terra.SleepEventType? Type355 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportCompletedEventType? Type356 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.Sleep>? Type356 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportEventError? Type357 { get; set; }
+        public global::Terra.MenstruationEventType? Type357 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportFailureData? Type358 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.Menstruation>? Type358 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportFailedEventType? Type359 { get; set; }
+        public global::Terra.BodyEventType? Type359 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.PlannedWorkoutEventType? Type360 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.Body>? Type360 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.PlannedWorkout>? Type361 { get; set; }
+        public global::Terra.LabReportEventResultSource? Type361 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.HormoneEventType? Type362 { get; set; }
+        public global::Terra.LabReportEventResult? Type362 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.HormoneSample>? Type363 { get; set; }
+        public global::Terra.LabReportEventData? Type363 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AuthenticationAuthenticateUserRequest? Type364 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.LabReportEventResult>? Type364 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutsPlanWorkoutRequest? Type365 { get; set; }
+        public global::Terra.LabReportCompletedEventType? Type365 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutsUpdatePlannedWorkoutRequest? Type366 { get; set; }
+        public global::Terra.LabReportEventError? Type366 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportsUploadRequest? Type367 { get; set; }
+        public global::Terra.LabReportFailureData? Type367 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OneOf<int?, global::System.DateTime?>? Type368 { get; set; }
+        public global::Terra.LabReportFailedEventType? Type368 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AuthenticationAuthenticateUserResponse? Type369 { get; set; }
+        public global::Terra.PlannedWorkoutEventType? Type369 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AuthenticationAuthenticateUserResponseStatus? Type370 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.PlannedWorkout>? Type370 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AuthenticationGenerateWidgetSessionResponse? Type371 { get; set; }
+        public global::Terra.HormoneEventType? Type371 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AuthenticationGenerateWidgetSessionResponseStatus? Type372 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.HormoneSample>? Type372 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AuthenticationDeauthenticateUserResponse? Type373 { get; set; }
+        public global::Terra.AuthenticationAuthenticateUserRequest? Type373 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AuthenticationDeauthenticateUserResponseStatus? Type374 { get; set; }
+        public global::Terra.WorkoutsPlanWorkoutRequest? Type374 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AuthenticationGenerateAuthTokenResponse? Type375 { get; set; }
+        public global::Terra.WorkoutsUpdatePlannedWorkoutRequest? Type375 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OneOf<global::Terra.ActivityGetResponse2, global::Terra.DataSentToWebhook>? Type376 { get; set; }
+        public global::Terra.LabReportsUploadRequest? Type376 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.ActivityGetResponse2? Type377 { get; set; }
+        public global::Terra.OneOf<int?, global::System.DateTime?>? Type377 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OneOf<global::Terra.AthleteCollection, global::Terra.DataSentToWebhook>? Type378 { get; set; }
+        public global::Terra.AuthenticationAuthenticateUserResponse? Type378 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OneOf<global::Terra.BodyGetResponse2, global::Terra.DataSentToWebhook>? Type379 { get; set; }
+        public global::Terra.AuthenticationAuthenticateUserResponseStatus? Type379 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.BodyGetResponse2? Type380 { get; set; }
+        public global::Terra.AuthenticationGenerateWidgetSessionResponse? Type380 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OneOf<global::Terra.DailyGetResponse2, global::Terra.DataSentToWebhook>? Type381 { get; set; }
+        public global::Terra.AuthenticationGenerateWidgetSessionResponseStatus? Type381 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.DailyGetResponse2? Type382 { get; set; }
+        public global::Terra.AuthenticationDeauthenticateUserResponse? Type382 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OneOf<global::Terra.MenstruationGetResponse2, global::Terra.DataSentToWebhook>? Type383 { get; set; }
+        public global::Terra.AuthenticationDeauthenticateUserResponseStatus? Type383 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.MenstruationGetResponse2? Type384 { get; set; }
+        public global::Terra.AuthenticationGenerateAuthTokenResponse? Type384 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OneOf<global::Terra.NutritionGetResponse2, global::Terra.DataSentToWebhook>? Type385 { get; set; }
+        public global::Terra.OneOf<global::Terra.ActivityGetResponse2, global::Terra.DataSentToWebhook>? Type385 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.NutritionGetResponse2? Type386 { get; set; }
+        public global::Terra.ActivityGetResponse2? Type386 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OneOf<global::Terra.SleepGetResponse2, global::Terra.DataSentToWebhook>? Type387 { get; set; }
+        public global::Terra.OneOf<global::Terra.AthleteCollection, global::Terra.DataSentToWebhook>? Type387 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.SleepGetResponse2? Type388 { get; set; }
+        public global::Terra.OneOf<global::Terra.BodyGetResponse2, global::Terra.DataSentToWebhook>? Type388 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutsCreateWorkoutResponse? Type389 { get; set; }
+        public global::Terra.BodyGetResponse2? Type389 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutsCreateWorkoutResponseStatus? Type390 { get; set; }
+        public global::Terra.OneOf<global::Terra.DailyGetResponse2, global::Terra.DataSentToWebhook>? Type390 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.WorkoutTemplate>? Type391 { get; set; }
+        public global::Terra.DailyGetResponse2? Type391 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutsDeleteWorkoutResponse? Type392 { get; set; }
+        public global::Terra.OneOf<global::Terra.MenstruationGetResponse2, global::Terra.DataSentToWebhook>? Type392 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutsPlanWorkoutResponse? Type393 { get; set; }
+        public global::Terra.MenstruationGetResponse2? Type393 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutsPlanWorkoutResponseStatus? Type394 { get; set; }
+        public global::Terra.OneOf<global::Terra.NutritionGetResponse2, global::Terra.DataSentToWebhook>? Type394 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OneOf<global::Terra.UserGetResponse2, global::System.Collections.Generic.IList<global::Terra.TerraUser>>? Type395 { get; set; }
+        public global::Terra.NutritionGetResponse2? Type395 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.UserGetResponse2? Type396 { get; set; }
+        public global::Terra.OneOf<global::Terra.SleepGetResponse2, global::Terra.DataSentToWebhook>? Type396 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AllOf<global::Terra.TerraUser, global::Terra.UserGetResponseUser>? Type397 { get; set; }
+        public global::Terra.SleepGetResponse2? Type397 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.UserGetResponseUser? Type398 { get; set; }
+        public global::Terra.WorkoutsCreateWorkoutResponse? Type398 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.UserGetResponseStatus? Type399 { get; set; }
+        public global::Terra.WorkoutsCreateWorkoutResponseStatus? Type399 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.TerraUser>? Type400 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.WorkoutTemplate>? Type400 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OneOf<global::Terra.UserListResponseVariant1, global::Terra.UserListResponseVariant2>? Type401 { get; set; }
+        public global::Terra.WorkoutsDeleteWorkoutResponse? Type401 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.UserListResponseVariant1? Type402 { get; set; }
+        public global::Terra.WorkoutsPlanWorkoutResponse? Type402 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.UserListResponseVariant2? Type403 { get; set; }
+        public global::Terra.WorkoutsPlanWorkoutResponseStatus? Type403 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.UserListResponseVariant2Data? Type404 { get; set; }
+        public global::Terra.OneOf<global::Terra.UserGetResponse2, global::System.Collections.Generic.IList<global::Terra.TerraUser>>? Type404 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.IntegrationsListResponse? Type405 { get; set; }
+        public global::Terra.UserGetResponse2? Type405 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.IntegrationsListResponseStatus? Type406 { get; set; }
+        public global::Terra.AllOf<global::Terra.TerraUser, global::Terra.UserGetResponseUser>? Type406 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.UserGetResponseUser? Type407 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.UserGetResponseStatus? Type408 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.TerraUser>? Type409 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.OneOf<global::Terra.UserListResponseVariant1, global::Terra.UserListResponseVariant2>? Type410 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.UserListResponseVariant1? Type411 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.UserListResponseVariant2? Type412 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.UserListResponseVariant2Data? Type413 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.IntegrationsListResponse? Type414 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.IntegrationsListResponseStatus? Type415 { get; set; }
 
         /// <summary>
         /// 
@@ -1893,50 +1929,66 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.Activity>? ListType59 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.PlannedWorkoutDetailsStepDuration>? ListType59 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.Nutrition>? ListType60 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.PlannedWorkoutDetailsStepTarget>? ListType60 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.Daily>? ListType61 { get; set; }
+        public global::System.Collections.Generic.List<int>? ListType61 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.Sleep>? ListType62 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.PlannedWorkoutDetailsStep>? ListType62 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.Menstruation>? ListType63 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.Activity>? ListType63 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.Body>? ListType64 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.Nutrition>? ListType64 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.LabReportEventResult>? ListType65 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.Daily>? ListType65 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.PlannedWorkout>? ListType66 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.Sleep>? ListType66 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.HormoneSample>? ListType67 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.Menstruation>? ListType67 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.WorkoutTemplate>? ListType68 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.Body>? ListType68 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OneOf<global::Terra.UserGetResponse2, global::System.Collections.Generic.List<global::Terra.TerraUser>>? ListType69 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.LabReportEventResult>? ListType69 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.TerraUser>? ListType70 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.PlannedWorkout>? ListType70 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Terra.HormoneSample>? ListType71 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Terra.WorkoutTemplate>? ListType72 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.OneOf<global::Terra.UserGetResponse2, global::System.Collections.Generic.List<global::Terra.TerraUser>>? ListType73 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Terra.TerraUser>? ListType74 { get; set; }
     }
 }

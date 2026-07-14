@@ -42,7 +42,8 @@ namespace Terra
             ref string content);
 
         /// <summary>
-        /// Get a planned workout
+        /// Get a planned workout<br/>
+        /// Returns a planned workout created through Terra. Provider-created (external) workouts are not addressable by id — they are returned by the list endpoint with their full body under `details`.
         /// </summary>
         /// <param name="plannedWorkoutId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -62,7 +63,8 @@ namespace Terra
             return __response.Body;
         }
         /// <summary>
-        /// Get a planned workout
+        /// Get a planned workout<br/>
+        /// Returns a planned workout created through Terra. Provider-created (external) workouts are not addressable by id — they are returned by the list endpoint with their full body under `details`.
         /// </summary>
         /// <param name="plannedWorkoutId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
