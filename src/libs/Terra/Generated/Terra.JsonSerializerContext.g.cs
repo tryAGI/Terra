@@ -401,6 +401,10 @@ namespace Terra
 
             typeof(global::Terra.JsonConverters.HormoneEventTypeNullableJsonConverter),
 
+            typeof(global::Terra.JsonConverters.HealthObservationEventTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.HealthObservationEventTypeNullableJsonConverter),
+
             typeof(global::Terra.JsonConverters.AuthenticationAuthenticateUserResponseStatusJsonConverter),
 
             typeof(global::Terra.JsonConverters.AuthenticationAuthenticateUserResponseStatusNullableJsonConverter),
@@ -499,7 +503,9 @@ namespace Terra
 
             typeof(global::Terra.JsonConverters.UnixTimestampJsonConverter),
         })]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.JsonSerializerContextTypes))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutTemplate))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(object))]
@@ -596,6 +602,7 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.BodyEvent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.PlannedWorkoutEvent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.HormoneEvent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.HealthObservationEvent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportWebhook), TypeInfoPropertyName = "LabReportWebhook2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportCompletedEvent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportFailedEvent))]
@@ -873,6 +880,16 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.PlannedWorkout>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.HormoneEventType), TypeInfoPropertyName = "HormoneEventType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.HormoneSample>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.HealthObservationMetadata))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.ObservationCode))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.ObservationValue))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.ObservationComponent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.HealthObservationData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.ObservationCode>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.ObservationComponent>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.HealthObservation))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.HealthObservationEventType), TypeInfoPropertyName = "HealthObservationEventType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.HealthObservation>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationAuthenticateUserRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutsPlanWorkoutRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutsUpdatePlannedWorkoutRequest))]
@@ -916,6 +933,637 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserListResponseVariant2Data))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.IntegrationsListResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.IntegrationsListResponseStatus), TypeInfoPropertyName = "IntegrationsListResponseStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSport?), TypeInfoPropertyName = "NullableWorkoutSport2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.DataSentToWebhookStatus?), TypeInfoPropertyName = "NullableDataSentToWebhookStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportWebhook?), TypeInfoPropertyName = "NullableLabReportWebhook2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WebhookEventType?), TypeInfoPropertyName = "NullableWebhookEventType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(long?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.DeviceDataType?), TypeInfoPropertyName = "NullableDeviceDataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant1?), TypeInfoPropertyName = "NullableWorkoutSportVariant12_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant2?), TypeInfoPropertyName = "NullableWorkoutSportVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant3?), TypeInfoPropertyName = "NullableWorkoutSportVariant32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant4?), TypeInfoPropertyName = "NullableWorkoutSportVariant42")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant5?), TypeInfoPropertyName = "NullableWorkoutSportVariant52")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant6?), TypeInfoPropertyName = "NullableWorkoutSportVariant62")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant7?), TypeInfoPropertyName = "NullableWorkoutSportVariant72")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant8?), TypeInfoPropertyName = "NullableWorkoutSportVariant82")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant9?), TypeInfoPropertyName = "NullableWorkoutSportVariant92")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant10?), TypeInfoPropertyName = "NullableWorkoutSportVariant102")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant11?), TypeInfoPropertyName = "NullableWorkoutSportVariant112")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant12?), TypeInfoPropertyName = "NullableWorkoutSportVariant122")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant13?), TypeInfoPropertyName = "NullableWorkoutSportVariant132")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant14?), TypeInfoPropertyName = "NullableWorkoutSportVariant142")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant15?), TypeInfoPropertyName = "NullableWorkoutSportVariant152")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.EnvironmentTypeVariant1?), TypeInfoPropertyName = "NullableEnvironmentTypeVariant12")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.EnvironmentTypeVariant2?), TypeInfoPropertyName = "NullableEnvironmentTypeVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.EnvironmentTypeVariant3?), TypeInfoPropertyName = "NullableEnvironmentTypeVariant32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionType?), TypeInfoPropertyName = "NullableCompletionConditionType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant1?), TypeInfoPropertyName = "NullableCompletionConditionTypeVariant12")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant2?), TypeInfoPropertyName = "NullableCompletionConditionTypeVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant3?), TypeInfoPropertyName = "NullableCompletionConditionTypeVariant32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant4?), TypeInfoPropertyName = "NullableCompletionConditionTypeVariant42")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant5?), TypeInfoPropertyName = "NullableCompletionConditionTypeVariant52")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant6?), TypeInfoPropertyName = "NullableCompletionConditionTypeVariant62")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant7?), TypeInfoPropertyName = "NullableCompletionConditionTypeVariant72")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant8?), TypeInfoPropertyName = "NullableCompletionConditionTypeVariant82")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant9?), TypeInfoPropertyName = "NullableCompletionConditionTypeVariant92")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant10?), TypeInfoPropertyName = "NullableCompletionConditionTypeVariant102")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant11?), TypeInfoPropertyName = "NullableCompletionConditionTypeVariant112")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetType?), TypeInfoPropertyName = "NullableWorkoutStepTargetType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant1?), TypeInfoPropertyName = "NullableWorkoutStepTargetTypeVariant12")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant2?), TypeInfoPropertyName = "NullableWorkoutStepTargetTypeVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant3?), TypeInfoPropertyName = "NullableWorkoutStepTargetTypeVariant32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant4?), TypeInfoPropertyName = "NullableWorkoutStepTargetTypeVariant42")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant5?), TypeInfoPropertyName = "NullableWorkoutStepTargetTypeVariant52")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant6?), TypeInfoPropertyName = "NullableWorkoutStepTargetTypeVariant62")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant7?), TypeInfoPropertyName = "NullableWorkoutStepTargetTypeVariant72")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant8?), TypeInfoPropertyName = "NullableWorkoutStepTargetTypeVariant82")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant9?), TypeInfoPropertyName = "NullableWorkoutStepTargetTypeVariant92")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant10?), TypeInfoPropertyName = "NullableWorkoutStepTargetTypeVariant102")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant11?), TypeInfoPropertyName = "NullableWorkoutStepTargetTypeVariant112")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepIntensity?), TypeInfoPropertyName = "NullableWorkoutStepIntensity2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepIntensityVariant1?), TypeInfoPropertyName = "NullableWorkoutStepIntensityVariant12")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepIntensityVariant2?), TypeInfoPropertyName = "NullableWorkoutStepIntensityVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepIntensityVariant3?), TypeInfoPropertyName = "NullableWorkoutStepIntensityVariant32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepIntensityVariant4?), TypeInfoPropertyName = "NullableWorkoutStepIntensityVariant42")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepIntensityVariant5?), TypeInfoPropertyName = "NullableWorkoutStepIntensityVariant52")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StepControlType?), TypeInfoPropertyName = "NullableStepControlType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StepControlTypeVariant1?), TypeInfoPropertyName = "NullableStepControlTypeVariant12")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StepControlTypeVariant2?), TypeInfoPropertyName = "NullableStepControlTypeVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WeightUnit?), TypeInfoPropertyName = "NullableWeightUnit2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WeightUnitVariant1?), TypeInfoPropertyName = "NullableWeightUnitVariant12")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WeightUnitVariant2?), TypeInfoPropertyName = "NullableWeightUnitVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SwimStrokeType?), TypeInfoPropertyName = "NullableSwimStrokeType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SwimStrokeTypeVariant1?), TypeInfoPropertyName = "NullableSwimStrokeTypeVariant12")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SwimStrokeTypeVariant2?), TypeInfoPropertyName = "NullableSwimStrokeTypeVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SwimStrokeTypeVariant3?), TypeInfoPropertyName = "NullableSwimStrokeTypeVariant32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SwimStrokeTypeVariant4?), TypeInfoPropertyName = "NullableSwimStrokeTypeVariant42")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SwimStrokeTypeVariant5?), TypeInfoPropertyName = "NullableSwimStrokeTypeVariant52")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SwimStrokeTypeVariant6?), TypeInfoPropertyName = "NullableSwimStrokeTypeVariant62")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SwimStrokeTypeVariant7?), TypeInfoPropertyName = "NullableSwimStrokeTypeVariant72")]
+    internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
+    {
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+        Converters = new global::System.Type[]
+        {
+            typeof(global::Terra.JsonConverters.DataSentToWebhookStatusJsonConverter),
+
+            typeof(global::Terra.JsonConverters.DataSentToWebhookStatusNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.DeviceDataTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.DeviceDataTypeNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutSportVariant1JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutSportVariant1NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutSportVariant2JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutSportVariant2NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutSportVariant3JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutSportVariant3NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutSportVariant4JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutSportVariant4NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutSportVariant5JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutSportVariant5NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutSportVariant6JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutSportVariant6NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutSportVariant7JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutSportVariant7NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutSportVariant8JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutSportVariant8NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutSportVariant9JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutSportVariant9NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutSportVariant10JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutSportVariant10NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutSportVariant11JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutSportVariant11NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutSportVariant12JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutSportVariant12NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutSportVariant13JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutSportVariant13NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutSportVariant14JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutSportVariant14NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutSportVariant15JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutSportVariant15NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.EnvironmentTypeVariant1JsonConverter),
+
+            typeof(global::Terra.JsonConverters.EnvironmentTypeVariant1NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.EnvironmentTypeVariant2JsonConverter),
+
+            typeof(global::Terra.JsonConverters.EnvironmentTypeVariant2NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.EnvironmentTypeVariant3JsonConverter),
+
+            typeof(global::Terra.JsonConverters.EnvironmentTypeVariant3NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.CompletionConditionTypeVariant1JsonConverter),
+
+            typeof(global::Terra.JsonConverters.CompletionConditionTypeVariant1NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.CompletionConditionTypeVariant2JsonConverter),
+
+            typeof(global::Terra.JsonConverters.CompletionConditionTypeVariant2NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.CompletionConditionTypeVariant3JsonConverter),
+
+            typeof(global::Terra.JsonConverters.CompletionConditionTypeVariant3NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.CompletionConditionTypeVariant4JsonConverter),
+
+            typeof(global::Terra.JsonConverters.CompletionConditionTypeVariant4NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.CompletionConditionTypeVariant5JsonConverter),
+
+            typeof(global::Terra.JsonConverters.CompletionConditionTypeVariant5NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.CompletionConditionTypeVariant6JsonConverter),
+
+            typeof(global::Terra.JsonConverters.CompletionConditionTypeVariant6NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.CompletionConditionTypeVariant7JsonConverter),
+
+            typeof(global::Terra.JsonConverters.CompletionConditionTypeVariant7NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.CompletionConditionTypeVariant8JsonConverter),
+
+            typeof(global::Terra.JsonConverters.CompletionConditionTypeVariant8NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.CompletionConditionTypeVariant9JsonConverter),
+
+            typeof(global::Terra.JsonConverters.CompletionConditionTypeVariant9NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.CompletionConditionTypeVariant10JsonConverter),
+
+            typeof(global::Terra.JsonConverters.CompletionConditionTypeVariant10NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.CompletionConditionTypeVariant11JsonConverter),
+
+            typeof(global::Terra.JsonConverters.CompletionConditionTypeVariant11NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepTargetTypeVariant1JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepTargetTypeVariant1NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepTargetTypeVariant2JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepTargetTypeVariant2NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepTargetTypeVariant3JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepTargetTypeVariant3NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepTargetTypeVariant4JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepTargetTypeVariant4NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepTargetTypeVariant5JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepTargetTypeVariant5NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepTargetTypeVariant6JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepTargetTypeVariant6NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepTargetTypeVariant7JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepTargetTypeVariant7NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepTargetTypeVariant8JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepTargetTypeVariant8NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepTargetTypeVariant9JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepTargetTypeVariant9NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepTargetTypeVariant10JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepTargetTypeVariant10NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepTargetTypeVariant11JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepTargetTypeVariant11NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepIntensityVariant1JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepIntensityVariant1NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepIntensityVariant2JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepIntensityVariant2NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepIntensityVariant3JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepIntensityVariant3NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepIntensityVariant4JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepIntensityVariant4NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepIntensityVariant5JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepIntensityVariant5NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.StepControlTypeVariant1JsonConverter),
+
+            typeof(global::Terra.JsonConverters.StepControlTypeVariant1NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.StepControlTypeVariant2JsonConverter),
+
+            typeof(global::Terra.JsonConverters.StepControlTypeVariant2NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WeightUnitVariant1JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WeightUnitVariant1NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WeightUnitVariant2JsonConverter),
+
+            typeof(global::Terra.JsonConverters.WeightUnitVariant2NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.SwimStrokeTypeVariant1JsonConverter),
+
+            typeof(global::Terra.JsonConverters.SwimStrokeTypeVariant1NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.SwimStrokeTypeVariant2JsonConverter),
+
+            typeof(global::Terra.JsonConverters.SwimStrokeTypeVariant2NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.SwimStrokeTypeVariant3JsonConverter),
+
+            typeof(global::Terra.JsonConverters.SwimStrokeTypeVariant3NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.SwimStrokeTypeVariant4JsonConverter),
+
+            typeof(global::Terra.JsonConverters.SwimStrokeTypeVariant4NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.SwimStrokeTypeVariant5JsonConverter),
+
+            typeof(global::Terra.JsonConverters.SwimStrokeTypeVariant5NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.SwimStrokeTypeVariant6JsonConverter),
+
+            typeof(global::Terra.JsonConverters.SwimStrokeTypeVariant6NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.SwimStrokeTypeVariant7JsonConverter),
+
+            typeof(global::Terra.JsonConverters.SwimStrokeTypeVariant7NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.DrillTypeVariant1JsonConverter),
+
+            typeof(global::Terra.JsonConverters.DrillTypeVariant1NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.DrillTypeVariant2JsonConverter),
+
+            typeof(global::Terra.JsonConverters.DrillTypeVariant2NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.DrillTypeVariant3JsonConverter),
+
+            typeof(global::Terra.JsonConverters.DrillTypeVariant3NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.SwimEquipmentTypeVariant1JsonConverter),
+
+            typeof(global::Terra.JsonConverters.SwimEquipmentTypeVariant1NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.SwimEquipmentTypeVariant2JsonConverter),
+
+            typeof(global::Terra.JsonConverters.SwimEquipmentTypeVariant2NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.SwimEquipmentTypeVariant3JsonConverter),
+
+            typeof(global::Terra.JsonConverters.SwimEquipmentTypeVariant3NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.SwimEquipmentTypeVariant4JsonConverter),
+
+            typeof(global::Terra.JsonConverters.SwimEquipmentTypeVariant4NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.SwimEquipmentTypeVariant5JsonConverter),
+
+            typeof(global::Terra.JsonConverters.SwimEquipmentTypeVariant5NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.SwimEquipmentTypeVariant6JsonConverter),
+
+            typeof(global::Terra.JsonConverters.SwimEquipmentTypeVariant6NullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.AuthSuccessEventTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.AuthSuccessEventTypeNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.AuthSuccessEventStatusJsonConverter),
+
+            typeof(global::Terra.JsonConverters.AuthSuccessEventStatusNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.AuthErrorEventTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.AuthErrorEventTypeNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.AuthErrorEventStatusJsonConverter),
+
+            typeof(global::Terra.JsonConverters.AuthErrorEventStatusNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.DeauthEventTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.DeauthEventTypeNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.DeauthEventStatusJsonConverter),
+
+            typeof(global::Terra.JsonConverters.DeauthEventStatusNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.UserReauthEventTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.UserReauthEventTypeNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.UserReauthEventStatusJsonConverter),
+
+            typeof(global::Terra.JsonConverters.UserReauthEventStatusNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.AccessRevokedEventTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.AccessRevokedEventTypeNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.AccessRevokedEventStatusJsonConverter),
+
+            typeof(global::Terra.JsonConverters.AccessRevokedEventStatusNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.PermissionChangeEventTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.PermissionChangeEventTypeNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.PermissionChangeEventStatusJsonConverter),
+
+            typeof(global::Terra.JsonConverters.PermissionChangeEventStatusNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.ConnectionErrorEventTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.ConnectionErrorEventTypeNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.ConnectionErrorEventStatusJsonConverter),
+
+            typeof(global::Terra.JsonConverters.ConnectionErrorEventStatusNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.LargeRequestSendingEventTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.LargeRequestSendingEventTypeNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.LargeRequestProcessingEventTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.LargeRequestProcessingEventTypeNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.LargeRequestProcessingEventStatusJsonConverter),
+
+            typeof(global::Terra.JsonConverters.LargeRequestProcessingEventStatusNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.S3PayloadEventTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.S3PayloadEventTypeNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.S3PayloadEventStatusJsonConverter),
+
+            typeof(global::Terra.JsonConverters.S3PayloadEventStatusNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.ActivityEventTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.ActivityEventTypeNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.AthleteEventTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.AthleteEventTypeNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.NutritionEventTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.NutritionEventTypeNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.DailyEventTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.DailyEventTypeNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.SleepEventTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.SleepEventTypeNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.MenstruationEventTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.MenstruationEventTypeNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.BodyEventTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.BodyEventTypeNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.LabReportCompletedEventTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.LabReportCompletedEventTypeNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.LabReportFailedEventTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.LabReportFailedEventTypeNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.PlannedWorkoutEventTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.PlannedWorkoutEventTypeNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.HormoneEventTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.HormoneEventTypeNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.HealthObservationEventTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.HealthObservationEventTypeNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.AuthenticationAuthenticateUserResponseStatusJsonConverter),
+
+            typeof(global::Terra.JsonConverters.AuthenticationAuthenticateUserResponseStatusNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.AuthenticationGenerateWidgetSessionResponseStatusJsonConverter),
+
+            typeof(global::Terra.JsonConverters.AuthenticationGenerateWidgetSessionResponseStatusNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.AuthenticationDeauthenticateUserResponseStatusJsonConverter),
+
+            typeof(global::Terra.JsonConverters.AuthenticationDeauthenticateUserResponseStatusNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutsCreateWorkoutResponseStatusJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutsCreateWorkoutResponseStatusNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutsPlanWorkoutResponseStatusJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutsPlanWorkoutResponseStatusNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.UserGetResponseStatusJsonConverter),
+
+            typeof(global::Terra.JsonConverters.UserGetResponseStatusNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.IntegrationsListResponseStatusJsonConverter),
+
+            typeof(global::Terra.JsonConverters.IntegrationsListResponseStatusNullableJsonConverter),
+
+            typeof(global::Terra.JsonConverters.LabReportWebhookJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutSportJsonConverter),
+
+            typeof(global::Terra.JsonConverters.EnvironmentTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.CompletionConditionTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepTargetTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WorkoutStepIntensityJsonConverter),
+
+            typeof(global::Terra.JsonConverters.StepControlTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WeightUnitJsonConverter),
+
+            typeof(global::Terra.JsonConverters.SwimStrokeTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.DrillTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.SwimEquipmentTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.WebhookEventTypeJsonConverter),
+
+            typeof(global::Terra.JsonConverters.OneOfJsonConverter<int?, global::System.DateTime?>),
+
+            typeof(global::Terra.JsonConverters.OneOfJsonConverter<int?, global::System.DateTime?>),
+
+            typeof(global::Terra.JsonConverters.OneOfJsonConverter<int?, global::System.DateTime?>),
+
+            typeof(global::Terra.JsonConverters.OneOfJsonConverter<int?, global::System.DateTime?>),
+
+            typeof(global::Terra.JsonConverters.OneOfJsonConverter<int?, global::System.DateTime?>),
+
+            typeof(global::Terra.JsonConverters.OneOfJsonConverter<int?, global::System.DateTime?>),
+
+            typeof(global::Terra.JsonConverters.OneOfJsonConverter<int?, global::System.DateTime?>),
+
+            typeof(global::Terra.JsonConverters.OneOfJsonConverter<int?, global::System.DateTime?>),
+
+            typeof(global::Terra.JsonConverters.OneOfJsonConverter<int?, global::System.DateTime?>),
+
+            typeof(global::Terra.JsonConverters.OneOfJsonConverter<int?, global::System.DateTime?>),
+
+            typeof(global::Terra.JsonConverters.OneOfJsonConverter<int?, global::System.DateTime?>),
+
+            typeof(global::Terra.JsonConverters.OneOfJsonConverter<int?, global::System.DateTime?>),
+
+            typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.ActivityGetResponse2, global::Terra.DataSentToWebhook>),
+
+            typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.AthleteCollection, global::Terra.DataSentToWebhook>),
+
+            typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.BodyGetResponse2, global::Terra.DataSentToWebhook>),
+
+            typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.DailyGetResponse2, global::Terra.DataSentToWebhook>),
+
+            typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.MenstruationGetResponse2, global::Terra.DataSentToWebhook>),
+
+            typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.NutritionGetResponse2, global::Terra.DataSentToWebhook>),
+
+            typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.SleepGetResponse2, global::Terra.DataSentToWebhook>),
+
+            typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.UserGetResponse2, global::System.Collections.Generic.IList<global::Terra.TerraUser>>),
+
+            typeof(global::Terra.JsonConverters.AllOfJsonConverter<global::Terra.TerraUser, global::Terra.UserGetResponseUser>),
+
+            typeof(global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.UserListResponseVariant1, global::Terra.UserListResponseVariant2>),
+
+            typeof(global::Terra.JsonConverters.UnixTimestampJsonConverter),
+        })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.DrillType?), TypeInfoPropertyName = "NullableDrillType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.DrillTypeVariant1?), TypeInfoPropertyName = "NullableDrillTypeVariant12")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.DrillTypeVariant2?), TypeInfoPropertyName = "NullableDrillTypeVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.DrillTypeVariant3?), TypeInfoPropertyName = "NullableDrillTypeVariant32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SwimEquipmentType?), TypeInfoPropertyName = "NullableSwimEquipmentType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SwimEquipmentTypeVariant1?), TypeInfoPropertyName = "NullableSwimEquipmentTypeVariant12")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SwimEquipmentTypeVariant2?), TypeInfoPropertyName = "NullableSwimEquipmentTypeVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SwimEquipmentTypeVariant3?), TypeInfoPropertyName = "NullableSwimEquipmentTypeVariant32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SwimEquipmentTypeVariant4?), TypeInfoPropertyName = "NullableSwimEquipmentTypeVariant42")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SwimEquipmentTypeVariant5?), TypeInfoPropertyName = "NullableSwimEquipmentTypeVariant52")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SwimEquipmentTypeVariant6?), TypeInfoPropertyName = "NullableSwimEquipmentTypeVariant62")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthSuccessEventType?), TypeInfoPropertyName = "NullableAuthSuccessEventType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthSuccessEventStatus?), TypeInfoPropertyName = "NullableAuthSuccessEventStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthErrorEventType?), TypeInfoPropertyName = "NullableAuthErrorEventType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthErrorEventStatus?), TypeInfoPropertyName = "NullableAuthErrorEventStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.DeauthEventType?), TypeInfoPropertyName = "NullableDeauthEventType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.DeauthEventStatus?), TypeInfoPropertyName = "NullableDeauthEventStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserReauthEventType?), TypeInfoPropertyName = "NullableUserReauthEventType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserReauthEventStatus?), TypeInfoPropertyName = "NullableUserReauthEventStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AccessRevokedEventType?), TypeInfoPropertyName = "NullableAccessRevokedEventType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AccessRevokedEventStatus?), TypeInfoPropertyName = "NullableAccessRevokedEventStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.PermissionChangeEventType?), TypeInfoPropertyName = "NullablePermissionChangeEventType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.PermissionChangeEventStatus?), TypeInfoPropertyName = "NullablePermissionChangeEventStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.ConnectionErrorEventType?), TypeInfoPropertyName = "NullableConnectionErrorEventType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.ConnectionErrorEventStatus?), TypeInfoPropertyName = "NullableConnectionErrorEventStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LargeRequestSendingEventType?), TypeInfoPropertyName = "NullableLargeRequestSendingEventType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LargeRequestProcessingEventType?), TypeInfoPropertyName = "NullableLargeRequestProcessingEventType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LargeRequestProcessingEventStatus?), TypeInfoPropertyName = "NullableLargeRequestProcessingEventStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.S3PayloadEventType?), TypeInfoPropertyName = "NullableS3PayloadEventType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.S3PayloadEventStatus?), TypeInfoPropertyName = "NullableS3PayloadEventStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.ActivityEventType?), TypeInfoPropertyName = "NullableActivityEventType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AthleteEventType?), TypeInfoPropertyName = "NullableAthleteEventType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.NutritionEventType?), TypeInfoPropertyName = "NullableNutritionEventType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.DailyEventType?), TypeInfoPropertyName = "NullableDailyEventType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SleepEventType?), TypeInfoPropertyName = "NullableSleepEventType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.MenstruationEventType?), TypeInfoPropertyName = "NullableMenstruationEventType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.BodyEventType?), TypeInfoPropertyName = "NullableBodyEventType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportCompletedEventType?), TypeInfoPropertyName = "NullableLabReportCompletedEventType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportFailedEventType?), TypeInfoPropertyName = "NullableLabReportFailedEventType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.PlannedWorkoutEventType?), TypeInfoPropertyName = "NullablePlannedWorkoutEventType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.HormoneEventType?), TypeInfoPropertyName = "NullableHormoneEventType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.HealthObservationEventType?), TypeInfoPropertyName = "NullableHealthObservationEventType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<int?, global::System.DateTime?>?), TypeInfoPropertyName = "NullableOneOfInt32DateTime2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationAuthenticateUserResponseStatus?), TypeInfoPropertyName = "NullableAuthenticationAuthenticateUserResponseStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationGenerateWidgetSessionResponseStatus?), TypeInfoPropertyName = "NullableAuthenticationGenerateWidgetSessionResponseStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationDeauthenticateUserResponseStatus?), TypeInfoPropertyName = "NullableAuthenticationDeauthenticateUserResponseStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.ActivityGetResponse2, global::Terra.DataSentToWebhook>?), TypeInfoPropertyName = "NullableOneOfActivityGetResponse2DataSentToWebhook2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.AthleteCollection, global::Terra.DataSentToWebhook>?), TypeInfoPropertyName = "NullableOneOfAthleteCollectionDataSentToWebhook2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.BodyGetResponse2, global::Terra.DataSentToWebhook>?), TypeInfoPropertyName = "NullableOneOfBodyGetResponse2DataSentToWebhook2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.DailyGetResponse2, global::Terra.DataSentToWebhook>?), TypeInfoPropertyName = "NullableOneOfDailyGetResponse2DataSentToWebhook2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.MenstruationGetResponse2, global::Terra.DataSentToWebhook>?), TypeInfoPropertyName = "NullableOneOfMenstruationGetResponse2DataSentToWebhook2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.NutritionGetResponse2, global::Terra.DataSentToWebhook>?), TypeInfoPropertyName = "NullableOneOfNutritionGetResponse2DataSentToWebhook2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.SleepGetResponse2, global::Terra.DataSentToWebhook>?), TypeInfoPropertyName = "NullableOneOfSleepGetResponse2DataSentToWebhook2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutsCreateWorkoutResponseStatus?), TypeInfoPropertyName = "NullableWorkoutsCreateWorkoutResponseStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutsPlanWorkoutResponseStatus?), TypeInfoPropertyName = "NullableWorkoutsPlanWorkoutResponseStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.UserGetResponse2, global::System.Collections.Generic.IList<global::Terra.TerraUser>>?), TypeInfoPropertyName = "NullableOneOfUserGetResponse2IListTerraUser2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AllOf<global::Terra.TerraUser, global::Terra.UserGetResponseUser>?), TypeInfoPropertyName = "NullableAllOfTerraUserUserGetResponseUser2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserGetResponseStatus?), TypeInfoPropertyName = "NullableUserGetResponseStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.UserListResponseVariant1, global::Terra.UserListResponseVariant2>?), TypeInfoPropertyName = "NullableOneOfUserListResponseVariant1UserListResponseVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.IntegrationsListResponseStatus?), TypeInfoPropertyName = "NullableIntegrationsListResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.StepBlock>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.DrinkSample>))]
@@ -988,10 +1636,301 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.LabReportEventResult>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.PlannedWorkout>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.HormoneSample>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.ObservationCode>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.ObservationComponent>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.HealthObservation>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.WorkoutTemplate>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.UserGetResponse2, global::System.Collections.Generic.List<global::Terra.TerraUser>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.TerraUser>))]
+    internal sealed partial class SourceGenerationContextChunk1 : global::System.Text.Json.Serialization.JsonSerializerContext
+    {
+    }
+    /// <summary>
+    /// 
+    /// </summary>
     public sealed partial class SourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
     {
+        private static readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver Resolver = global::System.Text.Json.Serialization.Metadata.JsonTypeInfoResolver.Combine(
+            SourceGenerationContextChunk0.Default,
+
+            SourceGenerationContextChunk1.Default
+            );
+
+        private static readonly global::System.Text.Json.JsonSerializerOptions DefaultOptions = CreateDefaultOptions();
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static SourceGenerationContext Default { get; } = new(DefaultOptions);
+
+        private SourceGenerationContext(global::System.Text.Json.JsonSerializerOptions options)
+            : base(options)
+        {
+        }
+
+        /// <inheritdoc />
+        protected override global::System.Text.Json.JsonSerializerOptions? GeneratedSerializerOptions => DefaultOptions;
+
+        /// <inheritdoc />
+        public override global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(global::System.Type type)
+        {
+            return Resolver.GetTypeInfo(type, Options);
+        }
+
+        private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
+        {
+            var options = new global::System.Text.Json.JsonSerializerOptions
+            {
+                DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+                TypeInfoResolver = Resolver,
+            };
+            options.Converters.Add(new global::Terra.JsonConverters.DataSentToWebhookStatusJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.DataSentToWebhookStatusNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.DeviceDataTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.DeviceDataTypeNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportVariant1JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportVariant1NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportVariant2JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportVariant2NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportVariant3JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportVariant3NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportVariant4JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportVariant4NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportVariant5JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportVariant5NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportVariant6JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportVariant6NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportVariant7JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportVariant7NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportVariant8JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportVariant8NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportVariant9JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportVariant9NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportVariant10JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportVariant10NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportVariant11JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportVariant11NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportVariant12JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportVariant12NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportVariant13JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportVariant13NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportVariant14JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportVariant14NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportVariant15JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportVariant15NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.EnvironmentTypeVariant1JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.EnvironmentTypeVariant1NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.EnvironmentTypeVariant2JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.EnvironmentTypeVariant2NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.EnvironmentTypeVariant3JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.EnvironmentTypeVariant3NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.CompletionConditionTypeVariant1JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.CompletionConditionTypeVariant1NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.CompletionConditionTypeVariant2JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.CompletionConditionTypeVariant2NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.CompletionConditionTypeVariant3JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.CompletionConditionTypeVariant3NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.CompletionConditionTypeVariant4JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.CompletionConditionTypeVariant4NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.CompletionConditionTypeVariant5JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.CompletionConditionTypeVariant5NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.CompletionConditionTypeVariant6JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.CompletionConditionTypeVariant6NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.CompletionConditionTypeVariant7JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.CompletionConditionTypeVariant7NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.CompletionConditionTypeVariant8JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.CompletionConditionTypeVariant8NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.CompletionConditionTypeVariant9JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.CompletionConditionTypeVariant9NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.CompletionConditionTypeVariant10JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.CompletionConditionTypeVariant10NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.CompletionConditionTypeVariant11JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.CompletionConditionTypeVariant11NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant1JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant1NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant2JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant2NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant3JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant3NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant4JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant4NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant5JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant5NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant6JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant6NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant7JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant7NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant8JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant8NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant9JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant9NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant10JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant10NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant11JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant11NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepIntensityVariant1JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepIntensityVariant1NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepIntensityVariant2JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepIntensityVariant2NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepIntensityVariant3JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepIntensityVariant3NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepIntensityVariant4JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepIntensityVariant4NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepIntensityVariant5JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepIntensityVariant5NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.StepControlTypeVariant1JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.StepControlTypeVariant1NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.StepControlTypeVariant2JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.StepControlTypeVariant2NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WeightUnitVariant1JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WeightUnitVariant1NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WeightUnitVariant2JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WeightUnitVariant2NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.SwimStrokeTypeVariant1JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.SwimStrokeTypeVariant1NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.SwimStrokeTypeVariant2JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.SwimStrokeTypeVariant2NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.SwimStrokeTypeVariant3JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.SwimStrokeTypeVariant3NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.SwimStrokeTypeVariant4JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.SwimStrokeTypeVariant4NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.SwimStrokeTypeVariant5JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.SwimStrokeTypeVariant5NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.SwimStrokeTypeVariant6JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.SwimStrokeTypeVariant6NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.SwimStrokeTypeVariant7JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.SwimStrokeTypeVariant7NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.DrillTypeVariant1JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.DrillTypeVariant1NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.DrillTypeVariant2JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.DrillTypeVariant2NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.DrillTypeVariant3JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.DrillTypeVariant3NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.SwimEquipmentTypeVariant1JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.SwimEquipmentTypeVariant1NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.SwimEquipmentTypeVariant2JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.SwimEquipmentTypeVariant2NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.SwimEquipmentTypeVariant3JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.SwimEquipmentTypeVariant3NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.SwimEquipmentTypeVariant4JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.SwimEquipmentTypeVariant4NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.SwimEquipmentTypeVariant5JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.SwimEquipmentTypeVariant5NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.SwimEquipmentTypeVariant6JsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.SwimEquipmentTypeVariant6NullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.AuthSuccessEventTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.AuthSuccessEventTypeNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.AuthSuccessEventStatusJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.AuthSuccessEventStatusNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.AuthErrorEventTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.AuthErrorEventTypeNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.AuthErrorEventStatusJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.AuthErrorEventStatusNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.DeauthEventTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.DeauthEventTypeNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.DeauthEventStatusJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.DeauthEventStatusNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.UserReauthEventTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.UserReauthEventTypeNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.UserReauthEventStatusJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.UserReauthEventStatusNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.AccessRevokedEventTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.AccessRevokedEventTypeNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.AccessRevokedEventStatusJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.AccessRevokedEventStatusNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.PermissionChangeEventTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.PermissionChangeEventTypeNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.PermissionChangeEventStatusJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.PermissionChangeEventStatusNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.ConnectionErrorEventTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.ConnectionErrorEventTypeNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.ConnectionErrorEventStatusJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.ConnectionErrorEventStatusNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.LargeRequestSendingEventTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.LargeRequestSendingEventTypeNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.LargeRequestProcessingEventTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.LargeRequestProcessingEventTypeNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.LargeRequestProcessingEventStatusJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.LargeRequestProcessingEventStatusNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.S3PayloadEventTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.S3PayloadEventTypeNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.S3PayloadEventStatusJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.S3PayloadEventStatusNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.ActivityEventTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.ActivityEventTypeNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.AthleteEventTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.AthleteEventTypeNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.NutritionEventTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.NutritionEventTypeNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.DailyEventTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.DailyEventTypeNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.SleepEventTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.SleepEventTypeNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.MenstruationEventTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.MenstruationEventTypeNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.BodyEventTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.BodyEventTypeNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.LabReportCompletedEventTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.LabReportCompletedEventTypeNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.LabReportFailedEventTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.LabReportFailedEventTypeNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.PlannedWorkoutEventTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.PlannedWorkoutEventTypeNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.HormoneEventTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.HormoneEventTypeNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.HealthObservationEventTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.HealthObservationEventTypeNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.AuthenticationAuthenticateUserResponseStatusJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.AuthenticationAuthenticateUserResponseStatusNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.AuthenticationGenerateWidgetSessionResponseStatusJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.AuthenticationGenerateWidgetSessionResponseStatusNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.AuthenticationDeauthenticateUserResponseStatusJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.AuthenticationDeauthenticateUserResponseStatusNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutsCreateWorkoutResponseStatusJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutsCreateWorkoutResponseStatusNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutsPlanWorkoutResponseStatusJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutsPlanWorkoutResponseStatusNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.UserGetResponseStatusJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.UserGetResponseStatusNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.IntegrationsListResponseStatusJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.IntegrationsListResponseStatusNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.LabReportWebhookJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.EnvironmentTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.CompletionConditionTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepTargetTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepIntensityJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.StepControlTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WeightUnitJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.SwimStrokeTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.DrillTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.SwimEquipmentTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WebhookEventTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<int?, global::System.DateTime?>());
+            options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<int?, global::System.DateTime?>());
+            options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<int?, global::System.DateTime?>());
+            options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<int?, global::System.DateTime?>());
+            options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<int?, global::System.DateTime?>());
+            options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<int?, global::System.DateTime?>());
+            options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<int?, global::System.DateTime?>());
+            options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<int?, global::System.DateTime?>());
+            options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<int?, global::System.DateTime?>());
+            options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<int?, global::System.DateTime?>());
+            options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<int?, global::System.DateTime?>());
+            options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<int?, global::System.DateTime?>());
+            options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.ActivityGetResponse2, global::Terra.DataSentToWebhook>());
+            options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.AthleteCollection, global::Terra.DataSentToWebhook>());
+            options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.BodyGetResponse2, global::Terra.DataSentToWebhook>());
+            options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.DailyGetResponse2, global::Terra.DataSentToWebhook>());
+            options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.MenstruationGetResponse2, global::Terra.DataSentToWebhook>());
+            options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.NutritionGetResponse2, global::Terra.DataSentToWebhook>());
+            options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.SleepGetResponse2, global::Terra.DataSentToWebhook>());
+            options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.UserGetResponse2, global::System.Collections.Generic.IList<global::Terra.TerraUser>>());
+            options.Converters.Add(new global::Terra.JsonConverters.AllOfJsonConverter<global::Terra.TerraUser, global::Terra.UserGetResponseUser>());
+            options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.UserListResponseVariant1, global::Terra.UserListResponseVariant2>());
+            options.Converters.Add(new global::Terra.JsonConverters.UnixTimestampJsonConverter());
+
+            return options;
+        }
     }
 }
