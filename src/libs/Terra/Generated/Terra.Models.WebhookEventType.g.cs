@@ -676,6 +676,43 @@ namespace Terra
             : throw new global::System.InvalidOperationException($"Expected union variant 'Hormone' but the value was {ToString()}.");
 
         /// <summary>
+        /// Health observation data event
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::Terra.HealthObservationEvent? HealthObservation { get; init; }
+#else
+        public global::Terra.HealthObservationEvent? HealthObservation { get; }
+#endif
+
+        /// <summary>
+        /// 
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(HealthObservation))]
+#endif
+        public bool IsHealthObservation => HealthObservation != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickHealthObservation(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.HealthObservationEvent? value)
+        {
+            value = HealthObservation;
+            return IsHealthObservation;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.HealthObservationEvent PickHealthObservation() => IsHealthObservation
+            ? HealthObservation!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'HealthObservation' but the value was {ToString()}.");
+
+        /// <summary>
         /// Lab report completed event: a report finished processing; its normalized results are delivered under `data`.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -1202,6 +1239,29 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
+        public static implicit operator WebhookEventType(global::Terra.HealthObservationEvent value) => new WebhookEventType((global::Terra.HealthObservationEvent?)value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator global::Terra.HealthObservationEvent?(WebhookEventType @this) => @this.HealthObservation;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public WebhookEventType(global::Terra.HealthObservationEvent? value)
+        {
+            HealthObservation = value;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WebhookEventType FromHealthObservation(global::Terra.HealthObservationEvent? value) => new WebhookEventType(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WebhookEventType(global::Terra.LabReportCompletedEvent value) => new WebhookEventType((global::Terra.LabReportCompletedEvent?)value);
 
         /// <summary>
@@ -1290,6 +1350,7 @@ namespace Terra
             global::Terra.SleepEvent? sleep,
             global::Terra.PlannedWorkoutEvent? plannedWorkout,
             global::Terra.HormoneEvent? hormone,
+            global::Terra.HealthObservationEvent? healthObservation,
             global::Terra.LabReportCompletedEvent? labReportCompleted,
             global::Terra.LabReportFailedEvent? labReportFailed,
             global::Terra.S3PayloadEvent? s3Payload
@@ -1313,6 +1374,7 @@ namespace Terra
             Sleep = sleep;
             PlannedWorkout = plannedWorkout;
             Hormone = hormone;
+            HealthObservation = healthObservation;
             LabReportCompleted = labReportCompleted;
             LabReportFailed = labReportFailed;
             S3Payload = s3Payload;
@@ -1325,6 +1387,7 @@ namespace Terra
             S3Payload as object ??
             LabReportFailed as object ??
             LabReportCompleted as object ??
+            HealthObservation as object ??
             Hormone as object ??
             PlannedWorkout as object ??
             Sleep as object ??
@@ -1367,6 +1430,7 @@ namespace Terra
             Sleep?.ToString() ??
             PlannedWorkout?.ToString() ??
             Hormone?.ToString() ??
+            HealthObservation?.ToString() ??
             LabReportCompleted?.ToString() ??
             LabReportFailed?.ToString() ??
             S3Payload?.ToString() 
@@ -1377,7 +1441,7 @@ namespace Terra
         /// </summary>
         public bool Validate()
         {
-            return IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && IsSleep && !IsPlannedWorkout && !IsHormone && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && IsPlannedWorkout && !IsHormone && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && IsHormone && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsLabReportCompleted && IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsLabReportCompleted && !IsLabReportFailed && IsS3Payload;
+            return IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsHealthObservation && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsHealthObservation && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsHealthObservation && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsHealthObservation && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsHealthObservation && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsHealthObservation && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsHealthObservation && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsHealthObservation && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsHealthObservation && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsHealthObservation && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsHealthObservation && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsHealthObservation && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsHealthObservation && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsHealthObservation && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsHealthObservation && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && IsSleep && !IsPlannedWorkout && !IsHormone && !IsHealthObservation && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && IsPlannedWorkout && !IsHormone && !IsHealthObservation && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && IsHormone && !IsHealthObservation && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && IsHealthObservation && !IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsHealthObservation && IsLabReportCompleted && !IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsHealthObservation && !IsLabReportCompleted && IsLabReportFailed && !IsS3Payload || !IsAuthSuccess && !IsAuthError && !IsDeauth && !IsUserReauth && !IsAccessRevoked && !IsConnectionError && !IsPermissionChange && !IsLargeRequestProcessing && !IsLargeRequestSending && !IsActivity && !IsAthlete && !IsBody && !IsDaily && !IsMenstruation && !IsNutrition && !IsSleep && !IsPlannedWorkout && !IsHormone && !IsHealthObservation && !IsLabReportCompleted && !IsLabReportFailed && IsS3Payload;
         }
 
         /// <summary>
@@ -1402,6 +1466,7 @@ namespace Terra
             global::System.Func<global::Terra.SleepEvent, TResult>? sleep = null,
             global::System.Func<global::Terra.PlannedWorkoutEvent, TResult>? plannedWorkout = null,
             global::System.Func<global::Terra.HormoneEvent, TResult>? hormone = null,
+            global::System.Func<global::Terra.HealthObservationEvent, TResult>? healthObservation = null,
             global::System.Func<global::Terra.LabReportCompletedEvent, TResult>? labReportCompleted = null,
             global::System.Func<global::Terra.LabReportFailedEvent, TResult>? labReportFailed = null,
             global::System.Func<global::Terra.S3PayloadEvent, TResult>? s3Payload = null,
@@ -1484,6 +1549,10 @@ namespace Terra
             {
                 return hormone(Hormone!);
             }
+            else if (IsHealthObservation && healthObservation != null)
+            {
+                return healthObservation(HealthObservation!);
+            }
             else if (IsLabReportCompleted && labReportCompleted != null)
             {
                 return labReportCompleted(LabReportCompleted!);
@@ -1540,6 +1609,8 @@ namespace Terra
 
             global::System.Action<global::Terra.HormoneEvent>? hormone = null,
 
+            global::System.Action<global::Terra.HealthObservationEvent>? healthObservation = null,
+
             global::System.Action<global::Terra.LabReportCompletedEvent>? labReportCompleted = null,
 
             global::System.Action<global::Terra.LabReportFailedEvent>? labReportFailed = null,
@@ -1623,6 +1694,10 @@ namespace Terra
             else if (IsHormone)
             {
                 hormone?.Invoke(Hormone!);
+            }
+            else if (IsHealthObservation)
+            {
+                healthObservation?.Invoke(HealthObservation!);
             }
             else if (IsLabReportCompleted)
             {
@@ -1660,6 +1735,7 @@ namespace Terra
             global::System.Action<global::Terra.SleepEvent>? sleep = null,
             global::System.Action<global::Terra.PlannedWorkoutEvent>? plannedWorkout = null,
             global::System.Action<global::Terra.HormoneEvent>? hormone = null,
+            global::System.Action<global::Terra.HealthObservationEvent>? healthObservation = null,
             global::System.Action<global::Terra.LabReportCompletedEvent>? labReportCompleted = null,
             global::System.Action<global::Terra.LabReportFailedEvent>? labReportFailed = null,
             global::System.Action<global::Terra.S3PayloadEvent>? s3Payload = null,
@@ -1741,6 +1817,10 @@ namespace Terra
             else if (IsHormone)
             {
                 hormone?.Invoke(Hormone!);
+            }
+            else if (IsHealthObservation)
+            {
+                healthObservation?.Invoke(HealthObservation!);
             }
             else if (IsLabReportCompleted)
             {
@@ -1799,6 +1879,8 @@ namespace Terra
                 typeof(global::Terra.PlannedWorkoutEvent),
                 Hormone,
                 typeof(global::Terra.HormoneEvent),
+                HealthObservation,
+                typeof(global::Terra.HealthObservationEvent),
                 LabReportCompleted,
                 typeof(global::Terra.LabReportCompletedEvent),
                 LabReportFailed,
@@ -1839,6 +1921,7 @@ namespace Terra
                 global::System.Collections.Generic.EqualityComparer<global::Terra.SleepEvent?>.Default.Equals(Sleep, other.Sleep) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.PlannedWorkoutEvent?>.Default.Equals(PlannedWorkout, other.PlannedWorkout) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.HormoneEvent?>.Default.Equals(Hormone, other.Hormone) &&
+                global::System.Collections.Generic.EqualityComparer<global::Terra.HealthObservationEvent?>.Default.Equals(HealthObservation, other.HealthObservation) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.LabReportCompletedEvent?>.Default.Equals(LabReportCompleted, other.LabReportCompleted) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.LabReportFailedEvent?>.Default.Equals(LabReportFailed, other.LabReportFailed) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.S3PayloadEvent?>.Default.Equals(S3Payload, other.S3Payload) 

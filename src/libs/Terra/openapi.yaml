@@ -2,7 +2,7 @@ openapi: 3.0.3
 info:
   description: The Terra API (v2 surface, served at access.tryterra.co/api/v2).
   title: TerraAPI
-  version: 2026.07.14
+  version: 2026.07.17
   license:
     name: Apache-2.0
     url: https://github.com/tryterra/openapi/blob/master/LICENSE
@@ -2762,6 +2762,8 @@ components:
       $ref: '#/components/schemas/PlannedWorkoutEvent'
     HormoneWebhook:
       $ref: '#/components/schemas/HormoneEvent'
+    HealthObservationWebhook:
+      $ref: '#/components/schemas/HealthObservationEvent'
     LabReportWebhook:
       oneOf:
       - $ref: '#/components/schemas/LabReportCompletedEvent'
@@ -8407,6 +8409,221 @@ components:
       allOf:
       - $ref: '#/components/schemas/WebhookEvent'
       description: Hormone data event
+    HealthObservationMetadata:
+      type: object
+      properties:
+        start_time:
+          type: string
+          description: When the observation occurred (or began), in ISO8601 format with microsecond precision. TimeZone info will be provided whenever possible. If absent, the time corresponds to the user's
+            local time.
+          example: '2022-10-28T10:00:00.000000+01:00'
+        end_time:
+          anyOf:
+          - type: string
+          - type: 'null'
+          description: When the observation ended, in ISO8601 format, for interval observations. Absent for point-in-time observations.
+          example: '2022-10-28T10:05:00.000000+01:00'
+        summary_id:
+          type: string
+          description: Stable identifier for the source record (e.g. the HealthKit sample UUID). Re-deliveries and amendments reuse the same summary_id — treat it as the upsert key.
+          example: 7C3A5D9E-1F42-4B5A-9C1D-2E8F0A6B4C3D
+        timestamp_localization:
+          anyOf:
+          - $ref: '#/components/schemas/TimestampLocalization'
+          - type: 'null'
+      required:
+      - start_time
+      - summary_id
+    HealthObservationCategory:
+      type: number
+      enum:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+    ObservationCode:
+      type: object
+      properties:
+        system:
+          type: string
+          description: 'The vocabulary the code belongs to: the source platform''s identifier system (e.g. healthkit) or a standard terminology URI (e.g. http://snomed.info/sct, http://loinc.org).'
+          example: healthkit
+        code:
+          type: string
+          description: The code identifying the observation within the system.
+          example: HKCategoryTypeIdentifierIntermenstrualBleeding
+        display:
+          anyOf:
+          - type: string
+          - type: 'null'
+          description: Human-readable display name for the code, where the system provides one.
+      required:
+      - system
+      - code
+    ObservationValueType:
+      type: number
+      enum:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+    ObservationValue:
+      type: object
+      properties:
+        value_type:
+          $ref: '#/components/schemas/ObservationValueType'
+          description: Which member of this value union is set.
+        quantity:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Numeric value, set when value_type is QUANTITY.
+          example: 2
+        unit:
+          anyOf:
+          - type: string
+          - type: 'null'
+          description: Unit for the quantity, set when value_type is QUANTITY.
+          example: count
+        boolean:
+          anyOf:
+          - type: boolean
+          - type: 'null'
+          description: Boolean finding, set when value_type is BOOLEAN.
+        text:
+          anyOf:
+          - type: string
+          - type: 'null'
+          description: Free-text value, set when value_type is STRING.
+        code:
+          anyOf:
+          - type: string
+          - type: 'null'
+          description: Coded value, set when value_type is CODE.
+          example: luteinizing_hormone_surge
+      required:
+      - value_type
+    ObservationSeverity:
+      type: number
+      enum:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+    ObservationComponent:
+      type: object
+      properties:
+        code:
+          type: string
+          description: Identity of this sub-value, scoped to the observation_type (e.g. valence for a state-of-mind observation).
+          example: valence
+        value:
+          anyOf:
+          - $ref: '#/components/schemas/ObservationValue'
+          - type: 'null'
+          description: The component's value.
+      required:
+      - code
+    ObservationStatus:
+      type: number
+      enum:
+      - 0
+      - 1
+      - 2
+      - 3
+    HealthObservationData:
+      type: object
+      properties:
+        category:
+          anyOf:
+          - $ref: '#/components/schemas/HealthObservationCategory'
+          - type: 'null'
+          description: Coarse grouping of the observation, usable for filtering and permissioning.
+        observation_type:
+          type: string
+          description: Normalized snake_case observation identifier.
+          example: intermenstrual_bleeding
+        codes:
+          anyOf:
+          - type: array
+            items:
+              $ref: '#/components/schemas/ObservationCode'
+          - type: 'null'
+          description: (system, code) tuples identifying the observation in the source platform's vocabulary and, where mapped, standard terminologies (SNOMED CT, LOINC).
+        value:
+          anyOf:
+          - $ref: '#/components/schemas/ObservationValue'
+          - type: 'null'
+          description: The observation's value. Absent or NONE-typed for presence-only events.
+        severity:
+          anyOf:
+          - $ref: '#/components/schemas/ObservationSeverity'
+          - type: 'null'
+          description: Severity, for symptom observations. Mirrors HealthKit severity semantics.
+        components:
+          anyOf:
+          - type: array
+            items:
+              $ref: '#/components/schemas/ObservationComponent'
+          - type: 'null'
+          description: Coded sub-values of a multi-part observation (e.g. State of Mind valence and labels).
+        status:
+          anyOf:
+          - $ref: '#/components/schemas/ObservationStatus'
+          - type: 'null'
+          description: Record lifecycle. ENTERED_IN_ERROR retracts the record with this summary_id.
+        notes:
+          anyOf:
+          - type: string
+          - type: 'null'
+          description: Free-text note attached to the observation by the user or source platform.
+      required:
+      - observation_type
+    HealthObservation:
+      type: object
+      properties:
+        metadata:
+          $ref: '#/components/schemas/HealthObservationMetadata'
+          description: Object containing metadata for this observation record.
+        observation_data:
+          $ref: '#/components/schemas/HealthObservationData'
+          description: Object containing the observation itself.
+      required:
+      - metadata
+      - observation_data
+    HealthObservationEvent:
+      type: object
+      properties:
+        type:
+          type: string
+          enum:
+          - health_observation
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/HealthObservation'
+          description: Array of health observations
+        user:
+          $ref: '#/components/schemas/TerraUser'
+          description: User whose data is being provided
+        version:
+          type: string
+          description: API version
+      required:
+      - type
+      - data
+      - user
+      - version
+      allOf:
+      - $ref: '#/components/schemas/WebhookEvent'
+      description: Health observation data event
     WebhookEventType:
       oneOf:
       - $ref: '#/components/schemas/AuthSuccessEvent'
@@ -8427,6 +8644,7 @@ components:
       - $ref: '#/components/schemas/SleepEvent'
       - $ref: '#/components/schemas/PlannedWorkoutEvent'
       - $ref: '#/components/schemas/HormoneEvent'
+      - $ref: '#/components/schemas/HealthObservationEvent'
       - $ref: '#/components/schemas/LabReportCompletedEvent'
       - $ref: '#/components/schemas/LabReportFailedEvent'
       - $ref: '#/components/schemas/S3PayloadEvent'
