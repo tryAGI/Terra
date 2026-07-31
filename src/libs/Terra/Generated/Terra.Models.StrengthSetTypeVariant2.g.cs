@@ -11,7 +11,7 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        Normal,
+        Cooldown,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Terra
         {
             return value switch
             {
-                StrengthSetTypeVariant2.Normal => "normal",
+                StrengthSetTypeVariant2.Cooldown => "cooldown",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Terra
         {
             return value switch
             {
-                "normal" => StrengthSetTypeVariant2.Normal,
+                "cooldown" => StrengthSetTypeVariant2.Cooldown,
                 _ => null,
             };
         }

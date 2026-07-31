@@ -11,7 +11,7 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        Obliques,
+        Neck,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Terra
         {
             return value switch
             {
-                StrengthTargetVariant17.Obliques => "obliques",
+                StrengthTargetVariant17.Neck => "neck",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Terra
         {
             return value switch
             {
-                "obliques" => StrengthTargetVariant17.Obliques,
+                "neck" => StrengthTargetVariant17.Neck,
                 _ => null,
             };
         }

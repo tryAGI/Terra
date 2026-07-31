@@ -11,7 +11,7 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        UserLogged,
+        DeviceDetected,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Terra
         {
             return value switch
             {
-                StrengthSourceVariant1.UserLogged => "user_logged",
+                StrengthSourceVariant1.DeviceDetected => "device_detected",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Terra
         {
             return value switch
             {
-                "user_logged" => StrengthSourceVariant1.UserLogged,
+                "device_detected" => StrengthSourceVariant1.DeviceDetected,
                 _ => null,
             };
         }

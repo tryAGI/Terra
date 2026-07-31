@@ -11,7 +11,7 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        Quadriceps,
+        Obliques,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Terra
         {
             return value switch
             {
-                StrengthTargetVariant18.Quadriceps => "quadriceps",
+                StrengthTargetVariant18.Obliques => "obliques",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Terra
         {
             return value switch
             {
-                "quadriceps" => StrengthTargetVariant18.Quadriceps,
+                "obliques" => StrengthTargetVariant18.Obliques,
                 _ => null,
             };
         }

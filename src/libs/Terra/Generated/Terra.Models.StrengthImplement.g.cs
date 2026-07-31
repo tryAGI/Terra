@@ -862,7 +862,7 @@ namespace Terra
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthImplementVariant23' but the value was {ToString()}.");
 
         /// <summary>
-        /// The source reported a value here but it could not be resolved. Distinct from the field being absent, which means the source reported nothing at all.
+        /// 
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthImplementVariant24? StrengthImplementVariant24 { get; init; }
@@ -899,12 +899,12 @@ namespace Terra
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthImplementVariant24' but the value was {ToString()}.");
 
         /// <summary>
-        /// A value Terra has added since this schema was published.
+        /// The source reported a value here but it could not be resolved. Distinct from the field being absent, which means the source reported nothing at all.
         /// </summary>
 #if NET6_0_OR_GREATER
-        public string? StrengthImplementVariant25 { get; init; }
+        public global::Terra.StrengthImplementVariant25? StrengthImplementVariant25 { get; init; }
 #else
-        public string? StrengthImplementVariant25 { get; }
+        public global::Terra.StrengthImplementVariant25? StrengthImplementVariant25 { get; }
 #endif
 
         /// <summary>
@@ -922,7 +922,7 @@ namespace Terra
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out string? value)
+            out global::Terra.StrengthImplementVariant25? value)
         {
             value = StrengthImplementVariant25;
             return IsStrengthImplementVariant25;
@@ -931,9 +931,46 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public string PickStrengthImplementVariant25() => IsStrengthImplementVariant25
-            ? StrengthImplementVariant25!
+        public global::Terra.StrengthImplementVariant25 PickStrengthImplementVariant25() => IsStrengthImplementVariant25
+            ? StrengthImplementVariant25!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthImplementVariant25' but the value was {ToString()}.");
+
+        /// <summary>
+        /// A value Terra has added since this schema was published.
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public string? StrengthImplementVariant26 { get; init; }
+#else
+        public string? StrengthImplementVariant26 { get; }
+#endif
+
+        /// <summary>
+        /// 
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthImplementVariant26))]
+#endif
+        public bool IsStrengthImplementVariant26 => StrengthImplementVariant26 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickStrengthImplementVariant26(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out string? value)
+        {
+            value = StrengthImplementVariant26;
+            return IsStrengthImplementVariant26;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string PickStrengthImplementVariant26() => IsStrengthImplementVariant26
+            ? StrengthImplementVariant26!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthImplementVariant26' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -1489,17 +1526,17 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator StrengthImplement(string value) => new StrengthImplement((string?)value);
+        public static implicit operator StrengthImplement(global::Terra.StrengthImplementVariant25 value) => new StrengthImplement((global::Terra.StrengthImplementVariant25?)value);
 
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator string?(StrengthImplement @this) => @this.StrengthImplementVariant25;
+        public static implicit operator global::Terra.StrengthImplementVariant25?(StrengthImplement @this) => @this.StrengthImplementVariant25;
 
         /// <summary>
         /// 
         /// </summary>
-        public StrengthImplement(string? value)
+        public StrengthImplement(global::Terra.StrengthImplementVariant25? value)
         {
             StrengthImplementVariant25 = value;
         }
@@ -1507,7 +1544,30 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public static StrengthImplement FromStrengthImplementVariant25(string? value) => new StrengthImplement(value);
+        public static StrengthImplement FromStrengthImplementVariant25(global::Terra.StrengthImplementVariant25? value) => new StrengthImplement(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator StrengthImplement(string value) => new StrengthImplement((string?)value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator string?(StrengthImplement @this) => @this.StrengthImplementVariant26;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public StrengthImplement(string? value)
+        {
+            StrengthImplementVariant26 = value;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static StrengthImplement FromStrengthImplementVariant26(string? value) => new StrengthImplement(value);
 
         /// <summary>
         /// 
@@ -1537,7 +1597,8 @@ namespace Terra
             global::Terra.StrengthImplementVariant22? strengthImplementVariant22,
             global::Terra.StrengthImplementVariant23? strengthImplementVariant23,
             global::Terra.StrengthImplementVariant24? strengthImplementVariant24,
-            string? strengthImplementVariant25
+            global::Terra.StrengthImplementVariant25? strengthImplementVariant25,
+            string? strengthImplementVariant26
             )
         {
             StrengthImplementVariant1 = strengthImplementVariant1;
@@ -1565,12 +1626,14 @@ namespace Terra
             StrengthImplementVariant23 = strengthImplementVariant23;
             StrengthImplementVariant24 = strengthImplementVariant24;
             StrengthImplementVariant25 = strengthImplementVariant25;
+            StrengthImplementVariant26 = strengthImplementVariant26;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
+            StrengthImplementVariant26 as object ??
             StrengthImplementVariant25 as object ??
             StrengthImplementVariant24 as object ??
             StrengthImplementVariant23 as object ??
@@ -1626,7 +1689,8 @@ namespace Terra
             StrengthImplementVariant22?.ToValueString() ??
             StrengthImplementVariant23?.ToValueString() ??
             StrengthImplementVariant24?.ToValueString() ??
-            StrengthImplementVariant25?.ToString() 
+            StrengthImplementVariant25?.ToValueString() ??
+            StrengthImplementVariant26?.ToString() 
             ;
 
         /// <summary>
@@ -1634,7 +1698,7 @@ namespace Terra
         /// </summary>
         public bool Validate()
         {
-            return IsStrengthImplementVariant1 || IsStrengthImplementVariant2 || IsStrengthImplementVariant3 || IsStrengthImplementVariant4 || IsStrengthImplementVariant5 || IsStrengthImplementVariant6 || IsStrengthImplementVariant7 || IsStrengthImplementVariant8 || IsStrengthImplementVariant9 || IsStrengthImplementVariant10 || IsStrengthImplementVariant11 || IsStrengthImplementVariant12 || IsStrengthImplementVariant13 || IsStrengthImplementVariant14 || IsStrengthImplementVariant15 || IsStrengthImplementVariant16 || IsStrengthImplementVariant17 || IsStrengthImplementVariant18 || IsStrengthImplementVariant19 || IsStrengthImplementVariant20 || IsStrengthImplementVariant21 || IsStrengthImplementVariant22 || IsStrengthImplementVariant23 || IsStrengthImplementVariant24 || IsStrengthImplementVariant25;
+            return IsStrengthImplementVariant1 || IsStrengthImplementVariant2 || IsStrengthImplementVariant3 || IsStrengthImplementVariant4 || IsStrengthImplementVariant5 || IsStrengthImplementVariant6 || IsStrengthImplementVariant7 || IsStrengthImplementVariant8 || IsStrengthImplementVariant9 || IsStrengthImplementVariant10 || IsStrengthImplementVariant11 || IsStrengthImplementVariant12 || IsStrengthImplementVariant13 || IsStrengthImplementVariant14 || IsStrengthImplementVariant15 || IsStrengthImplementVariant16 || IsStrengthImplementVariant17 || IsStrengthImplementVariant18 || IsStrengthImplementVariant19 || IsStrengthImplementVariant20 || IsStrengthImplementVariant21 || IsStrengthImplementVariant22 || IsStrengthImplementVariant23 || IsStrengthImplementVariant24 || IsStrengthImplementVariant25 || IsStrengthImplementVariant26;
         }
 
         /// <summary>
@@ -1665,7 +1729,8 @@ namespace Terra
             global::System.Func<global::Terra.StrengthImplementVariant22?, TResult>? strengthImplementVariant22 = null,
             global::System.Func<global::Terra.StrengthImplementVariant23?, TResult>? strengthImplementVariant23 = null,
             global::System.Func<global::Terra.StrengthImplementVariant24?, TResult>? strengthImplementVariant24 = null,
-            global::System.Func<string, TResult>? strengthImplementVariant25 = null,
+            global::System.Func<global::Terra.StrengthImplementVariant25?, TResult>? strengthImplementVariant25 = null,
+            global::System.Func<string, TResult>? strengthImplementVariant26 = null,
             bool validate = true)
         {
             if (validate)
@@ -1773,6 +1838,10 @@ namespace Terra
             {
                 return strengthImplementVariant25(StrengthImplementVariant25!);
             }
+            else if (IsStrengthImplementVariant26 && strengthImplementVariant26 != null)
+            {
+                return strengthImplementVariant26(StrengthImplementVariant26!);
+            }
 
             return default(TResult);
         }
@@ -1829,7 +1898,9 @@ namespace Terra
 
             global::System.Action<global::Terra.StrengthImplementVariant24?>? strengthImplementVariant24 = null,
 
-            global::System.Action<string>? strengthImplementVariant25 = null,
+            global::System.Action<global::Terra.StrengthImplementVariant25?>? strengthImplementVariant25 = null,
+
+            global::System.Action<string>? strengthImplementVariant26 = null,
             bool validate = true)
         {
             if (validate)
@@ -1936,6 +2007,10 @@ namespace Terra
             else if (IsStrengthImplementVariant25)
             {
                 strengthImplementVariant25?.Invoke(StrengthImplementVariant25!);
+            }
+            else if (IsStrengthImplementVariant26)
+            {
+                strengthImplementVariant26?.Invoke(StrengthImplementVariant26!);
             }
         }
 
@@ -1967,7 +2042,8 @@ namespace Terra
             global::System.Action<global::Terra.StrengthImplementVariant22?>? strengthImplementVariant22 = null,
             global::System.Action<global::Terra.StrengthImplementVariant23?>? strengthImplementVariant23 = null,
             global::System.Action<global::Terra.StrengthImplementVariant24?>? strengthImplementVariant24 = null,
-            global::System.Action<string>? strengthImplementVariant25 = null,
+            global::System.Action<global::Terra.StrengthImplementVariant25?>? strengthImplementVariant25 = null,
+            global::System.Action<string>? strengthImplementVariant26 = null,
             bool validate = true)
         {
             if (validate)
@@ -2074,6 +2150,10 @@ namespace Terra
             else if (IsStrengthImplementVariant25)
             {
                 strengthImplementVariant25?.Invoke(StrengthImplementVariant25!);
+            }
+            else if (IsStrengthImplementVariant26)
+            {
+                strengthImplementVariant26?.Invoke(StrengthImplementVariant26!);
             }
         }
 
@@ -2133,6 +2213,8 @@ namespace Terra
                 StrengthImplementVariant24,
                 typeof(global::Terra.StrengthImplementVariant24),
                 StrengthImplementVariant25,
+                typeof(global::Terra.StrengthImplementVariant25),
+                StrengthImplementVariant26,
                 typeof(string),
             };
             const int offset = unchecked((int)2166136261);
@@ -2174,7 +2256,8 @@ namespace Terra
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthImplementVariant22?>.Default.Equals(StrengthImplementVariant22, other.StrengthImplementVariant22) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthImplementVariant23?>.Default.Equals(StrengthImplementVariant23, other.StrengthImplementVariant23) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthImplementVariant24?>.Default.Equals(StrengthImplementVariant24, other.StrengthImplementVariant24) &&
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(StrengthImplementVariant25, other.StrengthImplementVariant25) 
+                global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthImplementVariant25?>.Default.Equals(StrengthImplementVariant25, other.StrengthImplementVariant25) &&
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(StrengthImplementVariant26, other.StrengthImplementVariant26) 
                 ;
         }
 

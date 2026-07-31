@@ -603,7 +603,7 @@ namespace Terra
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMuscleVariant16' but the value was {ToString()}.");
 
         /// <summary>
-        /// The source reported a value here but it could not be resolved. Distinct from the field being absent, which means the source reported nothing at all.
+        /// 
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthMuscleVariant17? StrengthMuscleVariant17 { get; init; }
@@ -640,12 +640,12 @@ namespace Terra
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMuscleVariant17' but the value was {ToString()}.");
 
         /// <summary>
-        /// A value Terra has added since this schema was published.
+        /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public string? StrengthMuscleVariant18 { get; init; }
+        public global::Terra.StrengthMuscleVariant18? StrengthMuscleVariant18 { get; init; }
 #else
-        public string? StrengthMuscleVariant18 { get; }
+        public global::Terra.StrengthMuscleVariant18? StrengthMuscleVariant18 { get; }
 #endif
 
         /// <summary>
@@ -663,7 +663,7 @@ namespace Terra
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out string? value)
+            out global::Terra.StrengthMuscleVariant18? value)
         {
             value = StrengthMuscleVariant18;
             return IsStrengthMuscleVariant18;
@@ -672,9 +672,83 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public string PickStrengthMuscleVariant18() => IsStrengthMuscleVariant18
-            ? StrengthMuscleVariant18!
+        public global::Terra.StrengthMuscleVariant18 PickStrengthMuscleVariant18() => IsStrengthMuscleVariant18
+            ? StrengthMuscleVariant18!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMuscleVariant18' but the value was {ToString()}.");
+
+        /// <summary>
+        /// The source reported a value here but it could not be resolved. Distinct from the field being absent, which means the source reported nothing at all.
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::Terra.StrengthMuscleVariant19? StrengthMuscleVariant19 { get; init; }
+#else
+        public global::Terra.StrengthMuscleVariant19? StrengthMuscleVariant19 { get; }
+#endif
+
+        /// <summary>
+        /// 
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthMuscleVariant19))]
+#endif
+        public bool IsStrengthMuscleVariant19 => StrengthMuscleVariant19 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickStrengthMuscleVariant19(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.StrengthMuscleVariant19? value)
+        {
+            value = StrengthMuscleVariant19;
+            return IsStrengthMuscleVariant19;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthMuscleVariant19 PickStrengthMuscleVariant19() => IsStrengthMuscleVariant19
+            ? StrengthMuscleVariant19!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMuscleVariant19' but the value was {ToString()}.");
+
+        /// <summary>
+        /// A value Terra has added since this schema was published.
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public string? StrengthMuscleVariant20 { get; init; }
+#else
+        public string? StrengthMuscleVariant20 { get; }
+#endif
+
+        /// <summary>
+        /// 
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthMuscleVariant20))]
+#endif
+        public bool IsStrengthMuscleVariant20 => StrengthMuscleVariant20 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickStrengthMuscleVariant20(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out string? value)
+        {
+            value = StrengthMuscleVariant20;
+            return IsStrengthMuscleVariant20;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string PickStrengthMuscleVariant20() => IsStrengthMuscleVariant20
+            ? StrengthMuscleVariant20!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMuscleVariant20' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -1069,17 +1143,17 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator StrengthMuscle(string value) => new StrengthMuscle((string?)value);
+        public static implicit operator StrengthMuscle(global::Terra.StrengthMuscleVariant18 value) => new StrengthMuscle((global::Terra.StrengthMuscleVariant18?)value);
 
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator string?(StrengthMuscle @this) => @this.StrengthMuscleVariant18;
+        public static implicit operator global::Terra.StrengthMuscleVariant18?(StrengthMuscle @this) => @this.StrengthMuscleVariant18;
 
         /// <summary>
         /// 
         /// </summary>
-        public StrengthMuscle(string? value)
+        public StrengthMuscle(global::Terra.StrengthMuscleVariant18? value)
         {
             StrengthMuscleVariant18 = value;
         }
@@ -1087,7 +1161,53 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public static StrengthMuscle FromStrengthMuscleVariant18(string? value) => new StrengthMuscle(value);
+        public static StrengthMuscle FromStrengthMuscleVariant18(global::Terra.StrengthMuscleVariant18? value) => new StrengthMuscle(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator StrengthMuscle(global::Terra.StrengthMuscleVariant19 value) => new StrengthMuscle((global::Terra.StrengthMuscleVariant19?)value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator global::Terra.StrengthMuscleVariant19?(StrengthMuscle @this) => @this.StrengthMuscleVariant19;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public StrengthMuscle(global::Terra.StrengthMuscleVariant19? value)
+        {
+            StrengthMuscleVariant19 = value;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static StrengthMuscle FromStrengthMuscleVariant19(global::Terra.StrengthMuscleVariant19? value) => new StrengthMuscle(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator StrengthMuscle(string value) => new StrengthMuscle((string?)value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator string?(StrengthMuscle @this) => @this.StrengthMuscleVariant20;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public StrengthMuscle(string? value)
+        {
+            StrengthMuscleVariant20 = value;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static StrengthMuscle FromStrengthMuscleVariant20(string? value) => new StrengthMuscle(value);
 
         /// <summary>
         /// 
@@ -1110,7 +1230,9 @@ namespace Terra
             global::Terra.StrengthMuscleVariant15? strengthMuscleVariant15,
             global::Terra.StrengthMuscleVariant16? strengthMuscleVariant16,
             global::Terra.StrengthMuscleVariant17? strengthMuscleVariant17,
-            string? strengthMuscleVariant18
+            global::Terra.StrengthMuscleVariant18? strengthMuscleVariant18,
+            global::Terra.StrengthMuscleVariant19? strengthMuscleVariant19,
+            string? strengthMuscleVariant20
             )
         {
             StrengthMuscleVariant1 = strengthMuscleVariant1;
@@ -1131,12 +1253,16 @@ namespace Terra
             StrengthMuscleVariant16 = strengthMuscleVariant16;
             StrengthMuscleVariant17 = strengthMuscleVariant17;
             StrengthMuscleVariant18 = strengthMuscleVariant18;
+            StrengthMuscleVariant19 = strengthMuscleVariant19;
+            StrengthMuscleVariant20 = strengthMuscleVariant20;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
+            StrengthMuscleVariant20 as object ??
+            StrengthMuscleVariant19 as object ??
             StrengthMuscleVariant18 as object ??
             StrengthMuscleVariant17 as object ??
             StrengthMuscleVariant16 as object ??
@@ -1178,7 +1304,9 @@ namespace Terra
             StrengthMuscleVariant15?.ToValueString() ??
             StrengthMuscleVariant16?.ToValueString() ??
             StrengthMuscleVariant17?.ToValueString() ??
-            StrengthMuscleVariant18?.ToString() 
+            StrengthMuscleVariant18?.ToValueString() ??
+            StrengthMuscleVariant19?.ToValueString() ??
+            StrengthMuscleVariant20?.ToString() 
             ;
 
         /// <summary>
@@ -1186,7 +1314,7 @@ namespace Terra
         /// </summary>
         public bool Validate()
         {
-            return IsStrengthMuscleVariant1 || IsStrengthMuscleVariant2 || IsStrengthMuscleVariant3 || IsStrengthMuscleVariant4 || IsStrengthMuscleVariant5 || IsStrengthMuscleVariant6 || IsStrengthMuscleVariant7 || IsStrengthMuscleVariant8 || IsStrengthMuscleVariant9 || IsStrengthMuscleVariant10 || IsStrengthMuscleVariant11 || IsStrengthMuscleVariant12 || IsStrengthMuscleVariant13 || IsStrengthMuscleVariant14 || IsStrengthMuscleVariant15 || IsStrengthMuscleVariant16 || IsStrengthMuscleVariant17 || IsStrengthMuscleVariant18;
+            return IsStrengthMuscleVariant1 || IsStrengthMuscleVariant2 || IsStrengthMuscleVariant3 || IsStrengthMuscleVariant4 || IsStrengthMuscleVariant5 || IsStrengthMuscleVariant6 || IsStrengthMuscleVariant7 || IsStrengthMuscleVariant8 || IsStrengthMuscleVariant9 || IsStrengthMuscleVariant10 || IsStrengthMuscleVariant11 || IsStrengthMuscleVariant12 || IsStrengthMuscleVariant13 || IsStrengthMuscleVariant14 || IsStrengthMuscleVariant15 || IsStrengthMuscleVariant16 || IsStrengthMuscleVariant17 || IsStrengthMuscleVariant18 || IsStrengthMuscleVariant19 || IsStrengthMuscleVariant20;
         }
 
         /// <summary>
@@ -1210,7 +1338,9 @@ namespace Terra
             global::System.Func<global::Terra.StrengthMuscleVariant15?, TResult>? strengthMuscleVariant15 = null,
             global::System.Func<global::Terra.StrengthMuscleVariant16?, TResult>? strengthMuscleVariant16 = null,
             global::System.Func<global::Terra.StrengthMuscleVariant17?, TResult>? strengthMuscleVariant17 = null,
-            global::System.Func<string, TResult>? strengthMuscleVariant18 = null,
+            global::System.Func<global::Terra.StrengthMuscleVariant18?, TResult>? strengthMuscleVariant18 = null,
+            global::System.Func<global::Terra.StrengthMuscleVariant19?, TResult>? strengthMuscleVariant19 = null,
+            global::System.Func<string, TResult>? strengthMuscleVariant20 = null,
             bool validate = true)
         {
             if (validate)
@@ -1290,6 +1420,14 @@ namespace Terra
             {
                 return strengthMuscleVariant18(StrengthMuscleVariant18!);
             }
+            else if (IsStrengthMuscleVariant19 && strengthMuscleVariant19 != null)
+            {
+                return strengthMuscleVariant19(StrengthMuscleVariant19!);
+            }
+            else if (IsStrengthMuscleVariant20 && strengthMuscleVariant20 != null)
+            {
+                return strengthMuscleVariant20(StrengthMuscleVariant20!);
+            }
 
             return default(TResult);
         }
@@ -1332,7 +1470,11 @@ namespace Terra
 
             global::System.Action<global::Terra.StrengthMuscleVariant17?>? strengthMuscleVariant17 = null,
 
-            global::System.Action<string>? strengthMuscleVariant18 = null,
+            global::System.Action<global::Terra.StrengthMuscleVariant18?>? strengthMuscleVariant18 = null,
+
+            global::System.Action<global::Terra.StrengthMuscleVariant19?>? strengthMuscleVariant19 = null,
+
+            global::System.Action<string>? strengthMuscleVariant20 = null,
             bool validate = true)
         {
             if (validate)
@@ -1411,6 +1553,14 @@ namespace Terra
             else if (IsStrengthMuscleVariant18)
             {
                 strengthMuscleVariant18?.Invoke(StrengthMuscleVariant18!);
+            }
+            else if (IsStrengthMuscleVariant19)
+            {
+                strengthMuscleVariant19?.Invoke(StrengthMuscleVariant19!);
+            }
+            else if (IsStrengthMuscleVariant20)
+            {
+                strengthMuscleVariant20?.Invoke(StrengthMuscleVariant20!);
             }
         }
 
@@ -1435,7 +1585,9 @@ namespace Terra
             global::System.Action<global::Terra.StrengthMuscleVariant15?>? strengthMuscleVariant15 = null,
             global::System.Action<global::Terra.StrengthMuscleVariant16?>? strengthMuscleVariant16 = null,
             global::System.Action<global::Terra.StrengthMuscleVariant17?>? strengthMuscleVariant17 = null,
-            global::System.Action<string>? strengthMuscleVariant18 = null,
+            global::System.Action<global::Terra.StrengthMuscleVariant18?>? strengthMuscleVariant18 = null,
+            global::System.Action<global::Terra.StrengthMuscleVariant19?>? strengthMuscleVariant19 = null,
+            global::System.Action<string>? strengthMuscleVariant20 = null,
             bool validate = true)
         {
             if (validate)
@@ -1514,6 +1666,14 @@ namespace Terra
             else if (IsStrengthMuscleVariant18)
             {
                 strengthMuscleVariant18?.Invoke(StrengthMuscleVariant18!);
+            }
+            else if (IsStrengthMuscleVariant19)
+            {
+                strengthMuscleVariant19?.Invoke(StrengthMuscleVariant19!);
+            }
+            else if (IsStrengthMuscleVariant20)
+            {
+                strengthMuscleVariant20?.Invoke(StrengthMuscleVariant20!);
             }
         }
 
@@ -1559,6 +1719,10 @@ namespace Terra
                 StrengthMuscleVariant17,
                 typeof(global::Terra.StrengthMuscleVariant17),
                 StrengthMuscleVariant18,
+                typeof(global::Terra.StrengthMuscleVariant18),
+                StrengthMuscleVariant19,
+                typeof(global::Terra.StrengthMuscleVariant19),
+                StrengthMuscleVariant20,
                 typeof(string),
             };
             const int offset = unchecked((int)2166136261);
@@ -1593,7 +1757,9 @@ namespace Terra
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthMuscleVariant15?>.Default.Equals(StrengthMuscleVariant15, other.StrengthMuscleVariant15) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthMuscleVariant16?>.Default.Equals(StrengthMuscleVariant16, other.StrengthMuscleVariant16) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthMuscleVariant17?>.Default.Equals(StrengthMuscleVariant17, other.StrengthMuscleVariant17) &&
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(StrengthMuscleVariant18, other.StrengthMuscleVariant18) 
+                global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthMuscleVariant18?>.Default.Equals(StrengthMuscleVariant18, other.StrengthMuscleVariant18) &&
+                global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthMuscleVariant19?>.Default.Equals(StrengthMuscleVariant19, other.StrengthMuscleVariant19) &&
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(StrengthMuscleVariant20, other.StrengthMuscleVariant20) 
                 ;
         }
 

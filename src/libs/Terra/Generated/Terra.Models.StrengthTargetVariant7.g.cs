@@ -11,7 +11,7 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        Forearms,
+        Chest,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Terra
         {
             return value switch
             {
-                StrengthTargetVariant7.Forearms => "forearms",
+                StrengthTargetVariant7.Chest => "chest",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Terra
         {
             return value switch
             {
-                "forearms" => StrengthTargetVariant7.Forearms,
+                "chest" => StrengthTargetVariant7.Chest,
                 _ => null,
             };
         }

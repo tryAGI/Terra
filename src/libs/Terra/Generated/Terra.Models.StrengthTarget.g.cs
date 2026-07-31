@@ -862,7 +862,7 @@ namespace Terra
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthTargetVariant23' but the value was {ToString()}.");
 
         /// <summary>
-        /// The source reported a value here but it could not be resolved. Distinct from the field being absent, which means the source reported nothing at all.
+        /// 
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthTargetVariant24? StrengthTargetVariant24 { get; init; }
@@ -899,12 +899,12 @@ namespace Terra
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthTargetVariant24' but the value was {ToString()}.");
 
         /// <summary>
-        /// A value Terra has added since this schema was published.
+        /// The source reported a value here but it could not be resolved. Distinct from the field being absent, which means the source reported nothing at all.
         /// </summary>
 #if NET6_0_OR_GREATER
-        public string? StrengthTargetVariant25 { get; init; }
+        public global::Terra.StrengthTargetVariant25? StrengthTargetVariant25 { get; init; }
 #else
-        public string? StrengthTargetVariant25 { get; }
+        public global::Terra.StrengthTargetVariant25? StrengthTargetVariant25 { get; }
 #endif
 
         /// <summary>
@@ -922,7 +922,7 @@ namespace Terra
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out string? value)
+            out global::Terra.StrengthTargetVariant25? value)
         {
             value = StrengthTargetVariant25;
             return IsStrengthTargetVariant25;
@@ -931,9 +931,46 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public string PickStrengthTargetVariant25() => IsStrengthTargetVariant25
-            ? StrengthTargetVariant25!
+        public global::Terra.StrengthTargetVariant25 PickStrengthTargetVariant25() => IsStrengthTargetVariant25
+            ? StrengthTargetVariant25!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthTargetVariant25' but the value was {ToString()}.");
+
+        /// <summary>
+        /// A value Terra has added since this schema was published.
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public string? StrengthTargetVariant26 { get; init; }
+#else
+        public string? StrengthTargetVariant26 { get; }
+#endif
+
+        /// <summary>
+        /// 
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthTargetVariant26))]
+#endif
+        public bool IsStrengthTargetVariant26 => StrengthTargetVariant26 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickStrengthTargetVariant26(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out string? value)
+        {
+            value = StrengthTargetVariant26;
+            return IsStrengthTargetVariant26;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string PickStrengthTargetVariant26() => IsStrengthTargetVariant26
+            ? StrengthTargetVariant26!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthTargetVariant26' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -1489,17 +1526,17 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator StrengthTarget(string value) => new StrengthTarget((string?)value);
+        public static implicit operator StrengthTarget(global::Terra.StrengthTargetVariant25 value) => new StrengthTarget((global::Terra.StrengthTargetVariant25?)value);
 
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator string?(StrengthTarget @this) => @this.StrengthTargetVariant25;
+        public static implicit operator global::Terra.StrengthTargetVariant25?(StrengthTarget @this) => @this.StrengthTargetVariant25;
 
         /// <summary>
         /// 
         /// </summary>
-        public StrengthTarget(string? value)
+        public StrengthTarget(global::Terra.StrengthTargetVariant25? value)
         {
             StrengthTargetVariant25 = value;
         }
@@ -1507,7 +1544,30 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public static StrengthTarget FromStrengthTargetVariant25(string? value) => new StrengthTarget(value);
+        public static StrengthTarget FromStrengthTargetVariant25(global::Terra.StrengthTargetVariant25? value) => new StrengthTarget(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator StrengthTarget(string value) => new StrengthTarget((string?)value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator string?(StrengthTarget @this) => @this.StrengthTargetVariant26;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public StrengthTarget(string? value)
+        {
+            StrengthTargetVariant26 = value;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static StrengthTarget FromStrengthTargetVariant26(string? value) => new StrengthTarget(value);
 
         /// <summary>
         /// 
@@ -1537,7 +1597,8 @@ namespace Terra
             global::Terra.StrengthTargetVariant22? strengthTargetVariant22,
             global::Terra.StrengthTargetVariant23? strengthTargetVariant23,
             global::Terra.StrengthTargetVariant24? strengthTargetVariant24,
-            string? strengthTargetVariant25
+            global::Terra.StrengthTargetVariant25? strengthTargetVariant25,
+            string? strengthTargetVariant26
             )
         {
             StrengthTargetVariant1 = strengthTargetVariant1;
@@ -1565,12 +1626,14 @@ namespace Terra
             StrengthTargetVariant23 = strengthTargetVariant23;
             StrengthTargetVariant24 = strengthTargetVariant24;
             StrengthTargetVariant25 = strengthTargetVariant25;
+            StrengthTargetVariant26 = strengthTargetVariant26;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
+            StrengthTargetVariant26 as object ??
             StrengthTargetVariant25 as object ??
             StrengthTargetVariant24 as object ??
             StrengthTargetVariant23 as object ??
@@ -1626,7 +1689,8 @@ namespace Terra
             StrengthTargetVariant22?.ToValueString() ??
             StrengthTargetVariant23?.ToValueString() ??
             StrengthTargetVariant24?.ToValueString() ??
-            StrengthTargetVariant25?.ToString() 
+            StrengthTargetVariant25?.ToValueString() ??
+            StrengthTargetVariant26?.ToString() 
             ;
 
         /// <summary>
@@ -1634,7 +1698,7 @@ namespace Terra
         /// </summary>
         public bool Validate()
         {
-            return IsStrengthTargetVariant1 || IsStrengthTargetVariant2 || IsStrengthTargetVariant3 || IsStrengthTargetVariant4 || IsStrengthTargetVariant5 || IsStrengthTargetVariant6 || IsStrengthTargetVariant7 || IsStrengthTargetVariant8 || IsStrengthTargetVariant9 || IsStrengthTargetVariant10 || IsStrengthTargetVariant11 || IsStrengthTargetVariant12 || IsStrengthTargetVariant13 || IsStrengthTargetVariant14 || IsStrengthTargetVariant15 || IsStrengthTargetVariant16 || IsStrengthTargetVariant17 || IsStrengthTargetVariant18 || IsStrengthTargetVariant19 || IsStrengthTargetVariant20 || IsStrengthTargetVariant21 || IsStrengthTargetVariant22 || IsStrengthTargetVariant23 || IsStrengthTargetVariant24 || IsStrengthTargetVariant25;
+            return IsStrengthTargetVariant1 || IsStrengthTargetVariant2 || IsStrengthTargetVariant3 || IsStrengthTargetVariant4 || IsStrengthTargetVariant5 || IsStrengthTargetVariant6 || IsStrengthTargetVariant7 || IsStrengthTargetVariant8 || IsStrengthTargetVariant9 || IsStrengthTargetVariant10 || IsStrengthTargetVariant11 || IsStrengthTargetVariant12 || IsStrengthTargetVariant13 || IsStrengthTargetVariant14 || IsStrengthTargetVariant15 || IsStrengthTargetVariant16 || IsStrengthTargetVariant17 || IsStrengthTargetVariant18 || IsStrengthTargetVariant19 || IsStrengthTargetVariant20 || IsStrengthTargetVariant21 || IsStrengthTargetVariant22 || IsStrengthTargetVariant23 || IsStrengthTargetVariant24 || IsStrengthTargetVariant25 || IsStrengthTargetVariant26;
         }
 
         /// <summary>
@@ -1665,7 +1729,8 @@ namespace Terra
             global::System.Func<global::Terra.StrengthTargetVariant22?, TResult>? strengthTargetVariant22 = null,
             global::System.Func<global::Terra.StrengthTargetVariant23?, TResult>? strengthTargetVariant23 = null,
             global::System.Func<global::Terra.StrengthTargetVariant24?, TResult>? strengthTargetVariant24 = null,
-            global::System.Func<string, TResult>? strengthTargetVariant25 = null,
+            global::System.Func<global::Terra.StrengthTargetVariant25?, TResult>? strengthTargetVariant25 = null,
+            global::System.Func<string, TResult>? strengthTargetVariant26 = null,
             bool validate = true)
         {
             if (validate)
@@ -1773,6 +1838,10 @@ namespace Terra
             {
                 return strengthTargetVariant25(StrengthTargetVariant25!);
             }
+            else if (IsStrengthTargetVariant26 && strengthTargetVariant26 != null)
+            {
+                return strengthTargetVariant26(StrengthTargetVariant26!);
+            }
 
             return default(TResult);
         }
@@ -1829,7 +1898,9 @@ namespace Terra
 
             global::System.Action<global::Terra.StrengthTargetVariant24?>? strengthTargetVariant24 = null,
 
-            global::System.Action<string>? strengthTargetVariant25 = null,
+            global::System.Action<global::Terra.StrengthTargetVariant25?>? strengthTargetVariant25 = null,
+
+            global::System.Action<string>? strengthTargetVariant26 = null,
             bool validate = true)
         {
             if (validate)
@@ -1936,6 +2007,10 @@ namespace Terra
             else if (IsStrengthTargetVariant25)
             {
                 strengthTargetVariant25?.Invoke(StrengthTargetVariant25!);
+            }
+            else if (IsStrengthTargetVariant26)
+            {
+                strengthTargetVariant26?.Invoke(StrengthTargetVariant26!);
             }
         }
 
@@ -1967,7 +2042,8 @@ namespace Terra
             global::System.Action<global::Terra.StrengthTargetVariant22?>? strengthTargetVariant22 = null,
             global::System.Action<global::Terra.StrengthTargetVariant23?>? strengthTargetVariant23 = null,
             global::System.Action<global::Terra.StrengthTargetVariant24?>? strengthTargetVariant24 = null,
-            global::System.Action<string>? strengthTargetVariant25 = null,
+            global::System.Action<global::Terra.StrengthTargetVariant25?>? strengthTargetVariant25 = null,
+            global::System.Action<string>? strengthTargetVariant26 = null,
             bool validate = true)
         {
             if (validate)
@@ -2074,6 +2150,10 @@ namespace Terra
             else if (IsStrengthTargetVariant25)
             {
                 strengthTargetVariant25?.Invoke(StrengthTargetVariant25!);
+            }
+            else if (IsStrengthTargetVariant26)
+            {
+                strengthTargetVariant26?.Invoke(StrengthTargetVariant26!);
             }
         }
 
@@ -2133,6 +2213,8 @@ namespace Terra
                 StrengthTargetVariant24,
                 typeof(global::Terra.StrengthTargetVariant24),
                 StrengthTargetVariant25,
+                typeof(global::Terra.StrengthTargetVariant25),
+                StrengthTargetVariant26,
                 typeof(string),
             };
             const int offset = unchecked((int)2166136261);
@@ -2174,7 +2256,8 @@ namespace Terra
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthTargetVariant22?>.Default.Equals(StrengthTargetVariant22, other.StrengthTargetVariant22) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthTargetVariant23?>.Default.Equals(StrengthTargetVariant23, other.StrengthTargetVariant23) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthTargetVariant24?>.Default.Equals(StrengthTargetVariant24, other.StrengthTargetVariant24) &&
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(StrengthTargetVariant25, other.StrengthTargetVariant25) 
+                global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthTargetVariant25?>.Default.Equals(StrengthTargetVariant25, other.StrengthTargetVariant25) &&
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(StrengthTargetVariant26, other.StrengthTargetVariant26) 
                 ;
         }
 

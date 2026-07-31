@@ -11,7 +11,7 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        TrapBar,
+        Suspension,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Terra
         {
             return value switch
             {
-                StrengthImplementVariant22.TrapBar => "trap_bar",
+                StrengthImplementVariant22.Suspension => "suspension",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Terra
         {
             return value switch
             {
-                "trap_bar" => StrengthImplementVariant22.TrapBar,
+                "suspension" => StrengthImplementVariant22.Suspension,
                 _ => null,
             };
         }

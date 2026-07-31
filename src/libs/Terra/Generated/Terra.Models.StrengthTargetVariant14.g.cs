@@ -11,7 +11,7 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        Lat,
+        HipFlexor,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Terra
         {
             return value switch
             {
-                StrengthTargetVariant14.Lat => "lat",
+                StrengthTargetVariant14.HipFlexor => "hip_flexor",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Terra
         {
             return value switch
             {
-                "lat" => StrengthTargetVariant14.Lat,
+                "hip_flexor" => StrengthTargetVariant14.HipFlexor,
                 _ => null,
             };
         }
