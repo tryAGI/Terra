@@ -293,12 +293,23 @@ namespace Terra.JsonConverters
             }
             var __score24 = 0;
             {
-                var __ti = typeInfoResolver.GetTypeInfo(typeof(string), options);
+                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthTargetVariant25), options);
                 if (__ti != null && __ti.Kind == global::System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object)
                 {
                     foreach (var __prop in __ti.Properties)
                     {
                         if (__jsonProps.Contains(__prop.Name)) __score24++;
+                    }
+                }
+            }
+            var __score25 = 0;
+            {
+                var __ti = typeInfoResolver.GetTypeInfo(typeof(string), options);
+                if (__ti != null && __ti.Kind == global::System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object)
+                {
+                    foreach (var __prop in __ti.Properties)
+                    {
+                        if (__jsonProps.Contains(__prop.Name)) __score25++;
                     }
                 }
             }
@@ -329,6 +340,7 @@ namespace Terra.JsonConverters
             if (__score22 > __bestScore) { __bestScore = __score22; __bestIndex = 22; }
             if (__score23 > __bestScore) { __bestScore = __score23; __bestIndex = 23; }
             if (__score24 > __bestScore) { __bestScore = __score24; __bestIndex = 24; }
+            if (__score25 > __bestScore) { __bestScore = __score25; __bestIndex = 25; }
 
             global::Terra.StrengthTargetVariant1? strengthTargetVariant1 = default;
             global::Terra.StrengthTargetVariant2? strengthTargetVariant2 = default;
@@ -354,7 +366,8 @@ namespace Terra.JsonConverters
             global::Terra.StrengthTargetVariant22? strengthTargetVariant22 = default;
             global::Terra.StrengthTargetVariant23? strengthTargetVariant23 = default;
             global::Terra.StrengthTargetVariant24? strengthTargetVariant24 = default;
-            string? strengthTargetVariant25 = default;
+            global::Terra.StrengthTargetVariant25? strengthTargetVariant25 = default;
+            string? strengthTargetVariant26 = default;
             if (__bestIndex >= 0)
             {
                 if (__bestIndex == 0)
@@ -770,9 +783,26 @@ namespace Terra.JsonConverters
                     try
                     {
 
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthTargetVariant25), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthTargetVariant25> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthTargetVariant25).Name}");
+                        strengthTargetVariant25 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+
+                else if (__bestIndex == 25)
+                {
+                    try
+                    {
+
                         var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string> ??
                                        throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
-                        strengthTargetVariant25 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        strengthTargetVariant26 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -783,7 +813,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null)
+            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null && strengthTargetVariant26 == null)
             {
                 try
                 {
@@ -800,7 +830,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null)
+            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null && strengthTargetVariant26 == null)
             {
                 try
                 {
@@ -817,7 +847,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null)
+            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null && strengthTargetVariant26 == null)
             {
                 try
                 {
@@ -834,7 +864,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null)
+            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null && strengthTargetVariant26 == null)
             {
                 try
                 {
@@ -851,7 +881,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null)
+            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null && strengthTargetVariant26 == null)
             {
                 try
                 {
@@ -868,7 +898,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null)
+            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null && strengthTargetVariant26 == null)
             {
                 try
                 {
@@ -885,7 +915,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null)
+            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null && strengthTargetVariant26 == null)
             {
                 try
                 {
@@ -902,7 +932,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null)
+            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null && strengthTargetVariant26 == null)
             {
                 try
                 {
@@ -919,7 +949,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null)
+            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null && strengthTargetVariant26 == null)
             {
                 try
                 {
@@ -936,7 +966,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null)
+            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null && strengthTargetVariant26 == null)
             {
                 try
                 {
@@ -953,7 +983,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null)
+            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null && strengthTargetVariant26 == null)
             {
                 try
                 {
@@ -970,7 +1000,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null)
+            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null && strengthTargetVariant26 == null)
             {
                 try
                 {
@@ -987,7 +1017,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null)
+            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null && strengthTargetVariant26 == null)
             {
                 try
                 {
@@ -1004,7 +1034,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null)
+            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null && strengthTargetVariant26 == null)
             {
                 try
                 {
@@ -1021,7 +1051,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null)
+            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null && strengthTargetVariant26 == null)
             {
                 try
                 {
@@ -1038,7 +1068,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null)
+            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null && strengthTargetVariant26 == null)
             {
                 try
                 {
@@ -1055,7 +1085,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null)
+            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null && strengthTargetVariant26 == null)
             {
                 try
                 {
@@ -1072,7 +1102,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null)
+            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null && strengthTargetVariant26 == null)
             {
                 try
                 {
@@ -1089,7 +1119,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null)
+            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null && strengthTargetVariant26 == null)
             {
                 try
                 {
@@ -1106,7 +1136,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null)
+            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null && strengthTargetVariant26 == null)
             {
                 try
                 {
@@ -1123,7 +1153,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null)
+            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null && strengthTargetVariant26 == null)
             {
                 try
                 {
@@ -1140,7 +1170,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null)
+            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null && strengthTargetVariant26 == null)
             {
                 try
                 {
@@ -1157,7 +1187,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null)
+            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null && strengthTargetVariant26 == null)
             {
                 try
                 {
@@ -1174,7 +1204,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null)
+            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null && strengthTargetVariant26 == null)
             {
                 try
                 {
@@ -1191,14 +1221,31 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null)
+            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null && strengthTargetVariant26 == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthTargetVariant25), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthTargetVariant25> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthTargetVariant25).Name}");
+                    strengthTargetVariant25 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (strengthTargetVariant1 == null && strengthTargetVariant2 == null && strengthTargetVariant3 == null && strengthTargetVariant4 == null && strengthTargetVariant5 == null && strengthTargetVariant6 == null && strengthTargetVariant7 == null && strengthTargetVariant8 == null && strengthTargetVariant9 == null && strengthTargetVariant10 == null && strengthTargetVariant11 == null && strengthTargetVariant12 == null && strengthTargetVariant13 == null && strengthTargetVariant14 == null && strengthTargetVariant15 == null && strengthTargetVariant16 == null && strengthTargetVariant17 == null && strengthTargetVariant18 == null && strengthTargetVariant19 == null && strengthTargetVariant20 == null && strengthTargetVariant21 == null && strengthTargetVariant22 == null && strengthTargetVariant23 == null && strengthTargetVariant24 == null && strengthTargetVariant25 == null && strengthTargetVariant26 == null)
             {
                 try
                 {
 
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
-                    strengthTargetVariant25 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    strengthTargetVariant26 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -1257,7 +1304,9 @@ namespace Terra.JsonConverters
 
                 strengthTargetVariant24,
 
-                strengthTargetVariant25
+                strengthTargetVariant25,
+
+                strengthTargetVariant26
                 );
 
             return __value;
@@ -1418,9 +1467,15 @@ namespace Terra.JsonConverters
             }
             else if (value.IsStrengthTargetVariant25)
             {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthTargetVariant25), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthTargetVariant25> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthTargetVariant25).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthTargetVariant25!.Value, typeInfo);
+            }
+            else if (value.IsStrengthTargetVariant26)
+            {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthTargetVariant25!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthTargetVariant26!, typeInfo);
             }
         }
     }

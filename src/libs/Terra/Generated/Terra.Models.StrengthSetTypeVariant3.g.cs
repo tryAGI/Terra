@@ -11,7 +11,7 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        Warmup,
+        Dropset,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Terra
         {
             return value switch
             {
-                StrengthSetTypeVariant3.Warmup => "warmup",
+                StrengthSetTypeVariant3.Dropset => "dropset",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Terra
         {
             return value switch
             {
-                "warmup" => StrengthSetTypeVariant3.Warmup,
+                "dropset" => StrengthSetTypeVariant3.Dropset,
                 _ => null,
             };
         }

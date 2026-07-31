@@ -11,7 +11,7 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        LowerBack,
+        Lat,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Terra
         {
             return value switch
             {
-                StrengthTargetVariant15.LowerBack => "lower_back",
+                StrengthTargetVariant15.Lat => "lat",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Terra
         {
             return value switch
             {
-                "lower_back" => StrengthTargetVariant15.LowerBack,
+                "lat" => StrengthTargetVariant15.Lat,
                 _ => null,
             };
         }

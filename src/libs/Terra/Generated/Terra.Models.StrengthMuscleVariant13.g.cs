@@ -11,7 +11,7 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        Quadriceps,
+        Neck,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Terra
         {
             return value switch
             {
-                StrengthMuscleVariant13.Quadriceps => "quadriceps",
+                StrengthMuscleVariant13.Neck => "neck",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Terra
         {
             return value switch
             {
-                "quadriceps" => StrengthMuscleVariant13.Quadriceps,
+                "neck" => StrengthMuscleVariant13.Neck,
                 _ => null,
             };
         }

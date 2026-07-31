@@ -11,7 +11,7 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        HipAbductor,
+        Hip,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Terra
         {
             return value switch
             {
-                StrengthTargetVariant11.HipAbductor => "hip_abductor",
+                StrengthTargetVariant11.Hip => "hip",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Terra
         {
             return value switch
             {
-                "hip_abductor" => StrengthTargetVariant11.HipAbductor,
+                "hip" => StrengthTargetVariant11.Hip,
                 _ => null,
             };
         }

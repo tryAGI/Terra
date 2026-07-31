@@ -11,7 +11,7 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        LowerBack,
+        HipFlexor,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Terra
         {
             return value switch
             {
-                StrengthMuscleVariant11.LowerBack => "lower_back",
+                StrengthMuscleVariant11.HipFlexor => "hip_flexor",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Terra
         {
             return value switch
             {
-                "lower_back" => StrengthMuscleVariant11.LowerBack,
+                "hip_flexor" => StrengthMuscleVariant11.HipFlexor,
                 _ => null,
             };
         }

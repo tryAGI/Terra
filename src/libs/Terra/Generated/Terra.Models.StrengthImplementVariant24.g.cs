@@ -4,14 +4,14 @@
 namespace Terra
 {
     /// <summary>
-    /// The source reported a value here but it could not be resolved. Distinct from the field being absent, which means the source reported nothing at all.
+    /// 
     /// </summary>
     public enum StrengthImplementVariant24
     {
         /// <summary>
         /// 
         /// </summary>
-        Unknown,
+        WeightPlate,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Terra
         {
             return value switch
             {
-                StrengthImplementVariant24.Unknown => "unknown",
+                StrengthImplementVariant24.WeightPlate => "weight_plate",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Terra
         {
             return value switch
             {
-                "unknown" => StrengthImplementVariant24.Unknown,
+                "weight_plate" => StrengthImplementVariant24.WeightPlate,
                 _ => null,
             };
         }

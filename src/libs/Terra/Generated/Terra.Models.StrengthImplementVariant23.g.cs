@@ -11,7 +11,7 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        WeightPlate,
+        TrapBar,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Terra
         {
             return value switch
             {
-                StrengthImplementVariant23.WeightPlate => "weight_plate",
+                StrengthImplementVariant23.TrapBar => "trap_bar",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Terra
         {
             return value switch
             {
-                "weight_plate" => StrengthImplementVariant23.WeightPlate,
+                "trap_bar" => StrengthImplementVariant23.TrapBar,
                 _ => null,
             };
         }

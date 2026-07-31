@@ -73,12 +73,45 @@ namespace Terra.JsonConverters
             }
             var __score4 = 0;
             {
-                var __ti = typeInfoResolver.GetTypeInfo(typeof(string), options);
+                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthSetTypeVariant5), options);
                 if (__ti != null && __ti.Kind == global::System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object)
                 {
                     foreach (var __prop in __ti.Properties)
                     {
                         if (__jsonProps.Contains(__prop.Name)) __score4++;
+                    }
+                }
+            }
+            var __score5 = 0;
+            {
+                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthSetTypeVariant6), options);
+                if (__ti != null && __ti.Kind == global::System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object)
+                {
+                    foreach (var __prop in __ti.Properties)
+                    {
+                        if (__jsonProps.Contains(__prop.Name)) __score5++;
+                    }
+                }
+            }
+            var __score6 = 0;
+            {
+                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthSetTypeVariant7), options);
+                if (__ti != null && __ti.Kind == global::System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object)
+                {
+                    foreach (var __prop in __ti.Properties)
+                    {
+                        if (__jsonProps.Contains(__prop.Name)) __score6++;
+                    }
+                }
+            }
+            var __score7 = 0;
+            {
+                var __ti = typeInfoResolver.GetTypeInfo(typeof(string), options);
+                if (__ti != null && __ti.Kind == global::System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object)
+                {
+                    foreach (var __prop in __ti.Properties)
+                    {
+                        if (__jsonProps.Contains(__prop.Name)) __score7++;
                     }
                 }
             }
@@ -89,12 +122,18 @@ namespace Terra.JsonConverters
             if (__score2 > __bestScore) { __bestScore = __score2; __bestIndex = 2; }
             if (__score3 > __bestScore) { __bestScore = __score3; __bestIndex = 3; }
             if (__score4 > __bestScore) { __bestScore = __score4; __bestIndex = 4; }
+            if (__score5 > __bestScore) { __bestScore = __score5; __bestIndex = 5; }
+            if (__score6 > __bestScore) { __bestScore = __score6; __bestIndex = 6; }
+            if (__score7 > __bestScore) { __bestScore = __score7; __bestIndex = 7; }
 
             global::Terra.StrengthSetTypeVariant1? strengthSetTypeVariant1 = default;
             global::Terra.StrengthSetTypeVariant2? strengthSetTypeVariant2 = default;
             global::Terra.StrengthSetTypeVariant3? strengthSetTypeVariant3 = default;
             global::Terra.StrengthSetTypeVariant4? strengthSetTypeVariant4 = default;
-            string? strengthSetTypeVariant5 = default;
+            global::Terra.StrengthSetTypeVariant5? strengthSetTypeVariant5 = default;
+            global::Terra.StrengthSetTypeVariant6? strengthSetTypeVariant6 = default;
+            global::Terra.StrengthSetTypeVariant7? strengthSetTypeVariant7 = default;
+            string? strengthSetTypeVariant8 = default;
             if (__bestIndex >= 0)
             {
                 if (__bestIndex == 0)
@@ -170,9 +209,60 @@ namespace Terra.JsonConverters
                     try
                     {
 
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthSetTypeVariant5), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthSetTypeVariant5> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthSetTypeVariant5).Name}");
+                        strengthSetTypeVariant5 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+
+                else if (__bestIndex == 5)
+                {
+                    try
+                    {
+
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthSetTypeVariant6), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthSetTypeVariant6> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthSetTypeVariant6).Name}");
+                        strengthSetTypeVariant6 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+
+                else if (__bestIndex == 6)
+                {
+                    try
+                    {
+
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthSetTypeVariant7), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthSetTypeVariant7> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthSetTypeVariant7).Name}");
+                        strengthSetTypeVariant7 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+
+                else if (__bestIndex == 7)
+                {
+                    try
+                    {
+
                         var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string> ??
                                        throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
-                        strengthSetTypeVariant5 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        strengthSetTypeVariant8 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -183,7 +273,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthSetTypeVariant1 == null && strengthSetTypeVariant2 == null && strengthSetTypeVariant3 == null && strengthSetTypeVariant4 == null && strengthSetTypeVariant5 == null)
+            if (strengthSetTypeVariant1 == null && strengthSetTypeVariant2 == null && strengthSetTypeVariant3 == null && strengthSetTypeVariant4 == null && strengthSetTypeVariant5 == null && strengthSetTypeVariant6 == null && strengthSetTypeVariant7 == null && strengthSetTypeVariant8 == null)
             {
                 try
                 {
@@ -200,7 +290,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthSetTypeVariant1 == null && strengthSetTypeVariant2 == null && strengthSetTypeVariant3 == null && strengthSetTypeVariant4 == null && strengthSetTypeVariant5 == null)
+            if (strengthSetTypeVariant1 == null && strengthSetTypeVariant2 == null && strengthSetTypeVariant3 == null && strengthSetTypeVariant4 == null && strengthSetTypeVariant5 == null && strengthSetTypeVariant6 == null && strengthSetTypeVariant7 == null && strengthSetTypeVariant8 == null)
             {
                 try
                 {
@@ -217,7 +307,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthSetTypeVariant1 == null && strengthSetTypeVariant2 == null && strengthSetTypeVariant3 == null && strengthSetTypeVariant4 == null && strengthSetTypeVariant5 == null)
+            if (strengthSetTypeVariant1 == null && strengthSetTypeVariant2 == null && strengthSetTypeVariant3 == null && strengthSetTypeVariant4 == null && strengthSetTypeVariant5 == null && strengthSetTypeVariant6 == null && strengthSetTypeVariant7 == null && strengthSetTypeVariant8 == null)
             {
                 try
                 {
@@ -234,7 +324,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthSetTypeVariant1 == null && strengthSetTypeVariant2 == null && strengthSetTypeVariant3 == null && strengthSetTypeVariant4 == null && strengthSetTypeVariant5 == null)
+            if (strengthSetTypeVariant1 == null && strengthSetTypeVariant2 == null && strengthSetTypeVariant3 == null && strengthSetTypeVariant4 == null && strengthSetTypeVariant5 == null && strengthSetTypeVariant6 == null && strengthSetTypeVariant7 == null && strengthSetTypeVariant8 == null)
             {
                 try
                 {
@@ -251,14 +341,65 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthSetTypeVariant1 == null && strengthSetTypeVariant2 == null && strengthSetTypeVariant3 == null && strengthSetTypeVariant4 == null && strengthSetTypeVariant5 == null)
+            if (strengthSetTypeVariant1 == null && strengthSetTypeVariant2 == null && strengthSetTypeVariant3 == null && strengthSetTypeVariant4 == null && strengthSetTypeVariant5 == null && strengthSetTypeVariant6 == null && strengthSetTypeVariant7 == null && strengthSetTypeVariant8 == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthSetTypeVariant5), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthSetTypeVariant5> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthSetTypeVariant5).Name}");
+                    strengthSetTypeVariant5 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (strengthSetTypeVariant1 == null && strengthSetTypeVariant2 == null && strengthSetTypeVariant3 == null && strengthSetTypeVariant4 == null && strengthSetTypeVariant5 == null && strengthSetTypeVariant6 == null && strengthSetTypeVariant7 == null && strengthSetTypeVariant8 == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthSetTypeVariant6), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthSetTypeVariant6> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthSetTypeVariant6).Name}");
+                    strengthSetTypeVariant6 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (strengthSetTypeVariant1 == null && strengthSetTypeVariant2 == null && strengthSetTypeVariant3 == null && strengthSetTypeVariant4 == null && strengthSetTypeVariant5 == null && strengthSetTypeVariant6 == null && strengthSetTypeVariant7 == null && strengthSetTypeVariant8 == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthSetTypeVariant7), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthSetTypeVariant7> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthSetTypeVariant7).Name}");
+                    strengthSetTypeVariant7 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (strengthSetTypeVariant1 == null && strengthSetTypeVariant2 == null && strengthSetTypeVariant3 == null && strengthSetTypeVariant4 == null && strengthSetTypeVariant5 == null && strengthSetTypeVariant6 == null && strengthSetTypeVariant7 == null && strengthSetTypeVariant8 == null)
             {
                 try
                 {
 
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
-                    strengthSetTypeVariant5 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    strengthSetTypeVariant8 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -277,7 +418,13 @@ namespace Terra.JsonConverters
 
                 strengthSetTypeVariant4,
 
-                strengthSetTypeVariant5
+                strengthSetTypeVariant5,
+
+                strengthSetTypeVariant6,
+
+                strengthSetTypeVariant7,
+
+                strengthSetTypeVariant8
                 );
 
             return __value;
@@ -318,9 +465,27 @@ namespace Terra.JsonConverters
             }
             else if (value.IsStrengthSetTypeVariant5)
             {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthSetTypeVariant5), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthSetTypeVariant5> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthSetTypeVariant5).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthSetTypeVariant5!.Value, typeInfo);
+            }
+            else if (value.IsStrengthSetTypeVariant6)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthSetTypeVariant6), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthSetTypeVariant6> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthSetTypeVariant6).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthSetTypeVariant6!.Value, typeInfo);
+            }
+            else if (value.IsStrengthSetTypeVariant7)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthSetTypeVariant7), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthSetTypeVariant7> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthSetTypeVariant7).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthSetTypeVariant7!.Value, typeInfo);
+            }
+            else if (value.IsStrengthSetTypeVariant8)
+            {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthSetTypeVariant5!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthSetTypeVariant8!, typeInfo);
             }
         }
     }

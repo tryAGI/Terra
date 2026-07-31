@@ -11,7 +11,7 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        Neck,
+        LowerBack,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Terra
         {
             return value switch
             {
-                StrengthMuscleVariant12.Neck => "neck",
+                StrengthMuscleVariant12.LowerBack => "lower_back",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Terra
         {
             return value switch
             {
-                "neck" => StrengthMuscleVariant12.Neck,
+                "lower_back" => StrengthMuscleVariant12.LowerBack,
                 _ => null,
             };
         }

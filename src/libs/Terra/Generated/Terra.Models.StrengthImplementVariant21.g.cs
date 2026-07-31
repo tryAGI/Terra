@@ -11,7 +11,7 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        Suspension,
+        SmithMachine,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Terra
         {
             return value switch
             {
-                StrengthImplementVariant21.Suspension => "suspension",
+                StrengthImplementVariant21.SmithMachine => "smith_machine",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Terra
         {
             return value switch
             {
-                "suspension" => StrengthImplementVariant21.Suspension,
+                "smith_machine" => StrengthImplementVariant21.SmithMachine,
                 _ => null,
             };
         }
