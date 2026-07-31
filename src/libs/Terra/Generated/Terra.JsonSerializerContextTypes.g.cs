@@ -160,1579 +160,2979 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.PowerData? Type33 { get; set; }
+        public global::Terra.ActivityStrengthData2? Type33 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.StrainData? Type34 { get; set; }
+        public global::Terra.PowerData? Type34 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.TSSData? Type35 { get; set; }
+        public global::Terra.StrainData? Type35 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkData? Type36 { get; set; }
+        public global::Terra.TSSData? Type36 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.Athlete? Type37 { get; set; }
+        public global::Terra.WorkData? Type37 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public int? Type38 { get; set; }
+        public global::Terra.Athlete? Type38 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AthleteCollection? Type39 { get; set; }
+        public int? Type39 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.Body? Type40 { get; set; }
+        public global::Terra.AthleteCollection? Type40 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.BloodPressureData? Type41 { get; set; }
+        public global::Terra.Body? Type41 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.HeartData? Type42 { get; set; }
+        public global::Terra.BloodPressureData? Type42 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.HydrationData? Type43 { get; set; }
+        public global::Terra.HeartData? Type43 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.KetoneData? Type44 { get; set; }
+        public global::Terra.HydrationData? Type44 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.MeasurementsData? Type45 { get; set; }
+        public global::Terra.KetoneData? Type45 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.BodyMetadata? Type46 { get; set; }
+        public global::Terra.MeasurementsData? Type46 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.TemperatureData? Type47 { get; set; }
+        public global::Terra.BodyMetadata? Type47 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.GlucoseData? Type48 { get; set; }
+        public global::Terra.TemperatureData? Type48 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.Daily? Type49 { get; set; }
+        public global::Terra.GlucoseData? Type49 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.DailyDataEnrichment2? Type50 { get; set; }
+        public global::Terra.Daily? Type50 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.DailyDistanceData2? Type51 { get; set; }
+        public global::Terra.DailyDataEnrichment2? Type51 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.DailyMetadata? Type52 { get; set; }
+        public global::Terra.DailyDistanceData2? Type52 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.ScoresData? Type53 { get; set; }
+        public global::Terra.DailyMetadata? Type53 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.StressData? Type54 { get; set; }
+        public global::Terra.ScoresData? Type54 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.TagData? Type55 { get; set; }
+        public global::Terra.StressData? Type55 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.Menstruation? Type56 { get; set; }
+        public global::Terra.TagData? Type56 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.MenstruationMetadata? Type57 { get; set; }
+        public global::Terra.Menstruation? Type57 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.MenstruationData? Type58 { get; set; }
+        public global::Terra.MenstruationMetadata? Type58 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.HormoneSample? Type59 { get; set; }
+        public global::Terra.MenstruationData? Type59 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.Connection? Type60 { get; set; }
+        public global::Terra.HormoneSample? Type60 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<string>? Type61 { get; set; }
+        public global::Terra.Connection? Type61 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.Nutrition? Type62 { get; set; }
+        public global::System.Collections.Generic.IList<string>? Type62 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.DrinkSample>? Type63 { get; set; }
+        public global::Terra.Nutrition? Type63 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.DrinkSample? Type64 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.DrinkSample>? Type64 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.Meal>? Type65 { get; set; }
+        public global::Terra.DrinkSample? Type65 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.Meal? Type66 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.Meal>? Type66 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.NutritionMetadata? Type67 { get; set; }
+        public global::Terra.Meal? Type67 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.NutritionSummary2? Type68 { get; set; }
+        public global::Terra.NutritionMetadata? Type68 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.Sleep? Type69 { get; set; }
+        public global::Terra.NutritionSummary2? Type69 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.SleepDataEnrichment2? Type70 { get; set; }
+        public global::Terra.Sleep? Type70 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.SleepMetadata? Type71 { get; set; }
+        public global::Terra.SleepDataEnrichment2? Type71 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.ReadinessData? Type72 { get; set; }
+        public global::Terra.SleepMetadata? Type72 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.RespirationData? Type73 { get; set; }
+        public global::Terra.ReadinessData? Type73 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.SleepScores2? Type74 { get; set; }
+        public global::Terra.RespirationData? Type74 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.SleepDurationsData? Type75 { get; set; }
+        public global::Terra.SleepScores2? Type75 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.SleepTemperatureData2? Type76 { get; set; }
+        public global::Terra.SleepDurationsData? Type76 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AuthSuccessEvent? Type77 { get; set; }
+        public global::Terra.SleepTemperatureData2? Type77 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AuthErrorEvent? Type78 { get; set; }
+        public global::Terra.AuthSuccessEvent? Type78 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.PermissionChangeEvent? Type79 { get; set; }
+        public global::Terra.AuthErrorEvent? Type79 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.UserReauthEvent? Type80 { get; set; }
+        public global::Terra.PermissionChangeEvent? Type80 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.DeauthEvent? Type81 { get; set; }
+        public global::Terra.UserReauthEvent? Type81 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AccessRevokedEvent? Type82 { get; set; }
+        public global::Terra.DeauthEvent? Type82 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.ConnectionErrorEvent? Type83 { get; set; }
+        public global::Terra.AccessRevokedEvent? Type83 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LargeRequestSendingEvent? Type84 { get; set; }
+        public global::Terra.ConnectionErrorEvent? Type84 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LargeRequestProcessingEvent? Type85 { get; set; }
+        public global::Terra.LargeRequestSendingEvent? Type85 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.S3PayloadEvent? Type86 { get; set; }
+        public global::Terra.LargeRequestProcessingEvent? Type86 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.ActivityEvent? Type87 { get; set; }
+        public global::Terra.S3PayloadEvent? Type87 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.DailyEvent? Type88 { get; set; }
+        public global::Terra.ActivityEvent? Type88 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.NutritionEvent? Type89 { get; set; }
+        public global::Terra.DailyEvent? Type89 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AthleteEvent? Type90 { get; set; }
+        public global::Terra.NutritionEvent? Type90 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.SleepEvent? Type91 { get; set; }
+        public global::Terra.AthleteEvent? Type91 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.MenstruationEvent? Type92 { get; set; }
+        public global::Terra.SleepEvent? Type92 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.BodyEvent? Type93 { get; set; }
+        public global::Terra.MenstruationEvent? Type93 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.PlannedWorkoutEvent? Type94 { get; set; }
+        public global::Terra.BodyEvent? Type94 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.HormoneEvent? Type95 { get; set; }
+        public global::Terra.PlannedWorkoutEvent? Type95 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.HealthObservationEvent? Type96 { get; set; }
+        public global::Terra.HormoneEvent? Type96 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportWebhook? Type97 { get; set; }
+        public global::Terra.HealthObservationEvent? Type97 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportCompletedEvent? Type98 { get; set; }
+        public global::Terra.LabReportWebhook? Type98 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportFailedEvent? Type99 { get; set; }
+        public global::Terra.LabReportCompletedEvent? Type99 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.IntegrationsResponse? Type100 { get; set; }
+        public global::Terra.LabReportFailedEvent? Type100 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.IntegrationProvider>? Type101 { get; set; }
+        public global::Terra.IntegrationsResponse? Type101 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.IntegrationProvider? Type102 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.IntegrationProvider>? Type102 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.IntegrationProviderTypes? Type103 { get; set; }
+        public global::Terra.IntegrationProvider? Type103 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WebhookEventType? Type104 { get; set; }
+        public global::Terra.IntegrationProviderTypes? Type104 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportUploadResponse? Type105 { get; set; }
+        public global::Terra.WebhookEventType? Type105 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportReprocessResponse? Type106 { get; set; }
+        public global::Terra.LabReportUploadResponse? Type106 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportListResponse? Type107 { get; set; }
+        public global::Terra.LabReportReprocessResponse? Type107 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.LabReportSession>? Type108 { get; set; }
+        public global::Terra.LabReportListResponse? Type108 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportSession? Type109 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.LabReportSession>? Type109 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public long? Type110 { get; set; }
+        public global::Terra.LabReportSession? Type110 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.LabReportStatusEntry>? Type111 { get; set; }
+        public long? Type111 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportStatusEntry? Type112 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.LabReportStatusEntry>? Type112 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.LabReportResult>? Type113 { get; set; }
+        public global::Terra.LabReportStatusEntry? Type113 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportResult? Type114 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.LabReportResult>? Type114 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.LabReportPanel>? Type115 { get; set; }
+        public global::Terra.LabReportResult? Type115 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportPanel? Type116 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.LabReportPanel>? Type116 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportResultSource? Type117 { get; set; }
+        public global::Terra.LabReportPanel? Type117 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportBiomarker? Type118 { get; set; }
+        public global::Terra.LabReportResultSource? Type118 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportMeasurement? Type119 { get; set; }
+        public global::Terra.LabReportBiomarker? Type119 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportInterpretation? Type120 { get; set; }
+        public global::Terra.LabReportMeasurement? Type120 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.LabReportReferenceRange>? Type121 { get; set; }
+        public global::Terra.LabReportInterpretation? Type121 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportReferenceRange? Type122 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.LabReportReferenceRange>? Type122 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportBoundedValue? Type123 { get; set; }
+        public global::Terra.LabReportReferenceRange? Type123 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportQualitativeValue? Type124 { get; set; }
+        public global::Terra.LabReportBoundedValue? Type124 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportAppliedRange? Type125 { get; set; }
+        public global::Terra.LabReportQualitativeValue? Type125 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportRangeContext? Type126 { get; set; }
+        public global::Terra.LabReportAppliedRange? Type126 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportDeliveriesResponse? Type127 { get; set; }
+        public global::Terra.LabReportRangeContext? Type127 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.LabReportDelivery>? Type128 { get; set; }
+        public global::Terra.LabReportDeliveriesResponse? Type128 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportDelivery? Type129 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.LabReportDelivery>? Type129 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportFilesResponse? Type130 { get; set; }
+        public global::Terra.LabReportDelivery? Type130 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.LabReportFile>? Type131 { get; set; }
+        public global::Terra.LabReportFilesResponse? Type131 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportFile? Type132 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.LabReportFile>? Type132 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportArtifactsResponse? Type133 { get; set; }
+        public global::Terra.LabReportFile? Type133 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.ActivityLevelSample? Type134 { get; set; }
+        public global::Terra.LabReportArtifactsResponse? Type134 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.ActivityLevelSample>? Type135 { get; set; }
+        public global::Terra.ActivityLevelSample? Type135 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.CalorieSample? Type136 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.ActivityLevelSample>? Type136 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.CalorieSample>? Type137 { get; set; }
+        public global::Terra.CalorieSample? Type137 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.RecordFloat? Type138 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.CalorieSample>? Type138 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.DeviceDataType? Type139 { get; set; }
+        public global::Terra.RecordFloat? Type139 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OtherDeviceData? Type140 { get; set; }
+        public global::Terra.DeviceDataType? Type140 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.DeviceDataType>? Type141 { get; set; }
+        public global::Terra.OtherDeviceData? Type141 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.OtherDeviceData>? Type142 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.DeviceDataType>? Type142 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.DistanceSample? Type143 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.OtherDeviceData>? Type143 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.ElevationSample? Type144 { get; set; }
+        public global::Terra.DistanceSample? Type144 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.FloorsClimbedSample? Type145 { get; set; }
+        public global::Terra.ElevationSample? Type145 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.StepSample? Type146 { get; set; }
+        public global::Terra.FloorsClimbedSample? Type146 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.DistanceDataDetailed? Type147 { get; set; }
+        public global::Terra.StepSample? Type147 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.DistanceSample>? Type148 { get; set; }
+        public global::Terra.DistanceDataDetailed? Type148 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.ElevationSample>? Type149 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.DistanceSample>? Type149 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.FloorsClimbedSample>? Type150 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.ElevationSample>? Type150 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.StepSample>? Type151 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.FloorsClimbedSample>? Type151 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.ElevationData? Type152 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.StepSample>? Type152 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.SwimmingData? Type153 { get; set; }
+        public global::Terra.ElevationData? Type153 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.DistanceDataSummary? Type154 { get; set; }
+        public global::Terra.SwimmingData? Type154 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.HeartRateDataSample? Type155 { get; set; }
+        public global::Terra.DistanceDataSummary? Type155 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.HeartRateVariabilityDataSampleRMSSD? Type156 { get; set; }
+        public global::Terra.HeartRateDataSample? Type156 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.HeartRateVariabilityDataSampleSDNN? Type157 { get; set; }
+        public global::Terra.HeartRateVariabilityDataSampleRMSSD? Type157 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.HeartRateDataDetailed? Type158 { get; set; }
+        public global::Terra.HeartRateVariabilityDataSampleSDNN? Type158 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.HeartRateDataSample>? Type159 { get; set; }
+        public global::Terra.HeartRateDataDetailed? Type159 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.HeartRateVariabilityDataSampleRMSSD>? Type160 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.HeartRateDataSample>? Type160 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.HeartRateVariabilityDataSampleSDNN>? Type161 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.HeartRateVariabilityDataSampleRMSSD>? Type161 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.HeartRateZoneData? Type162 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.HeartRateVariabilityDataSampleSDNN>? Type162 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.HeartRateDataSummary? Type163 { get; set; }
+        public global::Terra.HeartRateZoneData? Type163 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.HeartRateZoneData>? Type164 { get; set; }
+        public global::Terra.HeartRateDataSummary? Type164 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LapSample? Type165 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.HeartRateZoneData>? Type165 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.LapSample>? Type166 { get; set; }
+        public global::Terra.LapSample? Type166 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.METSample? Type167 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.LapSample>? Type167 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.METSample>? Type168 { get; set; }
+        public global::Terra.METSample? Type168 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.CadenceSample? Type169 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.METSample>? Type169 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.SpeedSample? Type170 { get; set; }
+        public global::Terra.CadenceSample? Type170 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.TorqueSample? Type171 { get; set; }
+        public global::Terra.SpeedSample? Type171 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.CadenceSample>? Type172 { get; set; }
+        public global::Terra.TorqueSample? Type172 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.SpeedSample>? Type173 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.CadenceSample>? Type173 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.TorqueSample>? Type174 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.SpeedSample>? Type174 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OxygenSaturationSample? Type175 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.TorqueSample>? Type175 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.Vo2MaxSample? Type176 { get; set; }
+        public global::Terra.OxygenSaturationSample? Type176 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.OxygenSaturationSample>? Type177 { get; set; }
+        public global::Terra.Vo2MaxSample? Type177 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.Vo2MaxSample>? Type178 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.OxygenSaturationSample>? Type178 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.PositionSample? Type179 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.Vo2MaxSample>? Type179 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public byte[]? Type180 { get; set; }
+        public global::Terra.PositionSample? Type180 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<double>? Type181 { get; set; }
+        public byte[]? Type181 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.PositionSample>? Type182 { get; set; }
+        public global::System.Collections.Generic.IList<double>? Type182 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.PowerSample? Type183 { get; set; }
+        public global::System.Collections.Generic.IList<global::Terra.PositionSample>? Type183 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.PowerSample>? Type184 { get; set; }
+        public global::Terra.StrengthMovement? Type184 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.TSSSample? Type185 { get; set; }
+        public global::Terra.StrengthMovementVariant1? Type185 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.TSSSample>? Type186 { get; set; }
+        public global::Terra.StrengthMovementVariant2? Type186 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.BloodPressureSample? Type187 { get; set; }
+        public global::Terra.StrengthMovementVariant3? Type187 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.BloodPressureSample>? Type188 { get; set; }
+        public global::Terra.StrengthMovementVariant4? Type188 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AFibClassificationSample? Type189 { get; set; }
+        public global::Terra.StrengthMovementVariant5? Type189 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.RawECGSample? Type190 { get; set; }
+        public global::Terra.StrengthMovementVariant6? Type190 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.ECGReading? Type191 { get; set; }
+        public global::Terra.StrengthMovementVariant7? Type191 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.RawECGSample>? Type192 { get; set; }
+        public global::Terra.StrengthMovementVariant8? Type192 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.PulseVelocitySample? Type193 { get; set; }
+        public global::Terra.StrengthMovementVariant9? Type193 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.RRIntervalSample? Type194 { get; set; }
+        public global::Terra.StrengthMovementVariant10? Type194 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.AFibClassificationSample>? Type195 { get; set; }
+        public global::Terra.StrengthMovementVariant11? Type195 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.ECGReading>? Type196 { get; set; }
+        public global::Terra.StrengthMovementVariant12? Type196 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.PulseVelocitySample>? Type197 { get; set; }
+        public global::Terra.StrengthMovementVariant13? Type197 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.RRIntervalSample>? Type198 { get; set; }
+        public global::Terra.StrengthMovementVariant14? Type198 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.HydrationMeasurementSample? Type199 { get; set; }
+        public global::Terra.StrengthMovementVariant15? Type199 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.HydrationMeasurementSample>? Type200 { get; set; }
+        public global::Terra.StrengthMovementVariant16? Type200 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.KetoneSample? Type201 { get; set; }
+        public global::Terra.StrengthMovementVariant17? Type201 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.KetoneSample>? Type202 { get; set; }
+        public global::Terra.StrengthMovementVariant18? Type202 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.MeasurementDataSample? Type203 { get; set; }
+        public global::Terra.StrengthMovementVariant19? Type203 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.MeasurementDataSample>? Type204 { get; set; }
+        public global::Terra.StrengthMovementVariant20? Type204 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.TemperatureSample? Type205 { get; set; }
+        public global::Terra.StrengthMovementVariant21? Type205 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.TemperatureSample>? Type206 { get; set; }
+        public global::Terra.StrengthMovementVariant22? Type206 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.GlucoseDataSample? Type207 { get; set; }
+        public global::Terra.StrengthMovementVariant23? Type207 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.DailyPatternSample? Type208 { get; set; }
+        public global::Terra.StrengthMovementVariant24? Type208 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.GlucoseDataSample>? Type209 { get; set; }
+        public global::Terra.StrengthMovementVariant25? Type209 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.DailyPatternSample>? Type210 { get; set; }
+        public global::Terra.StrengthMovementVariant26? Type210 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.StressSample? Type211 { get; set; }
+        public global::Terra.StrengthMovementVariant27? Type211 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.BodyBatterySample? Type212 { get; set; }
+        public global::Terra.StrengthMovementVariant28? Type212 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.StressSample>? Type213 { get; set; }
+        public global::Terra.StrengthMovementVariant29? Type213 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.BodyBatterySample>? Type214 { get; set; }
+        public global::Terra.StrengthMovementVariant30? Type214 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.TagEntry? Type215 { get; set; }
+        public global::Terra.StrengthMovementVariant31? Type215 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.TagEntry>? Type216 { get; set; }
+        public global::Terra.StrengthMovementVariant32? Type216 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.MenstruationFlowSample? Type217 { get; set; }
+        public global::Terra.StrengthMovementVariant33? Type217 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.MenstruationIntervalSample? Type218 { get; set; }
+        public global::Terra.StrengthMovementVariant34? Type218 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.MenstruationFlowSample>? Type219 { get; set; }
+        public global::Terra.StrengthMovementVariant35? Type219 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.MenstruationIntervalSample>? Type220 { get; set; }
+        public global::Terra.StrengthMovementVariant36? Type220 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.NutritionMicros? Type221 { get; set; }
+        public global::Terra.StrengthMovementVariant37? Type221 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.NutritionQuantity? Type222 { get; set; }
+        public global::Terra.StrengthMovementVariant38? Type222 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.NutritionMacros? Type223 { get; set; }
+        public global::Terra.StrengthMovementVariant39? Type223 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.BreathSample? Type224 { get; set; }
+        public global::Terra.StrengthMovementVariant40? Type224 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.BreathsData? Type225 { get; set; }
+        public global::Terra.StrengthMovementVariant41? Type225 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.BreathSample>? Type226 { get; set; }
+        public global::Terra.StrengthMovementVariant42? Type226 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OxygenSaturationData? Type227 { get; set; }
+        public global::Terra.StrengthMovementVariant43? Type227 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.SnoringSample? Type228 { get; set; }
+        public global::Terra.StrengthMovementVariant44? Type228 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.SnoringData? Type229 { get; set; }
+        public global::Terra.StrengthMovementVariant45? Type229 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.SnoringSample>? Type230 { get; set; }
+        public global::Terra.StrengthMovementVariant46? Type230 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AsleepDurations? Type231 { get; set; }
+        public global::Terra.StrengthMovementVariant47? Type231 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AwakeDurations? Type232 { get; set; }
+        public global::Terra.StrengthMovementVariant48? Type232 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.SleepHypnogramSample? Type233 { get; set; }
+        public global::Terra.StrengthMovementVariant49? Type233 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OtherSleepDurations? Type234 { get; set; }
+        public global::Terra.StrengthMovementVariant50? Type234 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.SleepHypnogramSample>? Type235 { get; set; }
+        public global::Terra.StrengthMovementVariant51? Type235 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutSportVariant1? Type236 { get; set; }
+        public global::Terra.StrengthMovementVariant52? Type236 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutSportVariant2? Type237 { get; set; }
+        public global::Terra.StrengthMovementVariant53? Type237 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutSportVariant3? Type238 { get; set; }
+        public global::Terra.StrengthMovementVariant54? Type238 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutSportVariant4? Type239 { get; set; }
+        public global::Terra.StrengthMovementVariant55? Type239 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutSportVariant5? Type240 { get; set; }
+        public global::Terra.StrengthMovementVariant56? Type240 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutSportVariant6? Type241 { get; set; }
+        public global::Terra.StrengthMovementVariant57? Type241 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutSportVariant7? Type242 { get; set; }
+        public global::Terra.StrengthMovementVariant58? Type242 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutSportVariant8? Type243 { get; set; }
+        public global::Terra.StrengthMovementVariant59? Type243 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutSportVariant9? Type244 { get; set; }
+        public global::Terra.StrengthMovementVariant60? Type244 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutSportVariant10? Type245 { get; set; }
+        public global::Terra.StrengthMovementVariant61? Type245 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutSportVariant11? Type246 { get; set; }
+        public global::Terra.StrengthMovementVariant62? Type246 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutSportVariant12? Type247 { get; set; }
+        public global::Terra.StrengthMovementVariant63? Type247 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutSportVariant13? Type248 { get; set; }
+        public global::Terra.StrengthMovementVariant64? Type248 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutSportVariant14? Type249 { get; set; }
+        public global::Terra.StrengthMovementVariant65? Type249 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutSportVariant15? Type250 { get; set; }
+        public global::Terra.StrengthMovementVariant66? Type250 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.EnvironmentTypeVariant1? Type251 { get; set; }
+        public global::Terra.StrengthMovementVariant67? Type251 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.EnvironmentTypeVariant2? Type252 { get; set; }
+        public global::Terra.StrengthMovementVariant68? Type252 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.EnvironmentTypeVariant3? Type253 { get; set; }
+        public global::Terra.StrengthMovementVariant69? Type253 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.CompletionConditionType? Type254 { get; set; }
+        public global::Terra.StrengthMovementVariant70? Type254 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.CompletionConditionTypeVariant1? Type255 { get; set; }
+        public global::Terra.StrengthMovementVariant71? Type255 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.CompletionConditionTypeVariant2? Type256 { get; set; }
+        public global::Terra.StrengthMovementVariant72? Type256 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.CompletionConditionTypeVariant3? Type257 { get; set; }
+        public global::Terra.StrengthMovementVariant73? Type257 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.CompletionConditionTypeVariant4? Type258 { get; set; }
+        public global::Terra.StrengthMovementVariant74? Type258 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.CompletionConditionTypeVariant5? Type259 { get; set; }
+        public global::Terra.StrengthMovementVariant75? Type259 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.CompletionConditionTypeVariant6? Type260 { get; set; }
+        public global::Terra.StrengthMovementVariant76? Type260 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.CompletionConditionTypeVariant7? Type261 { get; set; }
+        public global::Terra.StrengthMovementVariant77? Type261 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.CompletionConditionTypeVariant8? Type262 { get; set; }
+        public global::Terra.StrengthMovementVariant78? Type262 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.CompletionConditionTypeVariant9? Type263 { get; set; }
+        public global::Terra.StrengthMovementVariant79? Type263 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.CompletionConditionTypeVariant10? Type264 { get; set; }
+        public global::Terra.StrengthMovementVariant80? Type264 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.CompletionConditionTypeVariant11? Type265 { get; set; }
+        public global::Terra.StrengthMovementVariant81? Type265 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.CompletionCondition? Type266 { get; set; }
+        public global::Terra.StrengthMovementVariant82? Type266 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutStepTargetType? Type267 { get; set; }
+        public global::Terra.StrengthMovementVariant83? Type267 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutStepTargetTypeVariant1? Type268 { get; set; }
+        public global::Terra.StrengthMovementVariant84? Type268 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutStepTargetTypeVariant2? Type269 { get; set; }
+        public global::Terra.StrengthMovementVariant85? Type269 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutStepTargetTypeVariant3? Type270 { get; set; }
+        public global::Terra.StrengthMovementVariant86? Type270 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutStepTargetTypeVariant4? Type271 { get; set; }
+        public global::Terra.StrengthMovementVariant87? Type271 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutStepTargetTypeVariant5? Type272 { get; set; }
+        public global::Terra.StrengthMovementVariant88? Type272 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutStepTargetTypeVariant6? Type273 { get; set; }
+        public global::Terra.StrengthMovementVariant89? Type273 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutStepTargetTypeVariant7? Type274 { get; set; }
+        public global::Terra.StrengthMovementVariant90? Type274 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutStepTargetTypeVariant8? Type275 { get; set; }
+        public global::Terra.StrengthMovementVariant91? Type275 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutStepTargetTypeVariant9? Type276 { get; set; }
+        public global::Terra.StrengthMovementVariant92? Type276 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutStepTargetTypeVariant10? Type277 { get; set; }
+        public global::Terra.StrengthMovementVariant93? Type277 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutStepTargetTypeVariant11? Type278 { get; set; }
+        public global::Terra.StrengthMovementVariant94? Type278 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.IntensityTarget? Type279 { get; set; }
+        public global::Terra.StrengthMovementVariant95? Type279 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutStepIntensity? Type280 { get; set; }
+        public global::Terra.StrengthMovementVariant96? Type280 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutStepIntensityVariant1? Type281 { get; set; }
+        public global::Terra.StrengthMovementVariant97? Type281 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutStepIntensityVariant2? Type282 { get; set; }
+        public global::Terra.StrengthMovementVariant98? Type282 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutStepIntensityVariant3? Type283 { get; set; }
+        public global::Terra.StrengthMovementVariant99? Type283 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutStepIntensityVariant4? Type284 { get; set; }
+        public global::Terra.StrengthMovementVariant100? Type284 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutStepIntensityVariant5? Type285 { get; set; }
+        public global::Terra.StrengthMovementVariant101? Type285 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.StepControlType? Type286 { get; set; }
+        public global::Terra.StrengthMovementVariant102? Type286 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.StepControlTypeVariant1? Type287 { get; set; }
+        public global::Terra.StrengthMovementVariant103? Type287 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.StepControlTypeVariant2? Type288 { get; set; }
+        public global::Terra.StrengthMovementVariant104? Type288 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.StepControl? Type289 { get; set; }
+        public global::Terra.StrengthMovementVariant105? Type289 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WeightUnit? Type290 { get; set; }
+        public global::Terra.StrengthMovementVariant106? Type290 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WeightUnitVariant1? Type291 { get; set; }
+        public global::Terra.StrengthMovementVariant107? Type291 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WeightUnitVariant2? Type292 { get; set; }
+        public global::Terra.StrengthMovementVariant108? Type292 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.StrengthData? Type293 { get; set; }
+        public global::Terra.StrengthMovementVariant109? Type293 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.SwimStrokeType? Type294 { get; set; }
+        public global::Terra.StrengthMovementVariant110? Type294 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.SwimStrokeTypeVariant1? Type295 { get; set; }
+        public global::Terra.StrengthMovementVariant111? Type295 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.SwimStrokeTypeVariant2? Type296 { get; set; }
+        public global::Terra.StrengthMovementVariant112? Type296 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.SwimStrokeTypeVariant3? Type297 { get; set; }
+        public global::Terra.StrengthMovementVariant113? Type297 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.SwimStrokeTypeVariant4? Type298 { get; set; }
+        public global::Terra.StrengthMovementVariant114? Type298 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.SwimStrokeTypeVariant5? Type299 { get; set; }
+        public global::Terra.StrengthMovementVariant115? Type299 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.SwimStrokeTypeVariant6? Type300 { get; set; }
+        public global::Terra.StrengthMovementVariant116? Type300 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.SwimStrokeTypeVariant7? Type301 { get; set; }
+        public global::Terra.StrengthMovementVariant117? Type301 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.DrillType? Type302 { get; set; }
+        public global::Terra.StrengthMovementVariant118? Type302 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.DrillTypeVariant1? Type303 { get; set; }
+        public global::Terra.StrengthMovementVariant119? Type303 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.DrillTypeVariant2? Type304 { get; set; }
+        public global::Terra.StrengthMovementVariant120? Type304 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.DrillTypeVariant3? Type305 { get; set; }
+        public global::Terra.StrengthMovementVariant121? Type305 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.SwimEquipmentType? Type306 { get; set; }
+        public global::Terra.StrengthMovementVariant122? Type306 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.SwimEquipmentTypeVariant1? Type307 { get; set; }
+        public global::Terra.StrengthMovementVariant123? Type307 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.SwimEquipmentTypeVariant2? Type308 { get; set; }
+        public global::Terra.StrengthMovementVariant124? Type308 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.SwimEquipmentTypeVariant3? Type309 { get; set; }
+        public global::Terra.StrengthMovementVariant125? Type309 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.SwimEquipmentTypeVariant4? Type310 { get; set; }
+        public global::Terra.StrengthMovementVariant126? Type310 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.SwimEquipmentTypeVariant5? Type311 { get; set; }
+        public global::Terra.StrengthMovementVariant127? Type311 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.SwimEquipmentTypeVariant6? Type312 { get; set; }
+        public global::Terra.StrengthMovementVariant128? Type312 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.SwimStepData? Type313 { get; set; }
+        public global::Terra.StrengthMovementVariant129? Type313 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.SwimEquipmentType>? Type314 { get; set; }
+        public global::Terra.StrengthMovementVariant130? Type314 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutStep? Type315 { get; set; }
+        public global::Terra.StrengthMovementVariant131? Type315 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.IntensityTarget>? Type316 { get; set; }
+        public global::Terra.StrengthMovementVariant132? Type316 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.StepControl>? Type317 { get; set; }
+        public global::Terra.StrengthMovementVariant133? Type317 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.WorkoutStep>? Type318 { get; set; }
+        public global::Terra.StrengthMovementVariant134? Type318 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AthleteMetrics? Type319 { get; set; }
+        public global::Terra.StrengthMovementVariant135? Type319 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.PlannedWorkoutDetailsMetadata? Type320 { get; set; }
+        public global::Terra.StrengthMovementVariant136? Type320 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.PlannedWorkoutDetailsStepDuration? Type321 { get; set; }
+        public global::Terra.StrengthMovementVariant137? Type321 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.PlannedWorkoutDetailsStepTarget? Type322 { get; set; }
+        public global::Terra.StrengthMovementVariant138? Type322 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.PlannedWorkoutDetailsStep? Type323 { get; set; }
+        public global::Terra.StrengthMovementVariant139? Type323 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.PlannedWorkoutDetailsStepDuration>? Type324 { get; set; }
+        public global::Terra.StrengthMovementVariant140? Type324 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.PlannedWorkoutDetailsStepTarget>? Type325 { get; set; }
+        public global::Terra.StrengthMovementVariant141? Type325 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<int>? Type326 { get; set; }
+        public global::Terra.StrengthMovementVariant142? Type326 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.PlannedWorkoutDetailsStep>? Type327 { get; set; }
+        public global::Terra.StrengthMovementVariant143? Type327 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.PlannedWorkoutDetails? Type328 { get; set; }
+        public global::Terra.StrengthMovementVariant144? Type328 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WebhookEvent? Type329 { get; set; }
+        public global::Terra.StrengthMovementVariant145? Type329 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AuthSuccessEventType? Type330 { get; set; }
+        public global::Terra.StrengthMovementVariant146? Type330 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AuthSuccessEventStatus? Type331 { get; set; }
+        public global::Terra.StrengthMovementVariant147? Type331 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AuthErrorEventType? Type332 { get; set; }
+        public global::Terra.StrengthMovementVariant148? Type332 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AuthErrorEventStatus? Type333 { get; set; }
+        public global::Terra.StrengthMovementVariant149? Type333 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.DeauthEventType? Type334 { get; set; }
+        public global::Terra.StrengthMovementVariant150? Type334 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.DeauthEventStatus? Type335 { get; set; }
+        public global::Terra.StrengthMovementVariant151? Type335 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.UserReauthEventType? Type336 { get; set; }
+        public global::Terra.StrengthMovementVariant152? Type336 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.UserReauthEventStatus? Type337 { get; set; }
+        public global::Terra.StrengthMovementVariant153? Type337 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AccessRevokedEventType? Type338 { get; set; }
+        public global::Terra.StrengthMovementVariant154? Type338 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AccessRevokedEventStatus? Type339 { get; set; }
+        public global::Terra.StrengthMovementVariant155? Type339 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.PermissionChangeEventType? Type340 { get; set; }
+        public global::Terra.StrengthMovementVariant156? Type340 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.PermissionChangeEventStatus? Type341 { get; set; }
+        public global::Terra.StrengthMovementVariant157? Type341 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.ConnectionErrorEventType? Type342 { get; set; }
+        public global::Terra.StrengthMovementVariant158? Type342 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.ConnectionErrorEventStatus? Type343 { get; set; }
+        public global::Terra.StrengthMovementVariant159? Type343 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LargeRequestSendingEventType? Type344 { get; set; }
+        public global::Terra.StrengthMovementVariant160? Type344 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LargeRequestProcessingEventType? Type345 { get; set; }
+        public global::Terra.StrengthMovementVariant161? Type345 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LargeRequestProcessingEventStatus? Type346 { get; set; }
+        public global::Terra.StrengthMovementVariant162? Type346 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.S3PayloadEventType? Type347 { get; set; }
+        public global::Terra.StrengthMovementVariant163? Type347 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.S3PayloadEventStatus? Type348 { get; set; }
+        public global::Terra.StrengthMovementVariant164? Type348 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.ActivityEventType? Type349 { get; set; }
+        public global::Terra.StrengthMovementVariant165? Type349 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.Activity>? Type350 { get; set; }
+        public global::Terra.StrengthMovementVariant166? Type350 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AthleteEventType? Type351 { get; set; }
+        public global::Terra.StrengthMovementVariant167? Type351 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.NutritionEventType? Type352 { get; set; }
+        public global::Terra.StrengthMovementVariant168? Type352 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.Nutrition>? Type353 { get; set; }
+        public global::Terra.StrengthMovementVariant169? Type353 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.DailyEventType? Type354 { get; set; }
+        public global::Terra.StrengthMovementVariant170? Type354 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.Daily>? Type355 { get; set; }
+        public global::Terra.StrengthMovementVariant171? Type355 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.SleepEventType? Type356 { get; set; }
+        public global::Terra.StrengthMovementVariant172? Type356 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.Sleep>? Type357 { get; set; }
+        public global::Terra.StrengthMovementVariant173? Type357 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.MenstruationEventType? Type358 { get; set; }
+        public global::Terra.StrengthMovementVariant174? Type358 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.Menstruation>? Type359 { get; set; }
+        public global::Terra.StrengthMovementVariant175? Type359 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.BodyEventType? Type360 { get; set; }
+        public global::Terra.StrengthTarget? Type360 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.Body>? Type361 { get; set; }
+        public global::Terra.StrengthTargetVariant1? Type361 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportEventResultSource? Type362 { get; set; }
+        public global::Terra.StrengthTargetVariant2? Type362 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportEventResult? Type363 { get; set; }
+        public global::Terra.StrengthTargetVariant3? Type363 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportEventData? Type364 { get; set; }
+        public global::Terra.StrengthTargetVariant4? Type364 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.LabReportEventResult>? Type365 { get; set; }
+        public global::Terra.StrengthTargetVariant5? Type365 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportCompletedEventType? Type366 { get; set; }
+        public global::Terra.StrengthTargetVariant6? Type366 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportEventError? Type367 { get; set; }
+        public global::Terra.StrengthTargetVariant7? Type367 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportFailureData? Type368 { get; set; }
+        public global::Terra.StrengthTargetVariant8? Type368 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportFailedEventType? Type369 { get; set; }
+        public global::Terra.StrengthTargetVariant9? Type369 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.PlannedWorkoutEventType? Type370 { get; set; }
+        public global::Terra.StrengthTargetVariant10? Type370 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.PlannedWorkout>? Type371 { get; set; }
+        public global::Terra.StrengthTargetVariant11? Type371 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.HormoneEventType? Type372 { get; set; }
+        public global::Terra.StrengthTargetVariant12? Type372 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.HormoneSample>? Type373 { get; set; }
+        public global::Terra.StrengthTargetVariant13? Type373 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.HealthObservationMetadata? Type374 { get; set; }
+        public global::Terra.StrengthTargetVariant14? Type374 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.ObservationCode? Type375 { get; set; }
+        public global::Terra.StrengthTargetVariant15? Type375 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.ObservationValue? Type376 { get; set; }
+        public global::Terra.StrengthTargetVariant16? Type376 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.ObservationComponent? Type377 { get; set; }
+        public global::Terra.StrengthTargetVariant17? Type377 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.HealthObservationData? Type378 { get; set; }
+        public global::Terra.StrengthTargetVariant18? Type378 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.ObservationCode>? Type379 { get; set; }
+        public global::Terra.StrengthTargetVariant19? Type379 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.ObservationComponent>? Type380 { get; set; }
+        public global::Terra.StrengthTargetVariant20? Type380 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.HealthObservation? Type381 { get; set; }
+        public global::Terra.StrengthTargetVariant21? Type381 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.HealthObservationEventType? Type382 { get; set; }
+        public global::Terra.StrengthTargetVariant22? Type382 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.HealthObservation>? Type383 { get; set; }
+        public global::Terra.StrengthTargetVariant23? Type383 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AuthenticationAuthenticateUserRequest? Type384 { get; set; }
+        public global::Terra.StrengthTargetVariant24? Type384 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutsPlanWorkoutRequest? Type385 { get; set; }
+        public global::Terra.StrengthImplement? Type385 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutsUpdatePlannedWorkoutRequest? Type386 { get; set; }
+        public global::Terra.StrengthImplementVariant1? Type386 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.LabReportsUploadRequest? Type387 { get; set; }
+        public global::Terra.StrengthImplementVariant2? Type387 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OneOf<int?, global::System.DateTime?>? Type388 { get; set; }
+        public global::Terra.StrengthImplementVariant3? Type388 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AuthenticationAuthenticateUserResponse? Type389 { get; set; }
+        public global::Terra.StrengthImplementVariant4? Type389 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AuthenticationAuthenticateUserResponseStatus? Type390 { get; set; }
+        public global::Terra.StrengthImplementVariant5? Type390 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AuthenticationGenerateWidgetSessionResponse? Type391 { get; set; }
+        public global::Terra.StrengthImplementVariant6? Type391 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AuthenticationGenerateWidgetSessionResponseStatus? Type392 { get; set; }
+        public global::Terra.StrengthImplementVariant7? Type392 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AuthenticationDeauthenticateUserResponse? Type393 { get; set; }
+        public global::Terra.StrengthImplementVariant8? Type393 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AuthenticationDeauthenticateUserResponseStatus? Type394 { get; set; }
+        public global::Terra.StrengthImplementVariant9? Type394 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AuthenticationGenerateAuthTokenResponse? Type395 { get; set; }
+        public global::Terra.StrengthImplementVariant10? Type395 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OneOf<global::Terra.ActivityGetResponse2, global::Terra.DataSentToWebhook>? Type396 { get; set; }
+        public global::Terra.StrengthImplementVariant11? Type396 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.ActivityGetResponse2? Type397 { get; set; }
+        public global::Terra.StrengthImplementVariant12? Type397 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OneOf<global::Terra.AthleteCollection, global::Terra.DataSentToWebhook>? Type398 { get; set; }
+        public global::Terra.StrengthImplementVariant13? Type398 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OneOf<global::Terra.BodyGetResponse2, global::Terra.DataSentToWebhook>? Type399 { get; set; }
+        public global::Terra.StrengthImplementVariant14? Type399 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.BodyGetResponse2? Type400 { get; set; }
+        public global::Terra.StrengthImplementVariant15? Type400 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OneOf<global::Terra.DailyGetResponse2, global::Terra.DataSentToWebhook>? Type401 { get; set; }
+        public global::Terra.StrengthImplementVariant16? Type401 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.DailyGetResponse2? Type402 { get; set; }
+        public global::Terra.StrengthImplementVariant17? Type402 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OneOf<global::Terra.MenstruationGetResponse2, global::Terra.DataSentToWebhook>? Type403 { get; set; }
+        public global::Terra.StrengthImplementVariant18? Type403 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.MenstruationGetResponse2? Type404 { get; set; }
+        public global::Terra.StrengthImplementVariant19? Type404 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OneOf<global::Terra.NutritionGetResponse2, global::Terra.DataSentToWebhook>? Type405 { get; set; }
+        public global::Terra.StrengthImplementVariant20? Type405 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.NutritionGetResponse2? Type406 { get; set; }
+        public global::Terra.StrengthImplementVariant21? Type406 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OneOf<global::Terra.SleepGetResponse2, global::Terra.DataSentToWebhook>? Type407 { get; set; }
+        public global::Terra.StrengthImplementVariant22? Type407 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.SleepGetResponse2? Type408 { get; set; }
+        public global::Terra.StrengthImplementVariant23? Type408 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutsCreateWorkoutResponse? Type409 { get; set; }
+        public global::Terra.StrengthImplementVariant24? Type409 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutsCreateWorkoutResponseStatus? Type410 { get; set; }
+        public global::Terra.StrengthSurface? Type410 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.WorkoutTemplate>? Type411 { get; set; }
+        public global::Terra.StrengthSurfaceVariant1? Type411 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutsDeleteWorkoutResponse? Type412 { get; set; }
+        public global::Terra.StrengthSurfaceVariant2? Type412 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutsPlanWorkoutResponse? Type413 { get; set; }
+        public global::Terra.StrengthSurfaceVariant3? Type413 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.WorkoutsPlanWorkoutResponseStatus? Type414 { get; set; }
+        public global::Terra.StrengthSurfaceVariant4? Type414 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OneOf<global::Terra.UserGetResponse2, global::System.Collections.Generic.IList<global::Terra.TerraUser>>? Type415 { get; set; }
+        public global::Terra.StrengthSurfaceVariant5? Type415 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.UserGetResponse2? Type416 { get; set; }
+        public global::Terra.StrengthSurfaceVariant6? Type416 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.AllOf<global::Terra.TerraUser, global::Terra.UserGetResponseUser>? Type417 { get; set; }
+        public global::Terra.StrengthSurfaceVariant7? Type417 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.UserGetResponseUser? Type418 { get; set; }
+        public global::Terra.StrengthSurfaceVariant8? Type418 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.UserGetResponseStatus? Type419 { get; set; }
+        public global::Terra.StrengthSurfaceVariant9? Type419 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Terra.TerraUser>? Type420 { get; set; }
+        public global::Terra.StrengthSurfaceVariant10? Type420 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OneOf<global::Terra.UserListResponseVariant1, global::Terra.UserListResponseVariant2>? Type421 { get; set; }
+        public global::Terra.StrengthSurfaceVariant11? Type421 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.UserListResponseVariant1? Type422 { get; set; }
+        public global::Terra.StrengthGripWidth? Type422 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.UserListResponseVariant2? Type423 { get; set; }
+        public global::Terra.StrengthGripWidthVariant1? Type423 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.UserListResponseVariant2Data? Type424 { get; set; }
+        public global::Terra.StrengthGripWidthVariant2? Type424 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.IntegrationsListResponse? Type425 { get; set; }
+        public global::Terra.StrengthGripWidthVariant3? Type425 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.IntegrationsListResponseStatus? Type426 { get; set; }
+        public global::Terra.StrengthGripOrientation? Type426 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthGripOrientationVariant1? Type427 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthGripOrientationVariant2? Type428 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthGripOrientationVariant3? Type429 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthGripOrientationVariant4? Type430 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthGripOrientationVariant5? Type431 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthGripOrientationVariant6? Type432 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthGripOrientationVariant7? Type433 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthGripOrientationVariant8? Type434 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthLaterality? Type435 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthLateralityVariant1? Type436 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthLateralityVariant2? Type437 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthLateralityVariant3? Type438 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthLateralityVariant4? Type439 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthStance? Type440 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthStanceVariant1? Type441 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthStanceVariant2? Type442 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthStanceVariant3? Type443 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthStanceVariant4? Type444 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthStanceVariant5? Type445 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthPosition? Type446 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthPositionVariant1? Type447 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthPositionVariant2? Type448 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthPositionVariant3? Type449 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthPositionVariant4? Type450 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthPositionVariant5? Type451 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthPositionVariant6? Type452 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthPositionVariant7? Type453 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthPositionVariant8? Type454 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthPositionVariant9? Type455 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthPositionVariant10? Type456 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthPositionVariant11? Type457 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthPositionVariant12? Type458 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthPositionVariant13? Type459 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthPositionVariant14? Type460 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthPositionVariant15? Type461 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthPositionVariant16? Type462 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthPositionVariant17? Type463 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthPositionVariant18? Type464 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthPositionVariant19? Type465 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthBarPosition? Type466 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthBarPositionVariant1? Type467 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthBarPositionVariant2? Type468 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthBarPositionVariant3? Type469 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthBarPositionVariant4? Type470 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthBarPositionVariant5? Type471 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthBarPositionVariant6? Type472 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthBarPositionVariant7? Type473 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthTempo? Type474 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthTempoVariant1? Type475 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthTempoVariant2? Type476 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthTempoVariant3? Type477 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthTempoVariant4? Type478 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthTempoVariant5? Type479 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthTempoVariant6? Type480 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthTempoVariant7? Type481 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthTempoVariant8? Type482 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthRangeOfMotion? Type483 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthRangeOfMotionVariant1? Type484 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthRangeOfMotionVariant2? Type485 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthRangeOfMotionVariant3? Type486 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthRangeOfMotionVariant4? Type487 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthRangeOfMotionVariant5? Type488 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthRangeOfMotionVariant6? Type489 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthRangeOfMotionVariant7? Type490 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthProgramme? Type491 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthProgrammeVariant1? Type492 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthProgrammeVariant2? Type493 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthExerciseModifiers? Type494 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthMuscle? Type495 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthMuscleVariant1? Type496 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthMuscleVariant2? Type497 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthMuscleVariant3? Type498 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthMuscleVariant4? Type499 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthMuscleVariant5? Type500 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthMuscleVariant6? Type501 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthMuscleVariant7? Type502 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthMuscleVariant8? Type503 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthMuscleVariant9? Type504 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthMuscleVariant10? Type505 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthMuscleVariant11? Type506 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthMuscleVariant12? Type507 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthMuscleVariant13? Type508 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthMuscleVariant14? Type509 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthMuscleVariant15? Type510 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthMuscleVariant16? Type511 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthMuscleVariant17? Type512 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthSource? Type513 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthSourceVariant1? Type514 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthSourceVariant2? Type515 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthLoadType? Type516 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthLoadTypeVariant1? Type517 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthLoadTypeVariant2? Type518 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthLoadTypeVariant3? Type519 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthLoadTypeVariant4? Type520 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthLoadTypeVariant5? Type521 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthSetType? Type522 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthSetTypeVariant1? Type523 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthSetTypeVariant2? Type524 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthSetTypeVariant3? Type525 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthSetTypeVariant4? Type526 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthSet? Type527 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthExercise? Type528 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.StrengthMovement>? Type529 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.StrengthMuscle>? Type530 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.StrengthSet>? Type531 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.StrengthExercise>? Type532 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.PowerSample? Type533 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.PowerSample>? Type534 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.TSSSample? Type535 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.TSSSample>? Type536 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.BloodPressureSample? Type537 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.BloodPressureSample>? Type538 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.AFibClassificationSample? Type539 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.RawECGSample? Type540 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.ECGReading? Type541 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.RawECGSample>? Type542 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.PulseVelocitySample? Type543 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.RRIntervalSample? Type544 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.AFibClassificationSample>? Type545 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.ECGReading>? Type546 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.PulseVelocitySample>? Type547 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.RRIntervalSample>? Type548 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.HydrationMeasurementSample? Type549 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.HydrationMeasurementSample>? Type550 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.KetoneSample? Type551 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.KetoneSample>? Type552 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.MeasurementDataSample? Type553 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.MeasurementDataSample>? Type554 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.TemperatureSample? Type555 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.TemperatureSample>? Type556 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.GlucoseDataSample? Type557 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.DailyPatternSample? Type558 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.GlucoseDataSample>? Type559 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.DailyPatternSample>? Type560 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StressSample? Type561 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.BodyBatterySample? Type562 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.StressSample>? Type563 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.BodyBatterySample>? Type564 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.TagEntry? Type565 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.TagEntry>? Type566 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.MenstruationFlowSample? Type567 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.MenstruationIntervalSample? Type568 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.MenstruationFlowSample>? Type569 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.MenstruationIntervalSample>? Type570 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.NutritionMicros? Type571 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.NutritionQuantity? Type572 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.NutritionMacros? Type573 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.BreathSample? Type574 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.BreathsData? Type575 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.BreathSample>? Type576 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.OxygenSaturationData? Type577 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.SnoringSample? Type578 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.SnoringData? Type579 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.SnoringSample>? Type580 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.AsleepDurations? Type581 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.AwakeDurations? Type582 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.SleepHypnogramSample? Type583 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.OtherSleepDurations? Type584 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.SleepHypnogramSample>? Type585 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutSportVariant1? Type586 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutSportVariant2? Type587 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutSportVariant3? Type588 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutSportVariant4? Type589 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutSportVariant5? Type590 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutSportVariant6? Type591 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutSportVariant7? Type592 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutSportVariant8? Type593 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutSportVariant9? Type594 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutSportVariant10? Type595 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutSportVariant11? Type596 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutSportVariant12? Type597 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutSportVariant13? Type598 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutSportVariant14? Type599 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutSportVariant15? Type600 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.EnvironmentTypeVariant1? Type601 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.EnvironmentTypeVariant2? Type602 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.EnvironmentTypeVariant3? Type603 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.CompletionConditionType? Type604 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.CompletionConditionTypeVariant1? Type605 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.CompletionConditionTypeVariant2? Type606 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.CompletionConditionTypeVariant3? Type607 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.CompletionConditionTypeVariant4? Type608 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.CompletionConditionTypeVariant5? Type609 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.CompletionConditionTypeVariant6? Type610 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.CompletionConditionTypeVariant7? Type611 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.CompletionConditionTypeVariant8? Type612 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.CompletionConditionTypeVariant9? Type613 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.CompletionConditionTypeVariant10? Type614 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.CompletionConditionTypeVariant11? Type615 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.CompletionCondition? Type616 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutStepTargetType? Type617 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutStepTargetTypeVariant1? Type618 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutStepTargetTypeVariant2? Type619 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutStepTargetTypeVariant3? Type620 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutStepTargetTypeVariant4? Type621 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutStepTargetTypeVariant5? Type622 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutStepTargetTypeVariant6? Type623 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutStepTargetTypeVariant7? Type624 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutStepTargetTypeVariant8? Type625 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutStepTargetTypeVariant9? Type626 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutStepTargetTypeVariant10? Type627 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutStepTargetTypeVariant11? Type628 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.IntensityTarget? Type629 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutStepIntensity? Type630 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutStepIntensityVariant1? Type631 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutStepIntensityVariant2? Type632 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutStepIntensityVariant3? Type633 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutStepIntensityVariant4? Type634 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutStepIntensityVariant5? Type635 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StepControlType? Type636 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StepControlTypeVariant1? Type637 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StepControlTypeVariant2? Type638 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StepControl? Type639 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WeightUnit? Type640 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WeightUnitVariant1? Type641 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WeightUnitVariant2? Type642 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.StrengthData? Type643 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.SwimStrokeType? Type644 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.SwimStrokeTypeVariant1? Type645 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.SwimStrokeTypeVariant2? Type646 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.SwimStrokeTypeVariant3? Type647 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.SwimStrokeTypeVariant4? Type648 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.SwimStrokeTypeVariant5? Type649 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.SwimStrokeTypeVariant6? Type650 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.SwimStrokeTypeVariant7? Type651 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.DrillType? Type652 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.DrillTypeVariant1? Type653 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.DrillTypeVariant2? Type654 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.DrillTypeVariant3? Type655 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.SwimEquipmentType? Type656 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.SwimEquipmentTypeVariant1? Type657 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.SwimEquipmentTypeVariant2? Type658 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.SwimEquipmentTypeVariant3? Type659 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.SwimEquipmentTypeVariant4? Type660 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.SwimEquipmentTypeVariant5? Type661 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.SwimEquipmentTypeVariant6? Type662 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.SwimStepData? Type663 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.SwimEquipmentType>? Type664 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutStep? Type665 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.IntensityTarget>? Type666 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.StepControl>? Type667 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.WorkoutStep>? Type668 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.AthleteMetrics? Type669 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.PlannedWorkoutDetailsMetadata? Type670 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.PlannedWorkoutDetailsStepDuration? Type671 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.PlannedWorkoutDetailsStepTarget? Type672 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.PlannedWorkoutDetailsStep? Type673 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.PlannedWorkoutDetailsStepDuration>? Type674 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.PlannedWorkoutDetailsStepTarget>? Type675 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<int>? Type676 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.PlannedWorkoutDetailsStep>? Type677 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.PlannedWorkoutDetails? Type678 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WebhookEvent? Type679 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.AuthSuccessEventType? Type680 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.AuthSuccessEventStatus? Type681 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.AuthErrorEventType? Type682 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.AuthErrorEventStatus? Type683 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.DeauthEventType? Type684 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.DeauthEventStatus? Type685 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.UserReauthEventType? Type686 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.UserReauthEventStatus? Type687 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.AccessRevokedEventType? Type688 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.AccessRevokedEventStatus? Type689 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.PermissionChangeEventType? Type690 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.PermissionChangeEventStatus? Type691 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.ConnectionErrorEventType? Type692 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.ConnectionErrorEventStatus? Type693 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.LargeRequestSendingEventType? Type694 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.LargeRequestProcessingEventType? Type695 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.LargeRequestProcessingEventStatus? Type696 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.S3PayloadEventType? Type697 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.S3PayloadEventStatus? Type698 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.ActivityEventType? Type699 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.Activity>? Type700 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.AthleteEventType? Type701 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.NutritionEventType? Type702 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.Nutrition>? Type703 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.DailyEventType? Type704 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.Daily>? Type705 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.SleepEventType? Type706 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.Sleep>? Type707 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.MenstruationEventType? Type708 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.Menstruation>? Type709 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.BodyEventType? Type710 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.Body>? Type711 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.LabReportEventResultSource? Type712 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.LabReportEventResult? Type713 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.LabReportEventData? Type714 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.LabReportEventResult>? Type715 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.LabReportCompletedEventType? Type716 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.LabReportEventError? Type717 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.LabReportFailureData? Type718 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.LabReportFailedEventType? Type719 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.PlannedWorkoutEventType? Type720 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.PlannedWorkout>? Type721 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.HormoneEventType? Type722 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.HormoneSample>? Type723 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.HealthObservationMetadata? Type724 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.ObservationCode? Type725 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.ObservationValue? Type726 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.ObservationComponent? Type727 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.HealthObservationData? Type728 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.ObservationCode>? Type729 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.ObservationComponent>? Type730 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.HealthObservation? Type731 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.HealthObservationEventType? Type732 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.HealthObservation>? Type733 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.AuthenticationAuthenticateUserRequest? Type734 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutsPlanWorkoutRequest? Type735 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutsUpdatePlannedWorkoutRequest? Type736 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.LabReportsUploadRequest? Type737 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.OneOf<int?, global::System.DateTime?>? Type738 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.AuthenticationAuthenticateUserResponse? Type739 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.AuthenticationAuthenticateUserResponseStatus? Type740 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.AuthenticationGenerateWidgetSessionResponse? Type741 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.AuthenticationGenerateWidgetSessionResponseStatus? Type742 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.AuthenticationDeauthenticateUserResponse? Type743 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.AuthenticationDeauthenticateUserResponseStatus? Type744 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.AuthenticationGenerateAuthTokenResponse? Type745 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.OneOf<global::Terra.ActivityGetResponse2, global::Terra.DataSentToWebhook>? Type746 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.ActivityGetResponse2? Type747 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.OneOf<global::Terra.AthleteCollection, global::Terra.DataSentToWebhook>? Type748 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.OneOf<global::Terra.BodyGetResponse2, global::Terra.DataSentToWebhook>? Type749 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.BodyGetResponse2? Type750 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.OneOf<global::Terra.DailyGetResponse2, global::Terra.DataSentToWebhook>? Type751 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.DailyGetResponse2? Type752 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.OneOf<global::Terra.MenstruationGetResponse2, global::Terra.DataSentToWebhook>? Type753 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.MenstruationGetResponse2? Type754 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.OneOf<global::Terra.NutritionGetResponse2, global::Terra.DataSentToWebhook>? Type755 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.NutritionGetResponse2? Type756 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.OneOf<global::Terra.SleepGetResponse2, global::Terra.DataSentToWebhook>? Type757 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.SleepGetResponse2? Type758 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutsCreateWorkoutResponse? Type759 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutsCreateWorkoutResponseStatus? Type760 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.WorkoutTemplate>? Type761 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutsDeleteWorkoutResponse? Type762 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutsPlanWorkoutResponse? Type763 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.WorkoutsPlanWorkoutResponseStatus? Type764 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.OneOf<global::Terra.UserGetResponse2, global::System.Collections.Generic.IList<global::Terra.TerraUser>>? Type765 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.UserGetResponse2? Type766 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.AllOf<global::Terra.TerraUser, global::Terra.UserGetResponseUser>? Type767 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.UserGetResponseUser? Type768 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.UserGetResponseStatus? Type769 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Terra.TerraUser>? Type770 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.OneOf<global::Terra.UserListResponseVariant1, global::Terra.UserListResponseVariant2>? Type771 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.UserListResponseVariant1? Type772 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.UserListResponseVariant2? Type773 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.UserListResponseVariant2Data? Type774 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.IntegrationsListResponse? Type775 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.IntegrationsListResponseStatus? Type776 { get; set; }
 
         /// <summary>
         /// 
@@ -1869,182 +3269,198 @@ namespace Terra
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.PowerSample>? ListType33 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.StrengthMovement>? ListType33 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.TSSSample>? ListType34 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.StrengthMuscle>? ListType34 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.BloodPressureSample>? ListType35 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.StrengthSet>? ListType35 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.RawECGSample>? ListType36 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.StrengthExercise>? ListType36 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.AFibClassificationSample>? ListType37 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.PowerSample>? ListType37 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.ECGReading>? ListType38 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.TSSSample>? ListType38 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.PulseVelocitySample>? ListType39 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.BloodPressureSample>? ListType39 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.RRIntervalSample>? ListType40 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.RawECGSample>? ListType40 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.HydrationMeasurementSample>? ListType41 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.AFibClassificationSample>? ListType41 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.KetoneSample>? ListType42 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.ECGReading>? ListType42 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.MeasurementDataSample>? ListType43 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.PulseVelocitySample>? ListType43 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.TemperatureSample>? ListType44 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.RRIntervalSample>? ListType44 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.GlucoseDataSample>? ListType45 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.HydrationMeasurementSample>? ListType45 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.DailyPatternSample>? ListType46 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.KetoneSample>? ListType46 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.StressSample>? ListType47 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.MeasurementDataSample>? ListType47 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.BodyBatterySample>? ListType48 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.TemperatureSample>? ListType48 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.TagEntry>? ListType49 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.GlucoseDataSample>? ListType49 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.MenstruationFlowSample>? ListType50 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.DailyPatternSample>? ListType50 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.MenstruationIntervalSample>? ListType51 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.StressSample>? ListType51 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.BreathSample>? ListType52 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.BodyBatterySample>? ListType52 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.SnoringSample>? ListType53 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.TagEntry>? ListType53 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.SleepHypnogramSample>? ListType54 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.MenstruationFlowSample>? ListType54 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.SwimEquipmentType>? ListType55 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.MenstruationIntervalSample>? ListType55 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.IntensityTarget>? ListType56 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.BreathSample>? ListType56 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.StepControl>? ListType57 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.SnoringSample>? ListType57 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.WorkoutStep>? ListType58 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.SleepHypnogramSample>? ListType58 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.PlannedWorkoutDetailsStepDuration>? ListType59 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.SwimEquipmentType>? ListType59 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.PlannedWorkoutDetailsStepTarget>? ListType60 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.IntensityTarget>? ListType60 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<int>? ListType61 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.StepControl>? ListType61 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.PlannedWorkoutDetailsStep>? ListType62 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.WorkoutStep>? ListType62 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.Activity>? ListType63 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.PlannedWorkoutDetailsStepDuration>? ListType63 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.Nutrition>? ListType64 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.PlannedWorkoutDetailsStepTarget>? ListType64 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.Daily>? ListType65 { get; set; }
+        public global::System.Collections.Generic.List<int>? ListType65 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.Sleep>? ListType66 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.PlannedWorkoutDetailsStep>? ListType66 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.Menstruation>? ListType67 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.Activity>? ListType67 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.Body>? ListType68 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.Nutrition>? ListType68 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.LabReportEventResult>? ListType69 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.Daily>? ListType69 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.PlannedWorkout>? ListType70 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.Sleep>? ListType70 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.HormoneSample>? ListType71 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.Menstruation>? ListType71 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.ObservationCode>? ListType72 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.Body>? ListType72 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.ObservationComponent>? ListType73 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.LabReportEventResult>? ListType73 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.HealthObservation>? ListType74 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.PlannedWorkout>? ListType74 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.WorkoutTemplate>? ListType75 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.HormoneSample>? ListType75 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Terra.OneOf<global::Terra.UserGetResponse2, global::System.Collections.Generic.List<global::Terra.TerraUser>>? ListType76 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.ObservationCode>? ListType76 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Terra.TerraUser>? ListType77 { get; set; }
+        public global::System.Collections.Generic.List<global::Terra.ObservationComponent>? ListType77 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Terra.HealthObservation>? ListType78 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Terra.WorkoutTemplate>? ListType79 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Terra.OneOf<global::Terra.UserGetResponse2, global::System.Collections.Generic.List<global::Terra.TerraUser>>? ListType80 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Terra.TerraUser>? ListType81 { get; set; }
     }
 }

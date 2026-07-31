@@ -2,7 +2,7 @@ openapi: 3.0.3
 info:
   description: The Terra API (v2 surface, served at access.tryterra.co/api/v2).
   title: TerraAPI
-  version: 2026.07.17.1
+  version: 2026.07.30
   license:
     name: Apache-2.0
     url: https://github.com/tryterra/openapi/blob/master/LICENSE
@@ -2320,6 +2320,11 @@ components:
           - $ref: '#/components/schemas/PositionData'
           - type: 'null'
           description: Object containing information on the user's position throughout the workout.
+        strength_data:
+          anyOf:
+          - $ref: '#/components/schemas/ActivityStrengthData'
+          - type: 'null'
+          description: Object containing the sets, reps and load performed during a strength workout. Absent when the activity carries no strength content, or when the source recorded no usable set breakdown.
         power_data:
           anyOf:
           - $ref: '#/components/schemas/PowerData'
@@ -4704,6 +4709,1337 @@ components:
           example:
           - 80.2394
           - 102.931
+    StrengthMovement:
+      anyOf:
+      - type: string
+        enum:
+        - ab_rollout
+      - type: string
+        enum:
+        - arm_circle
+      - type: string
+        enum:
+        - around_the_world
+      - type: string
+        enum:
+        - back_extension
+      - type: string
+        enum:
+        - battle_rope_slam
+      - type: string
+        enum:
+        - battle_rope_wave
+      - type: string
+        enum:
+        - bear_crawl
+      - type: string
+        enum:
+        - bicep_curl
+      - type: string
+        enum:
+        - bicycle_crunch
+      - type: string
+        enum:
+        - bike
+      - type: string
+        enum:
+        - bird_dog
+      - type: string
+        enum:
+        - body_saw
+      - type: string
+        enum:
+        - bound
+      - type: string
+        enum:
+        - box_jump
+      - type: string
+        enum:
+        - broad_jump
+      - type: string
+        enum:
+        - burpee
+      - type: string
+        enum:
+        - butt_kick
+      - type: string
+        enum:
+        - butt_scoot
+      - type: string
+        enum:
+        - calf_raise
+      - type: string
+        enum:
+        - carioca
+      - type: string
+        enum:
+        - carry
+      - type: string
+        enum:
+        - chest_fly
+      - type: string
+        enum:
+        - chest_press
+      - type: string
+        enum:
+        - chin_up
+      - type: string
+        enum:
+        - clamshell
+      - type: string
+        enum:
+        - clean
+      - type: string
+        enum:
+        - clean_pull
+      - type: string
+        enum:
+        - climb
+      - type: string
+        enum:
+        - complex
+      - type: string
+        enum:
+        - cossack_squat
+      - type: string
+        enum:
+        - crunch
+      - type: string
+        enum:
+        - dead_bug
+      - type: string
+        enum:
+        - deadlift
+      - type: string
+        enum:
+        - depth_jump
+      - type: string
+        enum:
+        - diaphragmatic_breathing
+      - type: string
+        enum:
+        - dip
+      - type: string
+        enum:
+        - duck_walk
+      - type: string
+        enum:
+        - elliptical
+      - type: string
+        enum:
+        - face_pull
+      - type: string
+        enum:
+        - farmers_carry
+      - type: string
+        enum:
+        - fire_hydrant
+      - type: string
+        enum:
+        - flutter_kick
+      - type: string
+        enum:
+        - foam_roll
+      - type: string
+        enum:
+        - frog_kick
+      - type: string
+        enum:
+        - front_raise
+      - type: string
+        enum:
+        - glute_bridge
+      - type: string
+        enum:
+        - glute_ham_raise
+      - type: string
+        enum:
+        - good_morning
+      - type: string
+        enum:
+        - halo
+      - type: string
+        enum:
+        - hand_walk
+      - type: string
+        enum:
+        - handstand_hold
+      - type: string
+        enum:
+        - handstand_push_up
+      - type: string
+        enum:
+        - handstand_walk
+      - type: string
+        enum:
+        - heel_slide
+      - type: string
+        enum:
+        - heel_touch
+      - type: string
+        enum:
+        - high_knee
+      - type: string
+        enum:
+        - high_pull
+      - type: string
+        enum:
+        - hike
+      - type: string
+        enum:
+        - hip_abduction
+      - type: string
+        enum:
+        - hip_adduction
+      - type: string
+        enum:
+        - hip_circle
+      - type: string
+        enum:
+        - hip_drop
+      - type: string
+        enum:
+        - hip_extension
+      - type: string
+        enum:
+        - hip_flexion
+      - type: string
+        enum:
+        - hip_hinge
+      - type: string
+        enum:
+        - hip_thrust
+      - type: string
+        enum:
+        - hold
+      - type: string
+        enum:
+        - hollow_hold
+      - type: string
+        enum:
+        - hop
+      - type: string
+        enum:
+        - i_raise
+      - type: string
+        enum:
+        - inchworm
+      - type: string
+        enum:
+        - jerk
+      - type: string
+        enum:
+        - jump
+      - type: string
+        enum:
+        - jump_rope
+      - type: string
+        enum:
+        - jumping_jack
+      - type: string
+        enum:
+        - kick
+      - type: string
+        enum:
+        - knee_raise
+      - type: string
+        enum:
+        - kneel_to_stand
+      - type: string
+        enum:
+        - l_sit
+      - type: string
+        enum:
+        - lat_pulldown
+      - type: string
+        enum:
+        - lateral_raise
+      - type: string
+        enum:
+        - lateral_walk
+      - type: string
+        enum:
+        - leg_circle
+      - type: string
+        enum:
+        - leg_curl
+      - type: string
+        enum:
+        - leg_cycle
+      - type: string
+        enum:
+        - leg_extension
+      - type: string
+        enum:
+        - leg_press
+      - type: string
+        enum:
+        - leg_raise
+      - type: string
+        enum:
+        - leg_swing
+      - type: string
+        enum:
+        - lunge
+      - type: string
+        enum:
+        - march
+      - type: string
+        enum:
+        - monster_walk
+      - type: string
+        enum:
+        - mountain_climber
+      - type: string
+        enum:
+        - muscle_up
+      - type: string
+        enum:
+        - neck_extension
+      - type: string
+        enum:
+        - neck_flexion
+      - type: string
+        enum:
+        - neck_lateral_flexion
+      - type: string
+        enum:
+        - oblique_crunch
+      - type: string
+        enum:
+        - overhead_press
+      - type: string
+        enum:
+        - pallof_press
+      - type: string
+        enum:
+        - pike_up
+      - type: string
+        enum:
+        - plank
+      - type: string
+        enum:
+        - plate_flip
+      - type: string
+        enum:
+        - plate_pinch
+      - type: string
+        enum:
+        - pull_apart
+      - type: string
+        enum:
+        - pull_through
+      - type: string
+        enum:
+        - pull_up
+      - type: string
+        enum:
+        - pullover
+      - type: string
+        enum:
+        - punch
+      - type: string
+        enum:
+        - push_press
+      - type: string
+        enum:
+        - push_up
+      - type: string
+        enum:
+        - rear_delt_fly
+      - type: string
+        enum:
+        - reverse_crunch
+      - type: string
+        enum:
+        - reverse_hyperextension
+      - type: string
+        enum:
+        - romanian_deadlift
+      - type: string
+        enum:
+        - rope_climb
+      - type: string
+        enum:
+        - row
+      - type: string
+        enum:
+        - row_erg
+      - type: string
+        enum:
+        - run
+      - type: string
+        enum:
+        - russian_twist
+      - type: string
+        enum:
+        - scapular_pull_up
+      - type: string
+        enum:
+        - scapular_push_up
+      - type: string
+        enum:
+        - scapular_retraction
+      - type: string
+        enum:
+        - scissor_kick
+      - type: string
+        enum:
+        - shoulder_external_rotation
+      - type: string
+        enum:
+        - shoulder_internal_rotation
+      - type: string
+        enum:
+        - shrug
+      - type: string
+        enum:
+        - shuffle
+      - type: string
+        enum:
+        - sissy_squat
+      - type: string
+        enum:
+        - sit_up
+      - type: string
+        enum:
+        - ski_erg
+      - type: string
+        enum:
+        - skip
+      - type: string
+        enum:
+        - slam
+      - type: string
+        enum:
+        - sled_drag
+      - type: string
+        enum:
+        - sled_push
+      - type: string
+        enum:
+        - snatch
+      - type: string
+        enum:
+        - snatch_balance
+      - type: string
+        enum:
+        - snatch_pull
+      - type: string
+        enum:
+        - squat
+      - type: string
+        enum:
+        - stair_climb
+      - type: string
+        enum:
+        - star_jump
+      - type: string
+        enum:
+        - step_down
+      - type: string
+        enum:
+        - step_over
+      - type: string
+        enum:
+        - step_up
+      - type: string
+        enum:
+        - stiff_legged_deadlift
+      - type: string
+        enum:
+        - stomach_vacuum
+      - type: string
+        enum:
+        - straight_arm_pulldown
+      - type: string
+        enum:
+        - stretch
+      - type: string
+        enum:
+        - superman
+      - type: string
+        enum:
+        - swim
+      - type: string
+        enum:
+        - swimmer
+      - type: string
+        enum:
+        - swing
+      - type: string
+        enum:
+        - t_raise
+      - type: string
+        enum:
+        - throw
+      - type: string
+        enum:
+        - thruster
+      - type: string
+        enum:
+        - tibialis_raise
+      - type: string
+        enum:
+        - tire_flip
+      - type: string
+        enum:
+        - toe_tap
+      - type: string
+        enum:
+        - toe_walk
+      - type: string
+        enum:
+        - tricep_extension
+      - type: string
+        enum:
+        - trunk_lateral_flexion
+      - type: string
+        enum:
+        - trunk_rotation
+      - type: string
+        enum:
+        - turkish_get_up
+      - type: string
+        enum:
+        - upright_row
+      - type: string
+        enum:
+        - v_sit
+      - type: string
+        enum:
+        - v_up
+      - type: string
+        enum:
+        - w_raise
+      - type: string
+        enum:
+        - walk
+      - type: string
+        enum:
+        - walkout
+      - type: string
+        enum:
+        - windmill
+      - type: string
+        enum:
+        - windshield_wiper
+      - type: string
+        enum:
+        - wood_chop
+      - type: string
+        enum:
+        - wrist_curl
+      - type: string
+        enum:
+        - y_raise
+      - type: string
+        description: The source reported a value here but it could not be resolved. Distinct from the field being absent, which means the source reported nothing at all.
+        enum:
+        - unknown
+      - type: string
+        description: A value Terra has added since this schema was published.
+      description: The joint action an exercise performs, stripped of implement, grip, stance, tempo and position. Terra's own vocabulary, not the source's wording. Open enum — handle unknown values gracefully.
+      example: ab_rollout
+    StrengthTarget:
+      anyOf:
+      - type: string
+        enum:
+        - abs
+      - type: string
+        enum:
+        - adductors
+      - type: string
+        enum:
+        - ankle
+      - type: string
+        enum:
+        - back
+      - type: string
+        enum:
+        - calves
+      - type: string
+        enum:
+        - chest
+      - type: string
+        enum:
+        - forearms
+      - type: string
+        enum:
+        - glutes
+      - type: string
+        enum:
+        - hamstrings
+      - type: string
+        enum:
+        - hip
+      - type: string
+        enum:
+        - hip_abductor
+      - type: string
+        enum:
+        - hip_adductor
+      - type: string
+        enum:
+        - hip_flexor
+      - type: string
+        enum:
+        - lat
+      - type: string
+        enum:
+        - lower_back
+      - type: string
+        enum:
+        - neck
+      - type: string
+        enum:
+        - obliques
+      - type: string
+        enum:
+        - quadriceps
+      - type: string
+        enum:
+        - shoulders
+      - type: string
+        enum:
+        - spine
+      - type: string
+        enum:
+        - thoracic_spine
+      - type: string
+        enum:
+        - triceps
+      - type: string
+        enum:
+        - upper_back
+      - type: string
+        description: The source reported a value here but it could not be resolved. Distinct from the field being absent, which means the source reported nothing at all.
+        enum:
+        - unknown
+      - type: string
+        description: A value Terra has added since this schema was published.
+      description: The body part a stretch or mobility drill acts on. For a stretch the body part IS the exercise, which is why it is reported separately from the muscles worked. Open enum — handle unknown
+        values gracefully.
+      example: abs
+    StrengthImplement:
+      anyOf:
+      - type: string
+        enum:
+        - band
+      - type: string
+        enum:
+        - barbell
+      - type: string
+        enum:
+        - battle_rope
+      - type: string
+        enum:
+        - belt
+      - type: string
+        enum:
+        - bodyweight
+      - type: string
+        enum:
+        - cable
+      - type: string
+        enum:
+        - dumbbell
+      - type: string
+        enum:
+        - ez_bar
+      - type: string
+        enum:
+        - handle_band
+      - type: string
+        enum:
+        - kettlebell
+      - type: string
+        enum:
+        - landmine
+      - type: string
+        enum:
+        - loop_band
+      - type: string
+        enum:
+        - machine
+      - type: string
+        enum:
+        - machine_assisted
+      - type: string
+        enum:
+        - medicine_ball
+      - type: string
+        enum:
+        - mini_band
+      - type: string
+        enum:
+        - partner
+      - type: string
+        enum:
+        - pvc
+      - type: string
+        enum:
+        - sled
+      - type: string
+        enum:
+        - smith_machine
+      - type: string
+        enum:
+        - suspension
+      - type: string
+        enum:
+        - trap_bar
+      - type: string
+        enum:
+        - weight_plate
+      - type: string
+        description: The source reported a value here but it could not be resolved. Distinct from the field being absent, which means the source reported nothing at all.
+        enum:
+        - unknown
+      - type: string
+        description: A value Terra has added since this schema was published.
+      description: What provides the load. Open enum — handle unknown values gracefully.
+      example: band
+    StrengthSurface:
+      anyOf:
+      - type: string
+        enum:
+        - bench
+      - type: string
+        enum:
+        - bosu
+      - type: string
+        enum:
+        - box
+      - type: string
+        enum:
+        - floor
+      - type: string
+        enum:
+        - foam_roller
+      - type: string
+        enum:
+        - glute_ham_machine
+      - type: string
+        enum:
+        - preacher_bench
+      - type: string
+        enum:
+        - swiss_ball
+      - type: string
+        enum:
+        - treadmill
+      - type: string
+        enum:
+        - wall
+      - type: string
+        description: The source reported a value here but it could not be resolved. Distinct from the field being absent, which means the source reported nothing at all.
+        enum:
+        - unknown
+      - type: string
+        description: A value Terra has added since this schema was published.
+      description: What the body is supported on, when it is not the floor. Open enum — handle unknown values gracefully.
+      example: bench
+    StrengthGripWidth:
+      anyOf:
+      - type: string
+        enum:
+        - close
+      - type: string
+        enum:
+        - wide
+      - type: string
+        description: The source reported a value here but it could not be resolved. Distinct from the field being absent, which means the source reported nothing at all.
+        enum:
+        - unknown
+      - type: string
+        description: A value Terra has added since this schema was published.
+      description: How far apart the hands are. Open enum — handle unknown values gracefully.
+      example: close
+    StrengthGripOrientation:
+      anyOf:
+      - type: string
+        enum:
+        - bottoms_up
+      - type: string
+        enum:
+        - mixed
+      - type: string
+        enum:
+        - neutral
+      - type: string
+        enum:
+        - overhand
+      - type: string
+        enum:
+        - pinch
+      - type: string
+        enum:
+        - reverse
+      - type: string
+        enum:
+        - underhand
+      - type: string
+        description: The source reported a value here but it could not be resolved. Distinct from the field being absent, which means the source reported nothing at all.
+        enum:
+        - unknown
+      - type: string
+        description: A value Terra has added since this schema was published.
+      description: Which way the hands face. Separate from grip_width because the two combine. Open enum — handle unknown values gracefully.
+      example: bottoms_up
+    StrengthLaterality:
+      anyOf:
+      - type: string
+        enum:
+        - alternating
+      - type: string
+        enum:
+        - bilateral
+      - type: string
+        enum:
+        - unilateral
+      - type: string
+        description: The source reported a value here but it could not be resolved. Distinct from the field being absent, which means the source reported nothing at all.
+        enum:
+        - unknown
+      - type: string
+        description: A value Terra has added since this schema was published.
+      description: Whether both limbs work together, alternately, or one at a time. Open enum — handle unknown values gracefully.
+      example: alternating
+    StrengthStance:
+      anyOf:
+      - type: string
+        enum:
+        - crossover
+      - type: string
+        enum:
+        - curtsy
+      - type: string
+        enum:
+        - split
+      - type: string
+        enum:
+        - sumo
+      - type: string
+        description: The source reported a value here but it could not be resolved. Distinct from the field being absent, which means the source reported nothing at all.
+        enum:
+        - unknown
+      - type: string
+        description: A value Terra has added since this schema was published.
+      description: Foot arrangement. Open enum — handle unknown values gracefully.
+      example: crossover
+    StrengthPosition:
+      anyOf:
+      - type: string
+        enum:
+        - bent_over
+      - type: string
+        enum:
+        - decline
+      - type: string
+        enum:
+        - elevated
+      - type: string
+        enum:
+        - flat
+      - type: string
+        enum:
+        - forearm
+      - type: string
+        enum:
+        - half_kneeling
+      - type: string
+        enum:
+        - hanging
+      - type: string
+        enum:
+        - incline
+      - type: string
+        enum:
+        - inverted
+      - type: string
+        enum:
+        - kneeling
+      - type: string
+        enum:
+        - lying
+      - type: string
+        enum:
+        - pike
+      - type: string
+        enum:
+        - prone
+      - type: string
+        enum:
+        - quadruped
+      - type: string
+        enum:
+        - seated
+      - type: string
+        enum:
+        - side_lying
+      - type: string
+        enum:
+        - standing
+      - type: string
+        enum:
+        - supine
+      - type: string
+        description: The source reported a value here but it could not be resolved. Distinct from the field being absent, which means the source reported nothing at all.
+        enum:
+        - unknown
+      - type: string
+        description: A value Terra has added since this schema was published.
+      description: Orientation of the body or bench. Open enum — handle unknown values gracefully.
+      example: bent_over
+    StrengthBarPosition:
+      anyOf:
+      - type: string
+        enum:
+        - behind_back
+      - type: string
+        enum:
+        - behind_neck
+      - type: string
+        enum:
+        - front_rack
+      - type: string
+        enum:
+        - goblet
+      - type: string
+        enum:
+        - overhead
+      - type: string
+        enum:
+        - zercher
+      - type: string
+        description: The source reported a value here but it could not be resolved. Distinct from the field being absent, which means the source reported nothing at all.
+        enum:
+        - unknown
+      - type: string
+        description: A value Terra has added since this schema was published.
+      description: Where the implement is carried. Open enum — handle unknown values gracefully.
+      example: behind_back
+    StrengthTempo:
+      anyOf:
+      - type: string
+        enum:
+        - eccentric
+      - type: string
+        enum:
+        - explosive
+      - type: string
+        enum:
+        - isometric
+      - type: string
+        enum:
+        - kipping
+      - type: string
+        enum:
+        - paused
+      - type: string
+        enum:
+        - pulse
+      - type: string
+        enum:
+        - tempo_slow
+      - type: string
+        description: The source reported a value here but it could not be resolved. Distinct from the field being absent, which means the source reported nothing at all.
+        enum:
+        - unknown
+      - type: string
+        description: A value Terra has added since this schema was published.
+      description: How the repetition is paced. Open enum — handle unknown values gracefully.
+      example: eccentric
+    StrengthRangeOfMotion:
+      anyOf:
+      - type: string
+        enum:
+        - deficit
+      - type: string
+        enum:
+        - from_blocks
+      - type: string
+        enum:
+        - from_hang
+      - type: string
+        enum:
+        - full
+      - type: string
+        enum:
+        - partial
+      - type: string
+        enum:
+        - to_bench
+      - type: string
+        description: The source reported a value here but it could not be resolved. Distinct from the field being absent, which means the source reported nothing at all.
+        enum:
+        - unknown
+      - type: string
+        description: A value Terra has added since this schema was published.
+      description: How much of the movement is performed, or where it starts. Open enum — handle unknown values gracefully.
+      example: deficit
+    StrengthProgramme:
+      anyOf:
+      - type: string
+        enum:
+        - pregnancy
+      - type: string
+        description: The source reported a value here but it could not be resolved. Distinct from the field being absent, which means the source reported nothing at all.
+        enum:
+        - unknown
+      - type: string
+        description: A value Terra has added since this schema was published.
+      description: A programme or population the variant belongs to. Descriptive only — it changes neither the movement nor the load. Open enum — handle unknown values gracefully.
+      example: pregnancy
+    StrengthExerciseModifiers:
+      type: object
+      properties:
+        implement:
+          anyOf:
+          - $ref: '#/components/schemas/StrengthImplement'
+          - type: 'null'
+          description: What provides the load. Open enum — handle unknown values gracefully; the published vocabulary lists the values in use, and a value outside it must pass through rather than be rejected.
+          example: barbell
+        surface:
+          anyOf:
+          - $ref: '#/components/schemas/StrengthSurface'
+          - type: 'null'
+          description: What the body is supported on, when it is not the floor. Open enum.
+        grip_width:
+          anyOf:
+          - $ref: '#/components/schemas/StrengthGripWidth'
+          - type: 'null'
+          description: How far apart the hands are. Open enum.
+          example: close
+        grip_orientation:
+          anyOf:
+          - $ref: '#/components/schemas/StrengthGripOrientation'
+          - type: 'null'
+          description: Which way the hands face. Open enum. Separate from grip_width because the two combine — a close-grip underhand pulldown needs both.
+        laterality:
+          anyOf:
+          - $ref: '#/components/schemas/StrengthLaterality'
+          - type: 'null'
+          description: Whether both limbs work together, alternately, or one at a time. Open enum.
+        stance:
+          anyOf:
+          - $ref: '#/components/schemas/StrengthStance'
+          - type: 'null'
+          description: Foot arrangement. Open enum.
+        position:
+          anyOf:
+          - $ref: '#/components/schemas/StrengthPosition'
+          - type: 'null'
+          description: Orientation of the body or bench. Open enum.
+          example: incline
+        bar_position:
+          anyOf:
+          - $ref: '#/components/schemas/StrengthBarPosition'
+          - type: 'null'
+          description: Where the implement is carried. Open enum.
+        tempo:
+          anyOf:
+          - $ref: '#/components/schemas/StrengthTempo'
+          - type: 'null'
+          description: How the repetition is paced. Open enum.
+        rom:
+          anyOf:
+          - $ref: '#/components/schemas/StrengthRangeOfMotion'
+          - type: 'null'
+          description: How much of the movement is performed, or where it starts. Open enum.
+        accommodating_resistance:
+          anyOf:
+          - type: string
+          - type: 'null'
+          description: Bands or chains added to another implement — not a second implement. The reported weight_kg is the bar alone, since band tension is not expressed in kg, so this also signals that
+            the recorded load understates the real resistance. Open enum.
+        assistance:
+          anyOf:
+          - type: string
+          - type: 'null'
+          description: 'What makes the movement easier and how: machine, band, partner, balance_support. Names the source of assistance, not the fact of it. Open enum.'
+        programme:
+          anyOf:
+          - $ref: '#/components/schemas/StrengthProgramme'
+          - type: 'null'
+          description: A programme or population the variant belongs to. Describes context, not a different movement, so it does not distinguish one exercise from another. Open enum.
+    StrengthMuscle:
+      anyOf:
+      - type: string
+        enum:
+        - abductors
+      - type: string
+        enum:
+        - abs
+      - type: string
+        enum:
+        - adductors
+      - type: string
+        enum:
+        - back
+      - type: string
+        enum:
+        - biceps
+      - type: string
+        enum:
+        - calves
+      - type: string
+        enum:
+        - chest
+      - type: string
+        enum:
+        - forearms
+      - type: string
+        enum:
+        - glutes
+      - type: string
+        enum:
+        - hamstrings
+      - type: string
+        enum:
+        - lower_back
+      - type: string
+        enum:
+        - neck
+      - type: string
+        enum:
+        - quadriceps
+      - type: string
+        enum:
+        - shoulders
+      - type: string
+        enum:
+        - trapezius
+      - type: string
+        enum:
+        - triceps
+      - type: string
+        description: The source reported a value here but it could not be resolved. Distinct from the field being absent, which means the source reported nothing at all.
+        enum:
+        - unknown
+      - type: string
+        description: A value Terra has added since this schema was published.
+      description: A muscle group an exercise works, used by both primary_muscles and secondary_muscles. Open enum — handle unknown values gracefully.
+      example: abductors
+    StrengthSource:
+      anyOf:
+      - type: string
+        enum:
+        - user_logged
+      - type: string
+        description: The source reported a value here but it could not be resolved. Distinct from the field being absent, which means the source reported nothing at all.
+        enum:
+        - unknown
+      - type: string
+        description: A value Terra has added since this schema was published.
+      description: How the exercise came to be recorded. Open enum — handle unknown values gracefully.
+      example: user_logged
+    StrengthLoadType:
+      anyOf:
+      - type: string
+        enum:
+        - assisted
+      - type: string
+        enum:
+        - bodyweight
+      - type: string
+        enum:
+        - bodyweight_plus
+      - type: string
+        enum:
+        - external
+      - type: string
+        enum:
+        - unknown
+      - type: string
+        description: A value Terra has added since this schema was published.
+      description: How to read weight_kg for this set. Open enum — handle unknown values gracefully.
+      example: assisted
+    StrengthSetType:
+      anyOf:
+      - type: string
+        enum:
+        - amrap
+      - type: string
+        enum:
+        - normal
+      - type: string
+        enum:
+        - warmup
+      - type: string
+        description: The source reported a value here but it could not be resolved. Distinct from the field being absent, which means the source reported nothing at all.
+        enum:
+        - unknown
+      - type: string
+        description: A value Terra has added since this schema was published.
+      description: What kind of set this was. Open enum — handle unknown values gracefully.
+      example: amrap
+    StrengthSet:
+      type: object
+      properties:
+        distance_meters:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Distance covered, for loaded carries.
+        duration_seconds:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Duration of the set, for timed holds and carries.
+        end_time:
+          anyOf:
+          - type: string
+          - type: 'null'
+          description: End of the set, ISO 8601. Null when the source does not timestamp sets.
+        load_type:
+          $ref: '#/components/schemas/StrengthLoadType'
+          description: 'How to read weight_kg. Always present: every set that happened was loaded somehow, so a set Terra could not classify reports `unknown` rather than omitting the field. Open enum —
+            handle unknown values gracefully. Only external means weight_kg is load added to an otherwise unloaded body, so compute volume from external sets alone. Test for external rather than testing
+            against the other values: a load type you do not recognise must be treated as unknown, because counting it as external overstates the load.'
+          example: external
+        notes:
+          anyOf:
+          - type: string
+          - type: 'null'
+          description: The user's note on this specific set.
+        reps:
+          anyOf:
+          - type: integer
+          - type: 'null'
+          description: Repetitions performed, exactly as the source recorded them. For unilateral movements this is per side.
+          example: 5
+        rest_after_seconds:
+          anyOf:
+          - type: integer
+          - type: 'null'
+          description: Rest taken after this set, within its exercise. Rest between exercises is not represented.
+          example: 120
+        rir:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Reps in reserve. Never converted to or from rpe.
+        rpe:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Rate of perceived exertion, on a 0-10 scale.
+          example: 8.5
+        set_type:
+          anyOf:
+          - $ref: '#/components/schemas/StrengthSetType'
+          - type: 'null'
+          description: The type of set as reported by the source, such as normal, warmup, dropset or failure. Open enum — handle unknown values gracefully. unknown when the source does not classify the
+            set.
+          example: normal
+        start_time:
+          anyOf:
+          - type: string
+          - type: 'null'
+          description: Start of the set, ISO 8601. Null when the source does not timestamp sets.
+        weight_kg:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: 'Load as the source logged it: a barbell''s total, or one dumbbell. Never negative. Null when load_type is unknown, and may also be null for a load_type you do not recognise.'
+          example: 100
+      required:
+      - load_type
+    StrengthExercise:
+      type: object
+      properties:
+        exercise_name:
+          anyOf:
+          - type: string
+          - type: 'null'
+          description: The source's own label for the exercise, passed through verbatim. Present whenever the source names the exercise, whether or not it resolved to a movement. Intended for display.
+          example: Close Grip Bench Press
+        movements:
+          anyOf:
+          - type: array
+            items:
+              $ref: '#/components/schemas/StrengthMovement'
+          - type: 'null'
+          description: 'The joint actions performed, in the order one repetition performs them, with implement, grip, stance, tempo and position all carried in modifiers. Usually one; a clean and jerk is
+            [clean, jerk]. This is the rollup axis, and membership is what to test: a clean and jerk belongs in both clean volume and jerk volume, so ask whether movements contains the value rather than
+            equals it. Open enum — handle unknown values gracefully. Empty when the exercise could not be resolved, in which case exercise_name still says what the source called it.'
+        target:
+          anyOf:
+          - $ref: '#/components/schemas/StrengthTarget'
+          - type: 'null'
+          description: The body part a stretch or mobility drill targets.
+        modifiers:
+          anyOf:
+          - $ref: '#/components/schemas/StrengthExerciseModifiers'
+          - type: 'null'
+          description: 'The axes that qualify the exercise. An axis that is absent was not reported by the source — it does NOT mean a default applies, so a squat with no implement is not the same as a
+            bodyweight squat. Axes describe the exercise as performed rather than each movement separately: in a step up to a deficit reverse lunge only the lunge is at a deficit, but the axis describes
+            the whole exercise and exercise_name carries the detail.'
+        primary_muscles:
+          anyOf:
+          - type: array
+            items:
+              $ref: '#/components/schemas/StrengthMuscle'
+          - type: 'null'
+          description: 'The muscles the exercise primarily works, as reported by the source. A list because providers differ: some name exactly one, some name several for the same exercise, and some name
+            none. Empty means the source did not say, not that no muscle is worked. Open enum — handle unknown values gracefully.'
+        secondary_muscles:
+          anyOf:
+          - type: array
+            items:
+              $ref: '#/components/schemas/StrengthMuscle'
+          - type: 'null'
+          description: The muscles the exercise works without being the focus, as reported by the source. Kept apart from primary_muscles because the distinction drives recovery and volume-per-muscle, which
+            merging the two would lose. Empty means the source did not say. Open enum — handle unknown values gracefully.
+        group_id:
+          anyOf:
+          - type: integer
+          - type: 'null'
+          description: Exercises sharing a value were performed together, as a superset or circuit. Unique within this activity only.
+          example: 1
+        notes:
+          anyOf:
+          - type: string
+          - type: 'null'
+          description: The user's note on the exercise.
+        rpe:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Effort for the exercise as a whole, on a 0-10 scale, when the source records it once per exercise rather than per set.
+          example: 8.5
+        source:
+          anyOf:
+          - $ref: '#/components/schemas/StrengthSource'
+          - type: 'null'
+          description: 'Where the exercise came from. Open enum — handle unknown values gracefully; the values in use today are user_logged, device_detected and unknown. Only user_logged is user-confirmed.
+            Test for user_logged rather than testing against device_detected, so that a value added later is not trusted by default: anything that is not user_logged may have been inferred by a wearable
+            and may be wrong, rep counts included.'
+        sets:
+          anyOf:
+          - type: array
+            items:
+              $ref: '#/components/schemas/StrengthSet'
+          - type: 'null'
+          description: The performed sets, in order.
+    ActivityStrengthData:
+      type: object
+      properties:
+        body_weight_kg:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: The user's bodyweight at the time of the workout, when the source records it. Needed to value bodyweight-based sets, and frequently absent.
+          example: 78.2
+        exercises:
+          anyOf:
+          - type: array
+            items:
+              $ref: '#/components/schemas/StrengthExercise'
+          - type: 'null'
+          description: The exercises performed, in the order they were started.
     PowerSample:
       type: object
       properties:
