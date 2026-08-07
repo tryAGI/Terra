@@ -33,6 +33,13 @@ namespace Terra
         public string? AuthFailureRedirectUrl { get; set; }
 
         /// <summary>
+        /// Which Terra reference app an APPLE_HEALTH authentication link hands the end user to. Omit to use Terra Avengers. Sending this for any other resource has no effect.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("sdk_app")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Terra.JsonConverters.AuthenticationAuthenticateUserRequestSdkAppJsonConverter))]
+        public global::Terra.AuthenticationAuthenticateUserRequestSdkApp? SdkApp { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -45,6 +52,9 @@ namespace Terra
         /// <param name="referenceId"></param>
         /// <param name="authSuccessRedirectUrl"></param>
         /// <param name="authFailureRedirectUrl"></param>
+        /// <param name="sdkApp">
+        /// Which Terra reference app an APPLE_HEALTH authentication link hands the end user to. Omit to use Terra Avengers. Sending this for any other resource has no effect.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -52,12 +62,14 @@ namespace Terra
             string? language,
             string? referenceId,
             string? authSuccessRedirectUrl,
-            string? authFailureRedirectUrl)
+            string? authFailureRedirectUrl,
+            global::Terra.AuthenticationAuthenticateUserRequestSdkApp? sdkApp)
         {
             this.Language = language;
             this.ReferenceId = referenceId;
             this.AuthSuccessRedirectUrl = authSuccessRedirectUrl;
             this.AuthFailureRedirectUrl = authFailureRedirectUrl;
+            this.SdkApp = sdkApp;
         }
 
         /// <summary>

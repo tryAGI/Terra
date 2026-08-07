@@ -43,6 +43,9 @@ namespace Terra
         /// <param name="referenceId"></param>
         /// <param name="authSuccessRedirectUrl"></param>
         /// <param name="authFailureRedirectUrl"></param>
+        /// <param name="sdkApp">
+        /// Which Terra reference app an APPLE_HEALTH authentication link hands the end user to. Omit to use Terra Avengers. Sending this for any other resource has no effect.
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
@@ -52,6 +55,7 @@ namespace Terra
             string? referenceId = default,
             string? authSuccessRedirectUrl = default,
             string? authFailureRedirectUrl = default,
+            global::Terra.AuthenticationAuthenticateUserRequestSdkApp? sdkApp = default,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
