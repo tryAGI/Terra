@@ -1737,6 +1737,10 @@ namespace Terra
 
             typeof(global::Terra.JsonConverters.HealthObservationEventTypeNullableJsonConverter),
 
+            typeof(global::Terra.JsonConverters.AuthenticationAuthenticateUserRequestSdkAppJsonConverter),
+
+            typeof(global::Terra.JsonConverters.AuthenticationAuthenticateUserRequestSdkAppNullableJsonConverter),
+
             typeof(global::Terra.JsonConverters.AuthenticationAuthenticateUserResponseStatusJsonConverter),
 
             typeof(global::Terra.JsonConverters.AuthenticationAuthenticateUserResponseStatusNullableJsonConverter),
@@ -4104,6 +4108,10 @@ namespace Terra
 
             typeof(global::Terra.JsonConverters.HealthObservationEventTypeNullableJsonConverter),
 
+            typeof(global::Terra.JsonConverters.AuthenticationAuthenticateUserRequestSdkAppJsonConverter),
+
+            typeof(global::Terra.JsonConverters.AuthenticationAuthenticateUserRequestSdkAppNullableJsonConverter),
+
             typeof(global::Terra.JsonConverters.AuthenticationAuthenticateUserResponseStatusJsonConverter),
 
             typeof(global::Terra.JsonConverters.AuthenticationAuthenticateUserResponseStatusNullableJsonConverter),
@@ -4482,6 +4490,7 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.HealthObservationEventType), TypeInfoPropertyName = "HealthObservationEventType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.HealthObservation>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationAuthenticateUserRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationAuthenticateUserRequestSdkApp), TypeInfoPropertyName = "AuthenticationAuthenticateUserRequestSdkApp2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutsPlanWorkoutRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutsUpdatePlannedWorkoutRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportsUploadRequest))]
@@ -4735,7 +4744,6 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTargetVariant24?), TypeInfoPropertyName = "NullableStrengthTargetVariant242")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTargetVariant25?), TypeInfoPropertyName = "NullableStrengthTargetVariant252")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthImplement?), TypeInfoPropertyName = "NullableStrengthImplement2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthImplementVariant1?), TypeInfoPropertyName = "NullableStrengthImplementVariant12_3")]
     internal sealed partial class SourceGenerationContextChunk1 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -6471,6 +6479,10 @@ namespace Terra
 
             typeof(global::Terra.JsonConverters.HealthObservationEventTypeNullableJsonConverter),
 
+            typeof(global::Terra.JsonConverters.AuthenticationAuthenticateUserRequestSdkAppJsonConverter),
+
+            typeof(global::Terra.JsonConverters.AuthenticationAuthenticateUserRequestSdkAppNullableJsonConverter),
+
             typeof(global::Terra.JsonConverters.AuthenticationAuthenticateUserResponseStatusJsonConverter),
 
             typeof(global::Terra.JsonConverters.AuthenticationAuthenticateUserResponseStatusNullableJsonConverter),
@@ -6603,6 +6615,7 @@ namespace Terra
 
             typeof(global::Terra.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthImplementVariant1?), TypeInfoPropertyName = "NullableStrengthImplementVariant12_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthImplementVariant2?), TypeInfoPropertyName = "NullableStrengthImplementVariant22_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthImplementVariant3?), TypeInfoPropertyName = "NullableStrengthImplementVariant32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthImplementVariant4?), TypeInfoPropertyName = "NullableStrengthImplementVariant42")]
@@ -6853,6 +6866,7 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.PlannedWorkoutEventType?), TypeInfoPropertyName = "NullablePlannedWorkoutEventType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.HormoneEventType?), TypeInfoPropertyName = "NullableHormoneEventType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.HealthObservationEventType?), TypeInfoPropertyName = "NullableHealthObservationEventType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationAuthenticateUserRequestSdkApp?), TypeInfoPropertyName = "NullableAuthenticationAuthenticateUserRequestSdkApp2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<int?, global::System.DateTime?>?), TypeInfoPropertyName = "NullableOneOfInt32DateTime2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationAuthenticateUserResponseStatus?), TypeInfoPropertyName = "NullableAuthenticationAuthenticateUserResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationGenerateWidgetSessionResponseStatus?), TypeInfoPropertyName = "NullableAuthenticationGenerateWidgetSessionResponseStatus2")]
@@ -7859,6 +7873,8 @@ namespace Terra
             options.Converters.Add(new global::Terra.JsonConverters.HormoneEventTypeNullableJsonConverter());
             options.Converters.Add(new global::Terra.JsonConverters.HealthObservationEventTypeJsonConverter());
             options.Converters.Add(new global::Terra.JsonConverters.HealthObservationEventTypeNullableJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.AuthenticationAuthenticateUserRequestSdkAppJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.AuthenticationAuthenticateUserRequestSdkAppNullableJsonConverter());
             options.Converters.Add(new global::Terra.JsonConverters.AuthenticationAuthenticateUserResponseStatusJsonConverter());
             options.Converters.Add(new global::Terra.JsonConverters.AuthenticationAuthenticateUserResponseStatusNullableJsonConverter());
             options.Converters.Add(new global::Terra.JsonConverters.AuthenticationGenerateWidgetSessionResponseStatusJsonConverter());
