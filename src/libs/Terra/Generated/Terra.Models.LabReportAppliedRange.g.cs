@@ -9,13 +9,13 @@ namespace Terra
     public sealed partial class LabReportAppliedRange
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("lower")]
         public double? Lower { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("upper")]
         public double? Upper { get; set; }

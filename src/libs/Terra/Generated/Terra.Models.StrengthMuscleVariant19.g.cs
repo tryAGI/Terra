@@ -4,14 +4,14 @@
 namespace Terra
 {
     /// <summary>
-    /// The source reported a value here but it could not be resolved. Distinct from the field being absent, which means the source reported nothing at all.
+    /// Tibialis anterior. Its own group — not part of the calves, which it opposes.
     /// </summary>
     public enum StrengthMuscleVariant19
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
-        Unknown,
+        Tibialis,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Terra
         {
             return value switch
             {
-                StrengthMuscleVariant19.Unknown => "unknown",
+                StrengthMuscleVariant19.Tibialis => "tibialis",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Terra
         {
             return value switch
             {
-                "unknown" => StrengthMuscleVariant19.Unknown,
+                "tibialis" => StrengthMuscleVariant19.Tibialis,
                 _ => null,
             };
         }

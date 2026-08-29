@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthMovementVariant161
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TrunkLateralFlexion,
     }

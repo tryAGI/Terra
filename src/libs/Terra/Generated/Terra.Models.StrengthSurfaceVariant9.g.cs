@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthSurfaceVariant9
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Treadmill,
     }

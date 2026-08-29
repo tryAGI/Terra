@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthImplementVariant18
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pvc,
     }

@@ -27,11 +27,11 @@ namespace Terra
             };
         partial void PrepareWorkoutsDeleteWorkoutArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref string workoutId);
+            ref long workoutId);
         partial void PrepareWorkoutsDeleteWorkoutRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            string workoutId);
+            long workoutId);
         partial void ProcessWorkoutsDeleteWorkoutResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -50,7 +50,7 @@ namespace Terra
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Terra.WorkoutsDeleteWorkoutResponse> WorkoutsDeleteWorkoutAsync(
-            string workoutId,
+            long workoutId,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -71,7 +71,7 @@ namespace Terra
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse<global::Terra.WorkoutsDeleteWorkoutResponse>> WorkoutsDeleteWorkoutAsResponseAsync(
-            string workoutId,
+            long workoutId,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -134,7 +134,7 @@ namespace Terra
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
                 global::Terra.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,

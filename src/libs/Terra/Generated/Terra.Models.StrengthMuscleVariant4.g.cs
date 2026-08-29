@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    /// The back without a part named. Where a source distinguishes the lats or the upper back, `lat` or `upper_back` is reported instead.
     /// </summary>
     public enum StrengthMuscleVariant4
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Back,
     }

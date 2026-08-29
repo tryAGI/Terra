@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SwimStrokeTypeVariant4
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Butterfly,
     }

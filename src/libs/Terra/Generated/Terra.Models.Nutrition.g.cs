@@ -4,7 +4,7 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class Nutrition
     {
@@ -21,7 +21,7 @@ namespace Terra
         public global::System.Collections.Generic.IList<global::Terra.Meal>? Meals { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
         [global::System.Text.Json.Serialization.JsonRequired]

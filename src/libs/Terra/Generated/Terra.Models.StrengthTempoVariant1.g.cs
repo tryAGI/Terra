@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthTempoVariant1
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Eccentric,
     }

@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SwimEquipmentTypeVariant1
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         None,
     }

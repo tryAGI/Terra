@@ -20,7 +20,7 @@ namespace Terra.JsonConverters
                     {
                         return global::Terra.WorkoutsPlanWorkoutResponseStatusExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

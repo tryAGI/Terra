@@ -11,7 +11,7 @@ namespace Terra
     public readonly partial struct StrengthStance : global::System.IEquatable<StrengthStance>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthStanceVariant1? StrengthStanceVariant1 { get; init; }
@@ -20,7 +20,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthStanceVariant1))]
@@ -28,7 +28,7 @@ namespace Terra
         public bool IsStrengthStanceVariant1 => StrengthStanceVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthStanceVariant1(
 #if NET6_0_OR_GREATER
@@ -41,14 +41,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthStanceVariant1 PickStrengthStanceVariant1() => IsStrengthStanceVariant1
             ? StrengthStanceVariant1!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthStanceVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthStanceVariant2? StrengthStanceVariant2 { get; init; }
@@ -57,7 +57,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthStanceVariant2))]
@@ -65,7 +65,7 @@ namespace Terra
         public bool IsStrengthStanceVariant2 => StrengthStanceVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthStanceVariant2(
 #if NET6_0_OR_GREATER
@@ -78,14 +78,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthStanceVariant2 PickStrengthStanceVariant2() => IsStrengthStanceVariant2
             ? StrengthStanceVariant2!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthStanceVariant2' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthStanceVariant3? StrengthStanceVariant3 { get; init; }
@@ -94,7 +94,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthStanceVariant3))]
@@ -102,7 +102,7 @@ namespace Terra
         public bool IsStrengthStanceVariant3 => StrengthStanceVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthStanceVariant3(
 #if NET6_0_OR_GREATER
@@ -115,14 +115,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthStanceVariant3 PickStrengthStanceVariant3() => IsStrengthStanceVariant3
             ? StrengthStanceVariant3!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthStanceVariant3' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthStanceVariant4? StrengthStanceVariant4 { get; init; }
@@ -131,7 +131,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthStanceVariant4))]
@@ -139,7 +139,7 @@ namespace Terra
         public bool IsStrengthStanceVariant4 => StrengthStanceVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthStanceVariant4(
 #if NET6_0_OR_GREATER
@@ -152,7 +152,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthStanceVariant4 PickStrengthStanceVariant4() => IsStrengthStanceVariant4
             ? StrengthStanceVariant4!.Value
@@ -168,7 +168,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthStanceVariant5))]
@@ -176,7 +176,7 @@ namespace Terra
         public bool IsStrengthStanceVariant5 => StrengthStanceVariant5 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthStanceVariant5(
 #if NET6_0_OR_GREATER
@@ -189,7 +189,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthStanceVariant5 PickStrengthStanceVariant5() => IsStrengthStanceVariant5
             ? StrengthStanceVariant5!.Value
@@ -205,7 +205,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthStanceVariant6))]
@@ -213,7 +213,7 @@ namespace Terra
         public bool IsStrengthStanceVariant6 => StrengthStanceVariant6 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthStanceVariant6(
 #if NET6_0_OR_GREATER
@@ -226,23 +226,23 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickStrengthStanceVariant6() => IsStrengthStanceVariant6
             ? StrengthStanceVariant6!
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthStanceVariant6' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthStance(global::Terra.StrengthStanceVariant1 value) => new StrengthStance((global::Terra.StrengthStanceVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthStanceVariant1?(StrengthStance @this) => @this.StrengthStanceVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthStance(global::Terra.StrengthStanceVariant1? value)
         {
@@ -250,22 +250,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthStance FromStrengthStanceVariant1(global::Terra.StrengthStanceVariant1? value) => new StrengthStance(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthStance(global::Terra.StrengthStanceVariant2 value) => new StrengthStance((global::Terra.StrengthStanceVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthStanceVariant2?(StrengthStance @this) => @this.StrengthStanceVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthStance(global::Terra.StrengthStanceVariant2? value)
         {
@@ -273,22 +273,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthStance FromStrengthStanceVariant2(global::Terra.StrengthStanceVariant2? value) => new StrengthStance(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthStance(global::Terra.StrengthStanceVariant3 value) => new StrengthStance((global::Terra.StrengthStanceVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthStanceVariant3?(StrengthStance @this) => @this.StrengthStanceVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthStance(global::Terra.StrengthStanceVariant3? value)
         {
@@ -296,22 +296,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthStance FromStrengthStanceVariant3(global::Terra.StrengthStanceVariant3? value) => new StrengthStance(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthStance(global::Terra.StrengthStanceVariant4 value) => new StrengthStance((global::Terra.StrengthStanceVariant4?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthStanceVariant4?(StrengthStance @this) => @this.StrengthStanceVariant4;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthStance(global::Terra.StrengthStanceVariant4? value)
         {
@@ -319,22 +319,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthStance FromStrengthStanceVariant4(global::Terra.StrengthStanceVariant4? value) => new StrengthStance(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthStance(global::Terra.StrengthStanceVariant5 value) => new StrengthStance((global::Terra.StrengthStanceVariant5?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthStanceVariant5?(StrengthStance @this) => @this.StrengthStanceVariant5;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthStance(global::Terra.StrengthStanceVariant5? value)
         {
@@ -342,22 +342,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthStance FromStrengthStanceVariant5(global::Terra.StrengthStanceVariant5? value) => new StrengthStance(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthStance(string value) => new StrengthStance((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(StrengthStance @this) => @this.StrengthStanceVariant6;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthStance(string? value)
         {
@@ -365,12 +365,12 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthStance FromStrengthStanceVariant6(string? value) => new StrengthStance(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthStance(
             global::Terra.StrengthStanceVariant1? strengthStanceVariant1,
@@ -390,7 +390,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             StrengthStanceVariant6 as object ??
@@ -398,11 +398,11 @@ namespace Terra
             StrengthStanceVariant4 as object ??
             StrengthStanceVariant3 as object ??
             StrengthStanceVariant2 as object ??
-            StrengthStanceVariant1 as object 
+            StrengthStanceVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             StrengthStanceVariant1?.ToValueString() ??
@@ -410,11 +410,11 @@ namespace Terra
             StrengthStanceVariant3?.ToValueString() ??
             StrengthStanceVariant4?.ToValueString() ??
             StrengthStanceVariant5?.ToValueString() ??
-            StrengthStanceVariant6?.ToString() 
+            StrengthStanceVariant6?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -422,7 +422,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Terra.StrengthStanceVariant1?, TResult>? strengthStanceVariant1 = null,
@@ -467,7 +467,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Terra.StrengthStanceVariant1?>? strengthStanceVariant1 = null,
@@ -515,7 +515,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Terra.StrengthStanceVariant1?>? strengthStanceVariant1 = null,
@@ -558,7 +558,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -587,7 +587,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(StrengthStance other)
         {
@@ -597,12 +597,12 @@ namespace Terra
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthStanceVariant3?>.Default.Equals(StrengthStanceVariant3, other.StrengthStanceVariant3) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthStanceVariant4?>.Default.Equals(StrengthStanceVariant4, other.StrengthStanceVariant4) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthStanceVariant5?>.Default.Equals(StrengthStanceVariant5, other.StrengthStanceVariant5) &&
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(StrengthStanceVariant6, other.StrengthStanceVariant6) 
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(StrengthStanceVariant6, other.StrengthStanceVariant6)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(StrengthStance obj1, StrengthStance obj2)
         {
@@ -610,7 +610,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(StrengthStance obj1, StrengthStance obj2)
         {
@@ -618,7 +618,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

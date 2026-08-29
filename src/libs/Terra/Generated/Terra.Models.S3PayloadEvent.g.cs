@@ -9,7 +9,7 @@ namespace Terra
     public sealed partial class S3PayloadEvent
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Terra.JsonConverters.S3PayloadEventTypeJsonConverter))]

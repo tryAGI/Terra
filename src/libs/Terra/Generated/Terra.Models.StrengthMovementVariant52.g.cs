@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthMovementVariant52
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HandstandPushUp,
     }

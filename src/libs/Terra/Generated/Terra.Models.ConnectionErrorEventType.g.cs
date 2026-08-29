@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ConnectionErrorEventType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConnectionError,
     }

@@ -9,7 +9,7 @@ namespace Terra
     public enum UserReauthEventStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Warning,
     }

@@ -11,7 +11,7 @@ namespace Terra
     public readonly partial struct StrengthSource : global::System.IEquatable<StrengthSource>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthSourceVariant1? StrengthSourceVariant1 { get; init; }
@@ -20,7 +20,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthSourceVariant1))]
@@ -28,7 +28,7 @@ namespace Terra
         public bool IsStrengthSourceVariant1 => StrengthSourceVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthSourceVariant1(
 #if NET6_0_OR_GREATER
@@ -41,14 +41,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthSourceVariant1 PickStrengthSourceVariant1() => IsStrengthSourceVariant1
             ? StrengthSourceVariant1!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthSourceVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthSourceVariant2? StrengthSourceVariant2 { get; init; }
@@ -57,7 +57,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthSourceVariant2))]
@@ -65,7 +65,7 @@ namespace Terra
         public bool IsStrengthSourceVariant2 => StrengthSourceVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthSourceVariant2(
 #if NET6_0_OR_GREATER
@@ -78,7 +78,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthSourceVariant2 PickStrengthSourceVariant2() => IsStrengthSourceVariant2
             ? StrengthSourceVariant2!.Value
@@ -94,7 +94,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthSourceVariant3))]
@@ -102,7 +102,7 @@ namespace Terra
         public bool IsStrengthSourceVariant3 => StrengthSourceVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthSourceVariant3(
 #if NET6_0_OR_GREATER
@@ -115,7 +115,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthSourceVariant3 PickStrengthSourceVariant3() => IsStrengthSourceVariant3
             ? StrengthSourceVariant3!.Value
@@ -131,7 +131,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthSourceVariant4))]
@@ -139,7 +139,7 @@ namespace Terra
         public bool IsStrengthSourceVariant4 => StrengthSourceVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthSourceVariant4(
 #if NET6_0_OR_GREATER
@@ -152,23 +152,23 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickStrengthSourceVariant4() => IsStrengthSourceVariant4
             ? StrengthSourceVariant4!
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthSourceVariant4' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthSource(global::Terra.StrengthSourceVariant1 value) => new StrengthSource((global::Terra.StrengthSourceVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthSourceVariant1?(StrengthSource @this) => @this.StrengthSourceVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthSource(global::Terra.StrengthSourceVariant1? value)
         {
@@ -176,22 +176,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthSource FromStrengthSourceVariant1(global::Terra.StrengthSourceVariant1? value) => new StrengthSource(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthSource(global::Terra.StrengthSourceVariant2 value) => new StrengthSource((global::Terra.StrengthSourceVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthSourceVariant2?(StrengthSource @this) => @this.StrengthSourceVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthSource(global::Terra.StrengthSourceVariant2? value)
         {
@@ -199,22 +199,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthSource FromStrengthSourceVariant2(global::Terra.StrengthSourceVariant2? value) => new StrengthSource(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthSource(global::Terra.StrengthSourceVariant3 value) => new StrengthSource((global::Terra.StrengthSourceVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthSourceVariant3?(StrengthSource @this) => @this.StrengthSourceVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthSource(global::Terra.StrengthSourceVariant3? value)
         {
@@ -222,22 +222,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthSource FromStrengthSourceVariant3(global::Terra.StrengthSourceVariant3? value) => new StrengthSource(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthSource(string value) => new StrengthSource((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(StrengthSource @this) => @this.StrengthSourceVariant4;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthSource(string? value)
         {
@@ -245,12 +245,12 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthSource FromStrengthSourceVariant4(string? value) => new StrengthSource(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthSource(
             global::Terra.StrengthSourceVariant1? strengthSourceVariant1,
@@ -266,27 +266,27 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             StrengthSourceVariant4 as object ??
             StrengthSourceVariant3 as object ??
             StrengthSourceVariant2 as object ??
-            StrengthSourceVariant1 as object 
+            StrengthSourceVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             StrengthSourceVariant1?.ToValueString() ??
             StrengthSourceVariant2?.ToValueString() ??
             StrengthSourceVariant3?.ToValueString() ??
-            StrengthSourceVariant4?.ToString() 
+            StrengthSourceVariant4?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -294,7 +294,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Terra.StrengthSourceVariant1?, TResult>? strengthSourceVariant1 = null,
@@ -329,7 +329,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Terra.StrengthSourceVariant1?>? strengthSourceVariant1 = null,
@@ -365,7 +365,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Terra.StrengthSourceVariant1?>? strengthSourceVariant1 = null,
@@ -398,7 +398,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -423,7 +423,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(StrengthSource other)
         {
@@ -431,12 +431,12 @@ namespace Terra
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthSourceVariant1?>.Default.Equals(StrengthSourceVariant1, other.StrengthSourceVariant1) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthSourceVariant2?>.Default.Equals(StrengthSourceVariant2, other.StrengthSourceVariant2) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthSourceVariant3?>.Default.Equals(StrengthSourceVariant3, other.StrengthSourceVariant3) &&
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(StrengthSourceVariant4, other.StrengthSourceVariant4) 
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(StrengthSourceVariant4, other.StrengthSourceVariant4)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(StrengthSource obj1, StrengthSource obj2)
         {
@@ -444,7 +444,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(StrengthSource obj1, StrengthSource obj2)
         {
@@ -452,7 +452,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

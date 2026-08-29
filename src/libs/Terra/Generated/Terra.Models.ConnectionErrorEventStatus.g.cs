@@ -9,7 +9,7 @@ namespace Terra
     public enum ConnectionErrorEventStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Warning,
     }

@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthLateralityVariant3
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unilateral,
     }

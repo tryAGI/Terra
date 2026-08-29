@@ -9,7 +9,7 @@ namespace Terra
     public enum StrengthGripOrientationVariant8
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unknown,
     }

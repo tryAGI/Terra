@@ -10,7 +10,7 @@ namespace Terra
     public readonly partial struct SwimEquipmentType : global::System.IEquatable<SwimEquipmentType>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.SwimEquipmentTypeVariant1? SwimEquipmentTypeVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SwimEquipmentTypeVariant1))]
@@ -27,7 +27,7 @@ namespace Terra
         public bool IsSwimEquipmentTypeVariant1 => SwimEquipmentTypeVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSwimEquipmentTypeVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.SwimEquipmentTypeVariant1 PickSwimEquipmentTypeVariant1() => IsSwimEquipmentTypeVariant1
             ? SwimEquipmentTypeVariant1!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SwimEquipmentTypeVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.SwimEquipmentTypeVariant2? SwimEquipmentTypeVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SwimEquipmentTypeVariant2))]
@@ -64,7 +64,7 @@ namespace Terra
         public bool IsSwimEquipmentTypeVariant2 => SwimEquipmentTypeVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSwimEquipmentTypeVariant2(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.SwimEquipmentTypeVariant2 PickSwimEquipmentTypeVariant2() => IsSwimEquipmentTypeVariant2
             ? SwimEquipmentTypeVariant2!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SwimEquipmentTypeVariant2' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.SwimEquipmentTypeVariant3? SwimEquipmentTypeVariant3 { get; init; }
@@ -93,7 +93,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SwimEquipmentTypeVariant3))]
@@ -101,7 +101,7 @@ namespace Terra
         public bool IsSwimEquipmentTypeVariant3 => SwimEquipmentTypeVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSwimEquipmentTypeVariant3(
 #if NET6_0_OR_GREATER
@@ -114,14 +114,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.SwimEquipmentTypeVariant3 PickSwimEquipmentTypeVariant3() => IsSwimEquipmentTypeVariant3
             ? SwimEquipmentTypeVariant3!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SwimEquipmentTypeVariant3' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.SwimEquipmentTypeVariant4? SwimEquipmentTypeVariant4 { get; init; }
@@ -130,7 +130,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SwimEquipmentTypeVariant4))]
@@ -138,7 +138,7 @@ namespace Terra
         public bool IsSwimEquipmentTypeVariant4 => SwimEquipmentTypeVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSwimEquipmentTypeVariant4(
 #if NET6_0_OR_GREATER
@@ -151,14 +151,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.SwimEquipmentTypeVariant4 PickSwimEquipmentTypeVariant4() => IsSwimEquipmentTypeVariant4
             ? SwimEquipmentTypeVariant4!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SwimEquipmentTypeVariant4' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.SwimEquipmentTypeVariant5? SwimEquipmentTypeVariant5 { get; init; }
@@ -167,7 +167,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SwimEquipmentTypeVariant5))]
@@ -175,7 +175,7 @@ namespace Terra
         public bool IsSwimEquipmentTypeVariant5 => SwimEquipmentTypeVariant5 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSwimEquipmentTypeVariant5(
 #if NET6_0_OR_GREATER
@@ -188,14 +188,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.SwimEquipmentTypeVariant5 PickSwimEquipmentTypeVariant5() => IsSwimEquipmentTypeVariant5
             ? SwimEquipmentTypeVariant5!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SwimEquipmentTypeVariant5' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.SwimEquipmentTypeVariant6? SwimEquipmentTypeVariant6 { get; init; }
@@ -204,7 +204,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SwimEquipmentTypeVariant6))]
@@ -212,7 +212,7 @@ namespace Terra
         public bool IsSwimEquipmentTypeVariant6 => SwimEquipmentTypeVariant6 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSwimEquipmentTypeVariant6(
 #if NET6_0_OR_GREATER
@@ -225,23 +225,23 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.SwimEquipmentTypeVariant6 PickSwimEquipmentTypeVariant6() => IsSwimEquipmentTypeVariant6
             ? SwimEquipmentTypeVariant6!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SwimEquipmentTypeVariant6' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator SwimEquipmentType(global::Terra.SwimEquipmentTypeVariant1 value) => new SwimEquipmentType((global::Terra.SwimEquipmentTypeVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.SwimEquipmentTypeVariant1?(SwimEquipmentType @this) => @this.SwimEquipmentTypeVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SwimEquipmentType(global::Terra.SwimEquipmentTypeVariant1? value)
         {
@@ -249,22 +249,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static SwimEquipmentType FromSwimEquipmentTypeVariant1(global::Terra.SwimEquipmentTypeVariant1? value) => new SwimEquipmentType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator SwimEquipmentType(global::Terra.SwimEquipmentTypeVariant2 value) => new SwimEquipmentType((global::Terra.SwimEquipmentTypeVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.SwimEquipmentTypeVariant2?(SwimEquipmentType @this) => @this.SwimEquipmentTypeVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SwimEquipmentType(global::Terra.SwimEquipmentTypeVariant2? value)
         {
@@ -272,22 +272,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static SwimEquipmentType FromSwimEquipmentTypeVariant2(global::Terra.SwimEquipmentTypeVariant2? value) => new SwimEquipmentType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator SwimEquipmentType(global::Terra.SwimEquipmentTypeVariant3 value) => new SwimEquipmentType((global::Terra.SwimEquipmentTypeVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.SwimEquipmentTypeVariant3?(SwimEquipmentType @this) => @this.SwimEquipmentTypeVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SwimEquipmentType(global::Terra.SwimEquipmentTypeVariant3? value)
         {
@@ -295,22 +295,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static SwimEquipmentType FromSwimEquipmentTypeVariant3(global::Terra.SwimEquipmentTypeVariant3? value) => new SwimEquipmentType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator SwimEquipmentType(global::Terra.SwimEquipmentTypeVariant4 value) => new SwimEquipmentType((global::Terra.SwimEquipmentTypeVariant4?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.SwimEquipmentTypeVariant4?(SwimEquipmentType @this) => @this.SwimEquipmentTypeVariant4;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SwimEquipmentType(global::Terra.SwimEquipmentTypeVariant4? value)
         {
@@ -318,22 +318,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static SwimEquipmentType FromSwimEquipmentTypeVariant4(global::Terra.SwimEquipmentTypeVariant4? value) => new SwimEquipmentType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator SwimEquipmentType(global::Terra.SwimEquipmentTypeVariant5 value) => new SwimEquipmentType((global::Terra.SwimEquipmentTypeVariant5?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.SwimEquipmentTypeVariant5?(SwimEquipmentType @this) => @this.SwimEquipmentTypeVariant5;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SwimEquipmentType(global::Terra.SwimEquipmentTypeVariant5? value)
         {
@@ -341,22 +341,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static SwimEquipmentType FromSwimEquipmentTypeVariant5(global::Terra.SwimEquipmentTypeVariant5? value) => new SwimEquipmentType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator SwimEquipmentType(global::Terra.SwimEquipmentTypeVariant6 value) => new SwimEquipmentType((global::Terra.SwimEquipmentTypeVariant6?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.SwimEquipmentTypeVariant6?(SwimEquipmentType @this) => @this.SwimEquipmentTypeVariant6;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SwimEquipmentType(global::Terra.SwimEquipmentTypeVariant6? value)
         {
@@ -364,12 +364,12 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static SwimEquipmentType FromSwimEquipmentTypeVariant6(global::Terra.SwimEquipmentTypeVariant6? value) => new SwimEquipmentType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SwimEquipmentType(
             global::Terra.SwimEquipmentTypeVariant1? swimEquipmentTypeVariant1,
@@ -389,7 +389,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             SwimEquipmentTypeVariant6 as object ??
@@ -397,11 +397,11 @@ namespace Terra
             SwimEquipmentTypeVariant4 as object ??
             SwimEquipmentTypeVariant3 as object ??
             SwimEquipmentTypeVariant2 as object ??
-            SwimEquipmentTypeVariant1 as object 
+            SwimEquipmentTypeVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             SwimEquipmentTypeVariant1?.ToValueString() ??
@@ -409,11 +409,11 @@ namespace Terra
             SwimEquipmentTypeVariant3?.ToValueString() ??
             SwimEquipmentTypeVariant4?.ToValueString() ??
             SwimEquipmentTypeVariant5?.ToValueString() ??
-            SwimEquipmentTypeVariant6?.ToValueString() 
+            SwimEquipmentTypeVariant6?.ToValueString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -421,7 +421,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Terra.SwimEquipmentTypeVariant1?, TResult>? swimEquipmentTypeVariant1 = null,
@@ -466,7 +466,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Terra.SwimEquipmentTypeVariant1?>? swimEquipmentTypeVariant1 = null,
@@ -514,7 +514,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Terra.SwimEquipmentTypeVariant1?>? swimEquipmentTypeVariant1 = null,
@@ -557,7 +557,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -586,7 +586,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(SwimEquipmentType other)
         {
@@ -596,12 +596,12 @@ namespace Terra
                 global::System.Collections.Generic.EqualityComparer<global::Terra.SwimEquipmentTypeVariant3?>.Default.Equals(SwimEquipmentTypeVariant3, other.SwimEquipmentTypeVariant3) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.SwimEquipmentTypeVariant4?>.Default.Equals(SwimEquipmentTypeVariant4, other.SwimEquipmentTypeVariant4) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.SwimEquipmentTypeVariant5?>.Default.Equals(SwimEquipmentTypeVariant5, other.SwimEquipmentTypeVariant5) &&
-                global::System.Collections.Generic.EqualityComparer<global::Terra.SwimEquipmentTypeVariant6?>.Default.Equals(SwimEquipmentTypeVariant6, other.SwimEquipmentTypeVariant6) 
+                global::System.Collections.Generic.EqualityComparer<global::Terra.SwimEquipmentTypeVariant6?>.Default.Equals(SwimEquipmentTypeVariant6, other.SwimEquipmentTypeVariant6)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(SwimEquipmentType obj1, SwimEquipmentType obj2)
         {
@@ -609,7 +609,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(SwimEquipmentType obj1, SwimEquipmentType obj2)
         {
@@ -617,7 +617,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

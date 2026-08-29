@@ -11,7 +11,7 @@ namespace Terra
     public readonly partial struct StrengthRangeOfMotion : global::System.IEquatable<StrengthRangeOfMotion>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthRangeOfMotionVariant1? StrengthRangeOfMotionVariant1 { get; init; }
@@ -20,7 +20,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthRangeOfMotionVariant1))]
@@ -28,7 +28,7 @@ namespace Terra
         public bool IsStrengthRangeOfMotionVariant1 => StrengthRangeOfMotionVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthRangeOfMotionVariant1(
 #if NET6_0_OR_GREATER
@@ -41,14 +41,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthRangeOfMotionVariant1 PickStrengthRangeOfMotionVariant1() => IsStrengthRangeOfMotionVariant1
             ? StrengthRangeOfMotionVariant1!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthRangeOfMotionVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthRangeOfMotionVariant2? StrengthRangeOfMotionVariant2 { get; init; }
@@ -57,7 +57,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthRangeOfMotionVariant2))]
@@ -65,7 +65,7 @@ namespace Terra
         public bool IsStrengthRangeOfMotionVariant2 => StrengthRangeOfMotionVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthRangeOfMotionVariant2(
 #if NET6_0_OR_GREATER
@@ -78,14 +78,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthRangeOfMotionVariant2 PickStrengthRangeOfMotionVariant2() => IsStrengthRangeOfMotionVariant2
             ? StrengthRangeOfMotionVariant2!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthRangeOfMotionVariant2' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthRangeOfMotionVariant3? StrengthRangeOfMotionVariant3 { get; init; }
@@ -94,7 +94,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthRangeOfMotionVariant3))]
@@ -102,7 +102,7 @@ namespace Terra
         public bool IsStrengthRangeOfMotionVariant3 => StrengthRangeOfMotionVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthRangeOfMotionVariant3(
 #if NET6_0_OR_GREATER
@@ -115,14 +115,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthRangeOfMotionVariant3 PickStrengthRangeOfMotionVariant3() => IsStrengthRangeOfMotionVariant3
             ? StrengthRangeOfMotionVariant3!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthRangeOfMotionVariant3' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthRangeOfMotionVariant4? StrengthRangeOfMotionVariant4 { get; init; }
@@ -131,7 +131,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthRangeOfMotionVariant4))]
@@ -139,7 +139,7 @@ namespace Terra
         public bool IsStrengthRangeOfMotionVariant4 => StrengthRangeOfMotionVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthRangeOfMotionVariant4(
 #if NET6_0_OR_GREATER
@@ -152,14 +152,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthRangeOfMotionVariant4 PickStrengthRangeOfMotionVariant4() => IsStrengthRangeOfMotionVariant4
             ? StrengthRangeOfMotionVariant4!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthRangeOfMotionVariant4' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthRangeOfMotionVariant5? StrengthRangeOfMotionVariant5 { get; init; }
@@ -168,7 +168,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthRangeOfMotionVariant5))]
@@ -176,7 +176,7 @@ namespace Terra
         public bool IsStrengthRangeOfMotionVariant5 => StrengthRangeOfMotionVariant5 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthRangeOfMotionVariant5(
 #if NET6_0_OR_GREATER
@@ -189,14 +189,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthRangeOfMotionVariant5 PickStrengthRangeOfMotionVariant5() => IsStrengthRangeOfMotionVariant5
             ? StrengthRangeOfMotionVariant5!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthRangeOfMotionVariant5' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthRangeOfMotionVariant6? StrengthRangeOfMotionVariant6 { get; init; }
@@ -205,7 +205,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthRangeOfMotionVariant6))]
@@ -213,7 +213,7 @@ namespace Terra
         public bool IsStrengthRangeOfMotionVariant6 => StrengthRangeOfMotionVariant6 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthRangeOfMotionVariant6(
 #if NET6_0_OR_GREATER
@@ -226,7 +226,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthRangeOfMotionVariant6 PickStrengthRangeOfMotionVariant6() => IsStrengthRangeOfMotionVariant6
             ? StrengthRangeOfMotionVariant6!.Value
@@ -242,7 +242,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthRangeOfMotionVariant7))]
@@ -250,7 +250,7 @@ namespace Terra
         public bool IsStrengthRangeOfMotionVariant7 => StrengthRangeOfMotionVariant7 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthRangeOfMotionVariant7(
 #if NET6_0_OR_GREATER
@@ -263,7 +263,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthRangeOfMotionVariant7 PickStrengthRangeOfMotionVariant7() => IsStrengthRangeOfMotionVariant7
             ? StrengthRangeOfMotionVariant7!.Value
@@ -279,7 +279,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthRangeOfMotionVariant8))]
@@ -287,7 +287,7 @@ namespace Terra
         public bool IsStrengthRangeOfMotionVariant8 => StrengthRangeOfMotionVariant8 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthRangeOfMotionVariant8(
 #if NET6_0_OR_GREATER
@@ -300,23 +300,23 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickStrengthRangeOfMotionVariant8() => IsStrengthRangeOfMotionVariant8
             ? StrengthRangeOfMotionVariant8!
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthRangeOfMotionVariant8' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthRangeOfMotion(global::Terra.StrengthRangeOfMotionVariant1 value) => new StrengthRangeOfMotion((global::Terra.StrengthRangeOfMotionVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthRangeOfMotionVariant1?(StrengthRangeOfMotion @this) => @this.StrengthRangeOfMotionVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthRangeOfMotion(global::Terra.StrengthRangeOfMotionVariant1? value)
         {
@@ -324,22 +324,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthRangeOfMotion FromStrengthRangeOfMotionVariant1(global::Terra.StrengthRangeOfMotionVariant1? value) => new StrengthRangeOfMotion(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthRangeOfMotion(global::Terra.StrengthRangeOfMotionVariant2 value) => new StrengthRangeOfMotion((global::Terra.StrengthRangeOfMotionVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthRangeOfMotionVariant2?(StrengthRangeOfMotion @this) => @this.StrengthRangeOfMotionVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthRangeOfMotion(global::Terra.StrengthRangeOfMotionVariant2? value)
         {
@@ -347,22 +347,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthRangeOfMotion FromStrengthRangeOfMotionVariant2(global::Terra.StrengthRangeOfMotionVariant2? value) => new StrengthRangeOfMotion(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthRangeOfMotion(global::Terra.StrengthRangeOfMotionVariant3 value) => new StrengthRangeOfMotion((global::Terra.StrengthRangeOfMotionVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthRangeOfMotionVariant3?(StrengthRangeOfMotion @this) => @this.StrengthRangeOfMotionVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthRangeOfMotion(global::Terra.StrengthRangeOfMotionVariant3? value)
         {
@@ -370,22 +370,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthRangeOfMotion FromStrengthRangeOfMotionVariant3(global::Terra.StrengthRangeOfMotionVariant3? value) => new StrengthRangeOfMotion(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthRangeOfMotion(global::Terra.StrengthRangeOfMotionVariant4 value) => new StrengthRangeOfMotion((global::Terra.StrengthRangeOfMotionVariant4?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthRangeOfMotionVariant4?(StrengthRangeOfMotion @this) => @this.StrengthRangeOfMotionVariant4;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthRangeOfMotion(global::Terra.StrengthRangeOfMotionVariant4? value)
         {
@@ -393,22 +393,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthRangeOfMotion FromStrengthRangeOfMotionVariant4(global::Terra.StrengthRangeOfMotionVariant4? value) => new StrengthRangeOfMotion(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthRangeOfMotion(global::Terra.StrengthRangeOfMotionVariant5 value) => new StrengthRangeOfMotion((global::Terra.StrengthRangeOfMotionVariant5?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthRangeOfMotionVariant5?(StrengthRangeOfMotion @this) => @this.StrengthRangeOfMotionVariant5;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthRangeOfMotion(global::Terra.StrengthRangeOfMotionVariant5? value)
         {
@@ -416,22 +416,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthRangeOfMotion FromStrengthRangeOfMotionVariant5(global::Terra.StrengthRangeOfMotionVariant5? value) => new StrengthRangeOfMotion(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthRangeOfMotion(global::Terra.StrengthRangeOfMotionVariant6 value) => new StrengthRangeOfMotion((global::Terra.StrengthRangeOfMotionVariant6?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthRangeOfMotionVariant6?(StrengthRangeOfMotion @this) => @this.StrengthRangeOfMotionVariant6;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthRangeOfMotion(global::Terra.StrengthRangeOfMotionVariant6? value)
         {
@@ -439,22 +439,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthRangeOfMotion FromStrengthRangeOfMotionVariant6(global::Terra.StrengthRangeOfMotionVariant6? value) => new StrengthRangeOfMotion(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthRangeOfMotion(global::Terra.StrengthRangeOfMotionVariant7 value) => new StrengthRangeOfMotion((global::Terra.StrengthRangeOfMotionVariant7?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthRangeOfMotionVariant7?(StrengthRangeOfMotion @this) => @this.StrengthRangeOfMotionVariant7;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthRangeOfMotion(global::Terra.StrengthRangeOfMotionVariant7? value)
         {
@@ -462,22 +462,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthRangeOfMotion FromStrengthRangeOfMotionVariant7(global::Terra.StrengthRangeOfMotionVariant7? value) => new StrengthRangeOfMotion(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthRangeOfMotion(string value) => new StrengthRangeOfMotion((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(StrengthRangeOfMotion @this) => @this.StrengthRangeOfMotionVariant8;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthRangeOfMotion(string? value)
         {
@@ -485,12 +485,12 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthRangeOfMotion FromStrengthRangeOfMotionVariant8(string? value) => new StrengthRangeOfMotion(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthRangeOfMotion(
             global::Terra.StrengthRangeOfMotionVariant1? strengthRangeOfMotionVariant1,
@@ -514,7 +514,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             StrengthRangeOfMotionVariant8 as object ??
@@ -524,11 +524,11 @@ namespace Terra
             StrengthRangeOfMotionVariant4 as object ??
             StrengthRangeOfMotionVariant3 as object ??
             StrengthRangeOfMotionVariant2 as object ??
-            StrengthRangeOfMotionVariant1 as object 
+            StrengthRangeOfMotionVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             StrengthRangeOfMotionVariant1?.ToValueString() ??
@@ -538,11 +538,11 @@ namespace Terra
             StrengthRangeOfMotionVariant5?.ToValueString() ??
             StrengthRangeOfMotionVariant6?.ToValueString() ??
             StrengthRangeOfMotionVariant7?.ToValueString() ??
-            StrengthRangeOfMotionVariant8?.ToString() 
+            StrengthRangeOfMotionVariant8?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -550,7 +550,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Terra.StrengthRangeOfMotionVariant1?, TResult>? strengthRangeOfMotionVariant1 = null,
@@ -605,7 +605,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Terra.StrengthRangeOfMotionVariant1?>? strengthRangeOfMotionVariant1 = null,
@@ -665,7 +665,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Terra.StrengthRangeOfMotionVariant1?>? strengthRangeOfMotionVariant1 = null,
@@ -718,7 +718,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -751,7 +751,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(StrengthRangeOfMotion other)
         {
@@ -763,12 +763,12 @@ namespace Terra
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthRangeOfMotionVariant5?>.Default.Equals(StrengthRangeOfMotionVariant5, other.StrengthRangeOfMotionVariant5) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthRangeOfMotionVariant6?>.Default.Equals(StrengthRangeOfMotionVariant6, other.StrengthRangeOfMotionVariant6) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthRangeOfMotionVariant7?>.Default.Equals(StrengthRangeOfMotionVariant7, other.StrengthRangeOfMotionVariant7) &&
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(StrengthRangeOfMotionVariant8, other.StrengthRangeOfMotionVariant8) 
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(StrengthRangeOfMotionVariant8, other.StrengthRangeOfMotionVariant8)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(StrengthRangeOfMotion obj1, StrengthRangeOfMotion obj2)
         {
@@ -776,7 +776,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(StrengthRangeOfMotion obj1, StrengthRangeOfMotion obj2)
         {
@@ -784,7 +784,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

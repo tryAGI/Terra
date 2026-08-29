@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthSourceVariant1
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeviceDetected,
     }

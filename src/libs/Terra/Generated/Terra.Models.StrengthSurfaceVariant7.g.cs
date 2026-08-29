@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthSurfaceVariant7
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PreacherBench,
     }

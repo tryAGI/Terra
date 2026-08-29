@@ -9,7 +9,7 @@ namespace Terra
     public enum DataSentToWebhookStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Success,
     }

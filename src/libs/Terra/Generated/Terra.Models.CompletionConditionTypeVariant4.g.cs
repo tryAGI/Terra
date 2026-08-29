@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CompletionConditionTypeVariant4
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Calories,
     }

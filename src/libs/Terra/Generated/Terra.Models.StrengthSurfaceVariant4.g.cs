@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthSurfaceVariant4
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Floor,
     }

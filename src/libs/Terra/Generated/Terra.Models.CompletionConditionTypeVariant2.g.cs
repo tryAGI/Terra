@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CompletionConditionTypeVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Distance,
     }

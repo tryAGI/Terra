@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthGripOrientationVariant4
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Overhand,
     }

@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthPositionVariant3
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Elevated,
     }

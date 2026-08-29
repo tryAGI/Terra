@@ -4,7 +4,7 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class SleepMetadata
     {
@@ -41,7 +41,7 @@ namespace Terra
         public string? SummaryId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("timestamp_localization")]
         public double? TimestampLocalization { get; set; }

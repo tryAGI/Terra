@@ -4,7 +4,7 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ActiveDurationsData
     {
@@ -71,13 +71,13 @@ namespace Terra
         public double? VigorousIntensitySeconds { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("standing_hours_count")]
         public double? StandingHoursCount { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("standing_seconds")]
         public double? StandingSeconds { get; set; }

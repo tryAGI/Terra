@@ -10,7 +10,7 @@ namespace Terra
     public readonly partial struct EnvironmentType : global::System.IEquatable<EnvironmentType>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.EnvironmentTypeVariant1? EnvironmentTypeVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(EnvironmentTypeVariant1))]
@@ -27,7 +27,7 @@ namespace Terra
         public bool IsEnvironmentTypeVariant1 => EnvironmentTypeVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickEnvironmentTypeVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.EnvironmentTypeVariant1 PickEnvironmentTypeVariant1() => IsEnvironmentTypeVariant1
             ? EnvironmentTypeVariant1!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'EnvironmentTypeVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.EnvironmentTypeVariant2? EnvironmentTypeVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(EnvironmentTypeVariant2))]
@@ -64,7 +64,7 @@ namespace Terra
         public bool IsEnvironmentTypeVariant2 => EnvironmentTypeVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickEnvironmentTypeVariant2(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.EnvironmentTypeVariant2 PickEnvironmentTypeVariant2() => IsEnvironmentTypeVariant2
             ? EnvironmentTypeVariant2!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'EnvironmentTypeVariant2' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.EnvironmentTypeVariant3? EnvironmentTypeVariant3 { get; init; }
@@ -93,7 +93,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(EnvironmentTypeVariant3))]
@@ -101,7 +101,7 @@ namespace Terra
         public bool IsEnvironmentTypeVariant3 => EnvironmentTypeVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickEnvironmentTypeVariant3(
 #if NET6_0_OR_GREATER
@@ -114,23 +114,23 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.EnvironmentTypeVariant3 PickEnvironmentTypeVariant3() => IsEnvironmentTypeVariant3
             ? EnvironmentTypeVariant3!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'EnvironmentTypeVariant3' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator EnvironmentType(global::Terra.EnvironmentTypeVariant1 value) => new EnvironmentType((global::Terra.EnvironmentTypeVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.EnvironmentTypeVariant1?(EnvironmentType @this) => @this.EnvironmentTypeVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EnvironmentType(global::Terra.EnvironmentTypeVariant1? value)
         {
@@ -138,22 +138,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static EnvironmentType FromEnvironmentTypeVariant1(global::Terra.EnvironmentTypeVariant1? value) => new EnvironmentType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator EnvironmentType(global::Terra.EnvironmentTypeVariant2 value) => new EnvironmentType((global::Terra.EnvironmentTypeVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.EnvironmentTypeVariant2?(EnvironmentType @this) => @this.EnvironmentTypeVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EnvironmentType(global::Terra.EnvironmentTypeVariant2? value)
         {
@@ -161,22 +161,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static EnvironmentType FromEnvironmentTypeVariant2(global::Terra.EnvironmentTypeVariant2? value) => new EnvironmentType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator EnvironmentType(global::Terra.EnvironmentTypeVariant3 value) => new EnvironmentType((global::Terra.EnvironmentTypeVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.EnvironmentTypeVariant3?(EnvironmentType @this) => @this.EnvironmentTypeVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EnvironmentType(global::Terra.EnvironmentTypeVariant3? value)
         {
@@ -184,12 +184,12 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static EnvironmentType FromEnvironmentTypeVariant3(global::Terra.EnvironmentTypeVariant3? value) => new EnvironmentType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EnvironmentType(
             global::Terra.EnvironmentTypeVariant1? environmentTypeVariant1,
@@ -203,25 +203,25 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             EnvironmentTypeVariant3 as object ??
             EnvironmentTypeVariant2 as object ??
-            EnvironmentTypeVariant1 as object 
+            EnvironmentTypeVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             EnvironmentTypeVariant1?.ToValueString() ??
             EnvironmentTypeVariant2?.ToValueString() ??
-            EnvironmentTypeVariant3?.ToValueString() 
+            EnvironmentTypeVariant3?.ToValueString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -229,7 +229,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Terra.EnvironmentTypeVariant1?, TResult>? environmentTypeVariant1 = null,
@@ -259,7 +259,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Terra.EnvironmentTypeVariant1?>? environmentTypeVariant1 = null,
@@ -289,7 +289,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Terra.EnvironmentTypeVariant1?>? environmentTypeVariant1 = null,
@@ -317,7 +317,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -340,19 +340,19 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(EnvironmentType other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Terra.EnvironmentTypeVariant1?>.Default.Equals(EnvironmentTypeVariant1, other.EnvironmentTypeVariant1) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.EnvironmentTypeVariant2?>.Default.Equals(EnvironmentTypeVariant2, other.EnvironmentTypeVariant2) &&
-                global::System.Collections.Generic.EqualityComparer<global::Terra.EnvironmentTypeVariant3?>.Default.Equals(EnvironmentTypeVariant3, other.EnvironmentTypeVariant3) 
+                global::System.Collections.Generic.EqualityComparer<global::Terra.EnvironmentTypeVariant3?>.Default.Equals(EnvironmentTypeVariant3, other.EnvironmentTypeVariant3)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(EnvironmentType obj1, EnvironmentType obj2)
         {
@@ -360,7 +360,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(EnvironmentType obj1, EnvironmentType obj2)
         {
@@ -368,7 +368,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

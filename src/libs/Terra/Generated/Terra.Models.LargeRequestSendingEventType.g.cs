@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum LargeRequestSendingEventType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LargeRequestSending,
     }

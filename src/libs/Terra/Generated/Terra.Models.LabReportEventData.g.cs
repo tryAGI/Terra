@@ -42,14 +42,14 @@ namespace Terra
         public string? ReportLocale { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("results_count")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required long ResultsCount { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("results")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -62,7 +62,7 @@ namespace Terra
         public global::System.Collections.Generic.IList<global::Terra.LabReportPanel>? Panels { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("report_notes")]
         public string? ReportNotes { get; set; }

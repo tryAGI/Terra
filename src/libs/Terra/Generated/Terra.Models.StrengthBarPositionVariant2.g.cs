@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthBarPositionVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BehindNeck,
     }

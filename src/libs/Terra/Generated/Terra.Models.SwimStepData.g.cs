@@ -9,19 +9,19 @@ namespace Terra
     public sealed partial class SwimStepData
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("stroke_type")]
         public global::Terra.SwimStrokeType? StrokeType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("drill_type")]
         public global::Terra.DrillType? DrillType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("equipment")]
         public global::System.Collections.Generic.IList<global::Terra.SwimEquipmentType>? Equipment { get; set; }

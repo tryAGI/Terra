@@ -19,7 +19,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AuthSuccess))]
@@ -27,7 +27,7 @@ namespace Terra
         public bool IsAuthSuccess => AuthSuccess != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAuthSuccess(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.AuthSuccessEvent PickAuthSuccess() => IsAuthSuccess
             ? AuthSuccess!
@@ -56,7 +56,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AuthError))]
@@ -64,7 +64,7 @@ namespace Terra
         public bool IsAuthError => AuthError != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAuthError(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.AuthErrorEvent PickAuthError() => IsAuthError
             ? AuthError!
@@ -93,7 +93,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Deauth))]
@@ -101,7 +101,7 @@ namespace Terra
         public bool IsDeauth => Deauth != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickDeauth(
 #if NET6_0_OR_GREATER
@@ -114,7 +114,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.DeauthEvent PickDeauth() => IsDeauth
             ? Deauth!
@@ -130,7 +130,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UserReauth))]
@@ -138,7 +138,7 @@ namespace Terra
         public bool IsUserReauth => UserReauth != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUserReauth(
 #if NET6_0_OR_GREATER
@@ -151,7 +151,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.UserReauthEvent PickUserReauth() => IsUserReauth
             ? UserReauth!
@@ -167,7 +167,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AccessRevoked))]
@@ -175,7 +175,7 @@ namespace Terra
         public bool IsAccessRevoked => AccessRevoked != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAccessRevoked(
 #if NET6_0_OR_GREATER
@@ -188,7 +188,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.AccessRevokedEvent PickAccessRevoked() => IsAccessRevoked
             ? AccessRevoked!
@@ -204,7 +204,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ConnectionError))]
@@ -212,7 +212,7 @@ namespace Terra
         public bool IsConnectionError => ConnectionError != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickConnectionError(
 #if NET6_0_OR_GREATER
@@ -225,7 +225,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.ConnectionErrorEvent PickConnectionError() => IsConnectionError
             ? ConnectionError!
@@ -241,7 +241,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PermissionChange))]
@@ -249,7 +249,7 @@ namespace Terra
         public bool IsPermissionChange => PermissionChange != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickPermissionChange(
 #if NET6_0_OR_GREATER
@@ -262,7 +262,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.PermissionChangeEvent PickPermissionChange() => IsPermissionChange
             ? PermissionChange!
@@ -278,7 +278,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LargeRequestProcessing))]
@@ -286,7 +286,7 @@ namespace Terra
         public bool IsLargeRequestProcessing => LargeRequestProcessing != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickLargeRequestProcessing(
 #if NET6_0_OR_GREATER
@@ -299,7 +299,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.LargeRequestProcessingEvent PickLargeRequestProcessing() => IsLargeRequestProcessing
             ? LargeRequestProcessing!
@@ -315,7 +315,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LargeRequestSending))]
@@ -323,7 +323,7 @@ namespace Terra
         public bool IsLargeRequestSending => LargeRequestSending != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickLargeRequestSending(
 #if NET6_0_OR_GREATER
@@ -336,7 +336,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.LargeRequestSendingEvent PickLargeRequestSending() => IsLargeRequestSending
             ? LargeRequestSending!
@@ -352,7 +352,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Activity))]
@@ -360,7 +360,7 @@ namespace Terra
         public bool IsActivity => Activity != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickActivity(
 #if NET6_0_OR_GREATER
@@ -373,7 +373,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.ActivityEvent PickActivity() => IsActivity
             ? Activity!
@@ -389,7 +389,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Athlete))]
@@ -397,7 +397,7 @@ namespace Terra
         public bool IsAthlete => Athlete != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAthlete(
 #if NET6_0_OR_GREATER
@@ -410,7 +410,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.AthleteEvent PickAthlete() => IsAthlete
             ? Athlete!
@@ -426,7 +426,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Body))]
@@ -434,7 +434,7 @@ namespace Terra
         public bool IsBody => Body != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickBody(
 #if NET6_0_OR_GREATER
@@ -447,7 +447,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.BodyEvent PickBody() => IsBody
             ? Body!
@@ -463,7 +463,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Daily))]
@@ -471,7 +471,7 @@ namespace Terra
         public bool IsDaily => Daily != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickDaily(
 #if NET6_0_OR_GREATER
@@ -484,7 +484,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.DailyEvent PickDaily() => IsDaily
             ? Daily!
@@ -500,7 +500,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Menstruation))]
@@ -508,7 +508,7 @@ namespace Terra
         public bool IsMenstruation => Menstruation != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickMenstruation(
 #if NET6_0_OR_GREATER
@@ -521,7 +521,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.MenstruationEvent PickMenstruation() => IsMenstruation
             ? Menstruation!
@@ -537,7 +537,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Nutrition))]
@@ -545,7 +545,7 @@ namespace Terra
         public bool IsNutrition => Nutrition != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNutrition(
 #if NET6_0_OR_GREATER
@@ -558,7 +558,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.NutritionEvent PickNutrition() => IsNutrition
             ? Nutrition!
@@ -574,7 +574,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Sleep))]
@@ -582,7 +582,7 @@ namespace Terra
         public bool IsSleep => Sleep != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSleep(
 #if NET6_0_OR_GREATER
@@ -595,7 +595,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.SleepEvent PickSleep() => IsSleep
             ? Sleep!
@@ -611,7 +611,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PlannedWorkout))]
@@ -619,7 +619,7 @@ namespace Terra
         public bool IsPlannedWorkout => PlannedWorkout != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickPlannedWorkout(
 #if NET6_0_OR_GREATER
@@ -632,7 +632,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.PlannedWorkoutEvent PickPlannedWorkout() => IsPlannedWorkout
             ? PlannedWorkout!
@@ -648,7 +648,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Hormone))]
@@ -656,7 +656,7 @@ namespace Terra
         public bool IsHormone => Hormone != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickHormone(
 #if NET6_0_OR_GREATER
@@ -669,7 +669,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.HormoneEvent PickHormone() => IsHormone
             ? Hormone!
@@ -685,7 +685,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(HealthObservation))]
@@ -693,7 +693,7 @@ namespace Terra
         public bool IsHealthObservation => HealthObservation != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickHealthObservation(
 #if NET6_0_OR_GREATER
@@ -706,7 +706,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.HealthObservationEvent PickHealthObservation() => IsHealthObservation
             ? HealthObservation!
@@ -722,7 +722,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LabReportCompleted))]
@@ -730,7 +730,7 @@ namespace Terra
         public bool IsLabReportCompleted => LabReportCompleted != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickLabReportCompleted(
 #if NET6_0_OR_GREATER
@@ -743,7 +743,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.LabReportCompletedEvent PickLabReportCompleted() => IsLabReportCompleted
             ? LabReportCompleted!
@@ -759,7 +759,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LabReportFailed))]
@@ -767,7 +767,7 @@ namespace Terra
         public bool IsLabReportFailed => LabReportFailed != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickLabReportFailed(
 #if NET6_0_OR_GREATER
@@ -780,7 +780,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.LabReportFailedEvent PickLabReportFailed() => IsLabReportFailed
             ? LabReportFailed!
@@ -796,7 +796,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(S3Payload))]
@@ -804,7 +804,7 @@ namespace Terra
         public bool IsS3Payload => S3Payload != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickS3Payload(
 #if NET6_0_OR_GREATER
@@ -817,23 +817,23 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.S3PayloadEvent PickS3Payload() => IsS3Payload
             ? S3Payload!
             : throw new global::System.InvalidOperationException($"Expected union variant 'S3Payload' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WebhookEventType(global::Terra.AuthSuccessEvent value) => new WebhookEventType((global::Terra.AuthSuccessEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.AuthSuccessEvent?(WebhookEventType @this) => @this.AuthSuccess;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WebhookEventType(global::Terra.AuthSuccessEvent? value)
         {
@@ -841,22 +841,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WebhookEventType FromAuthSuccess(global::Terra.AuthSuccessEvent? value) => new WebhookEventType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WebhookEventType(global::Terra.AuthErrorEvent value) => new WebhookEventType((global::Terra.AuthErrorEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.AuthErrorEvent?(WebhookEventType @this) => @this.AuthError;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WebhookEventType(global::Terra.AuthErrorEvent? value)
         {
@@ -864,22 +864,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WebhookEventType FromAuthError(global::Terra.AuthErrorEvent? value) => new WebhookEventType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WebhookEventType(global::Terra.DeauthEvent value) => new WebhookEventType((global::Terra.DeauthEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.DeauthEvent?(WebhookEventType @this) => @this.Deauth;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WebhookEventType(global::Terra.DeauthEvent? value)
         {
@@ -887,22 +887,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WebhookEventType FromDeauth(global::Terra.DeauthEvent? value) => new WebhookEventType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WebhookEventType(global::Terra.UserReauthEvent value) => new WebhookEventType((global::Terra.UserReauthEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.UserReauthEvent?(WebhookEventType @this) => @this.UserReauth;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WebhookEventType(global::Terra.UserReauthEvent? value)
         {
@@ -910,22 +910,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WebhookEventType FromUserReauth(global::Terra.UserReauthEvent? value) => new WebhookEventType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WebhookEventType(global::Terra.AccessRevokedEvent value) => new WebhookEventType((global::Terra.AccessRevokedEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.AccessRevokedEvent?(WebhookEventType @this) => @this.AccessRevoked;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WebhookEventType(global::Terra.AccessRevokedEvent? value)
         {
@@ -933,22 +933,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WebhookEventType FromAccessRevoked(global::Terra.AccessRevokedEvent? value) => new WebhookEventType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WebhookEventType(global::Terra.ConnectionErrorEvent value) => new WebhookEventType((global::Terra.ConnectionErrorEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.ConnectionErrorEvent?(WebhookEventType @this) => @this.ConnectionError;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WebhookEventType(global::Terra.ConnectionErrorEvent? value)
         {
@@ -956,22 +956,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WebhookEventType FromConnectionError(global::Terra.ConnectionErrorEvent? value) => new WebhookEventType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WebhookEventType(global::Terra.PermissionChangeEvent value) => new WebhookEventType((global::Terra.PermissionChangeEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.PermissionChangeEvent?(WebhookEventType @this) => @this.PermissionChange;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WebhookEventType(global::Terra.PermissionChangeEvent? value)
         {
@@ -979,22 +979,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WebhookEventType FromPermissionChange(global::Terra.PermissionChangeEvent? value) => new WebhookEventType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WebhookEventType(global::Terra.LargeRequestProcessingEvent value) => new WebhookEventType((global::Terra.LargeRequestProcessingEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.LargeRequestProcessingEvent?(WebhookEventType @this) => @this.LargeRequestProcessing;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WebhookEventType(global::Terra.LargeRequestProcessingEvent? value)
         {
@@ -1002,22 +1002,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WebhookEventType FromLargeRequestProcessing(global::Terra.LargeRequestProcessingEvent? value) => new WebhookEventType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WebhookEventType(global::Terra.LargeRequestSendingEvent value) => new WebhookEventType((global::Terra.LargeRequestSendingEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.LargeRequestSendingEvent?(WebhookEventType @this) => @this.LargeRequestSending;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WebhookEventType(global::Terra.LargeRequestSendingEvent? value)
         {
@@ -1025,22 +1025,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WebhookEventType FromLargeRequestSending(global::Terra.LargeRequestSendingEvent? value) => new WebhookEventType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WebhookEventType(global::Terra.ActivityEvent value) => new WebhookEventType((global::Terra.ActivityEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.ActivityEvent?(WebhookEventType @this) => @this.Activity;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WebhookEventType(global::Terra.ActivityEvent? value)
         {
@@ -1048,22 +1048,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WebhookEventType FromActivity(global::Terra.ActivityEvent? value) => new WebhookEventType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WebhookEventType(global::Terra.AthleteEvent value) => new WebhookEventType((global::Terra.AthleteEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.AthleteEvent?(WebhookEventType @this) => @this.Athlete;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WebhookEventType(global::Terra.AthleteEvent? value)
         {
@@ -1071,22 +1071,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WebhookEventType FromAthlete(global::Terra.AthleteEvent? value) => new WebhookEventType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WebhookEventType(global::Terra.BodyEvent value) => new WebhookEventType((global::Terra.BodyEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.BodyEvent?(WebhookEventType @this) => @this.Body;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WebhookEventType(global::Terra.BodyEvent? value)
         {
@@ -1094,22 +1094,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WebhookEventType FromBody(global::Terra.BodyEvent? value) => new WebhookEventType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WebhookEventType(global::Terra.DailyEvent value) => new WebhookEventType((global::Terra.DailyEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.DailyEvent?(WebhookEventType @this) => @this.Daily;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WebhookEventType(global::Terra.DailyEvent? value)
         {
@@ -1117,22 +1117,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WebhookEventType FromDaily(global::Terra.DailyEvent? value) => new WebhookEventType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WebhookEventType(global::Terra.MenstruationEvent value) => new WebhookEventType((global::Terra.MenstruationEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.MenstruationEvent?(WebhookEventType @this) => @this.Menstruation;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WebhookEventType(global::Terra.MenstruationEvent? value)
         {
@@ -1140,22 +1140,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WebhookEventType FromMenstruation(global::Terra.MenstruationEvent? value) => new WebhookEventType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WebhookEventType(global::Terra.NutritionEvent value) => new WebhookEventType((global::Terra.NutritionEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.NutritionEvent?(WebhookEventType @this) => @this.Nutrition;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WebhookEventType(global::Terra.NutritionEvent? value)
         {
@@ -1163,22 +1163,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WebhookEventType FromNutrition(global::Terra.NutritionEvent? value) => new WebhookEventType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WebhookEventType(global::Terra.SleepEvent value) => new WebhookEventType((global::Terra.SleepEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.SleepEvent?(WebhookEventType @this) => @this.Sleep;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WebhookEventType(global::Terra.SleepEvent? value)
         {
@@ -1186,22 +1186,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WebhookEventType FromSleep(global::Terra.SleepEvent? value) => new WebhookEventType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WebhookEventType(global::Terra.PlannedWorkoutEvent value) => new WebhookEventType((global::Terra.PlannedWorkoutEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.PlannedWorkoutEvent?(WebhookEventType @this) => @this.PlannedWorkout;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WebhookEventType(global::Terra.PlannedWorkoutEvent? value)
         {
@@ -1209,22 +1209,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WebhookEventType FromPlannedWorkout(global::Terra.PlannedWorkoutEvent? value) => new WebhookEventType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WebhookEventType(global::Terra.HormoneEvent value) => new WebhookEventType((global::Terra.HormoneEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.HormoneEvent?(WebhookEventType @this) => @this.Hormone;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WebhookEventType(global::Terra.HormoneEvent? value)
         {
@@ -1232,22 +1232,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WebhookEventType FromHormone(global::Terra.HormoneEvent? value) => new WebhookEventType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WebhookEventType(global::Terra.HealthObservationEvent value) => new WebhookEventType((global::Terra.HealthObservationEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.HealthObservationEvent?(WebhookEventType @this) => @this.HealthObservation;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WebhookEventType(global::Terra.HealthObservationEvent? value)
         {
@@ -1255,22 +1255,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WebhookEventType FromHealthObservation(global::Terra.HealthObservationEvent? value) => new WebhookEventType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WebhookEventType(global::Terra.LabReportCompletedEvent value) => new WebhookEventType((global::Terra.LabReportCompletedEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.LabReportCompletedEvent?(WebhookEventType @this) => @this.LabReportCompleted;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WebhookEventType(global::Terra.LabReportCompletedEvent? value)
         {
@@ -1278,22 +1278,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WebhookEventType FromLabReportCompleted(global::Terra.LabReportCompletedEvent? value) => new WebhookEventType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WebhookEventType(global::Terra.LabReportFailedEvent value) => new WebhookEventType((global::Terra.LabReportFailedEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.LabReportFailedEvent?(WebhookEventType @this) => @this.LabReportFailed;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WebhookEventType(global::Terra.LabReportFailedEvent? value)
         {
@@ -1301,22 +1301,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WebhookEventType FromLabReportFailed(global::Terra.LabReportFailedEvent? value) => new WebhookEventType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WebhookEventType(global::Terra.S3PayloadEvent value) => new WebhookEventType((global::Terra.S3PayloadEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.S3PayloadEvent?(WebhookEventType @this) => @this.S3Payload;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WebhookEventType(global::Terra.S3PayloadEvent? value)
         {
@@ -1324,12 +1324,12 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WebhookEventType FromS3Payload(global::Terra.S3PayloadEvent? value) => new WebhookEventType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WebhookEventType(
             global::Terra.AuthSuccessEvent? authSuccess,
@@ -1381,7 +1381,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             S3Payload as object ??
@@ -1405,11 +1405,11 @@ namespace Terra
             UserReauth as object ??
             Deauth as object ??
             AuthError as object ??
-            AuthSuccess as object 
+            AuthSuccess as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             AuthSuccess?.ToString() ??
@@ -1433,11 +1433,11 @@ namespace Terra
             HealthObservation?.ToString() ??
             LabReportCompleted?.ToString() ??
             LabReportFailed?.ToString() ??
-            S3Payload?.ToString() 
+            S3Payload?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -1445,7 +1445,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Terra.AuthSuccessEvent, TResult>? authSuccess = null,
@@ -1570,7 +1570,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Terra.AuthSuccessEvent>? authSuccess = null,
@@ -1714,7 +1714,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Terra.AuthSuccessEvent>? authSuccess = null,
@@ -1837,7 +1837,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -1898,7 +1898,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(WebhookEventType other)
         {
@@ -1924,12 +1924,12 @@ namespace Terra
                 global::System.Collections.Generic.EqualityComparer<global::Terra.HealthObservationEvent?>.Default.Equals(HealthObservation, other.HealthObservation) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.LabReportCompletedEvent?>.Default.Equals(LabReportCompleted, other.LabReportCompleted) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.LabReportFailedEvent?>.Default.Equals(LabReportFailed, other.LabReportFailed) &&
-                global::System.Collections.Generic.EqualityComparer<global::Terra.S3PayloadEvent?>.Default.Equals(S3Payload, other.S3Payload) 
+                global::System.Collections.Generic.EqualityComparer<global::Terra.S3PayloadEvent?>.Default.Equals(S3Payload, other.S3Payload)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(WebhookEventType obj1, WebhookEventType obj2)
         {
@@ -1937,7 +1937,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(WebhookEventType obj1, WebhookEventType obj2)
         {
@@ -1945,7 +1945,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

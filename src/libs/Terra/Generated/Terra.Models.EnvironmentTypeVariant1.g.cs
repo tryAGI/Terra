@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum EnvironmentTypeVariant1
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Indoor,
     }

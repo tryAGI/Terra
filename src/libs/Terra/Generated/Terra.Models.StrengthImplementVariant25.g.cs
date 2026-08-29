@@ -9,7 +9,7 @@ namespace Terra
     public enum StrengthImplementVariant25
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unknown,
     }

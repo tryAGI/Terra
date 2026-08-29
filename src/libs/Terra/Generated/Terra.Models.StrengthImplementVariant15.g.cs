@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthImplementVariant15
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MedicineBall,
     }

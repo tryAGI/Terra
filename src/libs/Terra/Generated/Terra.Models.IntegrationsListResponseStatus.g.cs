@@ -9,11 +9,11 @@ namespace Terra
     public enum IntegrationsListResponseStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Error,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Success,
     }

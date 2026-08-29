@@ -57,7 +57,7 @@ namespace Terra
         public bool? IsExternal { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("athlete_metrics")]
         public global::Terra.AthleteMetrics? AthleteMetrics { get; set; }

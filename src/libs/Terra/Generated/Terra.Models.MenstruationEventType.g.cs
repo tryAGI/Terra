@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum MenstruationEventType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Menstruation,
     }

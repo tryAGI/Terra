@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthSetTypeVariant4
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Failure,
     }

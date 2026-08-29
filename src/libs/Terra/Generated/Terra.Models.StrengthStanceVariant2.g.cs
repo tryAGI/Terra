@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthStanceVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Curtsy,
     }

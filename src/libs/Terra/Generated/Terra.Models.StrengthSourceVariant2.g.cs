@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthSourceVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserLogged,
     }

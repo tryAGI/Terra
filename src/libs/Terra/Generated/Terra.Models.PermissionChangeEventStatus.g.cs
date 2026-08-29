@@ -9,7 +9,7 @@ namespace Terra
     public enum PermissionChangeEventStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Warning,
     }

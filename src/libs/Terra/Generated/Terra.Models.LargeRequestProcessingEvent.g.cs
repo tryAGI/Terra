@@ -9,7 +9,7 @@ namespace Terra
     public sealed partial class LargeRequestProcessingEvent
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Terra.JsonConverters.LargeRequestProcessingEventTypeJsonConverter))]
@@ -30,7 +30,7 @@ namespace Terra
         public required string Message { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("user")]
         [global::System.Text.Json.Serialization.JsonRequired]

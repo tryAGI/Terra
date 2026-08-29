@@ -35,6 +35,17 @@
     },
     {
       "Order": 4,
+      "Title": "Generate a mobile SDK auth token",
+      "Slug": "authentication-createauthtoken",
+      "Description": "Creates a token to be used with initConnection() functions in the Terra mobile SDKs in order to create a user record for Apple Health or Samsung Health (or equivalent)",
+      "Language": "csharp",
+      "Code": "using var client = new TerraClient(apiKey);\n\nvar response = await client.Authentication.AuthenticationCreateAuthTokenAsync(\n    referenceId: \u0022user-42\u0022\n);\n\n// Example response:\n// {\n//   \u0022status\u0022: \u0022success\u0022,\n//   \u0022token\u0022: \u0022250c68b9c21b78e40e7a3285a2d538d3bc24aabd3b4c76a782fb0a571ca4501d\u0022,\n//   \u0022expires_in\u0022: 180\n// }",
+      "Format": "sdk",
+      "OperationId": "Authentication_CreateAuthToken",
+      "Setup": "This example assumes \u0060using Terra;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
+    },
+    {
+      "Order": 5,
       "Title": "Deauthenticate a user",
       "Slug": "authentication-deauthenticateuser",
       "Description": "Deletes every record Terra holds for the user, including any cached data, and revokes Terra\u0027s access to their provider data.",
@@ -43,17 +54,6 @@
       "Format": "http",
       "OperationId": "Authentication_DeauthenticateUser",
       "Setup": null
-    },
-    {
-      "Order": 5,
-      "Title": "Generate a mobile SDK auth token",
-      "Slug": "authentication-generateauthtoken",
-      "Description": "Creates a token to be used with initConnection() functions in the Terra mobile SDKs in order to create a user record for Apple Health or Samsung Health (or equivalent)",
-      "Language": "csharp",
-      "Code": "using var client = new TerraClient(apiKey);\nvar response = await client.Authentication.AuthenticationGenerateAuthTokenAsync();\n\n// Example response:\n// {\n//   \u0022status\u0022: \u0022success\u0022,\n//   \u0022token\u0022: \u0022250c68b9c21b78e40e7a3285a2d538d3bc24aabd3b4c76a782fb0a571ca4501d\u0022,\n//   \u0022expires_in\u0022: 180\n// }",
-      "Format": "sdk",
-      "OperationId": "Authentication_GenerateAuthToken",
-      "Setup": "This example assumes \u0060using Terra;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
     },
     {
       "Order": 6,
@@ -149,7 +149,7 @@
       "Slug": "labreports-upload",
       "Description": "Upload a single lab report file (PDF, PNG, JPEG, GIF, or WebP) as multipart form data. Returns an \u0060upload_id\u0060; a single upload may fan out to multiple sessions, so learn the \u0060session_id\u0060(s) from the webhook events or from \u0060GET /lab-reports?upload_id=...\u0060.",
       "Language": "http",
-      "Code": "### Upload a lab report\n# @name LabReports_Upload\nPOST {{host}}/lab-reports?reference_id=patient_456\nAuthorization: Bearer {{token}}\nContent-Type: multipart/form-data\nAccept: application/json, application/problem\u002Bjson\n\n## Responses\n# 202\n# Description: Upload accepted for processing.\n# Content-Type: application/json\n# 400\n# Description: One or more parameters is malformed. The \u0060detail\u0060 field describes the specific problem.\n# Content-Type: application/problem\u002Bjson\n# 401\n# Description: Authentication credentials are missing or invalid.\n# Content-Type: application/problem\u002Bjson\n# 403\n# Description: The credential is not authorized for this operation.\n# Content-Type: application/json\n# 413\n# Description: The uploaded payload exceeds the size limit.\n# Content-Type: application/json",
+      "Code": "### Upload a lab report\n# @name LabReports_Upload\nPOST {{host}}/lab-reports?reference_id=patient_456\nAuthorization: Bearer {{token}}\nContent-Type: multipart/form-data; boundary=AutoSDKBoundary\nAccept: application/json, application/problem\u002Bjson\n\n--AutoSDKBoundary\nContent-Disposition: form-data; name=\u0022file\u0022; filename=\u0022file.bin\u0022\nContent-Type: application/octet-stream\n\n\u003C ./file.bin\n--AutoSDKBoundary--\n\n## Responses\n# 202\n# Description: Upload accepted for processing.\n# Content-Type: application/json\n# 400\n# Description: One or more parameters is malformed. The \u0060detail\u0060 field describes the specific problem.\n# Content-Type: application/problem\u002Bjson\n# 401\n# Description: Authentication credentials are missing or invalid.\n# Content-Type: application/problem\u002Bjson\n# 403\n# Description: The credential is not authorized for this operation.\n# Content-Type: application/json\n# 413\n# Description: The uploaded payload exceeds the size limit.\n# Content-Type: application/json",
       "Format": "http",
       "OperationId": "LabReports_Upload",
       "Setup": null
@@ -237,7 +237,7 @@
       "Slug": "workouts-deleteplannedworkout",
       "Description": "Removes the planned workout from the user\u0027s calendar and from the connected provider.",
       "Language": "http",
-      "Code": "### Delete a planned workout\n# @name Workouts_DeletePlannedWorkout\nDELETE {{host}}/plannedWorkouts/{{planned_workout_id}}\nAuthorization: Bearer {{token}}\nAccept: application/problem\u002Bjson\n\n## Responses\n# 204\n# Description: Planned workout deleted\n# 401\n# Description: Authentication credentials are missing or invalid.\n# Content-Type: application/problem\u002Bjson\n# 404\n# Description: A referenced resource does not exist on Terra\u0027s end.\n# Content-Type: application/problem\u002Bjson",
+      "Code": "### Delete a planned workout\n# @name Workouts_DeletePlannedWorkout\nDELETE {{host}}/plannedWorkouts/{{planned_workout_id}}?user_id={{user_id}}\nAuthorization: Bearer {{token}}\nAccept: application/problem\u002Bjson\n\n## Responses\n# 204\n# Description: Planned workout deleted\n# 401\n# Description: Authentication credentials are missing or invalid.\n# Content-Type: application/problem\u002Bjson\n# 404\n# Description: A referenced resource does not exist on Terra\u0027s end.\n# Content-Type: application/problem\u002Bjson",
       "Format": "http",
       "OperationId": "Workouts_DeletePlannedWorkout",
       "Setup": null
@@ -259,7 +259,7 @@
       "Slug": "workouts-getplannedworkout",
       "Description": "Returns a planned workout created through Terra. Provider-created (external) workouts are not addressable by id \u2014 they are returned by the list endpoint with their full body under \u0060details\u0060.",
       "Language": "http",
-      "Code": "### Get a planned workout\n# @name Workouts_GetPlannedWorkout\nGET {{host}}/plannedWorkouts/{{planned_workout_id}}\nAuthorization: Bearer {{token}}\nAccept: application/json, application/problem\u002Bjson\n\n## Responses\n# 200\n# Description: The planned workout\n# Content-Type: application/json\n# 401\n# Description: Authentication credentials are missing or invalid.\n# Content-Type: application/problem\u002Bjson\n# 404\n# Description: A referenced resource does not exist on Terra\u0027s end.\n# Content-Type: application/problem\u002Bjson",
+      "Code": "### Get a planned workout\n# @name Workouts_GetPlannedWorkout\nGET {{host}}/plannedWorkouts/{{planned_workout_id}}?user_id={{user_id}}\nAuthorization: Bearer {{token}}\nAccept: application/json, application/problem\u002Bjson\n\n## Responses\n# 200\n# Description: The planned workout\n# Content-Type: application/json\n# 401\n# Description: Authentication credentials are missing or invalid.\n# Content-Type: application/problem\u002Bjson\n# 404\n# Description: A referenced resource does not exist on Terra\u0027s end.\n# Content-Type: application/problem\u002Bjson",
       "Format": "http",
       "OperationId": "Workouts_GetPlannedWorkout",
       "Setup": null
@@ -314,7 +314,7 @@
       "Slug": "workouts-updateplannedworkout",
       "Description": "Generated from OpenAPI examples.",
       "Language": "http",
-      "Code": "### Reschedule a planned workout\n# @name Workouts_UpdatePlannedWorkout\nPATCH {{host}}/plannedWorkouts/{{planned_workout_id}}\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json, application/problem\u002Bjson\n\n{\n  \u0022planned_date\u0022: \u00222025-01-01\u0022\n}\n\n## Responses\n# 200\n# Description: Updated planned workout\n# Content-Type: application/json\n# 400\n# Description: One or more parameters is malformed. The \u0060detail\u0060 field describes the specific problem.\n# Content-Type: application/problem\u002Bjson\n# 401\n# Description: Authentication credentials are missing or invalid.\n# Content-Type: application/problem\u002Bjson\n# 403\n# Description: The Planned Workouts add-on is not enabled for this account.\n# Content-Type: application/problem\u002Bjson\n# 404\n# Description: A referenced resource does not exist on Terra\u0027s end.\n# Content-Type: application/problem\u002Bjson",
+      "Code": "### Reschedule a planned workout\n# @name Workouts_UpdatePlannedWorkout\nPATCH {{host}}/plannedWorkouts/{{planned_workout_id}}?user_id={{user_id}}\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json, application/problem\u002Bjson\n\n{\n  \u0022planned_date\u0022: \u00222025-01-01\u0022\n}\n\n## Responses\n# 200\n# Description: Updated planned workout\n# Content-Type: application/json\n# 400\n# Description: One or more parameters is malformed. The \u0060detail\u0060 field describes the specific problem.\n# Content-Type: application/problem\u002Bjson\n# 401\n# Description: Authentication credentials are missing or invalid.\n# Content-Type: application/problem\u002Bjson\n# 403\n# Description: The Planned Workouts add-on is not enabled for this account.\n# Content-Type: application/problem\u002Bjson\n# 404\n# Description: A referenced resource does not exist on Terra\u0027s end.\n# Content-Type: application/problem\u002Bjson",
       "Format": "http",
       "OperationId": "Workouts_UpdatePlannedWorkout",
       "Setup": null

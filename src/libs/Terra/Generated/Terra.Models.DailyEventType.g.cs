@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum DailyEventType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Daily,
     }

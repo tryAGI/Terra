@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    /// Iliopsoas and sartorius. Its own group — not part of the quadriceps.
     /// </summary>
     public enum StrengthMuscleVariant11
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HipFlexor,
     }

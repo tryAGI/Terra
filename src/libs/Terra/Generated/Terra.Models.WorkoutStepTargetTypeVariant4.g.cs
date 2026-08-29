@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum WorkoutStepTargetTypeVariant4
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cadence,
     }

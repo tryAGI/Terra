@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum EnvironmentTypeVariant3
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pool,
     }

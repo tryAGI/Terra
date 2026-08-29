@@ -37,7 +37,7 @@ namespace Terra
         public required global::Terra.LabReportInterpretation Interpretation { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("reference_ranges")]
         public global::System.Collections.Generic.IList<global::Terra.LabReportReferenceRange>? ReferenceRanges { get; set; }

@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthMovementVariant54
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HeelSlide,
     }

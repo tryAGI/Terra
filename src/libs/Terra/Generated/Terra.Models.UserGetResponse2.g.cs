@@ -23,7 +23,7 @@ namespace Terra
         public global::Terra.UserGetResponseStatus? Status { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("is_authenticated")]
         public bool? IsAuthenticated { get; set; }

@@ -9,7 +9,7 @@ namespace Terra
     public sealed partial class LabReportCompletedEvent
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Terra.JsonConverters.LabReportCompletedEventTypeJsonConverter))]

@@ -11,7 +11,7 @@ namespace Terra
     public readonly partial struct StrengthSurface : global::System.IEquatable<StrengthSurface>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthSurfaceVariant1? StrengthSurfaceVariant1 { get; init; }
@@ -20,7 +20,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthSurfaceVariant1))]
@@ -28,7 +28,7 @@ namespace Terra
         public bool IsStrengthSurfaceVariant1 => StrengthSurfaceVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthSurfaceVariant1(
 #if NET6_0_OR_GREATER
@@ -41,14 +41,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthSurfaceVariant1 PickStrengthSurfaceVariant1() => IsStrengthSurfaceVariant1
             ? StrengthSurfaceVariant1!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthSurfaceVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthSurfaceVariant2? StrengthSurfaceVariant2 { get; init; }
@@ -57,7 +57,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthSurfaceVariant2))]
@@ -65,7 +65,7 @@ namespace Terra
         public bool IsStrengthSurfaceVariant2 => StrengthSurfaceVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthSurfaceVariant2(
 #if NET6_0_OR_GREATER
@@ -78,14 +78,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthSurfaceVariant2 PickStrengthSurfaceVariant2() => IsStrengthSurfaceVariant2
             ? StrengthSurfaceVariant2!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthSurfaceVariant2' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthSurfaceVariant3? StrengthSurfaceVariant3 { get; init; }
@@ -94,7 +94,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthSurfaceVariant3))]
@@ -102,7 +102,7 @@ namespace Terra
         public bool IsStrengthSurfaceVariant3 => StrengthSurfaceVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthSurfaceVariant3(
 #if NET6_0_OR_GREATER
@@ -115,14 +115,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthSurfaceVariant3 PickStrengthSurfaceVariant3() => IsStrengthSurfaceVariant3
             ? StrengthSurfaceVariant3!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthSurfaceVariant3' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthSurfaceVariant4? StrengthSurfaceVariant4 { get; init; }
@@ -131,7 +131,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthSurfaceVariant4))]
@@ -139,7 +139,7 @@ namespace Terra
         public bool IsStrengthSurfaceVariant4 => StrengthSurfaceVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthSurfaceVariant4(
 #if NET6_0_OR_GREATER
@@ -152,14 +152,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthSurfaceVariant4 PickStrengthSurfaceVariant4() => IsStrengthSurfaceVariant4
             ? StrengthSurfaceVariant4!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthSurfaceVariant4' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthSurfaceVariant5? StrengthSurfaceVariant5 { get; init; }
@@ -168,7 +168,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthSurfaceVariant5))]
@@ -176,7 +176,7 @@ namespace Terra
         public bool IsStrengthSurfaceVariant5 => StrengthSurfaceVariant5 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthSurfaceVariant5(
 #if NET6_0_OR_GREATER
@@ -189,14 +189,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthSurfaceVariant5 PickStrengthSurfaceVariant5() => IsStrengthSurfaceVariant5
             ? StrengthSurfaceVariant5!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthSurfaceVariant5' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthSurfaceVariant6? StrengthSurfaceVariant6 { get; init; }
@@ -205,7 +205,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthSurfaceVariant6))]
@@ -213,7 +213,7 @@ namespace Terra
         public bool IsStrengthSurfaceVariant6 => StrengthSurfaceVariant6 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthSurfaceVariant6(
 #if NET6_0_OR_GREATER
@@ -226,14 +226,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthSurfaceVariant6 PickStrengthSurfaceVariant6() => IsStrengthSurfaceVariant6
             ? StrengthSurfaceVariant6!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthSurfaceVariant6' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthSurfaceVariant7? StrengthSurfaceVariant7 { get; init; }
@@ -242,7 +242,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthSurfaceVariant7))]
@@ -250,7 +250,7 @@ namespace Terra
         public bool IsStrengthSurfaceVariant7 => StrengthSurfaceVariant7 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthSurfaceVariant7(
 #if NET6_0_OR_GREATER
@@ -263,14 +263,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthSurfaceVariant7 PickStrengthSurfaceVariant7() => IsStrengthSurfaceVariant7
             ? StrengthSurfaceVariant7!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthSurfaceVariant7' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthSurfaceVariant8? StrengthSurfaceVariant8 { get; init; }
@@ -279,7 +279,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthSurfaceVariant8))]
@@ -287,7 +287,7 @@ namespace Terra
         public bool IsStrengthSurfaceVariant8 => StrengthSurfaceVariant8 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthSurfaceVariant8(
 #if NET6_0_OR_GREATER
@@ -300,14 +300,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthSurfaceVariant8 PickStrengthSurfaceVariant8() => IsStrengthSurfaceVariant8
             ? StrengthSurfaceVariant8!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthSurfaceVariant8' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthSurfaceVariant9? StrengthSurfaceVariant9 { get; init; }
@@ -316,7 +316,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthSurfaceVariant9))]
@@ -324,7 +324,7 @@ namespace Terra
         public bool IsStrengthSurfaceVariant9 => StrengthSurfaceVariant9 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthSurfaceVariant9(
 #if NET6_0_OR_GREATER
@@ -337,14 +337,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthSurfaceVariant9 PickStrengthSurfaceVariant9() => IsStrengthSurfaceVariant9
             ? StrengthSurfaceVariant9!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthSurfaceVariant9' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthSurfaceVariant10? StrengthSurfaceVariant10 { get; init; }
@@ -353,7 +353,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthSurfaceVariant10))]
@@ -361,7 +361,7 @@ namespace Terra
         public bool IsStrengthSurfaceVariant10 => StrengthSurfaceVariant10 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthSurfaceVariant10(
 #if NET6_0_OR_GREATER
@@ -374,7 +374,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthSurfaceVariant10 PickStrengthSurfaceVariant10() => IsStrengthSurfaceVariant10
             ? StrengthSurfaceVariant10!.Value
@@ -390,7 +390,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthSurfaceVariant11))]
@@ -398,7 +398,7 @@ namespace Terra
         public bool IsStrengthSurfaceVariant11 => StrengthSurfaceVariant11 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthSurfaceVariant11(
 #if NET6_0_OR_GREATER
@@ -411,7 +411,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthSurfaceVariant11 PickStrengthSurfaceVariant11() => IsStrengthSurfaceVariant11
             ? StrengthSurfaceVariant11!.Value
@@ -427,7 +427,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthSurfaceVariant12))]
@@ -435,7 +435,7 @@ namespace Terra
         public bool IsStrengthSurfaceVariant12 => StrengthSurfaceVariant12 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthSurfaceVariant12(
 #if NET6_0_OR_GREATER
@@ -448,23 +448,23 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickStrengthSurfaceVariant12() => IsStrengthSurfaceVariant12
             ? StrengthSurfaceVariant12!
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthSurfaceVariant12' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthSurface(global::Terra.StrengthSurfaceVariant1 value) => new StrengthSurface((global::Terra.StrengthSurfaceVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthSurfaceVariant1?(StrengthSurface @this) => @this.StrengthSurfaceVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthSurface(global::Terra.StrengthSurfaceVariant1? value)
         {
@@ -472,22 +472,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthSurface FromStrengthSurfaceVariant1(global::Terra.StrengthSurfaceVariant1? value) => new StrengthSurface(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthSurface(global::Terra.StrengthSurfaceVariant2 value) => new StrengthSurface((global::Terra.StrengthSurfaceVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthSurfaceVariant2?(StrengthSurface @this) => @this.StrengthSurfaceVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthSurface(global::Terra.StrengthSurfaceVariant2? value)
         {
@@ -495,22 +495,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthSurface FromStrengthSurfaceVariant2(global::Terra.StrengthSurfaceVariant2? value) => new StrengthSurface(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthSurface(global::Terra.StrengthSurfaceVariant3 value) => new StrengthSurface((global::Terra.StrengthSurfaceVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthSurfaceVariant3?(StrengthSurface @this) => @this.StrengthSurfaceVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthSurface(global::Terra.StrengthSurfaceVariant3? value)
         {
@@ -518,22 +518,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthSurface FromStrengthSurfaceVariant3(global::Terra.StrengthSurfaceVariant3? value) => new StrengthSurface(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthSurface(global::Terra.StrengthSurfaceVariant4 value) => new StrengthSurface((global::Terra.StrengthSurfaceVariant4?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthSurfaceVariant4?(StrengthSurface @this) => @this.StrengthSurfaceVariant4;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthSurface(global::Terra.StrengthSurfaceVariant4? value)
         {
@@ -541,22 +541,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthSurface FromStrengthSurfaceVariant4(global::Terra.StrengthSurfaceVariant4? value) => new StrengthSurface(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthSurface(global::Terra.StrengthSurfaceVariant5 value) => new StrengthSurface((global::Terra.StrengthSurfaceVariant5?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthSurfaceVariant5?(StrengthSurface @this) => @this.StrengthSurfaceVariant5;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthSurface(global::Terra.StrengthSurfaceVariant5? value)
         {
@@ -564,22 +564,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthSurface FromStrengthSurfaceVariant5(global::Terra.StrengthSurfaceVariant5? value) => new StrengthSurface(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthSurface(global::Terra.StrengthSurfaceVariant6 value) => new StrengthSurface((global::Terra.StrengthSurfaceVariant6?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthSurfaceVariant6?(StrengthSurface @this) => @this.StrengthSurfaceVariant6;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthSurface(global::Terra.StrengthSurfaceVariant6? value)
         {
@@ -587,22 +587,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthSurface FromStrengthSurfaceVariant6(global::Terra.StrengthSurfaceVariant6? value) => new StrengthSurface(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthSurface(global::Terra.StrengthSurfaceVariant7 value) => new StrengthSurface((global::Terra.StrengthSurfaceVariant7?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthSurfaceVariant7?(StrengthSurface @this) => @this.StrengthSurfaceVariant7;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthSurface(global::Terra.StrengthSurfaceVariant7? value)
         {
@@ -610,22 +610,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthSurface FromStrengthSurfaceVariant7(global::Terra.StrengthSurfaceVariant7? value) => new StrengthSurface(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthSurface(global::Terra.StrengthSurfaceVariant8 value) => new StrengthSurface((global::Terra.StrengthSurfaceVariant8?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthSurfaceVariant8?(StrengthSurface @this) => @this.StrengthSurfaceVariant8;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthSurface(global::Terra.StrengthSurfaceVariant8? value)
         {
@@ -633,22 +633,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthSurface FromStrengthSurfaceVariant8(global::Terra.StrengthSurfaceVariant8? value) => new StrengthSurface(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthSurface(global::Terra.StrengthSurfaceVariant9 value) => new StrengthSurface((global::Terra.StrengthSurfaceVariant9?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthSurfaceVariant9?(StrengthSurface @this) => @this.StrengthSurfaceVariant9;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthSurface(global::Terra.StrengthSurfaceVariant9? value)
         {
@@ -656,22 +656,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthSurface FromStrengthSurfaceVariant9(global::Terra.StrengthSurfaceVariant9? value) => new StrengthSurface(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthSurface(global::Terra.StrengthSurfaceVariant10 value) => new StrengthSurface((global::Terra.StrengthSurfaceVariant10?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthSurfaceVariant10?(StrengthSurface @this) => @this.StrengthSurfaceVariant10;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthSurface(global::Terra.StrengthSurfaceVariant10? value)
         {
@@ -679,22 +679,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthSurface FromStrengthSurfaceVariant10(global::Terra.StrengthSurfaceVariant10? value) => new StrengthSurface(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthSurface(global::Terra.StrengthSurfaceVariant11 value) => new StrengthSurface((global::Terra.StrengthSurfaceVariant11?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthSurfaceVariant11?(StrengthSurface @this) => @this.StrengthSurfaceVariant11;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthSurface(global::Terra.StrengthSurfaceVariant11? value)
         {
@@ -702,22 +702,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthSurface FromStrengthSurfaceVariant11(global::Terra.StrengthSurfaceVariant11? value) => new StrengthSurface(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthSurface(string value) => new StrengthSurface((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(StrengthSurface @this) => @this.StrengthSurfaceVariant12;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthSurface(string? value)
         {
@@ -725,12 +725,12 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthSurface FromStrengthSurfaceVariant12(string? value) => new StrengthSurface(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthSurface(
             global::Terra.StrengthSurfaceVariant1? strengthSurfaceVariant1,
@@ -762,7 +762,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             StrengthSurfaceVariant12 as object ??
@@ -776,11 +776,11 @@ namespace Terra
             StrengthSurfaceVariant4 as object ??
             StrengthSurfaceVariant3 as object ??
             StrengthSurfaceVariant2 as object ??
-            StrengthSurfaceVariant1 as object 
+            StrengthSurfaceVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             StrengthSurfaceVariant1?.ToValueString() ??
@@ -794,11 +794,11 @@ namespace Terra
             StrengthSurfaceVariant9?.ToValueString() ??
             StrengthSurfaceVariant10?.ToValueString() ??
             StrengthSurfaceVariant11?.ToValueString() ??
-            StrengthSurfaceVariant12?.ToString() 
+            StrengthSurfaceVariant12?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -806,7 +806,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Terra.StrengthSurfaceVariant1?, TResult>? strengthSurfaceVariant1 = null,
@@ -881,7 +881,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Terra.StrengthSurfaceVariant1?>? strengthSurfaceVariant1 = null,
@@ -965,7 +965,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Terra.StrengthSurfaceVariant1?>? strengthSurfaceVariant1 = null,
@@ -1038,7 +1038,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -1079,7 +1079,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(StrengthSurface other)
         {
@@ -1095,12 +1095,12 @@ namespace Terra
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthSurfaceVariant9?>.Default.Equals(StrengthSurfaceVariant9, other.StrengthSurfaceVariant9) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthSurfaceVariant10?>.Default.Equals(StrengthSurfaceVariant10, other.StrengthSurfaceVariant10) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthSurfaceVariant11?>.Default.Equals(StrengthSurfaceVariant11, other.StrengthSurfaceVariant11) &&
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(StrengthSurfaceVariant12, other.StrengthSurfaceVariant12) 
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(StrengthSurfaceVariant12, other.StrengthSurfaceVariant12)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(StrengthSurface obj1, StrengthSurface obj2)
         {
@@ -1108,7 +1108,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(StrengthSurface obj1, StrengthSurface obj2)
         {
@@ -1116,7 +1116,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

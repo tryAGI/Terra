@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthMovementVariant79
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LSit,
     }

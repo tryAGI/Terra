@@ -9,7 +9,7 @@ namespace Terra
     public enum AuthErrorEventStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Error,
     }

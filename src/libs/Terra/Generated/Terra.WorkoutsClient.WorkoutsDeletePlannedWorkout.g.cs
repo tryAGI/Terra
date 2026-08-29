@@ -27,11 +27,13 @@ namespace Terra
             };
         partial void PrepareWorkoutsDeletePlannedWorkoutArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref string plannedWorkoutId);
+            ref long plannedWorkoutId,
+            ref string userId);
         partial void PrepareWorkoutsDeletePlannedWorkoutRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            string plannedWorkoutId);
+            long plannedWorkoutId,
+            string userId);
         partial void ProcessWorkoutsDeletePlannedWorkoutResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -41,16 +43,19 @@ namespace Terra
         /// Removes the planned workout from the user's calendar and from the connected provider.
         /// </summary>
         /// <param name="plannedWorkoutId"></param>
+        /// <param name="userId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
         public async global::System.Threading.Tasks.Task WorkoutsDeletePlannedWorkoutAsync(
-            string plannedWorkoutId,
+            long plannedWorkoutId,
+            string userId,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             await WorkoutsDeletePlannedWorkoutAsResponseAsync(
                 plannedWorkoutId: plannedWorkoutId,
+                userId: userId,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -60,11 +65,13 @@ namespace Terra
         /// Removes the planned workout from the user's calendar and from the connected provider.
         /// </summary>
         /// <param name="plannedWorkoutId"></param>
+        /// <param name="userId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse> WorkoutsDeletePlannedWorkoutAsResponseAsync(
-            string plannedWorkoutId,
+            long plannedWorkoutId,
+            string userId,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -72,7 +79,8 @@ namespace Terra
                 client: HttpClient);
             PrepareWorkoutsDeletePlannedWorkoutArguments(
                 httpClient: HttpClient,
-                plannedWorkoutId: ref plannedWorkoutId);
+                plannedWorkoutId: ref plannedWorkoutId,
+                userId: ref userId);
 
 
             var __authorizations = global::Terra.EndPointSecurityResolver.ResolveAuthorizations(
@@ -100,6 +108,9 @@ namespace Terra
                             var __pathBuilder = new global::Terra.PathBuilder(
                                 path: $"/plannedWorkouts/{plannedWorkoutId}",
                                 baseUri: HttpClient.BaseAddress);
+                            __pathBuilder
+                                .AddRequiredParameter("user_id", userId)
+                                ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Terra.AutoSDKRequestOptionsSupport.AppendQueryParameters(
                     path: __path,
@@ -127,7 +138,7 @@ namespace Terra
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
                 global::Terra.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,
@@ -140,7 +151,8 @@ namespace Terra
                 PrepareWorkoutsDeletePlannedWorkoutRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    plannedWorkoutId: plannedWorkoutId!);
+                    plannedWorkoutId: plannedWorkoutId!,
+                    userId: userId!);
 
                 return __httpRequest;
             }

@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthRangeOfMotionVariant6
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ToBench,
     }

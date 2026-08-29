@@ -7,7 +7,7 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
@@ -16,6 +16,7 @@ namespace Terra
         })]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutTemplate))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
@@ -513,22 +514,22 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthProgramme), TypeInfoPropertyName = "StrengthProgramme2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthProgrammeVariant1), TypeInfoPropertyName = "StrengthProgrammeVariant12")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthProgrammeVariant2), TypeInfoPropertyName = "StrengthProgrammeVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthExerciseModifiers))]
     internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
 
     /// <summary>
-    /// 
+    ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthExerciseModifiers))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMuscle), TypeInfoPropertyName = "StrengthMuscle2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMuscleVariant1), TypeInfoPropertyName = "StrengthMuscleVariant12_3")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMuscleVariant2), TypeInfoPropertyName = "StrengthMuscleVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMuscleVariant2), TypeInfoPropertyName = "StrengthMuscleVariant22_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMuscleVariant3), TypeInfoPropertyName = "StrengthMuscleVariant32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMuscleVariant4), TypeInfoPropertyName = "StrengthMuscleVariant42")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMuscleVariant5), TypeInfoPropertyName = "StrengthMuscleVariant52")]
@@ -546,6 +547,10 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMuscleVariant17), TypeInfoPropertyName = "StrengthMuscleVariant172")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMuscleVariant18), TypeInfoPropertyName = "StrengthMuscleVariant182")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMuscleVariant19), TypeInfoPropertyName = "StrengthMuscleVariant192")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMuscleVariant20), TypeInfoPropertyName = "StrengthMuscleVariant202")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMuscleVariant21), TypeInfoPropertyName = "StrengthMuscleVariant212")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMuscleVariant22), TypeInfoPropertyName = "StrengthMuscleVariant222")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMuscleVariant23), TypeInfoPropertyName = "StrengthMuscleVariant232")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthSource), TypeInfoPropertyName = "StrengthSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthSourceVariant1), TypeInfoPropertyName = "StrengthSourceVariant12")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthSourceVariant2), TypeInfoPropertyName = "StrengthSourceVariant22")]
@@ -783,6 +788,7 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationGenerateWidgetSessionResponseStatus), TypeInfoPropertyName = "AuthenticationGenerateWidgetSessionResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationDeauthenticateUserResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationDeauthenticateUserResponseStatus), TypeInfoPropertyName = "AuthenticationDeauthenticateUserResponseStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationCreateAuthTokenResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationGenerateAuthTokenResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.ActivityGetResponse2, global::Terra.DataSentToWebhook>), TypeInfoPropertyName = "OneOfActivityGetResponse2DataSentToWebhook2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.ActivityGetResponse2))]
@@ -809,10 +815,8 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserGetResponseUser))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserGetResponseStatus), TypeInfoPropertyName = "UserGetResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.TerraUser>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.UserListResponseVariant1, global::Terra.UserListResponseVariant2>), TypeInfoPropertyName = "OneOfUserListResponseVariant1UserListResponseVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserListResponseVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserListResponseVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserListResponseVariant2Data))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserListResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserListResponseStatus), TypeInfoPropertyName = "UserListResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.IntegrationsListResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.IntegrationsListResponseStatus), TypeInfoPropertyName = "IntegrationsListResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSport?), TypeInfoPropertyName = "NullableWorkoutSport2")]
@@ -1022,22 +1026,22 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTargetVariant20?), TypeInfoPropertyName = "NullableStrengthTargetVariant202")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTargetVariant21?), TypeInfoPropertyName = "NullableStrengthTargetVariant212")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTargetVariant22?), TypeInfoPropertyName = "NullableStrengthTargetVariant222")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTargetVariant23?), TypeInfoPropertyName = "NullableStrengthTargetVariant232")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTargetVariant24?), TypeInfoPropertyName = "NullableStrengthTargetVariant242")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTargetVariant25?), TypeInfoPropertyName = "NullableStrengthTargetVariant252")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthImplement?), TypeInfoPropertyName = "NullableStrengthImplement2")]
     internal sealed partial class SourceGenerationContextChunk1 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
 
     /// <summary>
-    /// 
+    ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTargetVariant23?), TypeInfoPropertyName = "NullableStrengthTargetVariant232")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTargetVariant24?), TypeInfoPropertyName = "NullableStrengthTargetVariant242")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTargetVariant25?), TypeInfoPropertyName = "NullableStrengthTargetVariant252")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthImplement?), TypeInfoPropertyName = "NullableStrengthImplement2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthImplementVariant1?), TypeInfoPropertyName = "NullableStrengthImplementVariant12_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthImplementVariant2?), TypeInfoPropertyName = "NullableStrengthImplementVariant22_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthImplementVariant3?), TypeInfoPropertyName = "NullableStrengthImplementVariant32")]
@@ -1149,7 +1153,7 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthProgrammeVariant2?), TypeInfoPropertyName = "NullableStrengthProgrammeVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMuscle?), TypeInfoPropertyName = "NullableStrengthMuscle2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMuscleVariant1?), TypeInfoPropertyName = "NullableStrengthMuscleVariant12_3")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMuscleVariant2?), TypeInfoPropertyName = "NullableStrengthMuscleVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMuscleVariant2?), TypeInfoPropertyName = "NullableStrengthMuscleVariant22_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMuscleVariant3?), TypeInfoPropertyName = "NullableStrengthMuscleVariant32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMuscleVariant4?), TypeInfoPropertyName = "NullableStrengthMuscleVariant42")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMuscleVariant5?), TypeInfoPropertyName = "NullableStrengthMuscleVariant52")]
@@ -1167,6 +1171,10 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMuscleVariant17?), TypeInfoPropertyName = "NullableStrengthMuscleVariant172")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMuscleVariant18?), TypeInfoPropertyName = "NullableStrengthMuscleVariant182")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMuscleVariant19?), TypeInfoPropertyName = "NullableStrengthMuscleVariant192")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMuscleVariant20?), TypeInfoPropertyName = "NullableStrengthMuscleVariant202")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMuscleVariant21?), TypeInfoPropertyName = "NullableStrengthMuscleVariant212")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMuscleVariant22?), TypeInfoPropertyName = "NullableStrengthMuscleVariant222")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMuscleVariant23?), TypeInfoPropertyName = "NullableStrengthMuscleVariant232")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthSource?), TypeInfoPropertyName = "NullableStrengthSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthSourceVariant1?), TypeInfoPropertyName = "NullableStrengthSourceVariant12")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthSourceVariant2?), TypeInfoPropertyName = "NullableStrengthSourceVariant22")]
@@ -1306,7 +1314,7 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.UserGetResponse2, global::System.Collections.Generic.IList<global::Terra.TerraUser>>?), TypeInfoPropertyName = "NullableOneOfUserGetResponse2IListTerraUser2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AllOf<global::Terra.TerraUser, global::Terra.UserGetResponseUser>?), TypeInfoPropertyName = "NullableAllOfTerraUserUserGetResponseUser2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserGetResponseStatus?), TypeInfoPropertyName = "NullableUserGetResponseStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.UserListResponseVariant1, global::Terra.UserListResponseVariant2>?), TypeInfoPropertyName = "NullableOneOfUserListResponseVariant1UserListResponseVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserListResponseStatus?), TypeInfoPropertyName = "NullableUserListResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.IntegrationsListResponseStatus?), TypeInfoPropertyName = "NullableIntegrationsListResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.StepBlock>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
@@ -1394,7 +1402,7 @@ namespace Terra
     {
     }
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class SourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
     {
@@ -1403,7 +1411,7 @@ namespace Terra
         private static readonly global::System.Text.Json.JsonSerializerOptions DefaultOptions = CreateDefaultOptions();
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static SourceGenerationContext Default { get; } = new(DefaultOptions);
 
@@ -1478,7 +1486,6 @@ namespace Terra
             options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.SleepGetResponse2, global::Terra.DataSentToWebhook>());
             options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.UserGetResponse2, global::System.Collections.Generic.IList<global::Terra.TerraUser>>());
             options.Converters.Add(new global::Terra.JsonConverters.AllOfJsonConverter<global::Terra.TerraUser, global::Terra.UserGetResponseUser>());
-            options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.UserListResponseVariant1, global::Terra.UserListResponseVariant2>());
             options.Converters.Add(new global::Terra.JsonConverters.UnixTimestampJsonConverter());
 
             options.Converters.Add(new LazyEnumJsonConverterFactory());
@@ -2772,6 +2779,22 @@ namespace Terra
 
                     || typeToConvert == typeof(global::Terra.StrengthMuscleVariant19?)
 
+                    || typeToConvert == typeof(global::Terra.StrengthMuscleVariant20)
+
+                    || typeToConvert == typeof(global::Terra.StrengthMuscleVariant20?)
+
+                    || typeToConvert == typeof(global::Terra.StrengthMuscleVariant21)
+
+                    || typeToConvert == typeof(global::Terra.StrengthMuscleVariant21?)
+
+                    || typeToConvert == typeof(global::Terra.StrengthMuscleVariant22)
+
+                    || typeToConvert == typeof(global::Terra.StrengthMuscleVariant22?)
+
+                    || typeToConvert == typeof(global::Terra.StrengthMuscleVariant23)
+
+                    || typeToConvert == typeof(global::Terra.StrengthMuscleVariant23?)
+
                     || typeToConvert == typeof(global::Terra.StrengthSourceVariant1)
 
                     || typeToConvert == typeof(global::Terra.StrengthSourceVariant1?)
@@ -3243,6 +3266,10 @@ namespace Terra
                     || typeToConvert == typeof(global::Terra.UserGetResponseStatus)
 
                     || typeToConvert == typeof(global::Terra.UserGetResponseStatus?)
+
+                    || typeToConvert == typeof(global::Terra.UserListResponseStatus)
+
+                    || typeToConvert == typeof(global::Terra.UserListResponseStatus?)
 
                     || typeToConvert == typeof(global::Terra.IntegrationsListResponseStatus)
 
@@ -6453,6 +6480,46 @@ namespace Terra
                     return new global::Terra.JsonConverters.StrengthMuscleVariant19NullableJsonConverter();
                 }
 
+                if (typeToConvert == typeof(global::Terra.StrengthMuscleVariant20))
+                {
+                    return new global::Terra.JsonConverters.StrengthMuscleVariant20JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.StrengthMuscleVariant20?))
+                {
+                    return new global::Terra.JsonConverters.StrengthMuscleVariant20NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.StrengthMuscleVariant21))
+                {
+                    return new global::Terra.JsonConverters.StrengthMuscleVariant21JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.StrengthMuscleVariant21?))
+                {
+                    return new global::Terra.JsonConverters.StrengthMuscleVariant21NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.StrengthMuscleVariant22))
+                {
+                    return new global::Terra.JsonConverters.StrengthMuscleVariant22JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.StrengthMuscleVariant22?))
+                {
+                    return new global::Terra.JsonConverters.StrengthMuscleVariant22NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.StrengthMuscleVariant23))
+                {
+                    return new global::Terra.JsonConverters.StrengthMuscleVariant23JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.StrengthMuscleVariant23?))
+                {
+                    return new global::Terra.JsonConverters.StrengthMuscleVariant23NullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::Terra.StrengthSourceVariant1))
                 {
                     return new global::Terra.JsonConverters.StrengthSourceVariant1JsonConverter();
@@ -7631,6 +7698,16 @@ namespace Terra
                 if (typeToConvert == typeof(global::Terra.UserGetResponseStatus?))
                 {
                     return new global::Terra.JsonConverters.UserGetResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.UserListResponseStatus))
+                {
+                    return new global::Terra.JsonConverters.UserListResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.UserListResponseStatus?))
+                {
+                    return new global::Terra.JsonConverters.UserListResponseStatusNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Terra.IntegrationsListResponseStatus))

@@ -9,7 +9,7 @@ namespace Terra
     public enum StrengthGripWidthVariant3
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unknown,
     }

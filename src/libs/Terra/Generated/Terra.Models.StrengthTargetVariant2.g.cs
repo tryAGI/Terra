@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthTargetVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Adductors,
     }

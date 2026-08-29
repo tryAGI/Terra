@@ -10,7 +10,7 @@ namespace Terra
     public readonly partial struct WorkoutStepTargetType : global::System.IEquatable<WorkoutStepTargetType>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.WorkoutStepTargetTypeVariant1? WorkoutStepTargetTypeVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkoutStepTargetTypeVariant1))]
@@ -27,7 +27,7 @@ namespace Terra
         public bool IsWorkoutStepTargetTypeVariant1 => WorkoutStepTargetTypeVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkoutStepTargetTypeVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.WorkoutStepTargetTypeVariant1 PickWorkoutStepTargetTypeVariant1() => IsWorkoutStepTargetTypeVariant1
             ? WorkoutStepTargetTypeVariant1!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepTargetTypeVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.WorkoutStepTargetTypeVariant2? WorkoutStepTargetTypeVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkoutStepTargetTypeVariant2))]
@@ -64,7 +64,7 @@ namespace Terra
         public bool IsWorkoutStepTargetTypeVariant2 => WorkoutStepTargetTypeVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkoutStepTargetTypeVariant2(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.WorkoutStepTargetTypeVariant2 PickWorkoutStepTargetTypeVariant2() => IsWorkoutStepTargetTypeVariant2
             ? WorkoutStepTargetTypeVariant2!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepTargetTypeVariant2' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.WorkoutStepTargetTypeVariant3? WorkoutStepTargetTypeVariant3 { get; init; }
@@ -93,7 +93,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkoutStepTargetTypeVariant3))]
@@ -101,7 +101,7 @@ namespace Terra
         public bool IsWorkoutStepTargetTypeVariant3 => WorkoutStepTargetTypeVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkoutStepTargetTypeVariant3(
 #if NET6_0_OR_GREATER
@@ -114,14 +114,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.WorkoutStepTargetTypeVariant3 PickWorkoutStepTargetTypeVariant3() => IsWorkoutStepTargetTypeVariant3
             ? WorkoutStepTargetTypeVariant3!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepTargetTypeVariant3' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.WorkoutStepTargetTypeVariant4? WorkoutStepTargetTypeVariant4 { get; init; }
@@ -130,7 +130,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkoutStepTargetTypeVariant4))]
@@ -138,7 +138,7 @@ namespace Terra
         public bool IsWorkoutStepTargetTypeVariant4 => WorkoutStepTargetTypeVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkoutStepTargetTypeVariant4(
 #if NET6_0_OR_GREATER
@@ -151,14 +151,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.WorkoutStepTargetTypeVariant4 PickWorkoutStepTargetTypeVariant4() => IsWorkoutStepTargetTypeVariant4
             ? WorkoutStepTargetTypeVariant4!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepTargetTypeVariant4' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.WorkoutStepTargetTypeVariant5? WorkoutStepTargetTypeVariant5 { get; init; }
@@ -167,7 +167,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkoutStepTargetTypeVariant5))]
@@ -175,7 +175,7 @@ namespace Terra
         public bool IsWorkoutStepTargetTypeVariant5 => WorkoutStepTargetTypeVariant5 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkoutStepTargetTypeVariant5(
 #if NET6_0_OR_GREATER
@@ -188,14 +188,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.WorkoutStepTargetTypeVariant5 PickWorkoutStepTargetTypeVariant5() => IsWorkoutStepTargetTypeVariant5
             ? WorkoutStepTargetTypeVariant5!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepTargetTypeVariant5' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.WorkoutStepTargetTypeVariant6? WorkoutStepTargetTypeVariant6 { get; init; }
@@ -204,7 +204,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkoutStepTargetTypeVariant6))]
@@ -212,7 +212,7 @@ namespace Terra
         public bool IsWorkoutStepTargetTypeVariant6 => WorkoutStepTargetTypeVariant6 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkoutStepTargetTypeVariant6(
 #if NET6_0_OR_GREATER
@@ -225,14 +225,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.WorkoutStepTargetTypeVariant6 PickWorkoutStepTargetTypeVariant6() => IsWorkoutStepTargetTypeVariant6
             ? WorkoutStepTargetTypeVariant6!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepTargetTypeVariant6' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.WorkoutStepTargetTypeVariant7? WorkoutStepTargetTypeVariant7 { get; init; }
@@ -241,7 +241,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkoutStepTargetTypeVariant7))]
@@ -249,7 +249,7 @@ namespace Terra
         public bool IsWorkoutStepTargetTypeVariant7 => WorkoutStepTargetTypeVariant7 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkoutStepTargetTypeVariant7(
 #if NET6_0_OR_GREATER
@@ -262,14 +262,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.WorkoutStepTargetTypeVariant7 PickWorkoutStepTargetTypeVariant7() => IsWorkoutStepTargetTypeVariant7
             ? WorkoutStepTargetTypeVariant7!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepTargetTypeVariant7' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.WorkoutStepTargetTypeVariant8? WorkoutStepTargetTypeVariant8 { get; init; }
@@ -278,7 +278,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkoutStepTargetTypeVariant8))]
@@ -286,7 +286,7 @@ namespace Terra
         public bool IsWorkoutStepTargetTypeVariant8 => WorkoutStepTargetTypeVariant8 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkoutStepTargetTypeVariant8(
 #if NET6_0_OR_GREATER
@@ -299,14 +299,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.WorkoutStepTargetTypeVariant8 PickWorkoutStepTargetTypeVariant8() => IsWorkoutStepTargetTypeVariant8
             ? WorkoutStepTargetTypeVariant8!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepTargetTypeVariant8' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.WorkoutStepTargetTypeVariant9? WorkoutStepTargetTypeVariant9 { get; init; }
@@ -315,7 +315,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkoutStepTargetTypeVariant9))]
@@ -323,7 +323,7 @@ namespace Terra
         public bool IsWorkoutStepTargetTypeVariant9 => WorkoutStepTargetTypeVariant9 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkoutStepTargetTypeVariant9(
 #if NET6_0_OR_GREATER
@@ -336,14 +336,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.WorkoutStepTargetTypeVariant9 PickWorkoutStepTargetTypeVariant9() => IsWorkoutStepTargetTypeVariant9
             ? WorkoutStepTargetTypeVariant9!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepTargetTypeVariant9' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.WorkoutStepTargetTypeVariant10? WorkoutStepTargetTypeVariant10 { get; init; }
@@ -352,7 +352,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkoutStepTargetTypeVariant10))]
@@ -360,7 +360,7 @@ namespace Terra
         public bool IsWorkoutStepTargetTypeVariant10 => WorkoutStepTargetTypeVariant10 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkoutStepTargetTypeVariant10(
 #if NET6_0_OR_GREATER
@@ -373,14 +373,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.WorkoutStepTargetTypeVariant10 PickWorkoutStepTargetTypeVariant10() => IsWorkoutStepTargetTypeVariant10
             ? WorkoutStepTargetTypeVariant10!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepTargetTypeVariant10' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.WorkoutStepTargetTypeVariant11? WorkoutStepTargetTypeVariant11 { get; init; }
@@ -389,7 +389,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkoutStepTargetTypeVariant11))]
@@ -397,7 +397,7 @@ namespace Terra
         public bool IsWorkoutStepTargetTypeVariant11 => WorkoutStepTargetTypeVariant11 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkoutStepTargetTypeVariant11(
 #if NET6_0_OR_GREATER
@@ -410,23 +410,23 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.WorkoutStepTargetTypeVariant11 PickWorkoutStepTargetTypeVariant11() => IsWorkoutStepTargetTypeVariant11
             ? WorkoutStepTargetTypeVariant11!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepTargetTypeVariant11' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkoutStepTargetType(global::Terra.WorkoutStepTargetTypeVariant1 value) => new WorkoutStepTargetType((global::Terra.WorkoutStepTargetTypeVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.WorkoutStepTargetTypeVariant1?(WorkoutStepTargetType @this) => @this.WorkoutStepTargetTypeVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkoutStepTargetType(global::Terra.WorkoutStepTargetTypeVariant1? value)
         {
@@ -434,22 +434,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkoutStepTargetType FromWorkoutStepTargetTypeVariant1(global::Terra.WorkoutStepTargetTypeVariant1? value) => new WorkoutStepTargetType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkoutStepTargetType(global::Terra.WorkoutStepTargetTypeVariant2 value) => new WorkoutStepTargetType((global::Terra.WorkoutStepTargetTypeVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.WorkoutStepTargetTypeVariant2?(WorkoutStepTargetType @this) => @this.WorkoutStepTargetTypeVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkoutStepTargetType(global::Terra.WorkoutStepTargetTypeVariant2? value)
         {
@@ -457,22 +457,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkoutStepTargetType FromWorkoutStepTargetTypeVariant2(global::Terra.WorkoutStepTargetTypeVariant2? value) => new WorkoutStepTargetType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkoutStepTargetType(global::Terra.WorkoutStepTargetTypeVariant3 value) => new WorkoutStepTargetType((global::Terra.WorkoutStepTargetTypeVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.WorkoutStepTargetTypeVariant3?(WorkoutStepTargetType @this) => @this.WorkoutStepTargetTypeVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkoutStepTargetType(global::Terra.WorkoutStepTargetTypeVariant3? value)
         {
@@ -480,22 +480,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkoutStepTargetType FromWorkoutStepTargetTypeVariant3(global::Terra.WorkoutStepTargetTypeVariant3? value) => new WorkoutStepTargetType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkoutStepTargetType(global::Terra.WorkoutStepTargetTypeVariant4 value) => new WorkoutStepTargetType((global::Terra.WorkoutStepTargetTypeVariant4?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.WorkoutStepTargetTypeVariant4?(WorkoutStepTargetType @this) => @this.WorkoutStepTargetTypeVariant4;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkoutStepTargetType(global::Terra.WorkoutStepTargetTypeVariant4? value)
         {
@@ -503,22 +503,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkoutStepTargetType FromWorkoutStepTargetTypeVariant4(global::Terra.WorkoutStepTargetTypeVariant4? value) => new WorkoutStepTargetType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkoutStepTargetType(global::Terra.WorkoutStepTargetTypeVariant5 value) => new WorkoutStepTargetType((global::Terra.WorkoutStepTargetTypeVariant5?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.WorkoutStepTargetTypeVariant5?(WorkoutStepTargetType @this) => @this.WorkoutStepTargetTypeVariant5;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkoutStepTargetType(global::Terra.WorkoutStepTargetTypeVariant5? value)
         {
@@ -526,22 +526,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkoutStepTargetType FromWorkoutStepTargetTypeVariant5(global::Terra.WorkoutStepTargetTypeVariant5? value) => new WorkoutStepTargetType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkoutStepTargetType(global::Terra.WorkoutStepTargetTypeVariant6 value) => new WorkoutStepTargetType((global::Terra.WorkoutStepTargetTypeVariant6?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.WorkoutStepTargetTypeVariant6?(WorkoutStepTargetType @this) => @this.WorkoutStepTargetTypeVariant6;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkoutStepTargetType(global::Terra.WorkoutStepTargetTypeVariant6? value)
         {
@@ -549,22 +549,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkoutStepTargetType FromWorkoutStepTargetTypeVariant6(global::Terra.WorkoutStepTargetTypeVariant6? value) => new WorkoutStepTargetType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkoutStepTargetType(global::Terra.WorkoutStepTargetTypeVariant7 value) => new WorkoutStepTargetType((global::Terra.WorkoutStepTargetTypeVariant7?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.WorkoutStepTargetTypeVariant7?(WorkoutStepTargetType @this) => @this.WorkoutStepTargetTypeVariant7;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkoutStepTargetType(global::Terra.WorkoutStepTargetTypeVariant7? value)
         {
@@ -572,22 +572,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkoutStepTargetType FromWorkoutStepTargetTypeVariant7(global::Terra.WorkoutStepTargetTypeVariant7? value) => new WorkoutStepTargetType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkoutStepTargetType(global::Terra.WorkoutStepTargetTypeVariant8 value) => new WorkoutStepTargetType((global::Terra.WorkoutStepTargetTypeVariant8?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.WorkoutStepTargetTypeVariant8?(WorkoutStepTargetType @this) => @this.WorkoutStepTargetTypeVariant8;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkoutStepTargetType(global::Terra.WorkoutStepTargetTypeVariant8? value)
         {
@@ -595,22 +595,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkoutStepTargetType FromWorkoutStepTargetTypeVariant8(global::Terra.WorkoutStepTargetTypeVariant8? value) => new WorkoutStepTargetType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkoutStepTargetType(global::Terra.WorkoutStepTargetTypeVariant9 value) => new WorkoutStepTargetType((global::Terra.WorkoutStepTargetTypeVariant9?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.WorkoutStepTargetTypeVariant9?(WorkoutStepTargetType @this) => @this.WorkoutStepTargetTypeVariant9;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkoutStepTargetType(global::Terra.WorkoutStepTargetTypeVariant9? value)
         {
@@ -618,22 +618,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkoutStepTargetType FromWorkoutStepTargetTypeVariant9(global::Terra.WorkoutStepTargetTypeVariant9? value) => new WorkoutStepTargetType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkoutStepTargetType(global::Terra.WorkoutStepTargetTypeVariant10 value) => new WorkoutStepTargetType((global::Terra.WorkoutStepTargetTypeVariant10?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.WorkoutStepTargetTypeVariant10?(WorkoutStepTargetType @this) => @this.WorkoutStepTargetTypeVariant10;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkoutStepTargetType(global::Terra.WorkoutStepTargetTypeVariant10? value)
         {
@@ -641,22 +641,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkoutStepTargetType FromWorkoutStepTargetTypeVariant10(global::Terra.WorkoutStepTargetTypeVariant10? value) => new WorkoutStepTargetType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkoutStepTargetType(global::Terra.WorkoutStepTargetTypeVariant11 value) => new WorkoutStepTargetType((global::Terra.WorkoutStepTargetTypeVariant11?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.WorkoutStepTargetTypeVariant11?(WorkoutStepTargetType @this) => @this.WorkoutStepTargetTypeVariant11;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkoutStepTargetType(global::Terra.WorkoutStepTargetTypeVariant11? value)
         {
@@ -664,12 +664,12 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkoutStepTargetType FromWorkoutStepTargetTypeVariant11(global::Terra.WorkoutStepTargetTypeVariant11? value) => new WorkoutStepTargetType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkoutStepTargetType(
             global::Terra.WorkoutStepTargetTypeVariant1? workoutStepTargetTypeVariant1,
@@ -699,7 +699,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             WorkoutStepTargetTypeVariant11 as object ??
@@ -712,11 +712,11 @@ namespace Terra
             WorkoutStepTargetTypeVariant4 as object ??
             WorkoutStepTargetTypeVariant3 as object ??
             WorkoutStepTargetTypeVariant2 as object ??
-            WorkoutStepTargetTypeVariant1 as object 
+            WorkoutStepTargetTypeVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             WorkoutStepTargetTypeVariant1?.ToValueString() ??
@@ -729,11 +729,11 @@ namespace Terra
             WorkoutStepTargetTypeVariant8?.ToValueString() ??
             WorkoutStepTargetTypeVariant9?.ToValueString() ??
             WorkoutStepTargetTypeVariant10?.ToValueString() ??
-            WorkoutStepTargetTypeVariant11?.ToValueString() 
+            WorkoutStepTargetTypeVariant11?.ToValueString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -741,7 +741,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Terra.WorkoutStepTargetTypeVariant1?, TResult>? workoutStepTargetTypeVariant1 = null,
@@ -811,7 +811,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Terra.WorkoutStepTargetTypeVariant1?>? workoutStepTargetTypeVariant1 = null,
@@ -889,7 +889,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Terra.WorkoutStepTargetTypeVariant1?>? workoutStepTargetTypeVariant1 = null,
@@ -957,7 +957,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -996,7 +996,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(WorkoutStepTargetType other)
         {
@@ -1011,12 +1011,12 @@ namespace Terra
                 global::System.Collections.Generic.EqualityComparer<global::Terra.WorkoutStepTargetTypeVariant8?>.Default.Equals(WorkoutStepTargetTypeVariant8, other.WorkoutStepTargetTypeVariant8) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.WorkoutStepTargetTypeVariant9?>.Default.Equals(WorkoutStepTargetTypeVariant9, other.WorkoutStepTargetTypeVariant9) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.WorkoutStepTargetTypeVariant10?>.Default.Equals(WorkoutStepTargetTypeVariant10, other.WorkoutStepTargetTypeVariant10) &&
-                global::System.Collections.Generic.EqualityComparer<global::Terra.WorkoutStepTargetTypeVariant11?>.Default.Equals(WorkoutStepTargetTypeVariant11, other.WorkoutStepTargetTypeVariant11) 
+                global::System.Collections.Generic.EqualityComparer<global::Terra.WorkoutStepTargetTypeVariant11?>.Default.Equals(WorkoutStepTargetTypeVariant11, other.WorkoutStepTargetTypeVariant11)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(WorkoutStepTargetType obj1, WorkoutStepTargetType obj2)
         {
@@ -1024,7 +1024,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(WorkoutStepTargetType obj1, WorkoutStepTargetType obj2)
         {
@@ -1032,7 +1032,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

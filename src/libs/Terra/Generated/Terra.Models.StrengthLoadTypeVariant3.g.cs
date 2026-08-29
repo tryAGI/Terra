@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthLoadTypeVariant3
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BodyweightPlus,
     }

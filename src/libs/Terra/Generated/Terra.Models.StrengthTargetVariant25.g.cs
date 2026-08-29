@@ -9,7 +9,7 @@ namespace Terra
     public enum StrengthTargetVariant25
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unknown,
     }

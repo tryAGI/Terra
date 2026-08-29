@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthRangeOfMotionVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FromBlocks,
     }

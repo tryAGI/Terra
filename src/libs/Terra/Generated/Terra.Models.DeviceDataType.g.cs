@@ -9,43 +9,43 @@ namespace Terra
     public enum DeviceDataType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ActiveMinutes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bmr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cadence,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Calories,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Distance,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HeartRate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OxygenSaturation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SleepType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Speed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Steps,
     }

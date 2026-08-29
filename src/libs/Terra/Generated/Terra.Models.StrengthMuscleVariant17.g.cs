@@ -4,14 +4,14 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    /// Serratus anterior. Its own group — not part of the chest.
     /// </summary>
     public enum StrengthMuscleVariant17
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
-        Trapezius,
+        Serratus,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Terra
         {
             return value switch
             {
-                StrengthMuscleVariant17.Trapezius => "trapezius",
+                StrengthMuscleVariant17.Serratus => "serratus",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Terra
         {
             return value switch
             {
-                "trapezius" => StrengthMuscleVariant17.Trapezius,
+                "serratus" => StrengthMuscleVariant17.Serratus,
                 _ => null,
             };
         }

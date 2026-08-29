@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum WorkoutStepIntensityVariant3
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cooldown,
     }

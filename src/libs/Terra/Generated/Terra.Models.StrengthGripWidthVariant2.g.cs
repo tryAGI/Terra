@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthGripWidthVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Wide,
     }

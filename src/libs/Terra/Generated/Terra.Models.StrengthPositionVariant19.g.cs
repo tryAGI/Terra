@@ -9,7 +9,7 @@ namespace Terra
     public enum StrengthPositionVariant19
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unknown,
     }

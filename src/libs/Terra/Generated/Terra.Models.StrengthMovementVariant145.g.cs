@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthMovementVariant145
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StiffLeggedDeadlift,
     }

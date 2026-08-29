@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum WorkoutStepTargetTypeVariant3
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Open,
     }

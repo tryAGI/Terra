@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthMovementVariant103
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PlateFlip,
     }

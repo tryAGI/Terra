@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SwimStrokeTypeVariant6
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mixed,
     }
