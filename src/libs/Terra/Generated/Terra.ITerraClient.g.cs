@@ -40,68 +40,68 @@ namespace Terra
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext { get; set; }
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ActivityClient Activity { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AthleteClient Athlete { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AuthenticationClient Authentication { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public BodyClient Body { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DailyClient Daily { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IntegrationsClient Integrations { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LabReportsClient LabReports { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public MenstruationClient Menstruation { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NutritionClient Nutrition { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SleepClient Sleep { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UserClient User { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkoutsClient Workouts { get; }
 

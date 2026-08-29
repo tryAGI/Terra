@@ -9,14 +9,14 @@ namespace Terra
     public sealed partial class AccessRevokedEvent
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Terra.JsonConverters.AccessRevokedEventTypeJsonConverter))]
         public global::Terra.AccessRevokedEventType Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("user")]
         [global::System.Text.Json.Serialization.JsonRequired]

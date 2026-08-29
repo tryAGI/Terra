@@ -238,12 +238,56 @@ namespace Terra.JsonConverters
             }
             var __score19 = 0;
             {
-                var __ti = typeInfoResolver.GetTypeInfo(typeof(string), options);
+                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthMuscleVariant20), options);
                 if (__ti != null && __ti.Kind == global::System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object)
                 {
                     foreach (var __prop in __ti.Properties)
                     {
                         if (__jsonProps.Contains(__prop.Name)) __score19++;
+                    }
+                }
+            }
+            var __score20 = 0;
+            {
+                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthMuscleVariant21), options);
+                if (__ti != null && __ti.Kind == global::System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object)
+                {
+                    foreach (var __prop in __ti.Properties)
+                    {
+                        if (__jsonProps.Contains(__prop.Name)) __score20++;
+                    }
+                }
+            }
+            var __score21 = 0;
+            {
+                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthMuscleVariant22), options);
+                if (__ti != null && __ti.Kind == global::System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object)
+                {
+                    foreach (var __prop in __ti.Properties)
+                    {
+                        if (__jsonProps.Contains(__prop.Name)) __score21++;
+                    }
+                }
+            }
+            var __score22 = 0;
+            {
+                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthMuscleVariant23), options);
+                if (__ti != null && __ti.Kind == global::System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object)
+                {
+                    foreach (var __prop in __ti.Properties)
+                    {
+                        if (__jsonProps.Contains(__prop.Name)) __score22++;
+                    }
+                }
+            }
+            var __score23 = 0;
+            {
+                var __ti = typeInfoResolver.GetTypeInfo(typeof(string), options);
+                if (__ti != null && __ti.Kind == global::System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object)
+                {
+                    foreach (var __prop in __ti.Properties)
+                    {
+                        if (__jsonProps.Contains(__prop.Name)) __score23++;
                     }
                 }
             }
@@ -269,6 +313,10 @@ namespace Terra.JsonConverters
             if (__score17 > __bestScore) { __bestScore = __score17; __bestIndex = 17; }
             if (__score18 > __bestScore) { __bestScore = __score18; __bestIndex = 18; }
             if (__score19 > __bestScore) { __bestScore = __score19; __bestIndex = 19; }
+            if (__score20 > __bestScore) { __bestScore = __score20; __bestIndex = 20; }
+            if (__score21 > __bestScore) { __bestScore = __score21; __bestIndex = 21; }
+            if (__score22 > __bestScore) { __bestScore = __score22; __bestIndex = 22; }
+            if (__score23 > __bestScore) { __bestScore = __score23; __bestIndex = 23; }
 
             global::Terra.StrengthMuscleVariant1? strengthMuscleVariant1 = default;
             global::Terra.StrengthMuscleVariant2? strengthMuscleVariant2 = default;
@@ -289,7 +337,11 @@ namespace Terra.JsonConverters
             global::Terra.StrengthMuscleVariant17? strengthMuscleVariant17 = default;
             global::Terra.StrengthMuscleVariant18? strengthMuscleVariant18 = default;
             global::Terra.StrengthMuscleVariant19? strengthMuscleVariant19 = default;
-            string? strengthMuscleVariant20 = default;
+            global::Terra.StrengthMuscleVariant20? strengthMuscleVariant20 = default;
+            global::Terra.StrengthMuscleVariant21? strengthMuscleVariant21 = default;
+            global::Terra.StrengthMuscleVariant22? strengthMuscleVariant22 = default;
+            global::Terra.StrengthMuscleVariant23? strengthMuscleVariant23 = default;
+            string? strengthMuscleVariant24 = default;
             if (__bestIndex >= 0)
             {
                 if (__bestIndex == 0)
@@ -620,9 +672,77 @@ namespace Terra.JsonConverters
                     try
                     {
 
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthMuscleVariant20), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthMuscleVariant20> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthMuscleVariant20).Name}");
+                        strengthMuscleVariant20 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+
+                else if (__bestIndex == 20)
+                {
+                    try
+                    {
+
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthMuscleVariant21), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthMuscleVariant21> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthMuscleVariant21).Name}");
+                        strengthMuscleVariant21 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+
+                else if (__bestIndex == 21)
+                {
+                    try
+                    {
+
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthMuscleVariant22), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthMuscleVariant22> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthMuscleVariant22).Name}");
+                        strengthMuscleVariant22 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+
+                else if (__bestIndex == 22)
+                {
+                    try
+                    {
+
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthMuscleVariant23), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthMuscleVariant23> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthMuscleVariant23).Name}");
+                        strengthMuscleVariant23 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+
+                else if (__bestIndex == 23)
+                {
+                    try
+                    {
+
                         var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string> ??
                                        throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
-                        strengthMuscleVariant20 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        strengthMuscleVariant24 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -633,7 +753,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null)
+            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
             {
                 try
                 {
@@ -650,7 +770,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null)
+            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
             {
                 try
                 {
@@ -667,7 +787,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null)
+            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
             {
                 try
                 {
@@ -684,7 +804,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null)
+            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
             {
                 try
                 {
@@ -701,7 +821,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null)
+            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
             {
                 try
                 {
@@ -718,7 +838,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null)
+            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
             {
                 try
                 {
@@ -735,7 +855,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null)
+            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
             {
                 try
                 {
@@ -752,7 +872,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null)
+            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
             {
                 try
                 {
@@ -769,7 +889,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null)
+            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
             {
                 try
                 {
@@ -786,7 +906,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null)
+            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
             {
                 try
                 {
@@ -803,7 +923,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null)
+            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
             {
                 try
                 {
@@ -820,7 +940,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null)
+            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
             {
                 try
                 {
@@ -837,7 +957,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null)
+            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
             {
                 try
                 {
@@ -854,7 +974,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null)
+            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
             {
                 try
                 {
@@ -871,7 +991,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null)
+            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
             {
                 try
                 {
@@ -888,7 +1008,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null)
+            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
             {
                 try
                 {
@@ -905,7 +1025,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null)
+            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
             {
                 try
                 {
@@ -922,7 +1042,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null)
+            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
             {
                 try
                 {
@@ -939,7 +1059,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null)
+            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
             {
                 try
                 {
@@ -956,14 +1076,82 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null)
+            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthMuscleVariant20), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthMuscleVariant20> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthMuscleVariant20).Name}");
+                    strengthMuscleVariant20 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthMuscleVariant21), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthMuscleVariant21> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthMuscleVariant21).Name}");
+                    strengthMuscleVariant21 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthMuscleVariant22), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthMuscleVariant22> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthMuscleVariant22).Name}");
+                    strengthMuscleVariant22 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthMuscleVariant23), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthMuscleVariant23> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthMuscleVariant23).Name}");
+                    strengthMuscleVariant23 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
             {
                 try
                 {
 
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
-                    strengthMuscleVariant20 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    strengthMuscleVariant24 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -1012,7 +1200,15 @@ namespace Terra.JsonConverters
 
                 strengthMuscleVariant19,
 
-                strengthMuscleVariant20
+                strengthMuscleVariant20,
+
+                strengthMuscleVariant21,
+
+                strengthMuscleVariant22,
+
+                strengthMuscleVariant23,
+
+                strengthMuscleVariant24
                 );
 
             return __value;
@@ -1143,9 +1339,33 @@ namespace Terra.JsonConverters
             }
             else if (value.IsStrengthMuscleVariant20)
             {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthMuscleVariant20), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthMuscleVariant20> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthMuscleVariant20).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthMuscleVariant20!.Value, typeInfo);
+            }
+            else if (value.IsStrengthMuscleVariant21)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthMuscleVariant21), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthMuscleVariant21> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthMuscleVariant21).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthMuscleVariant21!.Value, typeInfo);
+            }
+            else if (value.IsStrengthMuscleVariant22)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthMuscleVariant22), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthMuscleVariant22> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthMuscleVariant22).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthMuscleVariant22!.Value, typeInfo);
+            }
+            else if (value.IsStrengthMuscleVariant23)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthMuscleVariant23), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthMuscleVariant23> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthMuscleVariant23).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthMuscleVariant23!.Value, typeInfo);
+            }
+            else if (value.IsStrengthMuscleVariant24)
+            {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthMuscleVariant20!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthMuscleVariant24!, typeInfo);
             }
         }
     }

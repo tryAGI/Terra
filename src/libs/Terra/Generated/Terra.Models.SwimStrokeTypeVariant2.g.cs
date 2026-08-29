@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SwimStrokeTypeVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Breaststroke,
     }

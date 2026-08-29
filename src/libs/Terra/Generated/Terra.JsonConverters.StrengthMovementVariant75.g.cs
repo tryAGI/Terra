@@ -20,7 +20,7 @@ namespace Terra.JsonConverters
                     {
                         return global::Terra.StrengthMovementVariant75Extensions.ToEnum(stringValue) ?? default;
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

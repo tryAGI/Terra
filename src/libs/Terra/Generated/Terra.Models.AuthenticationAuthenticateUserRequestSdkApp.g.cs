@@ -9,11 +9,11 @@ namespace Terra
     public enum AuthenticationAuthenticateUserRequestSdkApp
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Avengers,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Grip,
     }

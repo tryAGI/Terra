@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthImplementVariant4
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Belt,
     }

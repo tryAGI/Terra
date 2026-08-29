@@ -11,7 +11,7 @@ namespace Terra
     public readonly partial struct StrengthGripWidth : global::System.IEquatable<StrengthGripWidth>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthGripWidthVariant1? StrengthGripWidthVariant1 { get; init; }
@@ -20,7 +20,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthGripWidthVariant1))]
@@ -28,7 +28,7 @@ namespace Terra
         public bool IsStrengthGripWidthVariant1 => StrengthGripWidthVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthGripWidthVariant1(
 #if NET6_0_OR_GREATER
@@ -41,14 +41,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthGripWidthVariant1 PickStrengthGripWidthVariant1() => IsStrengthGripWidthVariant1
             ? StrengthGripWidthVariant1!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthGripWidthVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthGripWidthVariant2? StrengthGripWidthVariant2 { get; init; }
@@ -57,7 +57,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthGripWidthVariant2))]
@@ -65,7 +65,7 @@ namespace Terra
         public bool IsStrengthGripWidthVariant2 => StrengthGripWidthVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthGripWidthVariant2(
 #if NET6_0_OR_GREATER
@@ -78,7 +78,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthGripWidthVariant2 PickStrengthGripWidthVariant2() => IsStrengthGripWidthVariant2
             ? StrengthGripWidthVariant2!.Value
@@ -94,7 +94,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthGripWidthVariant3))]
@@ -102,7 +102,7 @@ namespace Terra
         public bool IsStrengthGripWidthVariant3 => StrengthGripWidthVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthGripWidthVariant3(
 #if NET6_0_OR_GREATER
@@ -115,7 +115,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthGripWidthVariant3 PickStrengthGripWidthVariant3() => IsStrengthGripWidthVariant3
             ? StrengthGripWidthVariant3!.Value
@@ -131,7 +131,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthGripWidthVariant4))]
@@ -139,7 +139,7 @@ namespace Terra
         public bool IsStrengthGripWidthVariant4 => StrengthGripWidthVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthGripWidthVariant4(
 #if NET6_0_OR_GREATER
@@ -152,23 +152,23 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickStrengthGripWidthVariant4() => IsStrengthGripWidthVariant4
             ? StrengthGripWidthVariant4!
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthGripWidthVariant4' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthGripWidth(global::Terra.StrengthGripWidthVariant1 value) => new StrengthGripWidth((global::Terra.StrengthGripWidthVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthGripWidthVariant1?(StrengthGripWidth @this) => @this.StrengthGripWidthVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthGripWidth(global::Terra.StrengthGripWidthVariant1? value)
         {
@@ -176,22 +176,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthGripWidth FromStrengthGripWidthVariant1(global::Terra.StrengthGripWidthVariant1? value) => new StrengthGripWidth(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthGripWidth(global::Terra.StrengthGripWidthVariant2 value) => new StrengthGripWidth((global::Terra.StrengthGripWidthVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthGripWidthVariant2?(StrengthGripWidth @this) => @this.StrengthGripWidthVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthGripWidth(global::Terra.StrengthGripWidthVariant2? value)
         {
@@ -199,22 +199,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthGripWidth FromStrengthGripWidthVariant2(global::Terra.StrengthGripWidthVariant2? value) => new StrengthGripWidth(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthGripWidth(global::Terra.StrengthGripWidthVariant3 value) => new StrengthGripWidth((global::Terra.StrengthGripWidthVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthGripWidthVariant3?(StrengthGripWidth @this) => @this.StrengthGripWidthVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthGripWidth(global::Terra.StrengthGripWidthVariant3? value)
         {
@@ -222,22 +222,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthGripWidth FromStrengthGripWidthVariant3(global::Terra.StrengthGripWidthVariant3? value) => new StrengthGripWidth(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthGripWidth(string value) => new StrengthGripWidth((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(StrengthGripWidth @this) => @this.StrengthGripWidthVariant4;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthGripWidth(string? value)
         {
@@ -245,12 +245,12 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthGripWidth FromStrengthGripWidthVariant4(string? value) => new StrengthGripWidth(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthGripWidth(
             global::Terra.StrengthGripWidthVariant1? strengthGripWidthVariant1,
@@ -266,27 +266,27 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             StrengthGripWidthVariant4 as object ??
             StrengthGripWidthVariant3 as object ??
             StrengthGripWidthVariant2 as object ??
-            StrengthGripWidthVariant1 as object 
+            StrengthGripWidthVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             StrengthGripWidthVariant1?.ToValueString() ??
             StrengthGripWidthVariant2?.ToValueString() ??
             StrengthGripWidthVariant3?.ToValueString() ??
-            StrengthGripWidthVariant4?.ToString() 
+            StrengthGripWidthVariant4?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -294,7 +294,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Terra.StrengthGripWidthVariant1?, TResult>? strengthGripWidthVariant1 = null,
@@ -329,7 +329,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Terra.StrengthGripWidthVariant1?>? strengthGripWidthVariant1 = null,
@@ -365,7 +365,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Terra.StrengthGripWidthVariant1?>? strengthGripWidthVariant1 = null,
@@ -398,7 +398,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -423,7 +423,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(StrengthGripWidth other)
         {
@@ -431,12 +431,12 @@ namespace Terra
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthGripWidthVariant1?>.Default.Equals(StrengthGripWidthVariant1, other.StrengthGripWidthVariant1) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthGripWidthVariant2?>.Default.Equals(StrengthGripWidthVariant2, other.StrengthGripWidthVariant2) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthGripWidthVariant3?>.Default.Equals(StrengthGripWidthVariant3, other.StrengthGripWidthVariant3) &&
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(StrengthGripWidthVariant4, other.StrengthGripWidthVariant4) 
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(StrengthGripWidthVariant4, other.StrengthGripWidthVariant4)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(StrengthGripWidth obj1, StrengthGripWidth obj2)
         {
@@ -444,7 +444,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(StrengthGripWidth obj1, StrengthGripWidth obj2)
         {
@@ -452,7 +452,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

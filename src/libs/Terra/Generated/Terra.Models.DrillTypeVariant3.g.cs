@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum DrillTypeVariant3
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Drill,
     }

@@ -11,7 +11,7 @@ namespace Terra
     public readonly partial struct StrengthLoadType : global::System.IEquatable<StrengthLoadType>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthLoadTypeVariant1? StrengthLoadTypeVariant1 { get; init; }
@@ -20,7 +20,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthLoadTypeVariant1))]
@@ -28,7 +28,7 @@ namespace Terra
         public bool IsStrengthLoadTypeVariant1 => StrengthLoadTypeVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthLoadTypeVariant1(
 #if NET6_0_OR_GREATER
@@ -41,14 +41,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthLoadTypeVariant1 PickStrengthLoadTypeVariant1() => IsStrengthLoadTypeVariant1
             ? StrengthLoadTypeVariant1!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthLoadTypeVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthLoadTypeVariant2? StrengthLoadTypeVariant2 { get; init; }
@@ -57,7 +57,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthLoadTypeVariant2))]
@@ -65,7 +65,7 @@ namespace Terra
         public bool IsStrengthLoadTypeVariant2 => StrengthLoadTypeVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthLoadTypeVariant2(
 #if NET6_0_OR_GREATER
@@ -78,14 +78,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthLoadTypeVariant2 PickStrengthLoadTypeVariant2() => IsStrengthLoadTypeVariant2
             ? StrengthLoadTypeVariant2!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthLoadTypeVariant2' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthLoadTypeVariant3? StrengthLoadTypeVariant3 { get; init; }
@@ -94,7 +94,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthLoadTypeVariant3))]
@@ -102,7 +102,7 @@ namespace Terra
         public bool IsStrengthLoadTypeVariant3 => StrengthLoadTypeVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthLoadTypeVariant3(
 #if NET6_0_OR_GREATER
@@ -115,14 +115,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthLoadTypeVariant3 PickStrengthLoadTypeVariant3() => IsStrengthLoadTypeVariant3
             ? StrengthLoadTypeVariant3!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthLoadTypeVariant3' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthLoadTypeVariant4? StrengthLoadTypeVariant4 { get; init; }
@@ -131,7 +131,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthLoadTypeVariant4))]
@@ -139,7 +139,7 @@ namespace Terra
         public bool IsStrengthLoadTypeVariant4 => StrengthLoadTypeVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthLoadTypeVariant4(
 #if NET6_0_OR_GREATER
@@ -152,14 +152,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthLoadTypeVariant4 PickStrengthLoadTypeVariant4() => IsStrengthLoadTypeVariant4
             ? StrengthLoadTypeVariant4!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthLoadTypeVariant4' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthLoadTypeVariant5? StrengthLoadTypeVariant5 { get; init; }
@@ -168,7 +168,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthLoadTypeVariant5))]
@@ -176,7 +176,7 @@ namespace Terra
         public bool IsStrengthLoadTypeVariant5 => StrengthLoadTypeVariant5 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthLoadTypeVariant5(
 #if NET6_0_OR_GREATER
@@ -189,7 +189,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthLoadTypeVariant5 PickStrengthLoadTypeVariant5() => IsStrengthLoadTypeVariant5
             ? StrengthLoadTypeVariant5!.Value
@@ -205,7 +205,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthLoadTypeVariant6))]
@@ -213,7 +213,7 @@ namespace Terra
         public bool IsStrengthLoadTypeVariant6 => StrengthLoadTypeVariant6 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthLoadTypeVariant6(
 #if NET6_0_OR_GREATER
@@ -226,23 +226,23 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickStrengthLoadTypeVariant6() => IsStrengthLoadTypeVariant6
             ? StrengthLoadTypeVariant6!
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthLoadTypeVariant6' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthLoadType(global::Terra.StrengthLoadTypeVariant1 value) => new StrengthLoadType((global::Terra.StrengthLoadTypeVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthLoadTypeVariant1?(StrengthLoadType @this) => @this.StrengthLoadTypeVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthLoadType(global::Terra.StrengthLoadTypeVariant1? value)
         {
@@ -250,22 +250,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthLoadType FromStrengthLoadTypeVariant1(global::Terra.StrengthLoadTypeVariant1? value) => new StrengthLoadType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthLoadType(global::Terra.StrengthLoadTypeVariant2 value) => new StrengthLoadType((global::Terra.StrengthLoadTypeVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthLoadTypeVariant2?(StrengthLoadType @this) => @this.StrengthLoadTypeVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthLoadType(global::Terra.StrengthLoadTypeVariant2? value)
         {
@@ -273,22 +273,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthLoadType FromStrengthLoadTypeVariant2(global::Terra.StrengthLoadTypeVariant2? value) => new StrengthLoadType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthLoadType(global::Terra.StrengthLoadTypeVariant3 value) => new StrengthLoadType((global::Terra.StrengthLoadTypeVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthLoadTypeVariant3?(StrengthLoadType @this) => @this.StrengthLoadTypeVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthLoadType(global::Terra.StrengthLoadTypeVariant3? value)
         {
@@ -296,22 +296,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthLoadType FromStrengthLoadTypeVariant3(global::Terra.StrengthLoadTypeVariant3? value) => new StrengthLoadType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthLoadType(global::Terra.StrengthLoadTypeVariant4 value) => new StrengthLoadType((global::Terra.StrengthLoadTypeVariant4?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthLoadTypeVariant4?(StrengthLoadType @this) => @this.StrengthLoadTypeVariant4;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthLoadType(global::Terra.StrengthLoadTypeVariant4? value)
         {
@@ -319,22 +319,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthLoadType FromStrengthLoadTypeVariant4(global::Terra.StrengthLoadTypeVariant4? value) => new StrengthLoadType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthLoadType(global::Terra.StrengthLoadTypeVariant5 value) => new StrengthLoadType((global::Terra.StrengthLoadTypeVariant5?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthLoadTypeVariant5?(StrengthLoadType @this) => @this.StrengthLoadTypeVariant5;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthLoadType(global::Terra.StrengthLoadTypeVariant5? value)
         {
@@ -342,22 +342,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthLoadType FromStrengthLoadTypeVariant5(global::Terra.StrengthLoadTypeVariant5? value) => new StrengthLoadType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthLoadType(string value) => new StrengthLoadType((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(StrengthLoadType @this) => @this.StrengthLoadTypeVariant6;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthLoadType(string? value)
         {
@@ -365,12 +365,12 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthLoadType FromStrengthLoadTypeVariant6(string? value) => new StrengthLoadType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthLoadType(
             global::Terra.StrengthLoadTypeVariant1? strengthLoadTypeVariant1,
@@ -390,7 +390,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             StrengthLoadTypeVariant6 as object ??
@@ -398,11 +398,11 @@ namespace Terra
             StrengthLoadTypeVariant4 as object ??
             StrengthLoadTypeVariant3 as object ??
             StrengthLoadTypeVariant2 as object ??
-            StrengthLoadTypeVariant1 as object 
+            StrengthLoadTypeVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             StrengthLoadTypeVariant1?.ToValueString() ??
@@ -410,11 +410,11 @@ namespace Terra
             StrengthLoadTypeVariant3?.ToValueString() ??
             StrengthLoadTypeVariant4?.ToValueString() ??
             StrengthLoadTypeVariant5?.ToValueString() ??
-            StrengthLoadTypeVariant6?.ToString() 
+            StrengthLoadTypeVariant6?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -422,7 +422,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Terra.StrengthLoadTypeVariant1?, TResult>? strengthLoadTypeVariant1 = null,
@@ -467,7 +467,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Terra.StrengthLoadTypeVariant1?>? strengthLoadTypeVariant1 = null,
@@ -515,7 +515,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Terra.StrengthLoadTypeVariant1?>? strengthLoadTypeVariant1 = null,
@@ -558,7 +558,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -587,7 +587,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(StrengthLoadType other)
         {
@@ -597,12 +597,12 @@ namespace Terra
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthLoadTypeVariant3?>.Default.Equals(StrengthLoadTypeVariant3, other.StrengthLoadTypeVariant3) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthLoadTypeVariant4?>.Default.Equals(StrengthLoadTypeVariant4, other.StrengthLoadTypeVariant4) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthLoadTypeVariant5?>.Default.Equals(StrengthLoadTypeVariant5, other.StrengthLoadTypeVariant5) &&
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(StrengthLoadTypeVariant6, other.StrengthLoadTypeVariant6) 
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(StrengthLoadTypeVariant6, other.StrengthLoadTypeVariant6)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(StrengthLoadType obj1, StrengthLoadType obj2)
         {
@@ -610,7 +610,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(StrengthLoadType obj1, StrengthLoadType obj2)
         {
@@ -618,7 +618,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

@@ -17,7 +17,7 @@ namespace Terra
         public required string SessionId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("upload_id")]
         public string? UploadId { get; set; }
@@ -47,13 +47,13 @@ namespace Terra
         public required string CurrentStatus { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("uploaded_at")]
         public global::System.DateTime? UploadedAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("updated_at")]
         public global::System.DateTime? UpdatedAt { get; set; }
@@ -90,7 +90,7 @@ namespace Terra
         public string? ReportLocale { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("lab_name")]
         public string? LabName { get; set; }
@@ -110,31 +110,31 @@ namespace Terra
         public string? PatientSex { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("input_bytes")]
         public long? InputBytes { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("results_count")]
         public int? ResultsCount { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("output_bytes")]
         public long? OutputBytes { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("file_count")]
         public int? FileCount { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status_history")]
         public global::System.Collections.Generic.IList<global::Terra.LabReportStatusEntry>? StatusHistory { get; set; }
@@ -152,7 +152,7 @@ namespace Terra
         public global::System.Collections.Generic.IList<global::Terra.LabReportPanel>? Panels { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("report_notes")]
         public string? ReportNotes { get; set; }

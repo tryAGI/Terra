@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthStanceVariant3
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Split,
     }

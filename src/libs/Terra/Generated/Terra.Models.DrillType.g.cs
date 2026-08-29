@@ -10,7 +10,7 @@ namespace Terra
     public readonly partial struct DrillType : global::System.IEquatable<DrillType>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.DrillTypeVariant1? DrillTypeVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(DrillTypeVariant1))]
@@ -27,7 +27,7 @@ namespace Terra
         public bool IsDrillTypeVariant1 => DrillTypeVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickDrillTypeVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.DrillTypeVariant1 PickDrillTypeVariant1() => IsDrillTypeVariant1
             ? DrillTypeVariant1!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'DrillTypeVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.DrillTypeVariant2? DrillTypeVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(DrillTypeVariant2))]
@@ -64,7 +64,7 @@ namespace Terra
         public bool IsDrillTypeVariant2 => DrillTypeVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickDrillTypeVariant2(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.DrillTypeVariant2 PickDrillTypeVariant2() => IsDrillTypeVariant2
             ? DrillTypeVariant2!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'DrillTypeVariant2' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.DrillTypeVariant3? DrillTypeVariant3 { get; init; }
@@ -93,7 +93,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(DrillTypeVariant3))]
@@ -101,7 +101,7 @@ namespace Terra
         public bool IsDrillTypeVariant3 => DrillTypeVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickDrillTypeVariant3(
 #if NET6_0_OR_GREATER
@@ -114,23 +114,23 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.DrillTypeVariant3 PickDrillTypeVariant3() => IsDrillTypeVariant3
             ? DrillTypeVariant3!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'DrillTypeVariant3' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator DrillType(global::Terra.DrillTypeVariant1 value) => new DrillType((global::Terra.DrillTypeVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.DrillTypeVariant1?(DrillType @this) => @this.DrillTypeVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DrillType(global::Terra.DrillTypeVariant1? value)
         {
@@ -138,22 +138,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static DrillType FromDrillTypeVariant1(global::Terra.DrillTypeVariant1? value) => new DrillType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator DrillType(global::Terra.DrillTypeVariant2 value) => new DrillType((global::Terra.DrillTypeVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.DrillTypeVariant2?(DrillType @this) => @this.DrillTypeVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DrillType(global::Terra.DrillTypeVariant2? value)
         {
@@ -161,22 +161,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static DrillType FromDrillTypeVariant2(global::Terra.DrillTypeVariant2? value) => new DrillType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator DrillType(global::Terra.DrillTypeVariant3 value) => new DrillType((global::Terra.DrillTypeVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.DrillTypeVariant3?(DrillType @this) => @this.DrillTypeVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DrillType(global::Terra.DrillTypeVariant3? value)
         {
@@ -184,12 +184,12 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static DrillType FromDrillTypeVariant3(global::Terra.DrillTypeVariant3? value) => new DrillType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DrillType(
             global::Terra.DrillTypeVariant1? drillTypeVariant1,
@@ -203,25 +203,25 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             DrillTypeVariant3 as object ??
             DrillTypeVariant2 as object ??
-            DrillTypeVariant1 as object 
+            DrillTypeVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             DrillTypeVariant1?.ToValueString() ??
             DrillTypeVariant2?.ToValueString() ??
-            DrillTypeVariant3?.ToValueString() 
+            DrillTypeVariant3?.ToValueString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -229,7 +229,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Terra.DrillTypeVariant1?, TResult>? drillTypeVariant1 = null,
@@ -259,7 +259,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Terra.DrillTypeVariant1?>? drillTypeVariant1 = null,
@@ -289,7 +289,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Terra.DrillTypeVariant1?>? drillTypeVariant1 = null,
@@ -317,7 +317,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -340,19 +340,19 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(DrillType other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Terra.DrillTypeVariant1?>.Default.Equals(DrillTypeVariant1, other.DrillTypeVariant1) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.DrillTypeVariant2?>.Default.Equals(DrillTypeVariant2, other.DrillTypeVariant2) &&
-                global::System.Collections.Generic.EqualityComparer<global::Terra.DrillTypeVariant3?>.Default.Equals(DrillTypeVariant3, other.DrillTypeVariant3) 
+                global::System.Collections.Generic.EqualityComparer<global::Terra.DrillTypeVariant3?>.Default.Equals(DrillTypeVariant3, other.DrillTypeVariant3)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(DrillType obj1, DrillType obj2)
         {
@@ -360,7 +360,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(DrillType obj1, DrillType obj2)
         {
@@ -368,7 +368,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

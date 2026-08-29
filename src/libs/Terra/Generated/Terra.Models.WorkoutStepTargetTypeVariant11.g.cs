@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum WorkoutStepTargetTypeVariant11
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HeartRateMaxPercentage,
     }

@@ -63,43 +63,43 @@ namespace Terra
         public double? EstimatedIf { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("estimated_duration_seconds")]
         public double? EstimatedDurationSeconds { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("estimated_distance_meters")]
         public double? EstimatedDistanceMeters { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("estimated_calories")]
         public double? EstimatedCalories { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("estimated_elevation_gain_meters")]
         public double? EstimatedElevationGainMeters { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("estimated_energy_kj")]
         public double? EstimatedEnergyKj { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("estimated_speed_meters_per_second")]
         public double? EstimatedSpeedMetersPerSecond { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pool_length_meters")]
         public double? PoolLengthMeters { get; set; }

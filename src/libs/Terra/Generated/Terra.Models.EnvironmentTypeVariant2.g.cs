@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum EnvironmentTypeVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Outdoor,
     }

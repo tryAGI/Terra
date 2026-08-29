@@ -11,7 +11,7 @@ namespace Terra
     public readonly partial struct StrengthProgramme : global::System.IEquatable<StrengthProgramme>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthProgrammeVariant1? StrengthProgrammeVariant1 { get; init; }
@@ -20,7 +20,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthProgrammeVariant1))]
@@ -28,7 +28,7 @@ namespace Terra
         public bool IsStrengthProgrammeVariant1 => StrengthProgrammeVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthProgrammeVariant1(
 #if NET6_0_OR_GREATER
@@ -41,7 +41,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthProgrammeVariant1 PickStrengthProgrammeVariant1() => IsStrengthProgrammeVariant1
             ? StrengthProgrammeVariant1!.Value
@@ -57,7 +57,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthProgrammeVariant2))]
@@ -65,7 +65,7 @@ namespace Terra
         public bool IsStrengthProgrammeVariant2 => StrengthProgrammeVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthProgrammeVariant2(
 #if NET6_0_OR_GREATER
@@ -78,7 +78,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthProgrammeVariant2 PickStrengthProgrammeVariant2() => IsStrengthProgrammeVariant2
             ? StrengthProgrammeVariant2!.Value
@@ -94,7 +94,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthProgrammeVariant3))]
@@ -102,7 +102,7 @@ namespace Terra
         public bool IsStrengthProgrammeVariant3 => StrengthProgrammeVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthProgrammeVariant3(
 #if NET6_0_OR_GREATER
@@ -115,23 +115,23 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickStrengthProgrammeVariant3() => IsStrengthProgrammeVariant3
             ? StrengthProgrammeVariant3!
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthProgrammeVariant3' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthProgramme(global::Terra.StrengthProgrammeVariant1 value) => new StrengthProgramme((global::Terra.StrengthProgrammeVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthProgrammeVariant1?(StrengthProgramme @this) => @this.StrengthProgrammeVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthProgramme(global::Terra.StrengthProgrammeVariant1? value)
         {
@@ -139,22 +139,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthProgramme FromStrengthProgrammeVariant1(global::Terra.StrengthProgrammeVariant1? value) => new StrengthProgramme(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthProgramme(global::Terra.StrengthProgrammeVariant2 value) => new StrengthProgramme((global::Terra.StrengthProgrammeVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthProgrammeVariant2?(StrengthProgramme @this) => @this.StrengthProgrammeVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthProgramme(global::Terra.StrengthProgrammeVariant2? value)
         {
@@ -162,22 +162,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthProgramme FromStrengthProgrammeVariant2(global::Terra.StrengthProgrammeVariant2? value) => new StrengthProgramme(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthProgramme(string value) => new StrengthProgramme((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(StrengthProgramme @this) => @this.StrengthProgrammeVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthProgramme(string? value)
         {
@@ -185,12 +185,12 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthProgramme FromStrengthProgrammeVariant3(string? value) => new StrengthProgramme(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthProgramme(
             global::Terra.StrengthProgrammeVariant1? strengthProgrammeVariant1,
@@ -204,25 +204,25 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             StrengthProgrammeVariant3 as object ??
             StrengthProgrammeVariant2 as object ??
-            StrengthProgrammeVariant1 as object 
+            StrengthProgrammeVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             StrengthProgrammeVariant1?.ToValueString() ??
             StrengthProgrammeVariant2?.ToValueString() ??
-            StrengthProgrammeVariant3?.ToString() 
+            StrengthProgrammeVariant3?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -230,7 +230,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Terra.StrengthProgrammeVariant1?, TResult>? strengthProgrammeVariant1 = null,
@@ -260,7 +260,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Terra.StrengthProgrammeVariant1?>? strengthProgrammeVariant1 = null,
@@ -290,7 +290,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Terra.StrengthProgrammeVariant1?>? strengthProgrammeVariant1 = null,
@@ -318,7 +318,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -341,19 +341,19 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(StrengthProgramme other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthProgrammeVariant1?>.Default.Equals(StrengthProgrammeVariant1, other.StrengthProgrammeVariant1) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthProgrammeVariant2?>.Default.Equals(StrengthProgrammeVariant2, other.StrengthProgrammeVariant2) &&
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(StrengthProgrammeVariant3, other.StrengthProgrammeVariant3) 
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(StrengthProgrammeVariant3, other.StrengthProgrammeVariant3)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(StrengthProgramme obj1, StrengthProgramme obj2)
         {
@@ -361,7 +361,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(StrengthProgramme obj1, StrengthProgramme obj2)
         {
@@ -369,7 +369,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

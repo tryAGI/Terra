@@ -13,7 +13,7 @@ namespace Terra
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Terra.WorkoutsDeleteWorkoutResponse> WorkoutsDeleteWorkoutAsync(
-            string workoutId,
+            long workoutId,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -25,7 +25,7 @@ namespace Terra
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse<global::Terra.WorkoutsDeleteWorkoutResponse>> WorkoutsDeleteWorkoutAsResponseAsync(
-            string workoutId,
+            long workoutId,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum WeightUnitVariant1
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Kg,
     }

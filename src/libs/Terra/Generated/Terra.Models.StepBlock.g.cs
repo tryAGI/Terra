@@ -16,7 +16,7 @@ namespace Terra
         public required global::Terra.CompletionCondition CompletionCondition { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("steps")]
         [global::System.Text.Json.Serialization.JsonRequired]

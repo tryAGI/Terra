@@ -10,7 +10,7 @@ namespace Terra
     public readonly partial struct WeightUnit : global::System.IEquatable<WeightUnit>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.WeightUnitVariant1? WeightUnitVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WeightUnitVariant1))]
@@ -27,7 +27,7 @@ namespace Terra
         public bool IsWeightUnitVariant1 => WeightUnitVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWeightUnitVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.WeightUnitVariant1 PickWeightUnitVariant1() => IsWeightUnitVariant1
             ? WeightUnitVariant1!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WeightUnitVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.WeightUnitVariant2? WeightUnitVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WeightUnitVariant2))]
@@ -64,7 +64,7 @@ namespace Terra
         public bool IsWeightUnitVariant2 => WeightUnitVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWeightUnitVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.WeightUnitVariant2 PickWeightUnitVariant2() => IsWeightUnitVariant2
             ? WeightUnitVariant2!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WeightUnitVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WeightUnit(global::Terra.WeightUnitVariant1 value) => new WeightUnit((global::Terra.WeightUnitVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.WeightUnitVariant1?(WeightUnit @this) => @this.WeightUnitVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WeightUnit(global::Terra.WeightUnitVariant1? value)
         {
@@ -101,22 +101,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WeightUnit FromWeightUnitVariant1(global::Terra.WeightUnitVariant1? value) => new WeightUnit(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WeightUnit(global::Terra.WeightUnitVariant2 value) => new WeightUnit((global::Terra.WeightUnitVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.WeightUnitVariant2?(WeightUnit @this) => @this.WeightUnitVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WeightUnit(global::Terra.WeightUnitVariant2? value)
         {
@@ -124,12 +124,12 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WeightUnit FromWeightUnitVariant2(global::Terra.WeightUnitVariant2? value) => new WeightUnit(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WeightUnit(
             global::Terra.WeightUnitVariant1? weightUnitVariant1,
@@ -141,23 +141,23 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             WeightUnitVariant2 as object ??
-            WeightUnitVariant1 as object 
+            WeightUnitVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             WeightUnitVariant1?.ToValueString() ??
-            WeightUnitVariant2?.ToValueString() 
+            WeightUnitVariant2?.ToValueString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Terra.WeightUnitVariant1?, TResult>? weightUnitVariant1 = null,
@@ -190,7 +190,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Terra.WeightUnitVariant1?>? weightUnitVariant1 = null,
@@ -214,7 +214,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Terra.WeightUnitVariant1?>? weightUnitVariant1 = null,
@@ -237,7 +237,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(WeightUnit other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Terra.WeightUnitVariant1?>.Default.Equals(WeightUnitVariant1, other.WeightUnitVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::Terra.WeightUnitVariant2?>.Default.Equals(WeightUnitVariant2, other.WeightUnitVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::Terra.WeightUnitVariant2?>.Default.Equals(WeightUnitVariant2, other.WeightUnitVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(WeightUnit obj1, WeightUnit obj2)
         {
@@ -277,7 +277,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(WeightUnit obj1, WeightUnit obj2)
         {
@@ -285,7 +285,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

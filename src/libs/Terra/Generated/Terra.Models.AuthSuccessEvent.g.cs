@@ -9,7 +9,7 @@ namespace Terra
     public sealed partial class AuthSuccessEvent
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Terra.JsonConverters.AuthSuccessEventTypeJsonConverter))]
@@ -23,7 +23,7 @@ namespace Terra
         public global::Terra.AuthSuccessEventStatus Status { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("user")]
         [global::System.Text.Json.Serialization.JsonRequired]

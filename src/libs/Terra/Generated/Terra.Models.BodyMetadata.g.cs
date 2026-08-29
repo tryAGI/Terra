@@ -4,7 +4,7 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BodyMetadata
     {
@@ -27,7 +27,7 @@ namespace Terra
         public required string StartTime { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("timestamp_localization")]
         public double? TimestampLocalization { get; set; }

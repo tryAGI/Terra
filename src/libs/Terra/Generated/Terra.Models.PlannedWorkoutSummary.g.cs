@@ -16,7 +16,7 @@ namespace Terra
         public string? PlannedWorkoutId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("planned_date")]
         public global::System.DateTime? PlannedDate { get; set; }

@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthMovementVariant137
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SnatchBalance,
     }

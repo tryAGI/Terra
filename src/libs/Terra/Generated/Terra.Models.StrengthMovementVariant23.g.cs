@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthMovementVariant23
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ChestPress,
     }

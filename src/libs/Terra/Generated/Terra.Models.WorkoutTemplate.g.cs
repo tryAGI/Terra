@@ -30,7 +30,7 @@ namespace Terra
         public required global::Terra.WorkoutSport Sport { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("environment")]
         public global::Terra.EnvironmentType? Environment { get; set; }
@@ -42,7 +42,7 @@ namespace Terra
         public double? PoolLengthMeters { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("step_blocks")]
         [global::System.Text.Json.Serialization.JsonRequired]

@@ -4,7 +4,7 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class Body
     {
@@ -45,7 +45,7 @@ namespace Terra
         public global::Terra.MeasurementsData? MeasurementsData { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
         [global::System.Text.Json.Serialization.JsonRequired]

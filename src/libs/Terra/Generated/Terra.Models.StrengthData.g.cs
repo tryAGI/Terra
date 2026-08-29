@@ -21,7 +21,7 @@ namespace Terra
         public double? Weight { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("weight_display_unit")]
         public global::Terra.WeightUnit? WeightDisplayUnit { get; set; }

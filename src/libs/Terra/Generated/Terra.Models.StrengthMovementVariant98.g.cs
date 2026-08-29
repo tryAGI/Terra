@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthMovementVariant98
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ObliqueCrunch,
     }

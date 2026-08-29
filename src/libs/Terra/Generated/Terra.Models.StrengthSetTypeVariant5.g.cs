@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthSetTypeVariant5
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Normal,
     }

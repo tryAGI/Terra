@@ -9,14 +9,14 @@ namespace Terra
     public sealed partial class UserReauthEvent
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Terra.JsonConverters.UserReauthEventTypeJsonConverter))]
         public global::Terra.UserReauthEventType Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("new_user")]
         [global::System.Text.Json.Serialization.JsonRequired]

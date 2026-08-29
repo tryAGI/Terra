@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthMovementVariant122
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ScapularPushUp,
     }

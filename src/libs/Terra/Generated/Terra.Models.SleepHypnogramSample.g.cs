@@ -4,7 +4,7 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class SleepHypnogramSample
     {
@@ -17,7 +17,7 @@ namespace Terra
         public string? Timestamp { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("level")]
         public double? Level { get; set; }

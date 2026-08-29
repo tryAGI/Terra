@@ -42,13 +42,13 @@ namespace Terra
         public global::System.Collections.Generic.IList<global::Terra.StepControl>? Controls { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("strength")]
         public global::Terra.StrengthData? Strength { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("swimming")]
         public global::Terra.SwimStepData? Swimming { get; set; }

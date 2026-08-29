@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthMovementVariant17
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ButtKick,
     }

@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthSetTypeVariant1
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Amrap,
     }

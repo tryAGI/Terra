@@ -2,7 +2,7 @@ openapi: 3.0.3
 info:
   description: The Terra API (v2 surface, served at access.tryterra.co/api/v2).
   title: TerraAPI
-  version: 2026.08.07
+  version: 2026.08.28
   license:
     name: Apache-2.0
     url: https://github.com/tryterra/openapi/blob/master/LICENSE
@@ -152,13 +152,22 @@ paths:
                     type: string
         '404':
           $ref: '#/components/responses/NotFound'
-  /auth/generateAuthToken:
+  /auth/tokens:
     post:
       tags:
       - Authentication
       summary: Generate a mobile SDK auth token
       description: Creates a token to be used with initConnection() functions in the Terra mobile SDKs in order to create a user record for Apple Health or Samsung Health (or equivalent)
-      operationId: Authentication_GenerateAuthToken
+      operationId: Authentication_CreateAuthToken
+      parameters:
+      - name: reference_id
+        in: query
+        description: Your identifier for the end user this token is being issued for. When supplied, the token is bound to it and redemption ignores the reference_id the SDK sends, so a token cannot be
+          used to attach a device to a different user. Omit to keep the SDK-supplied value.
+        required: false
+        schema:
+          type: string
+        example: user-42
       responses:
         '200':
           description: '200'
@@ -185,7 +194,49 @@ paths:
                     default: 0
         '404':
           $ref: '#/components/responses/NotFound'
-      deprecated: false
+  /auth/generateAuthToken:
+    post:
+      tags:
+      - Authentication
+      summary: Generate a mobile SDK auth token (deprecated)
+      description: Deprecated spelling of POST /auth/tokens, which it is identical to. Kept indefinitely because shipped mobile SDK versions call this path; new integrations should use POST /auth/tokens.
+      operationId: Authentication_GenerateAuthToken
+      parameters:
+      - name: reference_id
+        in: query
+        description: Your identifier for the end user this token is being issued for. When supplied, the token is bound to it and redemption ignores the reference_id the SDK sends, so a token cannot be
+          used to attach a device to a different user. Omit to keep the SDK-supplied value.
+        required: false
+        schema:
+          type: string
+        example: user-42
+      responses:
+        '200':
+          description: '200'
+          content:
+            application/json:
+              examples:
+                Result:
+                  value:
+                    status: success
+                    token: 250c68b9c21b78e40e7a3285a2d538d3bc24aabd3b4c76a782fb0a571ca4501d
+                    expires_in: 180
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: success
+                  token:
+                    type: string
+                    example: 250c68b9c21b78e40e7a3285a2d538d3bc24aabd3b4c76a782fb0a571ca4501d
+                  expires_in:
+                    type: integer
+                    example: 180
+                    default: 0
+        '404':
+          $ref: '#/components/responses/NotFound'
+      deprecated: true
   /activity:
     get:
       summary: Retrieve activity data
@@ -714,18 +765,18 @@ paths:
         '401':
           $ref: '#/components/responses/Unauthorized'
   /workouts/{workout_id}:
-    parameters:
-    - name: workout_id
-      in: path
-      required: true
-      schema:
-        type: integer
-        format: int64
     get:
       tags:
       - Workouts
       summary: Get a workout template
       operationId: Workouts_GetWorkout
+      parameters:
+      - name: workout_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int64
       responses:
         '200':
           description: The stored template
@@ -745,6 +796,13 @@ paths:
 
         '
       operationId: Workouts_DeleteWorkout
+      parameters:
+      - name: workout_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int64
       responses:
         '204':
           description: Template and all planned instances deleted
@@ -909,18 +967,6 @@ paths:
         '404':
           $ref: '#/components/responses/NotFound'
   /plannedWorkouts/{planned_workout_id}:
-    parameters:
-    - name: planned_workout_id
-      in: path
-      required: true
-      schema:
-        type: integer
-        format: int64
-    - name: user_id
-      in: query
-      required: true
-      schema:
-        type: string
     get:
       tags:
       - Workouts
@@ -929,6 +975,18 @@ paths:
 
         '
       operationId: Workouts_GetPlannedWorkout
+      parameters:
+      - name: planned_workout_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int64
+      - name: user_id
+        in: query
+        required: true
+        schema:
+          type: string
       responses:
         '200':
           description: The planned workout
@@ -945,6 +1003,18 @@ paths:
       - Workouts
       summary: Reschedule a planned workout
       operationId: Workouts_UpdatePlannedWorkout
+      parameters:
+      - name: planned_workout_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int64
+      - name: user_id
+        in: query
+        required: true
+        schema:
+          type: string
       requestBody:
         required: true
         content:
@@ -983,6 +1053,18 @@ paths:
       summary: Delete a planned workout
       description: Removes the planned workout from the user's calendar and from the connected provider.
       operationId: Workouts_DeletePlannedWorkout
+      parameters:
+      - name: planned_workout_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int64
+      - name: user_id
+        in: query
+        required: true
+        schema:
+          type: string
       responses:
         '204':
           description: Planned workout deleted
@@ -1084,29 +1166,29 @@ paths:
           content:
             application/json:
               schema:
-                oneOf:
-                - type: object
-                  properties:
-                    users:
-                      type: array
-                      items:
-                        $ref: '#/components/schemas/TerraUser'
-                - type: object
-                  properties:
-                    data:
-                      type: object
-                      properties:
-                        next:
-                          type: integer
-                          description: The next page number, or null if there is no next page
-                          nullable: true
-                        max_page:
-                          type: integer
-                          description: The maximum page index
-                        results:
-                          type: array
-                          items:
-                            $ref: '#/components/schemas/TerraUser'
+                type: object
+                description: If `page` is omitted, `users` contains every user. If `page` is provided, `results`, `max_page`, and `next` contain the paginated response.
+                properties:
+                  status:
+                    type: string
+                    enum:
+                    - success
+                    default: success
+                  users:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/TerraUser'
+                  next:
+                    type: integer
+                    description: The next page number, or null if there is no next page
+                    nullable: true
+                  max_page:
+                    type: integer
+                    description: Total number of pages available for the requested page size
+                  results:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/TerraUser'
         '400':
           $ref: '#/components/responses/BadRequest'
   /bulkUserInfo:
@@ -5788,6 +5870,7 @@ components:
         enum:
         - adductors
       - type: string
+        description: The back without a part named. Where a source distinguishes the lats or the upper back, `lat` or `upper_back` is reported instead.
         enum:
         - back
       - type: string
@@ -5809,8 +5892,13 @@ components:
         enum:
         - hamstrings
       - type: string
+        description: Iliopsoas and sartorius. Its own group — not part of the quadriceps.
         enum:
         - hip_flexor
+      - type: string
+        description: 'Latissimus dorsi. Reported separately from `back` and `upper_back`: a pulldown and a row are different work.'
+        enum:
+        - lat
       - type: string
         enum:
         - lower_back
@@ -5824,8 +5912,16 @@ components:
         enum:
         - quadriceps
       - type: string
+        description: Serratus anterior. Its own group — not part of the chest.
+        enum:
+        - serratus
+      - type: string
         enum:
         - shoulders
+      - type: string
+        description: Tibialis anterior. Its own group — not part of the calves, which it opposes.
+        enum:
+        - tibialis
       - type: string
         enum:
         - trapezius
@@ -5833,12 +5929,28 @@ components:
         enum:
         - triceps
       - type: string
+        description: The upper back — rhomboids and mid traps — as distinct from the lats.
+        enum:
+        - upper_back
+      - type: string
         description: The source reported a value here but it could not be resolved. Distinct from the field being absent, which means the source reported nothing at all.
         enum:
         - unknown
       - type: string
         description: A value Terra has added since this schema was published.
-      description: A muscle group an exercise works, used by both primary_muscles and secondary_muscles. Open enum — handle unknown values gracefully.
+      description: 'A muscle group an exercise works, used by both primary_muscles and secondary_muscles. Open enum — handle unknown values gracefully.
+
+
+        Members are training groups rather than anatomy: a source naming a specific head reports the group it belongs to, so the same exercise groups the same way whichever app recorded it.
+
+
+        Members are added over time, and a new one changes the total of the member it is most closely related to. If you aggregate per muscle, plan for that.
+
+
+        Some members are parts of a broader one and can be summed with it for a coarse view that stays stable: `lat` + `upper_back` + `back` covers the whole back, and `obliques` + `abs` the whole midsection.
+
+
+        Others are their own group and should not be folded into a neighbour — `serratus` is not part of the chest, `tibialis` is not part of the calves, and `hip_flexor` is not part of the quadriceps.'
       example: abductors
     StrengthSource:
       anyOf:

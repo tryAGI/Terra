@@ -10,11 +10,11 @@ namespace Terra
     public enum AuthenticationGenerateWidgetSessionResponseStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Error,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Success,
     }

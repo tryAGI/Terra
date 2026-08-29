@@ -9,13 +9,13 @@ namespace Terra
     public sealed partial class LabReportFile
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("filename")]
         public string? Filename { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("presigned_url")]
         [global::System.Text.Json.Serialization.JsonRequired]

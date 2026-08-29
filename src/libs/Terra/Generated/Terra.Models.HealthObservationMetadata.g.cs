@@ -4,7 +4,7 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class HealthObservationMetadata
     {
@@ -35,7 +35,7 @@ namespace Terra
         public required string SummaryId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("timestamp_localization")]
         public double? TimestampLocalization { get; set; }

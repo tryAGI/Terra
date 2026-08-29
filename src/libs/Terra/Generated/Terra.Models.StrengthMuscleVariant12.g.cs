@@ -4,14 +4,14 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    /// Latissimus dorsi. Reported separately from `back` and `upper_back`: a pulldown and a row are different work.
     /// </summary>
     public enum StrengthMuscleVariant12
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
-        LowerBack,
+        Lat,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Terra
         {
             return value switch
             {
-                StrengthMuscleVariant12.LowerBack => "lower_back",
+                StrengthMuscleVariant12.Lat => "lat",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Terra
         {
             return value switch
             {
-                "lower_back" => StrengthMuscleVariant12.LowerBack,
+                "lat" => StrengthMuscleVariant12.Lat,
                 _ => null,
             };
         }

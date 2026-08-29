@@ -9,7 +9,7 @@ namespace Terra
     public sealed partial class PlannedWorkoutDetails
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
         public global::Terra.PlannedWorkoutDetailsMetadata? Metadata { get; set; }

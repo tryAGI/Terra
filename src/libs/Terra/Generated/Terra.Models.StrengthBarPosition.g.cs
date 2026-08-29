@@ -11,7 +11,7 @@ namespace Terra
     public readonly partial struct StrengthBarPosition : global::System.IEquatable<StrengthBarPosition>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthBarPositionVariant1? StrengthBarPositionVariant1 { get; init; }
@@ -20,7 +20,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthBarPositionVariant1))]
@@ -28,7 +28,7 @@ namespace Terra
         public bool IsStrengthBarPositionVariant1 => StrengthBarPositionVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthBarPositionVariant1(
 #if NET6_0_OR_GREATER
@@ -41,14 +41,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthBarPositionVariant1 PickStrengthBarPositionVariant1() => IsStrengthBarPositionVariant1
             ? StrengthBarPositionVariant1!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthBarPositionVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthBarPositionVariant2? StrengthBarPositionVariant2 { get; init; }
@@ -57,7 +57,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthBarPositionVariant2))]
@@ -65,7 +65,7 @@ namespace Terra
         public bool IsStrengthBarPositionVariant2 => StrengthBarPositionVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthBarPositionVariant2(
 #if NET6_0_OR_GREATER
@@ -78,14 +78,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthBarPositionVariant2 PickStrengthBarPositionVariant2() => IsStrengthBarPositionVariant2
             ? StrengthBarPositionVariant2!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthBarPositionVariant2' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthBarPositionVariant3? StrengthBarPositionVariant3 { get; init; }
@@ -94,7 +94,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthBarPositionVariant3))]
@@ -102,7 +102,7 @@ namespace Terra
         public bool IsStrengthBarPositionVariant3 => StrengthBarPositionVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthBarPositionVariant3(
 #if NET6_0_OR_GREATER
@@ -115,14 +115,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthBarPositionVariant3 PickStrengthBarPositionVariant3() => IsStrengthBarPositionVariant3
             ? StrengthBarPositionVariant3!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthBarPositionVariant3' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthBarPositionVariant4? StrengthBarPositionVariant4 { get; init; }
@@ -131,7 +131,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthBarPositionVariant4))]
@@ -139,7 +139,7 @@ namespace Terra
         public bool IsStrengthBarPositionVariant4 => StrengthBarPositionVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthBarPositionVariant4(
 #if NET6_0_OR_GREATER
@@ -152,14 +152,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthBarPositionVariant4 PickStrengthBarPositionVariant4() => IsStrengthBarPositionVariant4
             ? StrengthBarPositionVariant4!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthBarPositionVariant4' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthBarPositionVariant5? StrengthBarPositionVariant5 { get; init; }
@@ -168,7 +168,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthBarPositionVariant5))]
@@ -176,7 +176,7 @@ namespace Terra
         public bool IsStrengthBarPositionVariant5 => StrengthBarPositionVariant5 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthBarPositionVariant5(
 #if NET6_0_OR_GREATER
@@ -189,14 +189,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthBarPositionVariant5 PickStrengthBarPositionVariant5() => IsStrengthBarPositionVariant5
             ? StrengthBarPositionVariant5!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthBarPositionVariant5' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthBarPositionVariant6? StrengthBarPositionVariant6 { get; init; }
@@ -205,7 +205,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthBarPositionVariant6))]
@@ -213,7 +213,7 @@ namespace Terra
         public bool IsStrengthBarPositionVariant6 => StrengthBarPositionVariant6 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthBarPositionVariant6(
 #if NET6_0_OR_GREATER
@@ -226,7 +226,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthBarPositionVariant6 PickStrengthBarPositionVariant6() => IsStrengthBarPositionVariant6
             ? StrengthBarPositionVariant6!.Value
@@ -242,7 +242,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthBarPositionVariant7))]
@@ -250,7 +250,7 @@ namespace Terra
         public bool IsStrengthBarPositionVariant7 => StrengthBarPositionVariant7 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthBarPositionVariant7(
 #if NET6_0_OR_GREATER
@@ -263,7 +263,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthBarPositionVariant7 PickStrengthBarPositionVariant7() => IsStrengthBarPositionVariant7
             ? StrengthBarPositionVariant7!.Value
@@ -279,7 +279,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthBarPositionVariant8))]
@@ -287,7 +287,7 @@ namespace Terra
         public bool IsStrengthBarPositionVariant8 => StrengthBarPositionVariant8 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthBarPositionVariant8(
 #if NET6_0_OR_GREATER
@@ -300,23 +300,23 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickStrengthBarPositionVariant8() => IsStrengthBarPositionVariant8
             ? StrengthBarPositionVariant8!
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthBarPositionVariant8' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthBarPosition(global::Terra.StrengthBarPositionVariant1 value) => new StrengthBarPosition((global::Terra.StrengthBarPositionVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthBarPositionVariant1?(StrengthBarPosition @this) => @this.StrengthBarPositionVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthBarPosition(global::Terra.StrengthBarPositionVariant1? value)
         {
@@ -324,22 +324,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthBarPosition FromStrengthBarPositionVariant1(global::Terra.StrengthBarPositionVariant1? value) => new StrengthBarPosition(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthBarPosition(global::Terra.StrengthBarPositionVariant2 value) => new StrengthBarPosition((global::Terra.StrengthBarPositionVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthBarPositionVariant2?(StrengthBarPosition @this) => @this.StrengthBarPositionVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthBarPosition(global::Terra.StrengthBarPositionVariant2? value)
         {
@@ -347,22 +347,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthBarPosition FromStrengthBarPositionVariant2(global::Terra.StrengthBarPositionVariant2? value) => new StrengthBarPosition(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthBarPosition(global::Terra.StrengthBarPositionVariant3 value) => new StrengthBarPosition((global::Terra.StrengthBarPositionVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthBarPositionVariant3?(StrengthBarPosition @this) => @this.StrengthBarPositionVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthBarPosition(global::Terra.StrengthBarPositionVariant3? value)
         {
@@ -370,22 +370,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthBarPosition FromStrengthBarPositionVariant3(global::Terra.StrengthBarPositionVariant3? value) => new StrengthBarPosition(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthBarPosition(global::Terra.StrengthBarPositionVariant4 value) => new StrengthBarPosition((global::Terra.StrengthBarPositionVariant4?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthBarPositionVariant4?(StrengthBarPosition @this) => @this.StrengthBarPositionVariant4;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthBarPosition(global::Terra.StrengthBarPositionVariant4? value)
         {
@@ -393,22 +393,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthBarPosition FromStrengthBarPositionVariant4(global::Terra.StrengthBarPositionVariant4? value) => new StrengthBarPosition(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthBarPosition(global::Terra.StrengthBarPositionVariant5 value) => new StrengthBarPosition((global::Terra.StrengthBarPositionVariant5?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthBarPositionVariant5?(StrengthBarPosition @this) => @this.StrengthBarPositionVariant5;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthBarPosition(global::Terra.StrengthBarPositionVariant5? value)
         {
@@ -416,22 +416,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthBarPosition FromStrengthBarPositionVariant5(global::Terra.StrengthBarPositionVariant5? value) => new StrengthBarPosition(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthBarPosition(global::Terra.StrengthBarPositionVariant6 value) => new StrengthBarPosition((global::Terra.StrengthBarPositionVariant6?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthBarPositionVariant6?(StrengthBarPosition @this) => @this.StrengthBarPositionVariant6;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthBarPosition(global::Terra.StrengthBarPositionVariant6? value)
         {
@@ -439,22 +439,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthBarPosition FromStrengthBarPositionVariant6(global::Terra.StrengthBarPositionVariant6? value) => new StrengthBarPosition(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthBarPosition(global::Terra.StrengthBarPositionVariant7 value) => new StrengthBarPosition((global::Terra.StrengthBarPositionVariant7?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthBarPositionVariant7?(StrengthBarPosition @this) => @this.StrengthBarPositionVariant7;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthBarPosition(global::Terra.StrengthBarPositionVariant7? value)
         {
@@ -462,22 +462,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthBarPosition FromStrengthBarPositionVariant7(global::Terra.StrengthBarPositionVariant7? value) => new StrengthBarPosition(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthBarPosition(string value) => new StrengthBarPosition((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(StrengthBarPosition @this) => @this.StrengthBarPositionVariant8;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthBarPosition(string? value)
         {
@@ -485,12 +485,12 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthBarPosition FromStrengthBarPositionVariant8(string? value) => new StrengthBarPosition(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthBarPosition(
             global::Terra.StrengthBarPositionVariant1? strengthBarPositionVariant1,
@@ -514,7 +514,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             StrengthBarPositionVariant8 as object ??
@@ -524,11 +524,11 @@ namespace Terra
             StrengthBarPositionVariant4 as object ??
             StrengthBarPositionVariant3 as object ??
             StrengthBarPositionVariant2 as object ??
-            StrengthBarPositionVariant1 as object 
+            StrengthBarPositionVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             StrengthBarPositionVariant1?.ToValueString() ??
@@ -538,11 +538,11 @@ namespace Terra
             StrengthBarPositionVariant5?.ToValueString() ??
             StrengthBarPositionVariant6?.ToValueString() ??
             StrengthBarPositionVariant7?.ToValueString() ??
-            StrengthBarPositionVariant8?.ToString() 
+            StrengthBarPositionVariant8?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -550,7 +550,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Terra.StrengthBarPositionVariant1?, TResult>? strengthBarPositionVariant1 = null,
@@ -605,7 +605,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Terra.StrengthBarPositionVariant1?>? strengthBarPositionVariant1 = null,
@@ -665,7 +665,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Terra.StrengthBarPositionVariant1?>? strengthBarPositionVariant1 = null,
@@ -718,7 +718,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -751,7 +751,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(StrengthBarPosition other)
         {
@@ -763,12 +763,12 @@ namespace Terra
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthBarPositionVariant5?>.Default.Equals(StrengthBarPositionVariant5, other.StrengthBarPositionVariant5) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthBarPositionVariant6?>.Default.Equals(StrengthBarPositionVariant6, other.StrengthBarPositionVariant6) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthBarPositionVariant7?>.Default.Equals(StrengthBarPositionVariant7, other.StrengthBarPositionVariant7) &&
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(StrengthBarPositionVariant8, other.StrengthBarPositionVariant8) 
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(StrengthBarPositionVariant8, other.StrengthBarPositionVariant8)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(StrengthBarPosition obj1, StrengthBarPosition obj2)
         {
@@ -776,7 +776,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(StrengthBarPosition obj1, StrengthBarPosition obj2)
         {
@@ -784,7 +784,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

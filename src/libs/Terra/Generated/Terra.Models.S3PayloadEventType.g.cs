@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum S3PayloadEventType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         S3Payload,
     }

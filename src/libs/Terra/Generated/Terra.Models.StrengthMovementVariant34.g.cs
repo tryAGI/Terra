@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthMovementVariant34
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DepthJump,
     }

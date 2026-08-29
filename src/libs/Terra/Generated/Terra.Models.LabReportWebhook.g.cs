@@ -5,7 +5,7 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct LabReportWebhook : global::System.IEquatable<LabReportWebhook>
     {
@@ -19,7 +19,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CompletedEvent))]
@@ -27,7 +27,7 @@ namespace Terra
         public bool IsCompletedEvent => CompletedEvent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCompletedEvent(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.LabReportCompletedEvent PickCompletedEvent() => IsCompletedEvent
             ? CompletedEvent!
@@ -56,7 +56,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FailedEvent))]
@@ -64,7 +64,7 @@ namespace Terra
         public bool IsFailedEvent => FailedEvent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFailedEvent(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.LabReportFailedEvent PickFailedEvent() => IsFailedEvent
             ? FailedEvent!
             : throw new global::System.InvalidOperationException($"Expected union variant 'FailedEvent' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LabReportWebhook(global::Terra.LabReportCompletedEvent value) => new LabReportWebhook((global::Terra.LabReportCompletedEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.LabReportCompletedEvent?(LabReportWebhook @this) => @this.CompletedEvent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LabReportWebhook(global::Terra.LabReportCompletedEvent? value)
         {
@@ -101,22 +101,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LabReportWebhook FromCompletedEvent(global::Terra.LabReportCompletedEvent? value) => new LabReportWebhook(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LabReportWebhook(global::Terra.LabReportFailedEvent value) => new LabReportWebhook((global::Terra.LabReportFailedEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.LabReportFailedEvent?(LabReportWebhook @this) => @this.FailedEvent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LabReportWebhook(global::Terra.LabReportFailedEvent? value)
         {
@@ -124,12 +124,12 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LabReportWebhook FromFailedEvent(global::Terra.LabReportFailedEvent? value) => new LabReportWebhook(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LabReportWebhook(
             global::Terra.LabReportCompletedEvent? completedEvent,
@@ -141,23 +141,23 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             FailedEvent as object ??
-            CompletedEvent as object 
+            CompletedEvent as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             CompletedEvent?.ToString() ??
-            FailedEvent?.ToString() 
+            FailedEvent?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Terra.LabReportCompletedEvent, TResult>? completedEvent = null,
@@ -190,7 +190,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Terra.LabReportCompletedEvent>? completedEvent = null,
@@ -214,7 +214,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Terra.LabReportCompletedEvent>? completedEvent = null,
@@ -237,7 +237,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(LabReportWebhook other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Terra.LabReportCompletedEvent?>.Default.Equals(CompletedEvent, other.CompletedEvent) &&
-                global::System.Collections.Generic.EqualityComparer<global::Terra.LabReportFailedEvent?>.Default.Equals(FailedEvent, other.FailedEvent) 
+                global::System.Collections.Generic.EqualityComparer<global::Terra.LabReportFailedEvent?>.Default.Equals(FailedEvent, other.FailedEvent)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(LabReportWebhook obj1, LabReportWebhook obj2)
         {
@@ -277,7 +277,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(LabReportWebhook obj1, LabReportWebhook obj2)
         {
@@ -285,7 +285,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

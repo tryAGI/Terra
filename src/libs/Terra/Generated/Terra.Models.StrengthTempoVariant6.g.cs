@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthTempoVariant6
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pulse,
     }

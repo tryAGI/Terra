@@ -9,11 +9,13 @@ namespace Terra
         /// Removes the planned workout from the user's calendar and from the connected provider.
         /// </summary>
         /// <param name="plannedWorkoutId"></param>
+        /// <param name="userId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
         global::System.Threading.Tasks.Task WorkoutsDeletePlannedWorkoutAsync(
-            string plannedWorkoutId,
+            long plannedWorkoutId,
+            string userId,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -21,11 +23,13 @@ namespace Terra
         /// Removes the planned workout from the user's calendar and from the connected provider.
         /// </summary>
         /// <param name="plannedWorkoutId"></param>
+        /// <param name="userId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse> WorkoutsDeletePlannedWorkoutAsResponseAsync(
-            string plannedWorkoutId,
+            long plannedWorkoutId,
+            string userId,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

@@ -9,7 +9,7 @@ namespace Terra
     public enum StrengthLateralityVariant4
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unknown,
     }

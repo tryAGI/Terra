@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthRangeOfMotionVariant5
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Partial,
     }

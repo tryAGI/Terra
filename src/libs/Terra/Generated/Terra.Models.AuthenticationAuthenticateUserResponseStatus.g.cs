@@ -10,11 +10,11 @@ namespace Terra
     public enum AuthenticationAuthenticateUserResponseStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Error,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Success,
     }

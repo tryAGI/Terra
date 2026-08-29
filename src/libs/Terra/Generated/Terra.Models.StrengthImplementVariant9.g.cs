@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthImplementVariant9
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HandleBand,
     }

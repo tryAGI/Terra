@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum WorkoutStepIntensityVariant5
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Active,
     }

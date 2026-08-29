@@ -27,11 +27,13 @@ namespace Terra
             };
         partial void PrepareWorkoutsGetPlannedWorkoutArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref string plannedWorkoutId);
+            ref long plannedWorkoutId,
+            ref string userId);
         partial void PrepareWorkoutsGetPlannedWorkoutRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            string plannedWorkoutId);
+            long plannedWorkoutId,
+            string userId);
         partial void ProcessWorkoutsGetPlannedWorkoutResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -46,16 +48,19 @@ namespace Terra
         /// Returns a planned workout created through Terra. Provider-created (external) workouts are not addressable by id — they are returned by the list endpoint with their full body under `details`.
         /// </summary>
         /// <param name="plannedWorkoutId"></param>
+        /// <param name="userId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Terra.PlannedWorkoutSummary> WorkoutsGetPlannedWorkoutAsync(
-            string plannedWorkoutId,
+            long plannedWorkoutId,
+            string userId,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             var __response = await WorkoutsGetPlannedWorkoutAsResponseAsync(
                 plannedWorkoutId: plannedWorkoutId,
+                userId: userId,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -67,11 +72,13 @@ namespace Terra
         /// Returns a planned workout created through Terra. Provider-created (external) workouts are not addressable by id — they are returned by the list endpoint with their full body under `details`.
         /// </summary>
         /// <param name="plannedWorkoutId"></param>
+        /// <param name="userId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse<global::Terra.PlannedWorkoutSummary>> WorkoutsGetPlannedWorkoutAsResponseAsync(
-            string plannedWorkoutId,
+            long plannedWorkoutId,
+            string userId,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -79,7 +86,8 @@ namespace Terra
                 client: HttpClient);
             PrepareWorkoutsGetPlannedWorkoutArguments(
                 httpClient: HttpClient,
-                plannedWorkoutId: ref plannedWorkoutId);
+                plannedWorkoutId: ref plannedWorkoutId,
+                userId: ref userId);
 
 
             var __authorizations = global::Terra.EndPointSecurityResolver.ResolveAuthorizations(
@@ -107,6 +115,9 @@ namespace Terra
                             var __pathBuilder = new global::Terra.PathBuilder(
                                 path: $"/plannedWorkouts/{plannedWorkoutId}",
                                 baseUri: HttpClient.BaseAddress);
+                            __pathBuilder
+                                .AddRequiredParameter("user_id", userId)
+                                ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Terra.AutoSDKRequestOptionsSupport.AppendQueryParameters(
                     path: __path,
@@ -134,7 +145,7 @@ namespace Terra
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
                 global::Terra.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,
@@ -147,7 +158,8 @@ namespace Terra
                 PrepareWorkoutsGetPlannedWorkoutRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    plannedWorkoutId: plannedWorkoutId!);
+                    plannedWorkoutId: plannedWorkoutId!,
+                    userId: userId!);
 
                 return __httpRequest;
             }

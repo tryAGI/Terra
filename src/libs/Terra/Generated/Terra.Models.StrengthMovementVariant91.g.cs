@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthMovementVariant91
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         March,
     }

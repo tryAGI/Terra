@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthTargetVariant4
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Back,
     }

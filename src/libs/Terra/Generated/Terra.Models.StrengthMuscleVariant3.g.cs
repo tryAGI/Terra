@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthMuscleVariant3
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Adductors,
     }

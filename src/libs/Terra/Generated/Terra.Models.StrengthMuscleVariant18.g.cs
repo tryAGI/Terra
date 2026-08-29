@@ -4,14 +4,14 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthMuscleVariant18
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
-        Triceps,
+        Shoulders,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Terra
         {
             return value switch
             {
-                StrengthMuscleVariant18.Triceps => "triceps",
+                StrengthMuscleVariant18.Shoulders => "shoulders",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Terra
         {
             return value switch
             {
-                "triceps" => StrengthMuscleVariant18.Triceps,
+                "shoulders" => StrengthMuscleVariant18.Shoulders,
                 _ => null,
             };
         }

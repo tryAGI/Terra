@@ -9,7 +9,7 @@ namespace Terra
     public enum LargeRequestProcessingEventStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Processing,
     }

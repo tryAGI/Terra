@@ -9,7 +9,7 @@ namespace Terra
     public enum AccessRevokedEventStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Warning,
     }

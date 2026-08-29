@@ -9,7 +9,7 @@ namespace Terra
     public enum S3PayloadEventStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Success,
     }

@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthTargetVariant7
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Chest,
     }

@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthTargetVariant12
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HipAbductor,
     }

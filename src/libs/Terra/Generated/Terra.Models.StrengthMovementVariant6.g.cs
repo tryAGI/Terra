@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthMovementVariant6
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BattleRopeWave,
     }

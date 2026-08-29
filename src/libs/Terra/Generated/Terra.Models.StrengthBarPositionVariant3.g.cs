@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthBarPositionVariant3
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FrontRack,
     }

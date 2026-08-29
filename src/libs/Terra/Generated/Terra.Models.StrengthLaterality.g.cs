@@ -11,7 +11,7 @@ namespace Terra
     public readonly partial struct StrengthLaterality : global::System.IEquatable<StrengthLaterality>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthLateralityVariant1? StrengthLateralityVariant1 { get; init; }
@@ -20,7 +20,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthLateralityVariant1))]
@@ -28,7 +28,7 @@ namespace Terra
         public bool IsStrengthLateralityVariant1 => StrengthLateralityVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthLateralityVariant1(
 #if NET6_0_OR_GREATER
@@ -41,14 +41,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthLateralityVariant1 PickStrengthLateralityVariant1() => IsStrengthLateralityVariant1
             ? StrengthLateralityVariant1!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthLateralityVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthLateralityVariant2? StrengthLateralityVariant2 { get; init; }
@@ -57,7 +57,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthLateralityVariant2))]
@@ -65,7 +65,7 @@ namespace Terra
         public bool IsStrengthLateralityVariant2 => StrengthLateralityVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthLateralityVariant2(
 #if NET6_0_OR_GREATER
@@ -78,14 +78,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthLateralityVariant2 PickStrengthLateralityVariant2() => IsStrengthLateralityVariant2
             ? StrengthLateralityVariant2!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthLateralityVariant2' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthLateralityVariant3? StrengthLateralityVariant3 { get; init; }
@@ -94,7 +94,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthLateralityVariant3))]
@@ -102,7 +102,7 @@ namespace Terra
         public bool IsStrengthLateralityVariant3 => StrengthLateralityVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthLateralityVariant3(
 #if NET6_0_OR_GREATER
@@ -115,7 +115,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthLateralityVariant3 PickStrengthLateralityVariant3() => IsStrengthLateralityVariant3
             ? StrengthLateralityVariant3!.Value
@@ -131,7 +131,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthLateralityVariant4))]
@@ -139,7 +139,7 @@ namespace Terra
         public bool IsStrengthLateralityVariant4 => StrengthLateralityVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthLateralityVariant4(
 #if NET6_0_OR_GREATER
@@ -152,7 +152,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthLateralityVariant4 PickStrengthLateralityVariant4() => IsStrengthLateralityVariant4
             ? StrengthLateralityVariant4!.Value
@@ -168,7 +168,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthLateralityVariant5))]
@@ -176,7 +176,7 @@ namespace Terra
         public bool IsStrengthLateralityVariant5 => StrengthLateralityVariant5 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthLateralityVariant5(
 #if NET6_0_OR_GREATER
@@ -189,23 +189,23 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickStrengthLateralityVariant5() => IsStrengthLateralityVariant5
             ? StrengthLateralityVariant5!
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthLateralityVariant5' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthLaterality(global::Terra.StrengthLateralityVariant1 value) => new StrengthLaterality((global::Terra.StrengthLateralityVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthLateralityVariant1?(StrengthLaterality @this) => @this.StrengthLateralityVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthLaterality(global::Terra.StrengthLateralityVariant1? value)
         {
@@ -213,22 +213,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthLaterality FromStrengthLateralityVariant1(global::Terra.StrengthLateralityVariant1? value) => new StrengthLaterality(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthLaterality(global::Terra.StrengthLateralityVariant2 value) => new StrengthLaterality((global::Terra.StrengthLateralityVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthLateralityVariant2?(StrengthLaterality @this) => @this.StrengthLateralityVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthLaterality(global::Terra.StrengthLateralityVariant2? value)
         {
@@ -236,22 +236,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthLaterality FromStrengthLateralityVariant2(global::Terra.StrengthLateralityVariant2? value) => new StrengthLaterality(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthLaterality(global::Terra.StrengthLateralityVariant3 value) => new StrengthLaterality((global::Terra.StrengthLateralityVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthLateralityVariant3?(StrengthLaterality @this) => @this.StrengthLateralityVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthLaterality(global::Terra.StrengthLateralityVariant3? value)
         {
@@ -259,22 +259,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthLaterality FromStrengthLateralityVariant3(global::Terra.StrengthLateralityVariant3? value) => new StrengthLaterality(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthLaterality(global::Terra.StrengthLateralityVariant4 value) => new StrengthLaterality((global::Terra.StrengthLateralityVariant4?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthLateralityVariant4?(StrengthLaterality @this) => @this.StrengthLateralityVariant4;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthLaterality(global::Terra.StrengthLateralityVariant4? value)
         {
@@ -282,22 +282,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthLaterality FromStrengthLateralityVariant4(global::Terra.StrengthLateralityVariant4? value) => new StrengthLaterality(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthLaterality(string value) => new StrengthLaterality((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(StrengthLaterality @this) => @this.StrengthLateralityVariant5;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthLaterality(string? value)
         {
@@ -305,12 +305,12 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthLaterality FromStrengthLateralityVariant5(string? value) => new StrengthLaterality(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthLaterality(
             global::Terra.StrengthLateralityVariant1? strengthLateralityVariant1,
@@ -328,29 +328,29 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             StrengthLateralityVariant5 as object ??
             StrengthLateralityVariant4 as object ??
             StrengthLateralityVariant3 as object ??
             StrengthLateralityVariant2 as object ??
-            StrengthLateralityVariant1 as object 
+            StrengthLateralityVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             StrengthLateralityVariant1?.ToValueString() ??
             StrengthLateralityVariant2?.ToValueString() ??
             StrengthLateralityVariant3?.ToValueString() ??
             StrengthLateralityVariant4?.ToValueString() ??
-            StrengthLateralityVariant5?.ToString() 
+            StrengthLateralityVariant5?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -358,7 +358,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Terra.StrengthLateralityVariant1?, TResult>? strengthLateralityVariant1 = null,
@@ -398,7 +398,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Terra.StrengthLateralityVariant1?>? strengthLateralityVariant1 = null,
@@ -440,7 +440,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Terra.StrengthLateralityVariant1?>? strengthLateralityVariant1 = null,
@@ -478,7 +478,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -505,7 +505,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(StrengthLaterality other)
         {
@@ -514,12 +514,12 @@ namespace Terra
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthLateralityVariant2?>.Default.Equals(StrengthLateralityVariant2, other.StrengthLateralityVariant2) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthLateralityVariant3?>.Default.Equals(StrengthLateralityVariant3, other.StrengthLateralityVariant3) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthLateralityVariant4?>.Default.Equals(StrengthLateralityVariant4, other.StrengthLateralityVariant4) &&
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(StrengthLateralityVariant5, other.StrengthLateralityVariant5) 
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(StrengthLateralityVariant5, other.StrengthLateralityVariant5)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(StrengthLaterality obj1, StrengthLaterality obj2)
         {
@@ -527,7 +527,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(StrengthLaterality obj1, StrengthLaterality obj2)
         {
@@ -535,7 +535,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

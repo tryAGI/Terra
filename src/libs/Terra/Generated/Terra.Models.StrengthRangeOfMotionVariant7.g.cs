@@ -9,7 +9,7 @@ namespace Terra
     public enum StrengthRangeOfMotionVariant7
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unknown,
     }

@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum WorkoutSportVariant5
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rowing,
     }

@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CompletionConditionTypeVariant9
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PowerPercentage,
     }

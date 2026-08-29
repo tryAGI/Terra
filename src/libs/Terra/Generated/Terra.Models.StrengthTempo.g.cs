@@ -11,7 +11,7 @@ namespace Terra
     public readonly partial struct StrengthTempo : global::System.IEquatable<StrengthTempo>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthTempoVariant1? StrengthTempoVariant1 { get; init; }
@@ -20,7 +20,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthTempoVariant1))]
@@ -28,7 +28,7 @@ namespace Terra
         public bool IsStrengthTempoVariant1 => StrengthTempoVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthTempoVariant1(
 #if NET6_0_OR_GREATER
@@ -41,14 +41,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthTempoVariant1 PickStrengthTempoVariant1() => IsStrengthTempoVariant1
             ? StrengthTempoVariant1!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthTempoVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthTempoVariant2? StrengthTempoVariant2 { get; init; }
@@ -57,7 +57,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthTempoVariant2))]
@@ -65,7 +65,7 @@ namespace Terra
         public bool IsStrengthTempoVariant2 => StrengthTempoVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthTempoVariant2(
 #if NET6_0_OR_GREATER
@@ -78,14 +78,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthTempoVariant2 PickStrengthTempoVariant2() => IsStrengthTempoVariant2
             ? StrengthTempoVariant2!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthTempoVariant2' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthTempoVariant3? StrengthTempoVariant3 { get; init; }
@@ -94,7 +94,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthTempoVariant3))]
@@ -102,7 +102,7 @@ namespace Terra
         public bool IsStrengthTempoVariant3 => StrengthTempoVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthTempoVariant3(
 #if NET6_0_OR_GREATER
@@ -115,14 +115,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthTempoVariant3 PickStrengthTempoVariant3() => IsStrengthTempoVariant3
             ? StrengthTempoVariant3!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthTempoVariant3' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthTempoVariant4? StrengthTempoVariant4 { get; init; }
@@ -131,7 +131,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthTempoVariant4))]
@@ -139,7 +139,7 @@ namespace Terra
         public bool IsStrengthTempoVariant4 => StrengthTempoVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthTempoVariant4(
 #if NET6_0_OR_GREATER
@@ -152,14 +152,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthTempoVariant4 PickStrengthTempoVariant4() => IsStrengthTempoVariant4
             ? StrengthTempoVariant4!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthTempoVariant4' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthTempoVariant5? StrengthTempoVariant5 { get; init; }
@@ -168,7 +168,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthTempoVariant5))]
@@ -176,7 +176,7 @@ namespace Terra
         public bool IsStrengthTempoVariant5 => StrengthTempoVariant5 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthTempoVariant5(
 #if NET6_0_OR_GREATER
@@ -189,14 +189,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthTempoVariant5 PickStrengthTempoVariant5() => IsStrengthTempoVariant5
             ? StrengthTempoVariant5!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthTempoVariant5' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthTempoVariant6? StrengthTempoVariant6 { get; init; }
@@ -205,7 +205,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthTempoVariant6))]
@@ -213,7 +213,7 @@ namespace Terra
         public bool IsStrengthTempoVariant6 => StrengthTempoVariant6 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthTempoVariant6(
 #if NET6_0_OR_GREATER
@@ -226,14 +226,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthTempoVariant6 PickStrengthTempoVariant6() => IsStrengthTempoVariant6
             ? StrengthTempoVariant6!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthTempoVariant6' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthTempoVariant7? StrengthTempoVariant7 { get; init; }
@@ -242,7 +242,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthTempoVariant7))]
@@ -250,7 +250,7 @@ namespace Terra
         public bool IsStrengthTempoVariant7 => StrengthTempoVariant7 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthTempoVariant7(
 #if NET6_0_OR_GREATER
@@ -263,7 +263,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthTempoVariant7 PickStrengthTempoVariant7() => IsStrengthTempoVariant7
             ? StrengthTempoVariant7!.Value
@@ -279,7 +279,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthTempoVariant8))]
@@ -287,7 +287,7 @@ namespace Terra
         public bool IsStrengthTempoVariant8 => StrengthTempoVariant8 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthTempoVariant8(
 #if NET6_0_OR_GREATER
@@ -300,7 +300,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthTempoVariant8 PickStrengthTempoVariant8() => IsStrengthTempoVariant8
             ? StrengthTempoVariant8!.Value
@@ -316,7 +316,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthTempoVariant9))]
@@ -324,7 +324,7 @@ namespace Terra
         public bool IsStrengthTempoVariant9 => StrengthTempoVariant9 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthTempoVariant9(
 #if NET6_0_OR_GREATER
@@ -337,23 +337,23 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickStrengthTempoVariant9() => IsStrengthTempoVariant9
             ? StrengthTempoVariant9!
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthTempoVariant9' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthTempo(global::Terra.StrengthTempoVariant1 value) => new StrengthTempo((global::Terra.StrengthTempoVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthTempoVariant1?(StrengthTempo @this) => @this.StrengthTempoVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthTempo(global::Terra.StrengthTempoVariant1? value)
         {
@@ -361,22 +361,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthTempo FromStrengthTempoVariant1(global::Terra.StrengthTempoVariant1? value) => new StrengthTempo(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthTempo(global::Terra.StrengthTempoVariant2 value) => new StrengthTempo((global::Terra.StrengthTempoVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthTempoVariant2?(StrengthTempo @this) => @this.StrengthTempoVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthTempo(global::Terra.StrengthTempoVariant2? value)
         {
@@ -384,22 +384,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthTempo FromStrengthTempoVariant2(global::Terra.StrengthTempoVariant2? value) => new StrengthTempo(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthTempo(global::Terra.StrengthTempoVariant3 value) => new StrengthTempo((global::Terra.StrengthTempoVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthTempoVariant3?(StrengthTempo @this) => @this.StrengthTempoVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthTempo(global::Terra.StrengthTempoVariant3? value)
         {
@@ -407,22 +407,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthTempo FromStrengthTempoVariant3(global::Terra.StrengthTempoVariant3? value) => new StrengthTempo(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthTempo(global::Terra.StrengthTempoVariant4 value) => new StrengthTempo((global::Terra.StrengthTempoVariant4?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthTempoVariant4?(StrengthTempo @this) => @this.StrengthTempoVariant4;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthTempo(global::Terra.StrengthTempoVariant4? value)
         {
@@ -430,22 +430,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthTempo FromStrengthTempoVariant4(global::Terra.StrengthTempoVariant4? value) => new StrengthTempo(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthTempo(global::Terra.StrengthTempoVariant5 value) => new StrengthTempo((global::Terra.StrengthTempoVariant5?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthTempoVariant5?(StrengthTempo @this) => @this.StrengthTempoVariant5;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthTempo(global::Terra.StrengthTempoVariant5? value)
         {
@@ -453,22 +453,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthTempo FromStrengthTempoVariant5(global::Terra.StrengthTempoVariant5? value) => new StrengthTempo(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthTempo(global::Terra.StrengthTempoVariant6 value) => new StrengthTempo((global::Terra.StrengthTempoVariant6?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthTempoVariant6?(StrengthTempo @this) => @this.StrengthTempoVariant6;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthTempo(global::Terra.StrengthTempoVariant6? value)
         {
@@ -476,22 +476,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthTempo FromStrengthTempoVariant6(global::Terra.StrengthTempoVariant6? value) => new StrengthTempo(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthTempo(global::Terra.StrengthTempoVariant7 value) => new StrengthTempo((global::Terra.StrengthTempoVariant7?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthTempoVariant7?(StrengthTempo @this) => @this.StrengthTempoVariant7;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthTempo(global::Terra.StrengthTempoVariant7? value)
         {
@@ -499,22 +499,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthTempo FromStrengthTempoVariant7(global::Terra.StrengthTempoVariant7? value) => new StrengthTempo(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthTempo(global::Terra.StrengthTempoVariant8 value) => new StrengthTempo((global::Terra.StrengthTempoVariant8?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthTempoVariant8?(StrengthTempo @this) => @this.StrengthTempoVariant8;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthTempo(global::Terra.StrengthTempoVariant8? value)
         {
@@ -522,22 +522,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthTempo FromStrengthTempoVariant8(global::Terra.StrengthTempoVariant8? value) => new StrengthTempo(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthTempo(string value) => new StrengthTempo((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(StrengthTempo @this) => @this.StrengthTempoVariant9;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthTempo(string? value)
         {
@@ -545,12 +545,12 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthTempo FromStrengthTempoVariant9(string? value) => new StrengthTempo(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthTempo(
             global::Terra.StrengthTempoVariant1? strengthTempoVariant1,
@@ -576,7 +576,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             StrengthTempoVariant9 as object ??
@@ -587,11 +587,11 @@ namespace Terra
             StrengthTempoVariant4 as object ??
             StrengthTempoVariant3 as object ??
             StrengthTempoVariant2 as object ??
-            StrengthTempoVariant1 as object 
+            StrengthTempoVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             StrengthTempoVariant1?.ToValueString() ??
@@ -602,11 +602,11 @@ namespace Terra
             StrengthTempoVariant6?.ToValueString() ??
             StrengthTempoVariant7?.ToValueString() ??
             StrengthTempoVariant8?.ToValueString() ??
-            StrengthTempoVariant9?.ToString() 
+            StrengthTempoVariant9?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -614,7 +614,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Terra.StrengthTempoVariant1?, TResult>? strengthTempoVariant1 = null,
@@ -674,7 +674,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Terra.StrengthTempoVariant1?>? strengthTempoVariant1 = null,
@@ -740,7 +740,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Terra.StrengthTempoVariant1?>? strengthTempoVariant1 = null,
@@ -798,7 +798,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -833,7 +833,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(StrengthTempo other)
         {
@@ -846,12 +846,12 @@ namespace Terra
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthTempoVariant6?>.Default.Equals(StrengthTempoVariant6, other.StrengthTempoVariant6) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthTempoVariant7?>.Default.Equals(StrengthTempoVariant7, other.StrengthTempoVariant7) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthTempoVariant8?>.Default.Equals(StrengthTempoVariant8, other.StrengthTempoVariant8) &&
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(StrengthTempoVariant9, other.StrengthTempoVariant9) 
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(StrengthTempoVariant9, other.StrengthTempoVariant9)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(StrengthTempo obj1, StrengthTempo obj2)
         {
@@ -859,7 +859,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(StrengthTempo obj1, StrengthTempo obj2)
         {
@@ -867,7 +867,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

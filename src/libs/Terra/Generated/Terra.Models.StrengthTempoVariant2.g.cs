@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthTempoVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Explosive,
     }

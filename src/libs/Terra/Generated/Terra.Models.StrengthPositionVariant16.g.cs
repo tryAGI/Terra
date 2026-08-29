@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthPositionVariant16
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SideLying,
     }

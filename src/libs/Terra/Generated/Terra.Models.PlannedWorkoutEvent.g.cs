@@ -9,7 +9,7 @@ namespace Terra
     public sealed partial class PlannedWorkoutEvent
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Terra.JsonConverters.PlannedWorkoutEventTypeJsonConverter))]
@@ -23,7 +23,7 @@ namespace Terra
         public required global::System.Collections.Generic.IList<global::Terra.PlannedWorkout> Data { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("user")]
         [global::System.Text.Json.Serialization.JsonRequired]

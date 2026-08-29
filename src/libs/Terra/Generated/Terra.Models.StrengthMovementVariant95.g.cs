@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthMovementVariant95
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NeckExtension,
     }

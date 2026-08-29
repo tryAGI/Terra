@@ -11,7 +11,7 @@ namespace Terra
     public readonly partial struct StrengthGripOrientation : global::System.IEquatable<StrengthGripOrientation>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthGripOrientationVariant1? StrengthGripOrientationVariant1 { get; init; }
@@ -20,7 +20,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthGripOrientationVariant1))]
@@ -28,7 +28,7 @@ namespace Terra
         public bool IsStrengthGripOrientationVariant1 => StrengthGripOrientationVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthGripOrientationVariant1(
 #if NET6_0_OR_GREATER
@@ -41,14 +41,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthGripOrientationVariant1 PickStrengthGripOrientationVariant1() => IsStrengthGripOrientationVariant1
             ? StrengthGripOrientationVariant1!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthGripOrientationVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthGripOrientationVariant2? StrengthGripOrientationVariant2 { get; init; }
@@ -57,7 +57,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthGripOrientationVariant2))]
@@ -65,7 +65,7 @@ namespace Terra
         public bool IsStrengthGripOrientationVariant2 => StrengthGripOrientationVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthGripOrientationVariant2(
 #if NET6_0_OR_GREATER
@@ -78,14 +78,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthGripOrientationVariant2 PickStrengthGripOrientationVariant2() => IsStrengthGripOrientationVariant2
             ? StrengthGripOrientationVariant2!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthGripOrientationVariant2' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthGripOrientationVariant3? StrengthGripOrientationVariant3 { get; init; }
@@ -94,7 +94,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthGripOrientationVariant3))]
@@ -102,7 +102,7 @@ namespace Terra
         public bool IsStrengthGripOrientationVariant3 => StrengthGripOrientationVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthGripOrientationVariant3(
 #if NET6_0_OR_GREATER
@@ -115,14 +115,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthGripOrientationVariant3 PickStrengthGripOrientationVariant3() => IsStrengthGripOrientationVariant3
             ? StrengthGripOrientationVariant3!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthGripOrientationVariant3' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthGripOrientationVariant4? StrengthGripOrientationVariant4 { get; init; }
@@ -131,7 +131,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthGripOrientationVariant4))]
@@ -139,7 +139,7 @@ namespace Terra
         public bool IsStrengthGripOrientationVariant4 => StrengthGripOrientationVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthGripOrientationVariant4(
 #if NET6_0_OR_GREATER
@@ -152,14 +152,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthGripOrientationVariant4 PickStrengthGripOrientationVariant4() => IsStrengthGripOrientationVariant4
             ? StrengthGripOrientationVariant4!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthGripOrientationVariant4' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthGripOrientationVariant5? StrengthGripOrientationVariant5 { get; init; }
@@ -168,7 +168,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthGripOrientationVariant5))]
@@ -176,7 +176,7 @@ namespace Terra
         public bool IsStrengthGripOrientationVariant5 => StrengthGripOrientationVariant5 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthGripOrientationVariant5(
 #if NET6_0_OR_GREATER
@@ -189,14 +189,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthGripOrientationVariant5 PickStrengthGripOrientationVariant5() => IsStrengthGripOrientationVariant5
             ? StrengthGripOrientationVariant5!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthGripOrientationVariant5' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthGripOrientationVariant6? StrengthGripOrientationVariant6 { get; init; }
@@ -205,7 +205,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthGripOrientationVariant6))]
@@ -213,7 +213,7 @@ namespace Terra
         public bool IsStrengthGripOrientationVariant6 => StrengthGripOrientationVariant6 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthGripOrientationVariant6(
 #if NET6_0_OR_GREATER
@@ -226,14 +226,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthGripOrientationVariant6 PickStrengthGripOrientationVariant6() => IsStrengthGripOrientationVariant6
             ? StrengthGripOrientationVariant6!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthGripOrientationVariant6' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.StrengthGripOrientationVariant7? StrengthGripOrientationVariant7 { get; init; }
@@ -242,7 +242,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthGripOrientationVariant7))]
@@ -250,7 +250,7 @@ namespace Terra
         public bool IsStrengthGripOrientationVariant7 => StrengthGripOrientationVariant7 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthGripOrientationVariant7(
 #if NET6_0_OR_GREATER
@@ -263,7 +263,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthGripOrientationVariant7 PickStrengthGripOrientationVariant7() => IsStrengthGripOrientationVariant7
             ? StrengthGripOrientationVariant7!.Value
@@ -279,7 +279,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthGripOrientationVariant8))]
@@ -287,7 +287,7 @@ namespace Terra
         public bool IsStrengthGripOrientationVariant8 => StrengthGripOrientationVariant8 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthGripOrientationVariant8(
 #if NET6_0_OR_GREATER
@@ -300,7 +300,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.StrengthGripOrientationVariant8 PickStrengthGripOrientationVariant8() => IsStrengthGripOrientationVariant8
             ? StrengthGripOrientationVariant8!.Value
@@ -316,7 +316,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StrengthGripOrientationVariant9))]
@@ -324,7 +324,7 @@ namespace Terra
         public bool IsStrengthGripOrientationVariant9 => StrengthGripOrientationVariant9 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStrengthGripOrientationVariant9(
 #if NET6_0_OR_GREATER
@@ -337,23 +337,23 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickStrengthGripOrientationVariant9() => IsStrengthGripOrientationVariant9
             ? StrengthGripOrientationVariant9!
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthGripOrientationVariant9' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthGripOrientation(global::Terra.StrengthGripOrientationVariant1 value) => new StrengthGripOrientation((global::Terra.StrengthGripOrientationVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthGripOrientationVariant1?(StrengthGripOrientation @this) => @this.StrengthGripOrientationVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthGripOrientation(global::Terra.StrengthGripOrientationVariant1? value)
         {
@@ -361,22 +361,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthGripOrientation FromStrengthGripOrientationVariant1(global::Terra.StrengthGripOrientationVariant1? value) => new StrengthGripOrientation(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthGripOrientation(global::Terra.StrengthGripOrientationVariant2 value) => new StrengthGripOrientation((global::Terra.StrengthGripOrientationVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthGripOrientationVariant2?(StrengthGripOrientation @this) => @this.StrengthGripOrientationVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthGripOrientation(global::Terra.StrengthGripOrientationVariant2? value)
         {
@@ -384,22 +384,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthGripOrientation FromStrengthGripOrientationVariant2(global::Terra.StrengthGripOrientationVariant2? value) => new StrengthGripOrientation(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthGripOrientation(global::Terra.StrengthGripOrientationVariant3 value) => new StrengthGripOrientation((global::Terra.StrengthGripOrientationVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthGripOrientationVariant3?(StrengthGripOrientation @this) => @this.StrengthGripOrientationVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthGripOrientation(global::Terra.StrengthGripOrientationVariant3? value)
         {
@@ -407,22 +407,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthGripOrientation FromStrengthGripOrientationVariant3(global::Terra.StrengthGripOrientationVariant3? value) => new StrengthGripOrientation(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthGripOrientation(global::Terra.StrengthGripOrientationVariant4 value) => new StrengthGripOrientation((global::Terra.StrengthGripOrientationVariant4?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthGripOrientationVariant4?(StrengthGripOrientation @this) => @this.StrengthGripOrientationVariant4;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthGripOrientation(global::Terra.StrengthGripOrientationVariant4? value)
         {
@@ -430,22 +430,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthGripOrientation FromStrengthGripOrientationVariant4(global::Terra.StrengthGripOrientationVariant4? value) => new StrengthGripOrientation(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthGripOrientation(global::Terra.StrengthGripOrientationVariant5 value) => new StrengthGripOrientation((global::Terra.StrengthGripOrientationVariant5?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthGripOrientationVariant5?(StrengthGripOrientation @this) => @this.StrengthGripOrientationVariant5;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthGripOrientation(global::Terra.StrengthGripOrientationVariant5? value)
         {
@@ -453,22 +453,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthGripOrientation FromStrengthGripOrientationVariant5(global::Terra.StrengthGripOrientationVariant5? value) => new StrengthGripOrientation(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthGripOrientation(global::Terra.StrengthGripOrientationVariant6 value) => new StrengthGripOrientation((global::Terra.StrengthGripOrientationVariant6?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthGripOrientationVariant6?(StrengthGripOrientation @this) => @this.StrengthGripOrientationVariant6;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthGripOrientation(global::Terra.StrengthGripOrientationVariant6? value)
         {
@@ -476,22 +476,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthGripOrientation FromStrengthGripOrientationVariant6(global::Terra.StrengthGripOrientationVariant6? value) => new StrengthGripOrientation(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthGripOrientation(global::Terra.StrengthGripOrientationVariant7 value) => new StrengthGripOrientation((global::Terra.StrengthGripOrientationVariant7?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthGripOrientationVariant7?(StrengthGripOrientation @this) => @this.StrengthGripOrientationVariant7;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthGripOrientation(global::Terra.StrengthGripOrientationVariant7? value)
         {
@@ -499,22 +499,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthGripOrientation FromStrengthGripOrientationVariant7(global::Terra.StrengthGripOrientationVariant7? value) => new StrengthGripOrientation(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthGripOrientation(global::Terra.StrengthGripOrientationVariant8 value) => new StrengthGripOrientation((global::Terra.StrengthGripOrientationVariant8?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.StrengthGripOrientationVariant8?(StrengthGripOrientation @this) => @this.StrengthGripOrientationVariant8;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthGripOrientation(global::Terra.StrengthGripOrientationVariant8? value)
         {
@@ -522,22 +522,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthGripOrientation FromStrengthGripOrientationVariant8(global::Terra.StrengthGripOrientationVariant8? value) => new StrengthGripOrientation(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StrengthGripOrientation(string value) => new StrengthGripOrientation((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(StrengthGripOrientation @this) => @this.StrengthGripOrientationVariant9;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthGripOrientation(string? value)
         {
@@ -545,12 +545,12 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StrengthGripOrientation FromStrengthGripOrientationVariant9(string? value) => new StrengthGripOrientation(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StrengthGripOrientation(
             global::Terra.StrengthGripOrientationVariant1? strengthGripOrientationVariant1,
@@ -576,7 +576,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             StrengthGripOrientationVariant9 as object ??
@@ -587,11 +587,11 @@ namespace Terra
             StrengthGripOrientationVariant4 as object ??
             StrengthGripOrientationVariant3 as object ??
             StrengthGripOrientationVariant2 as object ??
-            StrengthGripOrientationVariant1 as object 
+            StrengthGripOrientationVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             StrengthGripOrientationVariant1?.ToValueString() ??
@@ -602,11 +602,11 @@ namespace Terra
             StrengthGripOrientationVariant6?.ToValueString() ??
             StrengthGripOrientationVariant7?.ToValueString() ??
             StrengthGripOrientationVariant8?.ToValueString() ??
-            StrengthGripOrientationVariant9?.ToString() 
+            StrengthGripOrientationVariant9?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -614,7 +614,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Terra.StrengthGripOrientationVariant1?, TResult>? strengthGripOrientationVariant1 = null,
@@ -674,7 +674,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Terra.StrengthGripOrientationVariant1?>? strengthGripOrientationVariant1 = null,
@@ -740,7 +740,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Terra.StrengthGripOrientationVariant1?>? strengthGripOrientationVariant1 = null,
@@ -798,7 +798,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -833,7 +833,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(StrengthGripOrientation other)
         {
@@ -846,12 +846,12 @@ namespace Terra
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthGripOrientationVariant6?>.Default.Equals(StrengthGripOrientationVariant6, other.StrengthGripOrientationVariant6) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthGripOrientationVariant7?>.Default.Equals(StrengthGripOrientationVariant7, other.StrengthGripOrientationVariant7) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.StrengthGripOrientationVariant8?>.Default.Equals(StrengthGripOrientationVariant8, other.StrengthGripOrientationVariant8) &&
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(StrengthGripOrientationVariant9, other.StrengthGripOrientationVariant9) 
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(StrengthGripOrientationVariant9, other.StrengthGripOrientationVariant9)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(StrengthGripOrientation obj1, StrengthGripOrientation obj2)
         {
@@ -859,7 +859,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(StrengthGripOrientation obj1, StrengthGripOrientation obj2)
         {
@@ -867,7 +867,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

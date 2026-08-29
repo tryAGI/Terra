@@ -27,12 +27,14 @@ namespace Terra
             };
         partial void PrepareWorkoutsUpdatePlannedWorkoutArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref string plannedWorkoutId,
+            ref long plannedWorkoutId,
+            ref string userId,
             global::Terra.WorkoutsUpdatePlannedWorkoutRequest request);
         partial void PrepareWorkoutsUpdatePlannedWorkoutRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            string plannedWorkoutId,
+            long plannedWorkoutId,
+            string userId,
             global::Terra.WorkoutsUpdatePlannedWorkoutRequest request);
         partial void ProcessWorkoutsUpdatePlannedWorkoutResponse(
             global::System.Net.Http.HttpClient httpClient,
@@ -47,12 +49,14 @@ namespace Terra
         /// Reschedule a planned workout
         /// </summary>
         /// <param name="plannedWorkoutId"></param>
+        /// <param name="userId"></param>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Terra.PlannedWorkoutSummary> WorkoutsUpdatePlannedWorkoutAsync(
-            string plannedWorkoutId,
+            long plannedWorkoutId,
+            string userId,
 
             global::Terra.WorkoutsUpdatePlannedWorkoutRequest request,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
@@ -60,6 +64,7 @@ namespace Terra
         {
             var __response = await WorkoutsUpdatePlannedWorkoutAsResponseAsync(
                 plannedWorkoutId: plannedWorkoutId,
+                userId: userId,
 
                 request: request,
                 requestOptions: requestOptions,
@@ -72,12 +77,14 @@ namespace Terra
         /// Reschedule a planned workout
         /// </summary>
         /// <param name="plannedWorkoutId"></param>
+        /// <param name="userId"></param>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse<global::Terra.PlannedWorkoutSummary>> WorkoutsUpdatePlannedWorkoutAsResponseAsync(
-            string plannedWorkoutId,
+            long plannedWorkoutId,
+            string userId,
 
             global::Terra.WorkoutsUpdatePlannedWorkoutRequest request,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
@@ -90,6 +97,7 @@ namespace Terra
             PrepareWorkoutsUpdatePlannedWorkoutArguments(
                 httpClient: HttpClient,
                 plannedWorkoutId: ref plannedWorkoutId,
+                userId: ref userId,
                 request: request);
 
 
@@ -118,6 +126,9 @@ namespace Terra
                             var __pathBuilder = new global::Terra.PathBuilder(
                                 path: $"/plannedWorkouts/{plannedWorkoutId}",
                                 baseUri: HttpClient.BaseAddress);
+                            __pathBuilder
+                                .AddRequiredParameter("user_id", userId)
+                                ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Terra.AutoSDKRequestOptionsSupport.AppendQueryParameters(
                     path: __path,
@@ -145,7 +156,7 @@ namespace Terra
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
                             var __httpRequestContentBody = request.ToJson(JsonSerializerContext);
                             var __httpRequestContent = new global::System.Net.Http.StringContent(
@@ -165,6 +176,7 @@ namespace Terra
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     plannedWorkoutId: plannedWorkoutId!,
+                    userId: userId!,
                     request: request);
 
                 return __httpRequest;
@@ -592,6 +604,7 @@ namespace Terra
         /// Reschedule a planned workout
         /// </summary>
         /// <param name="plannedWorkoutId"></param>
+        /// <param name="userId"></param>
         /// <param name="plannedDate">
         /// New scheduled date (YYYY-MM-DD)
         /// </param>
@@ -599,7 +612,8 @@ namespace Terra
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         public async global::System.Threading.Tasks.Task<global::Terra.PlannedWorkoutSummary> WorkoutsUpdatePlannedWorkoutAsync(
-            string plannedWorkoutId,
+            long plannedWorkoutId,
+            string userId,
             global::System.DateTime plannedDate,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -611,6 +625,7 @@ namespace Terra
 
             return await WorkoutsUpdatePlannedWorkoutAsync(
                 plannedWorkoutId: plannedWorkoutId,
+                userId: userId,
                 request: __request,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken).ConfigureAwait(false);

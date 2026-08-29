@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthTempoVariant3
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Isometric,
     }

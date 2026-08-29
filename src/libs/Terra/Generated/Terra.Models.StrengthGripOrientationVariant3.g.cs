@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthGripOrientationVariant3
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Neutral,
     }

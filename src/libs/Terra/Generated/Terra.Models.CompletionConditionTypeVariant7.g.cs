@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CompletionConditionTypeVariant7
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Reps,
     }

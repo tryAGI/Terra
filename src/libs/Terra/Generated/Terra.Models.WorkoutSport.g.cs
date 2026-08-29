@@ -10,7 +10,7 @@ namespace Terra
     public readonly partial struct WorkoutSport : global::System.IEquatable<WorkoutSport>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.WorkoutSportVariant1? WorkoutSportVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkoutSportVariant1))]
@@ -27,7 +27,7 @@ namespace Terra
         public bool IsWorkoutSportVariant1 => WorkoutSportVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkoutSportVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.WorkoutSportVariant1 PickWorkoutSportVariant1() => IsWorkoutSportVariant1
             ? WorkoutSportVariant1!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutSportVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.WorkoutSportVariant2? WorkoutSportVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkoutSportVariant2))]
@@ -64,7 +64,7 @@ namespace Terra
         public bool IsWorkoutSportVariant2 => WorkoutSportVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkoutSportVariant2(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.WorkoutSportVariant2 PickWorkoutSportVariant2() => IsWorkoutSportVariant2
             ? WorkoutSportVariant2!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutSportVariant2' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.WorkoutSportVariant3? WorkoutSportVariant3 { get; init; }
@@ -93,7 +93,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkoutSportVariant3))]
@@ -101,7 +101,7 @@ namespace Terra
         public bool IsWorkoutSportVariant3 => WorkoutSportVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkoutSportVariant3(
 #if NET6_0_OR_GREATER
@@ -114,14 +114,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.WorkoutSportVariant3 PickWorkoutSportVariant3() => IsWorkoutSportVariant3
             ? WorkoutSportVariant3!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutSportVariant3' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.WorkoutSportVariant4? WorkoutSportVariant4 { get; init; }
@@ -130,7 +130,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkoutSportVariant4))]
@@ -138,7 +138,7 @@ namespace Terra
         public bool IsWorkoutSportVariant4 => WorkoutSportVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkoutSportVariant4(
 #if NET6_0_OR_GREATER
@@ -151,14 +151,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.WorkoutSportVariant4 PickWorkoutSportVariant4() => IsWorkoutSportVariant4
             ? WorkoutSportVariant4!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutSportVariant4' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.WorkoutSportVariant5? WorkoutSportVariant5 { get; init; }
@@ -167,7 +167,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkoutSportVariant5))]
@@ -175,7 +175,7 @@ namespace Terra
         public bool IsWorkoutSportVariant5 => WorkoutSportVariant5 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkoutSportVariant5(
 #if NET6_0_OR_GREATER
@@ -188,14 +188,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.WorkoutSportVariant5 PickWorkoutSportVariant5() => IsWorkoutSportVariant5
             ? WorkoutSportVariant5!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutSportVariant5' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.WorkoutSportVariant6? WorkoutSportVariant6 { get; init; }
@@ -204,7 +204,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkoutSportVariant6))]
@@ -212,7 +212,7 @@ namespace Terra
         public bool IsWorkoutSportVariant6 => WorkoutSportVariant6 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkoutSportVariant6(
 #if NET6_0_OR_GREATER
@@ -225,14 +225,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.WorkoutSportVariant6 PickWorkoutSportVariant6() => IsWorkoutSportVariant6
             ? WorkoutSportVariant6!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutSportVariant6' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.WorkoutSportVariant7? WorkoutSportVariant7 { get; init; }
@@ -241,7 +241,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkoutSportVariant7))]
@@ -249,7 +249,7 @@ namespace Terra
         public bool IsWorkoutSportVariant7 => WorkoutSportVariant7 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkoutSportVariant7(
 #if NET6_0_OR_GREATER
@@ -262,14 +262,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.WorkoutSportVariant7 PickWorkoutSportVariant7() => IsWorkoutSportVariant7
             ? WorkoutSportVariant7!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutSportVariant7' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.WorkoutSportVariant8? WorkoutSportVariant8 { get; init; }
@@ -278,7 +278,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkoutSportVariant8))]
@@ -286,7 +286,7 @@ namespace Terra
         public bool IsWorkoutSportVariant8 => WorkoutSportVariant8 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkoutSportVariant8(
 #if NET6_0_OR_GREATER
@@ -299,14 +299,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.WorkoutSportVariant8 PickWorkoutSportVariant8() => IsWorkoutSportVariant8
             ? WorkoutSportVariant8!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutSportVariant8' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.WorkoutSportVariant9? WorkoutSportVariant9 { get; init; }
@@ -315,7 +315,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkoutSportVariant9))]
@@ -323,7 +323,7 @@ namespace Terra
         public bool IsWorkoutSportVariant9 => WorkoutSportVariant9 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkoutSportVariant9(
 #if NET6_0_OR_GREATER
@@ -336,14 +336,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.WorkoutSportVariant9 PickWorkoutSportVariant9() => IsWorkoutSportVariant9
             ? WorkoutSportVariant9!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutSportVariant9' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.WorkoutSportVariant10? WorkoutSportVariant10 { get; init; }
@@ -352,7 +352,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkoutSportVariant10))]
@@ -360,7 +360,7 @@ namespace Terra
         public bool IsWorkoutSportVariant10 => WorkoutSportVariant10 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkoutSportVariant10(
 #if NET6_0_OR_GREATER
@@ -373,14 +373,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.WorkoutSportVariant10 PickWorkoutSportVariant10() => IsWorkoutSportVariant10
             ? WorkoutSportVariant10!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutSportVariant10' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.WorkoutSportVariant11? WorkoutSportVariant11 { get; init; }
@@ -389,7 +389,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkoutSportVariant11))]
@@ -397,7 +397,7 @@ namespace Terra
         public bool IsWorkoutSportVariant11 => WorkoutSportVariant11 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkoutSportVariant11(
 #if NET6_0_OR_GREATER
@@ -410,14 +410,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.WorkoutSportVariant11 PickWorkoutSportVariant11() => IsWorkoutSportVariant11
             ? WorkoutSportVariant11!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutSportVariant11' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.WorkoutSportVariant12? WorkoutSportVariant12 { get; init; }
@@ -426,7 +426,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkoutSportVariant12))]
@@ -434,7 +434,7 @@ namespace Terra
         public bool IsWorkoutSportVariant12 => WorkoutSportVariant12 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkoutSportVariant12(
 #if NET6_0_OR_GREATER
@@ -447,14 +447,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.WorkoutSportVariant12 PickWorkoutSportVariant12() => IsWorkoutSportVariant12
             ? WorkoutSportVariant12!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutSportVariant12' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.WorkoutSportVariant13? WorkoutSportVariant13 { get; init; }
@@ -463,7 +463,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkoutSportVariant13))]
@@ -471,7 +471,7 @@ namespace Terra
         public bool IsWorkoutSportVariant13 => WorkoutSportVariant13 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkoutSportVariant13(
 #if NET6_0_OR_GREATER
@@ -484,14 +484,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.WorkoutSportVariant13 PickWorkoutSportVariant13() => IsWorkoutSportVariant13
             ? WorkoutSportVariant13!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutSportVariant13' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.WorkoutSportVariant14? WorkoutSportVariant14 { get; init; }
@@ -500,7 +500,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkoutSportVariant14))]
@@ -508,7 +508,7 @@ namespace Terra
         public bool IsWorkoutSportVariant14 => WorkoutSportVariant14 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkoutSportVariant14(
 #if NET6_0_OR_GREATER
@@ -521,14 +521,14 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.WorkoutSportVariant14 PickWorkoutSportVariant14() => IsWorkoutSportVariant14
             ? WorkoutSportVariant14!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutSportVariant14' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Terra.WorkoutSportVariant15? WorkoutSportVariant15 { get; init; }
@@ -537,7 +537,7 @@ namespace Terra
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkoutSportVariant15))]
@@ -545,7 +545,7 @@ namespace Terra
         public bool IsWorkoutSportVariant15 => WorkoutSportVariant15 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkoutSportVariant15(
 #if NET6_0_OR_GREATER
@@ -558,23 +558,23 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Terra.WorkoutSportVariant15 PickWorkoutSportVariant15() => IsWorkoutSportVariant15
             ? WorkoutSportVariant15!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutSportVariant15' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkoutSport(global::Terra.WorkoutSportVariant1 value) => new WorkoutSport((global::Terra.WorkoutSportVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.WorkoutSportVariant1?(WorkoutSport @this) => @this.WorkoutSportVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkoutSport(global::Terra.WorkoutSportVariant1? value)
         {
@@ -582,22 +582,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkoutSport FromWorkoutSportVariant1(global::Terra.WorkoutSportVariant1? value) => new WorkoutSport(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkoutSport(global::Terra.WorkoutSportVariant2 value) => new WorkoutSport((global::Terra.WorkoutSportVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.WorkoutSportVariant2?(WorkoutSport @this) => @this.WorkoutSportVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkoutSport(global::Terra.WorkoutSportVariant2? value)
         {
@@ -605,22 +605,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkoutSport FromWorkoutSportVariant2(global::Terra.WorkoutSportVariant2? value) => new WorkoutSport(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkoutSport(global::Terra.WorkoutSportVariant3 value) => new WorkoutSport((global::Terra.WorkoutSportVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.WorkoutSportVariant3?(WorkoutSport @this) => @this.WorkoutSportVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkoutSport(global::Terra.WorkoutSportVariant3? value)
         {
@@ -628,22 +628,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkoutSport FromWorkoutSportVariant3(global::Terra.WorkoutSportVariant3? value) => new WorkoutSport(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkoutSport(global::Terra.WorkoutSportVariant4 value) => new WorkoutSport((global::Terra.WorkoutSportVariant4?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.WorkoutSportVariant4?(WorkoutSport @this) => @this.WorkoutSportVariant4;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkoutSport(global::Terra.WorkoutSportVariant4? value)
         {
@@ -651,22 +651,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkoutSport FromWorkoutSportVariant4(global::Terra.WorkoutSportVariant4? value) => new WorkoutSport(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkoutSport(global::Terra.WorkoutSportVariant5 value) => new WorkoutSport((global::Terra.WorkoutSportVariant5?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.WorkoutSportVariant5?(WorkoutSport @this) => @this.WorkoutSportVariant5;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkoutSport(global::Terra.WorkoutSportVariant5? value)
         {
@@ -674,22 +674,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkoutSport FromWorkoutSportVariant5(global::Terra.WorkoutSportVariant5? value) => new WorkoutSport(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkoutSport(global::Terra.WorkoutSportVariant6 value) => new WorkoutSport((global::Terra.WorkoutSportVariant6?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.WorkoutSportVariant6?(WorkoutSport @this) => @this.WorkoutSportVariant6;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkoutSport(global::Terra.WorkoutSportVariant6? value)
         {
@@ -697,22 +697,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkoutSport FromWorkoutSportVariant6(global::Terra.WorkoutSportVariant6? value) => new WorkoutSport(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkoutSport(global::Terra.WorkoutSportVariant7 value) => new WorkoutSport((global::Terra.WorkoutSportVariant7?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.WorkoutSportVariant7?(WorkoutSport @this) => @this.WorkoutSportVariant7;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkoutSport(global::Terra.WorkoutSportVariant7? value)
         {
@@ -720,22 +720,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkoutSport FromWorkoutSportVariant7(global::Terra.WorkoutSportVariant7? value) => new WorkoutSport(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkoutSport(global::Terra.WorkoutSportVariant8 value) => new WorkoutSport((global::Terra.WorkoutSportVariant8?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.WorkoutSportVariant8?(WorkoutSport @this) => @this.WorkoutSportVariant8;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkoutSport(global::Terra.WorkoutSportVariant8? value)
         {
@@ -743,22 +743,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkoutSport FromWorkoutSportVariant8(global::Terra.WorkoutSportVariant8? value) => new WorkoutSport(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkoutSport(global::Terra.WorkoutSportVariant9 value) => new WorkoutSport((global::Terra.WorkoutSportVariant9?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.WorkoutSportVariant9?(WorkoutSport @this) => @this.WorkoutSportVariant9;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkoutSport(global::Terra.WorkoutSportVariant9? value)
         {
@@ -766,22 +766,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkoutSport FromWorkoutSportVariant9(global::Terra.WorkoutSportVariant9? value) => new WorkoutSport(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkoutSport(global::Terra.WorkoutSportVariant10 value) => new WorkoutSport((global::Terra.WorkoutSportVariant10?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.WorkoutSportVariant10?(WorkoutSport @this) => @this.WorkoutSportVariant10;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkoutSport(global::Terra.WorkoutSportVariant10? value)
         {
@@ -789,22 +789,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkoutSport FromWorkoutSportVariant10(global::Terra.WorkoutSportVariant10? value) => new WorkoutSport(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkoutSport(global::Terra.WorkoutSportVariant11 value) => new WorkoutSport((global::Terra.WorkoutSportVariant11?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.WorkoutSportVariant11?(WorkoutSport @this) => @this.WorkoutSportVariant11;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkoutSport(global::Terra.WorkoutSportVariant11? value)
         {
@@ -812,22 +812,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkoutSport FromWorkoutSportVariant11(global::Terra.WorkoutSportVariant11? value) => new WorkoutSport(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkoutSport(global::Terra.WorkoutSportVariant12 value) => new WorkoutSport((global::Terra.WorkoutSportVariant12?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.WorkoutSportVariant12?(WorkoutSport @this) => @this.WorkoutSportVariant12;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkoutSport(global::Terra.WorkoutSportVariant12? value)
         {
@@ -835,22 +835,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkoutSport FromWorkoutSportVariant12(global::Terra.WorkoutSportVariant12? value) => new WorkoutSport(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkoutSport(global::Terra.WorkoutSportVariant13 value) => new WorkoutSport((global::Terra.WorkoutSportVariant13?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.WorkoutSportVariant13?(WorkoutSport @this) => @this.WorkoutSportVariant13;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkoutSport(global::Terra.WorkoutSportVariant13? value)
         {
@@ -858,22 +858,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkoutSport FromWorkoutSportVariant13(global::Terra.WorkoutSportVariant13? value) => new WorkoutSport(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkoutSport(global::Terra.WorkoutSportVariant14 value) => new WorkoutSport((global::Terra.WorkoutSportVariant14?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.WorkoutSportVariant14?(WorkoutSport @this) => @this.WorkoutSportVariant14;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkoutSport(global::Terra.WorkoutSportVariant14? value)
         {
@@ -881,22 +881,22 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkoutSport FromWorkoutSportVariant14(global::Terra.WorkoutSportVariant14? value) => new WorkoutSport(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkoutSport(global::Terra.WorkoutSportVariant15 value) => new WorkoutSport((global::Terra.WorkoutSportVariant15?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Terra.WorkoutSportVariant15?(WorkoutSport @this) => @this.WorkoutSportVariant15;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkoutSport(global::Terra.WorkoutSportVariant15? value)
         {
@@ -904,12 +904,12 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkoutSport FromWorkoutSportVariant15(global::Terra.WorkoutSportVariant15? value) => new WorkoutSport(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkoutSport(
             global::Terra.WorkoutSportVariant1? workoutSportVariant1,
@@ -947,7 +947,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             WorkoutSportVariant15 as object ??
@@ -964,11 +964,11 @@ namespace Terra
             WorkoutSportVariant4 as object ??
             WorkoutSportVariant3 as object ??
             WorkoutSportVariant2 as object ??
-            WorkoutSportVariant1 as object 
+            WorkoutSportVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             WorkoutSportVariant1?.ToValueString() ??
@@ -985,11 +985,11 @@ namespace Terra
             WorkoutSportVariant12?.ToValueString() ??
             WorkoutSportVariant13?.ToValueString() ??
             WorkoutSportVariant14?.ToValueString() ??
-            WorkoutSportVariant15?.ToValueString() 
+            WorkoutSportVariant15?.ToValueString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -997,7 +997,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Terra.WorkoutSportVariant1?, TResult>? workoutSportVariant1 = null,
@@ -1087,7 +1087,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Terra.WorkoutSportVariant1?>? workoutSportVariant1 = null,
@@ -1189,7 +1189,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Terra.WorkoutSportVariant1?>? workoutSportVariant1 = null,
@@ -1277,7 +1277,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -1324,7 +1324,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(WorkoutSport other)
         {
@@ -1343,12 +1343,12 @@ namespace Terra
                 global::System.Collections.Generic.EqualityComparer<global::Terra.WorkoutSportVariant12?>.Default.Equals(WorkoutSportVariant12, other.WorkoutSportVariant12) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.WorkoutSportVariant13?>.Default.Equals(WorkoutSportVariant13, other.WorkoutSportVariant13) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.WorkoutSportVariant14?>.Default.Equals(WorkoutSportVariant14, other.WorkoutSportVariant14) &&
-                global::System.Collections.Generic.EqualityComparer<global::Terra.WorkoutSportVariant15?>.Default.Equals(WorkoutSportVariant15, other.WorkoutSportVariant15) 
+                global::System.Collections.Generic.EqualityComparer<global::Terra.WorkoutSportVariant15?>.Default.Equals(WorkoutSportVariant15, other.WorkoutSportVariant15)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(WorkoutSport obj1, WorkoutSport obj2)
         {
@@ -1356,7 +1356,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(WorkoutSport obj1, WorkoutSport obj2)
         {
@@ -1364,7 +1364,7 @@ namespace Terra
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

@@ -9,7 +9,7 @@ namespace Terra
     public enum StrengthTempoVariant8
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unknown,
     }

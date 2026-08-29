@@ -4,12 +4,12 @@
 namespace Terra
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StrengthLoadTypeVariant5
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unknown,
     }

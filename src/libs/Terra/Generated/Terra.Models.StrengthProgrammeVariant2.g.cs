@@ -9,7 +9,7 @@ namespace Terra
     public enum StrengthProgrammeVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unknown,
     }
