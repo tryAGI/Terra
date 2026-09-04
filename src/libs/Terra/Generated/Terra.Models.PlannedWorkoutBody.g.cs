@@ -1,0 +1,167 @@
+
+#nullable enable
+
+namespace Terra
+{
+    /// <summary>
+    /// The body of a planned workout: a WorkoutTemplate whose sport may be `unspecified` when it was created on the provider side
+    /// </summary>
+    public sealed partial class PlannedWorkoutBody
+    {
+        /// <summary>
+        /// Name of the workout
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Name { get; set; }
+
+        /// <summary>
+        /// Description of the workout
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
+        public string? Description { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("environment")]
+        public global::Terra.EnvironmentType? Environment { get; set; }
+
+        /// <summary>
+        /// Pool length in meters, for swim workouts
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("pool_length_meters")]
+        public double? PoolLengthMeters { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("step_blocks")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<global::Terra.StepBlock> StepBlocks { get; set; }
+
+        /// <summary>
+        /// Estimated total duration in seconds
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("estimated_duration_seconds")]
+        public double? EstimatedDurationSeconds { get; set; }
+
+        /// <summary>
+        /// Estimated total distance in meters
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("estimated_distance_meters")]
+        public double? EstimatedDistanceMeters { get; set; }
+
+        /// <summary>
+        /// Estimated calories burned
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("estimated_calories")]
+        public double? EstimatedCalories { get; set; }
+
+        /// <summary>
+        /// Planned training stress score, where the provider or author supplies one. Read-only today: accepted on create but not forwarded to providers.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("estimated_tss")]
+        public double? EstimatedTss { get; set; }
+
+        /// <summary>
+        /// Planned intensity factor, where the provider or author supplies one. Read-only today: accepted on create but not forwarded to providers.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("estimated_intensity_factor")]
+        public double? EstimatedIntensityFactor { get; set; }
+
+        /// <summary>
+        /// Terra identifier of the stored template. Set by Terra in responses; ignored on create.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("workout_id")]
+        public string? WorkoutId { get; set; }
+
+        /// <summary>
+        /// Sport of a provider-created workout: a WorkoutSport, or `unspecified` when the provider's sport has no Terra equivalent (rejected on create).
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("sport")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Terra.JsonConverters.PlannedWorkoutSportJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Terra.PlannedWorkoutSport Sport { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="PlannedWorkoutBody" /> class.
+        /// </summary>
+        /// <param name="name">
+        /// Name of the workout
+        /// </param>
+        /// <param name="stepBlocks"></param>
+        /// <param name="sport">
+        /// Sport of a provider-created workout: a WorkoutSport, or `unspecified` when the provider's sport has no Terra equivalent (rejected on create).
+        /// </param>
+        /// <param name="description">
+        /// Description of the workout
+        /// </param>
+        /// <param name="environment"></param>
+        /// <param name="poolLengthMeters">
+        /// Pool length in meters, for swim workouts
+        /// </param>
+        /// <param name="estimatedDurationSeconds">
+        /// Estimated total duration in seconds
+        /// </param>
+        /// <param name="estimatedDistanceMeters">
+        /// Estimated total distance in meters
+        /// </param>
+        /// <param name="estimatedCalories">
+        /// Estimated calories burned
+        /// </param>
+        /// <param name="estimatedTss">
+        /// Planned training stress score, where the provider or author supplies one. Read-only today: accepted on create but not forwarded to providers.
+        /// </param>
+        /// <param name="estimatedIntensityFactor">
+        /// Planned intensity factor, where the provider or author supplies one. Read-only today: accepted on create but not forwarded to providers.
+        /// </param>
+        /// <param name="workoutId">
+        /// Terra identifier of the stored template. Set by Terra in responses; ignored on create.
+        /// </param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public PlannedWorkoutBody(
+            string name,
+            global::System.Collections.Generic.IList<global::Terra.StepBlock> stepBlocks,
+            global::Terra.PlannedWorkoutSport sport,
+            string? description,
+            global::Terra.EnvironmentType? environment,
+            double? poolLengthMeters,
+            double? estimatedDurationSeconds,
+            double? estimatedDistanceMeters,
+            double? estimatedCalories,
+            double? estimatedTss,
+            double? estimatedIntensityFactor,
+            string? workoutId)
+        {
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.Description = description;
+            this.Environment = environment;
+            this.PoolLengthMeters = poolLengthMeters;
+            this.StepBlocks = stepBlocks ?? throw new global::System.ArgumentNullException(nameof(stepBlocks));
+            this.EstimatedDurationSeconds = estimatedDurationSeconds;
+            this.EstimatedDistanceMeters = estimatedDistanceMeters;
+            this.EstimatedCalories = estimatedCalories;
+            this.EstimatedTss = estimatedTss;
+            this.EstimatedIntensityFactor = estimatedIntensityFactor;
+            this.WorkoutId = workoutId;
+            this.Sport = sport;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="PlannedWorkoutBody" /> class.
+        /// </summary>
+        public PlannedWorkoutBody()
+        {
+        }
+
+    }
+}

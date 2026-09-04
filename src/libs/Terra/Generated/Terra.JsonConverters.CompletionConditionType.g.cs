@@ -148,6 +148,72 @@ namespace Terra.JsonConverters
                     }
                 }
             }
+            var __score11 = 0;
+            {
+                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant12), options);
+                if (__ti != null && __ti.Kind == global::System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object)
+                {
+                    foreach (var __prop in __ti.Properties)
+                    {
+                        if (__jsonProps.Contains(__prop.Name)) __score11++;
+                    }
+                }
+            }
+            var __score12 = 0;
+            {
+                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant13), options);
+                if (__ti != null && __ti.Kind == global::System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object)
+                {
+                    foreach (var __prop in __ti.Properties)
+                    {
+                        if (__jsonProps.Contains(__prop.Name)) __score12++;
+                    }
+                }
+            }
+            var __score13 = 0;
+            {
+                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant14), options);
+                if (__ti != null && __ti.Kind == global::System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object)
+                {
+                    foreach (var __prop in __ti.Properties)
+                    {
+                        if (__jsonProps.Contains(__prop.Name)) __score13++;
+                    }
+                }
+            }
+            var __score14 = 0;
+            {
+                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant15), options);
+                if (__ti != null && __ti.Kind == global::System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object)
+                {
+                    foreach (var __prop in __ti.Properties)
+                    {
+                        if (__jsonProps.Contains(__prop.Name)) __score14++;
+                    }
+                }
+            }
+            var __score15 = 0;
+            {
+                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant16), options);
+                if (__ti != null && __ti.Kind == global::System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object)
+                {
+                    foreach (var __prop in __ti.Properties)
+                    {
+                        if (__jsonProps.Contains(__prop.Name)) __score15++;
+                    }
+                }
+            }
+            var __score16 = 0;
+            {
+                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant17), options);
+                if (__ti != null && __ti.Kind == global::System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object)
+                {
+                    foreach (var __prop in __ti.Properties)
+                    {
+                        if (__jsonProps.Contains(__prop.Name)) __score16++;
+                    }
+                }
+            }
             var __bestScore = 0;
             var __bestIndex = -1;
             if (__score0 > __bestScore) { __bestScore = __score0; __bestIndex = 0; }
@@ -161,6 +227,12 @@ namespace Terra.JsonConverters
             if (__score8 > __bestScore) { __bestScore = __score8; __bestIndex = 8; }
             if (__score9 > __bestScore) { __bestScore = __score9; __bestIndex = 9; }
             if (__score10 > __bestScore) { __bestScore = __score10; __bestIndex = 10; }
+            if (__score11 > __bestScore) { __bestScore = __score11; __bestIndex = 11; }
+            if (__score12 > __bestScore) { __bestScore = __score12; __bestIndex = 12; }
+            if (__score13 > __bestScore) { __bestScore = __score13; __bestIndex = 13; }
+            if (__score14 > __bestScore) { __bestScore = __score14; __bestIndex = 14; }
+            if (__score15 > __bestScore) { __bestScore = __score15; __bestIndex = 15; }
+            if (__score16 > __bestScore) { __bestScore = __score16; __bestIndex = 16; }
 
             global::Terra.CompletionConditionTypeVariant1? completionConditionTypeVariant1 = default;
             global::Terra.CompletionConditionTypeVariant2? completionConditionTypeVariant2 = default;
@@ -173,6 +245,12 @@ namespace Terra.JsonConverters
             global::Terra.CompletionConditionTypeVariant9? completionConditionTypeVariant9 = default;
             global::Terra.CompletionConditionTypeVariant10? completionConditionTypeVariant10 = default;
             global::Terra.CompletionConditionTypeVariant11? completionConditionTypeVariant11 = default;
+            global::Terra.CompletionConditionTypeVariant12? completionConditionTypeVariant12 = default;
+            global::Terra.CompletionConditionTypeVariant13? completionConditionTypeVariant13 = default;
+            global::Terra.CompletionConditionTypeVariant14? completionConditionTypeVariant14 = default;
+            global::Terra.CompletionConditionTypeVariant15? completionConditionTypeVariant15 = default;
+            global::Terra.CompletionConditionTypeVariant16? completionConditionTypeVariant16 = default;
+            global::Terra.CompletionConditionTypeVariant17? completionConditionTypeVariant17 = default;
             if (__bestIndex >= 0)
             {
                 if (__bestIndex == 0)
@@ -361,9 +439,111 @@ namespace Terra.JsonConverters
                     {
                     }
                 }
+
+                else if (__bestIndex == 11)
+                {
+                    try
+                    {
+
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant12), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant12> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant12).Name}");
+                        completionConditionTypeVariant12 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+
+                else if (__bestIndex == 12)
+                {
+                    try
+                    {
+
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant13), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant13> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant13).Name}");
+                        completionConditionTypeVariant13 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+
+                else if (__bestIndex == 13)
+                {
+                    try
+                    {
+
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant14), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant14> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant14).Name}");
+                        completionConditionTypeVariant14 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+
+                else if (__bestIndex == 14)
+                {
+                    try
+                    {
+
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant15), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant15> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant15).Name}");
+                        completionConditionTypeVariant15 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+
+                else if (__bestIndex == 15)
+                {
+                    try
+                    {
+
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant16), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant16> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant16).Name}");
+                        completionConditionTypeVariant16 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+
+                else if (__bestIndex == 16)
+                {
+                    try
+                    {
+
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant17), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant17> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant17).Name}");
+                        completionConditionTypeVariant17 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
             }
 
-            if (completionConditionTypeVariant1 == null && completionConditionTypeVariant2 == null && completionConditionTypeVariant3 == null && completionConditionTypeVariant4 == null && completionConditionTypeVariant5 == null && completionConditionTypeVariant6 == null && completionConditionTypeVariant7 == null && completionConditionTypeVariant8 == null && completionConditionTypeVariant9 == null && completionConditionTypeVariant10 == null && completionConditionTypeVariant11 == null)
+            if (completionConditionTypeVariant1 == null && completionConditionTypeVariant2 == null && completionConditionTypeVariant3 == null && completionConditionTypeVariant4 == null && completionConditionTypeVariant5 == null && completionConditionTypeVariant6 == null && completionConditionTypeVariant7 == null && completionConditionTypeVariant8 == null && completionConditionTypeVariant9 == null && completionConditionTypeVariant10 == null && completionConditionTypeVariant11 == null && completionConditionTypeVariant12 == null && completionConditionTypeVariant13 == null && completionConditionTypeVariant14 == null && completionConditionTypeVariant15 == null && completionConditionTypeVariant16 == null && completionConditionTypeVariant17 == null)
             {
                 try
                 {
@@ -380,7 +560,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (completionConditionTypeVariant1 == null && completionConditionTypeVariant2 == null && completionConditionTypeVariant3 == null && completionConditionTypeVariant4 == null && completionConditionTypeVariant5 == null && completionConditionTypeVariant6 == null && completionConditionTypeVariant7 == null && completionConditionTypeVariant8 == null && completionConditionTypeVariant9 == null && completionConditionTypeVariant10 == null && completionConditionTypeVariant11 == null)
+            if (completionConditionTypeVariant1 == null && completionConditionTypeVariant2 == null && completionConditionTypeVariant3 == null && completionConditionTypeVariant4 == null && completionConditionTypeVariant5 == null && completionConditionTypeVariant6 == null && completionConditionTypeVariant7 == null && completionConditionTypeVariant8 == null && completionConditionTypeVariant9 == null && completionConditionTypeVariant10 == null && completionConditionTypeVariant11 == null && completionConditionTypeVariant12 == null && completionConditionTypeVariant13 == null && completionConditionTypeVariant14 == null && completionConditionTypeVariant15 == null && completionConditionTypeVariant16 == null && completionConditionTypeVariant17 == null)
             {
                 try
                 {
@@ -397,7 +577,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (completionConditionTypeVariant1 == null && completionConditionTypeVariant2 == null && completionConditionTypeVariant3 == null && completionConditionTypeVariant4 == null && completionConditionTypeVariant5 == null && completionConditionTypeVariant6 == null && completionConditionTypeVariant7 == null && completionConditionTypeVariant8 == null && completionConditionTypeVariant9 == null && completionConditionTypeVariant10 == null && completionConditionTypeVariant11 == null)
+            if (completionConditionTypeVariant1 == null && completionConditionTypeVariant2 == null && completionConditionTypeVariant3 == null && completionConditionTypeVariant4 == null && completionConditionTypeVariant5 == null && completionConditionTypeVariant6 == null && completionConditionTypeVariant7 == null && completionConditionTypeVariant8 == null && completionConditionTypeVariant9 == null && completionConditionTypeVariant10 == null && completionConditionTypeVariant11 == null && completionConditionTypeVariant12 == null && completionConditionTypeVariant13 == null && completionConditionTypeVariant14 == null && completionConditionTypeVariant15 == null && completionConditionTypeVariant16 == null && completionConditionTypeVariant17 == null)
             {
                 try
                 {
@@ -414,7 +594,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (completionConditionTypeVariant1 == null && completionConditionTypeVariant2 == null && completionConditionTypeVariant3 == null && completionConditionTypeVariant4 == null && completionConditionTypeVariant5 == null && completionConditionTypeVariant6 == null && completionConditionTypeVariant7 == null && completionConditionTypeVariant8 == null && completionConditionTypeVariant9 == null && completionConditionTypeVariant10 == null && completionConditionTypeVariant11 == null)
+            if (completionConditionTypeVariant1 == null && completionConditionTypeVariant2 == null && completionConditionTypeVariant3 == null && completionConditionTypeVariant4 == null && completionConditionTypeVariant5 == null && completionConditionTypeVariant6 == null && completionConditionTypeVariant7 == null && completionConditionTypeVariant8 == null && completionConditionTypeVariant9 == null && completionConditionTypeVariant10 == null && completionConditionTypeVariant11 == null && completionConditionTypeVariant12 == null && completionConditionTypeVariant13 == null && completionConditionTypeVariant14 == null && completionConditionTypeVariant15 == null && completionConditionTypeVariant16 == null && completionConditionTypeVariant17 == null)
             {
                 try
                 {
@@ -431,7 +611,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (completionConditionTypeVariant1 == null && completionConditionTypeVariant2 == null && completionConditionTypeVariant3 == null && completionConditionTypeVariant4 == null && completionConditionTypeVariant5 == null && completionConditionTypeVariant6 == null && completionConditionTypeVariant7 == null && completionConditionTypeVariant8 == null && completionConditionTypeVariant9 == null && completionConditionTypeVariant10 == null && completionConditionTypeVariant11 == null)
+            if (completionConditionTypeVariant1 == null && completionConditionTypeVariant2 == null && completionConditionTypeVariant3 == null && completionConditionTypeVariant4 == null && completionConditionTypeVariant5 == null && completionConditionTypeVariant6 == null && completionConditionTypeVariant7 == null && completionConditionTypeVariant8 == null && completionConditionTypeVariant9 == null && completionConditionTypeVariant10 == null && completionConditionTypeVariant11 == null && completionConditionTypeVariant12 == null && completionConditionTypeVariant13 == null && completionConditionTypeVariant14 == null && completionConditionTypeVariant15 == null && completionConditionTypeVariant16 == null && completionConditionTypeVariant17 == null)
             {
                 try
                 {
@@ -448,7 +628,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (completionConditionTypeVariant1 == null && completionConditionTypeVariant2 == null && completionConditionTypeVariant3 == null && completionConditionTypeVariant4 == null && completionConditionTypeVariant5 == null && completionConditionTypeVariant6 == null && completionConditionTypeVariant7 == null && completionConditionTypeVariant8 == null && completionConditionTypeVariant9 == null && completionConditionTypeVariant10 == null && completionConditionTypeVariant11 == null)
+            if (completionConditionTypeVariant1 == null && completionConditionTypeVariant2 == null && completionConditionTypeVariant3 == null && completionConditionTypeVariant4 == null && completionConditionTypeVariant5 == null && completionConditionTypeVariant6 == null && completionConditionTypeVariant7 == null && completionConditionTypeVariant8 == null && completionConditionTypeVariant9 == null && completionConditionTypeVariant10 == null && completionConditionTypeVariant11 == null && completionConditionTypeVariant12 == null && completionConditionTypeVariant13 == null && completionConditionTypeVariant14 == null && completionConditionTypeVariant15 == null && completionConditionTypeVariant16 == null && completionConditionTypeVariant17 == null)
             {
                 try
                 {
@@ -465,7 +645,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (completionConditionTypeVariant1 == null && completionConditionTypeVariant2 == null && completionConditionTypeVariant3 == null && completionConditionTypeVariant4 == null && completionConditionTypeVariant5 == null && completionConditionTypeVariant6 == null && completionConditionTypeVariant7 == null && completionConditionTypeVariant8 == null && completionConditionTypeVariant9 == null && completionConditionTypeVariant10 == null && completionConditionTypeVariant11 == null)
+            if (completionConditionTypeVariant1 == null && completionConditionTypeVariant2 == null && completionConditionTypeVariant3 == null && completionConditionTypeVariant4 == null && completionConditionTypeVariant5 == null && completionConditionTypeVariant6 == null && completionConditionTypeVariant7 == null && completionConditionTypeVariant8 == null && completionConditionTypeVariant9 == null && completionConditionTypeVariant10 == null && completionConditionTypeVariant11 == null && completionConditionTypeVariant12 == null && completionConditionTypeVariant13 == null && completionConditionTypeVariant14 == null && completionConditionTypeVariant15 == null && completionConditionTypeVariant16 == null && completionConditionTypeVariant17 == null)
             {
                 try
                 {
@@ -482,7 +662,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (completionConditionTypeVariant1 == null && completionConditionTypeVariant2 == null && completionConditionTypeVariant3 == null && completionConditionTypeVariant4 == null && completionConditionTypeVariant5 == null && completionConditionTypeVariant6 == null && completionConditionTypeVariant7 == null && completionConditionTypeVariant8 == null && completionConditionTypeVariant9 == null && completionConditionTypeVariant10 == null && completionConditionTypeVariant11 == null)
+            if (completionConditionTypeVariant1 == null && completionConditionTypeVariant2 == null && completionConditionTypeVariant3 == null && completionConditionTypeVariant4 == null && completionConditionTypeVariant5 == null && completionConditionTypeVariant6 == null && completionConditionTypeVariant7 == null && completionConditionTypeVariant8 == null && completionConditionTypeVariant9 == null && completionConditionTypeVariant10 == null && completionConditionTypeVariant11 == null && completionConditionTypeVariant12 == null && completionConditionTypeVariant13 == null && completionConditionTypeVariant14 == null && completionConditionTypeVariant15 == null && completionConditionTypeVariant16 == null && completionConditionTypeVariant17 == null)
             {
                 try
                 {
@@ -499,7 +679,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (completionConditionTypeVariant1 == null && completionConditionTypeVariant2 == null && completionConditionTypeVariant3 == null && completionConditionTypeVariant4 == null && completionConditionTypeVariant5 == null && completionConditionTypeVariant6 == null && completionConditionTypeVariant7 == null && completionConditionTypeVariant8 == null && completionConditionTypeVariant9 == null && completionConditionTypeVariant10 == null && completionConditionTypeVariant11 == null)
+            if (completionConditionTypeVariant1 == null && completionConditionTypeVariant2 == null && completionConditionTypeVariant3 == null && completionConditionTypeVariant4 == null && completionConditionTypeVariant5 == null && completionConditionTypeVariant6 == null && completionConditionTypeVariant7 == null && completionConditionTypeVariant8 == null && completionConditionTypeVariant9 == null && completionConditionTypeVariant10 == null && completionConditionTypeVariant11 == null && completionConditionTypeVariant12 == null && completionConditionTypeVariant13 == null && completionConditionTypeVariant14 == null && completionConditionTypeVariant15 == null && completionConditionTypeVariant16 == null && completionConditionTypeVariant17 == null)
             {
                 try
                 {
@@ -516,7 +696,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (completionConditionTypeVariant1 == null && completionConditionTypeVariant2 == null && completionConditionTypeVariant3 == null && completionConditionTypeVariant4 == null && completionConditionTypeVariant5 == null && completionConditionTypeVariant6 == null && completionConditionTypeVariant7 == null && completionConditionTypeVariant8 == null && completionConditionTypeVariant9 == null && completionConditionTypeVariant10 == null && completionConditionTypeVariant11 == null)
+            if (completionConditionTypeVariant1 == null && completionConditionTypeVariant2 == null && completionConditionTypeVariant3 == null && completionConditionTypeVariant4 == null && completionConditionTypeVariant5 == null && completionConditionTypeVariant6 == null && completionConditionTypeVariant7 == null && completionConditionTypeVariant8 == null && completionConditionTypeVariant9 == null && completionConditionTypeVariant10 == null && completionConditionTypeVariant11 == null && completionConditionTypeVariant12 == null && completionConditionTypeVariant13 == null && completionConditionTypeVariant14 == null && completionConditionTypeVariant15 == null && completionConditionTypeVariant16 == null && completionConditionTypeVariant17 == null)
             {
                 try
                 {
@@ -533,7 +713,7 @@ namespace Terra.JsonConverters
                 }
             }
 
-            if (completionConditionTypeVariant1 == null && completionConditionTypeVariant2 == null && completionConditionTypeVariant3 == null && completionConditionTypeVariant4 == null && completionConditionTypeVariant5 == null && completionConditionTypeVariant6 == null && completionConditionTypeVariant7 == null && completionConditionTypeVariant8 == null && completionConditionTypeVariant9 == null && completionConditionTypeVariant10 == null && completionConditionTypeVariant11 == null)
+            if (completionConditionTypeVariant1 == null && completionConditionTypeVariant2 == null && completionConditionTypeVariant3 == null && completionConditionTypeVariant4 == null && completionConditionTypeVariant5 == null && completionConditionTypeVariant6 == null && completionConditionTypeVariant7 == null && completionConditionTypeVariant8 == null && completionConditionTypeVariant9 == null && completionConditionTypeVariant10 == null && completionConditionTypeVariant11 == null && completionConditionTypeVariant12 == null && completionConditionTypeVariant13 == null && completionConditionTypeVariant14 == null && completionConditionTypeVariant15 == null && completionConditionTypeVariant16 == null && completionConditionTypeVariant17 == null)
             {
                 try
                 {
@@ -541,6 +721,108 @@ namespace Terra.JsonConverters
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant11), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant11> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant11).Name}");
                     completionConditionTypeVariant11 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (completionConditionTypeVariant1 == null && completionConditionTypeVariant2 == null && completionConditionTypeVariant3 == null && completionConditionTypeVariant4 == null && completionConditionTypeVariant5 == null && completionConditionTypeVariant6 == null && completionConditionTypeVariant7 == null && completionConditionTypeVariant8 == null && completionConditionTypeVariant9 == null && completionConditionTypeVariant10 == null && completionConditionTypeVariant11 == null && completionConditionTypeVariant12 == null && completionConditionTypeVariant13 == null && completionConditionTypeVariant14 == null && completionConditionTypeVariant15 == null && completionConditionTypeVariant16 == null && completionConditionTypeVariant17 == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant12), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant12> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant12).Name}");
+                    completionConditionTypeVariant12 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (completionConditionTypeVariant1 == null && completionConditionTypeVariant2 == null && completionConditionTypeVariant3 == null && completionConditionTypeVariant4 == null && completionConditionTypeVariant5 == null && completionConditionTypeVariant6 == null && completionConditionTypeVariant7 == null && completionConditionTypeVariant8 == null && completionConditionTypeVariant9 == null && completionConditionTypeVariant10 == null && completionConditionTypeVariant11 == null && completionConditionTypeVariant12 == null && completionConditionTypeVariant13 == null && completionConditionTypeVariant14 == null && completionConditionTypeVariant15 == null && completionConditionTypeVariant16 == null && completionConditionTypeVariant17 == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant13), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant13> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant13).Name}");
+                    completionConditionTypeVariant13 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (completionConditionTypeVariant1 == null && completionConditionTypeVariant2 == null && completionConditionTypeVariant3 == null && completionConditionTypeVariant4 == null && completionConditionTypeVariant5 == null && completionConditionTypeVariant6 == null && completionConditionTypeVariant7 == null && completionConditionTypeVariant8 == null && completionConditionTypeVariant9 == null && completionConditionTypeVariant10 == null && completionConditionTypeVariant11 == null && completionConditionTypeVariant12 == null && completionConditionTypeVariant13 == null && completionConditionTypeVariant14 == null && completionConditionTypeVariant15 == null && completionConditionTypeVariant16 == null && completionConditionTypeVariant17 == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant14), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant14> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant14).Name}");
+                    completionConditionTypeVariant14 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (completionConditionTypeVariant1 == null && completionConditionTypeVariant2 == null && completionConditionTypeVariant3 == null && completionConditionTypeVariant4 == null && completionConditionTypeVariant5 == null && completionConditionTypeVariant6 == null && completionConditionTypeVariant7 == null && completionConditionTypeVariant8 == null && completionConditionTypeVariant9 == null && completionConditionTypeVariant10 == null && completionConditionTypeVariant11 == null && completionConditionTypeVariant12 == null && completionConditionTypeVariant13 == null && completionConditionTypeVariant14 == null && completionConditionTypeVariant15 == null && completionConditionTypeVariant16 == null && completionConditionTypeVariant17 == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant15), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant15> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant15).Name}");
+                    completionConditionTypeVariant15 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (completionConditionTypeVariant1 == null && completionConditionTypeVariant2 == null && completionConditionTypeVariant3 == null && completionConditionTypeVariant4 == null && completionConditionTypeVariant5 == null && completionConditionTypeVariant6 == null && completionConditionTypeVariant7 == null && completionConditionTypeVariant8 == null && completionConditionTypeVariant9 == null && completionConditionTypeVariant10 == null && completionConditionTypeVariant11 == null && completionConditionTypeVariant12 == null && completionConditionTypeVariant13 == null && completionConditionTypeVariant14 == null && completionConditionTypeVariant15 == null && completionConditionTypeVariant16 == null && completionConditionTypeVariant17 == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant16), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant16> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant16).Name}");
+                    completionConditionTypeVariant16 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (completionConditionTypeVariant1 == null && completionConditionTypeVariant2 == null && completionConditionTypeVariant3 == null && completionConditionTypeVariant4 == null && completionConditionTypeVariant5 == null && completionConditionTypeVariant6 == null && completionConditionTypeVariant7 == null && completionConditionTypeVariant8 == null && completionConditionTypeVariant9 == null && completionConditionTypeVariant10 == null && completionConditionTypeVariant11 == null && completionConditionTypeVariant12 == null && completionConditionTypeVariant13 == null && completionConditionTypeVariant14 == null && completionConditionTypeVariant15 == null && completionConditionTypeVariant16 == null && completionConditionTypeVariant17 == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant17), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant17> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant17).Name}");
+                    completionConditionTypeVariant17 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -571,7 +853,19 @@ namespace Terra.JsonConverters
 
                 completionConditionTypeVariant10,
 
-                completionConditionTypeVariant11
+                completionConditionTypeVariant11,
+
+                completionConditionTypeVariant12,
+
+                completionConditionTypeVariant13,
+
+                completionConditionTypeVariant14,
+
+                completionConditionTypeVariant15,
+
+                completionConditionTypeVariant16,
+
+                completionConditionTypeVariant17
                 );
 
             return __value;
@@ -651,6 +945,42 @@ namespace Terra.JsonConverters
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant11), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant11> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant11).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.CompletionConditionTypeVariant11!.Value, typeInfo);
+            }
+            else if (value.IsCompletionConditionTypeVariant12)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant12), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant12> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant12).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CompletionConditionTypeVariant12!.Value, typeInfo);
+            }
+            else if (value.IsCompletionConditionTypeVariant13)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant13), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant13> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant13).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CompletionConditionTypeVariant13!.Value, typeInfo);
+            }
+            else if (value.IsCompletionConditionTypeVariant14)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant14), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant14> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant14).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CompletionConditionTypeVariant14!.Value, typeInfo);
+            }
+            else if (value.IsCompletionConditionTypeVariant15)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant15), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant15> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant15).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CompletionConditionTypeVariant15!.Value, typeInfo);
+            }
+            else if (value.IsCompletionConditionTypeVariant16)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant16), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant16> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant16).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CompletionConditionTypeVariant16!.Value, typeInfo);
+            }
+            else if (value.IsCompletionConditionTypeVariant17)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant17), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant17> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant17).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CompletionConditionTypeVariant17!.Value, typeInfo);
             }
         }
     }
