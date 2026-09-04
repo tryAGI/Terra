@@ -21,15 +21,19 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutTemplate))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(object))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSport), TypeInfoPropertyName = "WorkoutSport2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.EnvironmentType))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(double))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.StepBlock>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StepBlock))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSport), TypeInfoPropertyName = "WorkoutSport2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.PlannedWorkout))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.PlannedWorkoutSummary))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.CoercionWarning>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CoercionWarning))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.PlannedWorkoutBody))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.PlannedWorkoutSport), TypeInfoPropertyName = "PlannedWorkoutSport2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.Problem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WidgetSessionParams))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.TerraUser))]
@@ -510,10 +514,6 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthRangeOfMotionVariant4), TypeInfoPropertyName = "StrengthRangeOfMotionVariant42")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthRangeOfMotionVariant5), TypeInfoPropertyName = "StrengthRangeOfMotionVariant52")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthRangeOfMotionVariant6), TypeInfoPropertyName = "StrengthRangeOfMotionVariant62")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthRangeOfMotionVariant7), TypeInfoPropertyName = "StrengthRangeOfMotionVariant72")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthProgramme), TypeInfoPropertyName = "StrengthProgramme2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthProgrammeVariant1), TypeInfoPropertyName = "StrengthProgrammeVariant12")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthProgrammeVariant2), TypeInfoPropertyName = "StrengthProgrammeVariant22")]
     internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -526,6 +526,10 @@ namespace Terra
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthRangeOfMotionVariant7), TypeInfoPropertyName = "StrengthRangeOfMotionVariant72")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthProgramme), TypeInfoPropertyName = "StrengthProgramme2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthProgrammeVariant1), TypeInfoPropertyName = "StrengthProgrammeVariant12")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthProgrammeVariant2), TypeInfoPropertyName = "StrengthProgrammeVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthExerciseModifiers))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMuscle), TypeInfoPropertyName = "StrengthMuscle2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMuscleVariant1), TypeInfoPropertyName = "StrengthMuscleVariant12_3")]
@@ -628,26 +632,11 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SleepHypnogramSample))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OtherSleepDurations))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.SleepHypnogramSample>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant1), TypeInfoPropertyName = "WorkoutSportVariant12_3")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant2), TypeInfoPropertyName = "WorkoutSportVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant3), TypeInfoPropertyName = "WorkoutSportVariant32")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant4), TypeInfoPropertyName = "WorkoutSportVariant42")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant5), TypeInfoPropertyName = "WorkoutSportVariant52")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant6), TypeInfoPropertyName = "WorkoutSportVariant62")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant7), TypeInfoPropertyName = "WorkoutSportVariant72")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant8), TypeInfoPropertyName = "WorkoutSportVariant82")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant9), TypeInfoPropertyName = "WorkoutSportVariant92")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant10), TypeInfoPropertyName = "WorkoutSportVariant102")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant11), TypeInfoPropertyName = "WorkoutSportVariant112")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant12), TypeInfoPropertyName = "WorkoutSportVariant122")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant13), TypeInfoPropertyName = "WorkoutSportVariant132")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant14), TypeInfoPropertyName = "WorkoutSportVariant142")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant15), TypeInfoPropertyName = "WorkoutSportVariant152")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.EnvironmentTypeVariant1), TypeInfoPropertyName = "EnvironmentTypeVariant12")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.EnvironmentTypeVariant2), TypeInfoPropertyName = "EnvironmentTypeVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.EnvironmentTypeVariant3), TypeInfoPropertyName = "EnvironmentTypeVariant32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionType), TypeInfoPropertyName = "CompletionConditionType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant1), TypeInfoPropertyName = "CompletionConditionTypeVariant12")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant1), TypeInfoPropertyName = "CompletionConditionTypeVariant12_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant2), TypeInfoPropertyName = "CompletionConditionTypeVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant3), TypeInfoPropertyName = "CompletionConditionTypeVariant32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant4), TypeInfoPropertyName = "CompletionConditionTypeVariant42")]
@@ -658,9 +647,15 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant9), TypeInfoPropertyName = "CompletionConditionTypeVariant92")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant10), TypeInfoPropertyName = "CompletionConditionTypeVariant102")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant11), TypeInfoPropertyName = "CompletionConditionTypeVariant112")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant12), TypeInfoPropertyName = "CompletionConditionTypeVariant122")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant13), TypeInfoPropertyName = "CompletionConditionTypeVariant132")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant14), TypeInfoPropertyName = "CompletionConditionTypeVariant142")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant15), TypeInfoPropertyName = "CompletionConditionTypeVariant152")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant16), TypeInfoPropertyName = "CompletionConditionTypeVariant162")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant17), TypeInfoPropertyName = "CompletionConditionTypeVariant172")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionCondition))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetType), TypeInfoPropertyName = "WorkoutStepTargetType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant1), TypeInfoPropertyName = "WorkoutStepTargetTypeVariant12")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant1), TypeInfoPropertyName = "WorkoutStepTargetTypeVariant12_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant2), TypeInfoPropertyName = "WorkoutStepTargetTypeVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant3), TypeInfoPropertyName = "WorkoutStepTargetTypeVariant32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant4), TypeInfoPropertyName = "WorkoutStepTargetTypeVariant42")]
@@ -671,6 +666,14 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant9), TypeInfoPropertyName = "WorkoutStepTargetTypeVariant92")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant10), TypeInfoPropertyName = "WorkoutStepTargetTypeVariant102")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant11), TypeInfoPropertyName = "WorkoutStepTargetTypeVariant112")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant12), TypeInfoPropertyName = "WorkoutStepTargetTypeVariant122")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant13), TypeInfoPropertyName = "WorkoutStepTargetTypeVariant132")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant14), TypeInfoPropertyName = "WorkoutStepTargetTypeVariant142")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant15), TypeInfoPropertyName = "WorkoutStepTargetTypeVariant152")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant16), TypeInfoPropertyName = "WorkoutStepTargetTypeVariant162")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant17), TypeInfoPropertyName = "WorkoutStepTargetTypeVariant172")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant18), TypeInfoPropertyName = "WorkoutStepTargetTypeVariant182")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant19), TypeInfoPropertyName = "WorkoutStepTargetTypeVariant192")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.IntensityTarget))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepIntensity), TypeInfoPropertyName = "WorkoutStepIntensity2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepIntensityVariant1), TypeInfoPropertyName = "WorkoutStepIntensityVariant12")]
@@ -711,7 +714,23 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.IntensityTarget>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.StepControl>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.WorkoutStep>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant1), TypeInfoPropertyName = "WorkoutSportVariant12_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant2), TypeInfoPropertyName = "WorkoutSportVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant3), TypeInfoPropertyName = "WorkoutSportVariant32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant4), TypeInfoPropertyName = "WorkoutSportVariant42")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant5), TypeInfoPropertyName = "WorkoutSportVariant52")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant6), TypeInfoPropertyName = "WorkoutSportVariant62")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant7), TypeInfoPropertyName = "WorkoutSportVariant72")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant8), TypeInfoPropertyName = "WorkoutSportVariant82")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant9), TypeInfoPropertyName = "WorkoutSportVariant92")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant10), TypeInfoPropertyName = "WorkoutSportVariant102")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant11), TypeInfoPropertyName = "WorkoutSportVariant112")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant12), TypeInfoPropertyName = "WorkoutSportVariant122")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant13), TypeInfoPropertyName = "WorkoutSportVariant132")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant14), TypeInfoPropertyName = "WorkoutSportVariant142")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant15), TypeInfoPropertyName = "WorkoutSportVariant152")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AthleteMetrics))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.PlannedWorkoutSportEnum), TypeInfoPropertyName = "PlannedWorkoutSportEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.PlannedWorkoutDetailsMetadata))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.PlannedWorkoutDetailsStepDuration))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.PlannedWorkoutDetailsStepTarget))]
@@ -822,6 +841,7 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSport?), TypeInfoPropertyName = "NullableWorkoutSport2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.PlannedWorkoutSport?), TypeInfoPropertyName = "NullablePlannedWorkoutSport2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.DataSentToWebhookStatus?), TypeInfoPropertyName = "NullableDataSentToWebhookStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportWebhook?), TypeInfoPropertyName = "NullableLabReportWebhook2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WebhookEventType?), TypeInfoPropertyName = "NullableWebhookEventType2")]
@@ -1006,6 +1026,18 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTarget?), TypeInfoPropertyName = "NullableStrengthTarget2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTargetVariant1?), TypeInfoPropertyName = "NullableStrengthTargetVariant12_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTargetVariant2?), TypeInfoPropertyName = "NullableStrengthTargetVariant22_3")]
+    internal sealed partial class SourceGenerationContextChunk1 : global::System.Text.Json.Serialization.JsonSerializerContext
+    {
+    }
+
+    /// <summary>
+    ///
+    /// </summary>
+    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+        Converters = new global::System.Type[]
+        {
+        })]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTargetVariant3?), TypeInfoPropertyName = "NullableStrengthTargetVariant32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTargetVariant4?), TypeInfoPropertyName = "NullableStrengthTargetVariant42")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTargetVariant5?), TypeInfoPropertyName = "NullableStrengthTargetVariant52")]
@@ -1026,18 +1058,6 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTargetVariant20?), TypeInfoPropertyName = "NullableStrengthTargetVariant202")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTargetVariant21?), TypeInfoPropertyName = "NullableStrengthTargetVariant212")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTargetVariant22?), TypeInfoPropertyName = "NullableStrengthTargetVariant222")]
-    internal sealed partial class SourceGenerationContextChunk1 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTargetVariant23?), TypeInfoPropertyName = "NullableStrengthTargetVariant232")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTargetVariant24?), TypeInfoPropertyName = "NullableStrengthTargetVariant242")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTargetVariant25?), TypeInfoPropertyName = "NullableStrengthTargetVariant252")]
@@ -1193,26 +1213,11 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthSetTypeVariant5?), TypeInfoPropertyName = "NullableStrengthSetTypeVariant52")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthSetTypeVariant6?), TypeInfoPropertyName = "NullableStrengthSetTypeVariant62")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthSetTypeVariant7?), TypeInfoPropertyName = "NullableStrengthSetTypeVariant72")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant1?), TypeInfoPropertyName = "NullableWorkoutSportVariant12_3")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant2?), TypeInfoPropertyName = "NullableWorkoutSportVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant3?), TypeInfoPropertyName = "NullableWorkoutSportVariant32")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant4?), TypeInfoPropertyName = "NullableWorkoutSportVariant42")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant5?), TypeInfoPropertyName = "NullableWorkoutSportVariant52")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant6?), TypeInfoPropertyName = "NullableWorkoutSportVariant62")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant7?), TypeInfoPropertyName = "NullableWorkoutSportVariant72")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant8?), TypeInfoPropertyName = "NullableWorkoutSportVariant82")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant9?), TypeInfoPropertyName = "NullableWorkoutSportVariant92")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant10?), TypeInfoPropertyName = "NullableWorkoutSportVariant102")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant11?), TypeInfoPropertyName = "NullableWorkoutSportVariant112")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant12?), TypeInfoPropertyName = "NullableWorkoutSportVariant122")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant13?), TypeInfoPropertyName = "NullableWorkoutSportVariant132")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant14?), TypeInfoPropertyName = "NullableWorkoutSportVariant142")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant15?), TypeInfoPropertyName = "NullableWorkoutSportVariant152")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.EnvironmentTypeVariant1?), TypeInfoPropertyName = "NullableEnvironmentTypeVariant12")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.EnvironmentTypeVariant2?), TypeInfoPropertyName = "NullableEnvironmentTypeVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.EnvironmentTypeVariant3?), TypeInfoPropertyName = "NullableEnvironmentTypeVariant32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionType?), TypeInfoPropertyName = "NullableCompletionConditionType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant1?), TypeInfoPropertyName = "NullableCompletionConditionTypeVariant12")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant1?), TypeInfoPropertyName = "NullableCompletionConditionTypeVariant12_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant2?), TypeInfoPropertyName = "NullableCompletionConditionTypeVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant3?), TypeInfoPropertyName = "NullableCompletionConditionTypeVariant32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant4?), TypeInfoPropertyName = "NullableCompletionConditionTypeVariant42")]
@@ -1223,8 +1228,14 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant9?), TypeInfoPropertyName = "NullableCompletionConditionTypeVariant92")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant10?), TypeInfoPropertyName = "NullableCompletionConditionTypeVariant102")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant11?), TypeInfoPropertyName = "NullableCompletionConditionTypeVariant112")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant12?), TypeInfoPropertyName = "NullableCompletionConditionTypeVariant122")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant13?), TypeInfoPropertyName = "NullableCompletionConditionTypeVariant132")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant14?), TypeInfoPropertyName = "NullableCompletionConditionTypeVariant142")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant15?), TypeInfoPropertyName = "NullableCompletionConditionTypeVariant152")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant16?), TypeInfoPropertyName = "NullableCompletionConditionTypeVariant162")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CompletionConditionTypeVariant17?), TypeInfoPropertyName = "NullableCompletionConditionTypeVariant172")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetType?), TypeInfoPropertyName = "NullableWorkoutStepTargetType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant1?), TypeInfoPropertyName = "NullableWorkoutStepTargetTypeVariant12")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant1?), TypeInfoPropertyName = "NullableWorkoutStepTargetTypeVariant12_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant2?), TypeInfoPropertyName = "NullableWorkoutStepTargetTypeVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant3?), TypeInfoPropertyName = "NullableWorkoutStepTargetTypeVariant32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant4?), TypeInfoPropertyName = "NullableWorkoutStepTargetTypeVariant42")]
@@ -1235,6 +1246,14 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant9?), TypeInfoPropertyName = "NullableWorkoutStepTargetTypeVariant92")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant10?), TypeInfoPropertyName = "NullableWorkoutStepTargetTypeVariant102")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant11?), TypeInfoPropertyName = "NullableWorkoutStepTargetTypeVariant112")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant12?), TypeInfoPropertyName = "NullableWorkoutStepTargetTypeVariant122")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant13?), TypeInfoPropertyName = "NullableWorkoutStepTargetTypeVariant132")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant14?), TypeInfoPropertyName = "NullableWorkoutStepTargetTypeVariant142")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant15?), TypeInfoPropertyName = "NullableWorkoutStepTargetTypeVariant152")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant16?), TypeInfoPropertyName = "NullableWorkoutStepTargetTypeVariant162")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant17?), TypeInfoPropertyName = "NullableWorkoutStepTargetTypeVariant172")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant18?), TypeInfoPropertyName = "NullableWorkoutStepTargetTypeVariant182")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepTargetTypeVariant19?), TypeInfoPropertyName = "NullableWorkoutStepTargetTypeVariant192")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepIntensity?), TypeInfoPropertyName = "NullableWorkoutStepIntensity2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepIntensityVariant1?), TypeInfoPropertyName = "NullableWorkoutStepIntensityVariant12")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutStepIntensityVariant2?), TypeInfoPropertyName = "NullableWorkoutStepIntensityVariant22")]
@@ -1266,6 +1285,22 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SwimEquipmentTypeVariant4?), TypeInfoPropertyName = "NullableSwimEquipmentTypeVariant42")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SwimEquipmentTypeVariant5?), TypeInfoPropertyName = "NullableSwimEquipmentTypeVariant52")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SwimEquipmentTypeVariant6?), TypeInfoPropertyName = "NullableSwimEquipmentTypeVariant62")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant1?), TypeInfoPropertyName = "NullableWorkoutSportVariant12_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant2?), TypeInfoPropertyName = "NullableWorkoutSportVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant3?), TypeInfoPropertyName = "NullableWorkoutSportVariant32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant4?), TypeInfoPropertyName = "NullableWorkoutSportVariant42")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant5?), TypeInfoPropertyName = "NullableWorkoutSportVariant52")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant6?), TypeInfoPropertyName = "NullableWorkoutSportVariant62")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant7?), TypeInfoPropertyName = "NullableWorkoutSportVariant72")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant8?), TypeInfoPropertyName = "NullableWorkoutSportVariant82")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant9?), TypeInfoPropertyName = "NullableWorkoutSportVariant92")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant10?), TypeInfoPropertyName = "NullableWorkoutSportVariant102")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant11?), TypeInfoPropertyName = "NullableWorkoutSportVariant112")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant12?), TypeInfoPropertyName = "NullableWorkoutSportVariant122")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant13?), TypeInfoPropertyName = "NullableWorkoutSportVariant132")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant14?), TypeInfoPropertyName = "NullableWorkoutSportVariant142")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSportVariant15?), TypeInfoPropertyName = "NullableWorkoutSportVariant152")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.PlannedWorkoutSportEnum?), TypeInfoPropertyName = "NullablePlannedWorkoutSportEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthSuccessEventType?), TypeInfoPropertyName = "NullableAuthSuccessEventType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthSuccessEventStatus?), TypeInfoPropertyName = "NullableAuthSuccessEventStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthErrorEventType?), TypeInfoPropertyName = "NullableAuthErrorEventType2")]
@@ -1317,6 +1352,7 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserListResponseStatus?), TypeInfoPropertyName = "NullableUserListResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.IntegrationsListResponseStatus?), TypeInfoPropertyName = "NullableIntegrationsListResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.StepBlock>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.CoercionWarning>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.DrinkSample>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.Meal>))]
@@ -1450,7 +1486,6 @@ namespace Terra
             options.Converters.Add(new global::Terra.JsonConverters.StrengthSourceJsonConverter());
             options.Converters.Add(new global::Terra.JsonConverters.StrengthLoadTypeJsonConverter());
             options.Converters.Add(new global::Terra.JsonConverters.StrengthSetTypeJsonConverter());
-            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportJsonConverter());
             options.Converters.Add(new global::Terra.JsonConverters.EnvironmentTypeJsonConverter());
             options.Converters.Add(new global::Terra.JsonConverters.CompletionConditionTypeJsonConverter());
             options.Converters.Add(new global::Terra.JsonConverters.WorkoutStepTargetTypeJsonConverter());
@@ -1460,6 +1495,8 @@ namespace Terra
             options.Converters.Add(new global::Terra.JsonConverters.SwimStrokeTypeJsonConverter());
             options.Converters.Add(new global::Terra.JsonConverters.DrillTypeJsonConverter());
             options.Converters.Add(new global::Terra.JsonConverters.SwimEquipmentTypeJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.WorkoutSportJsonConverter());
+            options.Converters.Add(new global::Terra.JsonConverters.PlannedWorkoutSportJsonConverter());
             options.Converters.Add(new global::Terra.JsonConverters.WebhookEventTypeJsonConverter());
             options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<int?, global::System.DateTime?>());
             options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<int?, global::System.DateTime?>());
@@ -2860,66 +2897,6 @@ namespace Terra
 
                     || typeToConvert == typeof(global::Terra.StrengthSetTypeVariant7?)
 
-                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant1)
-
-                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant1?)
-
-                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant2)
-
-                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant2?)
-
-                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant3)
-
-                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant3?)
-
-                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant4)
-
-                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant4?)
-
-                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant5)
-
-                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant5?)
-
-                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant6)
-
-                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant6?)
-
-                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant7)
-
-                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant7?)
-
-                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant8)
-
-                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant8?)
-
-                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant9)
-
-                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant9?)
-
-                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant10)
-
-                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant10?)
-
-                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant11)
-
-                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant11?)
-
-                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant12)
-
-                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant12?)
-
-                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant13)
-
-                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant13?)
-
-                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant14)
-
-                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant14?)
-
-                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant15)
-
-                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant15?)
-
                     || typeToConvert == typeof(global::Terra.EnvironmentTypeVariant1)
 
                     || typeToConvert == typeof(global::Terra.EnvironmentTypeVariant1?)
@@ -2976,6 +2953,30 @@ namespace Terra
 
                     || typeToConvert == typeof(global::Terra.CompletionConditionTypeVariant11?)
 
+                    || typeToConvert == typeof(global::Terra.CompletionConditionTypeVariant12)
+
+                    || typeToConvert == typeof(global::Terra.CompletionConditionTypeVariant12?)
+
+                    || typeToConvert == typeof(global::Terra.CompletionConditionTypeVariant13)
+
+                    || typeToConvert == typeof(global::Terra.CompletionConditionTypeVariant13?)
+
+                    || typeToConvert == typeof(global::Terra.CompletionConditionTypeVariant14)
+
+                    || typeToConvert == typeof(global::Terra.CompletionConditionTypeVariant14?)
+
+                    || typeToConvert == typeof(global::Terra.CompletionConditionTypeVariant15)
+
+                    || typeToConvert == typeof(global::Terra.CompletionConditionTypeVariant15?)
+
+                    || typeToConvert == typeof(global::Terra.CompletionConditionTypeVariant16)
+
+                    || typeToConvert == typeof(global::Terra.CompletionConditionTypeVariant16?)
+
+                    || typeToConvert == typeof(global::Terra.CompletionConditionTypeVariant17)
+
+                    || typeToConvert == typeof(global::Terra.CompletionConditionTypeVariant17?)
+
                     || typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant1)
 
                     || typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant1?)
@@ -3019,6 +3020,38 @@ namespace Terra
                     || typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant11)
 
                     || typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant11?)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant12)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant12?)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant13)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant13?)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant14)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant14?)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant15)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant15?)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant16)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant16?)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant17)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant17?)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant18)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant18?)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant19)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant19?)
 
                     || typeToConvert == typeof(global::Terra.WorkoutStepIntensityVariant1)
 
@@ -3119,6 +3152,70 @@ namespace Terra
                     || typeToConvert == typeof(global::Terra.SwimEquipmentTypeVariant6)
 
                     || typeToConvert == typeof(global::Terra.SwimEquipmentTypeVariant6?)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant1)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant1?)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant2)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant2?)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant3)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant3?)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant4)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant4?)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant5)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant5?)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant6)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant6?)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant7)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant7?)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant8)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant8?)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant9)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant9?)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant10)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant10?)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant11)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant11?)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant12)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant12?)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant13)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant13?)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant14)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant14?)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant15)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutSportVariant15?)
+
+                    || typeToConvert == typeof(global::Terra.PlannedWorkoutSportEnum)
+
+                    || typeToConvert == typeof(global::Terra.PlannedWorkoutSportEnum?)
 
                     || typeToConvert == typeof(global::Terra.AuthSuccessEventType)
 
@@ -6675,156 +6772,6 @@ namespace Terra
                     return new global::Terra.JsonConverters.StrengthSetTypeVariant7NullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant1))
-                {
-                    return new global::Terra.JsonConverters.WorkoutSportVariant1JsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant1?))
-                {
-                    return new global::Terra.JsonConverters.WorkoutSportVariant1NullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant2))
-                {
-                    return new global::Terra.JsonConverters.WorkoutSportVariant2JsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant2?))
-                {
-                    return new global::Terra.JsonConverters.WorkoutSportVariant2NullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant3))
-                {
-                    return new global::Terra.JsonConverters.WorkoutSportVariant3JsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant3?))
-                {
-                    return new global::Terra.JsonConverters.WorkoutSportVariant3NullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant4))
-                {
-                    return new global::Terra.JsonConverters.WorkoutSportVariant4JsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant4?))
-                {
-                    return new global::Terra.JsonConverters.WorkoutSportVariant4NullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant5))
-                {
-                    return new global::Terra.JsonConverters.WorkoutSportVariant5JsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant5?))
-                {
-                    return new global::Terra.JsonConverters.WorkoutSportVariant5NullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant6))
-                {
-                    return new global::Terra.JsonConverters.WorkoutSportVariant6JsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant6?))
-                {
-                    return new global::Terra.JsonConverters.WorkoutSportVariant6NullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant7))
-                {
-                    return new global::Terra.JsonConverters.WorkoutSportVariant7JsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant7?))
-                {
-                    return new global::Terra.JsonConverters.WorkoutSportVariant7NullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant8))
-                {
-                    return new global::Terra.JsonConverters.WorkoutSportVariant8JsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant8?))
-                {
-                    return new global::Terra.JsonConverters.WorkoutSportVariant8NullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant9))
-                {
-                    return new global::Terra.JsonConverters.WorkoutSportVariant9JsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant9?))
-                {
-                    return new global::Terra.JsonConverters.WorkoutSportVariant9NullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant10))
-                {
-                    return new global::Terra.JsonConverters.WorkoutSportVariant10JsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant10?))
-                {
-                    return new global::Terra.JsonConverters.WorkoutSportVariant10NullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant11))
-                {
-                    return new global::Terra.JsonConverters.WorkoutSportVariant11JsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant11?))
-                {
-                    return new global::Terra.JsonConverters.WorkoutSportVariant11NullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant12))
-                {
-                    return new global::Terra.JsonConverters.WorkoutSportVariant12JsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant12?))
-                {
-                    return new global::Terra.JsonConverters.WorkoutSportVariant12NullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant13))
-                {
-                    return new global::Terra.JsonConverters.WorkoutSportVariant13JsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant13?))
-                {
-                    return new global::Terra.JsonConverters.WorkoutSportVariant13NullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant14))
-                {
-                    return new global::Terra.JsonConverters.WorkoutSportVariant14JsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant14?))
-                {
-                    return new global::Terra.JsonConverters.WorkoutSportVariant14NullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant15))
-                {
-                    return new global::Terra.JsonConverters.WorkoutSportVariant15JsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant15?))
-                {
-                    return new global::Terra.JsonConverters.WorkoutSportVariant15NullableJsonConverter();
-                }
-
                 if (typeToConvert == typeof(global::Terra.EnvironmentTypeVariant1))
                 {
                     return new global::Terra.JsonConverters.EnvironmentTypeVariant1JsonConverter();
@@ -6965,6 +6912,66 @@ namespace Terra
                     return new global::Terra.JsonConverters.CompletionConditionTypeVariant11NullableJsonConverter();
                 }
 
+                if (typeToConvert == typeof(global::Terra.CompletionConditionTypeVariant12))
+                {
+                    return new global::Terra.JsonConverters.CompletionConditionTypeVariant12JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.CompletionConditionTypeVariant12?))
+                {
+                    return new global::Terra.JsonConverters.CompletionConditionTypeVariant12NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.CompletionConditionTypeVariant13))
+                {
+                    return new global::Terra.JsonConverters.CompletionConditionTypeVariant13JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.CompletionConditionTypeVariant13?))
+                {
+                    return new global::Terra.JsonConverters.CompletionConditionTypeVariant13NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.CompletionConditionTypeVariant14))
+                {
+                    return new global::Terra.JsonConverters.CompletionConditionTypeVariant14JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.CompletionConditionTypeVariant14?))
+                {
+                    return new global::Terra.JsonConverters.CompletionConditionTypeVariant14NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.CompletionConditionTypeVariant15))
+                {
+                    return new global::Terra.JsonConverters.CompletionConditionTypeVariant15JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.CompletionConditionTypeVariant15?))
+                {
+                    return new global::Terra.JsonConverters.CompletionConditionTypeVariant15NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.CompletionConditionTypeVariant16))
+                {
+                    return new global::Terra.JsonConverters.CompletionConditionTypeVariant16JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.CompletionConditionTypeVariant16?))
+                {
+                    return new global::Terra.JsonConverters.CompletionConditionTypeVariant16NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.CompletionConditionTypeVariant17))
+                {
+                    return new global::Terra.JsonConverters.CompletionConditionTypeVariant17JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.CompletionConditionTypeVariant17?))
+                {
+                    return new global::Terra.JsonConverters.CompletionConditionTypeVariant17NullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant1))
                 {
                     return new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant1JsonConverter();
@@ -7073,6 +7080,86 @@ namespace Terra
                 if (typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant11?))
                 {
                     return new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant11NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant12))
+                {
+                    return new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant12JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant12?))
+                {
+                    return new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant12NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant13))
+                {
+                    return new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant13JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant13?))
+                {
+                    return new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant13NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant14))
+                {
+                    return new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant14JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant14?))
+                {
+                    return new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant14NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant15))
+                {
+                    return new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant15JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant15?))
+                {
+                    return new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant15NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant16))
+                {
+                    return new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant16JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant16?))
+                {
+                    return new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant16NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant17))
+                {
+                    return new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant17JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant17?))
+                {
+                    return new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant17NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant18))
+                {
+                    return new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant18JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant18?))
+                {
+                    return new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant18NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant19))
+                {
+                    return new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant19JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutStepTargetTypeVariant19?))
+                {
+                    return new global::Terra.JsonConverters.WorkoutStepTargetTypeVariant19NullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Terra.WorkoutStepIntensityVariant1))
@@ -7323,6 +7410,166 @@ namespace Terra
                 if (typeToConvert == typeof(global::Terra.SwimEquipmentTypeVariant6?))
                 {
                     return new global::Terra.JsonConverters.SwimEquipmentTypeVariant6NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant1))
+                {
+                    return new global::Terra.JsonConverters.WorkoutSportVariant1JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant1?))
+                {
+                    return new global::Terra.JsonConverters.WorkoutSportVariant1NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant2))
+                {
+                    return new global::Terra.JsonConverters.WorkoutSportVariant2JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant2?))
+                {
+                    return new global::Terra.JsonConverters.WorkoutSportVariant2NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant3))
+                {
+                    return new global::Terra.JsonConverters.WorkoutSportVariant3JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant3?))
+                {
+                    return new global::Terra.JsonConverters.WorkoutSportVariant3NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant4))
+                {
+                    return new global::Terra.JsonConverters.WorkoutSportVariant4JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant4?))
+                {
+                    return new global::Terra.JsonConverters.WorkoutSportVariant4NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant5))
+                {
+                    return new global::Terra.JsonConverters.WorkoutSportVariant5JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant5?))
+                {
+                    return new global::Terra.JsonConverters.WorkoutSportVariant5NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant6))
+                {
+                    return new global::Terra.JsonConverters.WorkoutSportVariant6JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant6?))
+                {
+                    return new global::Terra.JsonConverters.WorkoutSportVariant6NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant7))
+                {
+                    return new global::Terra.JsonConverters.WorkoutSportVariant7JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant7?))
+                {
+                    return new global::Terra.JsonConverters.WorkoutSportVariant7NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant8))
+                {
+                    return new global::Terra.JsonConverters.WorkoutSportVariant8JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant8?))
+                {
+                    return new global::Terra.JsonConverters.WorkoutSportVariant8NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant9))
+                {
+                    return new global::Terra.JsonConverters.WorkoutSportVariant9JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant9?))
+                {
+                    return new global::Terra.JsonConverters.WorkoutSportVariant9NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant10))
+                {
+                    return new global::Terra.JsonConverters.WorkoutSportVariant10JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant10?))
+                {
+                    return new global::Terra.JsonConverters.WorkoutSportVariant10NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant11))
+                {
+                    return new global::Terra.JsonConverters.WorkoutSportVariant11JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant11?))
+                {
+                    return new global::Terra.JsonConverters.WorkoutSportVariant11NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant12))
+                {
+                    return new global::Terra.JsonConverters.WorkoutSportVariant12JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant12?))
+                {
+                    return new global::Terra.JsonConverters.WorkoutSportVariant12NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant13))
+                {
+                    return new global::Terra.JsonConverters.WorkoutSportVariant13JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant13?))
+                {
+                    return new global::Terra.JsonConverters.WorkoutSportVariant13NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant14))
+                {
+                    return new global::Terra.JsonConverters.WorkoutSportVariant14JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant14?))
+                {
+                    return new global::Terra.JsonConverters.WorkoutSportVariant14NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant15))
+                {
+                    return new global::Terra.JsonConverters.WorkoutSportVariant15JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutSportVariant15?))
+                {
+                    return new global::Terra.JsonConverters.WorkoutSportVariant15NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.PlannedWorkoutSportEnum))
+                {
+                    return new global::Terra.JsonConverters.PlannedWorkoutSportEnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.PlannedWorkoutSportEnum?))
+                {
+                    return new global::Terra.JsonConverters.PlannedWorkoutSportEnumNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Terra.AuthSuccessEventType))

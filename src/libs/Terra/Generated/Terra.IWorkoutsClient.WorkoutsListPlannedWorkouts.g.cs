@@ -6,7 +6,7 @@ namespace Terra
     {
         /// <summary>
         /// List planned workouts<br/>
-        /// Returns the user's planned workouts, including workouts created on the provider side (is_external true) where the provider exposes them. External workouts carry their full body (title, description, planned metrics, structured steps) under `details`; they are fetched live from the provider and are not stored by Terra. Note that providers may limit how far ahead planned workouts are visible.
+        /// Returns the user's planned workouts, including workouts created on the provider side (is_external true) where the provider exposes them. Every item carries its workout body under `template`, in the same shape for Terra-created and external workouts. External workouts are fetched live from the provider and are not stored by Terra; a workout pushed through Terra that the provider echoes back is listed once, as the Terra row. When the provider could not be read, or a template could not be loaded, the response is still 200 with the rows Terra has and carries the `X-Terra-Provider-Data-Truncated: true` header. Note that providers may limit how far ahead planned workouts are visible.
         /// </summary>
         /// <param name="userId"></param>
         /// <param name="startDate"></param>
@@ -22,7 +22,7 @@ namespace Terra
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// List planned workouts<br/>
-        /// Returns the user's planned workouts, including workouts created on the provider side (is_external true) where the provider exposes them. External workouts carry their full body (title, description, planned metrics, structured steps) under `details`; they are fetched live from the provider and are not stored by Terra. Note that providers may limit how far ahead planned workouts are visible.
+        /// Returns the user's planned workouts, including workouts created on the provider side (is_external true) where the provider exposes them. Every item carries its workout body under `template`, in the same shape for Terra-created and external workouts. External workouts are fetched live from the provider and are not stored by Terra; a workout pushed through Terra that the provider echoes back is listed once, as the Terra row. When the provider could not be read, or a template could not be loaded, the response is still 200 with the rows Terra has and carries the `X-Terra-Provider-Data-Truncated: true` header. Note that providers may limit how far ahead planned workouts are visible.
         /// </summary>
         /// <param name="userId"></param>
         /// <param name="startDate"></param>

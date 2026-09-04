@@ -415,6 +415,228 @@ namespace Terra
         public global::Terra.CompletionConditionTypeVariant11 PickCompletionConditionTypeVariant11() => IsCompletionConditionTypeVariant11
             ? CompletionConditionTypeVariant11!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CompletionConditionTypeVariant11' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::Terra.CompletionConditionTypeVariant12? CompletionConditionTypeVariant12 { get; init; }
+#else
+        public global::Terra.CompletionConditionTypeVariant12? CompletionConditionTypeVariant12 { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CompletionConditionTypeVariant12))]
+#endif
+        public bool IsCompletionConditionTypeVariant12 => CompletionConditionTypeVariant12 != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickCompletionConditionTypeVariant12(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.CompletionConditionTypeVariant12? value)
+        {
+            value = CompletionConditionTypeVariant12;
+            return IsCompletionConditionTypeVariant12;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Terra.CompletionConditionTypeVariant12 PickCompletionConditionTypeVariant12() => IsCompletionConditionTypeVariant12
+            ? CompletionConditionTypeVariant12!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CompletionConditionTypeVariant12' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::Terra.CompletionConditionTypeVariant13? CompletionConditionTypeVariant13 { get; init; }
+#else
+        public global::Terra.CompletionConditionTypeVariant13? CompletionConditionTypeVariant13 { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CompletionConditionTypeVariant13))]
+#endif
+        public bool IsCompletionConditionTypeVariant13 => CompletionConditionTypeVariant13 != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickCompletionConditionTypeVariant13(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.CompletionConditionTypeVariant13? value)
+        {
+            value = CompletionConditionTypeVariant13;
+            return IsCompletionConditionTypeVariant13;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Terra.CompletionConditionTypeVariant13 PickCompletionConditionTypeVariant13() => IsCompletionConditionTypeVariant13
+            ? CompletionConditionTypeVariant13!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CompletionConditionTypeVariant13' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::Terra.CompletionConditionTypeVariant14? CompletionConditionTypeVariant14 { get; init; }
+#else
+        public global::Terra.CompletionConditionTypeVariant14? CompletionConditionTypeVariant14 { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CompletionConditionTypeVariant14))]
+#endif
+        public bool IsCompletionConditionTypeVariant14 => CompletionConditionTypeVariant14 != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickCompletionConditionTypeVariant14(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.CompletionConditionTypeVariant14? value)
+        {
+            value = CompletionConditionTypeVariant14;
+            return IsCompletionConditionTypeVariant14;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Terra.CompletionConditionTypeVariant14 PickCompletionConditionTypeVariant14() => IsCompletionConditionTypeVariant14
+            ? CompletionConditionTypeVariant14!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CompletionConditionTypeVariant14' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::Terra.CompletionConditionTypeVariant15? CompletionConditionTypeVariant15 { get; init; }
+#else
+        public global::Terra.CompletionConditionTypeVariant15? CompletionConditionTypeVariant15 { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CompletionConditionTypeVariant15))]
+#endif
+        public bool IsCompletionConditionTypeVariant15 => CompletionConditionTypeVariant15 != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickCompletionConditionTypeVariant15(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.CompletionConditionTypeVariant15? value)
+        {
+            value = CompletionConditionTypeVariant15;
+            return IsCompletionConditionTypeVariant15;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Terra.CompletionConditionTypeVariant15 PickCompletionConditionTypeVariant15() => IsCompletionConditionTypeVariant15
+            ? CompletionConditionTypeVariant15!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CompletionConditionTypeVariant15' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::Terra.CompletionConditionTypeVariant16? CompletionConditionTypeVariant16 { get; init; }
+#else
+        public global::Terra.CompletionConditionTypeVariant16? CompletionConditionTypeVariant16 { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CompletionConditionTypeVariant16))]
+#endif
+        public bool IsCompletionConditionTypeVariant16 => CompletionConditionTypeVariant16 != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickCompletionConditionTypeVariant16(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.CompletionConditionTypeVariant16? value)
+        {
+            value = CompletionConditionTypeVariant16;
+            return IsCompletionConditionTypeVariant16;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Terra.CompletionConditionTypeVariant16 PickCompletionConditionTypeVariant16() => IsCompletionConditionTypeVariant16
+            ? CompletionConditionTypeVariant16!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CompletionConditionTypeVariant16' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::Terra.CompletionConditionTypeVariant17? CompletionConditionTypeVariant17 { get; init; }
+#else
+        public global::Terra.CompletionConditionTypeVariant17? CompletionConditionTypeVariant17 { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CompletionConditionTypeVariant17))]
+#endif
+        public bool IsCompletionConditionTypeVariant17 => CompletionConditionTypeVariant17 != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickCompletionConditionTypeVariant17(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.CompletionConditionTypeVariant17? value)
+        {
+            value = CompletionConditionTypeVariant17;
+            return IsCompletionConditionTypeVariant17;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Terra.CompletionConditionTypeVariant17 PickCompletionConditionTypeVariant17() => IsCompletionConditionTypeVariant17
+            ? CompletionConditionTypeVariant17!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CompletionConditionTypeVariant17' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -671,6 +893,144 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
+        public static implicit operator CompletionConditionType(global::Terra.CompletionConditionTypeVariant12 value) => new CompletionConditionType((global::Terra.CompletionConditionTypeVariant12?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::Terra.CompletionConditionTypeVariant12?(CompletionConditionType @this) => @this.CompletionConditionTypeVariant12;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public CompletionConditionType(global::Terra.CompletionConditionTypeVariant12? value)
+        {
+            CompletionConditionTypeVariant12 = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static CompletionConditionType FromCompletionConditionTypeVariant12(global::Terra.CompletionConditionTypeVariant12? value) => new CompletionConditionType(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator CompletionConditionType(global::Terra.CompletionConditionTypeVariant13 value) => new CompletionConditionType((global::Terra.CompletionConditionTypeVariant13?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::Terra.CompletionConditionTypeVariant13?(CompletionConditionType @this) => @this.CompletionConditionTypeVariant13;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public CompletionConditionType(global::Terra.CompletionConditionTypeVariant13? value)
+        {
+            CompletionConditionTypeVariant13 = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static CompletionConditionType FromCompletionConditionTypeVariant13(global::Terra.CompletionConditionTypeVariant13? value) => new CompletionConditionType(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator CompletionConditionType(global::Terra.CompletionConditionTypeVariant14 value) => new CompletionConditionType((global::Terra.CompletionConditionTypeVariant14?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::Terra.CompletionConditionTypeVariant14?(CompletionConditionType @this) => @this.CompletionConditionTypeVariant14;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public CompletionConditionType(global::Terra.CompletionConditionTypeVariant14? value)
+        {
+            CompletionConditionTypeVariant14 = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static CompletionConditionType FromCompletionConditionTypeVariant14(global::Terra.CompletionConditionTypeVariant14? value) => new CompletionConditionType(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator CompletionConditionType(global::Terra.CompletionConditionTypeVariant15 value) => new CompletionConditionType((global::Terra.CompletionConditionTypeVariant15?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::Terra.CompletionConditionTypeVariant15?(CompletionConditionType @this) => @this.CompletionConditionTypeVariant15;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public CompletionConditionType(global::Terra.CompletionConditionTypeVariant15? value)
+        {
+            CompletionConditionTypeVariant15 = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static CompletionConditionType FromCompletionConditionTypeVariant15(global::Terra.CompletionConditionTypeVariant15? value) => new CompletionConditionType(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator CompletionConditionType(global::Terra.CompletionConditionTypeVariant16 value) => new CompletionConditionType((global::Terra.CompletionConditionTypeVariant16?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::Terra.CompletionConditionTypeVariant16?(CompletionConditionType @this) => @this.CompletionConditionTypeVariant16;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public CompletionConditionType(global::Terra.CompletionConditionTypeVariant16? value)
+        {
+            CompletionConditionTypeVariant16 = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static CompletionConditionType FromCompletionConditionTypeVariant16(global::Terra.CompletionConditionTypeVariant16? value) => new CompletionConditionType(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator CompletionConditionType(global::Terra.CompletionConditionTypeVariant17 value) => new CompletionConditionType((global::Terra.CompletionConditionTypeVariant17?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::Terra.CompletionConditionTypeVariant17?(CompletionConditionType @this) => @this.CompletionConditionTypeVariant17;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public CompletionConditionType(global::Terra.CompletionConditionTypeVariant17? value)
+        {
+            CompletionConditionTypeVariant17 = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static CompletionConditionType FromCompletionConditionTypeVariant17(global::Terra.CompletionConditionTypeVariant17? value) => new CompletionConditionType(value);
+
+        /// <summary>
+        ///
+        /// </summary>
         public CompletionConditionType(
             global::Terra.CompletionConditionTypeVariant1? completionConditionTypeVariant1,
             global::Terra.CompletionConditionTypeVariant2? completionConditionTypeVariant2,
@@ -682,7 +1042,13 @@ namespace Terra
             global::Terra.CompletionConditionTypeVariant8? completionConditionTypeVariant8,
             global::Terra.CompletionConditionTypeVariant9? completionConditionTypeVariant9,
             global::Terra.CompletionConditionTypeVariant10? completionConditionTypeVariant10,
-            global::Terra.CompletionConditionTypeVariant11? completionConditionTypeVariant11
+            global::Terra.CompletionConditionTypeVariant11? completionConditionTypeVariant11,
+            global::Terra.CompletionConditionTypeVariant12? completionConditionTypeVariant12,
+            global::Terra.CompletionConditionTypeVariant13? completionConditionTypeVariant13,
+            global::Terra.CompletionConditionTypeVariant14? completionConditionTypeVariant14,
+            global::Terra.CompletionConditionTypeVariant15? completionConditionTypeVariant15,
+            global::Terra.CompletionConditionTypeVariant16? completionConditionTypeVariant16,
+            global::Terra.CompletionConditionTypeVariant17? completionConditionTypeVariant17
             )
         {
             CompletionConditionTypeVariant1 = completionConditionTypeVariant1;
@@ -696,12 +1062,24 @@ namespace Terra
             CompletionConditionTypeVariant9 = completionConditionTypeVariant9;
             CompletionConditionTypeVariant10 = completionConditionTypeVariant10;
             CompletionConditionTypeVariant11 = completionConditionTypeVariant11;
+            CompletionConditionTypeVariant12 = completionConditionTypeVariant12;
+            CompletionConditionTypeVariant13 = completionConditionTypeVariant13;
+            CompletionConditionTypeVariant14 = completionConditionTypeVariant14;
+            CompletionConditionTypeVariant15 = completionConditionTypeVariant15;
+            CompletionConditionTypeVariant16 = completionConditionTypeVariant16;
+            CompletionConditionTypeVariant17 = completionConditionTypeVariant17;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
+            CompletionConditionTypeVariant17 as object ??
+            CompletionConditionTypeVariant16 as object ??
+            CompletionConditionTypeVariant15 as object ??
+            CompletionConditionTypeVariant14 as object ??
+            CompletionConditionTypeVariant13 as object ??
+            CompletionConditionTypeVariant12 as object ??
             CompletionConditionTypeVariant11 as object ??
             CompletionConditionTypeVariant10 as object ??
             CompletionConditionTypeVariant9 as object ??
@@ -729,7 +1107,13 @@ namespace Terra
             CompletionConditionTypeVariant8?.ToValueString() ??
             CompletionConditionTypeVariant9?.ToValueString() ??
             CompletionConditionTypeVariant10?.ToValueString() ??
-            CompletionConditionTypeVariant11?.ToValueString()
+            CompletionConditionTypeVariant11?.ToValueString() ??
+            CompletionConditionTypeVariant12?.ToValueString() ??
+            CompletionConditionTypeVariant13?.ToValueString() ??
+            CompletionConditionTypeVariant14?.ToValueString() ??
+            CompletionConditionTypeVariant15?.ToValueString() ??
+            CompletionConditionTypeVariant16?.ToValueString() ??
+            CompletionConditionTypeVariant17?.ToValueString()
             ;
 
         /// <summary>
@@ -737,7 +1121,7 @@ namespace Terra
         /// </summary>
         public bool Validate()
         {
-            return IsCompletionConditionTypeVariant1 || IsCompletionConditionTypeVariant2 || IsCompletionConditionTypeVariant3 || IsCompletionConditionTypeVariant4 || IsCompletionConditionTypeVariant5 || IsCompletionConditionTypeVariant6 || IsCompletionConditionTypeVariant7 || IsCompletionConditionTypeVariant8 || IsCompletionConditionTypeVariant9 || IsCompletionConditionTypeVariant10 || IsCompletionConditionTypeVariant11;
+            return IsCompletionConditionTypeVariant1 || IsCompletionConditionTypeVariant2 || IsCompletionConditionTypeVariant3 || IsCompletionConditionTypeVariant4 || IsCompletionConditionTypeVariant5 || IsCompletionConditionTypeVariant6 || IsCompletionConditionTypeVariant7 || IsCompletionConditionTypeVariant8 || IsCompletionConditionTypeVariant9 || IsCompletionConditionTypeVariant10 || IsCompletionConditionTypeVariant11 || IsCompletionConditionTypeVariant12 || IsCompletionConditionTypeVariant13 || IsCompletionConditionTypeVariant14 || IsCompletionConditionTypeVariant15 || IsCompletionConditionTypeVariant16 || IsCompletionConditionTypeVariant17;
         }
 
         /// <summary>
@@ -755,6 +1139,12 @@ namespace Terra
             global::System.Func<global::Terra.CompletionConditionTypeVariant9?, TResult>? completionConditionTypeVariant9 = null,
             global::System.Func<global::Terra.CompletionConditionTypeVariant10?, TResult>? completionConditionTypeVariant10 = null,
             global::System.Func<global::Terra.CompletionConditionTypeVariant11?, TResult>? completionConditionTypeVariant11 = null,
+            global::System.Func<global::Terra.CompletionConditionTypeVariant12?, TResult>? completionConditionTypeVariant12 = null,
+            global::System.Func<global::Terra.CompletionConditionTypeVariant13?, TResult>? completionConditionTypeVariant13 = null,
+            global::System.Func<global::Terra.CompletionConditionTypeVariant14?, TResult>? completionConditionTypeVariant14 = null,
+            global::System.Func<global::Terra.CompletionConditionTypeVariant15?, TResult>? completionConditionTypeVariant15 = null,
+            global::System.Func<global::Terra.CompletionConditionTypeVariant16?, TResult>? completionConditionTypeVariant16 = null,
+            global::System.Func<global::Terra.CompletionConditionTypeVariant17?, TResult>? completionConditionTypeVariant17 = null,
             bool validate = true)
         {
             if (validate)
@@ -806,6 +1196,30 @@ namespace Terra
             {
                 return completionConditionTypeVariant11(CompletionConditionTypeVariant11!);
             }
+            else if (IsCompletionConditionTypeVariant12 && completionConditionTypeVariant12 != null)
+            {
+                return completionConditionTypeVariant12(CompletionConditionTypeVariant12!);
+            }
+            else if (IsCompletionConditionTypeVariant13 && completionConditionTypeVariant13 != null)
+            {
+                return completionConditionTypeVariant13(CompletionConditionTypeVariant13!);
+            }
+            else if (IsCompletionConditionTypeVariant14 && completionConditionTypeVariant14 != null)
+            {
+                return completionConditionTypeVariant14(CompletionConditionTypeVariant14!);
+            }
+            else if (IsCompletionConditionTypeVariant15 && completionConditionTypeVariant15 != null)
+            {
+                return completionConditionTypeVariant15(CompletionConditionTypeVariant15!);
+            }
+            else if (IsCompletionConditionTypeVariant16 && completionConditionTypeVariant16 != null)
+            {
+                return completionConditionTypeVariant16(CompletionConditionTypeVariant16!);
+            }
+            else if (IsCompletionConditionTypeVariant17 && completionConditionTypeVariant17 != null)
+            {
+                return completionConditionTypeVariant17(CompletionConditionTypeVariant17!);
+            }
 
             return default(TResult);
         }
@@ -835,6 +1249,18 @@ namespace Terra
             global::System.Action<global::Terra.CompletionConditionTypeVariant10?>? completionConditionTypeVariant10 = null,
 
             global::System.Action<global::Terra.CompletionConditionTypeVariant11?>? completionConditionTypeVariant11 = null,
+
+            global::System.Action<global::Terra.CompletionConditionTypeVariant12?>? completionConditionTypeVariant12 = null,
+
+            global::System.Action<global::Terra.CompletionConditionTypeVariant13?>? completionConditionTypeVariant13 = null,
+
+            global::System.Action<global::Terra.CompletionConditionTypeVariant14?>? completionConditionTypeVariant14 = null,
+
+            global::System.Action<global::Terra.CompletionConditionTypeVariant15?>? completionConditionTypeVariant15 = null,
+
+            global::System.Action<global::Terra.CompletionConditionTypeVariant16?>? completionConditionTypeVariant16 = null,
+
+            global::System.Action<global::Terra.CompletionConditionTypeVariant17?>? completionConditionTypeVariant17 = null,
             bool validate = true)
         {
             if (validate)
@@ -885,6 +1311,30 @@ namespace Terra
             else if (IsCompletionConditionTypeVariant11)
             {
                 completionConditionTypeVariant11?.Invoke(CompletionConditionTypeVariant11!);
+            }
+            else if (IsCompletionConditionTypeVariant12)
+            {
+                completionConditionTypeVariant12?.Invoke(CompletionConditionTypeVariant12!);
+            }
+            else if (IsCompletionConditionTypeVariant13)
+            {
+                completionConditionTypeVariant13?.Invoke(CompletionConditionTypeVariant13!);
+            }
+            else if (IsCompletionConditionTypeVariant14)
+            {
+                completionConditionTypeVariant14?.Invoke(CompletionConditionTypeVariant14!);
+            }
+            else if (IsCompletionConditionTypeVariant15)
+            {
+                completionConditionTypeVariant15?.Invoke(CompletionConditionTypeVariant15!);
+            }
+            else if (IsCompletionConditionTypeVariant16)
+            {
+                completionConditionTypeVariant16?.Invoke(CompletionConditionTypeVariant16!);
+            }
+            else if (IsCompletionConditionTypeVariant17)
+            {
+                completionConditionTypeVariant17?.Invoke(CompletionConditionTypeVariant17!);
             }
         }
 
@@ -903,6 +1353,12 @@ namespace Terra
             global::System.Action<global::Terra.CompletionConditionTypeVariant9?>? completionConditionTypeVariant9 = null,
             global::System.Action<global::Terra.CompletionConditionTypeVariant10?>? completionConditionTypeVariant10 = null,
             global::System.Action<global::Terra.CompletionConditionTypeVariant11?>? completionConditionTypeVariant11 = null,
+            global::System.Action<global::Terra.CompletionConditionTypeVariant12?>? completionConditionTypeVariant12 = null,
+            global::System.Action<global::Terra.CompletionConditionTypeVariant13?>? completionConditionTypeVariant13 = null,
+            global::System.Action<global::Terra.CompletionConditionTypeVariant14?>? completionConditionTypeVariant14 = null,
+            global::System.Action<global::Terra.CompletionConditionTypeVariant15?>? completionConditionTypeVariant15 = null,
+            global::System.Action<global::Terra.CompletionConditionTypeVariant16?>? completionConditionTypeVariant16 = null,
+            global::System.Action<global::Terra.CompletionConditionTypeVariant17?>? completionConditionTypeVariant17 = null,
             bool validate = true)
         {
             if (validate)
@@ -953,6 +1409,30 @@ namespace Terra
             else if (IsCompletionConditionTypeVariant11)
             {
                 completionConditionTypeVariant11?.Invoke(CompletionConditionTypeVariant11!);
+            }
+            else if (IsCompletionConditionTypeVariant12)
+            {
+                completionConditionTypeVariant12?.Invoke(CompletionConditionTypeVariant12!);
+            }
+            else if (IsCompletionConditionTypeVariant13)
+            {
+                completionConditionTypeVariant13?.Invoke(CompletionConditionTypeVariant13!);
+            }
+            else if (IsCompletionConditionTypeVariant14)
+            {
+                completionConditionTypeVariant14?.Invoke(CompletionConditionTypeVariant14!);
+            }
+            else if (IsCompletionConditionTypeVariant15)
+            {
+                completionConditionTypeVariant15?.Invoke(CompletionConditionTypeVariant15!);
+            }
+            else if (IsCompletionConditionTypeVariant16)
+            {
+                completionConditionTypeVariant16?.Invoke(CompletionConditionTypeVariant16!);
+            }
+            else if (IsCompletionConditionTypeVariant17)
+            {
+                completionConditionTypeVariant17?.Invoke(CompletionConditionTypeVariant17!);
             }
         }
 
@@ -985,6 +1465,18 @@ namespace Terra
                 typeof(global::Terra.CompletionConditionTypeVariant10),
                 CompletionConditionTypeVariant11,
                 typeof(global::Terra.CompletionConditionTypeVariant11),
+                CompletionConditionTypeVariant12,
+                typeof(global::Terra.CompletionConditionTypeVariant12),
+                CompletionConditionTypeVariant13,
+                typeof(global::Terra.CompletionConditionTypeVariant13),
+                CompletionConditionTypeVariant14,
+                typeof(global::Terra.CompletionConditionTypeVariant14),
+                CompletionConditionTypeVariant15,
+                typeof(global::Terra.CompletionConditionTypeVariant15),
+                CompletionConditionTypeVariant16,
+                typeof(global::Terra.CompletionConditionTypeVariant16),
+                CompletionConditionTypeVariant17,
+                typeof(global::Terra.CompletionConditionTypeVariant17),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -1011,7 +1503,13 @@ namespace Terra
                 global::System.Collections.Generic.EqualityComparer<global::Terra.CompletionConditionTypeVariant8?>.Default.Equals(CompletionConditionTypeVariant8, other.CompletionConditionTypeVariant8) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.CompletionConditionTypeVariant9?>.Default.Equals(CompletionConditionTypeVariant9, other.CompletionConditionTypeVariant9) &&
                 global::System.Collections.Generic.EqualityComparer<global::Terra.CompletionConditionTypeVariant10?>.Default.Equals(CompletionConditionTypeVariant10, other.CompletionConditionTypeVariant10) &&
-                global::System.Collections.Generic.EqualityComparer<global::Terra.CompletionConditionTypeVariant11?>.Default.Equals(CompletionConditionTypeVariant11, other.CompletionConditionTypeVariant11)
+                global::System.Collections.Generic.EqualityComparer<global::Terra.CompletionConditionTypeVariant11?>.Default.Equals(CompletionConditionTypeVariant11, other.CompletionConditionTypeVariant11) &&
+                global::System.Collections.Generic.EqualityComparer<global::Terra.CompletionConditionTypeVariant12?>.Default.Equals(CompletionConditionTypeVariant12, other.CompletionConditionTypeVariant12) &&
+                global::System.Collections.Generic.EqualityComparer<global::Terra.CompletionConditionTypeVariant13?>.Default.Equals(CompletionConditionTypeVariant13, other.CompletionConditionTypeVariant13) &&
+                global::System.Collections.Generic.EqualityComparer<global::Terra.CompletionConditionTypeVariant14?>.Default.Equals(CompletionConditionTypeVariant14, other.CompletionConditionTypeVariant14) &&
+                global::System.Collections.Generic.EqualityComparer<global::Terra.CompletionConditionTypeVariant15?>.Default.Equals(CompletionConditionTypeVariant15, other.CompletionConditionTypeVariant15) &&
+                global::System.Collections.Generic.EqualityComparer<global::Terra.CompletionConditionTypeVariant16?>.Default.Equals(CompletionConditionTypeVariant16, other.CompletionConditionTypeVariant16) &&
+                global::System.Collections.Generic.EqualityComparer<global::Terra.CompletionConditionTypeVariant17?>.Default.Equals(CompletionConditionTypeVariant17, other.CompletionConditionTypeVariant17)
                 ;
         }
 

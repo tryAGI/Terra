@@ -4,8 +4,9 @@
 namespace Terra
 {
     /// <summary>
-    /// Full workout body (title, description, planned metrics, structured steps) fetched live from the provider. Present only for external workouts (is_external true).
+    /// Deprecated. The provider body of an external workout in its pre-template shape; use `workout`. Null on Terra-created workouts. Removed in the next major SDK release.
     /// </summary>
+    [global::System.Obsolete("This model marked as deprecated.")]
     public sealed partial class PlannedWorkoutDetails2
     {
 

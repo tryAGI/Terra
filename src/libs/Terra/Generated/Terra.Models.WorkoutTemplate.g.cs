@@ -22,14 +22,6 @@ namespace Terra
         public string? Description { get; set; }
 
         /// <summary>
-        /// Sport a workout template targets. Indoor/outdoor is expressed separately via environment.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sport")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Terra.JsonConverters.WorkoutSportJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Terra.WorkoutSport Sport { get; set; }
-
-        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("environment")]
@@ -67,10 +59,30 @@ namespace Terra
         public double? EstimatedCalories { get; set; }
 
         /// <summary>
+        /// Planned training stress score, where the provider or author supplies one. Read-only today: accepted on create but not forwarded to providers.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("estimated_tss")]
+        public double? EstimatedTss { get; set; }
+
+        /// <summary>
+        /// Planned intensity factor, where the provider or author supplies one. Read-only today: accepted on create but not forwarded to providers.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("estimated_intensity_factor")]
+        public double? EstimatedIntensityFactor { get; set; }
+
+        /// <summary>
         /// Terra identifier of the stored template. Set by Terra in responses; ignored on create.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("workout_id")]
         public string? WorkoutId { get; set; }
+
+        /// <summary>
+        /// Sport a workout template targets. Indoor/outdoor is expressed separately via environment.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("sport")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Terra.JsonConverters.WorkoutSportJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Terra.WorkoutSport Sport { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -84,10 +96,10 @@ namespace Terra
         /// <param name="name">
         /// Name of the workout
         /// </param>
+        /// <param name="stepBlocks"></param>
         /// <param name="sport">
         /// Sport a workout template targets. Indoor/outdoor is expressed separately via environment.
         /// </param>
-        /// <param name="stepBlocks"></param>
         /// <param name="description">
         /// Description of the workout
         /// </param>
@@ -104,6 +116,12 @@ namespace Terra
         /// <param name="estimatedCalories">
         /// Estimated calories burned
         /// </param>
+        /// <param name="estimatedTss">
+        /// Planned training stress score, where the provider or author supplies one. Read-only today: accepted on create but not forwarded to providers.
+        /// </param>
+        /// <param name="estimatedIntensityFactor">
+        /// Planned intensity factor, where the provider or author supplies one. Read-only today: accepted on create but not forwarded to providers.
+        /// </param>
         /// <param name="workoutId">
         /// Terra identifier of the stored template. Set by Terra in responses; ignored on create.
         /// </param>
@@ -112,26 +130,30 @@ namespace Terra
 #endif
         public WorkoutTemplate(
             string name,
-            global::Terra.WorkoutSport sport,
             global::System.Collections.Generic.IList<global::Terra.StepBlock> stepBlocks,
+            global::Terra.WorkoutSport sport,
             string? description,
             global::Terra.EnvironmentType? environment,
             double? poolLengthMeters,
             double? estimatedDurationSeconds,
             double? estimatedDistanceMeters,
             double? estimatedCalories,
+            double? estimatedTss,
+            double? estimatedIntensityFactor,
             string? workoutId)
         {
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Description = description;
-            this.Sport = sport;
             this.Environment = environment;
             this.PoolLengthMeters = poolLengthMeters;
             this.StepBlocks = stepBlocks ?? throw new global::System.ArgumentNullException(nameof(stepBlocks));
             this.EstimatedDurationSeconds = estimatedDurationSeconds;
             this.EstimatedDistanceMeters = estimatedDistanceMeters;
             this.EstimatedCalories = estimatedCalories;
+            this.EstimatedTss = estimatedTss;
+            this.EstimatedIntensityFactor = estimatedIntensityFactor;
             this.WorkoutId = workoutId;
+            this.Sport = sport;
         }
 
         /// <summary>
