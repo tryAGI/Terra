@@ -24,7 +24,7 @@ namespace Terra
         /// Object containing additional enrichment data for the day.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data_enrichment")]
-        public global::Terra.DailyDataEnrichment2? DataEnrichment { get; set; }
+        public global::Terra.DailyDataEnrichment? DataEnrichment { get; set; }
 
         /// <summary>
         /// Object containing information on the device which recorded data for the day.
@@ -36,7 +36,7 @@ namespace Terra
         /// Object containing information related to distance covered during the associated day.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("distance_data")]
-        public global::Terra.DailyDistanceData2? DistanceData { get; set; }
+        public global::Terra.DailyDistanceData? DistanceData { get; set; }
 
         /// <summary>
         /// Object containing heartrate-related information for the day.
@@ -140,9 +140,9 @@ namespace Terra
             global::Terra.DailyMetadata metadata,
             global::Terra.ActiveDurationsData? activeDurationsData,
             global::Terra.CaloriesData? caloriesData,
-            global::Terra.DailyDataEnrichment2? dataEnrichment,
+            global::Terra.DailyDataEnrichment? dataEnrichment,
             global::Terra.DeviceData? deviceData,
-            global::Terra.DailyDistanceData2? distanceData,
+            global::Terra.DailyDistanceData? distanceData,
             global::Terra.HeartRateData? heartRateData,
             global::Terra.METData? metData,
             global::Terra.OxygenData? oxygenData,

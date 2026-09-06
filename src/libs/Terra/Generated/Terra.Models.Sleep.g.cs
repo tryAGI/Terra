@@ -12,7 +12,7 @@ namespace Terra
         /// Object containing additional enrichment data for the sleep session.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data_enrichment")]
-        public global::Terra.SleepDataEnrichment2? DataEnrichment { get; set; }
+        public global::Terra.SleepDataEnrichment? DataEnrichment { get; set; }
 
         /// <summary>
         /// Object containing information on the device which recorded data for the payload.
@@ -49,7 +49,7 @@ namespace Terra
         /// Scores summarising the user's sleep session.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("scores")]
-        public global::Terra.SleepScores2? Scores { get; set; }
+        public global::Terra.SleepScores? Scores { get; set; }
 
         /// <summary>
         /// Object containing information on the user's duration spent in various sleep stages.
@@ -61,7 +61,7 @@ namespace Terra
         /// Object containing body temperature information of the user during the sleep recording session.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("temperature_data")]
-        public global::Terra.SleepTemperatureData2? TemperatureData { get; set; }
+        public global::Terra.SleepTemperatureData? TemperatureData { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -102,14 +102,14 @@ namespace Terra
 #endif
         public Sleep(
             global::Terra.SleepMetadata metadata,
-            global::Terra.SleepDataEnrichment2? dataEnrichment,
+            global::Terra.SleepDataEnrichment? dataEnrichment,
             global::Terra.DeviceData? deviceData,
             global::Terra.HeartRateData? heartRateData,
             global::Terra.ReadinessData? readinessData,
             global::Terra.RespirationData? respirationData,
-            global::Terra.SleepScores2? scores,
+            global::Terra.SleepScores? scores,
             global::Terra.SleepDurationsData? sleepDurationsData,
-            global::Terra.SleepTemperatureData2? temperatureData)
+            global::Terra.SleepTemperatureData? temperatureData)
         {
             this.DataEnrichment = dataEnrichment;
             this.DeviceData = deviceData;
