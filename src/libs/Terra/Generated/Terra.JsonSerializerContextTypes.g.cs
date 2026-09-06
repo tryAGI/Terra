@@ -181,7 +181,7 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.ActivityStrengthData2? Type37 { get; set; }
+        public global::Terra.ActivityStrengthData? Type37 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -253,11 +253,11 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.DailyDataEnrichment2? Type55 { get; set; }
+        public global::Terra.DailyDataEnrichment? Type55 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.DailyDistanceData2? Type56 { get; set; }
+        public global::Terra.DailyDistanceData? Type56 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -325,7 +325,7 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.NutritionSummary2? Type73 { get; set; }
+        public global::Terra.NutritionSummary? Type73 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -333,7 +333,7 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.SleepDataEnrichment2? Type75 { get; set; }
+        public global::Terra.SleepDataEnrichment? Type75 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -349,7 +349,7 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.SleepScores2? Type79 { get; set; }
+        public global::Terra.SleepScores? Type79 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -357,7 +357,7 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.SleepTemperatureData2? Type81 { get; set; }
+        public global::Terra.SleepTemperatureData? Type81 { get; set; }
         /// <summary>
         ///
         /// </summary>
