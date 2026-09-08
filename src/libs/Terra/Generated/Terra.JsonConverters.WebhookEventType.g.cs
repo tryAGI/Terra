@@ -286,6 +286,7 @@ namespace Terra.JsonConverters
             if (__jsonProps.Contains("data.report_locale")) __score19++;
             if (__jsonProps.Contains("data.report_notes")) __score19++;
             if (__jsonProps.Contains("data.report_time")) __score19++;
+            if (__jsonProps.Contains("data.report_type")) __score19++;
             if (__jsonProps.Contains("data.results")) __score19++;
             if (__jsonProps.Contains("data.results_count")) __score19++;
             if (__jsonProps.Contains("data.session_id")) __score19++;

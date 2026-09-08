@@ -5,8 +5,8 @@ namespace Terra
     public partial interface ILabReportsClient
     {
         /// <summary>
-        /// Upload a lab report<br/>
-        /// Upload a single lab report file (PDF, PNG, JPEG, GIF, or WebP) as multipart form data. Returns an `upload_id`; a single upload may fan out to multiple sessions, so learn the `session_id`(s) from the webhook events or from `GET /lab-reports?upload_id=...`.
+        /// Upload a report<br/>
+        /// Upload a single report file (PDF, PNG, JPEG, GIF, or WebP) as multipart form data. Both clinical lab reports and DXA body-composition/bone-density scans go to this endpoint — Terra identifies which it is from the file, so there is no parameter to declare the type; read `report_type` off the session or the webhook. Returns an `upload_id`; a single upload may fan out to multiple sessions, so learn the `session_id`(s) from the webhook events or from `GET /lab-reports?upload_id=...`.
         /// </summary>
         /// <param name="referenceId"></param>
         /// <param name="request"></param>
@@ -20,8 +20,8 @@ namespace Terra
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Upload a lab report<br/>
-        /// Upload a single lab report file (PDF, PNG, JPEG, GIF, or WebP) as multipart form data. Returns an `upload_id`; a single upload may fan out to multiple sessions, so learn the `session_id`(s) from the webhook events or from `GET /lab-reports?upload_id=...`.
+        /// Upload a report<br/>
+        /// Upload a single report file (PDF, PNG, JPEG, GIF, or WebP) as multipart form data. Both clinical lab reports and DXA body-composition/bone-density scans go to this endpoint — Terra identifies which it is from the file, so there is no parameter to declare the type; read `report_type` off the session or the webhook. Returns an `upload_id`; a single upload may fan out to multiple sessions, so learn the `session_id`(s) from the webhook events or from `GET /lab-reports?upload_id=...`.
         /// </summary>
         /// <param name="referenceId"></param>
         /// <param name="request"></param>
@@ -35,8 +35,8 @@ namespace Terra
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Upload a lab report<br/>
-        /// Upload a single lab report file (PDF, PNG, JPEG, GIF, or WebP) as multipart form data. Returns an `upload_id`; a single upload may fan out to multiple sessions, so learn the `session_id`(s) from the webhook events or from `GET /lab-reports?upload_id=...`.
+        /// Upload a report<br/>
+        /// Upload a single report file (PDF, PNG, JPEG, GIF, or WebP) as multipart form data. Both clinical lab reports and DXA body-composition/bone-density scans go to this endpoint — Terra identifies which it is from the file, so there is no parameter to declare the type; read `report_type` off the session or the webhook. Returns an `upload_id`; a single upload may fan out to multiple sessions, so learn the `session_id`(s) from the webhook events or from `GET /lab-reports?upload_id=...`.
         /// </summary>
         /// <param name="referenceId"></param>
         /// <param name="file">
@@ -56,8 +56,8 @@ namespace Terra
             global::System.Threading.CancellationToken cancellationToken = default);
 
         /// <summary>
-        /// Upload a lab report<br/>
-        /// Upload a single lab report file (PDF, PNG, JPEG, GIF, or WebP) as multipart form data. Returns an `upload_id`; a single upload may fan out to multiple sessions, so learn the `session_id`(s) from the webhook events or from `GET /lab-reports?upload_id=...`.
+        /// Upload a report<br/>
+        /// Upload a single report file (PDF, PNG, JPEG, GIF, or WebP) as multipart form data. Both clinical lab reports and DXA body-composition/bone-density scans go to this endpoint — Terra identifies which it is from the file, so there is no parameter to declare the type; read `report_type` off the session or the webhook. Returns an `upload_id`; a single upload may fan out to multiple sessions, so learn the `session_id`(s) from the webhook events or from `GET /lab-reports?upload_id=...`.
         /// </summary>
         /// <param name="referenceId"></param>
         /// <param name="file">
@@ -76,8 +76,8 @@ namespace Terra
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Upload a lab report<br/>
-        /// Upload a single lab report file (PDF, PNG, JPEG, GIF, or WebP) as multipart form data. Returns an `upload_id`; a single upload may fan out to multiple sessions, so learn the `session_id`(s) from the webhook events or from `GET /lab-reports?upload_id=...`.
+        /// Upload a report<br/>
+        /// Upload a single report file (PDF, PNG, JPEG, GIF, or WebP) as multipart form data. Both clinical lab reports and DXA body-composition/bone-density scans go to this endpoint — Terra identifies which it is from the file, so there is no parameter to declare the type; read `report_type` off the session or the webhook. Returns an `upload_id`; a single upload may fan out to multiple sessions, so learn the `session_id`(s) from the webhook events or from `GET /lab-reports?upload_id=...`.
         /// </summary>
         /// <param name="referenceId"></param>
         /// <param name="file">

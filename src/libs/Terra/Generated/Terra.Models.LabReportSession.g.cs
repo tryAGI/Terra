@@ -29,13 +29,12 @@ namespace Terra
         public string? ReferenceId { get; set; }
 
         /// <summary>
-        /// Report type as a clean lowercase string (open enum — handle unknown values gracefully).<br/>
-        /// Example: lab
+        /// Returned by the upload endpoint. A single upload may fan out to multiple sessions.
         /// </summary>
-        /// <example>lab</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("report_type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Terra.JsonConverters.ReportTypeJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ReportType { get; set; }
+        public required global::Terra.ReportType ReportType { get; set; }
 
         /// <summary>
         /// Current status as a clean lowercase string (open enum), e.g. processing, sent, partially_sent, failed.<br/>
@@ -71,13 +70,13 @@ namespace Terra
         public string? ReportTime { get; set; }
 
         /// <summary>
-        /// Specimen collection date (YYYY-MM-DD); omitted if not extracted.
+        /// Date the sample was collected or the scan was taken (YYYY-MM-DD); omitted if not extracted.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("collection_date")]
         public string? CollectionDate { get; set; }
 
         /// <summary>
-        /// Specimen collection time (HH:MM, 24-hour); omitted if not extracted.
+        /// Time the sample was collected or the scan was taken (HH:MM, 24-hour); omitted if not extracted.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("collection_time")]
         public string? CollectionTime { get; set; }
@@ -170,8 +169,7 @@ namespace Terra
         /// Example: 297405620317847552
         /// </param>
         /// <param name="reportType">
-        /// Report type as a clean lowercase string (open enum — handle unknown values gracefully).<br/>
-        /// Example: lab
+        /// Returned by the upload endpoint. A single upload may fan out to multiple sessions.
         /// </param>
         /// <param name="currentStatus">
         /// Current status as a clean lowercase string (open enum), e.g. processing, sent, partially_sent, failed.<br/>
@@ -190,10 +188,10 @@ namespace Terra
         /// Time printed on the report (HH:MM, 24-hour); omitted if not extracted.
         /// </param>
         /// <param name="collectionDate">
-        /// Specimen collection date (YYYY-MM-DD); omitted if not extracted.
+        /// Date the sample was collected or the scan was taken (YYYY-MM-DD); omitted if not extracted.
         /// </param>
         /// <param name="collectionTime">
-        /// Specimen collection time (HH:MM, 24-hour); omitted if not extracted.
+        /// Time the sample was collected or the scan was taken (HH:MM, 24-hour); omitted if not extracted.
         /// </param>
         /// <param name="reportLocale">
         /// Example: en-GB
@@ -223,7 +221,7 @@ namespace Terra
 #endif
         public LabReportSession(
             string sessionId,
-            string reportType,
+            global::Terra.ReportType reportType,
             string currentStatus,
             string? uploadId,
             string? referenceId,
@@ -249,7 +247,7 @@ namespace Terra
             this.SessionId = sessionId ?? throw new global::System.ArgumentNullException(nameof(sessionId));
             this.UploadId = uploadId;
             this.ReferenceId = referenceId;
-            this.ReportType = reportType ?? throw new global::System.ArgumentNullException(nameof(reportType));
+            this.ReportType = reportType;
             this.CurrentStatus = currentStatus ?? throw new global::System.ArgumentNullException(nameof(currentStatus));
             this.UploadedAt = uploadedAt;
             this.UpdatedAt = updatedAt;

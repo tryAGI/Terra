@@ -1,57 +1,202 @@
+#pragma warning disable CS0618 // Type or member is obsolete
 
 #nullable enable
 
 namespace Terra
 {
     /// <summary>
-    /// The retrieve source layer plus the specimen collection date/time (the retrieve carries these on the session, which a webhook consumer does not separately fetch).
+    /// The webhook source layer. Identical to the retrieve source layer — per-result collection date/time and region_name moved onto the shared base type, so the two cannot drift. Retained as a named type because it is published in the SDK.
     /// </summary>
-    public sealed partial class LabReportEventResultSource
+    public readonly partial struct LabReportEventResultSource : global::System.IEquatable<LabReportEventResultSource>
     {
         /// <summary>
-        /// Specimen collection date (YYYY-MM-DD); omitted if not extracted.
+        /// The verbatim provenance layer — what the report literally printed.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("collection_date")]
-        public string? CollectionDate { get; set; }
-
-        /// <summary>
-        /// Specimen collection time (HH:MM, 24-hour); omitted if not extracted.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("collection_time")]
-        public string? CollectionTime { get; set; }
-
-        /// <summary>
-        /// Additional properties that are not explicitly defined in the schema
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonExtensionData]
-        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="LabReportEventResultSource" /> class.
-        /// </summary>
-        /// <param name="collectionDate">
-        /// Specimen collection date (YYYY-MM-DD); omitted if not extracted.
-        /// </param>
-        /// <param name="collectionTime">
-        /// Specimen collection time (HH:MM, 24-hour); omitted if not extracted.
-        /// </param>
-#if NET7_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#if NET6_0_OR_GREATER
+        public global::Terra.LabReportResultSource? LabReportResultSource { get; init; }
+#else
+        public global::Terra.LabReportResultSource? LabReportResultSource { get; }
 #endif
-        public LabReportEventResultSource(
-            string? collectionDate,
-            string? collectionTime)
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LabReportResultSource))]
+#endif
+        public bool IsLabReportResultSource => LabReportResultSource != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickLabReportResultSource(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Terra.LabReportResultSource? value)
         {
-            this.CollectionDate = collectionDate;
-            this.CollectionTime = collectionTime;
+            value = LabReportResultSource;
+            return IsLabReportResultSource;
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="LabReportEventResultSource" /> class.
+        ///
         /// </summary>
-        public LabReportEventResultSource()
+        public global::Terra.LabReportResultSource PickLabReportResultSource() => IsLabReportResultSource
+            ? LabReportResultSource!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'LabReportResultSource' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator LabReportEventResultSource(global::Terra.LabReportResultSource value) => new LabReportEventResultSource((global::Terra.LabReportResultSource?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::Terra.LabReportResultSource?(LabReportEventResultSource @this) => @this.LabReportResultSource;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public LabReportEventResultSource(global::Terra.LabReportResultSource? value)
         {
+            LabReportResultSource = value;
         }
 
+        /// <summary>
+        ///
+        /// </summary>
+        public static LabReportEventResultSource FromLabReportResultSource(global::Terra.LabReportResultSource? value) => new LabReportEventResultSource(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public object? Object =>
+            LabReportResultSource as object
+            ;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public override string? ToString() =>
+            LabReportResultSource?.ToString()
+            ;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool Validate()
+        {
+            return IsLabReportResultSource;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public TResult? Match<TResult>(
+            global::System.Func<global::Terra.LabReportResultSource, TResult>? labReportResultSource = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsLabReportResultSource && labReportResultSource != null)
+            {
+                return labReportResultSource(LabReportResultSource!);
+            }
+
+            return default(TResult);
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public void Match(
+            global::System.Action<global::Terra.LabReportResultSource>? labReportResultSource = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsLabReportResultSource)
+            {
+                labReportResultSource?.Invoke(LabReportResultSource!);
+            }
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Terra.LabReportResultSource>? labReportResultSource = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsLabReportResultSource)
+            {
+                labReportResultSource?.Invoke(LabReportResultSource!);
+            }
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public override int GetHashCode()
+        {
+            var fields = new object?[]
+            {
+                LabReportResultSource,
+                typeof(global::Terra.LabReportResultSource),
+            };
+            const int offset = unchecked((int)2166136261);
+            const int prime = 16777619;
+            static int HashCodeAggregator(int hashCode, object? value) => value == null
+                ? (hashCode ^ 0) * prime
+                : (hashCode ^ value.GetHashCode()) * prime;
+
+            return global::System.Linq.Enumerable.Aggregate(fields, offset, HashCodeAggregator);
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool Equals(LabReportEventResultSource other)
+        {
+            return
+                global::System.Collections.Generic.EqualityComparer<global::Terra.LabReportResultSource?>.Default.Equals(LabReportResultSource, other.LabReportResultSource)
+                ;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static bool operator ==(LabReportEventResultSource obj1, LabReportEventResultSource obj2)
+        {
+            return global::System.Collections.Generic.EqualityComparer<LabReportEventResultSource>.Default.Equals(obj1, obj2);
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static bool operator !=(LabReportEventResultSource obj1, LabReportEventResultSource obj2)
+        {
+            return !(obj1 == obj2);
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public override bool Equals(object? obj)
+        {
+            return obj is LabReportEventResultSource o && Equals(o);
+        }
     }
 }
