@@ -55,10 +55,10 @@ namespace Terra
         /// Estimated calories burned
         /// </param>
         /// <param name="estimatedTss">
-        /// Planned training stress score, where the provider or author supplies one. Read-only today: accepted on create but not forwarded to providers.
+        /// Planned training stress score (0-9999), where the provider or author supplies one. Forwarded to TrainingPeaks, which ignores it when any step target is not RPE and derives it from the structure instead.
         /// </param>
         /// <param name="estimatedIntensityFactor">
-        /// Planned intensity factor, where the provider or author supplies one. Read-only today: accepted on create but not forwarded to providers.
+        /// Planned intensity factor (0-5), where the provider or author supplies one. Forwarded to TrainingPeaks, which ignores it when any step target is not RPE and derives it from the structure instead.
         /// </param>
         /// <param name="workoutId">
         /// Terra identifier of the stored template. Set by Terra in responses; ignored on create.
