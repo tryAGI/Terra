@@ -23,10 +23,11 @@ namespace Terra
         public string? WorkoutId { get; set; }
 
         /// <summary>
-        /// Scheduled date (YYYY-MM-DD). Null for provider entries that are not attached to a date, such as a routine library.
+        /// Scheduled date (YYYY-MM-DD)
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("planned_date")]
-        public string? PlannedDate { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string PlannedDate { get; set; }
 
         /// <summary>
         /// Identifier of the workout on the provider's side, in the form the provider's own API uses for it
@@ -95,6 +96,9 @@ namespace Terra
         /// <summary>
         /// Initializes a new instance of the <see cref="PlannedWorkout" /> class.
         /// </summary>
+        /// <param name="plannedDate">
+        /// Scheduled date (YYYY-MM-DD)
+        /// </param>
         /// <param name="warnings">
         /// Adjustments made while converting between Terra's template and the provider's format. On Terra-created workouts these come from the push to the provider; on external workouts, from reading the provider's workout into a template. Empty when the conversion was exact.
         /// </param>
@@ -106,9 +110,6 @@ namespace Terra
         /// </param>
         /// <param name="workoutId">
         /// Identifier of the workout template this was planned from. Null for workouts created on the provider side; a non-null value means the workout is managed through Terra and can be rescheduled or deleted.
-        /// </param>
-        /// <param name="plannedDate">
-        /// Scheduled date (YYYY-MM-DD). Null for provider entries that are not attached to a date, such as a routine library.
         /// </param>
         /// <param name="providerWorkoutId">
         /// Identifier of the workout on the provider's side, in the form the provider's own API uses for it
@@ -127,11 +128,11 @@ namespace Terra
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public PlannedWorkout(
+            string plannedDate,
             global::System.Collections.Generic.IList<global::Terra.CoercionWarning> warnings,
             bool isExternal,
             string? plannedWorkoutId,
             string? workoutId,
-            string? plannedDate,
             string? providerWorkoutId,
             string? createdAt,
             string? lastUpdatedAt,
@@ -140,7 +141,7 @@ namespace Terra
         {
             this.PlannedWorkoutId = plannedWorkoutId;
             this.WorkoutId = workoutId;
-            this.PlannedDate = plannedDate;
+            this.PlannedDate = plannedDate ?? throw new global::System.ArgumentNullException(nameof(plannedDate));
             this.ProviderWorkoutId = providerWorkoutId;
             this.Warnings = warnings ?? throw new global::System.ArgumentNullException(nameof(warnings));
             this.CreatedAt = createdAt;
