@@ -2,7 +2,7 @@
 
 namespace Terra
 {
-    public sealed partial class LabReportEventResultSource
+    public readonly partial struct LabReportEventResultSource
     {
         /// <summary>
         /// Serializes the current instance to a JSON string using the provided JsonSerializerContext.
@@ -54,7 +54,7 @@ namespace Terra
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
                 typeof(global::Terra.LabReportEventResultSource),
-                jsonSerializerContext) as global::Terra.LabReportEventResultSource;
+                jsonSerializerContext) as global::Terra.LabReportEventResultSource?;
         }
 
         /// <summary>
@@ -101,7 +101,7 @@ namespace Terra
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
                 typeof(global::Terra.LabReportEventResultSource),
-                jsonSerializerContext).ConfigureAwait(false)) as global::Terra.LabReportEventResultSource;
+                jsonSerializerContext).ConfigureAwait(false)) as global::Terra.LabReportEventResultSource?;
         }
 
         /// <summary>

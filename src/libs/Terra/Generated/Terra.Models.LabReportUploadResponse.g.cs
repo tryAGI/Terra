@@ -4,7 +4,7 @@
 namespace Terra
 {
     /// <summary>
-    /// Returned by the upload endpoint. A single upload may fan out to multiple sessions.
+    ///
     /// </summary>
     public sealed partial class LabReportUploadResponse
     {

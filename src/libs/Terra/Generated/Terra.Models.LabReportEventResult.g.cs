@@ -4,16 +4,16 @@
 namespace Terra
 {
     /// <summary>
-    /// One layered webhook result: the retrieve result, but its source additionally carries the specimen collection date/time.
+    /// One layered webhook result. Byte-identical to the retrieve result — same source, biomarker, measurement, interpretation and reference_ranges.
     /// </summary>
     public sealed partial class LabReportEventResult
     {
         /// <summary>
-        /// The retrieve source layer plus the specimen collection date/time (the retrieve carries these on the session, which a webhook consumer does not separately fetch).
+        /// The webhook source layer. Identical to the retrieve source layer — per-result collection date/time and region_name moved onto the shared base type, so the two cannot drift. Retained as a named type because it is published in the SDK.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("source")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Terra.LabReportEventResultSource Source { get; set; }
+        public required global::Terra.LabReportResultSource Source { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -25,13 +25,13 @@ namespace Terra
         /// Initializes a new instance of the <see cref="LabReportEventResult" /> class.
         /// </summary>
         /// <param name="source">
-        /// The retrieve source layer plus the specimen collection date/time (the retrieve carries these on the session, which a webhook consumer does not separately fetch).
+        /// The webhook source layer. Identical to the retrieve source layer — per-result collection date/time and region_name moved onto the shared base type, so the two cannot drift. Retained as a named type because it is published in the SDK.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public LabReportEventResult(
-            global::Terra.LabReportEventResultSource source)
+            global::Terra.LabReportResultSource source)
         {
             this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
         }

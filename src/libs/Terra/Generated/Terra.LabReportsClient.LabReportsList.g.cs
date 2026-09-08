@@ -28,6 +28,7 @@ namespace Terra
         partial void PrepareLabReportsListArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string? referenceId,
+            ref global::Terra.LabReportsListReportType? reportType,
             ref string? uploadId,
             ref global::System.DateTime? reportDateFrom,
             ref global::System.DateTime? reportDateTo,
@@ -37,6 +38,7 @@ namespace Terra
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string? referenceId,
+            global::Terra.LabReportsListReportType? reportType,
             string? uploadId,
             global::System.DateTime? reportDateFrom,
             global::System.DateTime? reportDateTo,
@@ -52,10 +54,11 @@ namespace Terra
             ref string content);
 
         /// <summary>
-        /// List lab report sessions<br/>
-        /// List lab report sessions for your account, with optional reference, upload, and inclusive date-range filters. Use the date filters to narrow large result sets.
+        /// List report sessions<br/>
+        /// List report sessions for your account — both lab reports and scans — with optional reference, upload, and inclusive date-range filters. Use the date filters to narrow large result sets, and read `report_type` on each session to tell a lab panel from a scan.
         /// </summary>
         /// <param name="referenceId"></param>
+        /// <param name="reportType"></param>
         /// <param name="uploadId"></param>
         /// <param name="reportDateFrom"></param>
         /// <param name="reportDateTo"></param>
@@ -66,6 +69,7 @@ namespace Terra
         /// <exception cref="global::Terra.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Terra.LabReportListResponse> LabReportsListAsync(
             string? referenceId = default,
+            global::Terra.LabReportsListReportType? reportType = default,
             string? uploadId = default,
             global::System.DateTime? reportDateFrom = default,
             global::System.DateTime? reportDateTo = default,
@@ -76,6 +80,7 @@ namespace Terra
         {
             var __response = await LabReportsListAsResponseAsync(
                 referenceId: referenceId,
+                reportType: reportType,
                 uploadId: uploadId,
                 reportDateFrom: reportDateFrom,
                 reportDateTo: reportDateTo,
@@ -88,10 +93,11 @@ namespace Terra
             return __response.Body;
         }
         /// <summary>
-        /// List lab report sessions<br/>
-        /// List lab report sessions for your account, with optional reference, upload, and inclusive date-range filters. Use the date filters to narrow large result sets.
+        /// List report sessions<br/>
+        /// List report sessions for your account — both lab reports and scans — with optional reference, upload, and inclusive date-range filters. Use the date filters to narrow large result sets, and read `report_type` on each session to tell a lab panel from a scan.
         /// </summary>
         /// <param name="referenceId"></param>
+        /// <param name="reportType"></param>
         /// <param name="uploadId"></param>
         /// <param name="reportDateFrom"></param>
         /// <param name="reportDateTo"></param>
@@ -102,6 +108,7 @@ namespace Terra
         /// <exception cref="global::Terra.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse<global::Terra.LabReportListResponse>> LabReportsListAsResponseAsync(
             string? referenceId = default,
+            global::Terra.LabReportsListReportType? reportType = default,
             string? uploadId = default,
             global::System.DateTime? reportDateFrom = default,
             global::System.DateTime? reportDateTo = default,
@@ -115,6 +122,7 @@ namespace Terra
             PrepareLabReportsListArguments(
                 httpClient: HttpClient,
                 referenceId: ref referenceId,
+                reportType: ref reportType,
                 uploadId: ref uploadId,
                 reportDateFrom: ref reportDateFrom,
                 reportDateTo: ref reportDateTo,
@@ -149,6 +157,7 @@ namespace Terra
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
                                 .AddOptionalParameter("reference_id", referenceId)
+                                .AddOptionalParameter("report_type", reportType?.ToValueString())
                                 .AddOptionalParameter("upload_id", uploadId)
                                 .AddOptionalParameter("report_date_from", reportDateFrom?.ToString("yyyy-MM-dd"))
                                 .AddOptionalParameter("report_date_to", reportDateTo?.ToString("yyyy-MM-dd"))
@@ -196,6 +205,7 @@ namespace Terra
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     referenceId: referenceId,
+                    reportType: reportType,
                     uploadId: uploadId,
                     reportDateFrom: reportDateFrom,
                     reportDateTo: reportDateTo,

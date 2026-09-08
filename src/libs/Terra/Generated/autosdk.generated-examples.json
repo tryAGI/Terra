@@ -112,11 +112,11 @@
     },
     {
       "Order": 11,
-      "Title": "List lab report sessions",
+      "Title": "List report sessions",
       "Slug": "labreports-list",
-      "Description": "List lab report sessions for your account, with optional reference, upload, and inclusive date-range filters. Use the date filters to narrow large result sets.",
+      "Description": "List report sessions for your account \u2014 both lab reports and scans \u2014 with optional reference, upload, and inclusive date-range filters. Use the date filters to narrow large result sets, and read \u0060report_type\u0060 on each session to tell a lab panel from a scan.",
       "Language": "csharp",
-      "Code": "using var client = new TerraClient(apiKey);\nvar response = await client.LabReports.LabReportsListAsync();",
+      "Code": "using var client = new TerraClient(apiKey);\n\nvar response = await client.LabReports.LabReportsListAsync(\n    reportType: global::Terra.LabReportsListReportType.Dexa\n);",
       "Format": "sdk",
       "OperationId": "LabReports_List",
       "Setup": "This example assumes \u0060using Terra;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
@@ -145,11 +145,11 @@
     },
     {
       "Order": 14,
-      "Title": "Upload a lab report",
+      "Title": "Upload a report",
       "Slug": "labreports-upload",
-      "Description": "Upload a single lab report file (PDF, PNG, JPEG, GIF, or WebP) as multipart form data. Returns an \u0060upload_id\u0060; a single upload may fan out to multiple sessions, so learn the \u0060session_id\u0060(s) from the webhook events or from \u0060GET /lab-reports?upload_id=...\u0060.",
+      "Description": "Upload a single report file (PDF, PNG, JPEG, GIF, or WebP) as multipart form data. Both clinical lab reports and DXA body-composition/bone-density scans go to this endpoint \u2014 Terra identifies which it is from the file, so there is no parameter to declare the type; read \u0060report_type\u0060 off the session or the webhook. Returns an \u0060upload_id\u0060; a single upload may fan out to multiple sessions, so learn the \u0060session_id\u0060(s) from the webhook events or from \u0060GET /lab-reports?upload_id=...\u0060.",
       "Language": "http",
-      "Code": "### Upload a lab report\n# @name LabReports_Upload\nPOST {{host}}/lab-reports?reference_id=patient_456\nAuthorization: Bearer {{token}}\nContent-Type: multipart/form-data; boundary=AutoSDKBoundary\nAccept: application/json, application/problem\u002Bjson\n\n--AutoSDKBoundary\nContent-Disposition: form-data; name=\u0022file\u0022; filename=\u0022file.bin\u0022\nContent-Type: application/octet-stream\n\n\u003C ./file.bin\n--AutoSDKBoundary--\n\n## Responses\n# 202\n# Description: Upload accepted for processing.\n# Content-Type: application/json\n# 400\n# Description: One or more parameters is malformed. The \u0060detail\u0060 field describes the specific problem.\n# Content-Type: application/problem\u002Bjson\n# 401\n# Description: Authentication credentials are missing or invalid.\n# Content-Type: application/problem\u002Bjson\n# 403\n# Description: The credential is not authorized for this operation.\n# Content-Type: application/json\n# 413\n# Description: The uploaded payload exceeds the size limit.\n# Content-Type: application/json",
+      "Code": "### Upload a report\n# @name LabReports_Upload\nPOST {{host}}/lab-reports?reference_id=patient_456\nAuthorization: Bearer {{token}}\nContent-Type: multipart/form-data; boundary=AutoSDKBoundary\nAccept: application/json, application/problem\u002Bjson\n\n--AutoSDKBoundary\nContent-Disposition: form-data; name=\u0022file\u0022; filename=\u0022file.bin\u0022\nContent-Type: application/octet-stream\n\n\u003C ./file.bin\n--AutoSDKBoundary--\n\n## Responses\n# 202\n# Description: Upload accepted for processing.\n# Content-Type: application/json\n# 400\n# Description: One or more parameters is malformed. The \u0060detail\u0060 field describes the specific problem.\n# Content-Type: application/problem\u002Bjson\n# 401\n# Description: Authentication credentials are missing or invalid.\n# Content-Type: application/problem\u002Bjson\n# 403\n# Description: The credential is not authorized for this operation.\n# Content-Type: application/json\n# 413\n# Description: The uploaded payload exceeds the size limit.\n# Content-Type: application/json",
       "Format": "http",
       "OperationId": "LabReports_Upload",
       "Setup": null

@@ -21,7 +21,7 @@ namespace Terra
         public string? DisplayName { get; set; }
 
         /// <summary>
-        /// LOINC code; omitted when the matched biomarker has no LOINC mapping.
+        /// LOINC code; omitted when the matched biomarker has no LOINC mapping. On a site-scoped (DXA) result the code identifies the (measure, site) pair rather than the measure alone, because LOINC's DXA terms are pre-coordinated — the site is baked into the term. Read it off each result; do not cache it against biomarker.key. Coverage is partial on scans: per-site body-fat percentage and the mass/lean/BMC measures have no LOINC term and omit the field.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("loinc_code")]
         public string? LoincCode { get; set; }
@@ -45,6 +45,13 @@ namespace Terra
         public string? Specimen { get; set; }
 
         /// <summary>
+        /// Canonical anatomical site keys for site-scoped (DXA) results. Closed vocabulary: the extractor may only emit a member of this set, and anything else is discarded before storage. Ordered anatomy-first, laterality-last, so a prefix match ("femur_neck") is a valid family query.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("region")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Terra.JsonConverters.AnatomicalRegionJsonConverter))]
+        public global::Terra.AnatomicalRegion? Region { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -58,13 +65,16 @@ namespace Terra
         /// </param>
         /// <param name="displayName"></param>
         /// <param name="loincCode">
-        /// LOINC code; omitted when the matched biomarker has no LOINC mapping.
+        /// LOINC code; omitted when the matched biomarker has no LOINC mapping. On a site-scoped (DXA) result the code identifies the (measure, site) pair rather than the measure alone, because LOINC's DXA terms are pre-coordinated — the site is baked into the term. Read it off each result; do not cache it against biomarker.key. Coverage is partial on scans: per-site body-fat percentage and the mass/lean/BMC measures have no LOINC term and omit the field.
         /// </param>
         /// <param name="panelId">
         /// References panels[].id on the enclosing session.
         /// </param>
         /// <param name="panelKey"></param>
         /// <param name="specimen"></param>
+        /// <param name="region">
+        /// Canonical anatomical site keys for site-scoped (DXA) results. Closed vocabulary: the extractor may only emit a member of this set, and anything else is discarded before storage. Ordered anatomy-first, laterality-last, so a prefix match ("femur_neck") is a valid family query.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -74,7 +84,8 @@ namespace Terra
             string? loincCode,
             int? panelId,
             string? panelKey,
-            string? specimen)
+            string? specimen,
+            global::Terra.AnatomicalRegion? region)
         {
             this.Key = key;
             this.DisplayName = displayName;
@@ -82,6 +93,7 @@ namespace Terra
             this.PanelId = panelId;
             this.PanelKey = panelKey;
             this.Specimen = specimen;
+            this.Region = region;
         }
 
         /// <summary>

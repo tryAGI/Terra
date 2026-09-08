@@ -57,6 +57,24 @@ namespace Terra
         public string? ReferenceText { get; set; }
 
         /// <summary>
+        /// Anatomical site label exactly as printed on the report, in the original language. Present whenever the report shows a site, including when no canonical region key matched.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("region_name")]
+        public string? RegionName { get; set; }
+
+        /// <summary>
+        /// Date this specific measurement was taken (YYYY-MM-DD). Distinguishes a prior scan in a trend table from the current one; omitted if not shown per result.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("collection_date")]
+        public string? CollectionDate { get; set; }
+
+        /// <summary>
+        /// Time this specific measurement was taken (HH:MM, 24-hour); omitted if not shown per result.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("collection_time")]
+        public string? CollectionTime { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -77,6 +95,15 @@ namespace Terra
         /// <param name="method"></param>
         /// <param name="notes"></param>
         /// <param name="referenceText"></param>
+        /// <param name="regionName">
+        /// Anatomical site label exactly as printed on the report, in the original language. Present whenever the report shows a site, including when no canonical region key matched.
+        /// </param>
+        /// <param name="collectionDate">
+        /// Date this specific measurement was taken (YYYY-MM-DD). Distinguishes a prior scan in a trend table from the current one; omitted if not shown per result.
+        /// </param>
+        /// <param name="collectionTime">
+        /// Time this specific measurement was taken (HH:MM, 24-hour); omitted if not shown per result.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -88,7 +115,10 @@ namespace Terra
             string? flag,
             string? method,
             string? notes,
-            string? referenceText)
+            string? referenceText,
+            string? regionName,
+            string? collectionDate,
+            string? collectionTime)
         {
             this.Name = name;
             this.Panel = panel;
@@ -98,6 +128,9 @@ namespace Terra
             this.Method = method;
             this.Notes = notes;
             this.ReferenceText = referenceText;
+            this.RegionName = regionName;
+            this.CollectionDate = collectionDate;
+            this.CollectionTime = collectionTime;
         }
 
         /// <summary>

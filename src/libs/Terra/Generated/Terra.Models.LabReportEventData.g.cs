@@ -23,6 +23,13 @@ namespace Terra
         public string? ReferenceId { get; set; }
 
         /// <summary>
+        /// Returned by the upload endpoint. A single upload may fan out to multiple sessions.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("report_type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Terra.JsonConverters.ReportTypeJsonConverter))]
+        public global::Terra.ReportType? ReportType { get; set; }
+
+        /// <summary>
         /// Date printed on the report (YYYY-MM-DD); omitted if not extracted.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("report_date")]
@@ -84,6 +91,9 @@ namespace Terra
         /// <param name="referenceId">
         /// Your external reference; omitted if not set.
         /// </param>
+        /// <param name="reportType">
+        /// Returned by the upload endpoint. A single upload may fan out to multiple sessions.
+        /// </param>
         /// <param name="reportDate">
         /// Date printed on the report (YYYY-MM-DD); omitted if not extracted.
         /// </param>
@@ -105,6 +115,7 @@ namespace Terra
             long resultsCount,
             global::System.Collections.Generic.IList<global::Terra.LabReportEventResult> results,
             string? referenceId,
+            global::Terra.ReportType? reportType,
             string? reportDate,
             string? reportTime,
             string? reportLocale,
@@ -113,6 +124,7 @@ namespace Terra
         {
             this.SessionId = sessionId ?? throw new global::System.ArgumentNullException(nameof(sessionId));
             this.ReferenceId = referenceId;
+            this.ReportType = reportType;
             this.ReportDate = reportDate;
             this.ReportTime = reportTime;
             this.ReportLocale = reportLocale;
