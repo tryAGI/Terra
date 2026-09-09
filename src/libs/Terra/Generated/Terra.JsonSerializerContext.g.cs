@@ -801,8 +801,10 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationAuthenticateUserRequestSdkApp), TypeInfoPropertyName = "AuthenticationAuthenticateUserRequestSdkApp2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutsPlanWorkoutRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutsUpdatePlannedWorkoutRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.ReportsUploadRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportsUploadRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<int?, global::System.DateTime?>), TypeInfoPropertyName = "OneOfInt32DateTime2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.ReportsListReportType), TypeInfoPropertyName = "ReportsListReportType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportsListReportType), TypeInfoPropertyName = "LabReportsListReportType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationAuthenticateUserResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationAuthenticateUserResponseStatus), TypeInfoPropertyName = "AuthenticationAuthenticateUserResponseStatus2")]
@@ -1024,8 +1026,6 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant169?), TypeInfoPropertyName = "NullableStrengthMovementVariant1692")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant170?), TypeInfoPropertyName = "NullableStrengthMovementVariant1702")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant171?), TypeInfoPropertyName = "NullableStrengthMovementVariant1712")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant172?), TypeInfoPropertyName = "NullableStrengthMovementVariant1722")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant173?), TypeInfoPropertyName = "NullableStrengthMovementVariant1732")]
     internal sealed partial class SourceGenerationContextChunk1 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -1038,6 +1038,8 @@ namespace Terra
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant172?), TypeInfoPropertyName = "NullableStrengthMovementVariant1722")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant173?), TypeInfoPropertyName = "NullableStrengthMovementVariant1732")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant174?), TypeInfoPropertyName = "NullableStrengthMovementVariant1742")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant175?), TypeInfoPropertyName = "NullableStrengthMovementVariant1752")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTarget?), TypeInfoPropertyName = "NullableStrengthTarget2")]
@@ -1340,6 +1342,7 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.HealthObservationEventType?), TypeInfoPropertyName = "NullableHealthObservationEventType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationAuthenticateUserRequestSdkApp?), TypeInfoPropertyName = "NullableAuthenticationAuthenticateUserRequestSdkApp2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<int?, global::System.DateTime?>?), TypeInfoPropertyName = "NullableOneOfInt32DateTime2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.ReportsListReportType?), TypeInfoPropertyName = "NullableReportsListReportType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportsListReportType?), TypeInfoPropertyName = "NullableLabReportsListReportType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationAuthenticateUserResponseStatus?), TypeInfoPropertyName = "NullableAuthenticationAuthenticateUserResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationGenerateWidgetSessionResponseStatus?), TypeInfoPropertyName = "NullableAuthenticationGenerateWidgetSessionResponseStatus2")]
@@ -3360,6 +3363,10 @@ namespace Terra
                     || typeToConvert == typeof(global::Terra.AuthenticationAuthenticateUserRequestSdkApp)
 
                     || typeToConvert == typeof(global::Terra.AuthenticationAuthenticateUserRequestSdkApp?)
+
+                    || typeToConvert == typeof(global::Terra.ReportsListReportType)
+
+                    || typeToConvert == typeof(global::Terra.ReportsListReportType?)
 
                     || typeToConvert == typeof(global::Terra.LabReportsListReportType)
 
@@ -7930,6 +7937,16 @@ namespace Terra
                 if (typeToConvert == typeof(global::Terra.AuthenticationAuthenticateUserRequestSdkApp?))
                 {
                     return new global::Terra.JsonConverters.AuthenticationAuthenticateUserRequestSdkAppNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.ReportsListReportType))
+                {
+                    return new global::Terra.JsonConverters.ReportsListReportTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.ReportsListReportType?))
+                {
+                    return new global::Terra.JsonConverters.ReportsListReportTypeNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Terra.LabReportsListReportType))

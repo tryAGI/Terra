@@ -7,7 +7,7 @@ namespace Terra
     {
 
 
-        private static readonly global::Terra.EndPointSecurityRequirement s_LabReportsDeleteSecurityRequirement0 =
+        private static readonly global::Terra.EndPointSecurityRequirement s_ReportsListSecurityRequirement0 =
             new global::Terra.EndPointSecurityRequirement
             {
                 Authorizations = new global::Terra.EndPointAuthorizationRequirement[]
@@ -21,64 +21,119 @@ namespace Terra
                     },
                 },
             };
-        private static readonly global::Terra.EndPointSecurityRequirement[] s_LabReportsDeleteSecurityRequirements =
+        private static readonly global::Terra.EndPointSecurityRequirement[] s_ReportsListSecurityRequirements =
             new global::Terra.EndPointSecurityRequirement[]
-            {                s_LabReportsDeleteSecurityRequirement0,
+            {                s_ReportsListSecurityRequirement0,
             };
-        partial void PrepareLabReportsDeleteArguments(
+        partial void PrepareReportsListArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref string sessionId);
-        partial void PrepareLabReportsDeleteRequest(
+            ref string? referenceId,
+            ref global::Terra.ReportsListReportType? reportType,
+            ref string? uploadId,
+            ref global::System.DateTime? reportDateFrom,
+            ref global::System.DateTime? reportDateTo,
+            ref global::System.DateTime? uploadedAtFrom,
+            ref global::System.DateTime? uploadedAtTo);
+        partial void PrepareReportsListRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            string sessionId);
-        partial void ProcessLabReportsDeleteResponse(
+            string? referenceId,
+            global::Terra.ReportsListReportType? reportType,
+            string? uploadId,
+            global::System.DateTime? reportDateFrom,
+            global::System.DateTime? reportDateTo,
+            global::System.DateTime? uploadedAtFrom,
+            global::System.DateTime? uploadedAtTo);
+        partial void ProcessReportsListResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
+        partial void ProcessReportsListResponseContent(
+            global::System.Net.Http.HttpClient httpClient,
+            global::System.Net.Http.HttpResponseMessage httpResponseMessage,
+            ref string content);
+
         /// <summary>
-        /// Delete a lab report session<br/>
-        /// Soft-delete a session. It is marked deleted immediately; associated storage is cleaned up by a background process.
+        /// List report sessions<br/>
+        /// List report sessions for your account — both lab reports and scans — with optional reference, upload, and inclusive date-range filters. Use the date filters to narrow large result sets, and read `report_type` on each session to tell a lab panel from a scan.
         /// </summary>
-        /// <param name="sessionId"></param>
+        /// <param name="referenceId"></param>
+        /// <param name="reportType"></param>
+        /// <param name="uploadId"></param>
+        /// <param name="reportDateFrom"></param>
+        /// <param name="reportDateTo"></param>
+        /// <param name="uploadedAtFrom"></param>
+        /// <param name="uploadedAtTo"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task LabReportsDeleteAsync(
-            string sessionId,
+        public async global::System.Threading.Tasks.Task<global::Terra.LabReportListResponse> ReportsListAsync(
+            string? referenceId = default,
+            global::Terra.ReportsListReportType? reportType = default,
+            string? uploadId = default,
+            global::System.DateTime? reportDateFrom = default,
+            global::System.DateTime? reportDateTo = default,
+            global::System.DateTime? uploadedAtFrom = default,
+            global::System.DateTime? uploadedAtTo = default,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            await LabReportsDeleteAsResponseAsync(
-                sessionId: sessionId,
+            var __response = await ReportsListAsResponseAsync(
+                referenceId: referenceId,
+                reportType: reportType,
+                uploadId: uploadId,
+                reportDateFrom: reportDateFrom,
+                reportDateTo: reportDateTo,
+                uploadedAtFrom: uploadedAtFrom,
+                uploadedAtTo: uploadedAtTo,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
+
+            return __response.Body;
         }
         /// <summary>
-        /// Delete a lab report session<br/>
-        /// Soft-delete a session. It is marked deleted immediately; associated storage is cleaned up by a background process.
+        /// List report sessions<br/>
+        /// List report sessions for your account — both lab reports and scans — with optional reference, upload, and inclusive date-range filters. Use the date filters to narrow large result sets, and read `report_type` on each session to tell a lab panel from a scan.
         /// </summary>
-        /// <param name="sessionId"></param>
+        /// <param name="referenceId"></param>
+        /// <param name="reportType"></param>
+        /// <param name="uploadId"></param>
+        /// <param name="reportDateFrom"></param>
+        /// <param name="reportDateTo"></param>
+        /// <param name="uploadedAtFrom"></param>
+        /// <param name="uploadedAtTo"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse> LabReportsDeleteAsResponseAsync(
-            string sessionId,
+        public async global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse<global::Terra.LabReportListResponse>> ReportsListAsResponseAsync(
+            string? referenceId = default,
+            global::Terra.ReportsListReportType? reportType = default,
+            string? uploadId = default,
+            global::System.DateTime? reportDateFrom = default,
+            global::System.DateTime? reportDateTo = default,
+            global::System.DateTime? uploadedAtFrom = default,
+            global::System.DateTime? uploadedAtTo = default,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             PrepareArguments(
                 client: HttpClient);
-            PrepareLabReportsDeleteArguments(
+            PrepareReportsListArguments(
                 httpClient: HttpClient,
-                sessionId: ref sessionId);
+                referenceId: ref referenceId,
+                reportType: ref reportType,
+                uploadId: ref uploadId,
+                reportDateFrom: ref reportDateFrom,
+                reportDateTo: ref reportDateTo,
+                uploadedAtFrom: ref uploadedAtFrom,
+                uploadedAtTo: ref uploadedAtTo);
 
 
             var __authorizations = global::Terra.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_LabReportsDeleteSecurityRequirements,
-                operationName: "LabReportsDeleteAsync");
+                securityRequirements: s_ReportsListSecurityRequirements,
+                operationName: "ReportsListAsync");
 
             using var __timeoutCancellationTokenSource = global::Terra.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -98,15 +153,24 @@ namespace Terra
             {
 
                             var __pathBuilder = new global::Terra.PathBuilder(
-                                path: $"/lab-reports/{sessionId}",
+                                path: "/reports",
                                 baseUri: HttpClient.BaseAddress);
+                            __pathBuilder
+                                .AddOptionalParameter("reference_id", referenceId)
+                                .AddOptionalParameter("report_type", reportType?.ToValueString())
+                                .AddOptionalParameter("upload_id", uploadId)
+                                .AddOptionalParameter("report_date_from", reportDateFrom?.ToString("yyyy-MM-dd"))
+                                .AddOptionalParameter("report_date_to", reportDateTo?.ToString("yyyy-MM-dd"))
+                                .AddOptionalParameter("uploaded_at_from", uploadedAtFrom?.ToString("yyyy-MM-dd"))
+                                .AddOptionalParameter("uploaded_at_to", uploadedAtTo?.ToString("yyyy-MM-dd"))
+                                ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Terra.AutoSDKRequestOptionsSupport.AppendQueryParameters(
                     path: __path,
                     clientParameters: Options.QueryParameters,
                     requestParameters: requestOptions?.QueryParameters);
                 var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
-                    method: global::System.Net.Http.HttpMethod.Delete,
+                    method: global::System.Net.Http.HttpMethod.Get,
                     requestUri: new global::System.Uri(__path, global::System.UriKind.RelativeOrAbsolute));
 #if NET6_0_OR_GREATER
                 __httpRequest.Version = global::System.Net.HttpVersion.Version11;
@@ -137,10 +201,16 @@ namespace Terra
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareLabReportsDeleteRequest(
+                PrepareReportsListRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    sessionId: sessionId!);
+                    referenceId: referenceId,
+                    reportType: reportType,
+                    uploadId: uploadId,
+                    reportDateFrom: reportDateFrom,
+                    reportDateTo: reportDateTo,
+                    uploadedAtFrom: uploadedAtFrom,
+                    uploadedAtTo: uploadedAtTo);
 
                 return __httpRequest;
             }
@@ -157,10 +227,10 @@ namespace Terra
                     await global::Terra.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::Terra.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "LabReportsDelete",
-                                methodName: "LabReportsDeleteAsync",
-                                pathTemplate: "$\"/lab-reports/{sessionId}\"",
-                                httpMethod: "DELETE",
+                                operationId: "ReportsList",
+                                methodName: "ReportsListAsync",
+                                pathTemplate: "\"/reports\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -191,10 +261,10 @@ namespace Terra
                         await global::Terra.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Terra.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "LabReportsDelete",
-                                methodName: "LabReportsDeleteAsync",
-                                pathTemplate: "$\"/lab-reports/{sessionId}\"",
-                                httpMethod: "DELETE",
+                                operationId: "ReportsList",
+                                methodName: "ReportsListAsync",
+                                pathTemplate: "\"/reports\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -232,10 +302,10 @@ namespace Terra
                         await global::Terra.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Terra.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "LabReportsDelete",
-                                methodName: "LabReportsDeleteAsync",
-                                pathTemplate: "$\"/lab-reports/{sessionId}\"",
-                                httpMethod: "DELETE",
+                                operationId: "ReportsList",
+                                methodName: "ReportsListAsync",
+                                pathTemplate: "\"/reports\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -272,7 +342,7 @@ namespace Terra
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessLabReportsDeleteResponse(
+                ProcessReportsListResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -280,10 +350,10 @@ namespace Terra
                     await global::Terra.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::Terra.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "LabReportsDelete",
-                                methodName: "LabReportsDeleteAsync",
-                                pathTemplate: "$\"/lab-reports/{sessionId}\"",
-                                httpMethod: "DELETE",
+                                operationId: "ReportsList",
+                                methodName: "ReportsListAsync",
+                                pathTemplate: "\"/reports\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -302,10 +372,10 @@ namespace Terra
                     await global::Terra.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Terra.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "LabReportsDelete",
-                                methodName: "LabReportsDeleteAsync",
-                                pathTemplate: "$\"/lab-reports/{sessionId}\"",
-                                httpMethod: "DELETE",
+                                operationId: "ReportsList",
+                                methodName: "ReportsListAsync",
+                                pathTemplate: "\"/reports\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -393,43 +463,6 @@ namespace Terra
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // A referenced resource does not exist on Terra's end.
-                            if ((int)__response.StatusCode == 404)
-                            {
-                                string? __content_404 = null;
-                                global::System.Exception? __exception_404 = null;
-                                global::Terra.Problem? __value_404 = null;
-                                try
-                                {
-                                    if (__effectiveReadResponseAsString)
-                                    {
-                                        __content_404 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_404 = global::Terra.Problem.FromJson(__content_404, JsonSerializerContext);
-                                    }
-                                    else
-                                    {
-                                        __content_404 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-
-                                        __value_404 = global::Terra.Problem.FromJson(__content_404, JsonSerializerContext);
-                                    }
-                                }
-                                catch (global::System.Exception __ex)
-                                {
-                                    __exception_404 = __ex;
-                                }
-
-
-                                throw global::Terra.ApiException<global::Terra.Problem>.Create(
-                                    statusCode: __response.StatusCode,
-                                    message: __content_404 ?? __response.ReasonPhrase ?? string.Empty,
-                                    innerException: __exception_404,
-                                    responseBody: __content_404,
-                                    responseObject: __value_404,
-                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
-                                        __response.Headers,
-                                        h => h.Key,
-                                        h => h.Value));
-                            }
 
                             if (__effectiveReadResponseAsString)
                             {
@@ -443,15 +476,22 @@ namespace Terra
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
+                                ProcessReportsListResponseContent(
+                                    httpClient: HttpClient,
+                                    httpResponseMessage: __response,
+                                    content: ref __content);
 
                                 try
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                return new global::Terra.AutoSDKHttpResponse(
+                                    var __value = global::Terra.LabReportListResponse.FromJson(__content, JsonSerializerContext) ??
+                                        throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                                    return new global::Terra.AutoSDKHttpResponse<global::Terra.LabReportListResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Terra.AutoSDKHttpResponse.CreateHeaders(__response),
-                                        requestUri: __response.RequestMessage?.RequestUri);
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
@@ -471,10 +511,19 @@ namespace Terra
                                 try
                                 {
                                     __response.EnsureSuccessStatusCode();
-                                    return new global::Terra.AutoSDKHttpResponse(
+                                    using var __content = await __response.Content.ReadAsStreamAsync(
+                #if NET5_0_OR_GREATER
+                                        __effectiveCancellationToken
+                #endif
+                                    ).ConfigureAwait(false);
+
+                                    var __value = await global::Terra.LabReportListResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                        throw new global::System.InvalidOperationException("Response deserialization failed.");
+                                    return new global::Terra.AutoSDKHttpResponse<global::Terra.LabReportListResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Terra.AutoSDKHttpResponse.CreateHeaders(__response),
-                                        requestUri: __response.RequestMessage?.RequestUri);
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {

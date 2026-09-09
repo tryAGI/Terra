@@ -7,7 +7,7 @@ namespace Terra
     {
 
 
-        private static readonly global::Terra.EndPointSecurityRequirement s_LabReportsUploadSecurityRequirement0 =
+        private static readonly global::Terra.EndPointSecurityRequirement s_ReportsUploadSecurityRequirement0 =
             new global::Terra.EndPointSecurityRequirement
             {
                 Authorizations = new global::Terra.EndPointAuthorizationRequirement[]
@@ -21,45 +21,45 @@ namespace Terra
                     },
                 },
             };
-        private static readonly global::Terra.EndPointSecurityRequirement[] s_LabReportsUploadSecurityRequirements =
+        private static readonly global::Terra.EndPointSecurityRequirement[] s_ReportsUploadSecurityRequirements =
             new global::Terra.EndPointSecurityRequirement[]
-            {                s_LabReportsUploadSecurityRequirement0,
+            {                s_ReportsUploadSecurityRequirement0,
             };
-        partial void PrepareLabReportsUploadArguments(
+        partial void PrepareReportsUploadArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string? referenceId,
-            global::Terra.LabReportsUploadRequest request);
-        partial void PrepareLabReportsUploadRequest(
+            global::Terra.ReportsUploadRequest request);
+        partial void PrepareReportsUploadRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string? referenceId,
-            global::Terra.LabReportsUploadRequest request);
-        partial void ProcessLabReportsUploadResponse(
+            global::Terra.ReportsUploadRequest request);
+        partial void ProcessReportsUploadResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
-        partial void ProcessLabReportsUploadResponseContent(
+        partial void ProcessReportsUploadResponseContent(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
         /// <summary>
         /// Upload a report<br/>
-        /// Upload a single report file (PDF, PNG, JPEG, GIF, or WebP) as multipart form data. Both clinical lab reports and DXA body-composition/bone-density scans go to this endpoint — Terra identifies which it is from the file, so there is no parameter to declare the type; read `report_type` off the session or the webhook. Returns an `upload_id`; a single upload may fan out to multiple sessions, so learn the `session_id`(s) from the webhook events or from `GET /lab-reports?upload_id=...`.
+        /// Upload a single report file (PDF, PNG, JPEG, GIF, or WebP) as multipart form data. Both clinical lab reports and DXA body-composition/bone-density scans go to this endpoint — Terra identifies which it is from the file, so there is no parameter to declare the type; read `report_type` off the session or the webhook. Returns an `upload_id`; a single upload may fan out to multiple sessions, so learn the `session_id`(s) from the webhook events or from `GET /reports?upload_id=...`.
         /// </summary>
         /// <param name="referenceId"></param>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Terra.LabReportUploadResponse> LabReportsUploadAsync(
+        public async global::System.Threading.Tasks.Task<global::Terra.LabReportUploadResponse> ReportsUploadAsync(
 
-            global::Terra.LabReportsUploadRequest request,
+            global::Terra.ReportsUploadRequest request,
             string? referenceId = default,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __response = await LabReportsUploadAsResponseAsync(
+            var __response = await ReportsUploadAsResponseAsync(
 
                 request: request,
                 referenceId: referenceId,
@@ -71,16 +71,16 @@ namespace Terra
         }
         /// <summary>
         /// Upload a report<br/>
-        /// Upload a single report file (PDF, PNG, JPEG, GIF, or WebP) as multipart form data. Both clinical lab reports and DXA body-composition/bone-density scans go to this endpoint — Terra identifies which it is from the file, so there is no parameter to declare the type; read `report_type` off the session or the webhook. Returns an `upload_id`; a single upload may fan out to multiple sessions, so learn the `session_id`(s) from the webhook events or from `GET /lab-reports?upload_id=...`.
+        /// Upload a single report file (PDF, PNG, JPEG, GIF, or WebP) as multipart form data. Both clinical lab reports and DXA body-composition/bone-density scans go to this endpoint — Terra identifies which it is from the file, so there is no parameter to declare the type; read `report_type` off the session or the webhook. Returns an `upload_id`; a single upload may fan out to multiple sessions, so learn the `session_id`(s) from the webhook events or from `GET /reports?upload_id=...`.
         /// </summary>
         /// <param name="referenceId"></param>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse<global::Terra.LabReportUploadResponse>> LabReportsUploadAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse<global::Terra.LabReportUploadResponse>> ReportsUploadAsResponseAsync(
 
-            global::Terra.LabReportsUploadRequest request,
+            global::Terra.ReportsUploadRequest request,
             string? referenceId = default,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -89,7 +89,7 @@ namespace Terra
 
             PrepareArguments(
                 client: HttpClient);
-            PrepareLabReportsUploadArguments(
+            PrepareReportsUploadArguments(
                 httpClient: HttpClient,
                 referenceId: ref referenceId,
                 request: request);
@@ -97,8 +97,8 @@ namespace Terra
 
             var __authorizations = global::Terra.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_LabReportsUploadSecurityRequirements,
-                operationName: "LabReportsUploadAsync");
+                securityRequirements: s_ReportsUploadSecurityRequirements,
+                operationName: "ReportsUploadAsync");
 
             using var __timeoutCancellationTokenSource = global::Terra.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -118,7 +118,7 @@ namespace Terra
             {
 
                             var __pathBuilder = new global::Terra.PathBuilder(
-                                path: "/lab-reports",
+                                path: "/reports",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
                                 .AddOptionalParameter("reference_id", referenceId)
@@ -202,7 +202,7 @@ namespace Terra
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareLabReportsUploadRequest(
+                PrepareReportsUploadRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     referenceId: referenceId,
@@ -223,9 +223,9 @@ namespace Terra
                     await global::Terra.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::Terra.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "LabReportsUpload",
-                                methodName: "LabReportsUploadAsync",
-                                pathTemplate: "\"/lab-reports\"",
+                                operationId: "ReportsUpload",
+                                methodName: "ReportsUploadAsync",
+                                pathTemplate: "\"/reports\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -257,9 +257,9 @@ namespace Terra
                         await global::Terra.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Terra.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "LabReportsUpload",
-                                methodName: "LabReportsUploadAsync",
-                                pathTemplate: "\"/lab-reports\"",
+                                operationId: "ReportsUpload",
+                                methodName: "ReportsUploadAsync",
+                                pathTemplate: "\"/reports\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -298,9 +298,9 @@ namespace Terra
                         await global::Terra.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Terra.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "LabReportsUpload",
-                                methodName: "LabReportsUploadAsync",
-                                pathTemplate: "\"/lab-reports\"",
+                                operationId: "ReportsUpload",
+                                methodName: "ReportsUploadAsync",
+                                pathTemplate: "\"/reports\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -338,7 +338,7 @@ namespace Terra
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessLabReportsUploadResponse(
+                ProcessReportsUploadResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -346,9 +346,9 @@ namespace Terra
                     await global::Terra.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::Terra.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "LabReportsUpload",
-                                methodName: "LabReportsUploadAsync",
-                                pathTemplate: "\"/lab-reports\"",
+                                operationId: "ReportsUpload",
+                                methodName: "ReportsUploadAsync",
+                                pathTemplate: "\"/reports\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -368,9 +368,9 @@ namespace Terra
                     await global::Terra.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Terra.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "LabReportsUpload",
-                                methodName: "LabReportsUploadAsync",
-                                pathTemplate: "\"/lab-reports\"",
+                                operationId: "ReportsUpload",
+                                methodName: "ReportsUploadAsync",
+                                pathTemplate: "\"/reports\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -546,7 +546,7 @@ namespace Terra
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
-                                ProcessLabReportsUploadResponseContent(
+                                ProcessReportsUploadResponseContent(
                                     httpClient: HttpClient,
                                     httpResponseMessage: __response,
                                     content: ref __content);
@@ -631,7 +631,7 @@ namespace Terra
         }
         /// <summary>
         /// Upload a report<br/>
-        /// Upload a single report file (PDF, PNG, JPEG, GIF, or WebP) as multipart form data. Both clinical lab reports and DXA body-composition/bone-density scans go to this endpoint — Terra identifies which it is from the file, so there is no parameter to declare the type; read `report_type` off the session or the webhook. Returns an `upload_id`; a single upload may fan out to multiple sessions, so learn the `session_id`(s) from the webhook events or from `GET /lab-reports?upload_id=...`.
+        /// Upload a single report file (PDF, PNG, JPEG, GIF, or WebP) as multipart form data. Both clinical lab reports and DXA body-composition/bone-density scans go to this endpoint — Terra identifies which it is from the file, so there is no parameter to declare the type; read `report_type` off the session or the webhook. Returns an `upload_id`; a single upload may fan out to multiple sessions, so learn the `session_id`(s) from the webhook events or from `GET /reports?upload_id=...`.
         /// </summary>
         /// <param name="referenceId"></param>
         /// <param name="file">
@@ -643,20 +643,20 @@ namespace Terra
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Terra.LabReportUploadResponse> LabReportsUploadAsync(
+        public async global::System.Threading.Tasks.Task<global::Terra.LabReportUploadResponse> ReportsUploadAsync(
             byte[] file,
             string filename,
             string? referenceId = default,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __request = new global::Terra.LabReportsUploadRequest
+            var __request = new global::Terra.ReportsUploadRequest
             {
                 File = file,
                 Filename = filename,
             };
 
-            return await LabReportsUploadAsync(
+            return await ReportsUploadAsync(
                 referenceId: referenceId,
                 request: __request,
                 requestOptions: requestOptions,
@@ -665,7 +665,7 @@ namespace Terra
 
         /// <summary>
         /// Upload a report<br/>
-        /// Upload a single report file (PDF, PNG, JPEG, GIF, or WebP) as multipart form data. Both clinical lab reports and DXA body-composition/bone-density scans go to this endpoint — Terra identifies which it is from the file, so there is no parameter to declare the type; read `report_type` off the session or the webhook. Returns an `upload_id`; a single upload may fan out to multiple sessions, so learn the `session_id`(s) from the webhook events or from `GET /lab-reports?upload_id=...`.
+        /// Upload a single report file (PDF, PNG, JPEG, GIF, or WebP) as multipart form data. Both clinical lab reports and DXA body-composition/bone-density scans go to this endpoint — Terra identifies which it is from the file, so there is no parameter to declare the type; read `report_type` off the session or the webhook. Returns an `upload_id`; a single upload may fan out to multiple sessions, so learn the `session_id`(s) from the webhook events or from `GET /reports?upload_id=...`.
         /// </summary>
         /// <param name="referenceId"></param>
         /// <param name="file">
@@ -677,7 +677,7 @@ namespace Terra
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Terra.LabReportUploadResponse> LabReportsUploadAsync(
+        public async global::System.Threading.Tasks.Task<global::Terra.LabReportUploadResponse> ReportsUploadAsync(
             global::System.IO.Stream file,
             string filename,
             string? referenceId = default,
@@ -686,14 +686,14 @@ namespace Terra
         {
 
             file = file ?? throw new global::System.ArgumentNullException(nameof(file));
-            var request = new global::Terra.LabReportsUploadRequest
+            var request = new global::Terra.ReportsUploadRequest
             {
                 File = global::System.Array.Empty<byte>(),
                 Filename = filename,
             };
             PrepareArguments(
                 client: HttpClient);
-            PrepareLabReportsUploadArguments(
+            PrepareReportsUploadArguments(
                 httpClient: HttpClient,
                 referenceId: ref referenceId,
                 request: request);
@@ -701,8 +701,8 @@ namespace Terra
 
             var __authorizations = global::Terra.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_LabReportsUploadSecurityRequirements,
-                operationName: "LabReportsUploadAsync");
+                securityRequirements: s_ReportsUploadSecurityRequirements,
+                operationName: "ReportsUploadAsync");
 
             using var __timeoutCancellationTokenSource = global::Terra.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -722,7 +722,7 @@ namespace Terra
             {
 
                             var __pathBuilder = new global::Terra.PathBuilder(
-                                path: "/lab-reports",
+                                path: "/reports",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
                                 .AddOptionalParameter("reference_id", referenceId)
@@ -806,7 +806,7 @@ namespace Terra
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareLabReportsUploadRequest(
+                PrepareReportsUploadRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     referenceId: referenceId,
@@ -827,9 +827,9 @@ namespace Terra
                     await global::Terra.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::Terra.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "LabReportsUpload",
-                                methodName: "LabReportsUploadAsync",
-                                pathTemplate: "\"/lab-reports\"",
+                                operationId: "ReportsUpload",
+                                methodName: "ReportsUploadAsync",
+                                pathTemplate: "\"/reports\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -861,9 +861,9 @@ namespace Terra
                         await global::Terra.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Terra.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "LabReportsUpload",
-                                methodName: "LabReportsUploadAsync",
-                                pathTemplate: "\"/lab-reports\"",
+                                operationId: "ReportsUpload",
+                                methodName: "ReportsUploadAsync",
+                                pathTemplate: "\"/reports\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -902,9 +902,9 @@ namespace Terra
                         await global::Terra.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Terra.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "LabReportsUpload",
-                                methodName: "LabReportsUploadAsync",
-                                pathTemplate: "\"/lab-reports\"",
+                                operationId: "ReportsUpload",
+                                methodName: "ReportsUploadAsync",
+                                pathTemplate: "\"/reports\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -942,7 +942,7 @@ namespace Terra
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessLabReportsUploadResponse(
+                ProcessReportsUploadResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -950,9 +950,9 @@ namespace Terra
                     await global::Terra.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::Terra.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "LabReportsUpload",
-                                methodName: "LabReportsUploadAsync",
-                                pathTemplate: "\"/lab-reports\"",
+                                operationId: "ReportsUpload",
+                                methodName: "ReportsUploadAsync",
+                                pathTemplate: "\"/reports\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -972,9 +972,9 @@ namespace Terra
                     await global::Terra.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Terra.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "LabReportsUpload",
-                                methodName: "LabReportsUploadAsync",
-                                pathTemplate: "\"/lab-reports\"",
+                                operationId: "ReportsUpload",
+                                methodName: "ReportsUploadAsync",
+                                pathTemplate: "\"/reports\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -1150,7 +1150,7 @@ namespace Terra
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
-                                ProcessLabReportsUploadResponseContent(
+                                ProcessReportsUploadResponseContent(
                                     httpClient: HttpClient,
                                     httpResponseMessage: __response,
                                     content: ref __content);
@@ -1227,7 +1227,7 @@ namespace Terra
         }
         /// <summary>
         /// Upload a report<br/>
-        /// Upload a single report file (PDF, PNG, JPEG, GIF, or WebP) as multipart form data. Both clinical lab reports and DXA body-composition/bone-density scans go to this endpoint — Terra identifies which it is from the file, so there is no parameter to declare the type; read `report_type` off the session or the webhook. Returns an `upload_id`; a single upload may fan out to multiple sessions, so learn the `session_id`(s) from the webhook events or from `GET /lab-reports?upload_id=...`.
+        /// Upload a single report file (PDF, PNG, JPEG, GIF, or WebP) as multipart form data. Both clinical lab reports and DXA body-composition/bone-density scans go to this endpoint — Terra identifies which it is from the file, so there is no parameter to declare the type; read `report_type` off the session or the webhook. Returns an `upload_id`; a single upload may fan out to multiple sessions, so learn the `session_id`(s) from the webhook events or from `GET /reports?upload_id=...`.
         /// </summary>
         /// <param name="referenceId"></param>
         /// <param name="file">
@@ -1239,7 +1239,7 @@ namespace Terra
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse<global::Terra.LabReportUploadResponse>> LabReportsUploadAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse<global::Terra.LabReportUploadResponse>> ReportsUploadAsResponseAsync(
             global::System.IO.Stream file,
             string filename,
             string? referenceId = default,
@@ -1248,14 +1248,14 @@ namespace Terra
         {
 
             file = file ?? throw new global::System.ArgumentNullException(nameof(file));
-            var request = new global::Terra.LabReportsUploadRequest
+            var request = new global::Terra.ReportsUploadRequest
             {
                 File = global::System.Array.Empty<byte>(),
                 Filename = filename,
             };
             PrepareArguments(
                 client: HttpClient);
-            PrepareLabReportsUploadArguments(
+            PrepareReportsUploadArguments(
                 httpClient: HttpClient,
                 referenceId: ref referenceId,
                 request: request);
@@ -1263,8 +1263,8 @@ namespace Terra
 
             var __authorizations = global::Terra.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_LabReportsUploadSecurityRequirements,
-                operationName: "LabReportsUploadAsync");
+                securityRequirements: s_ReportsUploadSecurityRequirements,
+                operationName: "ReportsUploadAsync");
 
             using var __timeoutCancellationTokenSource = global::Terra.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -1284,7 +1284,7 @@ namespace Terra
             {
 
                             var __pathBuilder = new global::Terra.PathBuilder(
-                                path: "/lab-reports",
+                                path: "/reports",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
                                 .AddOptionalParameter("reference_id", referenceId)
@@ -1368,7 +1368,7 @@ namespace Terra
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareLabReportsUploadRequest(
+                PrepareReportsUploadRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     referenceId: referenceId,
@@ -1389,9 +1389,9 @@ namespace Terra
                     await global::Terra.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::Terra.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "LabReportsUpload",
-                                methodName: "LabReportsUploadAsync",
-                                pathTemplate: "\"/lab-reports\"",
+                                operationId: "ReportsUpload",
+                                methodName: "ReportsUploadAsync",
+                                pathTemplate: "\"/reports\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -1423,9 +1423,9 @@ namespace Terra
                         await global::Terra.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Terra.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "LabReportsUpload",
-                                methodName: "LabReportsUploadAsync",
-                                pathTemplate: "\"/lab-reports\"",
+                                operationId: "ReportsUpload",
+                                methodName: "ReportsUploadAsync",
+                                pathTemplate: "\"/reports\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -1464,9 +1464,9 @@ namespace Terra
                         await global::Terra.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Terra.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "LabReportsUpload",
-                                methodName: "LabReportsUploadAsync",
-                                pathTemplate: "\"/lab-reports\"",
+                                operationId: "ReportsUpload",
+                                methodName: "ReportsUploadAsync",
+                                pathTemplate: "\"/reports\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -1504,7 +1504,7 @@ namespace Terra
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessLabReportsUploadResponse(
+                ProcessReportsUploadResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -1512,9 +1512,9 @@ namespace Terra
                     await global::Terra.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::Terra.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "LabReportsUpload",
-                                methodName: "LabReportsUploadAsync",
-                                pathTemplate: "\"/lab-reports\"",
+                                operationId: "ReportsUpload",
+                                methodName: "ReportsUploadAsync",
+                                pathTemplate: "\"/reports\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -1534,9 +1534,9 @@ namespace Terra
                     await global::Terra.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Terra.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "LabReportsUpload",
-                                methodName: "LabReportsUploadAsync",
-                                pathTemplate: "\"/lab-reports\"",
+                                operationId: "ReportsUpload",
+                                methodName: "ReportsUploadAsync",
+                                pathTemplate: "\"/reports\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -1712,7 +1712,7 @@ namespace Terra
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
-                                ProcessLabReportsUploadResponseContent(
+                                ProcessReportsUploadResponseContent(
                                     httpClient: HttpClient,
                                     httpResponseMessage: __response,
                                     content: ref __content);

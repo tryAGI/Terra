@@ -7,7 +7,7 @@ namespace Terra
     {
 
 
-        private static readonly global::Terra.EndPointSecurityRequirement s_LabReportsListFilesSecurityRequirement0 =
+        private static readonly global::Terra.EndPointSecurityRequirement s_ReportsGetSecurityRequirement0 =
             new global::Terra.EndPointSecurityRequirement
             {
                 Authorizations = new global::Terra.EndPointAuthorizationRequirement[]
@@ -21,40 +21,40 @@ namespace Terra
                     },
                 },
             };
-        private static readonly global::Terra.EndPointSecurityRequirement[] s_LabReportsListFilesSecurityRequirements =
+        private static readonly global::Terra.EndPointSecurityRequirement[] s_ReportsGetSecurityRequirements =
             new global::Terra.EndPointSecurityRequirement[]
-            {                s_LabReportsListFilesSecurityRequirement0,
+            {                s_ReportsGetSecurityRequirement0,
             };
-        partial void PrepareLabReportsListFilesArguments(
+        partial void PrepareReportsGetArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string sessionId);
-        partial void PrepareLabReportsListFilesRequest(
+        partial void PrepareReportsGetRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string sessionId);
-        partial void ProcessLabReportsListFilesResponse(
+        partial void ProcessReportsGetResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
-        partial void ProcessLabReportsListFilesResponseContent(
+        partial void ProcessReportsGetResponseContent(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
         /// <summary>
-        /// List input files<br/>
-        /// The uploaded input files and report thumbnail, with freshly minted presigned download URLs. URLs expire; fetch again to mint new ones.
+        /// Retrieve a lab report session<br/>
+        /// Retrieve a report's metadata, results, reference ranges, and status history. Immutable and cacheable — presigned file URLs and mutable per-destination delivery state live on the `/files` and `/deliveries` sub-resources.
         /// </summary>
         /// <param name="sessionId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Terra.LabReportFilesResponse> LabReportsListFilesAsync(
+        public async global::System.Threading.Tasks.Task<global::Terra.LabReportSession> ReportsGetAsync(
             string sessionId,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __response = await LabReportsListFilesAsResponseAsync(
+            var __response = await ReportsGetAsResponseAsync(
                 sessionId: sessionId,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
@@ -63,29 +63,29 @@ namespace Terra
             return __response.Body;
         }
         /// <summary>
-        /// List input files<br/>
-        /// The uploaded input files and report thumbnail, with freshly minted presigned download URLs. URLs expire; fetch again to mint new ones.
+        /// Retrieve a lab report session<br/>
+        /// Retrieve a report's metadata, results, reference ranges, and status history. Immutable and cacheable — presigned file URLs and mutable per-destination delivery state live on the `/files` and `/deliveries` sub-resources.
         /// </summary>
         /// <param name="sessionId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse<global::Terra.LabReportFilesResponse>> LabReportsListFilesAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse<global::Terra.LabReportSession>> ReportsGetAsResponseAsync(
             string sessionId,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             PrepareArguments(
                 client: HttpClient);
-            PrepareLabReportsListFilesArguments(
+            PrepareReportsGetArguments(
                 httpClient: HttpClient,
                 sessionId: ref sessionId);
 
 
             var __authorizations = global::Terra.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_LabReportsListFilesSecurityRequirements,
-                operationName: "LabReportsListFilesAsync");
+                securityRequirements: s_ReportsGetSecurityRequirements,
+                operationName: "ReportsGetAsync");
 
             using var __timeoutCancellationTokenSource = global::Terra.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -105,7 +105,7 @@ namespace Terra
             {
 
                             var __pathBuilder = new global::Terra.PathBuilder(
-                                path: $"/lab-reports/{sessionId}/files",
+                                path: $"/reports/{sessionId}",
                                 baseUri: HttpClient.BaseAddress);
                             var __path = __pathBuilder.ToString();
                 __path = global::Terra.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -144,7 +144,7 @@ namespace Terra
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareLabReportsListFilesRequest(
+                PrepareReportsGetRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     sessionId: sessionId!);
@@ -164,9 +164,9 @@ namespace Terra
                     await global::Terra.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::Terra.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "LabReportsListFiles",
-                                methodName: "LabReportsListFilesAsync",
-                                pathTemplate: "$\"/lab-reports/{sessionId}/files\"",
+                                operationId: "ReportsGet",
+                                methodName: "ReportsGetAsync",
+                                pathTemplate: "$\"/reports/{sessionId}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -198,9 +198,9 @@ namespace Terra
                         await global::Terra.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Terra.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "LabReportsListFiles",
-                                methodName: "LabReportsListFilesAsync",
-                                pathTemplate: "$\"/lab-reports/{sessionId}/files\"",
+                                operationId: "ReportsGet",
+                                methodName: "ReportsGetAsync",
+                                pathTemplate: "$\"/reports/{sessionId}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -239,9 +239,9 @@ namespace Terra
                         await global::Terra.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Terra.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "LabReportsListFiles",
-                                methodName: "LabReportsListFilesAsync",
-                                pathTemplate: "$\"/lab-reports/{sessionId}/files\"",
+                                operationId: "ReportsGet",
+                                methodName: "ReportsGetAsync",
+                                pathTemplate: "$\"/reports/{sessionId}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -279,7 +279,7 @@ namespace Terra
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessLabReportsListFilesResponse(
+                ProcessReportsGetResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -287,9 +287,9 @@ namespace Terra
                     await global::Terra.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::Terra.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "LabReportsListFiles",
-                                methodName: "LabReportsListFilesAsync",
-                                pathTemplate: "$\"/lab-reports/{sessionId}/files\"",
+                                operationId: "ReportsGet",
+                                methodName: "ReportsGetAsync",
+                                pathTemplate: "$\"/reports/{sessionId}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -309,9 +309,9 @@ namespace Terra
                     await global::Terra.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Terra.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "LabReportsListFiles",
-                                methodName: "LabReportsListFilesAsync",
-                                pathTemplate: "$\"/lab-reports/{sessionId}/files\"",
+                                operationId: "ReportsGet",
+                                methodName: "ReportsGetAsync",
+                                pathTemplate: "$\"/reports/{sessionId}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -450,7 +450,7 @@ namespace Terra
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
-                                ProcessLabReportsListFilesResponseContent(
+                                ProcessReportsGetResponseContent(
                                     httpClient: HttpClient,
                                     httpResponseMessage: __response,
                                     content: ref __content);
@@ -459,9 +459,9 @@ namespace Terra
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Terra.LabReportFilesResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Terra.LabReportSession.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Terra.AutoSDKHttpResponse<global::Terra.LabReportFilesResponse>(
+                                    return new global::Terra.AutoSDKHttpResponse<global::Terra.LabReportSession>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Terra.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -491,9 +491,9 @@ namespace Terra
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Terra.LabReportFilesResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Terra.LabReportSession.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Terra.AutoSDKHttpResponse<global::Terra.LabReportFilesResponse>(
+                                    return new global::Terra.AutoSDKHttpResponse<global::Terra.LabReportSession>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Terra.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
