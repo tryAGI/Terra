@@ -18,9 +18,9 @@ namespace Terra
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Terra.LabReportListResponse> LabReportsListAsync(
+        global::System.Threading.Tasks.Task<global::Terra.LabReportListResponse> ReportsListAsync(
             string? referenceId = default,
-            global::Terra.LabReportsListReportType? reportType = default,
+            global::Terra.ReportsListReportType? reportType = default,
             string? uploadId = default,
             global::System.DateTime? reportDateFrom = default,
             global::System.DateTime? reportDateTo = default,
@@ -42,9 +42,9 @@ namespace Terra
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse<global::Terra.LabReportListResponse>> LabReportsListAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse<global::Terra.LabReportListResponse>> ReportsListAsResponseAsync(
             string? referenceId = default,
-            global::Terra.LabReportsListReportType? reportType = default,
+            global::Terra.ReportsListReportType? reportType = default,
             string? uploadId = default,
             global::System.DateTime? reportDateFrom = default,
             global::System.DateTime? reportDateTo = default,

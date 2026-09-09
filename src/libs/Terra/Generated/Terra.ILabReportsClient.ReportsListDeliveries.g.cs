@@ -5,26 +5,26 @@ namespace Terra
     public partial interface ILabReportsClient
     {
         /// <summary>
-        /// Delete a lab report session<br/>
-        /// Soft-delete a session. It is marked deleted immediately; associated storage is cleaned up by a background process.
+        /// List delivery outcomes<br/>
+        /// The per-destination delivery state for a report. Each opted-in destination is tracked independently, so one failure never hides delivery to the others (and is why a session can be `partially_sent`).
         /// </summary>
         /// <param name="sessionId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
-        global::System.Threading.Tasks.Task LabReportsDeleteAsync(
+        global::System.Threading.Tasks.Task<global::Terra.LabReportDeliveriesResponse> ReportsListDeliveriesAsync(
             string sessionId,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Delete a lab report session<br/>
-        /// Soft-delete a session. It is marked deleted immediately; associated storage is cleaned up by a background process.
+        /// List delivery outcomes<br/>
+        /// The per-destination delivery state for a report. Each opted-in destination is tracked independently, so one failure never hides delivery to the others (and is why a session can be `partially_sent`).
         /// </summary>
         /// <param name="sessionId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse> LabReportsDeleteAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse<global::Terra.LabReportDeliveriesResponse>> ReportsListDeliveriesAsResponseAsync(
             string sessionId,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
