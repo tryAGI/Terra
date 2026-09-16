@@ -1,8 +1,12 @@
 openapi: 3.0.3
 info:
-  description: The Terra API (v2 surface, served at access.tryterra.co/api/v2).
+  description: 'The Terra API (v2 surface, served at access.tryterra.co/api/v2). Protected product operations require a current product entitlement in addition to valid credentials and token scopes. Missing
+    access returns HTTP 403 with code entitlement_required; disabled environments return environment_disabled. Unavailable current authorization returns HTTP 503 with code authorization_unavailable. Billing,
+    configuration and recovery remain available under their existing permissions.
+
+    '
   title: TerraAPI
-  version: 2026.09.09
+  version: 2026.09.16
   license:
     name: Apache-2.0
     url: https://github.com/tryterra/openapi/blob/master/LICENSE
@@ -78,8 +82,12 @@ paths:
                     example: https://www.fitbit.com/oauth2/authorize?response_type=code&client_id=23BBG9&scope=settings+nutrition+sleep+heartrate+electrocardiogram+weight+respiratory_rate+oxygen_saturation+profile+temperature+cardio_fitness+activity+location&state=bLqqjPie9ptwoWm6VBxHCu6JkkoWJp
         '400':
           $ref: '#/components/responses/BadRequest'
+        '403':
+          $ref: '#/components/responses/Forbidden'
         '404':
           $ref: '#/components/responses/NotFound'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   /auth/generateWidgetSession:
     post:
       summary: Generate a Terra Widget session link
@@ -122,6 +130,8 @@ paths:
                     example: 900
         '400':
           $ref: '#/components/responses/BadRequest'
+        '403':
+          $ref: '#/components/responses/Forbidden'
         '410':
           description: Returned for Terra accounts created after the widget relaunch (2026-09-03) — this endpoint is deprecated for them. Create widget sessions with POST https://access.tryterra.co/api/widget/session
             instead. The response carries Deprecation and Link (rel="deprecation") headers.
@@ -129,6 +139,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Problem'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   /auth/deauthenticateUser:
     delete:
       summary: Deauthenticate a user
@@ -199,8 +211,12 @@ paths:
                     type: integer
                     example: 180
                     default: 0
+        '403':
+          $ref: '#/components/responses/Forbidden'
         '404':
           $ref: '#/components/responses/NotFound'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   /auth/generateAuthToken:
     post:
       tags:
@@ -241,8 +257,12 @@ paths:
                     type: integer
                     example: 180
                     default: 0
+        '403':
+          $ref: '#/components/responses/Forbidden'
         '404':
           $ref: '#/components/responses/NotFound'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
       deprecated: true
   /activity:
     get:
@@ -315,8 +335,12 @@ paths:
           $ref: '#/components/responses/BadRequest'
         '401':
           $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
         '404':
           $ref: '#/components/responses/NotFound'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   /athlete:
     get:
       summary: Retrieve athlete profile
@@ -352,8 +376,12 @@ paths:
           $ref: '#/components/responses/BadRequest'
         '401':
           $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
         '404':
           $ref: '#/components/responses/NotFound'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   /body:
     get:
       summary: Retrieve body metrics
@@ -425,8 +453,12 @@ paths:
           $ref: '#/components/responses/BadRequest'
         '401':
           $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
         '404':
           $ref: '#/components/responses/NotFound'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   /daily:
     get:
       summary: Retrieve daily summaries
@@ -498,8 +530,12 @@ paths:
           $ref: '#/components/responses/BadRequest'
         '401':
           $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
         '404':
           $ref: '#/components/responses/NotFound'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   /menstruation:
     get:
       summary: Retrieve menstruation data
@@ -571,8 +607,12 @@ paths:
           $ref: '#/components/responses/BadRequest'
         '401':
           $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
         '404':
           $ref: '#/components/responses/NotFound'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   /nutrition:
     get:
       summary: Retrieve nutrition data
@@ -644,8 +684,12 @@ paths:
           $ref: '#/components/responses/BadRequest'
         '401':
           $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
         '404':
           $ref: '#/components/responses/NotFound'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   /sleep:
     get:
       summary: Retrieve sleep sessions
@@ -717,8 +761,12 @@ paths:
           $ref: '#/components/responses/BadRequest'
         '401':
           $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
         '404':
           $ref: '#/components/responses/NotFound'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   /workouts:
     post:
       tags:
@@ -754,6 +802,10 @@ paths:
           $ref: '#/components/responses/BadRequest'
         '401':
           $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
     get:
       tags:
       - Workouts
@@ -771,6 +823,10 @@ paths:
                   $ref: '#/components/schemas/WorkoutTemplate'
         '401':
           $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   /workouts/{workout_id}:
     get:
       tags:
@@ -793,8 +849,12 @@ paths:
                 $ref: '#/components/schemas/WorkoutTemplate'
         '401':
           $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
         '404':
           $ref: '#/components/responses/NotFound'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
     delete:
       tags:
       - Workouts
@@ -930,6 +990,8 @@ paths:
             application/problem+json:
               schema:
                 $ref: '#/components/schemas/Problem'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   /plannedWorkouts:
     get:
       tags:
@@ -997,8 +1059,12 @@ paths:
           $ref: '#/components/responses/BadRequest'
         '401':
           $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
         '404':
           $ref: '#/components/responses/NotFound'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   /plannedWorkouts/{planned_workout_id}:
     get:
       tags:
@@ -1029,8 +1095,12 @@ paths:
                 $ref: '#/components/schemas/PlannedWorkoutSummary'
         '401':
           $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
         '404':
           $ref: '#/components/responses/NotFound'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
     patch:
       tags:
       - Workouts
@@ -1080,6 +1150,8 @@ paths:
                 $ref: '#/components/schemas/Problem'
         '404':
           $ref: '#/components/responses/NotFound'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
     delete:
       tags:
       - Workouts
@@ -1354,6 +1426,8 @@ paths:
           $ref: '#/components/responses/Forbidden'
         '413':
           $ref: '#/components/responses/PayloadTooLarge'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
     get:
       summary: List report sessions
       description: List report sessions for your account — both lab reports and scans — with optional reference, upload, and inclusive date-range filters. Use the date filters to narrow large result sets,
@@ -1423,6 +1497,10 @@ paths:
           $ref: '#/components/responses/BadRequest'
         '401':
           $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   /reports/{session_id}:
     get:
       summary: Retrieve a lab report session
@@ -1450,8 +1528,12 @@ paths:
           $ref: '#/components/responses/BadRequest'
         '401':
           $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
         '404':
           $ref: '#/components/responses/NotFound'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
     delete:
       summary: Delete a lab report session
       description: Soft-delete a session. It is marked deleted immediately; associated storage is cleaned up by a background process.
@@ -1501,8 +1583,12 @@ paths:
           $ref: '#/components/responses/BadRequest'
         '401':
           $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
         '404':
           $ref: '#/components/responses/NotFound'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   /reports/{session_id}/files:
     get:
       summary: List input files
@@ -1529,8 +1615,12 @@ paths:
           $ref: '#/components/responses/BadRequest'
         '401':
           $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
         '404':
           $ref: '#/components/responses/NotFound'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   /lab-reports:
     post:
       deprecated: true
@@ -1577,6 +1667,8 @@ paths:
           $ref: '#/components/responses/Forbidden'
         '413':
           $ref: '#/components/responses/PayloadTooLarge'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
     get:
       deprecated: true
       summary: List report sessions
@@ -1647,6 +1739,10 @@ paths:
           $ref: '#/components/responses/BadRequest'
         '401':
           $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   /lab-reports/{session_id}:
     get:
       deprecated: true
@@ -1675,8 +1771,12 @@ paths:
           $ref: '#/components/responses/BadRequest'
         '401':
           $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
         '404':
           $ref: '#/components/responses/NotFound'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
     delete:
       deprecated: true
       summary: Delete a lab report session
@@ -1728,8 +1828,12 @@ paths:
           $ref: '#/components/responses/BadRequest'
         '401':
           $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
         '404':
           $ref: '#/components/responses/NotFound'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   /lab-reports/{session_id}/files:
     get:
       deprecated: true
@@ -1757,8 +1861,12 @@ paths:
           $ref: '#/components/responses/BadRequest'
         '401':
           $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
         '404':
           $ref: '#/components/responses/NotFound'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
 webhooks:
   auth:
     post:
@@ -1802,6 +1910,10 @@ webhooks:
       responses:
         '200':
           description: Successful authentication response
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   deauth:
     post:
       description: Fires when a user disconnects a previously connected provider account. Carries the affected `user`, identified by `user_id`. Remove that user and their stored data from your system according
@@ -1829,6 +1941,10 @@ webhooks:
       responses:
         '200':
           description: Successful deauthentication response
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   user_reauth:
     post:
       description: Fires when a user re-authenticates a provider already connected under the same `reference_id`, which replaces the old connection with a new `user_id`. The payload carries both `old_user`,
@@ -1865,6 +1981,10 @@ webhooks:
       responses:
         '200':
           description: Successful reauthentication response
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   access_revoked:
     post:
       description: Fires when a user revokes Terra's access from the provider's side, for example in their wearable app's settings. Carries the affected `user`. Remove the user and their stored data according
@@ -1892,6 +2012,10 @@ webhooks:
       responses:
         '200':
           description: Successful access revocation response
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   permission_change:
     post:
       description: 'Fires when the set of scopes a user has granted changes on the provider side. Carries the `user` with its current `scopes`, along with `scopes_added` and `scopes_removed`. Treat it as
@@ -1922,6 +2046,10 @@ webhooks:
       responses:
         '200':
           description: Successful permission change response
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   connection_error:
     post:
       description: Fires when a request to a provider returns HTTP 401, 403 or 412, meaning the stored credentials are no longer valid. Carries the affected `user`. Unlike `access_revoked`, Terra cannot
@@ -1949,6 +2077,10 @@ webhooks:
       responses:
         '200':
           description: Successful connection error response
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   large_request_sending:
     post:
       description: Fires just before Terra begins delivering the data for a large historical request of more than one month. Carries `expected_payloads`, the number of chunked data events that will follow,
@@ -1977,6 +2109,10 @@ webhooks:
       responses:
         '200':
           description: Successful large request sending response
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   large_request_processing:
     post:
       description: Fires when you request more than one month of a user's data, acknowledging that Terra has begun assembling it. The data follows as a series of data events that share one `terra_reference`,
@@ -2005,6 +2141,10 @@ webhooks:
       responses:
         '200':
           description: Successful large request processing response
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   s3_upload:
     post:
       description: Fires in place of a normal data event when a payload is too large to deliver inline, for destinations configured in ping mode. Carries a `type` of `s3_payload` and a pre-signed, time-limited
@@ -2026,6 +2166,10 @@ webhooks:
       responses:
         '200':
           description: Successful S3 upload response
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   activity:
     post:
       description: Fires when a new completed activity is available, such as a tracked run or ride with a defined start and end. Carries a `data` array of activity sessions for the `user`. Deliveries are
@@ -2071,6 +2215,10 @@ webhooks:
       responses:
         '200':
           description: Successful activity response
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   athlete:
     post:
       description: Fires when a user's athlete profile becomes available or changes, such as name, birth date or gender. Carries the `user` and their profile `data`. Store it against the user; unlike the
@@ -2105,6 +2253,10 @@ webhooks:
       responses:
         '200':
           description: Successful athlete response
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   nutrition:
     post:
       description: Fires when new nutrition data is available, such as logged meals, calories and macronutrients. Carries a `data` array for the `user`. Deliveries are at-least-once, so overwrite keyed
@@ -2142,6 +2294,10 @@ webhooks:
       responses:
         '200':
           description: Successful nutrition response
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   daily:
     post:
       description: Fires as a user's daily totals accrue, carrying the running summary up to the moment of the event, such as steps, calories and distance. Each payload is a cumulative superset for the
@@ -2181,6 +2337,10 @@ webhooks:
       responses:
         '200':
           description: Successful daily response
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   sleep:
     post:
       description: Fires when a new sleep session is available, with a defined start and end. Carries a `data` array of sleep sessions for the `user`. Deliveries are at-least-once, so overwrite keyed on
@@ -2221,6 +2381,10 @@ webhooks:
       responses:
         '200':
           description: Successful sleep response
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   menstruation:
     post:
       description: Fires when new menstruation data is available for a day, such as cycle phase and flow. Each payload is relevant to the 24-hour window identified by `metadata.start_time`, so overwrite
@@ -2257,6 +2421,10 @@ webhooks:
       responses:
         '200':
           description: Successful menstruation response
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   body:
     post:
       description: Fires when new body-metric data is available for a day, such as weight, heart rate or blood-oxygen samples. Each payload is a cumulative superset for the 24-hour window identified by
@@ -2298,6 +2466,10 @@ webhooks:
       responses:
         '200':
           description: Successful body response
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
   lab_report:
     post:
       description: 'lab_report data event: sent when a report finishes processing. The same event carries both clinical lab reports and DXA body-composition/bone-density scans - branch on data.report_type,
@@ -2436,6 +2608,10 @@ webhooks:
       responses:
         '200':
           description: Successful lab_report response
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '503':
+          $ref: '#/components/responses/AuthorizationUnavailable'
 components:
   securitySchemes:
     ApiKeyAuth:
@@ -2483,9 +2659,15 @@ components:
             instance: /activity
             detail: user not found
     Forbidden:
-      description: The credential is not authorized for this operation.
+      description: The credential is not authorized, the environment is disabled, or the required product entitlement is missing.
       content:
-        application/json:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/Problem'
+    AuthorizationUnavailable:
+      description: Current product authorization is unavailable; retry after the service recovers.
+      content:
+        application/problem+json:
           schema:
             $ref: '#/components/schemas/Problem'
     PayloadTooLarge:
@@ -2688,6 +2870,12 @@ components:
           type: string
           description: The request path, including any query string, that produced this problem.
           example: /api/v2/activity?user_id=d4aba475-f714-4663-88fe-28f18b8599b0&to_webhook=false
+        code:
+          type: string
+          description: Stable error classification. Product gates return entitlement_required (403), environment_disabled (403), or authorization_unavailable (503).
+        product:
+          type: string
+          description: The product checked by the authorization gate, when classified.
         detail:
           type: string
           description: A human-readable explanation specific to this occurrence of the problem.

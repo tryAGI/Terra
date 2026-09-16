@@ -36,6 +36,18 @@ namespace Terra
         public required string Instance { get; set; }
 
         /// <summary>
+        /// Stable error classification. Product gates return entitlement_required (403), environment_disabled (403), or authorization_unavailable (503).
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("code")]
+        public string? Code { get; set; }
+
+        /// <summary>
+        /// The product checked by the authorization gate, when classified.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("product")]
+        public string? Product { get; set; }
+
+        /// <summary>
         /// A human-readable explanation specific to this occurrence of the problem.<br/>
         /// Example: dev-id or x-api-key headers are missing
         /// </summary>
@@ -64,6 +76,12 @@ namespace Terra
         /// The request path, including any query string, that produced this problem.<br/>
         /// Example: /api/v2/activity?user_id=d4aba475-f714-4663-88fe-28f18b8599b0&amp;to_webhook=false
         /// </param>
+        /// <param name="code">
+        /// Stable error classification. Product gates return entitlement_required (403), environment_disabled (403), or authorization_unavailable (503).
+        /// </param>
+        /// <param name="product">
+        /// The product checked by the authorization gate, when classified.
+        /// </param>
         /// <param name="detail">
         /// A human-readable explanation specific to this occurrence of the problem.<br/>
         /// Example: dev-id or x-api-key headers are missing
@@ -75,11 +93,15 @@ namespace Terra
             string type,
             string title,
             string instance,
+            string? code,
+            string? product,
             string? detail)
         {
             this.Type = type ?? throw new global::System.ArgumentNullException(nameof(type));
             this.Title = title ?? throw new global::System.ArgumentNullException(nameof(title));
             this.Instance = instance ?? throw new global::System.ArgumentNullException(nameof(instance));
+            this.Code = code;
+            this.Product = product;
             this.Detail = detail;
         }
 

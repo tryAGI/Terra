@@ -459,7 +459,7 @@ namespace Terra
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // The credential is not authorized for this operation.
+                            // The credential is not authorized, the environment is disabled, or the required product entitlement is missing.
                             if ((int)__response.StatusCode == 403)
                             {
                                 string? __content_403 = null;
@@ -528,6 +528,43 @@ namespace Terra
                                     innerException: __exception_413,
                                     responseBody: __content_413,
                                     responseObject: __value_413,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value));
+                            }
+                            // Current product authorization is unavailable; retry after the service recovers.
+                            if ((int)__response.StatusCode == 503)
+                            {
+                                string? __content_503 = null;
+                                global::System.Exception? __exception_503 = null;
+                                global::Terra.Problem? __value_503 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_503 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __value_503 = global::Terra.Problem.FromJson(__content_503, JsonSerializerContext);
+                                    }
+                                    else
+                                    {
+                                        __content_503 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+
+                                        __value_503 = global::Terra.Problem.FromJson(__content_503, JsonSerializerContext);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_503 = __ex;
+                                }
+
+
+                                throw global::Terra.ApiException<global::Terra.Problem>.Create(
+                                    statusCode: __response.StatusCode,
+                                    message: __content_503 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_503,
+                                    responseBody: __content_503,
+                                    responseObject: __value_503,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
@@ -1063,7 +1100,7 @@ namespace Terra
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // The credential is not authorized for this operation.
+                            // The credential is not authorized, the environment is disabled, or the required product entitlement is missing.
                             if ((int)__response.StatusCode == 403)
                             {
                                 string? __content_403 = null;
@@ -1132,6 +1169,43 @@ namespace Terra
                                     innerException: __exception_413,
                                     responseBody: __content_413,
                                     responseObject: __value_413,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value));
+                            }
+                            // Current product authorization is unavailable; retry after the service recovers.
+                            if ((int)__response.StatusCode == 503)
+                            {
+                                string? __content_503 = null;
+                                global::System.Exception? __exception_503 = null;
+                                global::Terra.Problem? __value_503 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_503 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __value_503 = global::Terra.Problem.FromJson(__content_503, JsonSerializerContext);
+                                    }
+                                    else
+                                    {
+                                        __content_503 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+
+                                        __value_503 = global::Terra.Problem.FromJson(__content_503, JsonSerializerContext);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_503 = __ex;
+                                }
+
+
+                                throw global::Terra.ApiException<global::Terra.Problem>.Create(
+                                    statusCode: __response.StatusCode,
+                                    message: __content_503 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_503,
+                                    responseBody: __content_503,
+                                    responseObject: __value_503,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
@@ -1625,7 +1699,7 @@ namespace Terra
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // The credential is not authorized for this operation.
+                            // The credential is not authorized, the environment is disabled, or the required product entitlement is missing.
                             if ((int)__response.StatusCode == 403)
                             {
                                 string? __content_403 = null;
@@ -1694,6 +1768,43 @@ namespace Terra
                                     innerException: __exception_413,
                                     responseBody: __content_413,
                                     responseObject: __value_413,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value));
+                            }
+                            // Current product authorization is unavailable; retry after the service recovers.
+                            if ((int)__response.StatusCode == 503)
+                            {
+                                string? __content_503 = null;
+                                global::System.Exception? __exception_503 = null;
+                                global::Terra.Problem? __value_503 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_503 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __value_503 = global::Terra.Problem.FromJson(__content_503, JsonSerializerContext);
+                                    }
+                                    else
+                                    {
+                                        __content_503 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+
+                                        __value_503 = global::Terra.Problem.FromJson(__content_503, JsonSerializerContext);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_503 = __ex;
+                                }
+
+
+                                throw global::Terra.ApiException<global::Terra.Problem>.Create(
+                                    statusCode: __response.StatusCode,
+                                    message: __content_503 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_503,
+                                    responseBody: __content_503,
+                                    responseObject: __value_503,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
