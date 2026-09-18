@@ -4,7 +4,7 @@
 namespace Terra
 {
     /// <summary>
-    /// The Terra API (v2 surface, served at access.tryterra.co/api/v2). Protected product operations require a current product entitlement in addition to valid credentials and token scopes. Missing access returns HTTP 403 with code entitlement_required; disabled environments return environment_disabled. Unavailable current authorization returns HTTP 503 with code authorization_unavailable. Billing, configuration and recovery remain available under their existing permissions.<br/>
+    /// The Terra API (v2 surface, served at access.tryterra.co/api/v2). Protected product operations require a current product entitlement in addition to valid credentials and token scopes. Missing access returns HTTP 403 with code entitlement_required; disabled environments return environment_disabled. Unavailable current authorization returns HTTP 503 with code authorization_unavailable. Billing, configuration and recovery remain available under their existing permissions. Completed Health Scores stay with the caller's own authorized data. Pass recipients require their own Health Scores entitlement; otherwise enrichment fields retain null values. New score computation requires Health Scores access. Retained lab reports remain readable through the report endpoints with valid credentials and ownership, without a current Lab Reports entitlement. New uploads and reprocessing require it.<br/>
     /// If no httpClient is provided, a new one will be created.<br/>
     /// If no baseUri is provided, the default baseUri from OpenAPI spec will be used.
     /// </summary>
