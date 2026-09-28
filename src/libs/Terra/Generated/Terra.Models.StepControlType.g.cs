@@ -42,8 +42,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StepControlTypeVariant1 PickStepControlTypeVariant1() => IsStepControlTypeVariant1
-            ? StepControlTypeVariant1!.Value
+        public global::Terra.StepControlTypeVariant1 PickStepControlTypeVariant1() => StepControlTypeVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StepControlTypeVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StepControlTypeVariant2 PickStepControlTypeVariant2() => IsStepControlTypeVariant2
-            ? StepControlTypeVariant2!.Value
+        public global::Terra.StepControlTypeVariant2 PickStepControlTypeVariant2() => StepControlTypeVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StepControlTypeVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Terra
                 Validate();
             }
 
-            if (IsStepControlTypeVariant1 && stepControlTypeVariant1 != null)
+            if (StepControlTypeVariant1 is { } __value0 && stepControlTypeVariant1 != null)
             {
-                return stepControlTypeVariant1(StepControlTypeVariant1!);
+                return stepControlTypeVariant1(__value0);
             }
-            else if (IsStepControlTypeVariant2 && stepControlTypeVariant2 != null)
+            else if (StepControlTypeVariant2 is { } __value1 && stepControlTypeVariant2 != null)
             {
-                return stepControlTypeVariant2(StepControlTypeVariant2!);
+                return stepControlTypeVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Terra
                 Validate();
             }
 
-            if (IsStepControlTypeVariant1)
+            if (StepControlTypeVariant1 is { } __value0)
             {
-                stepControlTypeVariant1?.Invoke(StepControlTypeVariant1!);
+                stepControlTypeVariant1?.Invoke(__value0);
             }
-            else if (IsStepControlTypeVariant2)
+            else if (StepControlTypeVariant2 is { } __value1)
             {
-                stepControlTypeVariant2?.Invoke(StepControlTypeVariant2!);
+                stepControlTypeVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Terra
                 Validate();
             }
 
-            if (IsStepControlTypeVariant1)
+            if (StepControlTypeVariant1 is { } __value0)
             {
-                stepControlTypeVariant1?.Invoke(StepControlTypeVariant1!);
+                stepControlTypeVariant1?.Invoke(__value0);
             }
-            else if (IsStepControlTypeVariant2)
+            else if (StepControlTypeVariant2 is { } __value1)
             {
-                stepControlTypeVariant2?.Invoke(StepControlTypeVariant2!);
+                stepControlTypeVariant2?.Invoke(__value1);
             }
         }
 

@@ -42,8 +42,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.SwimStrokeTypeVariant1 PickSwimStrokeTypeVariant1() => IsSwimStrokeTypeVariant1
-            ? SwimStrokeTypeVariant1!.Value
+        public global::Terra.SwimStrokeTypeVariant1 PickSwimStrokeTypeVariant1() => SwimStrokeTypeVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SwimStrokeTypeVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.SwimStrokeTypeVariant2 PickSwimStrokeTypeVariant2() => IsSwimStrokeTypeVariant2
-            ? SwimStrokeTypeVariant2!.Value
+        public global::Terra.SwimStrokeTypeVariant2 PickSwimStrokeTypeVariant2() => SwimStrokeTypeVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SwimStrokeTypeVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.SwimStrokeTypeVariant3 PickSwimStrokeTypeVariant3() => IsSwimStrokeTypeVariant3
-            ? SwimStrokeTypeVariant3!.Value
+        public global::Terra.SwimStrokeTypeVariant3 PickSwimStrokeTypeVariant3() => SwimStrokeTypeVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SwimStrokeTypeVariant3' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.SwimStrokeTypeVariant4 PickSwimStrokeTypeVariant4() => IsSwimStrokeTypeVariant4
-            ? SwimStrokeTypeVariant4!.Value
+        public global::Terra.SwimStrokeTypeVariant4 PickSwimStrokeTypeVariant4() => SwimStrokeTypeVariant4 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SwimStrokeTypeVariant4' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.SwimStrokeTypeVariant5 PickSwimStrokeTypeVariant5() => IsSwimStrokeTypeVariant5
-            ? SwimStrokeTypeVariant5!.Value
+        public global::Terra.SwimStrokeTypeVariant5 PickSwimStrokeTypeVariant5() => SwimStrokeTypeVariant5 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SwimStrokeTypeVariant5' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.SwimStrokeTypeVariant6 PickSwimStrokeTypeVariant6() => IsSwimStrokeTypeVariant6
-            ? SwimStrokeTypeVariant6!.Value
+        public global::Terra.SwimStrokeTypeVariant6 PickSwimStrokeTypeVariant6() => SwimStrokeTypeVariant6 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SwimStrokeTypeVariant6' but the value was {ToString()}.");
 
         /// <summary>
@@ -264,8 +264,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.SwimStrokeTypeVariant7 PickSwimStrokeTypeVariant7() => IsSwimStrokeTypeVariant7
-            ? SwimStrokeTypeVariant7!.Value
+        public global::Terra.SwimStrokeTypeVariant7 PickSwimStrokeTypeVariant7() => SwimStrokeTypeVariant7 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SwimStrokeTypeVariant7' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -502,33 +502,33 @@ namespace Terra
                 Validate();
             }
 
-            if (IsSwimStrokeTypeVariant1 && swimStrokeTypeVariant1 != null)
+            if (SwimStrokeTypeVariant1 is { } __value0 && swimStrokeTypeVariant1 != null)
             {
-                return swimStrokeTypeVariant1(SwimStrokeTypeVariant1!);
+                return swimStrokeTypeVariant1(__value0);
             }
-            else if (IsSwimStrokeTypeVariant2 && swimStrokeTypeVariant2 != null)
+            else if (SwimStrokeTypeVariant2 is { } __value1 && swimStrokeTypeVariant2 != null)
             {
-                return swimStrokeTypeVariant2(SwimStrokeTypeVariant2!);
+                return swimStrokeTypeVariant2(__value1);
             }
-            else if (IsSwimStrokeTypeVariant3 && swimStrokeTypeVariant3 != null)
+            else if (SwimStrokeTypeVariant3 is { } __value2 && swimStrokeTypeVariant3 != null)
             {
-                return swimStrokeTypeVariant3(SwimStrokeTypeVariant3!);
+                return swimStrokeTypeVariant3(__value2);
             }
-            else if (IsSwimStrokeTypeVariant4 && swimStrokeTypeVariant4 != null)
+            else if (SwimStrokeTypeVariant4 is { } __value3 && swimStrokeTypeVariant4 != null)
             {
-                return swimStrokeTypeVariant4(SwimStrokeTypeVariant4!);
+                return swimStrokeTypeVariant4(__value3);
             }
-            else if (IsSwimStrokeTypeVariant5 && swimStrokeTypeVariant5 != null)
+            else if (SwimStrokeTypeVariant5 is { } __value4 && swimStrokeTypeVariant5 != null)
             {
-                return swimStrokeTypeVariant5(SwimStrokeTypeVariant5!);
+                return swimStrokeTypeVariant5(__value4);
             }
-            else if (IsSwimStrokeTypeVariant6 && swimStrokeTypeVariant6 != null)
+            else if (SwimStrokeTypeVariant6 is { } __value5 && swimStrokeTypeVariant6 != null)
             {
-                return swimStrokeTypeVariant6(SwimStrokeTypeVariant6!);
+                return swimStrokeTypeVariant6(__value5);
             }
-            else if (IsSwimStrokeTypeVariant7 && swimStrokeTypeVariant7 != null)
+            else if (SwimStrokeTypeVariant7 is { } __value6 && swimStrokeTypeVariant7 != null)
             {
-                return swimStrokeTypeVariant7(SwimStrokeTypeVariant7!);
+                return swimStrokeTypeVariant7(__value6);
             }
 
             return default(TResult);
@@ -558,33 +558,33 @@ namespace Terra
                 Validate();
             }
 
-            if (IsSwimStrokeTypeVariant1)
+            if (SwimStrokeTypeVariant1 is { } __value0)
             {
-                swimStrokeTypeVariant1?.Invoke(SwimStrokeTypeVariant1!);
+                swimStrokeTypeVariant1?.Invoke(__value0);
             }
-            else if (IsSwimStrokeTypeVariant2)
+            else if (SwimStrokeTypeVariant2 is { } __value1)
             {
-                swimStrokeTypeVariant2?.Invoke(SwimStrokeTypeVariant2!);
+                swimStrokeTypeVariant2?.Invoke(__value1);
             }
-            else if (IsSwimStrokeTypeVariant3)
+            else if (SwimStrokeTypeVariant3 is { } __value2)
             {
-                swimStrokeTypeVariant3?.Invoke(SwimStrokeTypeVariant3!);
+                swimStrokeTypeVariant3?.Invoke(__value2);
             }
-            else if (IsSwimStrokeTypeVariant4)
+            else if (SwimStrokeTypeVariant4 is { } __value3)
             {
-                swimStrokeTypeVariant4?.Invoke(SwimStrokeTypeVariant4!);
+                swimStrokeTypeVariant4?.Invoke(__value3);
             }
-            else if (IsSwimStrokeTypeVariant5)
+            else if (SwimStrokeTypeVariant5 is { } __value4)
             {
-                swimStrokeTypeVariant5?.Invoke(SwimStrokeTypeVariant5!);
+                swimStrokeTypeVariant5?.Invoke(__value4);
             }
-            else if (IsSwimStrokeTypeVariant6)
+            else if (SwimStrokeTypeVariant6 is { } __value5)
             {
-                swimStrokeTypeVariant6?.Invoke(SwimStrokeTypeVariant6!);
+                swimStrokeTypeVariant6?.Invoke(__value5);
             }
-            else if (IsSwimStrokeTypeVariant7)
+            else if (SwimStrokeTypeVariant7 is { } __value6)
             {
-                swimStrokeTypeVariant7?.Invoke(SwimStrokeTypeVariant7!);
+                swimStrokeTypeVariant7?.Invoke(__value6);
             }
         }
 
@@ -606,33 +606,33 @@ namespace Terra
                 Validate();
             }
 
-            if (IsSwimStrokeTypeVariant1)
+            if (SwimStrokeTypeVariant1 is { } __value0)
             {
-                swimStrokeTypeVariant1?.Invoke(SwimStrokeTypeVariant1!);
+                swimStrokeTypeVariant1?.Invoke(__value0);
             }
-            else if (IsSwimStrokeTypeVariant2)
+            else if (SwimStrokeTypeVariant2 is { } __value1)
             {
-                swimStrokeTypeVariant2?.Invoke(SwimStrokeTypeVariant2!);
+                swimStrokeTypeVariant2?.Invoke(__value1);
             }
-            else if (IsSwimStrokeTypeVariant3)
+            else if (SwimStrokeTypeVariant3 is { } __value2)
             {
-                swimStrokeTypeVariant3?.Invoke(SwimStrokeTypeVariant3!);
+                swimStrokeTypeVariant3?.Invoke(__value2);
             }
-            else if (IsSwimStrokeTypeVariant4)
+            else if (SwimStrokeTypeVariant4 is { } __value3)
             {
-                swimStrokeTypeVariant4?.Invoke(SwimStrokeTypeVariant4!);
+                swimStrokeTypeVariant4?.Invoke(__value3);
             }
-            else if (IsSwimStrokeTypeVariant5)
+            else if (SwimStrokeTypeVariant5 is { } __value4)
             {
-                swimStrokeTypeVariant5?.Invoke(SwimStrokeTypeVariant5!);
+                swimStrokeTypeVariant5?.Invoke(__value4);
             }
-            else if (IsSwimStrokeTypeVariant6)
+            else if (SwimStrokeTypeVariant6 is { } __value5)
             {
-                swimStrokeTypeVariant6?.Invoke(SwimStrokeTypeVariant6!);
+                swimStrokeTypeVariant6?.Invoke(__value5);
             }
-            else if (IsSwimStrokeTypeVariant7)
+            else if (SwimStrokeTypeVariant7 is { } __value6)
             {
-                swimStrokeTypeVariant7?.Invoke(SwimStrokeTypeVariant7!);
+                swimStrokeTypeVariant7?.Invoke(__value6);
             }
         }
 

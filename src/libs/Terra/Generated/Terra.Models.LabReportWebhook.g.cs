@@ -42,8 +42,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.LabReportCompletedEvent PickCompletedEvent() => IsCompletedEvent
-            ? CompletedEvent!
+        public global::Terra.LabReportCompletedEvent PickCompletedEvent() => CompletedEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CompletedEvent' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.LabReportFailedEvent PickFailedEvent() => IsFailedEvent
-            ? FailedEvent!
+        public global::Terra.LabReportFailedEvent PickFailedEvent() => FailedEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FailedEvent' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Terra
                 Validate();
             }
 
-            if (IsCompletedEvent && completedEvent != null)
+            if (CompletedEvent is { } __value0 && completedEvent != null)
             {
-                return completedEvent(CompletedEvent!);
+                return completedEvent(__value0);
             }
-            else if (IsFailedEvent && failedEvent != null)
+            else if (FailedEvent is { } __value1 && failedEvent != null)
             {
-                return failedEvent(FailedEvent!);
+                return failedEvent(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Terra
                 Validate();
             }
 
-            if (IsCompletedEvent)
+            if (CompletedEvent is { } __value0)
             {
-                completedEvent?.Invoke(CompletedEvent!);
+                completedEvent?.Invoke(__value0);
             }
-            else if (IsFailedEvent)
+            else if (FailedEvent is { } __value1)
             {
-                failedEvent?.Invoke(FailedEvent!);
+                failedEvent?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Terra
                 Validate();
             }
 
-            if (IsCompletedEvent)
+            if (CompletedEvent is { } __value0)
             {
-                completedEvent?.Invoke(CompletedEvent!);
+                completedEvent?.Invoke(__value0);
             }
-            else if (IsFailedEvent)
+            else if (FailedEvent is { } __value1)
             {
-                failedEvent?.Invoke(FailedEvent!);
+                failedEvent?.Invoke(__value1);
             }
         }
 

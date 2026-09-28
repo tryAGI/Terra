@@ -884,103 +884,103 @@ namespace Terra.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant1> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CompletionConditionTypeVariant1!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCompletionConditionTypeVariant1(), typeInfo);
             }
             else if (value.IsCompletionConditionTypeVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant2> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CompletionConditionTypeVariant2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCompletionConditionTypeVariant2(), typeInfo);
             }
             else if (value.IsCompletionConditionTypeVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant3> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant3).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CompletionConditionTypeVariant3!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCompletionConditionTypeVariant3(), typeInfo);
             }
             else if (value.IsCompletionConditionTypeVariant4)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant4> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant4).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CompletionConditionTypeVariant4!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCompletionConditionTypeVariant4(), typeInfo);
             }
             else if (value.IsCompletionConditionTypeVariant5)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant5), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant5> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant5).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CompletionConditionTypeVariant5!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCompletionConditionTypeVariant5(), typeInfo);
             }
             else if (value.IsCompletionConditionTypeVariant6)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant6), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant6> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant6).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CompletionConditionTypeVariant6!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCompletionConditionTypeVariant6(), typeInfo);
             }
             else if (value.IsCompletionConditionTypeVariant7)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant7), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant7> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant7).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CompletionConditionTypeVariant7!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCompletionConditionTypeVariant7(), typeInfo);
             }
             else if (value.IsCompletionConditionTypeVariant8)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant8), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant8> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant8).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CompletionConditionTypeVariant8!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCompletionConditionTypeVariant8(), typeInfo);
             }
             else if (value.IsCompletionConditionTypeVariant9)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant9), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant9> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant9).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CompletionConditionTypeVariant9!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCompletionConditionTypeVariant9(), typeInfo);
             }
             else if (value.IsCompletionConditionTypeVariant10)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant10), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant10> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant10).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CompletionConditionTypeVariant10!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCompletionConditionTypeVariant10(), typeInfo);
             }
             else if (value.IsCompletionConditionTypeVariant11)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant11), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant11> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant11).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CompletionConditionTypeVariant11!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCompletionConditionTypeVariant11(), typeInfo);
             }
             else if (value.IsCompletionConditionTypeVariant12)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant12), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant12> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant12).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CompletionConditionTypeVariant12!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCompletionConditionTypeVariant12(), typeInfo);
             }
             else if (value.IsCompletionConditionTypeVariant13)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant13), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant13> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant13).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CompletionConditionTypeVariant13!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCompletionConditionTypeVariant13(), typeInfo);
             }
             else if (value.IsCompletionConditionTypeVariant14)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant14), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant14> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant14).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CompletionConditionTypeVariant14!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCompletionConditionTypeVariant14(), typeInfo);
             }
             else if (value.IsCompletionConditionTypeVariant15)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant15), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant15> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant15).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CompletionConditionTypeVariant15!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCompletionConditionTypeVariant15(), typeInfo);
             }
             else if (value.IsCompletionConditionTypeVariant16)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant16), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant16> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant16).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CompletionConditionTypeVariant16!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCompletionConditionTypeVariant16(), typeInfo);
             }
             else if (value.IsCompletionConditionTypeVariant17)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.CompletionConditionTypeVariant17), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.CompletionConditionTypeVariant17> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.CompletionConditionTypeVariant17).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CompletionConditionTypeVariant17!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCompletionConditionTypeVariant17(), typeInfo);
             }
         }
     }

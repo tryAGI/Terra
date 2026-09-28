@@ -43,8 +43,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthSurfaceVariant1 PickStrengthSurfaceVariant1() => IsStrengthSurfaceVariant1
-            ? StrengthSurfaceVariant1!.Value
+        public global::Terra.StrengthSurfaceVariant1 PickStrengthSurfaceVariant1() => StrengthSurfaceVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthSurfaceVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -80,8 +80,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthSurfaceVariant2 PickStrengthSurfaceVariant2() => IsStrengthSurfaceVariant2
-            ? StrengthSurfaceVariant2!.Value
+        public global::Terra.StrengthSurfaceVariant2 PickStrengthSurfaceVariant2() => StrengthSurfaceVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthSurfaceVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -117,8 +117,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthSurfaceVariant3 PickStrengthSurfaceVariant3() => IsStrengthSurfaceVariant3
-            ? StrengthSurfaceVariant3!.Value
+        public global::Terra.StrengthSurfaceVariant3 PickStrengthSurfaceVariant3() => StrengthSurfaceVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthSurfaceVariant3' but the value was {ToString()}.");
 
         /// <summary>
@@ -154,8 +154,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthSurfaceVariant4 PickStrengthSurfaceVariant4() => IsStrengthSurfaceVariant4
-            ? StrengthSurfaceVariant4!.Value
+        public global::Terra.StrengthSurfaceVariant4 PickStrengthSurfaceVariant4() => StrengthSurfaceVariant4 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthSurfaceVariant4' but the value was {ToString()}.");
 
         /// <summary>
@@ -191,8 +191,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthSurfaceVariant5 PickStrengthSurfaceVariant5() => IsStrengthSurfaceVariant5
-            ? StrengthSurfaceVariant5!.Value
+        public global::Terra.StrengthSurfaceVariant5 PickStrengthSurfaceVariant5() => StrengthSurfaceVariant5 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthSurfaceVariant5' but the value was {ToString()}.");
 
         /// <summary>
@@ -228,8 +228,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthSurfaceVariant6 PickStrengthSurfaceVariant6() => IsStrengthSurfaceVariant6
-            ? StrengthSurfaceVariant6!.Value
+        public global::Terra.StrengthSurfaceVariant6 PickStrengthSurfaceVariant6() => StrengthSurfaceVariant6 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthSurfaceVariant6' but the value was {ToString()}.");
 
         /// <summary>
@@ -265,8 +265,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthSurfaceVariant7 PickStrengthSurfaceVariant7() => IsStrengthSurfaceVariant7
-            ? StrengthSurfaceVariant7!.Value
+        public global::Terra.StrengthSurfaceVariant7 PickStrengthSurfaceVariant7() => StrengthSurfaceVariant7 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthSurfaceVariant7' but the value was {ToString()}.");
 
         /// <summary>
@@ -302,8 +302,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthSurfaceVariant8 PickStrengthSurfaceVariant8() => IsStrengthSurfaceVariant8
-            ? StrengthSurfaceVariant8!.Value
+        public global::Terra.StrengthSurfaceVariant8 PickStrengthSurfaceVariant8() => StrengthSurfaceVariant8 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthSurfaceVariant8' but the value was {ToString()}.");
 
         /// <summary>
@@ -339,8 +339,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthSurfaceVariant9 PickStrengthSurfaceVariant9() => IsStrengthSurfaceVariant9
-            ? StrengthSurfaceVariant9!.Value
+        public global::Terra.StrengthSurfaceVariant9 PickStrengthSurfaceVariant9() => StrengthSurfaceVariant9 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthSurfaceVariant9' but the value was {ToString()}.");
 
         /// <summary>
@@ -376,8 +376,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthSurfaceVariant10 PickStrengthSurfaceVariant10() => IsStrengthSurfaceVariant10
-            ? StrengthSurfaceVariant10!.Value
+        public global::Terra.StrengthSurfaceVariant10 PickStrengthSurfaceVariant10() => StrengthSurfaceVariant10 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthSurfaceVariant10' but the value was {ToString()}.");
 
         /// <summary>
@@ -413,8 +413,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthSurfaceVariant11 PickStrengthSurfaceVariant11() => IsStrengthSurfaceVariant11
-            ? StrengthSurfaceVariant11!.Value
+        public global::Terra.StrengthSurfaceVariant11 PickStrengthSurfaceVariant11() => StrengthSurfaceVariant11 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthSurfaceVariant11' but the value was {ToString()}.");
 
         /// <summary>
@@ -450,8 +450,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public string PickStrengthSurfaceVariant12() => IsStrengthSurfaceVariant12
-            ? StrengthSurfaceVariant12!
+        public string PickStrengthSurfaceVariant12() => StrengthSurfaceVariant12 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthSurfaceVariant12' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -828,53 +828,53 @@ namespace Terra
                 Validate();
             }
 
-            if (IsStrengthSurfaceVariant1 && strengthSurfaceVariant1 != null)
+            if (StrengthSurfaceVariant1 is { } __value0 && strengthSurfaceVariant1 != null)
             {
-                return strengthSurfaceVariant1(StrengthSurfaceVariant1!);
+                return strengthSurfaceVariant1(__value0);
             }
-            else if (IsStrengthSurfaceVariant2 && strengthSurfaceVariant2 != null)
+            else if (StrengthSurfaceVariant2 is { } __value1 && strengthSurfaceVariant2 != null)
             {
-                return strengthSurfaceVariant2(StrengthSurfaceVariant2!);
+                return strengthSurfaceVariant2(__value1);
             }
-            else if (IsStrengthSurfaceVariant3 && strengthSurfaceVariant3 != null)
+            else if (StrengthSurfaceVariant3 is { } __value2 && strengthSurfaceVariant3 != null)
             {
-                return strengthSurfaceVariant3(StrengthSurfaceVariant3!);
+                return strengthSurfaceVariant3(__value2);
             }
-            else if (IsStrengthSurfaceVariant4 && strengthSurfaceVariant4 != null)
+            else if (StrengthSurfaceVariant4 is { } __value3 && strengthSurfaceVariant4 != null)
             {
-                return strengthSurfaceVariant4(StrengthSurfaceVariant4!);
+                return strengthSurfaceVariant4(__value3);
             }
-            else if (IsStrengthSurfaceVariant5 && strengthSurfaceVariant5 != null)
+            else if (StrengthSurfaceVariant5 is { } __value4 && strengthSurfaceVariant5 != null)
             {
-                return strengthSurfaceVariant5(StrengthSurfaceVariant5!);
+                return strengthSurfaceVariant5(__value4);
             }
-            else if (IsStrengthSurfaceVariant6 && strengthSurfaceVariant6 != null)
+            else if (StrengthSurfaceVariant6 is { } __value5 && strengthSurfaceVariant6 != null)
             {
-                return strengthSurfaceVariant6(StrengthSurfaceVariant6!);
+                return strengthSurfaceVariant6(__value5);
             }
-            else if (IsStrengthSurfaceVariant7 && strengthSurfaceVariant7 != null)
+            else if (StrengthSurfaceVariant7 is { } __value6 && strengthSurfaceVariant7 != null)
             {
-                return strengthSurfaceVariant7(StrengthSurfaceVariant7!);
+                return strengthSurfaceVariant7(__value6);
             }
-            else if (IsStrengthSurfaceVariant8 && strengthSurfaceVariant8 != null)
+            else if (StrengthSurfaceVariant8 is { } __value7 && strengthSurfaceVariant8 != null)
             {
-                return strengthSurfaceVariant8(StrengthSurfaceVariant8!);
+                return strengthSurfaceVariant8(__value7);
             }
-            else if (IsStrengthSurfaceVariant9 && strengthSurfaceVariant9 != null)
+            else if (StrengthSurfaceVariant9 is { } __value8 && strengthSurfaceVariant9 != null)
             {
-                return strengthSurfaceVariant9(StrengthSurfaceVariant9!);
+                return strengthSurfaceVariant9(__value8);
             }
-            else if (IsStrengthSurfaceVariant10 && strengthSurfaceVariant10 != null)
+            else if (StrengthSurfaceVariant10 is { } __value9 && strengthSurfaceVariant10 != null)
             {
-                return strengthSurfaceVariant10(StrengthSurfaceVariant10!);
+                return strengthSurfaceVariant10(__value9);
             }
-            else if (IsStrengthSurfaceVariant11 && strengthSurfaceVariant11 != null)
+            else if (StrengthSurfaceVariant11 is { } __value10 && strengthSurfaceVariant11 != null)
             {
-                return strengthSurfaceVariant11(StrengthSurfaceVariant11!);
+                return strengthSurfaceVariant11(__value10);
             }
-            else if (IsStrengthSurfaceVariant12 && strengthSurfaceVariant12 != null)
+            else if (StrengthSurfaceVariant12 is { } __value11 && strengthSurfaceVariant12 != null)
             {
-                return strengthSurfaceVariant12(StrengthSurfaceVariant12!);
+                return strengthSurfaceVariant12(__value11);
             }
 
             return default(TResult);
@@ -914,53 +914,53 @@ namespace Terra
                 Validate();
             }
 
-            if (IsStrengthSurfaceVariant1)
+            if (StrengthSurfaceVariant1 is { } __value0)
             {
-                strengthSurfaceVariant1?.Invoke(StrengthSurfaceVariant1!);
+                strengthSurfaceVariant1?.Invoke(__value0);
             }
-            else if (IsStrengthSurfaceVariant2)
+            else if (StrengthSurfaceVariant2 is { } __value1)
             {
-                strengthSurfaceVariant2?.Invoke(StrengthSurfaceVariant2!);
+                strengthSurfaceVariant2?.Invoke(__value1);
             }
-            else if (IsStrengthSurfaceVariant3)
+            else if (StrengthSurfaceVariant3 is { } __value2)
             {
-                strengthSurfaceVariant3?.Invoke(StrengthSurfaceVariant3!);
+                strengthSurfaceVariant3?.Invoke(__value2);
             }
-            else if (IsStrengthSurfaceVariant4)
+            else if (StrengthSurfaceVariant4 is { } __value3)
             {
-                strengthSurfaceVariant4?.Invoke(StrengthSurfaceVariant4!);
+                strengthSurfaceVariant4?.Invoke(__value3);
             }
-            else if (IsStrengthSurfaceVariant5)
+            else if (StrengthSurfaceVariant5 is { } __value4)
             {
-                strengthSurfaceVariant5?.Invoke(StrengthSurfaceVariant5!);
+                strengthSurfaceVariant5?.Invoke(__value4);
             }
-            else if (IsStrengthSurfaceVariant6)
+            else if (StrengthSurfaceVariant6 is { } __value5)
             {
-                strengthSurfaceVariant6?.Invoke(StrengthSurfaceVariant6!);
+                strengthSurfaceVariant6?.Invoke(__value5);
             }
-            else if (IsStrengthSurfaceVariant7)
+            else if (StrengthSurfaceVariant7 is { } __value6)
             {
-                strengthSurfaceVariant7?.Invoke(StrengthSurfaceVariant7!);
+                strengthSurfaceVariant7?.Invoke(__value6);
             }
-            else if (IsStrengthSurfaceVariant8)
+            else if (StrengthSurfaceVariant8 is { } __value7)
             {
-                strengthSurfaceVariant8?.Invoke(StrengthSurfaceVariant8!);
+                strengthSurfaceVariant8?.Invoke(__value7);
             }
-            else if (IsStrengthSurfaceVariant9)
+            else if (StrengthSurfaceVariant9 is { } __value8)
             {
-                strengthSurfaceVariant9?.Invoke(StrengthSurfaceVariant9!);
+                strengthSurfaceVariant9?.Invoke(__value8);
             }
-            else if (IsStrengthSurfaceVariant10)
+            else if (StrengthSurfaceVariant10 is { } __value9)
             {
-                strengthSurfaceVariant10?.Invoke(StrengthSurfaceVariant10!);
+                strengthSurfaceVariant10?.Invoke(__value9);
             }
-            else if (IsStrengthSurfaceVariant11)
+            else if (StrengthSurfaceVariant11 is { } __value10)
             {
-                strengthSurfaceVariant11?.Invoke(StrengthSurfaceVariant11!);
+                strengthSurfaceVariant11?.Invoke(__value10);
             }
-            else if (IsStrengthSurfaceVariant12)
+            else if (StrengthSurfaceVariant12 is { } __value11)
             {
-                strengthSurfaceVariant12?.Invoke(StrengthSurfaceVariant12!);
+                strengthSurfaceVariant12?.Invoke(__value11);
             }
         }
 
@@ -987,53 +987,53 @@ namespace Terra
                 Validate();
             }
 
-            if (IsStrengthSurfaceVariant1)
+            if (StrengthSurfaceVariant1 is { } __value0)
             {
-                strengthSurfaceVariant1?.Invoke(StrengthSurfaceVariant1!);
+                strengthSurfaceVariant1?.Invoke(__value0);
             }
-            else if (IsStrengthSurfaceVariant2)
+            else if (StrengthSurfaceVariant2 is { } __value1)
             {
-                strengthSurfaceVariant2?.Invoke(StrengthSurfaceVariant2!);
+                strengthSurfaceVariant2?.Invoke(__value1);
             }
-            else if (IsStrengthSurfaceVariant3)
+            else if (StrengthSurfaceVariant3 is { } __value2)
             {
-                strengthSurfaceVariant3?.Invoke(StrengthSurfaceVariant3!);
+                strengthSurfaceVariant3?.Invoke(__value2);
             }
-            else if (IsStrengthSurfaceVariant4)
+            else if (StrengthSurfaceVariant4 is { } __value3)
             {
-                strengthSurfaceVariant4?.Invoke(StrengthSurfaceVariant4!);
+                strengthSurfaceVariant4?.Invoke(__value3);
             }
-            else if (IsStrengthSurfaceVariant5)
+            else if (StrengthSurfaceVariant5 is { } __value4)
             {
-                strengthSurfaceVariant5?.Invoke(StrengthSurfaceVariant5!);
+                strengthSurfaceVariant5?.Invoke(__value4);
             }
-            else if (IsStrengthSurfaceVariant6)
+            else if (StrengthSurfaceVariant6 is { } __value5)
             {
-                strengthSurfaceVariant6?.Invoke(StrengthSurfaceVariant6!);
+                strengthSurfaceVariant6?.Invoke(__value5);
             }
-            else if (IsStrengthSurfaceVariant7)
+            else if (StrengthSurfaceVariant7 is { } __value6)
             {
-                strengthSurfaceVariant7?.Invoke(StrengthSurfaceVariant7!);
+                strengthSurfaceVariant7?.Invoke(__value6);
             }
-            else if (IsStrengthSurfaceVariant8)
+            else if (StrengthSurfaceVariant8 is { } __value7)
             {
-                strengthSurfaceVariant8?.Invoke(StrengthSurfaceVariant8!);
+                strengthSurfaceVariant8?.Invoke(__value7);
             }
-            else if (IsStrengthSurfaceVariant9)
+            else if (StrengthSurfaceVariant9 is { } __value8)
             {
-                strengthSurfaceVariant9?.Invoke(StrengthSurfaceVariant9!);
+                strengthSurfaceVariant9?.Invoke(__value8);
             }
-            else if (IsStrengthSurfaceVariant10)
+            else if (StrengthSurfaceVariant10 is { } __value9)
             {
-                strengthSurfaceVariant10?.Invoke(StrengthSurfaceVariant10!);
+                strengthSurfaceVariant10?.Invoke(__value9);
             }
-            else if (IsStrengthSurfaceVariant11)
+            else if (StrengthSurfaceVariant11 is { } __value10)
             {
-                strengthSurfaceVariant11?.Invoke(StrengthSurfaceVariant11!);
+                strengthSurfaceVariant11?.Invoke(__value10);
             }
-            else if (IsStrengthSurfaceVariant12)
+            else if (StrengthSurfaceVariant12 is { } __value11)
             {
-                strengthSurfaceVariant12?.Invoke(StrengthSurfaceVariant12!);
+                strengthSurfaceVariant12?.Invoke(__value11);
             }
         }
 

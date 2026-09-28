@@ -198,19 +198,19 @@ namespace Terra.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.EnvironmentTypeVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.EnvironmentTypeVariant1> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.EnvironmentTypeVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.EnvironmentTypeVariant1!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickEnvironmentTypeVariant1(), typeInfo);
             }
             else if (value.IsEnvironmentTypeVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.EnvironmentTypeVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.EnvironmentTypeVariant2> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.EnvironmentTypeVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.EnvironmentTypeVariant2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickEnvironmentTypeVariant2(), typeInfo);
             }
             else if (value.IsEnvironmentTypeVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.EnvironmentTypeVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.EnvironmentTypeVariant3> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.EnvironmentTypeVariant3).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.EnvironmentTypeVariant3!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickEnvironmentTypeVariant3(), typeInfo);
             }
         }
     }

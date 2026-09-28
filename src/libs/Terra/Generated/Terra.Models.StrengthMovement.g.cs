@@ -43,8 +43,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant1 PickStrengthMovementVariant1() => IsStrengthMovementVariant1
-            ? StrengthMovementVariant1!.Value
+        public global::Terra.StrengthMovementVariant1 PickStrengthMovementVariant1() => StrengthMovementVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -80,8 +80,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant2 PickStrengthMovementVariant2() => IsStrengthMovementVariant2
-            ? StrengthMovementVariant2!.Value
+        public global::Terra.StrengthMovementVariant2 PickStrengthMovementVariant2() => StrengthMovementVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -117,8 +117,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant3 PickStrengthMovementVariant3() => IsStrengthMovementVariant3
-            ? StrengthMovementVariant3!.Value
+        public global::Terra.StrengthMovementVariant3 PickStrengthMovementVariant3() => StrengthMovementVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant3' but the value was {ToString()}.");
 
         /// <summary>
@@ -154,8 +154,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant4 PickStrengthMovementVariant4() => IsStrengthMovementVariant4
-            ? StrengthMovementVariant4!.Value
+        public global::Terra.StrengthMovementVariant4 PickStrengthMovementVariant4() => StrengthMovementVariant4 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant4' but the value was {ToString()}.");
 
         /// <summary>
@@ -191,8 +191,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant5 PickStrengthMovementVariant5() => IsStrengthMovementVariant5
-            ? StrengthMovementVariant5!.Value
+        public global::Terra.StrengthMovementVariant5 PickStrengthMovementVariant5() => StrengthMovementVariant5 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant5' but the value was {ToString()}.");
 
         /// <summary>
@@ -228,8 +228,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant6 PickStrengthMovementVariant6() => IsStrengthMovementVariant6
-            ? StrengthMovementVariant6!.Value
+        public global::Terra.StrengthMovementVariant6 PickStrengthMovementVariant6() => StrengthMovementVariant6 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant6' but the value was {ToString()}.");
 
         /// <summary>
@@ -265,8 +265,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant7 PickStrengthMovementVariant7() => IsStrengthMovementVariant7
-            ? StrengthMovementVariant7!.Value
+        public global::Terra.StrengthMovementVariant7 PickStrengthMovementVariant7() => StrengthMovementVariant7 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant7' but the value was {ToString()}.");
 
         /// <summary>
@@ -302,8 +302,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant8 PickStrengthMovementVariant8() => IsStrengthMovementVariant8
-            ? StrengthMovementVariant8!.Value
+        public global::Terra.StrengthMovementVariant8 PickStrengthMovementVariant8() => StrengthMovementVariant8 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant8' but the value was {ToString()}.");
 
         /// <summary>
@@ -339,8 +339,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant9 PickStrengthMovementVariant9() => IsStrengthMovementVariant9
-            ? StrengthMovementVariant9!.Value
+        public global::Terra.StrengthMovementVariant9 PickStrengthMovementVariant9() => StrengthMovementVariant9 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant9' but the value was {ToString()}.");
 
         /// <summary>
@@ -376,8 +376,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant10 PickStrengthMovementVariant10() => IsStrengthMovementVariant10
-            ? StrengthMovementVariant10!.Value
+        public global::Terra.StrengthMovementVariant10 PickStrengthMovementVariant10() => StrengthMovementVariant10 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant10' but the value was {ToString()}.");
 
         /// <summary>
@@ -413,8 +413,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant11 PickStrengthMovementVariant11() => IsStrengthMovementVariant11
-            ? StrengthMovementVariant11!.Value
+        public global::Terra.StrengthMovementVariant11 PickStrengthMovementVariant11() => StrengthMovementVariant11 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant11' but the value was {ToString()}.");
 
         /// <summary>
@@ -450,8 +450,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant12 PickStrengthMovementVariant12() => IsStrengthMovementVariant12
-            ? StrengthMovementVariant12!.Value
+        public global::Terra.StrengthMovementVariant12 PickStrengthMovementVariant12() => StrengthMovementVariant12 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant12' but the value was {ToString()}.");
 
         /// <summary>
@@ -487,8 +487,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant13 PickStrengthMovementVariant13() => IsStrengthMovementVariant13
-            ? StrengthMovementVariant13!.Value
+        public global::Terra.StrengthMovementVariant13 PickStrengthMovementVariant13() => StrengthMovementVariant13 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant13' but the value was {ToString()}.");
 
         /// <summary>
@@ -524,8 +524,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant14 PickStrengthMovementVariant14() => IsStrengthMovementVariant14
-            ? StrengthMovementVariant14!.Value
+        public global::Terra.StrengthMovementVariant14 PickStrengthMovementVariant14() => StrengthMovementVariant14 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant14' but the value was {ToString()}.");
 
         /// <summary>
@@ -561,8 +561,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant15 PickStrengthMovementVariant15() => IsStrengthMovementVariant15
-            ? StrengthMovementVariant15!.Value
+        public global::Terra.StrengthMovementVariant15 PickStrengthMovementVariant15() => StrengthMovementVariant15 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant15' but the value was {ToString()}.");
 
         /// <summary>
@@ -598,8 +598,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant16 PickStrengthMovementVariant16() => IsStrengthMovementVariant16
-            ? StrengthMovementVariant16!.Value
+        public global::Terra.StrengthMovementVariant16 PickStrengthMovementVariant16() => StrengthMovementVariant16 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant16' but the value was {ToString()}.");
 
         /// <summary>
@@ -635,8 +635,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant17 PickStrengthMovementVariant17() => IsStrengthMovementVariant17
-            ? StrengthMovementVariant17!.Value
+        public global::Terra.StrengthMovementVariant17 PickStrengthMovementVariant17() => StrengthMovementVariant17 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant17' but the value was {ToString()}.");
 
         /// <summary>
@@ -672,8 +672,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant18 PickStrengthMovementVariant18() => IsStrengthMovementVariant18
-            ? StrengthMovementVariant18!.Value
+        public global::Terra.StrengthMovementVariant18 PickStrengthMovementVariant18() => StrengthMovementVariant18 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant18' but the value was {ToString()}.");
 
         /// <summary>
@@ -709,8 +709,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant19 PickStrengthMovementVariant19() => IsStrengthMovementVariant19
-            ? StrengthMovementVariant19!.Value
+        public global::Terra.StrengthMovementVariant19 PickStrengthMovementVariant19() => StrengthMovementVariant19 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant19' but the value was {ToString()}.");
 
         /// <summary>
@@ -746,8 +746,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant20 PickStrengthMovementVariant20() => IsStrengthMovementVariant20
-            ? StrengthMovementVariant20!.Value
+        public global::Terra.StrengthMovementVariant20 PickStrengthMovementVariant20() => StrengthMovementVariant20 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant20' but the value was {ToString()}.");
 
         /// <summary>
@@ -783,8 +783,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant21 PickStrengthMovementVariant21() => IsStrengthMovementVariant21
-            ? StrengthMovementVariant21!.Value
+        public global::Terra.StrengthMovementVariant21 PickStrengthMovementVariant21() => StrengthMovementVariant21 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant21' but the value was {ToString()}.");
 
         /// <summary>
@@ -820,8 +820,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant22 PickStrengthMovementVariant22() => IsStrengthMovementVariant22
-            ? StrengthMovementVariant22!.Value
+        public global::Terra.StrengthMovementVariant22 PickStrengthMovementVariant22() => StrengthMovementVariant22 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant22' but the value was {ToString()}.");
 
         /// <summary>
@@ -857,8 +857,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant23 PickStrengthMovementVariant23() => IsStrengthMovementVariant23
-            ? StrengthMovementVariant23!.Value
+        public global::Terra.StrengthMovementVariant23 PickStrengthMovementVariant23() => StrengthMovementVariant23 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant23' but the value was {ToString()}.");
 
         /// <summary>
@@ -894,8 +894,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant24 PickStrengthMovementVariant24() => IsStrengthMovementVariant24
-            ? StrengthMovementVariant24!.Value
+        public global::Terra.StrengthMovementVariant24 PickStrengthMovementVariant24() => StrengthMovementVariant24 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant24' but the value was {ToString()}.");
 
         /// <summary>
@@ -931,8 +931,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant25 PickStrengthMovementVariant25() => IsStrengthMovementVariant25
-            ? StrengthMovementVariant25!.Value
+        public global::Terra.StrengthMovementVariant25 PickStrengthMovementVariant25() => StrengthMovementVariant25 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant25' but the value was {ToString()}.");
 
         /// <summary>
@@ -968,8 +968,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant26 PickStrengthMovementVariant26() => IsStrengthMovementVariant26
-            ? StrengthMovementVariant26!.Value
+        public global::Terra.StrengthMovementVariant26 PickStrengthMovementVariant26() => StrengthMovementVariant26 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant26' but the value was {ToString()}.");
 
         /// <summary>
@@ -1005,8 +1005,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant27 PickStrengthMovementVariant27() => IsStrengthMovementVariant27
-            ? StrengthMovementVariant27!.Value
+        public global::Terra.StrengthMovementVariant27 PickStrengthMovementVariant27() => StrengthMovementVariant27 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant27' but the value was {ToString()}.");
 
         /// <summary>
@@ -1042,8 +1042,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant28 PickStrengthMovementVariant28() => IsStrengthMovementVariant28
-            ? StrengthMovementVariant28!.Value
+        public global::Terra.StrengthMovementVariant28 PickStrengthMovementVariant28() => StrengthMovementVariant28 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant28' but the value was {ToString()}.");
 
         /// <summary>
@@ -1079,8 +1079,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant29 PickStrengthMovementVariant29() => IsStrengthMovementVariant29
-            ? StrengthMovementVariant29!.Value
+        public global::Terra.StrengthMovementVariant29 PickStrengthMovementVariant29() => StrengthMovementVariant29 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant29' but the value was {ToString()}.");
 
         /// <summary>
@@ -1116,8 +1116,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant30 PickStrengthMovementVariant30() => IsStrengthMovementVariant30
-            ? StrengthMovementVariant30!.Value
+        public global::Terra.StrengthMovementVariant30 PickStrengthMovementVariant30() => StrengthMovementVariant30 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant30' but the value was {ToString()}.");
 
         /// <summary>
@@ -1153,8 +1153,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant31 PickStrengthMovementVariant31() => IsStrengthMovementVariant31
-            ? StrengthMovementVariant31!.Value
+        public global::Terra.StrengthMovementVariant31 PickStrengthMovementVariant31() => StrengthMovementVariant31 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant31' but the value was {ToString()}.");
 
         /// <summary>
@@ -1190,8 +1190,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant32 PickStrengthMovementVariant32() => IsStrengthMovementVariant32
-            ? StrengthMovementVariant32!.Value
+        public global::Terra.StrengthMovementVariant32 PickStrengthMovementVariant32() => StrengthMovementVariant32 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant32' but the value was {ToString()}.");
 
         /// <summary>
@@ -1227,8 +1227,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant33 PickStrengthMovementVariant33() => IsStrengthMovementVariant33
-            ? StrengthMovementVariant33!.Value
+        public global::Terra.StrengthMovementVariant33 PickStrengthMovementVariant33() => StrengthMovementVariant33 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant33' but the value was {ToString()}.");
 
         /// <summary>
@@ -1264,8 +1264,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant34 PickStrengthMovementVariant34() => IsStrengthMovementVariant34
-            ? StrengthMovementVariant34!.Value
+        public global::Terra.StrengthMovementVariant34 PickStrengthMovementVariant34() => StrengthMovementVariant34 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant34' but the value was {ToString()}.");
 
         /// <summary>
@@ -1301,8 +1301,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant35 PickStrengthMovementVariant35() => IsStrengthMovementVariant35
-            ? StrengthMovementVariant35!.Value
+        public global::Terra.StrengthMovementVariant35 PickStrengthMovementVariant35() => StrengthMovementVariant35 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant35' but the value was {ToString()}.");
 
         /// <summary>
@@ -1338,8 +1338,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant36 PickStrengthMovementVariant36() => IsStrengthMovementVariant36
-            ? StrengthMovementVariant36!.Value
+        public global::Terra.StrengthMovementVariant36 PickStrengthMovementVariant36() => StrengthMovementVariant36 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant36' but the value was {ToString()}.");
 
         /// <summary>
@@ -1375,8 +1375,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant37 PickStrengthMovementVariant37() => IsStrengthMovementVariant37
-            ? StrengthMovementVariant37!.Value
+        public global::Terra.StrengthMovementVariant37 PickStrengthMovementVariant37() => StrengthMovementVariant37 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant37' but the value was {ToString()}.");
 
         /// <summary>
@@ -1412,8 +1412,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant38 PickStrengthMovementVariant38() => IsStrengthMovementVariant38
-            ? StrengthMovementVariant38!.Value
+        public global::Terra.StrengthMovementVariant38 PickStrengthMovementVariant38() => StrengthMovementVariant38 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant38' but the value was {ToString()}.");
 
         /// <summary>
@@ -1449,8 +1449,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant39 PickStrengthMovementVariant39() => IsStrengthMovementVariant39
-            ? StrengthMovementVariant39!.Value
+        public global::Terra.StrengthMovementVariant39 PickStrengthMovementVariant39() => StrengthMovementVariant39 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant39' but the value was {ToString()}.");
 
         /// <summary>
@@ -1486,8 +1486,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant40 PickStrengthMovementVariant40() => IsStrengthMovementVariant40
-            ? StrengthMovementVariant40!.Value
+        public global::Terra.StrengthMovementVariant40 PickStrengthMovementVariant40() => StrengthMovementVariant40 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant40' but the value was {ToString()}.");
 
         /// <summary>
@@ -1523,8 +1523,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant41 PickStrengthMovementVariant41() => IsStrengthMovementVariant41
-            ? StrengthMovementVariant41!.Value
+        public global::Terra.StrengthMovementVariant41 PickStrengthMovementVariant41() => StrengthMovementVariant41 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant41' but the value was {ToString()}.");
 
         /// <summary>
@@ -1560,8 +1560,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant42 PickStrengthMovementVariant42() => IsStrengthMovementVariant42
-            ? StrengthMovementVariant42!.Value
+        public global::Terra.StrengthMovementVariant42 PickStrengthMovementVariant42() => StrengthMovementVariant42 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant42' but the value was {ToString()}.");
 
         /// <summary>
@@ -1597,8 +1597,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant43 PickStrengthMovementVariant43() => IsStrengthMovementVariant43
-            ? StrengthMovementVariant43!.Value
+        public global::Terra.StrengthMovementVariant43 PickStrengthMovementVariant43() => StrengthMovementVariant43 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant43' but the value was {ToString()}.");
 
         /// <summary>
@@ -1634,8 +1634,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant44 PickStrengthMovementVariant44() => IsStrengthMovementVariant44
-            ? StrengthMovementVariant44!.Value
+        public global::Terra.StrengthMovementVariant44 PickStrengthMovementVariant44() => StrengthMovementVariant44 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant44' but the value was {ToString()}.");
 
         /// <summary>
@@ -1671,8 +1671,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant45 PickStrengthMovementVariant45() => IsStrengthMovementVariant45
-            ? StrengthMovementVariant45!.Value
+        public global::Terra.StrengthMovementVariant45 PickStrengthMovementVariant45() => StrengthMovementVariant45 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant45' but the value was {ToString()}.");
 
         /// <summary>
@@ -1708,8 +1708,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant46 PickStrengthMovementVariant46() => IsStrengthMovementVariant46
-            ? StrengthMovementVariant46!.Value
+        public global::Terra.StrengthMovementVariant46 PickStrengthMovementVariant46() => StrengthMovementVariant46 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant46' but the value was {ToString()}.");
 
         /// <summary>
@@ -1745,8 +1745,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant47 PickStrengthMovementVariant47() => IsStrengthMovementVariant47
-            ? StrengthMovementVariant47!.Value
+        public global::Terra.StrengthMovementVariant47 PickStrengthMovementVariant47() => StrengthMovementVariant47 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant47' but the value was {ToString()}.");
 
         /// <summary>
@@ -1782,8 +1782,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant48 PickStrengthMovementVariant48() => IsStrengthMovementVariant48
-            ? StrengthMovementVariant48!.Value
+        public global::Terra.StrengthMovementVariant48 PickStrengthMovementVariant48() => StrengthMovementVariant48 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant48' but the value was {ToString()}.");
 
         /// <summary>
@@ -1819,8 +1819,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant49 PickStrengthMovementVariant49() => IsStrengthMovementVariant49
-            ? StrengthMovementVariant49!.Value
+        public global::Terra.StrengthMovementVariant49 PickStrengthMovementVariant49() => StrengthMovementVariant49 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant49' but the value was {ToString()}.");
 
         /// <summary>
@@ -1856,8 +1856,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant50 PickStrengthMovementVariant50() => IsStrengthMovementVariant50
-            ? StrengthMovementVariant50!.Value
+        public global::Terra.StrengthMovementVariant50 PickStrengthMovementVariant50() => StrengthMovementVariant50 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant50' but the value was {ToString()}.");
 
         /// <summary>
@@ -1893,8 +1893,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant51 PickStrengthMovementVariant51() => IsStrengthMovementVariant51
-            ? StrengthMovementVariant51!.Value
+        public global::Terra.StrengthMovementVariant51 PickStrengthMovementVariant51() => StrengthMovementVariant51 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant51' but the value was {ToString()}.");
 
         /// <summary>
@@ -1930,8 +1930,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant52 PickStrengthMovementVariant52() => IsStrengthMovementVariant52
-            ? StrengthMovementVariant52!.Value
+        public global::Terra.StrengthMovementVariant52 PickStrengthMovementVariant52() => StrengthMovementVariant52 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant52' but the value was {ToString()}.");
 
         /// <summary>
@@ -1967,8 +1967,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant53 PickStrengthMovementVariant53() => IsStrengthMovementVariant53
-            ? StrengthMovementVariant53!.Value
+        public global::Terra.StrengthMovementVariant53 PickStrengthMovementVariant53() => StrengthMovementVariant53 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant53' but the value was {ToString()}.");
 
         /// <summary>
@@ -2004,8 +2004,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant54 PickStrengthMovementVariant54() => IsStrengthMovementVariant54
-            ? StrengthMovementVariant54!.Value
+        public global::Terra.StrengthMovementVariant54 PickStrengthMovementVariant54() => StrengthMovementVariant54 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant54' but the value was {ToString()}.");
 
         /// <summary>
@@ -2041,8 +2041,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant55 PickStrengthMovementVariant55() => IsStrengthMovementVariant55
-            ? StrengthMovementVariant55!.Value
+        public global::Terra.StrengthMovementVariant55 PickStrengthMovementVariant55() => StrengthMovementVariant55 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant55' but the value was {ToString()}.");
 
         /// <summary>
@@ -2078,8 +2078,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant56 PickStrengthMovementVariant56() => IsStrengthMovementVariant56
-            ? StrengthMovementVariant56!.Value
+        public global::Terra.StrengthMovementVariant56 PickStrengthMovementVariant56() => StrengthMovementVariant56 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant56' but the value was {ToString()}.");
 
         /// <summary>
@@ -2115,8 +2115,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant57 PickStrengthMovementVariant57() => IsStrengthMovementVariant57
-            ? StrengthMovementVariant57!.Value
+        public global::Terra.StrengthMovementVariant57 PickStrengthMovementVariant57() => StrengthMovementVariant57 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant57' but the value was {ToString()}.");
 
         /// <summary>
@@ -2152,8 +2152,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant58 PickStrengthMovementVariant58() => IsStrengthMovementVariant58
-            ? StrengthMovementVariant58!.Value
+        public global::Terra.StrengthMovementVariant58 PickStrengthMovementVariant58() => StrengthMovementVariant58 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant58' but the value was {ToString()}.");
 
         /// <summary>
@@ -2189,8 +2189,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant59 PickStrengthMovementVariant59() => IsStrengthMovementVariant59
-            ? StrengthMovementVariant59!.Value
+        public global::Terra.StrengthMovementVariant59 PickStrengthMovementVariant59() => StrengthMovementVariant59 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant59' but the value was {ToString()}.");
 
         /// <summary>
@@ -2226,8 +2226,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant60 PickStrengthMovementVariant60() => IsStrengthMovementVariant60
-            ? StrengthMovementVariant60!.Value
+        public global::Terra.StrengthMovementVariant60 PickStrengthMovementVariant60() => StrengthMovementVariant60 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant60' but the value was {ToString()}.");
 
         /// <summary>
@@ -2263,8 +2263,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant61 PickStrengthMovementVariant61() => IsStrengthMovementVariant61
-            ? StrengthMovementVariant61!.Value
+        public global::Terra.StrengthMovementVariant61 PickStrengthMovementVariant61() => StrengthMovementVariant61 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant61' but the value was {ToString()}.");
 
         /// <summary>
@@ -2300,8 +2300,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant62 PickStrengthMovementVariant62() => IsStrengthMovementVariant62
-            ? StrengthMovementVariant62!.Value
+        public global::Terra.StrengthMovementVariant62 PickStrengthMovementVariant62() => StrengthMovementVariant62 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant62' but the value was {ToString()}.");
 
         /// <summary>
@@ -2337,8 +2337,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant63 PickStrengthMovementVariant63() => IsStrengthMovementVariant63
-            ? StrengthMovementVariant63!.Value
+        public global::Terra.StrengthMovementVariant63 PickStrengthMovementVariant63() => StrengthMovementVariant63 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant63' but the value was {ToString()}.");
 
         /// <summary>
@@ -2374,8 +2374,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant64 PickStrengthMovementVariant64() => IsStrengthMovementVariant64
-            ? StrengthMovementVariant64!.Value
+        public global::Terra.StrengthMovementVariant64 PickStrengthMovementVariant64() => StrengthMovementVariant64 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant64' but the value was {ToString()}.");
 
         /// <summary>
@@ -2411,8 +2411,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant65 PickStrengthMovementVariant65() => IsStrengthMovementVariant65
-            ? StrengthMovementVariant65!.Value
+        public global::Terra.StrengthMovementVariant65 PickStrengthMovementVariant65() => StrengthMovementVariant65 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant65' but the value was {ToString()}.");
 
         /// <summary>
@@ -2448,8 +2448,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant66 PickStrengthMovementVariant66() => IsStrengthMovementVariant66
-            ? StrengthMovementVariant66!.Value
+        public global::Terra.StrengthMovementVariant66 PickStrengthMovementVariant66() => StrengthMovementVariant66 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant66' but the value was {ToString()}.");
 
         /// <summary>
@@ -2485,8 +2485,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant67 PickStrengthMovementVariant67() => IsStrengthMovementVariant67
-            ? StrengthMovementVariant67!.Value
+        public global::Terra.StrengthMovementVariant67 PickStrengthMovementVariant67() => StrengthMovementVariant67 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant67' but the value was {ToString()}.");
 
         /// <summary>
@@ -2522,8 +2522,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant68 PickStrengthMovementVariant68() => IsStrengthMovementVariant68
-            ? StrengthMovementVariant68!.Value
+        public global::Terra.StrengthMovementVariant68 PickStrengthMovementVariant68() => StrengthMovementVariant68 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant68' but the value was {ToString()}.");
 
         /// <summary>
@@ -2559,8 +2559,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant69 PickStrengthMovementVariant69() => IsStrengthMovementVariant69
-            ? StrengthMovementVariant69!.Value
+        public global::Terra.StrengthMovementVariant69 PickStrengthMovementVariant69() => StrengthMovementVariant69 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant69' but the value was {ToString()}.");
 
         /// <summary>
@@ -2596,8 +2596,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant70 PickStrengthMovementVariant70() => IsStrengthMovementVariant70
-            ? StrengthMovementVariant70!.Value
+        public global::Terra.StrengthMovementVariant70 PickStrengthMovementVariant70() => StrengthMovementVariant70 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant70' but the value was {ToString()}.");
 
         /// <summary>
@@ -2633,8 +2633,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant71 PickStrengthMovementVariant71() => IsStrengthMovementVariant71
-            ? StrengthMovementVariant71!.Value
+        public global::Terra.StrengthMovementVariant71 PickStrengthMovementVariant71() => StrengthMovementVariant71 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant71' but the value was {ToString()}.");
 
         /// <summary>
@@ -2670,8 +2670,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant72 PickStrengthMovementVariant72() => IsStrengthMovementVariant72
-            ? StrengthMovementVariant72!.Value
+        public global::Terra.StrengthMovementVariant72 PickStrengthMovementVariant72() => StrengthMovementVariant72 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant72' but the value was {ToString()}.");
 
         /// <summary>
@@ -2707,8 +2707,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant73 PickStrengthMovementVariant73() => IsStrengthMovementVariant73
-            ? StrengthMovementVariant73!.Value
+        public global::Terra.StrengthMovementVariant73 PickStrengthMovementVariant73() => StrengthMovementVariant73 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant73' but the value was {ToString()}.");
 
         /// <summary>
@@ -2744,8 +2744,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant74 PickStrengthMovementVariant74() => IsStrengthMovementVariant74
-            ? StrengthMovementVariant74!.Value
+        public global::Terra.StrengthMovementVariant74 PickStrengthMovementVariant74() => StrengthMovementVariant74 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant74' but the value was {ToString()}.");
 
         /// <summary>
@@ -2781,8 +2781,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant75 PickStrengthMovementVariant75() => IsStrengthMovementVariant75
-            ? StrengthMovementVariant75!.Value
+        public global::Terra.StrengthMovementVariant75 PickStrengthMovementVariant75() => StrengthMovementVariant75 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant75' but the value was {ToString()}.");
 
         /// <summary>
@@ -2818,8 +2818,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant76 PickStrengthMovementVariant76() => IsStrengthMovementVariant76
-            ? StrengthMovementVariant76!.Value
+        public global::Terra.StrengthMovementVariant76 PickStrengthMovementVariant76() => StrengthMovementVariant76 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant76' but the value was {ToString()}.");
 
         /// <summary>
@@ -2855,8 +2855,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant77 PickStrengthMovementVariant77() => IsStrengthMovementVariant77
-            ? StrengthMovementVariant77!.Value
+        public global::Terra.StrengthMovementVariant77 PickStrengthMovementVariant77() => StrengthMovementVariant77 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant77' but the value was {ToString()}.");
 
         /// <summary>
@@ -2892,8 +2892,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant78 PickStrengthMovementVariant78() => IsStrengthMovementVariant78
-            ? StrengthMovementVariant78!.Value
+        public global::Terra.StrengthMovementVariant78 PickStrengthMovementVariant78() => StrengthMovementVariant78 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant78' but the value was {ToString()}.");
 
         /// <summary>
@@ -2929,8 +2929,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant79 PickStrengthMovementVariant79() => IsStrengthMovementVariant79
-            ? StrengthMovementVariant79!.Value
+        public global::Terra.StrengthMovementVariant79 PickStrengthMovementVariant79() => StrengthMovementVariant79 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant79' but the value was {ToString()}.");
 
         /// <summary>
@@ -2966,8 +2966,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant80 PickStrengthMovementVariant80() => IsStrengthMovementVariant80
-            ? StrengthMovementVariant80!.Value
+        public global::Terra.StrengthMovementVariant80 PickStrengthMovementVariant80() => StrengthMovementVariant80 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant80' but the value was {ToString()}.");
 
         /// <summary>
@@ -3003,8 +3003,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant81 PickStrengthMovementVariant81() => IsStrengthMovementVariant81
-            ? StrengthMovementVariant81!.Value
+        public global::Terra.StrengthMovementVariant81 PickStrengthMovementVariant81() => StrengthMovementVariant81 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant81' but the value was {ToString()}.");
 
         /// <summary>
@@ -3040,8 +3040,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant82 PickStrengthMovementVariant82() => IsStrengthMovementVariant82
-            ? StrengthMovementVariant82!.Value
+        public global::Terra.StrengthMovementVariant82 PickStrengthMovementVariant82() => StrengthMovementVariant82 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant82' but the value was {ToString()}.");
 
         /// <summary>
@@ -3077,8 +3077,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant83 PickStrengthMovementVariant83() => IsStrengthMovementVariant83
-            ? StrengthMovementVariant83!.Value
+        public global::Terra.StrengthMovementVariant83 PickStrengthMovementVariant83() => StrengthMovementVariant83 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant83' but the value was {ToString()}.");
 
         /// <summary>
@@ -3114,8 +3114,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant84 PickStrengthMovementVariant84() => IsStrengthMovementVariant84
-            ? StrengthMovementVariant84!.Value
+        public global::Terra.StrengthMovementVariant84 PickStrengthMovementVariant84() => StrengthMovementVariant84 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant84' but the value was {ToString()}.");
 
         /// <summary>
@@ -3151,8 +3151,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant85 PickStrengthMovementVariant85() => IsStrengthMovementVariant85
-            ? StrengthMovementVariant85!.Value
+        public global::Terra.StrengthMovementVariant85 PickStrengthMovementVariant85() => StrengthMovementVariant85 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant85' but the value was {ToString()}.");
 
         /// <summary>
@@ -3188,8 +3188,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant86 PickStrengthMovementVariant86() => IsStrengthMovementVariant86
-            ? StrengthMovementVariant86!.Value
+        public global::Terra.StrengthMovementVariant86 PickStrengthMovementVariant86() => StrengthMovementVariant86 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant86' but the value was {ToString()}.");
 
         /// <summary>
@@ -3225,8 +3225,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant87 PickStrengthMovementVariant87() => IsStrengthMovementVariant87
-            ? StrengthMovementVariant87!.Value
+        public global::Terra.StrengthMovementVariant87 PickStrengthMovementVariant87() => StrengthMovementVariant87 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant87' but the value was {ToString()}.");
 
         /// <summary>
@@ -3262,8 +3262,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant88 PickStrengthMovementVariant88() => IsStrengthMovementVariant88
-            ? StrengthMovementVariant88!.Value
+        public global::Terra.StrengthMovementVariant88 PickStrengthMovementVariant88() => StrengthMovementVariant88 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant88' but the value was {ToString()}.");
 
         /// <summary>
@@ -3299,8 +3299,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant89 PickStrengthMovementVariant89() => IsStrengthMovementVariant89
-            ? StrengthMovementVariant89!.Value
+        public global::Terra.StrengthMovementVariant89 PickStrengthMovementVariant89() => StrengthMovementVariant89 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant89' but the value was {ToString()}.");
 
         /// <summary>
@@ -3336,8 +3336,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant90 PickStrengthMovementVariant90() => IsStrengthMovementVariant90
-            ? StrengthMovementVariant90!.Value
+        public global::Terra.StrengthMovementVariant90 PickStrengthMovementVariant90() => StrengthMovementVariant90 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant90' but the value was {ToString()}.");
 
         /// <summary>
@@ -3373,8 +3373,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant91 PickStrengthMovementVariant91() => IsStrengthMovementVariant91
-            ? StrengthMovementVariant91!.Value
+        public global::Terra.StrengthMovementVariant91 PickStrengthMovementVariant91() => StrengthMovementVariant91 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant91' but the value was {ToString()}.");
 
         /// <summary>
@@ -3410,8 +3410,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant92 PickStrengthMovementVariant92() => IsStrengthMovementVariant92
-            ? StrengthMovementVariant92!.Value
+        public global::Terra.StrengthMovementVariant92 PickStrengthMovementVariant92() => StrengthMovementVariant92 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant92' but the value was {ToString()}.");
 
         /// <summary>
@@ -3447,8 +3447,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant93 PickStrengthMovementVariant93() => IsStrengthMovementVariant93
-            ? StrengthMovementVariant93!.Value
+        public global::Terra.StrengthMovementVariant93 PickStrengthMovementVariant93() => StrengthMovementVariant93 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant93' but the value was {ToString()}.");
 
         /// <summary>
@@ -3484,8 +3484,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant94 PickStrengthMovementVariant94() => IsStrengthMovementVariant94
-            ? StrengthMovementVariant94!.Value
+        public global::Terra.StrengthMovementVariant94 PickStrengthMovementVariant94() => StrengthMovementVariant94 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant94' but the value was {ToString()}.");
 
         /// <summary>
@@ -3521,8 +3521,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant95 PickStrengthMovementVariant95() => IsStrengthMovementVariant95
-            ? StrengthMovementVariant95!.Value
+        public global::Terra.StrengthMovementVariant95 PickStrengthMovementVariant95() => StrengthMovementVariant95 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant95' but the value was {ToString()}.");
 
         /// <summary>
@@ -3558,8 +3558,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant96 PickStrengthMovementVariant96() => IsStrengthMovementVariant96
-            ? StrengthMovementVariant96!.Value
+        public global::Terra.StrengthMovementVariant96 PickStrengthMovementVariant96() => StrengthMovementVariant96 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant96' but the value was {ToString()}.");
 
         /// <summary>
@@ -3595,8 +3595,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant97 PickStrengthMovementVariant97() => IsStrengthMovementVariant97
-            ? StrengthMovementVariant97!.Value
+        public global::Terra.StrengthMovementVariant97 PickStrengthMovementVariant97() => StrengthMovementVariant97 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant97' but the value was {ToString()}.");
 
         /// <summary>
@@ -3632,8 +3632,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant98 PickStrengthMovementVariant98() => IsStrengthMovementVariant98
-            ? StrengthMovementVariant98!.Value
+        public global::Terra.StrengthMovementVariant98 PickStrengthMovementVariant98() => StrengthMovementVariant98 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant98' but the value was {ToString()}.");
 
         /// <summary>
@@ -3669,8 +3669,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant99 PickStrengthMovementVariant99() => IsStrengthMovementVariant99
-            ? StrengthMovementVariant99!.Value
+        public global::Terra.StrengthMovementVariant99 PickStrengthMovementVariant99() => StrengthMovementVariant99 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant99' but the value was {ToString()}.");
 
         /// <summary>
@@ -3706,8 +3706,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant100 PickStrengthMovementVariant100() => IsStrengthMovementVariant100
-            ? StrengthMovementVariant100!.Value
+        public global::Terra.StrengthMovementVariant100 PickStrengthMovementVariant100() => StrengthMovementVariant100 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant100' but the value was {ToString()}.");
 
         /// <summary>
@@ -3743,8 +3743,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant101 PickStrengthMovementVariant101() => IsStrengthMovementVariant101
-            ? StrengthMovementVariant101!.Value
+        public global::Terra.StrengthMovementVariant101 PickStrengthMovementVariant101() => StrengthMovementVariant101 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant101' but the value was {ToString()}.");
 
         /// <summary>
@@ -3780,8 +3780,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant102 PickStrengthMovementVariant102() => IsStrengthMovementVariant102
-            ? StrengthMovementVariant102!.Value
+        public global::Terra.StrengthMovementVariant102 PickStrengthMovementVariant102() => StrengthMovementVariant102 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant102' but the value was {ToString()}.");
 
         /// <summary>
@@ -3817,8 +3817,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant103 PickStrengthMovementVariant103() => IsStrengthMovementVariant103
-            ? StrengthMovementVariant103!.Value
+        public global::Terra.StrengthMovementVariant103 PickStrengthMovementVariant103() => StrengthMovementVariant103 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant103' but the value was {ToString()}.");
 
         /// <summary>
@@ -3854,8 +3854,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant104 PickStrengthMovementVariant104() => IsStrengthMovementVariant104
-            ? StrengthMovementVariant104!.Value
+        public global::Terra.StrengthMovementVariant104 PickStrengthMovementVariant104() => StrengthMovementVariant104 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant104' but the value was {ToString()}.");
 
         /// <summary>
@@ -3891,8 +3891,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant105 PickStrengthMovementVariant105() => IsStrengthMovementVariant105
-            ? StrengthMovementVariant105!.Value
+        public global::Terra.StrengthMovementVariant105 PickStrengthMovementVariant105() => StrengthMovementVariant105 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant105' but the value was {ToString()}.");
 
         /// <summary>
@@ -3928,8 +3928,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant106 PickStrengthMovementVariant106() => IsStrengthMovementVariant106
-            ? StrengthMovementVariant106!.Value
+        public global::Terra.StrengthMovementVariant106 PickStrengthMovementVariant106() => StrengthMovementVariant106 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant106' but the value was {ToString()}.");
 
         /// <summary>
@@ -3965,8 +3965,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant107 PickStrengthMovementVariant107() => IsStrengthMovementVariant107
-            ? StrengthMovementVariant107!.Value
+        public global::Terra.StrengthMovementVariant107 PickStrengthMovementVariant107() => StrengthMovementVariant107 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant107' but the value was {ToString()}.");
 
         /// <summary>
@@ -4002,8 +4002,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant108 PickStrengthMovementVariant108() => IsStrengthMovementVariant108
-            ? StrengthMovementVariant108!.Value
+        public global::Terra.StrengthMovementVariant108 PickStrengthMovementVariant108() => StrengthMovementVariant108 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant108' but the value was {ToString()}.");
 
         /// <summary>
@@ -4039,8 +4039,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant109 PickStrengthMovementVariant109() => IsStrengthMovementVariant109
-            ? StrengthMovementVariant109!.Value
+        public global::Terra.StrengthMovementVariant109 PickStrengthMovementVariant109() => StrengthMovementVariant109 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant109' but the value was {ToString()}.");
 
         /// <summary>
@@ -4076,8 +4076,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant110 PickStrengthMovementVariant110() => IsStrengthMovementVariant110
-            ? StrengthMovementVariant110!.Value
+        public global::Terra.StrengthMovementVariant110 PickStrengthMovementVariant110() => StrengthMovementVariant110 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant110' but the value was {ToString()}.");
 
         /// <summary>
@@ -4113,8 +4113,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant111 PickStrengthMovementVariant111() => IsStrengthMovementVariant111
-            ? StrengthMovementVariant111!.Value
+        public global::Terra.StrengthMovementVariant111 PickStrengthMovementVariant111() => StrengthMovementVariant111 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant111' but the value was {ToString()}.");
 
         /// <summary>
@@ -4150,8 +4150,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant112 PickStrengthMovementVariant112() => IsStrengthMovementVariant112
-            ? StrengthMovementVariant112!.Value
+        public global::Terra.StrengthMovementVariant112 PickStrengthMovementVariant112() => StrengthMovementVariant112 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant112' but the value was {ToString()}.");
 
         /// <summary>
@@ -4187,8 +4187,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant113 PickStrengthMovementVariant113() => IsStrengthMovementVariant113
-            ? StrengthMovementVariant113!.Value
+        public global::Terra.StrengthMovementVariant113 PickStrengthMovementVariant113() => StrengthMovementVariant113 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant113' but the value was {ToString()}.");
 
         /// <summary>
@@ -4224,8 +4224,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant114 PickStrengthMovementVariant114() => IsStrengthMovementVariant114
-            ? StrengthMovementVariant114!.Value
+        public global::Terra.StrengthMovementVariant114 PickStrengthMovementVariant114() => StrengthMovementVariant114 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant114' but the value was {ToString()}.");
 
         /// <summary>
@@ -4261,8 +4261,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant115 PickStrengthMovementVariant115() => IsStrengthMovementVariant115
-            ? StrengthMovementVariant115!.Value
+        public global::Terra.StrengthMovementVariant115 PickStrengthMovementVariant115() => StrengthMovementVariant115 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant115' but the value was {ToString()}.");
 
         /// <summary>
@@ -4298,8 +4298,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant116 PickStrengthMovementVariant116() => IsStrengthMovementVariant116
-            ? StrengthMovementVariant116!.Value
+        public global::Terra.StrengthMovementVariant116 PickStrengthMovementVariant116() => StrengthMovementVariant116 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant116' but the value was {ToString()}.");
 
         /// <summary>
@@ -4335,8 +4335,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant117 PickStrengthMovementVariant117() => IsStrengthMovementVariant117
-            ? StrengthMovementVariant117!.Value
+        public global::Terra.StrengthMovementVariant117 PickStrengthMovementVariant117() => StrengthMovementVariant117 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant117' but the value was {ToString()}.");
 
         /// <summary>
@@ -4372,8 +4372,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant118 PickStrengthMovementVariant118() => IsStrengthMovementVariant118
-            ? StrengthMovementVariant118!.Value
+        public global::Terra.StrengthMovementVariant118 PickStrengthMovementVariant118() => StrengthMovementVariant118 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant118' but the value was {ToString()}.");
 
         /// <summary>
@@ -4409,8 +4409,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant119 PickStrengthMovementVariant119() => IsStrengthMovementVariant119
-            ? StrengthMovementVariant119!.Value
+        public global::Terra.StrengthMovementVariant119 PickStrengthMovementVariant119() => StrengthMovementVariant119 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant119' but the value was {ToString()}.");
 
         /// <summary>
@@ -4446,8 +4446,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant120 PickStrengthMovementVariant120() => IsStrengthMovementVariant120
-            ? StrengthMovementVariant120!.Value
+        public global::Terra.StrengthMovementVariant120 PickStrengthMovementVariant120() => StrengthMovementVariant120 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant120' but the value was {ToString()}.");
 
         /// <summary>
@@ -4483,8 +4483,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant121 PickStrengthMovementVariant121() => IsStrengthMovementVariant121
-            ? StrengthMovementVariant121!.Value
+        public global::Terra.StrengthMovementVariant121 PickStrengthMovementVariant121() => StrengthMovementVariant121 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant121' but the value was {ToString()}.");
 
         /// <summary>
@@ -4520,8 +4520,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant122 PickStrengthMovementVariant122() => IsStrengthMovementVariant122
-            ? StrengthMovementVariant122!.Value
+        public global::Terra.StrengthMovementVariant122 PickStrengthMovementVariant122() => StrengthMovementVariant122 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant122' but the value was {ToString()}.");
 
         /// <summary>
@@ -4557,8 +4557,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant123 PickStrengthMovementVariant123() => IsStrengthMovementVariant123
-            ? StrengthMovementVariant123!.Value
+        public global::Terra.StrengthMovementVariant123 PickStrengthMovementVariant123() => StrengthMovementVariant123 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant123' but the value was {ToString()}.");
 
         /// <summary>
@@ -4594,8 +4594,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant124 PickStrengthMovementVariant124() => IsStrengthMovementVariant124
-            ? StrengthMovementVariant124!.Value
+        public global::Terra.StrengthMovementVariant124 PickStrengthMovementVariant124() => StrengthMovementVariant124 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant124' but the value was {ToString()}.");
 
         /// <summary>
@@ -4631,8 +4631,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant125 PickStrengthMovementVariant125() => IsStrengthMovementVariant125
-            ? StrengthMovementVariant125!.Value
+        public global::Terra.StrengthMovementVariant125 PickStrengthMovementVariant125() => StrengthMovementVariant125 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant125' but the value was {ToString()}.");
 
         /// <summary>
@@ -4668,8 +4668,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant126 PickStrengthMovementVariant126() => IsStrengthMovementVariant126
-            ? StrengthMovementVariant126!.Value
+        public global::Terra.StrengthMovementVariant126 PickStrengthMovementVariant126() => StrengthMovementVariant126 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant126' but the value was {ToString()}.");
 
         /// <summary>
@@ -4705,8 +4705,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant127 PickStrengthMovementVariant127() => IsStrengthMovementVariant127
-            ? StrengthMovementVariant127!.Value
+        public global::Terra.StrengthMovementVariant127 PickStrengthMovementVariant127() => StrengthMovementVariant127 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant127' but the value was {ToString()}.");
 
         /// <summary>
@@ -4742,8 +4742,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant128 PickStrengthMovementVariant128() => IsStrengthMovementVariant128
-            ? StrengthMovementVariant128!.Value
+        public global::Terra.StrengthMovementVariant128 PickStrengthMovementVariant128() => StrengthMovementVariant128 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant128' but the value was {ToString()}.");
 
         /// <summary>
@@ -4779,8 +4779,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant129 PickStrengthMovementVariant129() => IsStrengthMovementVariant129
-            ? StrengthMovementVariant129!.Value
+        public global::Terra.StrengthMovementVariant129 PickStrengthMovementVariant129() => StrengthMovementVariant129 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant129' but the value was {ToString()}.");
 
         /// <summary>
@@ -4816,8 +4816,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant130 PickStrengthMovementVariant130() => IsStrengthMovementVariant130
-            ? StrengthMovementVariant130!.Value
+        public global::Terra.StrengthMovementVariant130 PickStrengthMovementVariant130() => StrengthMovementVariant130 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant130' but the value was {ToString()}.");
 
         /// <summary>
@@ -4853,8 +4853,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant131 PickStrengthMovementVariant131() => IsStrengthMovementVariant131
-            ? StrengthMovementVariant131!.Value
+        public global::Terra.StrengthMovementVariant131 PickStrengthMovementVariant131() => StrengthMovementVariant131 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant131' but the value was {ToString()}.");
 
         /// <summary>
@@ -4890,8 +4890,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant132 PickStrengthMovementVariant132() => IsStrengthMovementVariant132
-            ? StrengthMovementVariant132!.Value
+        public global::Terra.StrengthMovementVariant132 PickStrengthMovementVariant132() => StrengthMovementVariant132 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant132' but the value was {ToString()}.");
 
         /// <summary>
@@ -4927,8 +4927,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant133 PickStrengthMovementVariant133() => IsStrengthMovementVariant133
-            ? StrengthMovementVariant133!.Value
+        public global::Terra.StrengthMovementVariant133 PickStrengthMovementVariant133() => StrengthMovementVariant133 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant133' but the value was {ToString()}.");
 
         /// <summary>
@@ -4964,8 +4964,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant134 PickStrengthMovementVariant134() => IsStrengthMovementVariant134
-            ? StrengthMovementVariant134!.Value
+        public global::Terra.StrengthMovementVariant134 PickStrengthMovementVariant134() => StrengthMovementVariant134 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant134' but the value was {ToString()}.");
 
         /// <summary>
@@ -5001,8 +5001,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant135 PickStrengthMovementVariant135() => IsStrengthMovementVariant135
-            ? StrengthMovementVariant135!.Value
+        public global::Terra.StrengthMovementVariant135 PickStrengthMovementVariant135() => StrengthMovementVariant135 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant135' but the value was {ToString()}.");
 
         /// <summary>
@@ -5038,8 +5038,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant136 PickStrengthMovementVariant136() => IsStrengthMovementVariant136
-            ? StrengthMovementVariant136!.Value
+        public global::Terra.StrengthMovementVariant136 PickStrengthMovementVariant136() => StrengthMovementVariant136 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant136' but the value was {ToString()}.");
 
         /// <summary>
@@ -5075,8 +5075,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant137 PickStrengthMovementVariant137() => IsStrengthMovementVariant137
-            ? StrengthMovementVariant137!.Value
+        public global::Terra.StrengthMovementVariant137 PickStrengthMovementVariant137() => StrengthMovementVariant137 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant137' but the value was {ToString()}.");
 
         /// <summary>
@@ -5112,8 +5112,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant138 PickStrengthMovementVariant138() => IsStrengthMovementVariant138
-            ? StrengthMovementVariant138!.Value
+        public global::Terra.StrengthMovementVariant138 PickStrengthMovementVariant138() => StrengthMovementVariant138 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant138' but the value was {ToString()}.");
 
         /// <summary>
@@ -5149,8 +5149,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant139 PickStrengthMovementVariant139() => IsStrengthMovementVariant139
-            ? StrengthMovementVariant139!.Value
+        public global::Terra.StrengthMovementVariant139 PickStrengthMovementVariant139() => StrengthMovementVariant139 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant139' but the value was {ToString()}.");
 
         /// <summary>
@@ -5186,8 +5186,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant140 PickStrengthMovementVariant140() => IsStrengthMovementVariant140
-            ? StrengthMovementVariant140!.Value
+        public global::Terra.StrengthMovementVariant140 PickStrengthMovementVariant140() => StrengthMovementVariant140 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant140' but the value was {ToString()}.");
 
         /// <summary>
@@ -5223,8 +5223,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant141 PickStrengthMovementVariant141() => IsStrengthMovementVariant141
-            ? StrengthMovementVariant141!.Value
+        public global::Terra.StrengthMovementVariant141 PickStrengthMovementVariant141() => StrengthMovementVariant141 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant141' but the value was {ToString()}.");
 
         /// <summary>
@@ -5260,8 +5260,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant142 PickStrengthMovementVariant142() => IsStrengthMovementVariant142
-            ? StrengthMovementVariant142!.Value
+        public global::Terra.StrengthMovementVariant142 PickStrengthMovementVariant142() => StrengthMovementVariant142 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant142' but the value was {ToString()}.");
 
         /// <summary>
@@ -5297,8 +5297,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant143 PickStrengthMovementVariant143() => IsStrengthMovementVariant143
-            ? StrengthMovementVariant143!.Value
+        public global::Terra.StrengthMovementVariant143 PickStrengthMovementVariant143() => StrengthMovementVariant143 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant143' but the value was {ToString()}.");
 
         /// <summary>
@@ -5334,8 +5334,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant144 PickStrengthMovementVariant144() => IsStrengthMovementVariant144
-            ? StrengthMovementVariant144!.Value
+        public global::Terra.StrengthMovementVariant144 PickStrengthMovementVariant144() => StrengthMovementVariant144 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant144' but the value was {ToString()}.");
 
         /// <summary>
@@ -5371,8 +5371,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant145 PickStrengthMovementVariant145() => IsStrengthMovementVariant145
-            ? StrengthMovementVariant145!.Value
+        public global::Terra.StrengthMovementVariant145 PickStrengthMovementVariant145() => StrengthMovementVariant145 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant145' but the value was {ToString()}.");
 
         /// <summary>
@@ -5408,8 +5408,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant146 PickStrengthMovementVariant146() => IsStrengthMovementVariant146
-            ? StrengthMovementVariant146!.Value
+        public global::Terra.StrengthMovementVariant146 PickStrengthMovementVariant146() => StrengthMovementVariant146 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant146' but the value was {ToString()}.");
 
         /// <summary>
@@ -5445,8 +5445,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant147 PickStrengthMovementVariant147() => IsStrengthMovementVariant147
-            ? StrengthMovementVariant147!.Value
+        public global::Terra.StrengthMovementVariant147 PickStrengthMovementVariant147() => StrengthMovementVariant147 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant147' but the value was {ToString()}.");
 
         /// <summary>
@@ -5482,8 +5482,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant148 PickStrengthMovementVariant148() => IsStrengthMovementVariant148
-            ? StrengthMovementVariant148!.Value
+        public global::Terra.StrengthMovementVariant148 PickStrengthMovementVariant148() => StrengthMovementVariant148 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant148' but the value was {ToString()}.");
 
         /// <summary>
@@ -5519,8 +5519,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant149 PickStrengthMovementVariant149() => IsStrengthMovementVariant149
-            ? StrengthMovementVariant149!.Value
+        public global::Terra.StrengthMovementVariant149 PickStrengthMovementVariant149() => StrengthMovementVariant149 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant149' but the value was {ToString()}.");
 
         /// <summary>
@@ -5556,8 +5556,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant150 PickStrengthMovementVariant150() => IsStrengthMovementVariant150
-            ? StrengthMovementVariant150!.Value
+        public global::Terra.StrengthMovementVariant150 PickStrengthMovementVariant150() => StrengthMovementVariant150 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant150' but the value was {ToString()}.");
 
         /// <summary>
@@ -5593,8 +5593,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant151 PickStrengthMovementVariant151() => IsStrengthMovementVariant151
-            ? StrengthMovementVariant151!.Value
+        public global::Terra.StrengthMovementVariant151 PickStrengthMovementVariant151() => StrengthMovementVariant151 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant151' but the value was {ToString()}.");
 
         /// <summary>
@@ -5630,8 +5630,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant152 PickStrengthMovementVariant152() => IsStrengthMovementVariant152
-            ? StrengthMovementVariant152!.Value
+        public global::Terra.StrengthMovementVariant152 PickStrengthMovementVariant152() => StrengthMovementVariant152 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant152' but the value was {ToString()}.");
 
         /// <summary>
@@ -5667,8 +5667,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant153 PickStrengthMovementVariant153() => IsStrengthMovementVariant153
-            ? StrengthMovementVariant153!.Value
+        public global::Terra.StrengthMovementVariant153 PickStrengthMovementVariant153() => StrengthMovementVariant153 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant153' but the value was {ToString()}.");
 
         /// <summary>
@@ -5704,8 +5704,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant154 PickStrengthMovementVariant154() => IsStrengthMovementVariant154
-            ? StrengthMovementVariant154!.Value
+        public global::Terra.StrengthMovementVariant154 PickStrengthMovementVariant154() => StrengthMovementVariant154 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant154' but the value was {ToString()}.");
 
         /// <summary>
@@ -5741,8 +5741,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant155 PickStrengthMovementVariant155() => IsStrengthMovementVariant155
-            ? StrengthMovementVariant155!.Value
+        public global::Terra.StrengthMovementVariant155 PickStrengthMovementVariant155() => StrengthMovementVariant155 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant155' but the value was {ToString()}.");
 
         /// <summary>
@@ -5778,8 +5778,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant156 PickStrengthMovementVariant156() => IsStrengthMovementVariant156
-            ? StrengthMovementVariant156!.Value
+        public global::Terra.StrengthMovementVariant156 PickStrengthMovementVariant156() => StrengthMovementVariant156 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant156' but the value was {ToString()}.");
 
         /// <summary>
@@ -5815,8 +5815,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant157 PickStrengthMovementVariant157() => IsStrengthMovementVariant157
-            ? StrengthMovementVariant157!.Value
+        public global::Terra.StrengthMovementVariant157 PickStrengthMovementVariant157() => StrengthMovementVariant157 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant157' but the value was {ToString()}.");
 
         /// <summary>
@@ -5852,8 +5852,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant158 PickStrengthMovementVariant158() => IsStrengthMovementVariant158
-            ? StrengthMovementVariant158!.Value
+        public global::Terra.StrengthMovementVariant158 PickStrengthMovementVariant158() => StrengthMovementVariant158 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant158' but the value was {ToString()}.");
 
         /// <summary>
@@ -5889,8 +5889,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant159 PickStrengthMovementVariant159() => IsStrengthMovementVariant159
-            ? StrengthMovementVariant159!.Value
+        public global::Terra.StrengthMovementVariant159 PickStrengthMovementVariant159() => StrengthMovementVariant159 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant159' but the value was {ToString()}.");
 
         /// <summary>
@@ -5926,8 +5926,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant160 PickStrengthMovementVariant160() => IsStrengthMovementVariant160
-            ? StrengthMovementVariant160!.Value
+        public global::Terra.StrengthMovementVariant160 PickStrengthMovementVariant160() => StrengthMovementVariant160 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant160' but the value was {ToString()}.");
 
         /// <summary>
@@ -5963,8 +5963,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant161 PickStrengthMovementVariant161() => IsStrengthMovementVariant161
-            ? StrengthMovementVariant161!.Value
+        public global::Terra.StrengthMovementVariant161 PickStrengthMovementVariant161() => StrengthMovementVariant161 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant161' but the value was {ToString()}.");
 
         /// <summary>
@@ -6000,8 +6000,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant162 PickStrengthMovementVariant162() => IsStrengthMovementVariant162
-            ? StrengthMovementVariant162!.Value
+        public global::Terra.StrengthMovementVariant162 PickStrengthMovementVariant162() => StrengthMovementVariant162 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant162' but the value was {ToString()}.");
 
         /// <summary>
@@ -6037,8 +6037,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant163 PickStrengthMovementVariant163() => IsStrengthMovementVariant163
-            ? StrengthMovementVariant163!.Value
+        public global::Terra.StrengthMovementVariant163 PickStrengthMovementVariant163() => StrengthMovementVariant163 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant163' but the value was {ToString()}.");
 
         /// <summary>
@@ -6074,8 +6074,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant164 PickStrengthMovementVariant164() => IsStrengthMovementVariant164
-            ? StrengthMovementVariant164!.Value
+        public global::Terra.StrengthMovementVariant164 PickStrengthMovementVariant164() => StrengthMovementVariant164 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant164' but the value was {ToString()}.");
 
         /// <summary>
@@ -6111,8 +6111,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant165 PickStrengthMovementVariant165() => IsStrengthMovementVariant165
-            ? StrengthMovementVariant165!.Value
+        public global::Terra.StrengthMovementVariant165 PickStrengthMovementVariant165() => StrengthMovementVariant165 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant165' but the value was {ToString()}.");
 
         /// <summary>
@@ -6148,8 +6148,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant166 PickStrengthMovementVariant166() => IsStrengthMovementVariant166
-            ? StrengthMovementVariant166!.Value
+        public global::Terra.StrengthMovementVariant166 PickStrengthMovementVariant166() => StrengthMovementVariant166 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant166' but the value was {ToString()}.");
 
         /// <summary>
@@ -6185,8 +6185,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant167 PickStrengthMovementVariant167() => IsStrengthMovementVariant167
-            ? StrengthMovementVariant167!.Value
+        public global::Terra.StrengthMovementVariant167 PickStrengthMovementVariant167() => StrengthMovementVariant167 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant167' but the value was {ToString()}.");
 
         /// <summary>
@@ -6222,8 +6222,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant168 PickStrengthMovementVariant168() => IsStrengthMovementVariant168
-            ? StrengthMovementVariant168!.Value
+        public global::Terra.StrengthMovementVariant168 PickStrengthMovementVariant168() => StrengthMovementVariant168 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant168' but the value was {ToString()}.");
 
         /// <summary>
@@ -6259,8 +6259,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant169 PickStrengthMovementVariant169() => IsStrengthMovementVariant169
-            ? StrengthMovementVariant169!.Value
+        public global::Terra.StrengthMovementVariant169 PickStrengthMovementVariant169() => StrengthMovementVariant169 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant169' but the value was {ToString()}.");
 
         /// <summary>
@@ -6296,8 +6296,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant170 PickStrengthMovementVariant170() => IsStrengthMovementVariant170
-            ? StrengthMovementVariant170!.Value
+        public global::Terra.StrengthMovementVariant170 PickStrengthMovementVariant170() => StrengthMovementVariant170 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant170' but the value was {ToString()}.");
 
         /// <summary>
@@ -6333,8 +6333,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant171 PickStrengthMovementVariant171() => IsStrengthMovementVariant171
-            ? StrengthMovementVariant171!.Value
+        public global::Terra.StrengthMovementVariant171 PickStrengthMovementVariant171() => StrengthMovementVariant171 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant171' but the value was {ToString()}.");
 
         /// <summary>
@@ -6370,8 +6370,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant172 PickStrengthMovementVariant172() => IsStrengthMovementVariant172
-            ? StrengthMovementVariant172!.Value
+        public global::Terra.StrengthMovementVariant172 PickStrengthMovementVariant172() => StrengthMovementVariant172 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant172' but the value was {ToString()}.");
 
         /// <summary>
@@ -6407,8 +6407,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant173 PickStrengthMovementVariant173() => IsStrengthMovementVariant173
-            ? StrengthMovementVariant173!.Value
+        public global::Terra.StrengthMovementVariant173 PickStrengthMovementVariant173() => StrengthMovementVariant173 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant173' but the value was {ToString()}.");
 
         /// <summary>
@@ -6444,8 +6444,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant174 PickStrengthMovementVariant174() => IsStrengthMovementVariant174
-            ? StrengthMovementVariant174!.Value
+        public global::Terra.StrengthMovementVariant174 PickStrengthMovementVariant174() => StrengthMovementVariant174 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant174' but the value was {ToString()}.");
 
         /// <summary>
@@ -6481,8 +6481,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthMovementVariant175 PickStrengthMovementVariant175() => IsStrengthMovementVariant175
-            ? StrengthMovementVariant175!.Value
+        public global::Terra.StrengthMovementVariant175 PickStrengthMovementVariant175() => StrengthMovementVariant175 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant175' but the value was {ToString()}.");
 
         /// <summary>
@@ -6518,8 +6518,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public string PickStrengthMovementVariant176() => IsStrengthMovementVariant176
-            ? StrengthMovementVariant176!
+        public string PickStrengthMovementVariant176() => StrengthMovementVariant176 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthMovementVariant176' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -11488,709 +11488,709 @@ namespace Terra
                 Validate();
             }
 
-            if (IsStrengthMovementVariant1 && strengthMovementVariant1 != null)
+            if (StrengthMovementVariant1 is { } __value0 && strengthMovementVariant1 != null)
             {
-                return strengthMovementVariant1(StrengthMovementVariant1!);
+                return strengthMovementVariant1(__value0);
             }
-            else if (IsStrengthMovementVariant2 && strengthMovementVariant2 != null)
+            else if (StrengthMovementVariant2 is { } __value1 && strengthMovementVariant2 != null)
             {
-                return strengthMovementVariant2(StrengthMovementVariant2!);
+                return strengthMovementVariant2(__value1);
             }
-            else if (IsStrengthMovementVariant3 && strengthMovementVariant3 != null)
+            else if (StrengthMovementVariant3 is { } __value2 && strengthMovementVariant3 != null)
             {
-                return strengthMovementVariant3(StrengthMovementVariant3!);
+                return strengthMovementVariant3(__value2);
             }
-            else if (IsStrengthMovementVariant4 && strengthMovementVariant4 != null)
+            else if (StrengthMovementVariant4 is { } __value3 && strengthMovementVariant4 != null)
             {
-                return strengthMovementVariant4(StrengthMovementVariant4!);
+                return strengthMovementVariant4(__value3);
             }
-            else if (IsStrengthMovementVariant5 && strengthMovementVariant5 != null)
+            else if (StrengthMovementVariant5 is { } __value4 && strengthMovementVariant5 != null)
             {
-                return strengthMovementVariant5(StrengthMovementVariant5!);
+                return strengthMovementVariant5(__value4);
             }
-            else if (IsStrengthMovementVariant6 && strengthMovementVariant6 != null)
+            else if (StrengthMovementVariant6 is { } __value5 && strengthMovementVariant6 != null)
             {
-                return strengthMovementVariant6(StrengthMovementVariant6!);
+                return strengthMovementVariant6(__value5);
             }
-            else if (IsStrengthMovementVariant7 && strengthMovementVariant7 != null)
+            else if (StrengthMovementVariant7 is { } __value6 && strengthMovementVariant7 != null)
             {
-                return strengthMovementVariant7(StrengthMovementVariant7!);
+                return strengthMovementVariant7(__value6);
             }
-            else if (IsStrengthMovementVariant8 && strengthMovementVariant8 != null)
+            else if (StrengthMovementVariant8 is { } __value7 && strengthMovementVariant8 != null)
             {
-                return strengthMovementVariant8(StrengthMovementVariant8!);
+                return strengthMovementVariant8(__value7);
             }
-            else if (IsStrengthMovementVariant9 && strengthMovementVariant9 != null)
+            else if (StrengthMovementVariant9 is { } __value8 && strengthMovementVariant9 != null)
             {
-                return strengthMovementVariant9(StrengthMovementVariant9!);
+                return strengthMovementVariant9(__value8);
             }
-            else if (IsStrengthMovementVariant10 && strengthMovementVariant10 != null)
+            else if (StrengthMovementVariant10 is { } __value9 && strengthMovementVariant10 != null)
             {
-                return strengthMovementVariant10(StrengthMovementVariant10!);
+                return strengthMovementVariant10(__value9);
             }
-            else if (IsStrengthMovementVariant11 && strengthMovementVariant11 != null)
+            else if (StrengthMovementVariant11 is { } __value10 && strengthMovementVariant11 != null)
             {
-                return strengthMovementVariant11(StrengthMovementVariant11!);
+                return strengthMovementVariant11(__value10);
             }
-            else if (IsStrengthMovementVariant12 && strengthMovementVariant12 != null)
+            else if (StrengthMovementVariant12 is { } __value11 && strengthMovementVariant12 != null)
             {
-                return strengthMovementVariant12(StrengthMovementVariant12!);
+                return strengthMovementVariant12(__value11);
             }
-            else if (IsStrengthMovementVariant13 && strengthMovementVariant13 != null)
+            else if (StrengthMovementVariant13 is { } __value12 && strengthMovementVariant13 != null)
             {
-                return strengthMovementVariant13(StrengthMovementVariant13!);
+                return strengthMovementVariant13(__value12);
             }
-            else if (IsStrengthMovementVariant14 && strengthMovementVariant14 != null)
+            else if (StrengthMovementVariant14 is { } __value13 && strengthMovementVariant14 != null)
             {
-                return strengthMovementVariant14(StrengthMovementVariant14!);
+                return strengthMovementVariant14(__value13);
             }
-            else if (IsStrengthMovementVariant15 && strengthMovementVariant15 != null)
+            else if (StrengthMovementVariant15 is { } __value14 && strengthMovementVariant15 != null)
             {
-                return strengthMovementVariant15(StrengthMovementVariant15!);
+                return strengthMovementVariant15(__value14);
             }
-            else if (IsStrengthMovementVariant16 && strengthMovementVariant16 != null)
+            else if (StrengthMovementVariant16 is { } __value15 && strengthMovementVariant16 != null)
             {
-                return strengthMovementVariant16(StrengthMovementVariant16!);
+                return strengthMovementVariant16(__value15);
             }
-            else if (IsStrengthMovementVariant17 && strengthMovementVariant17 != null)
+            else if (StrengthMovementVariant17 is { } __value16 && strengthMovementVariant17 != null)
             {
-                return strengthMovementVariant17(StrengthMovementVariant17!);
+                return strengthMovementVariant17(__value16);
             }
-            else if (IsStrengthMovementVariant18 && strengthMovementVariant18 != null)
+            else if (StrengthMovementVariant18 is { } __value17 && strengthMovementVariant18 != null)
             {
-                return strengthMovementVariant18(StrengthMovementVariant18!);
+                return strengthMovementVariant18(__value17);
             }
-            else if (IsStrengthMovementVariant19 && strengthMovementVariant19 != null)
+            else if (StrengthMovementVariant19 is { } __value18 && strengthMovementVariant19 != null)
             {
-                return strengthMovementVariant19(StrengthMovementVariant19!);
+                return strengthMovementVariant19(__value18);
             }
-            else if (IsStrengthMovementVariant20 && strengthMovementVariant20 != null)
+            else if (StrengthMovementVariant20 is { } __value19 && strengthMovementVariant20 != null)
             {
-                return strengthMovementVariant20(StrengthMovementVariant20!);
+                return strengthMovementVariant20(__value19);
             }
-            else if (IsStrengthMovementVariant21 && strengthMovementVariant21 != null)
+            else if (StrengthMovementVariant21 is { } __value20 && strengthMovementVariant21 != null)
             {
-                return strengthMovementVariant21(StrengthMovementVariant21!);
+                return strengthMovementVariant21(__value20);
             }
-            else if (IsStrengthMovementVariant22 && strengthMovementVariant22 != null)
+            else if (StrengthMovementVariant22 is { } __value21 && strengthMovementVariant22 != null)
             {
-                return strengthMovementVariant22(StrengthMovementVariant22!);
+                return strengthMovementVariant22(__value21);
             }
-            else if (IsStrengthMovementVariant23 && strengthMovementVariant23 != null)
+            else if (StrengthMovementVariant23 is { } __value22 && strengthMovementVariant23 != null)
             {
-                return strengthMovementVariant23(StrengthMovementVariant23!);
+                return strengthMovementVariant23(__value22);
             }
-            else if (IsStrengthMovementVariant24 && strengthMovementVariant24 != null)
+            else if (StrengthMovementVariant24 is { } __value23 && strengthMovementVariant24 != null)
             {
-                return strengthMovementVariant24(StrengthMovementVariant24!);
+                return strengthMovementVariant24(__value23);
             }
-            else if (IsStrengthMovementVariant25 && strengthMovementVariant25 != null)
+            else if (StrengthMovementVariant25 is { } __value24 && strengthMovementVariant25 != null)
             {
-                return strengthMovementVariant25(StrengthMovementVariant25!);
+                return strengthMovementVariant25(__value24);
             }
-            else if (IsStrengthMovementVariant26 && strengthMovementVariant26 != null)
+            else if (StrengthMovementVariant26 is { } __value25 && strengthMovementVariant26 != null)
             {
-                return strengthMovementVariant26(StrengthMovementVariant26!);
+                return strengthMovementVariant26(__value25);
             }
-            else if (IsStrengthMovementVariant27 && strengthMovementVariant27 != null)
+            else if (StrengthMovementVariant27 is { } __value26 && strengthMovementVariant27 != null)
             {
-                return strengthMovementVariant27(StrengthMovementVariant27!);
+                return strengthMovementVariant27(__value26);
             }
-            else if (IsStrengthMovementVariant28 && strengthMovementVariant28 != null)
+            else if (StrengthMovementVariant28 is { } __value27 && strengthMovementVariant28 != null)
             {
-                return strengthMovementVariant28(StrengthMovementVariant28!);
+                return strengthMovementVariant28(__value27);
             }
-            else if (IsStrengthMovementVariant29 && strengthMovementVariant29 != null)
+            else if (StrengthMovementVariant29 is { } __value28 && strengthMovementVariant29 != null)
             {
-                return strengthMovementVariant29(StrengthMovementVariant29!);
+                return strengthMovementVariant29(__value28);
             }
-            else if (IsStrengthMovementVariant30 && strengthMovementVariant30 != null)
+            else if (StrengthMovementVariant30 is { } __value29 && strengthMovementVariant30 != null)
             {
-                return strengthMovementVariant30(StrengthMovementVariant30!);
+                return strengthMovementVariant30(__value29);
             }
-            else if (IsStrengthMovementVariant31 && strengthMovementVariant31 != null)
+            else if (StrengthMovementVariant31 is { } __value30 && strengthMovementVariant31 != null)
             {
-                return strengthMovementVariant31(StrengthMovementVariant31!);
+                return strengthMovementVariant31(__value30);
             }
-            else if (IsStrengthMovementVariant32 && strengthMovementVariant32 != null)
+            else if (StrengthMovementVariant32 is { } __value31 && strengthMovementVariant32 != null)
             {
-                return strengthMovementVariant32(StrengthMovementVariant32!);
+                return strengthMovementVariant32(__value31);
             }
-            else if (IsStrengthMovementVariant33 && strengthMovementVariant33 != null)
+            else if (StrengthMovementVariant33 is { } __value32 && strengthMovementVariant33 != null)
             {
-                return strengthMovementVariant33(StrengthMovementVariant33!);
+                return strengthMovementVariant33(__value32);
             }
-            else if (IsStrengthMovementVariant34 && strengthMovementVariant34 != null)
+            else if (StrengthMovementVariant34 is { } __value33 && strengthMovementVariant34 != null)
             {
-                return strengthMovementVariant34(StrengthMovementVariant34!);
+                return strengthMovementVariant34(__value33);
             }
-            else if (IsStrengthMovementVariant35 && strengthMovementVariant35 != null)
+            else if (StrengthMovementVariant35 is { } __value34 && strengthMovementVariant35 != null)
             {
-                return strengthMovementVariant35(StrengthMovementVariant35!);
+                return strengthMovementVariant35(__value34);
             }
-            else if (IsStrengthMovementVariant36 && strengthMovementVariant36 != null)
+            else if (StrengthMovementVariant36 is { } __value35 && strengthMovementVariant36 != null)
             {
-                return strengthMovementVariant36(StrengthMovementVariant36!);
+                return strengthMovementVariant36(__value35);
             }
-            else if (IsStrengthMovementVariant37 && strengthMovementVariant37 != null)
+            else if (StrengthMovementVariant37 is { } __value36 && strengthMovementVariant37 != null)
             {
-                return strengthMovementVariant37(StrengthMovementVariant37!);
+                return strengthMovementVariant37(__value36);
             }
-            else if (IsStrengthMovementVariant38 && strengthMovementVariant38 != null)
+            else if (StrengthMovementVariant38 is { } __value37 && strengthMovementVariant38 != null)
             {
-                return strengthMovementVariant38(StrengthMovementVariant38!);
+                return strengthMovementVariant38(__value37);
             }
-            else if (IsStrengthMovementVariant39 && strengthMovementVariant39 != null)
+            else if (StrengthMovementVariant39 is { } __value38 && strengthMovementVariant39 != null)
             {
-                return strengthMovementVariant39(StrengthMovementVariant39!);
+                return strengthMovementVariant39(__value38);
             }
-            else if (IsStrengthMovementVariant40 && strengthMovementVariant40 != null)
+            else if (StrengthMovementVariant40 is { } __value39 && strengthMovementVariant40 != null)
             {
-                return strengthMovementVariant40(StrengthMovementVariant40!);
+                return strengthMovementVariant40(__value39);
             }
-            else if (IsStrengthMovementVariant41 && strengthMovementVariant41 != null)
+            else if (StrengthMovementVariant41 is { } __value40 && strengthMovementVariant41 != null)
             {
-                return strengthMovementVariant41(StrengthMovementVariant41!);
+                return strengthMovementVariant41(__value40);
             }
-            else if (IsStrengthMovementVariant42 && strengthMovementVariant42 != null)
+            else if (StrengthMovementVariant42 is { } __value41 && strengthMovementVariant42 != null)
             {
-                return strengthMovementVariant42(StrengthMovementVariant42!);
+                return strengthMovementVariant42(__value41);
             }
-            else if (IsStrengthMovementVariant43 && strengthMovementVariant43 != null)
+            else if (StrengthMovementVariant43 is { } __value42 && strengthMovementVariant43 != null)
             {
-                return strengthMovementVariant43(StrengthMovementVariant43!);
+                return strengthMovementVariant43(__value42);
             }
-            else if (IsStrengthMovementVariant44 && strengthMovementVariant44 != null)
+            else if (StrengthMovementVariant44 is { } __value43 && strengthMovementVariant44 != null)
             {
-                return strengthMovementVariant44(StrengthMovementVariant44!);
+                return strengthMovementVariant44(__value43);
             }
-            else if (IsStrengthMovementVariant45 && strengthMovementVariant45 != null)
+            else if (StrengthMovementVariant45 is { } __value44 && strengthMovementVariant45 != null)
             {
-                return strengthMovementVariant45(StrengthMovementVariant45!);
+                return strengthMovementVariant45(__value44);
             }
-            else if (IsStrengthMovementVariant46 && strengthMovementVariant46 != null)
+            else if (StrengthMovementVariant46 is { } __value45 && strengthMovementVariant46 != null)
             {
-                return strengthMovementVariant46(StrengthMovementVariant46!);
+                return strengthMovementVariant46(__value45);
             }
-            else if (IsStrengthMovementVariant47 && strengthMovementVariant47 != null)
+            else if (StrengthMovementVariant47 is { } __value46 && strengthMovementVariant47 != null)
             {
-                return strengthMovementVariant47(StrengthMovementVariant47!);
+                return strengthMovementVariant47(__value46);
             }
-            else if (IsStrengthMovementVariant48 && strengthMovementVariant48 != null)
+            else if (StrengthMovementVariant48 is { } __value47 && strengthMovementVariant48 != null)
             {
-                return strengthMovementVariant48(StrengthMovementVariant48!);
+                return strengthMovementVariant48(__value47);
             }
-            else if (IsStrengthMovementVariant49 && strengthMovementVariant49 != null)
+            else if (StrengthMovementVariant49 is { } __value48 && strengthMovementVariant49 != null)
             {
-                return strengthMovementVariant49(StrengthMovementVariant49!);
+                return strengthMovementVariant49(__value48);
             }
-            else if (IsStrengthMovementVariant50 && strengthMovementVariant50 != null)
+            else if (StrengthMovementVariant50 is { } __value49 && strengthMovementVariant50 != null)
             {
-                return strengthMovementVariant50(StrengthMovementVariant50!);
+                return strengthMovementVariant50(__value49);
             }
-            else if (IsStrengthMovementVariant51 && strengthMovementVariant51 != null)
+            else if (StrengthMovementVariant51 is { } __value50 && strengthMovementVariant51 != null)
             {
-                return strengthMovementVariant51(StrengthMovementVariant51!);
+                return strengthMovementVariant51(__value50);
             }
-            else if (IsStrengthMovementVariant52 && strengthMovementVariant52 != null)
+            else if (StrengthMovementVariant52 is { } __value51 && strengthMovementVariant52 != null)
             {
-                return strengthMovementVariant52(StrengthMovementVariant52!);
+                return strengthMovementVariant52(__value51);
             }
-            else if (IsStrengthMovementVariant53 && strengthMovementVariant53 != null)
+            else if (StrengthMovementVariant53 is { } __value52 && strengthMovementVariant53 != null)
             {
-                return strengthMovementVariant53(StrengthMovementVariant53!);
+                return strengthMovementVariant53(__value52);
             }
-            else if (IsStrengthMovementVariant54 && strengthMovementVariant54 != null)
+            else if (StrengthMovementVariant54 is { } __value53 && strengthMovementVariant54 != null)
             {
-                return strengthMovementVariant54(StrengthMovementVariant54!);
+                return strengthMovementVariant54(__value53);
             }
-            else if (IsStrengthMovementVariant55 && strengthMovementVariant55 != null)
+            else if (StrengthMovementVariant55 is { } __value54 && strengthMovementVariant55 != null)
             {
-                return strengthMovementVariant55(StrengthMovementVariant55!);
+                return strengthMovementVariant55(__value54);
             }
-            else if (IsStrengthMovementVariant56 && strengthMovementVariant56 != null)
+            else if (StrengthMovementVariant56 is { } __value55 && strengthMovementVariant56 != null)
             {
-                return strengthMovementVariant56(StrengthMovementVariant56!);
+                return strengthMovementVariant56(__value55);
             }
-            else if (IsStrengthMovementVariant57 && strengthMovementVariant57 != null)
+            else if (StrengthMovementVariant57 is { } __value56 && strengthMovementVariant57 != null)
             {
-                return strengthMovementVariant57(StrengthMovementVariant57!);
+                return strengthMovementVariant57(__value56);
             }
-            else if (IsStrengthMovementVariant58 && strengthMovementVariant58 != null)
+            else if (StrengthMovementVariant58 is { } __value57 && strengthMovementVariant58 != null)
             {
-                return strengthMovementVariant58(StrengthMovementVariant58!);
+                return strengthMovementVariant58(__value57);
             }
-            else if (IsStrengthMovementVariant59 && strengthMovementVariant59 != null)
+            else if (StrengthMovementVariant59 is { } __value58 && strengthMovementVariant59 != null)
             {
-                return strengthMovementVariant59(StrengthMovementVariant59!);
+                return strengthMovementVariant59(__value58);
             }
-            else if (IsStrengthMovementVariant60 && strengthMovementVariant60 != null)
+            else if (StrengthMovementVariant60 is { } __value59 && strengthMovementVariant60 != null)
             {
-                return strengthMovementVariant60(StrengthMovementVariant60!);
+                return strengthMovementVariant60(__value59);
             }
-            else if (IsStrengthMovementVariant61 && strengthMovementVariant61 != null)
+            else if (StrengthMovementVariant61 is { } __value60 && strengthMovementVariant61 != null)
             {
-                return strengthMovementVariant61(StrengthMovementVariant61!);
+                return strengthMovementVariant61(__value60);
             }
-            else if (IsStrengthMovementVariant62 && strengthMovementVariant62 != null)
+            else if (StrengthMovementVariant62 is { } __value61 && strengthMovementVariant62 != null)
             {
-                return strengthMovementVariant62(StrengthMovementVariant62!);
+                return strengthMovementVariant62(__value61);
             }
-            else if (IsStrengthMovementVariant63 && strengthMovementVariant63 != null)
+            else if (StrengthMovementVariant63 is { } __value62 && strengthMovementVariant63 != null)
             {
-                return strengthMovementVariant63(StrengthMovementVariant63!);
+                return strengthMovementVariant63(__value62);
             }
-            else if (IsStrengthMovementVariant64 && strengthMovementVariant64 != null)
+            else if (StrengthMovementVariant64 is { } __value63 && strengthMovementVariant64 != null)
             {
-                return strengthMovementVariant64(StrengthMovementVariant64!);
+                return strengthMovementVariant64(__value63);
             }
-            else if (IsStrengthMovementVariant65 && strengthMovementVariant65 != null)
+            else if (StrengthMovementVariant65 is { } __value64 && strengthMovementVariant65 != null)
             {
-                return strengthMovementVariant65(StrengthMovementVariant65!);
+                return strengthMovementVariant65(__value64);
             }
-            else if (IsStrengthMovementVariant66 && strengthMovementVariant66 != null)
+            else if (StrengthMovementVariant66 is { } __value65 && strengthMovementVariant66 != null)
             {
-                return strengthMovementVariant66(StrengthMovementVariant66!);
+                return strengthMovementVariant66(__value65);
             }
-            else if (IsStrengthMovementVariant67 && strengthMovementVariant67 != null)
+            else if (StrengthMovementVariant67 is { } __value66 && strengthMovementVariant67 != null)
             {
-                return strengthMovementVariant67(StrengthMovementVariant67!);
+                return strengthMovementVariant67(__value66);
             }
-            else if (IsStrengthMovementVariant68 && strengthMovementVariant68 != null)
+            else if (StrengthMovementVariant68 is { } __value67 && strengthMovementVariant68 != null)
             {
-                return strengthMovementVariant68(StrengthMovementVariant68!);
+                return strengthMovementVariant68(__value67);
             }
-            else if (IsStrengthMovementVariant69 && strengthMovementVariant69 != null)
+            else if (StrengthMovementVariant69 is { } __value68 && strengthMovementVariant69 != null)
             {
-                return strengthMovementVariant69(StrengthMovementVariant69!);
+                return strengthMovementVariant69(__value68);
             }
-            else if (IsStrengthMovementVariant70 && strengthMovementVariant70 != null)
+            else if (StrengthMovementVariant70 is { } __value69 && strengthMovementVariant70 != null)
             {
-                return strengthMovementVariant70(StrengthMovementVariant70!);
+                return strengthMovementVariant70(__value69);
             }
-            else if (IsStrengthMovementVariant71 && strengthMovementVariant71 != null)
+            else if (StrengthMovementVariant71 is { } __value70 && strengthMovementVariant71 != null)
             {
-                return strengthMovementVariant71(StrengthMovementVariant71!);
+                return strengthMovementVariant71(__value70);
             }
-            else if (IsStrengthMovementVariant72 && strengthMovementVariant72 != null)
+            else if (StrengthMovementVariant72 is { } __value71 && strengthMovementVariant72 != null)
             {
-                return strengthMovementVariant72(StrengthMovementVariant72!);
+                return strengthMovementVariant72(__value71);
             }
-            else if (IsStrengthMovementVariant73 && strengthMovementVariant73 != null)
+            else if (StrengthMovementVariant73 is { } __value72 && strengthMovementVariant73 != null)
             {
-                return strengthMovementVariant73(StrengthMovementVariant73!);
+                return strengthMovementVariant73(__value72);
             }
-            else if (IsStrengthMovementVariant74 && strengthMovementVariant74 != null)
+            else if (StrengthMovementVariant74 is { } __value73 && strengthMovementVariant74 != null)
             {
-                return strengthMovementVariant74(StrengthMovementVariant74!);
+                return strengthMovementVariant74(__value73);
             }
-            else if (IsStrengthMovementVariant75 && strengthMovementVariant75 != null)
+            else if (StrengthMovementVariant75 is { } __value74 && strengthMovementVariant75 != null)
             {
-                return strengthMovementVariant75(StrengthMovementVariant75!);
+                return strengthMovementVariant75(__value74);
             }
-            else if (IsStrengthMovementVariant76 && strengthMovementVariant76 != null)
+            else if (StrengthMovementVariant76 is { } __value75 && strengthMovementVariant76 != null)
             {
-                return strengthMovementVariant76(StrengthMovementVariant76!);
+                return strengthMovementVariant76(__value75);
             }
-            else if (IsStrengthMovementVariant77 && strengthMovementVariant77 != null)
+            else if (StrengthMovementVariant77 is { } __value76 && strengthMovementVariant77 != null)
             {
-                return strengthMovementVariant77(StrengthMovementVariant77!);
+                return strengthMovementVariant77(__value76);
             }
-            else if (IsStrengthMovementVariant78 && strengthMovementVariant78 != null)
+            else if (StrengthMovementVariant78 is { } __value77 && strengthMovementVariant78 != null)
             {
-                return strengthMovementVariant78(StrengthMovementVariant78!);
+                return strengthMovementVariant78(__value77);
             }
-            else if (IsStrengthMovementVariant79 && strengthMovementVariant79 != null)
+            else if (StrengthMovementVariant79 is { } __value78 && strengthMovementVariant79 != null)
             {
-                return strengthMovementVariant79(StrengthMovementVariant79!);
+                return strengthMovementVariant79(__value78);
             }
-            else if (IsStrengthMovementVariant80 && strengthMovementVariant80 != null)
+            else if (StrengthMovementVariant80 is { } __value79 && strengthMovementVariant80 != null)
             {
-                return strengthMovementVariant80(StrengthMovementVariant80!);
+                return strengthMovementVariant80(__value79);
             }
-            else if (IsStrengthMovementVariant81 && strengthMovementVariant81 != null)
+            else if (StrengthMovementVariant81 is { } __value80 && strengthMovementVariant81 != null)
             {
-                return strengthMovementVariant81(StrengthMovementVariant81!);
+                return strengthMovementVariant81(__value80);
             }
-            else if (IsStrengthMovementVariant82 && strengthMovementVariant82 != null)
+            else if (StrengthMovementVariant82 is { } __value81 && strengthMovementVariant82 != null)
             {
-                return strengthMovementVariant82(StrengthMovementVariant82!);
+                return strengthMovementVariant82(__value81);
             }
-            else if (IsStrengthMovementVariant83 && strengthMovementVariant83 != null)
+            else if (StrengthMovementVariant83 is { } __value82 && strengthMovementVariant83 != null)
             {
-                return strengthMovementVariant83(StrengthMovementVariant83!);
+                return strengthMovementVariant83(__value82);
             }
-            else if (IsStrengthMovementVariant84 && strengthMovementVariant84 != null)
+            else if (StrengthMovementVariant84 is { } __value83 && strengthMovementVariant84 != null)
             {
-                return strengthMovementVariant84(StrengthMovementVariant84!);
+                return strengthMovementVariant84(__value83);
             }
-            else if (IsStrengthMovementVariant85 && strengthMovementVariant85 != null)
+            else if (StrengthMovementVariant85 is { } __value84 && strengthMovementVariant85 != null)
             {
-                return strengthMovementVariant85(StrengthMovementVariant85!);
+                return strengthMovementVariant85(__value84);
             }
-            else if (IsStrengthMovementVariant86 && strengthMovementVariant86 != null)
+            else if (StrengthMovementVariant86 is { } __value85 && strengthMovementVariant86 != null)
             {
-                return strengthMovementVariant86(StrengthMovementVariant86!);
+                return strengthMovementVariant86(__value85);
             }
-            else if (IsStrengthMovementVariant87 && strengthMovementVariant87 != null)
+            else if (StrengthMovementVariant87 is { } __value86 && strengthMovementVariant87 != null)
             {
-                return strengthMovementVariant87(StrengthMovementVariant87!);
+                return strengthMovementVariant87(__value86);
             }
-            else if (IsStrengthMovementVariant88 && strengthMovementVariant88 != null)
+            else if (StrengthMovementVariant88 is { } __value87 && strengthMovementVariant88 != null)
             {
-                return strengthMovementVariant88(StrengthMovementVariant88!);
+                return strengthMovementVariant88(__value87);
             }
-            else if (IsStrengthMovementVariant89 && strengthMovementVariant89 != null)
+            else if (StrengthMovementVariant89 is { } __value88 && strengthMovementVariant89 != null)
             {
-                return strengthMovementVariant89(StrengthMovementVariant89!);
+                return strengthMovementVariant89(__value88);
             }
-            else if (IsStrengthMovementVariant90 && strengthMovementVariant90 != null)
+            else if (StrengthMovementVariant90 is { } __value89 && strengthMovementVariant90 != null)
             {
-                return strengthMovementVariant90(StrengthMovementVariant90!);
+                return strengthMovementVariant90(__value89);
             }
-            else if (IsStrengthMovementVariant91 && strengthMovementVariant91 != null)
+            else if (StrengthMovementVariant91 is { } __value90 && strengthMovementVariant91 != null)
             {
-                return strengthMovementVariant91(StrengthMovementVariant91!);
+                return strengthMovementVariant91(__value90);
             }
-            else if (IsStrengthMovementVariant92 && strengthMovementVariant92 != null)
+            else if (StrengthMovementVariant92 is { } __value91 && strengthMovementVariant92 != null)
             {
-                return strengthMovementVariant92(StrengthMovementVariant92!);
+                return strengthMovementVariant92(__value91);
             }
-            else if (IsStrengthMovementVariant93 && strengthMovementVariant93 != null)
+            else if (StrengthMovementVariant93 is { } __value92 && strengthMovementVariant93 != null)
             {
-                return strengthMovementVariant93(StrengthMovementVariant93!);
+                return strengthMovementVariant93(__value92);
             }
-            else if (IsStrengthMovementVariant94 && strengthMovementVariant94 != null)
+            else if (StrengthMovementVariant94 is { } __value93 && strengthMovementVariant94 != null)
             {
-                return strengthMovementVariant94(StrengthMovementVariant94!);
+                return strengthMovementVariant94(__value93);
             }
-            else if (IsStrengthMovementVariant95 && strengthMovementVariant95 != null)
+            else if (StrengthMovementVariant95 is { } __value94 && strengthMovementVariant95 != null)
             {
-                return strengthMovementVariant95(StrengthMovementVariant95!);
+                return strengthMovementVariant95(__value94);
             }
-            else if (IsStrengthMovementVariant96 && strengthMovementVariant96 != null)
+            else if (StrengthMovementVariant96 is { } __value95 && strengthMovementVariant96 != null)
             {
-                return strengthMovementVariant96(StrengthMovementVariant96!);
+                return strengthMovementVariant96(__value95);
             }
-            else if (IsStrengthMovementVariant97 && strengthMovementVariant97 != null)
+            else if (StrengthMovementVariant97 is { } __value96 && strengthMovementVariant97 != null)
             {
-                return strengthMovementVariant97(StrengthMovementVariant97!);
+                return strengthMovementVariant97(__value96);
             }
-            else if (IsStrengthMovementVariant98 && strengthMovementVariant98 != null)
+            else if (StrengthMovementVariant98 is { } __value97 && strengthMovementVariant98 != null)
             {
-                return strengthMovementVariant98(StrengthMovementVariant98!);
+                return strengthMovementVariant98(__value97);
             }
-            else if (IsStrengthMovementVariant99 && strengthMovementVariant99 != null)
+            else if (StrengthMovementVariant99 is { } __value98 && strengthMovementVariant99 != null)
             {
-                return strengthMovementVariant99(StrengthMovementVariant99!);
+                return strengthMovementVariant99(__value98);
             }
-            else if (IsStrengthMovementVariant100 && strengthMovementVariant100 != null)
+            else if (StrengthMovementVariant100 is { } __value99 && strengthMovementVariant100 != null)
             {
-                return strengthMovementVariant100(StrengthMovementVariant100!);
+                return strengthMovementVariant100(__value99);
             }
-            else if (IsStrengthMovementVariant101 && strengthMovementVariant101 != null)
+            else if (StrengthMovementVariant101 is { } __value100 && strengthMovementVariant101 != null)
             {
-                return strengthMovementVariant101(StrengthMovementVariant101!);
+                return strengthMovementVariant101(__value100);
             }
-            else if (IsStrengthMovementVariant102 && strengthMovementVariant102 != null)
+            else if (StrengthMovementVariant102 is { } __value101 && strengthMovementVariant102 != null)
             {
-                return strengthMovementVariant102(StrengthMovementVariant102!);
+                return strengthMovementVariant102(__value101);
             }
-            else if (IsStrengthMovementVariant103 && strengthMovementVariant103 != null)
+            else if (StrengthMovementVariant103 is { } __value102 && strengthMovementVariant103 != null)
             {
-                return strengthMovementVariant103(StrengthMovementVariant103!);
+                return strengthMovementVariant103(__value102);
             }
-            else if (IsStrengthMovementVariant104 && strengthMovementVariant104 != null)
+            else if (StrengthMovementVariant104 is { } __value103 && strengthMovementVariant104 != null)
             {
-                return strengthMovementVariant104(StrengthMovementVariant104!);
+                return strengthMovementVariant104(__value103);
             }
-            else if (IsStrengthMovementVariant105 && strengthMovementVariant105 != null)
+            else if (StrengthMovementVariant105 is { } __value104 && strengthMovementVariant105 != null)
             {
-                return strengthMovementVariant105(StrengthMovementVariant105!);
+                return strengthMovementVariant105(__value104);
             }
-            else if (IsStrengthMovementVariant106 && strengthMovementVariant106 != null)
+            else if (StrengthMovementVariant106 is { } __value105 && strengthMovementVariant106 != null)
             {
-                return strengthMovementVariant106(StrengthMovementVariant106!);
+                return strengthMovementVariant106(__value105);
             }
-            else if (IsStrengthMovementVariant107 && strengthMovementVariant107 != null)
+            else if (StrengthMovementVariant107 is { } __value106 && strengthMovementVariant107 != null)
             {
-                return strengthMovementVariant107(StrengthMovementVariant107!);
+                return strengthMovementVariant107(__value106);
             }
-            else if (IsStrengthMovementVariant108 && strengthMovementVariant108 != null)
+            else if (StrengthMovementVariant108 is { } __value107 && strengthMovementVariant108 != null)
             {
-                return strengthMovementVariant108(StrengthMovementVariant108!);
+                return strengthMovementVariant108(__value107);
             }
-            else if (IsStrengthMovementVariant109 && strengthMovementVariant109 != null)
+            else if (StrengthMovementVariant109 is { } __value108 && strengthMovementVariant109 != null)
             {
-                return strengthMovementVariant109(StrengthMovementVariant109!);
+                return strengthMovementVariant109(__value108);
             }
-            else if (IsStrengthMovementVariant110 && strengthMovementVariant110 != null)
+            else if (StrengthMovementVariant110 is { } __value109 && strengthMovementVariant110 != null)
             {
-                return strengthMovementVariant110(StrengthMovementVariant110!);
+                return strengthMovementVariant110(__value109);
             }
-            else if (IsStrengthMovementVariant111 && strengthMovementVariant111 != null)
+            else if (StrengthMovementVariant111 is { } __value110 && strengthMovementVariant111 != null)
             {
-                return strengthMovementVariant111(StrengthMovementVariant111!);
+                return strengthMovementVariant111(__value110);
             }
-            else if (IsStrengthMovementVariant112 && strengthMovementVariant112 != null)
+            else if (StrengthMovementVariant112 is { } __value111 && strengthMovementVariant112 != null)
             {
-                return strengthMovementVariant112(StrengthMovementVariant112!);
+                return strengthMovementVariant112(__value111);
             }
-            else if (IsStrengthMovementVariant113 && strengthMovementVariant113 != null)
+            else if (StrengthMovementVariant113 is { } __value112 && strengthMovementVariant113 != null)
             {
-                return strengthMovementVariant113(StrengthMovementVariant113!);
+                return strengthMovementVariant113(__value112);
             }
-            else if (IsStrengthMovementVariant114 && strengthMovementVariant114 != null)
+            else if (StrengthMovementVariant114 is { } __value113 && strengthMovementVariant114 != null)
             {
-                return strengthMovementVariant114(StrengthMovementVariant114!);
+                return strengthMovementVariant114(__value113);
             }
-            else if (IsStrengthMovementVariant115 && strengthMovementVariant115 != null)
+            else if (StrengthMovementVariant115 is { } __value114 && strengthMovementVariant115 != null)
             {
-                return strengthMovementVariant115(StrengthMovementVariant115!);
+                return strengthMovementVariant115(__value114);
             }
-            else if (IsStrengthMovementVariant116 && strengthMovementVariant116 != null)
+            else if (StrengthMovementVariant116 is { } __value115 && strengthMovementVariant116 != null)
             {
-                return strengthMovementVariant116(StrengthMovementVariant116!);
+                return strengthMovementVariant116(__value115);
             }
-            else if (IsStrengthMovementVariant117 && strengthMovementVariant117 != null)
+            else if (StrengthMovementVariant117 is { } __value116 && strengthMovementVariant117 != null)
             {
-                return strengthMovementVariant117(StrengthMovementVariant117!);
+                return strengthMovementVariant117(__value116);
             }
-            else if (IsStrengthMovementVariant118 && strengthMovementVariant118 != null)
+            else if (StrengthMovementVariant118 is { } __value117 && strengthMovementVariant118 != null)
             {
-                return strengthMovementVariant118(StrengthMovementVariant118!);
+                return strengthMovementVariant118(__value117);
             }
-            else if (IsStrengthMovementVariant119 && strengthMovementVariant119 != null)
+            else if (StrengthMovementVariant119 is { } __value118 && strengthMovementVariant119 != null)
             {
-                return strengthMovementVariant119(StrengthMovementVariant119!);
+                return strengthMovementVariant119(__value118);
             }
-            else if (IsStrengthMovementVariant120 && strengthMovementVariant120 != null)
+            else if (StrengthMovementVariant120 is { } __value119 && strengthMovementVariant120 != null)
             {
-                return strengthMovementVariant120(StrengthMovementVariant120!);
+                return strengthMovementVariant120(__value119);
             }
-            else if (IsStrengthMovementVariant121 && strengthMovementVariant121 != null)
+            else if (StrengthMovementVariant121 is { } __value120 && strengthMovementVariant121 != null)
             {
-                return strengthMovementVariant121(StrengthMovementVariant121!);
+                return strengthMovementVariant121(__value120);
             }
-            else if (IsStrengthMovementVariant122 && strengthMovementVariant122 != null)
+            else if (StrengthMovementVariant122 is { } __value121 && strengthMovementVariant122 != null)
             {
-                return strengthMovementVariant122(StrengthMovementVariant122!);
+                return strengthMovementVariant122(__value121);
             }
-            else if (IsStrengthMovementVariant123 && strengthMovementVariant123 != null)
+            else if (StrengthMovementVariant123 is { } __value122 && strengthMovementVariant123 != null)
             {
-                return strengthMovementVariant123(StrengthMovementVariant123!);
+                return strengthMovementVariant123(__value122);
             }
-            else if (IsStrengthMovementVariant124 && strengthMovementVariant124 != null)
+            else if (StrengthMovementVariant124 is { } __value123 && strengthMovementVariant124 != null)
             {
-                return strengthMovementVariant124(StrengthMovementVariant124!);
+                return strengthMovementVariant124(__value123);
             }
-            else if (IsStrengthMovementVariant125 && strengthMovementVariant125 != null)
+            else if (StrengthMovementVariant125 is { } __value124 && strengthMovementVariant125 != null)
             {
-                return strengthMovementVariant125(StrengthMovementVariant125!);
+                return strengthMovementVariant125(__value124);
             }
-            else if (IsStrengthMovementVariant126 && strengthMovementVariant126 != null)
+            else if (StrengthMovementVariant126 is { } __value125 && strengthMovementVariant126 != null)
             {
-                return strengthMovementVariant126(StrengthMovementVariant126!);
+                return strengthMovementVariant126(__value125);
             }
-            else if (IsStrengthMovementVariant127 && strengthMovementVariant127 != null)
+            else if (StrengthMovementVariant127 is { } __value126 && strengthMovementVariant127 != null)
             {
-                return strengthMovementVariant127(StrengthMovementVariant127!);
+                return strengthMovementVariant127(__value126);
             }
-            else if (IsStrengthMovementVariant128 && strengthMovementVariant128 != null)
+            else if (StrengthMovementVariant128 is { } __value127 && strengthMovementVariant128 != null)
             {
-                return strengthMovementVariant128(StrengthMovementVariant128!);
+                return strengthMovementVariant128(__value127);
             }
-            else if (IsStrengthMovementVariant129 && strengthMovementVariant129 != null)
+            else if (StrengthMovementVariant129 is { } __value128 && strengthMovementVariant129 != null)
             {
-                return strengthMovementVariant129(StrengthMovementVariant129!);
+                return strengthMovementVariant129(__value128);
             }
-            else if (IsStrengthMovementVariant130 && strengthMovementVariant130 != null)
+            else if (StrengthMovementVariant130 is { } __value129 && strengthMovementVariant130 != null)
             {
-                return strengthMovementVariant130(StrengthMovementVariant130!);
+                return strengthMovementVariant130(__value129);
             }
-            else if (IsStrengthMovementVariant131 && strengthMovementVariant131 != null)
+            else if (StrengthMovementVariant131 is { } __value130 && strengthMovementVariant131 != null)
             {
-                return strengthMovementVariant131(StrengthMovementVariant131!);
+                return strengthMovementVariant131(__value130);
             }
-            else if (IsStrengthMovementVariant132 && strengthMovementVariant132 != null)
+            else if (StrengthMovementVariant132 is { } __value131 && strengthMovementVariant132 != null)
             {
-                return strengthMovementVariant132(StrengthMovementVariant132!);
+                return strengthMovementVariant132(__value131);
             }
-            else if (IsStrengthMovementVariant133 && strengthMovementVariant133 != null)
+            else if (StrengthMovementVariant133 is { } __value132 && strengthMovementVariant133 != null)
             {
-                return strengthMovementVariant133(StrengthMovementVariant133!);
+                return strengthMovementVariant133(__value132);
             }
-            else if (IsStrengthMovementVariant134 && strengthMovementVariant134 != null)
+            else if (StrengthMovementVariant134 is { } __value133 && strengthMovementVariant134 != null)
             {
-                return strengthMovementVariant134(StrengthMovementVariant134!);
+                return strengthMovementVariant134(__value133);
             }
-            else if (IsStrengthMovementVariant135 && strengthMovementVariant135 != null)
+            else if (StrengthMovementVariant135 is { } __value134 && strengthMovementVariant135 != null)
             {
-                return strengthMovementVariant135(StrengthMovementVariant135!);
+                return strengthMovementVariant135(__value134);
             }
-            else if (IsStrengthMovementVariant136 && strengthMovementVariant136 != null)
+            else if (StrengthMovementVariant136 is { } __value135 && strengthMovementVariant136 != null)
             {
-                return strengthMovementVariant136(StrengthMovementVariant136!);
+                return strengthMovementVariant136(__value135);
             }
-            else if (IsStrengthMovementVariant137 && strengthMovementVariant137 != null)
+            else if (StrengthMovementVariant137 is { } __value136 && strengthMovementVariant137 != null)
             {
-                return strengthMovementVariant137(StrengthMovementVariant137!);
+                return strengthMovementVariant137(__value136);
             }
-            else if (IsStrengthMovementVariant138 && strengthMovementVariant138 != null)
+            else if (StrengthMovementVariant138 is { } __value137 && strengthMovementVariant138 != null)
             {
-                return strengthMovementVariant138(StrengthMovementVariant138!);
+                return strengthMovementVariant138(__value137);
             }
-            else if (IsStrengthMovementVariant139 && strengthMovementVariant139 != null)
+            else if (StrengthMovementVariant139 is { } __value138 && strengthMovementVariant139 != null)
             {
-                return strengthMovementVariant139(StrengthMovementVariant139!);
+                return strengthMovementVariant139(__value138);
             }
-            else if (IsStrengthMovementVariant140 && strengthMovementVariant140 != null)
+            else if (StrengthMovementVariant140 is { } __value139 && strengthMovementVariant140 != null)
             {
-                return strengthMovementVariant140(StrengthMovementVariant140!);
+                return strengthMovementVariant140(__value139);
             }
-            else if (IsStrengthMovementVariant141 && strengthMovementVariant141 != null)
+            else if (StrengthMovementVariant141 is { } __value140 && strengthMovementVariant141 != null)
             {
-                return strengthMovementVariant141(StrengthMovementVariant141!);
+                return strengthMovementVariant141(__value140);
             }
-            else if (IsStrengthMovementVariant142 && strengthMovementVariant142 != null)
+            else if (StrengthMovementVariant142 is { } __value141 && strengthMovementVariant142 != null)
             {
-                return strengthMovementVariant142(StrengthMovementVariant142!);
+                return strengthMovementVariant142(__value141);
             }
-            else if (IsStrengthMovementVariant143 && strengthMovementVariant143 != null)
+            else if (StrengthMovementVariant143 is { } __value142 && strengthMovementVariant143 != null)
             {
-                return strengthMovementVariant143(StrengthMovementVariant143!);
+                return strengthMovementVariant143(__value142);
             }
-            else if (IsStrengthMovementVariant144 && strengthMovementVariant144 != null)
+            else if (StrengthMovementVariant144 is { } __value143 && strengthMovementVariant144 != null)
             {
-                return strengthMovementVariant144(StrengthMovementVariant144!);
+                return strengthMovementVariant144(__value143);
             }
-            else if (IsStrengthMovementVariant145 && strengthMovementVariant145 != null)
+            else if (StrengthMovementVariant145 is { } __value144 && strengthMovementVariant145 != null)
             {
-                return strengthMovementVariant145(StrengthMovementVariant145!);
+                return strengthMovementVariant145(__value144);
             }
-            else if (IsStrengthMovementVariant146 && strengthMovementVariant146 != null)
+            else if (StrengthMovementVariant146 is { } __value145 && strengthMovementVariant146 != null)
             {
-                return strengthMovementVariant146(StrengthMovementVariant146!);
+                return strengthMovementVariant146(__value145);
             }
-            else if (IsStrengthMovementVariant147 && strengthMovementVariant147 != null)
+            else if (StrengthMovementVariant147 is { } __value146 && strengthMovementVariant147 != null)
             {
-                return strengthMovementVariant147(StrengthMovementVariant147!);
+                return strengthMovementVariant147(__value146);
             }
-            else if (IsStrengthMovementVariant148 && strengthMovementVariant148 != null)
+            else if (StrengthMovementVariant148 is { } __value147 && strengthMovementVariant148 != null)
             {
-                return strengthMovementVariant148(StrengthMovementVariant148!);
+                return strengthMovementVariant148(__value147);
             }
-            else if (IsStrengthMovementVariant149 && strengthMovementVariant149 != null)
+            else if (StrengthMovementVariant149 is { } __value148 && strengthMovementVariant149 != null)
             {
-                return strengthMovementVariant149(StrengthMovementVariant149!);
+                return strengthMovementVariant149(__value148);
             }
-            else if (IsStrengthMovementVariant150 && strengthMovementVariant150 != null)
+            else if (StrengthMovementVariant150 is { } __value149 && strengthMovementVariant150 != null)
             {
-                return strengthMovementVariant150(StrengthMovementVariant150!);
+                return strengthMovementVariant150(__value149);
             }
-            else if (IsStrengthMovementVariant151 && strengthMovementVariant151 != null)
+            else if (StrengthMovementVariant151 is { } __value150 && strengthMovementVariant151 != null)
             {
-                return strengthMovementVariant151(StrengthMovementVariant151!);
+                return strengthMovementVariant151(__value150);
             }
-            else if (IsStrengthMovementVariant152 && strengthMovementVariant152 != null)
+            else if (StrengthMovementVariant152 is { } __value151 && strengthMovementVariant152 != null)
             {
-                return strengthMovementVariant152(StrengthMovementVariant152!);
+                return strengthMovementVariant152(__value151);
             }
-            else if (IsStrengthMovementVariant153 && strengthMovementVariant153 != null)
+            else if (StrengthMovementVariant153 is { } __value152 && strengthMovementVariant153 != null)
             {
-                return strengthMovementVariant153(StrengthMovementVariant153!);
+                return strengthMovementVariant153(__value152);
             }
-            else if (IsStrengthMovementVariant154 && strengthMovementVariant154 != null)
+            else if (StrengthMovementVariant154 is { } __value153 && strengthMovementVariant154 != null)
             {
-                return strengthMovementVariant154(StrengthMovementVariant154!);
+                return strengthMovementVariant154(__value153);
             }
-            else if (IsStrengthMovementVariant155 && strengthMovementVariant155 != null)
+            else if (StrengthMovementVariant155 is { } __value154 && strengthMovementVariant155 != null)
             {
-                return strengthMovementVariant155(StrengthMovementVariant155!);
+                return strengthMovementVariant155(__value154);
             }
-            else if (IsStrengthMovementVariant156 && strengthMovementVariant156 != null)
+            else if (StrengthMovementVariant156 is { } __value155 && strengthMovementVariant156 != null)
             {
-                return strengthMovementVariant156(StrengthMovementVariant156!);
+                return strengthMovementVariant156(__value155);
             }
-            else if (IsStrengthMovementVariant157 && strengthMovementVariant157 != null)
+            else if (StrengthMovementVariant157 is { } __value156 && strengthMovementVariant157 != null)
             {
-                return strengthMovementVariant157(StrengthMovementVariant157!);
+                return strengthMovementVariant157(__value156);
             }
-            else if (IsStrengthMovementVariant158 && strengthMovementVariant158 != null)
+            else if (StrengthMovementVariant158 is { } __value157 && strengthMovementVariant158 != null)
             {
-                return strengthMovementVariant158(StrengthMovementVariant158!);
+                return strengthMovementVariant158(__value157);
             }
-            else if (IsStrengthMovementVariant159 && strengthMovementVariant159 != null)
+            else if (StrengthMovementVariant159 is { } __value158 && strengthMovementVariant159 != null)
             {
-                return strengthMovementVariant159(StrengthMovementVariant159!);
+                return strengthMovementVariant159(__value158);
             }
-            else if (IsStrengthMovementVariant160 && strengthMovementVariant160 != null)
+            else if (StrengthMovementVariant160 is { } __value159 && strengthMovementVariant160 != null)
             {
-                return strengthMovementVariant160(StrengthMovementVariant160!);
+                return strengthMovementVariant160(__value159);
             }
-            else if (IsStrengthMovementVariant161 && strengthMovementVariant161 != null)
+            else if (StrengthMovementVariant161 is { } __value160 && strengthMovementVariant161 != null)
             {
-                return strengthMovementVariant161(StrengthMovementVariant161!);
+                return strengthMovementVariant161(__value160);
             }
-            else if (IsStrengthMovementVariant162 && strengthMovementVariant162 != null)
+            else if (StrengthMovementVariant162 is { } __value161 && strengthMovementVariant162 != null)
             {
-                return strengthMovementVariant162(StrengthMovementVariant162!);
+                return strengthMovementVariant162(__value161);
             }
-            else if (IsStrengthMovementVariant163 && strengthMovementVariant163 != null)
+            else if (StrengthMovementVariant163 is { } __value162 && strengthMovementVariant163 != null)
             {
-                return strengthMovementVariant163(StrengthMovementVariant163!);
+                return strengthMovementVariant163(__value162);
             }
-            else if (IsStrengthMovementVariant164 && strengthMovementVariant164 != null)
+            else if (StrengthMovementVariant164 is { } __value163 && strengthMovementVariant164 != null)
             {
-                return strengthMovementVariant164(StrengthMovementVariant164!);
+                return strengthMovementVariant164(__value163);
             }
-            else if (IsStrengthMovementVariant165 && strengthMovementVariant165 != null)
+            else if (StrengthMovementVariant165 is { } __value164 && strengthMovementVariant165 != null)
             {
-                return strengthMovementVariant165(StrengthMovementVariant165!);
+                return strengthMovementVariant165(__value164);
             }
-            else if (IsStrengthMovementVariant166 && strengthMovementVariant166 != null)
+            else if (StrengthMovementVariant166 is { } __value165 && strengthMovementVariant166 != null)
             {
-                return strengthMovementVariant166(StrengthMovementVariant166!);
+                return strengthMovementVariant166(__value165);
             }
-            else if (IsStrengthMovementVariant167 && strengthMovementVariant167 != null)
+            else if (StrengthMovementVariant167 is { } __value166 && strengthMovementVariant167 != null)
             {
-                return strengthMovementVariant167(StrengthMovementVariant167!);
+                return strengthMovementVariant167(__value166);
             }
-            else if (IsStrengthMovementVariant168 && strengthMovementVariant168 != null)
+            else if (StrengthMovementVariant168 is { } __value167 && strengthMovementVariant168 != null)
             {
-                return strengthMovementVariant168(StrengthMovementVariant168!);
+                return strengthMovementVariant168(__value167);
             }
-            else if (IsStrengthMovementVariant169 && strengthMovementVariant169 != null)
+            else if (StrengthMovementVariant169 is { } __value168 && strengthMovementVariant169 != null)
             {
-                return strengthMovementVariant169(StrengthMovementVariant169!);
+                return strengthMovementVariant169(__value168);
             }
-            else if (IsStrengthMovementVariant170 && strengthMovementVariant170 != null)
+            else if (StrengthMovementVariant170 is { } __value169 && strengthMovementVariant170 != null)
             {
-                return strengthMovementVariant170(StrengthMovementVariant170!);
+                return strengthMovementVariant170(__value169);
             }
-            else if (IsStrengthMovementVariant171 && strengthMovementVariant171 != null)
+            else if (StrengthMovementVariant171 is { } __value170 && strengthMovementVariant171 != null)
             {
-                return strengthMovementVariant171(StrengthMovementVariant171!);
+                return strengthMovementVariant171(__value170);
             }
-            else if (IsStrengthMovementVariant172 && strengthMovementVariant172 != null)
+            else if (StrengthMovementVariant172 is { } __value171 && strengthMovementVariant172 != null)
             {
-                return strengthMovementVariant172(StrengthMovementVariant172!);
+                return strengthMovementVariant172(__value171);
             }
-            else if (IsStrengthMovementVariant173 && strengthMovementVariant173 != null)
+            else if (StrengthMovementVariant173 is { } __value172 && strengthMovementVariant173 != null)
             {
-                return strengthMovementVariant173(StrengthMovementVariant173!);
+                return strengthMovementVariant173(__value172);
             }
-            else if (IsStrengthMovementVariant174 && strengthMovementVariant174 != null)
+            else if (StrengthMovementVariant174 is { } __value173 && strengthMovementVariant174 != null)
             {
-                return strengthMovementVariant174(StrengthMovementVariant174!);
+                return strengthMovementVariant174(__value173);
             }
-            else if (IsStrengthMovementVariant175 && strengthMovementVariant175 != null)
+            else if (StrengthMovementVariant175 is { } __value174 && strengthMovementVariant175 != null)
             {
-                return strengthMovementVariant175(StrengthMovementVariant175!);
+                return strengthMovementVariant175(__value174);
             }
-            else if (IsStrengthMovementVariant176 && strengthMovementVariant176 != null)
+            else if (StrengthMovementVariant176 is { } __value175 && strengthMovementVariant176 != null)
             {
-                return strengthMovementVariant176(StrengthMovementVariant176!);
+                return strengthMovementVariant176(__value175);
             }
 
             return default(TResult);
@@ -12558,709 +12558,709 @@ namespace Terra
                 Validate();
             }
 
-            if (IsStrengthMovementVariant1)
+            if (StrengthMovementVariant1 is { } __value0)
             {
-                strengthMovementVariant1?.Invoke(StrengthMovementVariant1!);
+                strengthMovementVariant1?.Invoke(__value0);
             }
-            else if (IsStrengthMovementVariant2)
+            else if (StrengthMovementVariant2 is { } __value1)
             {
-                strengthMovementVariant2?.Invoke(StrengthMovementVariant2!);
+                strengthMovementVariant2?.Invoke(__value1);
             }
-            else if (IsStrengthMovementVariant3)
+            else if (StrengthMovementVariant3 is { } __value2)
             {
-                strengthMovementVariant3?.Invoke(StrengthMovementVariant3!);
+                strengthMovementVariant3?.Invoke(__value2);
             }
-            else if (IsStrengthMovementVariant4)
+            else if (StrengthMovementVariant4 is { } __value3)
             {
-                strengthMovementVariant4?.Invoke(StrengthMovementVariant4!);
+                strengthMovementVariant4?.Invoke(__value3);
             }
-            else if (IsStrengthMovementVariant5)
+            else if (StrengthMovementVariant5 is { } __value4)
             {
-                strengthMovementVariant5?.Invoke(StrengthMovementVariant5!);
+                strengthMovementVariant5?.Invoke(__value4);
             }
-            else if (IsStrengthMovementVariant6)
+            else if (StrengthMovementVariant6 is { } __value5)
             {
-                strengthMovementVariant6?.Invoke(StrengthMovementVariant6!);
+                strengthMovementVariant6?.Invoke(__value5);
             }
-            else if (IsStrengthMovementVariant7)
+            else if (StrengthMovementVariant7 is { } __value6)
             {
-                strengthMovementVariant7?.Invoke(StrengthMovementVariant7!);
+                strengthMovementVariant7?.Invoke(__value6);
             }
-            else if (IsStrengthMovementVariant8)
+            else if (StrengthMovementVariant8 is { } __value7)
             {
-                strengthMovementVariant8?.Invoke(StrengthMovementVariant8!);
+                strengthMovementVariant8?.Invoke(__value7);
             }
-            else if (IsStrengthMovementVariant9)
+            else if (StrengthMovementVariant9 is { } __value8)
             {
-                strengthMovementVariant9?.Invoke(StrengthMovementVariant9!);
+                strengthMovementVariant9?.Invoke(__value8);
             }
-            else if (IsStrengthMovementVariant10)
+            else if (StrengthMovementVariant10 is { } __value9)
             {
-                strengthMovementVariant10?.Invoke(StrengthMovementVariant10!);
+                strengthMovementVariant10?.Invoke(__value9);
             }
-            else if (IsStrengthMovementVariant11)
+            else if (StrengthMovementVariant11 is { } __value10)
             {
-                strengthMovementVariant11?.Invoke(StrengthMovementVariant11!);
+                strengthMovementVariant11?.Invoke(__value10);
             }
-            else if (IsStrengthMovementVariant12)
+            else if (StrengthMovementVariant12 is { } __value11)
             {
-                strengthMovementVariant12?.Invoke(StrengthMovementVariant12!);
+                strengthMovementVariant12?.Invoke(__value11);
             }
-            else if (IsStrengthMovementVariant13)
+            else if (StrengthMovementVariant13 is { } __value12)
             {
-                strengthMovementVariant13?.Invoke(StrengthMovementVariant13!);
+                strengthMovementVariant13?.Invoke(__value12);
             }
-            else if (IsStrengthMovementVariant14)
+            else if (StrengthMovementVariant14 is { } __value13)
             {
-                strengthMovementVariant14?.Invoke(StrengthMovementVariant14!);
+                strengthMovementVariant14?.Invoke(__value13);
             }
-            else if (IsStrengthMovementVariant15)
+            else if (StrengthMovementVariant15 is { } __value14)
             {
-                strengthMovementVariant15?.Invoke(StrengthMovementVariant15!);
+                strengthMovementVariant15?.Invoke(__value14);
             }
-            else if (IsStrengthMovementVariant16)
+            else if (StrengthMovementVariant16 is { } __value15)
             {
-                strengthMovementVariant16?.Invoke(StrengthMovementVariant16!);
+                strengthMovementVariant16?.Invoke(__value15);
             }
-            else if (IsStrengthMovementVariant17)
+            else if (StrengthMovementVariant17 is { } __value16)
             {
-                strengthMovementVariant17?.Invoke(StrengthMovementVariant17!);
+                strengthMovementVariant17?.Invoke(__value16);
             }
-            else if (IsStrengthMovementVariant18)
+            else if (StrengthMovementVariant18 is { } __value17)
             {
-                strengthMovementVariant18?.Invoke(StrengthMovementVariant18!);
+                strengthMovementVariant18?.Invoke(__value17);
             }
-            else if (IsStrengthMovementVariant19)
+            else if (StrengthMovementVariant19 is { } __value18)
             {
-                strengthMovementVariant19?.Invoke(StrengthMovementVariant19!);
+                strengthMovementVariant19?.Invoke(__value18);
             }
-            else if (IsStrengthMovementVariant20)
+            else if (StrengthMovementVariant20 is { } __value19)
             {
-                strengthMovementVariant20?.Invoke(StrengthMovementVariant20!);
+                strengthMovementVariant20?.Invoke(__value19);
             }
-            else if (IsStrengthMovementVariant21)
+            else if (StrengthMovementVariant21 is { } __value20)
             {
-                strengthMovementVariant21?.Invoke(StrengthMovementVariant21!);
+                strengthMovementVariant21?.Invoke(__value20);
             }
-            else if (IsStrengthMovementVariant22)
+            else if (StrengthMovementVariant22 is { } __value21)
             {
-                strengthMovementVariant22?.Invoke(StrengthMovementVariant22!);
+                strengthMovementVariant22?.Invoke(__value21);
             }
-            else if (IsStrengthMovementVariant23)
+            else if (StrengthMovementVariant23 is { } __value22)
             {
-                strengthMovementVariant23?.Invoke(StrengthMovementVariant23!);
+                strengthMovementVariant23?.Invoke(__value22);
             }
-            else if (IsStrengthMovementVariant24)
+            else if (StrengthMovementVariant24 is { } __value23)
             {
-                strengthMovementVariant24?.Invoke(StrengthMovementVariant24!);
+                strengthMovementVariant24?.Invoke(__value23);
             }
-            else if (IsStrengthMovementVariant25)
+            else if (StrengthMovementVariant25 is { } __value24)
             {
-                strengthMovementVariant25?.Invoke(StrengthMovementVariant25!);
+                strengthMovementVariant25?.Invoke(__value24);
             }
-            else if (IsStrengthMovementVariant26)
+            else if (StrengthMovementVariant26 is { } __value25)
             {
-                strengthMovementVariant26?.Invoke(StrengthMovementVariant26!);
+                strengthMovementVariant26?.Invoke(__value25);
             }
-            else if (IsStrengthMovementVariant27)
+            else if (StrengthMovementVariant27 is { } __value26)
             {
-                strengthMovementVariant27?.Invoke(StrengthMovementVariant27!);
+                strengthMovementVariant27?.Invoke(__value26);
             }
-            else if (IsStrengthMovementVariant28)
+            else if (StrengthMovementVariant28 is { } __value27)
             {
-                strengthMovementVariant28?.Invoke(StrengthMovementVariant28!);
+                strengthMovementVariant28?.Invoke(__value27);
             }
-            else if (IsStrengthMovementVariant29)
+            else if (StrengthMovementVariant29 is { } __value28)
             {
-                strengthMovementVariant29?.Invoke(StrengthMovementVariant29!);
+                strengthMovementVariant29?.Invoke(__value28);
             }
-            else if (IsStrengthMovementVariant30)
+            else if (StrengthMovementVariant30 is { } __value29)
             {
-                strengthMovementVariant30?.Invoke(StrengthMovementVariant30!);
+                strengthMovementVariant30?.Invoke(__value29);
             }
-            else if (IsStrengthMovementVariant31)
+            else if (StrengthMovementVariant31 is { } __value30)
             {
-                strengthMovementVariant31?.Invoke(StrengthMovementVariant31!);
+                strengthMovementVariant31?.Invoke(__value30);
             }
-            else if (IsStrengthMovementVariant32)
+            else if (StrengthMovementVariant32 is { } __value31)
             {
-                strengthMovementVariant32?.Invoke(StrengthMovementVariant32!);
+                strengthMovementVariant32?.Invoke(__value31);
             }
-            else if (IsStrengthMovementVariant33)
+            else if (StrengthMovementVariant33 is { } __value32)
             {
-                strengthMovementVariant33?.Invoke(StrengthMovementVariant33!);
+                strengthMovementVariant33?.Invoke(__value32);
             }
-            else if (IsStrengthMovementVariant34)
+            else if (StrengthMovementVariant34 is { } __value33)
             {
-                strengthMovementVariant34?.Invoke(StrengthMovementVariant34!);
+                strengthMovementVariant34?.Invoke(__value33);
             }
-            else if (IsStrengthMovementVariant35)
+            else if (StrengthMovementVariant35 is { } __value34)
             {
-                strengthMovementVariant35?.Invoke(StrengthMovementVariant35!);
+                strengthMovementVariant35?.Invoke(__value34);
             }
-            else if (IsStrengthMovementVariant36)
+            else if (StrengthMovementVariant36 is { } __value35)
             {
-                strengthMovementVariant36?.Invoke(StrengthMovementVariant36!);
+                strengthMovementVariant36?.Invoke(__value35);
             }
-            else if (IsStrengthMovementVariant37)
+            else if (StrengthMovementVariant37 is { } __value36)
             {
-                strengthMovementVariant37?.Invoke(StrengthMovementVariant37!);
+                strengthMovementVariant37?.Invoke(__value36);
             }
-            else if (IsStrengthMovementVariant38)
+            else if (StrengthMovementVariant38 is { } __value37)
             {
-                strengthMovementVariant38?.Invoke(StrengthMovementVariant38!);
+                strengthMovementVariant38?.Invoke(__value37);
             }
-            else if (IsStrengthMovementVariant39)
+            else if (StrengthMovementVariant39 is { } __value38)
             {
-                strengthMovementVariant39?.Invoke(StrengthMovementVariant39!);
+                strengthMovementVariant39?.Invoke(__value38);
             }
-            else if (IsStrengthMovementVariant40)
+            else if (StrengthMovementVariant40 is { } __value39)
             {
-                strengthMovementVariant40?.Invoke(StrengthMovementVariant40!);
+                strengthMovementVariant40?.Invoke(__value39);
             }
-            else if (IsStrengthMovementVariant41)
+            else if (StrengthMovementVariant41 is { } __value40)
             {
-                strengthMovementVariant41?.Invoke(StrengthMovementVariant41!);
+                strengthMovementVariant41?.Invoke(__value40);
             }
-            else if (IsStrengthMovementVariant42)
+            else if (StrengthMovementVariant42 is { } __value41)
             {
-                strengthMovementVariant42?.Invoke(StrengthMovementVariant42!);
+                strengthMovementVariant42?.Invoke(__value41);
             }
-            else if (IsStrengthMovementVariant43)
+            else if (StrengthMovementVariant43 is { } __value42)
             {
-                strengthMovementVariant43?.Invoke(StrengthMovementVariant43!);
+                strengthMovementVariant43?.Invoke(__value42);
             }
-            else if (IsStrengthMovementVariant44)
+            else if (StrengthMovementVariant44 is { } __value43)
             {
-                strengthMovementVariant44?.Invoke(StrengthMovementVariant44!);
+                strengthMovementVariant44?.Invoke(__value43);
             }
-            else if (IsStrengthMovementVariant45)
+            else if (StrengthMovementVariant45 is { } __value44)
             {
-                strengthMovementVariant45?.Invoke(StrengthMovementVariant45!);
+                strengthMovementVariant45?.Invoke(__value44);
             }
-            else if (IsStrengthMovementVariant46)
+            else if (StrengthMovementVariant46 is { } __value45)
             {
-                strengthMovementVariant46?.Invoke(StrengthMovementVariant46!);
+                strengthMovementVariant46?.Invoke(__value45);
             }
-            else if (IsStrengthMovementVariant47)
+            else if (StrengthMovementVariant47 is { } __value46)
             {
-                strengthMovementVariant47?.Invoke(StrengthMovementVariant47!);
+                strengthMovementVariant47?.Invoke(__value46);
             }
-            else if (IsStrengthMovementVariant48)
+            else if (StrengthMovementVariant48 is { } __value47)
             {
-                strengthMovementVariant48?.Invoke(StrengthMovementVariant48!);
+                strengthMovementVariant48?.Invoke(__value47);
             }
-            else if (IsStrengthMovementVariant49)
+            else if (StrengthMovementVariant49 is { } __value48)
             {
-                strengthMovementVariant49?.Invoke(StrengthMovementVariant49!);
+                strengthMovementVariant49?.Invoke(__value48);
             }
-            else if (IsStrengthMovementVariant50)
+            else if (StrengthMovementVariant50 is { } __value49)
             {
-                strengthMovementVariant50?.Invoke(StrengthMovementVariant50!);
+                strengthMovementVariant50?.Invoke(__value49);
             }
-            else if (IsStrengthMovementVariant51)
+            else if (StrengthMovementVariant51 is { } __value50)
             {
-                strengthMovementVariant51?.Invoke(StrengthMovementVariant51!);
+                strengthMovementVariant51?.Invoke(__value50);
             }
-            else if (IsStrengthMovementVariant52)
+            else if (StrengthMovementVariant52 is { } __value51)
             {
-                strengthMovementVariant52?.Invoke(StrengthMovementVariant52!);
+                strengthMovementVariant52?.Invoke(__value51);
             }
-            else if (IsStrengthMovementVariant53)
+            else if (StrengthMovementVariant53 is { } __value52)
             {
-                strengthMovementVariant53?.Invoke(StrengthMovementVariant53!);
+                strengthMovementVariant53?.Invoke(__value52);
             }
-            else if (IsStrengthMovementVariant54)
+            else if (StrengthMovementVariant54 is { } __value53)
             {
-                strengthMovementVariant54?.Invoke(StrengthMovementVariant54!);
+                strengthMovementVariant54?.Invoke(__value53);
             }
-            else if (IsStrengthMovementVariant55)
+            else if (StrengthMovementVariant55 is { } __value54)
             {
-                strengthMovementVariant55?.Invoke(StrengthMovementVariant55!);
+                strengthMovementVariant55?.Invoke(__value54);
             }
-            else if (IsStrengthMovementVariant56)
+            else if (StrengthMovementVariant56 is { } __value55)
             {
-                strengthMovementVariant56?.Invoke(StrengthMovementVariant56!);
+                strengthMovementVariant56?.Invoke(__value55);
             }
-            else if (IsStrengthMovementVariant57)
+            else if (StrengthMovementVariant57 is { } __value56)
             {
-                strengthMovementVariant57?.Invoke(StrengthMovementVariant57!);
+                strengthMovementVariant57?.Invoke(__value56);
             }
-            else if (IsStrengthMovementVariant58)
+            else if (StrengthMovementVariant58 is { } __value57)
             {
-                strengthMovementVariant58?.Invoke(StrengthMovementVariant58!);
+                strengthMovementVariant58?.Invoke(__value57);
             }
-            else if (IsStrengthMovementVariant59)
+            else if (StrengthMovementVariant59 is { } __value58)
             {
-                strengthMovementVariant59?.Invoke(StrengthMovementVariant59!);
+                strengthMovementVariant59?.Invoke(__value58);
             }
-            else if (IsStrengthMovementVariant60)
+            else if (StrengthMovementVariant60 is { } __value59)
             {
-                strengthMovementVariant60?.Invoke(StrengthMovementVariant60!);
+                strengthMovementVariant60?.Invoke(__value59);
             }
-            else if (IsStrengthMovementVariant61)
+            else if (StrengthMovementVariant61 is { } __value60)
             {
-                strengthMovementVariant61?.Invoke(StrengthMovementVariant61!);
+                strengthMovementVariant61?.Invoke(__value60);
             }
-            else if (IsStrengthMovementVariant62)
+            else if (StrengthMovementVariant62 is { } __value61)
             {
-                strengthMovementVariant62?.Invoke(StrengthMovementVariant62!);
+                strengthMovementVariant62?.Invoke(__value61);
             }
-            else if (IsStrengthMovementVariant63)
+            else if (StrengthMovementVariant63 is { } __value62)
             {
-                strengthMovementVariant63?.Invoke(StrengthMovementVariant63!);
+                strengthMovementVariant63?.Invoke(__value62);
             }
-            else if (IsStrengthMovementVariant64)
+            else if (StrengthMovementVariant64 is { } __value63)
             {
-                strengthMovementVariant64?.Invoke(StrengthMovementVariant64!);
+                strengthMovementVariant64?.Invoke(__value63);
             }
-            else if (IsStrengthMovementVariant65)
+            else if (StrengthMovementVariant65 is { } __value64)
             {
-                strengthMovementVariant65?.Invoke(StrengthMovementVariant65!);
+                strengthMovementVariant65?.Invoke(__value64);
             }
-            else if (IsStrengthMovementVariant66)
+            else if (StrengthMovementVariant66 is { } __value65)
             {
-                strengthMovementVariant66?.Invoke(StrengthMovementVariant66!);
+                strengthMovementVariant66?.Invoke(__value65);
             }
-            else if (IsStrengthMovementVariant67)
+            else if (StrengthMovementVariant67 is { } __value66)
             {
-                strengthMovementVariant67?.Invoke(StrengthMovementVariant67!);
+                strengthMovementVariant67?.Invoke(__value66);
             }
-            else if (IsStrengthMovementVariant68)
+            else if (StrengthMovementVariant68 is { } __value67)
             {
-                strengthMovementVariant68?.Invoke(StrengthMovementVariant68!);
+                strengthMovementVariant68?.Invoke(__value67);
             }
-            else if (IsStrengthMovementVariant69)
+            else if (StrengthMovementVariant69 is { } __value68)
             {
-                strengthMovementVariant69?.Invoke(StrengthMovementVariant69!);
+                strengthMovementVariant69?.Invoke(__value68);
             }
-            else if (IsStrengthMovementVariant70)
+            else if (StrengthMovementVariant70 is { } __value69)
             {
-                strengthMovementVariant70?.Invoke(StrengthMovementVariant70!);
+                strengthMovementVariant70?.Invoke(__value69);
             }
-            else if (IsStrengthMovementVariant71)
+            else if (StrengthMovementVariant71 is { } __value70)
             {
-                strengthMovementVariant71?.Invoke(StrengthMovementVariant71!);
+                strengthMovementVariant71?.Invoke(__value70);
             }
-            else if (IsStrengthMovementVariant72)
+            else if (StrengthMovementVariant72 is { } __value71)
             {
-                strengthMovementVariant72?.Invoke(StrengthMovementVariant72!);
+                strengthMovementVariant72?.Invoke(__value71);
             }
-            else if (IsStrengthMovementVariant73)
+            else if (StrengthMovementVariant73 is { } __value72)
             {
-                strengthMovementVariant73?.Invoke(StrengthMovementVariant73!);
+                strengthMovementVariant73?.Invoke(__value72);
             }
-            else if (IsStrengthMovementVariant74)
+            else if (StrengthMovementVariant74 is { } __value73)
             {
-                strengthMovementVariant74?.Invoke(StrengthMovementVariant74!);
+                strengthMovementVariant74?.Invoke(__value73);
             }
-            else if (IsStrengthMovementVariant75)
+            else if (StrengthMovementVariant75 is { } __value74)
             {
-                strengthMovementVariant75?.Invoke(StrengthMovementVariant75!);
+                strengthMovementVariant75?.Invoke(__value74);
             }
-            else if (IsStrengthMovementVariant76)
+            else if (StrengthMovementVariant76 is { } __value75)
             {
-                strengthMovementVariant76?.Invoke(StrengthMovementVariant76!);
+                strengthMovementVariant76?.Invoke(__value75);
             }
-            else if (IsStrengthMovementVariant77)
+            else if (StrengthMovementVariant77 is { } __value76)
             {
-                strengthMovementVariant77?.Invoke(StrengthMovementVariant77!);
+                strengthMovementVariant77?.Invoke(__value76);
             }
-            else if (IsStrengthMovementVariant78)
+            else if (StrengthMovementVariant78 is { } __value77)
             {
-                strengthMovementVariant78?.Invoke(StrengthMovementVariant78!);
+                strengthMovementVariant78?.Invoke(__value77);
             }
-            else if (IsStrengthMovementVariant79)
+            else if (StrengthMovementVariant79 is { } __value78)
             {
-                strengthMovementVariant79?.Invoke(StrengthMovementVariant79!);
+                strengthMovementVariant79?.Invoke(__value78);
             }
-            else if (IsStrengthMovementVariant80)
+            else if (StrengthMovementVariant80 is { } __value79)
             {
-                strengthMovementVariant80?.Invoke(StrengthMovementVariant80!);
+                strengthMovementVariant80?.Invoke(__value79);
             }
-            else if (IsStrengthMovementVariant81)
+            else if (StrengthMovementVariant81 is { } __value80)
             {
-                strengthMovementVariant81?.Invoke(StrengthMovementVariant81!);
+                strengthMovementVariant81?.Invoke(__value80);
             }
-            else if (IsStrengthMovementVariant82)
+            else if (StrengthMovementVariant82 is { } __value81)
             {
-                strengthMovementVariant82?.Invoke(StrengthMovementVariant82!);
+                strengthMovementVariant82?.Invoke(__value81);
             }
-            else if (IsStrengthMovementVariant83)
+            else if (StrengthMovementVariant83 is { } __value82)
             {
-                strengthMovementVariant83?.Invoke(StrengthMovementVariant83!);
+                strengthMovementVariant83?.Invoke(__value82);
             }
-            else if (IsStrengthMovementVariant84)
+            else if (StrengthMovementVariant84 is { } __value83)
             {
-                strengthMovementVariant84?.Invoke(StrengthMovementVariant84!);
+                strengthMovementVariant84?.Invoke(__value83);
             }
-            else if (IsStrengthMovementVariant85)
+            else if (StrengthMovementVariant85 is { } __value84)
             {
-                strengthMovementVariant85?.Invoke(StrengthMovementVariant85!);
+                strengthMovementVariant85?.Invoke(__value84);
             }
-            else if (IsStrengthMovementVariant86)
+            else if (StrengthMovementVariant86 is { } __value85)
             {
-                strengthMovementVariant86?.Invoke(StrengthMovementVariant86!);
+                strengthMovementVariant86?.Invoke(__value85);
             }
-            else if (IsStrengthMovementVariant87)
+            else if (StrengthMovementVariant87 is { } __value86)
             {
-                strengthMovementVariant87?.Invoke(StrengthMovementVariant87!);
+                strengthMovementVariant87?.Invoke(__value86);
             }
-            else if (IsStrengthMovementVariant88)
+            else if (StrengthMovementVariant88 is { } __value87)
             {
-                strengthMovementVariant88?.Invoke(StrengthMovementVariant88!);
+                strengthMovementVariant88?.Invoke(__value87);
             }
-            else if (IsStrengthMovementVariant89)
+            else if (StrengthMovementVariant89 is { } __value88)
             {
-                strengthMovementVariant89?.Invoke(StrengthMovementVariant89!);
+                strengthMovementVariant89?.Invoke(__value88);
             }
-            else if (IsStrengthMovementVariant90)
+            else if (StrengthMovementVariant90 is { } __value89)
             {
-                strengthMovementVariant90?.Invoke(StrengthMovementVariant90!);
+                strengthMovementVariant90?.Invoke(__value89);
             }
-            else if (IsStrengthMovementVariant91)
+            else if (StrengthMovementVariant91 is { } __value90)
             {
-                strengthMovementVariant91?.Invoke(StrengthMovementVariant91!);
+                strengthMovementVariant91?.Invoke(__value90);
             }
-            else if (IsStrengthMovementVariant92)
+            else if (StrengthMovementVariant92 is { } __value91)
             {
-                strengthMovementVariant92?.Invoke(StrengthMovementVariant92!);
+                strengthMovementVariant92?.Invoke(__value91);
             }
-            else if (IsStrengthMovementVariant93)
+            else if (StrengthMovementVariant93 is { } __value92)
             {
-                strengthMovementVariant93?.Invoke(StrengthMovementVariant93!);
+                strengthMovementVariant93?.Invoke(__value92);
             }
-            else if (IsStrengthMovementVariant94)
+            else if (StrengthMovementVariant94 is { } __value93)
             {
-                strengthMovementVariant94?.Invoke(StrengthMovementVariant94!);
+                strengthMovementVariant94?.Invoke(__value93);
             }
-            else if (IsStrengthMovementVariant95)
+            else if (StrengthMovementVariant95 is { } __value94)
             {
-                strengthMovementVariant95?.Invoke(StrengthMovementVariant95!);
+                strengthMovementVariant95?.Invoke(__value94);
             }
-            else if (IsStrengthMovementVariant96)
+            else if (StrengthMovementVariant96 is { } __value95)
             {
-                strengthMovementVariant96?.Invoke(StrengthMovementVariant96!);
+                strengthMovementVariant96?.Invoke(__value95);
             }
-            else if (IsStrengthMovementVariant97)
+            else if (StrengthMovementVariant97 is { } __value96)
             {
-                strengthMovementVariant97?.Invoke(StrengthMovementVariant97!);
+                strengthMovementVariant97?.Invoke(__value96);
             }
-            else if (IsStrengthMovementVariant98)
+            else if (StrengthMovementVariant98 is { } __value97)
             {
-                strengthMovementVariant98?.Invoke(StrengthMovementVariant98!);
+                strengthMovementVariant98?.Invoke(__value97);
             }
-            else if (IsStrengthMovementVariant99)
+            else if (StrengthMovementVariant99 is { } __value98)
             {
-                strengthMovementVariant99?.Invoke(StrengthMovementVariant99!);
+                strengthMovementVariant99?.Invoke(__value98);
             }
-            else if (IsStrengthMovementVariant100)
+            else if (StrengthMovementVariant100 is { } __value99)
             {
-                strengthMovementVariant100?.Invoke(StrengthMovementVariant100!);
+                strengthMovementVariant100?.Invoke(__value99);
             }
-            else if (IsStrengthMovementVariant101)
+            else if (StrengthMovementVariant101 is { } __value100)
             {
-                strengthMovementVariant101?.Invoke(StrengthMovementVariant101!);
+                strengthMovementVariant101?.Invoke(__value100);
             }
-            else if (IsStrengthMovementVariant102)
+            else if (StrengthMovementVariant102 is { } __value101)
             {
-                strengthMovementVariant102?.Invoke(StrengthMovementVariant102!);
+                strengthMovementVariant102?.Invoke(__value101);
             }
-            else if (IsStrengthMovementVariant103)
+            else if (StrengthMovementVariant103 is { } __value102)
             {
-                strengthMovementVariant103?.Invoke(StrengthMovementVariant103!);
+                strengthMovementVariant103?.Invoke(__value102);
             }
-            else if (IsStrengthMovementVariant104)
+            else if (StrengthMovementVariant104 is { } __value103)
             {
-                strengthMovementVariant104?.Invoke(StrengthMovementVariant104!);
+                strengthMovementVariant104?.Invoke(__value103);
             }
-            else if (IsStrengthMovementVariant105)
+            else if (StrengthMovementVariant105 is { } __value104)
             {
-                strengthMovementVariant105?.Invoke(StrengthMovementVariant105!);
+                strengthMovementVariant105?.Invoke(__value104);
             }
-            else if (IsStrengthMovementVariant106)
+            else if (StrengthMovementVariant106 is { } __value105)
             {
-                strengthMovementVariant106?.Invoke(StrengthMovementVariant106!);
+                strengthMovementVariant106?.Invoke(__value105);
             }
-            else if (IsStrengthMovementVariant107)
+            else if (StrengthMovementVariant107 is { } __value106)
             {
-                strengthMovementVariant107?.Invoke(StrengthMovementVariant107!);
+                strengthMovementVariant107?.Invoke(__value106);
             }
-            else if (IsStrengthMovementVariant108)
+            else if (StrengthMovementVariant108 is { } __value107)
             {
-                strengthMovementVariant108?.Invoke(StrengthMovementVariant108!);
+                strengthMovementVariant108?.Invoke(__value107);
             }
-            else if (IsStrengthMovementVariant109)
+            else if (StrengthMovementVariant109 is { } __value108)
             {
-                strengthMovementVariant109?.Invoke(StrengthMovementVariant109!);
+                strengthMovementVariant109?.Invoke(__value108);
             }
-            else if (IsStrengthMovementVariant110)
+            else if (StrengthMovementVariant110 is { } __value109)
             {
-                strengthMovementVariant110?.Invoke(StrengthMovementVariant110!);
+                strengthMovementVariant110?.Invoke(__value109);
             }
-            else if (IsStrengthMovementVariant111)
+            else if (StrengthMovementVariant111 is { } __value110)
             {
-                strengthMovementVariant111?.Invoke(StrengthMovementVariant111!);
+                strengthMovementVariant111?.Invoke(__value110);
             }
-            else if (IsStrengthMovementVariant112)
+            else if (StrengthMovementVariant112 is { } __value111)
             {
-                strengthMovementVariant112?.Invoke(StrengthMovementVariant112!);
+                strengthMovementVariant112?.Invoke(__value111);
             }
-            else if (IsStrengthMovementVariant113)
+            else if (StrengthMovementVariant113 is { } __value112)
             {
-                strengthMovementVariant113?.Invoke(StrengthMovementVariant113!);
+                strengthMovementVariant113?.Invoke(__value112);
             }
-            else if (IsStrengthMovementVariant114)
+            else if (StrengthMovementVariant114 is { } __value113)
             {
-                strengthMovementVariant114?.Invoke(StrengthMovementVariant114!);
+                strengthMovementVariant114?.Invoke(__value113);
             }
-            else if (IsStrengthMovementVariant115)
+            else if (StrengthMovementVariant115 is { } __value114)
             {
-                strengthMovementVariant115?.Invoke(StrengthMovementVariant115!);
+                strengthMovementVariant115?.Invoke(__value114);
             }
-            else if (IsStrengthMovementVariant116)
+            else if (StrengthMovementVariant116 is { } __value115)
             {
-                strengthMovementVariant116?.Invoke(StrengthMovementVariant116!);
+                strengthMovementVariant116?.Invoke(__value115);
             }
-            else if (IsStrengthMovementVariant117)
+            else if (StrengthMovementVariant117 is { } __value116)
             {
-                strengthMovementVariant117?.Invoke(StrengthMovementVariant117!);
+                strengthMovementVariant117?.Invoke(__value116);
             }
-            else if (IsStrengthMovementVariant118)
+            else if (StrengthMovementVariant118 is { } __value117)
             {
-                strengthMovementVariant118?.Invoke(StrengthMovementVariant118!);
+                strengthMovementVariant118?.Invoke(__value117);
             }
-            else if (IsStrengthMovementVariant119)
+            else if (StrengthMovementVariant119 is { } __value118)
             {
-                strengthMovementVariant119?.Invoke(StrengthMovementVariant119!);
+                strengthMovementVariant119?.Invoke(__value118);
             }
-            else if (IsStrengthMovementVariant120)
+            else if (StrengthMovementVariant120 is { } __value119)
             {
-                strengthMovementVariant120?.Invoke(StrengthMovementVariant120!);
+                strengthMovementVariant120?.Invoke(__value119);
             }
-            else if (IsStrengthMovementVariant121)
+            else if (StrengthMovementVariant121 is { } __value120)
             {
-                strengthMovementVariant121?.Invoke(StrengthMovementVariant121!);
+                strengthMovementVariant121?.Invoke(__value120);
             }
-            else if (IsStrengthMovementVariant122)
+            else if (StrengthMovementVariant122 is { } __value121)
             {
-                strengthMovementVariant122?.Invoke(StrengthMovementVariant122!);
+                strengthMovementVariant122?.Invoke(__value121);
             }
-            else if (IsStrengthMovementVariant123)
+            else if (StrengthMovementVariant123 is { } __value122)
             {
-                strengthMovementVariant123?.Invoke(StrengthMovementVariant123!);
+                strengthMovementVariant123?.Invoke(__value122);
             }
-            else if (IsStrengthMovementVariant124)
+            else if (StrengthMovementVariant124 is { } __value123)
             {
-                strengthMovementVariant124?.Invoke(StrengthMovementVariant124!);
+                strengthMovementVariant124?.Invoke(__value123);
             }
-            else if (IsStrengthMovementVariant125)
+            else if (StrengthMovementVariant125 is { } __value124)
             {
-                strengthMovementVariant125?.Invoke(StrengthMovementVariant125!);
+                strengthMovementVariant125?.Invoke(__value124);
             }
-            else if (IsStrengthMovementVariant126)
+            else if (StrengthMovementVariant126 is { } __value125)
             {
-                strengthMovementVariant126?.Invoke(StrengthMovementVariant126!);
+                strengthMovementVariant126?.Invoke(__value125);
             }
-            else if (IsStrengthMovementVariant127)
+            else if (StrengthMovementVariant127 is { } __value126)
             {
-                strengthMovementVariant127?.Invoke(StrengthMovementVariant127!);
+                strengthMovementVariant127?.Invoke(__value126);
             }
-            else if (IsStrengthMovementVariant128)
+            else if (StrengthMovementVariant128 is { } __value127)
             {
-                strengthMovementVariant128?.Invoke(StrengthMovementVariant128!);
+                strengthMovementVariant128?.Invoke(__value127);
             }
-            else if (IsStrengthMovementVariant129)
+            else if (StrengthMovementVariant129 is { } __value128)
             {
-                strengthMovementVariant129?.Invoke(StrengthMovementVariant129!);
+                strengthMovementVariant129?.Invoke(__value128);
             }
-            else if (IsStrengthMovementVariant130)
+            else if (StrengthMovementVariant130 is { } __value129)
             {
-                strengthMovementVariant130?.Invoke(StrengthMovementVariant130!);
+                strengthMovementVariant130?.Invoke(__value129);
             }
-            else if (IsStrengthMovementVariant131)
+            else if (StrengthMovementVariant131 is { } __value130)
             {
-                strengthMovementVariant131?.Invoke(StrengthMovementVariant131!);
+                strengthMovementVariant131?.Invoke(__value130);
             }
-            else if (IsStrengthMovementVariant132)
+            else if (StrengthMovementVariant132 is { } __value131)
             {
-                strengthMovementVariant132?.Invoke(StrengthMovementVariant132!);
+                strengthMovementVariant132?.Invoke(__value131);
             }
-            else if (IsStrengthMovementVariant133)
+            else if (StrengthMovementVariant133 is { } __value132)
             {
-                strengthMovementVariant133?.Invoke(StrengthMovementVariant133!);
+                strengthMovementVariant133?.Invoke(__value132);
             }
-            else if (IsStrengthMovementVariant134)
+            else if (StrengthMovementVariant134 is { } __value133)
             {
-                strengthMovementVariant134?.Invoke(StrengthMovementVariant134!);
+                strengthMovementVariant134?.Invoke(__value133);
             }
-            else if (IsStrengthMovementVariant135)
+            else if (StrengthMovementVariant135 is { } __value134)
             {
-                strengthMovementVariant135?.Invoke(StrengthMovementVariant135!);
+                strengthMovementVariant135?.Invoke(__value134);
             }
-            else if (IsStrengthMovementVariant136)
+            else if (StrengthMovementVariant136 is { } __value135)
             {
-                strengthMovementVariant136?.Invoke(StrengthMovementVariant136!);
+                strengthMovementVariant136?.Invoke(__value135);
             }
-            else if (IsStrengthMovementVariant137)
+            else if (StrengthMovementVariant137 is { } __value136)
             {
-                strengthMovementVariant137?.Invoke(StrengthMovementVariant137!);
+                strengthMovementVariant137?.Invoke(__value136);
             }
-            else if (IsStrengthMovementVariant138)
+            else if (StrengthMovementVariant138 is { } __value137)
             {
-                strengthMovementVariant138?.Invoke(StrengthMovementVariant138!);
+                strengthMovementVariant138?.Invoke(__value137);
             }
-            else if (IsStrengthMovementVariant139)
+            else if (StrengthMovementVariant139 is { } __value138)
             {
-                strengthMovementVariant139?.Invoke(StrengthMovementVariant139!);
+                strengthMovementVariant139?.Invoke(__value138);
             }
-            else if (IsStrengthMovementVariant140)
+            else if (StrengthMovementVariant140 is { } __value139)
             {
-                strengthMovementVariant140?.Invoke(StrengthMovementVariant140!);
+                strengthMovementVariant140?.Invoke(__value139);
             }
-            else if (IsStrengthMovementVariant141)
+            else if (StrengthMovementVariant141 is { } __value140)
             {
-                strengthMovementVariant141?.Invoke(StrengthMovementVariant141!);
+                strengthMovementVariant141?.Invoke(__value140);
             }
-            else if (IsStrengthMovementVariant142)
+            else if (StrengthMovementVariant142 is { } __value141)
             {
-                strengthMovementVariant142?.Invoke(StrengthMovementVariant142!);
+                strengthMovementVariant142?.Invoke(__value141);
             }
-            else if (IsStrengthMovementVariant143)
+            else if (StrengthMovementVariant143 is { } __value142)
             {
-                strengthMovementVariant143?.Invoke(StrengthMovementVariant143!);
+                strengthMovementVariant143?.Invoke(__value142);
             }
-            else if (IsStrengthMovementVariant144)
+            else if (StrengthMovementVariant144 is { } __value143)
             {
-                strengthMovementVariant144?.Invoke(StrengthMovementVariant144!);
+                strengthMovementVariant144?.Invoke(__value143);
             }
-            else if (IsStrengthMovementVariant145)
+            else if (StrengthMovementVariant145 is { } __value144)
             {
-                strengthMovementVariant145?.Invoke(StrengthMovementVariant145!);
+                strengthMovementVariant145?.Invoke(__value144);
             }
-            else if (IsStrengthMovementVariant146)
+            else if (StrengthMovementVariant146 is { } __value145)
             {
-                strengthMovementVariant146?.Invoke(StrengthMovementVariant146!);
+                strengthMovementVariant146?.Invoke(__value145);
             }
-            else if (IsStrengthMovementVariant147)
+            else if (StrengthMovementVariant147 is { } __value146)
             {
-                strengthMovementVariant147?.Invoke(StrengthMovementVariant147!);
+                strengthMovementVariant147?.Invoke(__value146);
             }
-            else if (IsStrengthMovementVariant148)
+            else if (StrengthMovementVariant148 is { } __value147)
             {
-                strengthMovementVariant148?.Invoke(StrengthMovementVariant148!);
+                strengthMovementVariant148?.Invoke(__value147);
             }
-            else if (IsStrengthMovementVariant149)
+            else if (StrengthMovementVariant149 is { } __value148)
             {
-                strengthMovementVariant149?.Invoke(StrengthMovementVariant149!);
+                strengthMovementVariant149?.Invoke(__value148);
             }
-            else if (IsStrengthMovementVariant150)
+            else if (StrengthMovementVariant150 is { } __value149)
             {
-                strengthMovementVariant150?.Invoke(StrengthMovementVariant150!);
+                strengthMovementVariant150?.Invoke(__value149);
             }
-            else if (IsStrengthMovementVariant151)
+            else if (StrengthMovementVariant151 is { } __value150)
             {
-                strengthMovementVariant151?.Invoke(StrengthMovementVariant151!);
+                strengthMovementVariant151?.Invoke(__value150);
             }
-            else if (IsStrengthMovementVariant152)
+            else if (StrengthMovementVariant152 is { } __value151)
             {
-                strengthMovementVariant152?.Invoke(StrengthMovementVariant152!);
+                strengthMovementVariant152?.Invoke(__value151);
             }
-            else if (IsStrengthMovementVariant153)
+            else if (StrengthMovementVariant153 is { } __value152)
             {
-                strengthMovementVariant153?.Invoke(StrengthMovementVariant153!);
+                strengthMovementVariant153?.Invoke(__value152);
             }
-            else if (IsStrengthMovementVariant154)
+            else if (StrengthMovementVariant154 is { } __value153)
             {
-                strengthMovementVariant154?.Invoke(StrengthMovementVariant154!);
+                strengthMovementVariant154?.Invoke(__value153);
             }
-            else if (IsStrengthMovementVariant155)
+            else if (StrengthMovementVariant155 is { } __value154)
             {
-                strengthMovementVariant155?.Invoke(StrengthMovementVariant155!);
+                strengthMovementVariant155?.Invoke(__value154);
             }
-            else if (IsStrengthMovementVariant156)
+            else if (StrengthMovementVariant156 is { } __value155)
             {
-                strengthMovementVariant156?.Invoke(StrengthMovementVariant156!);
+                strengthMovementVariant156?.Invoke(__value155);
             }
-            else if (IsStrengthMovementVariant157)
+            else if (StrengthMovementVariant157 is { } __value156)
             {
-                strengthMovementVariant157?.Invoke(StrengthMovementVariant157!);
+                strengthMovementVariant157?.Invoke(__value156);
             }
-            else if (IsStrengthMovementVariant158)
+            else if (StrengthMovementVariant158 is { } __value157)
             {
-                strengthMovementVariant158?.Invoke(StrengthMovementVariant158!);
+                strengthMovementVariant158?.Invoke(__value157);
             }
-            else if (IsStrengthMovementVariant159)
+            else if (StrengthMovementVariant159 is { } __value158)
             {
-                strengthMovementVariant159?.Invoke(StrengthMovementVariant159!);
+                strengthMovementVariant159?.Invoke(__value158);
             }
-            else if (IsStrengthMovementVariant160)
+            else if (StrengthMovementVariant160 is { } __value159)
             {
-                strengthMovementVariant160?.Invoke(StrengthMovementVariant160!);
+                strengthMovementVariant160?.Invoke(__value159);
             }
-            else if (IsStrengthMovementVariant161)
+            else if (StrengthMovementVariant161 is { } __value160)
             {
-                strengthMovementVariant161?.Invoke(StrengthMovementVariant161!);
+                strengthMovementVariant161?.Invoke(__value160);
             }
-            else if (IsStrengthMovementVariant162)
+            else if (StrengthMovementVariant162 is { } __value161)
             {
-                strengthMovementVariant162?.Invoke(StrengthMovementVariant162!);
+                strengthMovementVariant162?.Invoke(__value161);
             }
-            else if (IsStrengthMovementVariant163)
+            else if (StrengthMovementVariant163 is { } __value162)
             {
-                strengthMovementVariant163?.Invoke(StrengthMovementVariant163!);
+                strengthMovementVariant163?.Invoke(__value162);
             }
-            else if (IsStrengthMovementVariant164)
+            else if (StrengthMovementVariant164 is { } __value163)
             {
-                strengthMovementVariant164?.Invoke(StrengthMovementVariant164!);
+                strengthMovementVariant164?.Invoke(__value163);
             }
-            else if (IsStrengthMovementVariant165)
+            else if (StrengthMovementVariant165 is { } __value164)
             {
-                strengthMovementVariant165?.Invoke(StrengthMovementVariant165!);
+                strengthMovementVariant165?.Invoke(__value164);
             }
-            else if (IsStrengthMovementVariant166)
+            else if (StrengthMovementVariant166 is { } __value165)
             {
-                strengthMovementVariant166?.Invoke(StrengthMovementVariant166!);
+                strengthMovementVariant166?.Invoke(__value165);
             }
-            else if (IsStrengthMovementVariant167)
+            else if (StrengthMovementVariant167 is { } __value166)
             {
-                strengthMovementVariant167?.Invoke(StrengthMovementVariant167!);
+                strengthMovementVariant167?.Invoke(__value166);
             }
-            else if (IsStrengthMovementVariant168)
+            else if (StrengthMovementVariant168 is { } __value167)
             {
-                strengthMovementVariant168?.Invoke(StrengthMovementVariant168!);
+                strengthMovementVariant168?.Invoke(__value167);
             }
-            else if (IsStrengthMovementVariant169)
+            else if (StrengthMovementVariant169 is { } __value168)
             {
-                strengthMovementVariant169?.Invoke(StrengthMovementVariant169!);
+                strengthMovementVariant169?.Invoke(__value168);
             }
-            else if (IsStrengthMovementVariant170)
+            else if (StrengthMovementVariant170 is { } __value169)
             {
-                strengthMovementVariant170?.Invoke(StrengthMovementVariant170!);
+                strengthMovementVariant170?.Invoke(__value169);
             }
-            else if (IsStrengthMovementVariant171)
+            else if (StrengthMovementVariant171 is { } __value170)
             {
-                strengthMovementVariant171?.Invoke(StrengthMovementVariant171!);
+                strengthMovementVariant171?.Invoke(__value170);
             }
-            else if (IsStrengthMovementVariant172)
+            else if (StrengthMovementVariant172 is { } __value171)
             {
-                strengthMovementVariant172?.Invoke(StrengthMovementVariant172!);
+                strengthMovementVariant172?.Invoke(__value171);
             }
-            else if (IsStrengthMovementVariant173)
+            else if (StrengthMovementVariant173 is { } __value172)
             {
-                strengthMovementVariant173?.Invoke(StrengthMovementVariant173!);
+                strengthMovementVariant173?.Invoke(__value172);
             }
-            else if (IsStrengthMovementVariant174)
+            else if (StrengthMovementVariant174 is { } __value173)
             {
-                strengthMovementVariant174?.Invoke(StrengthMovementVariant174!);
+                strengthMovementVariant174?.Invoke(__value173);
             }
-            else if (IsStrengthMovementVariant175)
+            else if (StrengthMovementVariant175 is { } __value174)
             {
-                strengthMovementVariant175?.Invoke(StrengthMovementVariant175!);
+                strengthMovementVariant175?.Invoke(__value174);
             }
-            else if (IsStrengthMovementVariant176)
+            else if (StrengthMovementVariant176 is { } __value175)
             {
-                strengthMovementVariant176?.Invoke(StrengthMovementVariant176!);
+                strengthMovementVariant176?.Invoke(__value175);
             }
         }
 
@@ -13451,709 +13451,709 @@ namespace Terra
                 Validate();
             }
 
-            if (IsStrengthMovementVariant1)
+            if (StrengthMovementVariant1 is { } __value0)
             {
-                strengthMovementVariant1?.Invoke(StrengthMovementVariant1!);
+                strengthMovementVariant1?.Invoke(__value0);
             }
-            else if (IsStrengthMovementVariant2)
+            else if (StrengthMovementVariant2 is { } __value1)
             {
-                strengthMovementVariant2?.Invoke(StrengthMovementVariant2!);
+                strengthMovementVariant2?.Invoke(__value1);
             }
-            else if (IsStrengthMovementVariant3)
+            else if (StrengthMovementVariant3 is { } __value2)
             {
-                strengthMovementVariant3?.Invoke(StrengthMovementVariant3!);
+                strengthMovementVariant3?.Invoke(__value2);
             }
-            else if (IsStrengthMovementVariant4)
+            else if (StrengthMovementVariant4 is { } __value3)
             {
-                strengthMovementVariant4?.Invoke(StrengthMovementVariant4!);
+                strengthMovementVariant4?.Invoke(__value3);
             }
-            else if (IsStrengthMovementVariant5)
+            else if (StrengthMovementVariant5 is { } __value4)
             {
-                strengthMovementVariant5?.Invoke(StrengthMovementVariant5!);
+                strengthMovementVariant5?.Invoke(__value4);
             }
-            else if (IsStrengthMovementVariant6)
+            else if (StrengthMovementVariant6 is { } __value5)
             {
-                strengthMovementVariant6?.Invoke(StrengthMovementVariant6!);
+                strengthMovementVariant6?.Invoke(__value5);
             }
-            else if (IsStrengthMovementVariant7)
+            else if (StrengthMovementVariant7 is { } __value6)
             {
-                strengthMovementVariant7?.Invoke(StrengthMovementVariant7!);
+                strengthMovementVariant7?.Invoke(__value6);
             }
-            else if (IsStrengthMovementVariant8)
+            else if (StrengthMovementVariant8 is { } __value7)
             {
-                strengthMovementVariant8?.Invoke(StrengthMovementVariant8!);
+                strengthMovementVariant8?.Invoke(__value7);
             }
-            else if (IsStrengthMovementVariant9)
+            else if (StrengthMovementVariant9 is { } __value8)
             {
-                strengthMovementVariant9?.Invoke(StrengthMovementVariant9!);
+                strengthMovementVariant9?.Invoke(__value8);
             }
-            else if (IsStrengthMovementVariant10)
+            else if (StrengthMovementVariant10 is { } __value9)
             {
-                strengthMovementVariant10?.Invoke(StrengthMovementVariant10!);
+                strengthMovementVariant10?.Invoke(__value9);
             }
-            else if (IsStrengthMovementVariant11)
+            else if (StrengthMovementVariant11 is { } __value10)
             {
-                strengthMovementVariant11?.Invoke(StrengthMovementVariant11!);
+                strengthMovementVariant11?.Invoke(__value10);
             }
-            else if (IsStrengthMovementVariant12)
+            else if (StrengthMovementVariant12 is { } __value11)
             {
-                strengthMovementVariant12?.Invoke(StrengthMovementVariant12!);
+                strengthMovementVariant12?.Invoke(__value11);
             }
-            else if (IsStrengthMovementVariant13)
+            else if (StrengthMovementVariant13 is { } __value12)
             {
-                strengthMovementVariant13?.Invoke(StrengthMovementVariant13!);
+                strengthMovementVariant13?.Invoke(__value12);
             }
-            else if (IsStrengthMovementVariant14)
+            else if (StrengthMovementVariant14 is { } __value13)
             {
-                strengthMovementVariant14?.Invoke(StrengthMovementVariant14!);
+                strengthMovementVariant14?.Invoke(__value13);
             }
-            else if (IsStrengthMovementVariant15)
+            else if (StrengthMovementVariant15 is { } __value14)
             {
-                strengthMovementVariant15?.Invoke(StrengthMovementVariant15!);
+                strengthMovementVariant15?.Invoke(__value14);
             }
-            else if (IsStrengthMovementVariant16)
+            else if (StrengthMovementVariant16 is { } __value15)
             {
-                strengthMovementVariant16?.Invoke(StrengthMovementVariant16!);
+                strengthMovementVariant16?.Invoke(__value15);
             }
-            else if (IsStrengthMovementVariant17)
+            else if (StrengthMovementVariant17 is { } __value16)
             {
-                strengthMovementVariant17?.Invoke(StrengthMovementVariant17!);
+                strengthMovementVariant17?.Invoke(__value16);
             }
-            else if (IsStrengthMovementVariant18)
+            else if (StrengthMovementVariant18 is { } __value17)
             {
-                strengthMovementVariant18?.Invoke(StrengthMovementVariant18!);
+                strengthMovementVariant18?.Invoke(__value17);
             }
-            else if (IsStrengthMovementVariant19)
+            else if (StrengthMovementVariant19 is { } __value18)
             {
-                strengthMovementVariant19?.Invoke(StrengthMovementVariant19!);
+                strengthMovementVariant19?.Invoke(__value18);
             }
-            else if (IsStrengthMovementVariant20)
+            else if (StrengthMovementVariant20 is { } __value19)
             {
-                strengthMovementVariant20?.Invoke(StrengthMovementVariant20!);
+                strengthMovementVariant20?.Invoke(__value19);
             }
-            else if (IsStrengthMovementVariant21)
+            else if (StrengthMovementVariant21 is { } __value20)
             {
-                strengthMovementVariant21?.Invoke(StrengthMovementVariant21!);
+                strengthMovementVariant21?.Invoke(__value20);
             }
-            else if (IsStrengthMovementVariant22)
+            else if (StrengthMovementVariant22 is { } __value21)
             {
-                strengthMovementVariant22?.Invoke(StrengthMovementVariant22!);
+                strengthMovementVariant22?.Invoke(__value21);
             }
-            else if (IsStrengthMovementVariant23)
+            else if (StrengthMovementVariant23 is { } __value22)
             {
-                strengthMovementVariant23?.Invoke(StrengthMovementVariant23!);
+                strengthMovementVariant23?.Invoke(__value22);
             }
-            else if (IsStrengthMovementVariant24)
+            else if (StrengthMovementVariant24 is { } __value23)
             {
-                strengthMovementVariant24?.Invoke(StrengthMovementVariant24!);
+                strengthMovementVariant24?.Invoke(__value23);
             }
-            else if (IsStrengthMovementVariant25)
+            else if (StrengthMovementVariant25 is { } __value24)
             {
-                strengthMovementVariant25?.Invoke(StrengthMovementVariant25!);
+                strengthMovementVariant25?.Invoke(__value24);
             }
-            else if (IsStrengthMovementVariant26)
+            else if (StrengthMovementVariant26 is { } __value25)
             {
-                strengthMovementVariant26?.Invoke(StrengthMovementVariant26!);
+                strengthMovementVariant26?.Invoke(__value25);
             }
-            else if (IsStrengthMovementVariant27)
+            else if (StrengthMovementVariant27 is { } __value26)
             {
-                strengthMovementVariant27?.Invoke(StrengthMovementVariant27!);
+                strengthMovementVariant27?.Invoke(__value26);
             }
-            else if (IsStrengthMovementVariant28)
+            else if (StrengthMovementVariant28 is { } __value27)
             {
-                strengthMovementVariant28?.Invoke(StrengthMovementVariant28!);
+                strengthMovementVariant28?.Invoke(__value27);
             }
-            else if (IsStrengthMovementVariant29)
+            else if (StrengthMovementVariant29 is { } __value28)
             {
-                strengthMovementVariant29?.Invoke(StrengthMovementVariant29!);
+                strengthMovementVariant29?.Invoke(__value28);
             }
-            else if (IsStrengthMovementVariant30)
+            else if (StrengthMovementVariant30 is { } __value29)
             {
-                strengthMovementVariant30?.Invoke(StrengthMovementVariant30!);
+                strengthMovementVariant30?.Invoke(__value29);
             }
-            else if (IsStrengthMovementVariant31)
+            else if (StrengthMovementVariant31 is { } __value30)
             {
-                strengthMovementVariant31?.Invoke(StrengthMovementVariant31!);
+                strengthMovementVariant31?.Invoke(__value30);
             }
-            else if (IsStrengthMovementVariant32)
+            else if (StrengthMovementVariant32 is { } __value31)
             {
-                strengthMovementVariant32?.Invoke(StrengthMovementVariant32!);
+                strengthMovementVariant32?.Invoke(__value31);
             }
-            else if (IsStrengthMovementVariant33)
+            else if (StrengthMovementVariant33 is { } __value32)
             {
-                strengthMovementVariant33?.Invoke(StrengthMovementVariant33!);
+                strengthMovementVariant33?.Invoke(__value32);
             }
-            else if (IsStrengthMovementVariant34)
+            else if (StrengthMovementVariant34 is { } __value33)
             {
-                strengthMovementVariant34?.Invoke(StrengthMovementVariant34!);
+                strengthMovementVariant34?.Invoke(__value33);
             }
-            else if (IsStrengthMovementVariant35)
+            else if (StrengthMovementVariant35 is { } __value34)
             {
-                strengthMovementVariant35?.Invoke(StrengthMovementVariant35!);
+                strengthMovementVariant35?.Invoke(__value34);
             }
-            else if (IsStrengthMovementVariant36)
+            else if (StrengthMovementVariant36 is { } __value35)
             {
-                strengthMovementVariant36?.Invoke(StrengthMovementVariant36!);
+                strengthMovementVariant36?.Invoke(__value35);
             }
-            else if (IsStrengthMovementVariant37)
+            else if (StrengthMovementVariant37 is { } __value36)
             {
-                strengthMovementVariant37?.Invoke(StrengthMovementVariant37!);
+                strengthMovementVariant37?.Invoke(__value36);
             }
-            else if (IsStrengthMovementVariant38)
+            else if (StrengthMovementVariant38 is { } __value37)
             {
-                strengthMovementVariant38?.Invoke(StrengthMovementVariant38!);
+                strengthMovementVariant38?.Invoke(__value37);
             }
-            else if (IsStrengthMovementVariant39)
+            else if (StrengthMovementVariant39 is { } __value38)
             {
-                strengthMovementVariant39?.Invoke(StrengthMovementVariant39!);
+                strengthMovementVariant39?.Invoke(__value38);
             }
-            else if (IsStrengthMovementVariant40)
+            else if (StrengthMovementVariant40 is { } __value39)
             {
-                strengthMovementVariant40?.Invoke(StrengthMovementVariant40!);
+                strengthMovementVariant40?.Invoke(__value39);
             }
-            else if (IsStrengthMovementVariant41)
+            else if (StrengthMovementVariant41 is { } __value40)
             {
-                strengthMovementVariant41?.Invoke(StrengthMovementVariant41!);
+                strengthMovementVariant41?.Invoke(__value40);
             }
-            else if (IsStrengthMovementVariant42)
+            else if (StrengthMovementVariant42 is { } __value41)
             {
-                strengthMovementVariant42?.Invoke(StrengthMovementVariant42!);
+                strengthMovementVariant42?.Invoke(__value41);
             }
-            else if (IsStrengthMovementVariant43)
+            else if (StrengthMovementVariant43 is { } __value42)
             {
-                strengthMovementVariant43?.Invoke(StrengthMovementVariant43!);
+                strengthMovementVariant43?.Invoke(__value42);
             }
-            else if (IsStrengthMovementVariant44)
+            else if (StrengthMovementVariant44 is { } __value43)
             {
-                strengthMovementVariant44?.Invoke(StrengthMovementVariant44!);
+                strengthMovementVariant44?.Invoke(__value43);
             }
-            else if (IsStrengthMovementVariant45)
+            else if (StrengthMovementVariant45 is { } __value44)
             {
-                strengthMovementVariant45?.Invoke(StrengthMovementVariant45!);
+                strengthMovementVariant45?.Invoke(__value44);
             }
-            else if (IsStrengthMovementVariant46)
+            else if (StrengthMovementVariant46 is { } __value45)
             {
-                strengthMovementVariant46?.Invoke(StrengthMovementVariant46!);
+                strengthMovementVariant46?.Invoke(__value45);
             }
-            else if (IsStrengthMovementVariant47)
+            else if (StrengthMovementVariant47 is { } __value46)
             {
-                strengthMovementVariant47?.Invoke(StrengthMovementVariant47!);
+                strengthMovementVariant47?.Invoke(__value46);
             }
-            else if (IsStrengthMovementVariant48)
+            else if (StrengthMovementVariant48 is { } __value47)
             {
-                strengthMovementVariant48?.Invoke(StrengthMovementVariant48!);
+                strengthMovementVariant48?.Invoke(__value47);
             }
-            else if (IsStrengthMovementVariant49)
+            else if (StrengthMovementVariant49 is { } __value48)
             {
-                strengthMovementVariant49?.Invoke(StrengthMovementVariant49!);
+                strengthMovementVariant49?.Invoke(__value48);
             }
-            else if (IsStrengthMovementVariant50)
+            else if (StrengthMovementVariant50 is { } __value49)
             {
-                strengthMovementVariant50?.Invoke(StrengthMovementVariant50!);
+                strengthMovementVariant50?.Invoke(__value49);
             }
-            else if (IsStrengthMovementVariant51)
+            else if (StrengthMovementVariant51 is { } __value50)
             {
-                strengthMovementVariant51?.Invoke(StrengthMovementVariant51!);
+                strengthMovementVariant51?.Invoke(__value50);
             }
-            else if (IsStrengthMovementVariant52)
+            else if (StrengthMovementVariant52 is { } __value51)
             {
-                strengthMovementVariant52?.Invoke(StrengthMovementVariant52!);
+                strengthMovementVariant52?.Invoke(__value51);
             }
-            else if (IsStrengthMovementVariant53)
+            else if (StrengthMovementVariant53 is { } __value52)
             {
-                strengthMovementVariant53?.Invoke(StrengthMovementVariant53!);
+                strengthMovementVariant53?.Invoke(__value52);
             }
-            else if (IsStrengthMovementVariant54)
+            else if (StrengthMovementVariant54 is { } __value53)
             {
-                strengthMovementVariant54?.Invoke(StrengthMovementVariant54!);
+                strengthMovementVariant54?.Invoke(__value53);
             }
-            else if (IsStrengthMovementVariant55)
+            else if (StrengthMovementVariant55 is { } __value54)
             {
-                strengthMovementVariant55?.Invoke(StrengthMovementVariant55!);
+                strengthMovementVariant55?.Invoke(__value54);
             }
-            else if (IsStrengthMovementVariant56)
+            else if (StrengthMovementVariant56 is { } __value55)
             {
-                strengthMovementVariant56?.Invoke(StrengthMovementVariant56!);
+                strengthMovementVariant56?.Invoke(__value55);
             }
-            else if (IsStrengthMovementVariant57)
+            else if (StrengthMovementVariant57 is { } __value56)
             {
-                strengthMovementVariant57?.Invoke(StrengthMovementVariant57!);
+                strengthMovementVariant57?.Invoke(__value56);
             }
-            else if (IsStrengthMovementVariant58)
+            else if (StrengthMovementVariant58 is { } __value57)
             {
-                strengthMovementVariant58?.Invoke(StrengthMovementVariant58!);
+                strengthMovementVariant58?.Invoke(__value57);
             }
-            else if (IsStrengthMovementVariant59)
+            else if (StrengthMovementVariant59 is { } __value58)
             {
-                strengthMovementVariant59?.Invoke(StrengthMovementVariant59!);
+                strengthMovementVariant59?.Invoke(__value58);
             }
-            else if (IsStrengthMovementVariant60)
+            else if (StrengthMovementVariant60 is { } __value59)
             {
-                strengthMovementVariant60?.Invoke(StrengthMovementVariant60!);
+                strengthMovementVariant60?.Invoke(__value59);
             }
-            else if (IsStrengthMovementVariant61)
+            else if (StrengthMovementVariant61 is { } __value60)
             {
-                strengthMovementVariant61?.Invoke(StrengthMovementVariant61!);
+                strengthMovementVariant61?.Invoke(__value60);
             }
-            else if (IsStrengthMovementVariant62)
+            else if (StrengthMovementVariant62 is { } __value61)
             {
-                strengthMovementVariant62?.Invoke(StrengthMovementVariant62!);
+                strengthMovementVariant62?.Invoke(__value61);
             }
-            else if (IsStrengthMovementVariant63)
+            else if (StrengthMovementVariant63 is { } __value62)
             {
-                strengthMovementVariant63?.Invoke(StrengthMovementVariant63!);
+                strengthMovementVariant63?.Invoke(__value62);
             }
-            else if (IsStrengthMovementVariant64)
+            else if (StrengthMovementVariant64 is { } __value63)
             {
-                strengthMovementVariant64?.Invoke(StrengthMovementVariant64!);
+                strengthMovementVariant64?.Invoke(__value63);
             }
-            else if (IsStrengthMovementVariant65)
+            else if (StrengthMovementVariant65 is { } __value64)
             {
-                strengthMovementVariant65?.Invoke(StrengthMovementVariant65!);
+                strengthMovementVariant65?.Invoke(__value64);
             }
-            else if (IsStrengthMovementVariant66)
+            else if (StrengthMovementVariant66 is { } __value65)
             {
-                strengthMovementVariant66?.Invoke(StrengthMovementVariant66!);
+                strengthMovementVariant66?.Invoke(__value65);
             }
-            else if (IsStrengthMovementVariant67)
+            else if (StrengthMovementVariant67 is { } __value66)
             {
-                strengthMovementVariant67?.Invoke(StrengthMovementVariant67!);
+                strengthMovementVariant67?.Invoke(__value66);
             }
-            else if (IsStrengthMovementVariant68)
+            else if (StrengthMovementVariant68 is { } __value67)
             {
-                strengthMovementVariant68?.Invoke(StrengthMovementVariant68!);
+                strengthMovementVariant68?.Invoke(__value67);
             }
-            else if (IsStrengthMovementVariant69)
+            else if (StrengthMovementVariant69 is { } __value68)
             {
-                strengthMovementVariant69?.Invoke(StrengthMovementVariant69!);
+                strengthMovementVariant69?.Invoke(__value68);
             }
-            else if (IsStrengthMovementVariant70)
+            else if (StrengthMovementVariant70 is { } __value69)
             {
-                strengthMovementVariant70?.Invoke(StrengthMovementVariant70!);
+                strengthMovementVariant70?.Invoke(__value69);
             }
-            else if (IsStrengthMovementVariant71)
+            else if (StrengthMovementVariant71 is { } __value70)
             {
-                strengthMovementVariant71?.Invoke(StrengthMovementVariant71!);
+                strengthMovementVariant71?.Invoke(__value70);
             }
-            else if (IsStrengthMovementVariant72)
+            else if (StrengthMovementVariant72 is { } __value71)
             {
-                strengthMovementVariant72?.Invoke(StrengthMovementVariant72!);
+                strengthMovementVariant72?.Invoke(__value71);
             }
-            else if (IsStrengthMovementVariant73)
+            else if (StrengthMovementVariant73 is { } __value72)
             {
-                strengthMovementVariant73?.Invoke(StrengthMovementVariant73!);
+                strengthMovementVariant73?.Invoke(__value72);
             }
-            else if (IsStrengthMovementVariant74)
+            else if (StrengthMovementVariant74 is { } __value73)
             {
-                strengthMovementVariant74?.Invoke(StrengthMovementVariant74!);
+                strengthMovementVariant74?.Invoke(__value73);
             }
-            else if (IsStrengthMovementVariant75)
+            else if (StrengthMovementVariant75 is { } __value74)
             {
-                strengthMovementVariant75?.Invoke(StrengthMovementVariant75!);
+                strengthMovementVariant75?.Invoke(__value74);
             }
-            else if (IsStrengthMovementVariant76)
+            else if (StrengthMovementVariant76 is { } __value75)
             {
-                strengthMovementVariant76?.Invoke(StrengthMovementVariant76!);
+                strengthMovementVariant76?.Invoke(__value75);
             }
-            else if (IsStrengthMovementVariant77)
+            else if (StrengthMovementVariant77 is { } __value76)
             {
-                strengthMovementVariant77?.Invoke(StrengthMovementVariant77!);
+                strengthMovementVariant77?.Invoke(__value76);
             }
-            else if (IsStrengthMovementVariant78)
+            else if (StrengthMovementVariant78 is { } __value77)
             {
-                strengthMovementVariant78?.Invoke(StrengthMovementVariant78!);
+                strengthMovementVariant78?.Invoke(__value77);
             }
-            else if (IsStrengthMovementVariant79)
+            else if (StrengthMovementVariant79 is { } __value78)
             {
-                strengthMovementVariant79?.Invoke(StrengthMovementVariant79!);
+                strengthMovementVariant79?.Invoke(__value78);
             }
-            else if (IsStrengthMovementVariant80)
+            else if (StrengthMovementVariant80 is { } __value79)
             {
-                strengthMovementVariant80?.Invoke(StrengthMovementVariant80!);
+                strengthMovementVariant80?.Invoke(__value79);
             }
-            else if (IsStrengthMovementVariant81)
+            else if (StrengthMovementVariant81 is { } __value80)
             {
-                strengthMovementVariant81?.Invoke(StrengthMovementVariant81!);
+                strengthMovementVariant81?.Invoke(__value80);
             }
-            else if (IsStrengthMovementVariant82)
+            else if (StrengthMovementVariant82 is { } __value81)
             {
-                strengthMovementVariant82?.Invoke(StrengthMovementVariant82!);
+                strengthMovementVariant82?.Invoke(__value81);
             }
-            else if (IsStrengthMovementVariant83)
+            else if (StrengthMovementVariant83 is { } __value82)
             {
-                strengthMovementVariant83?.Invoke(StrengthMovementVariant83!);
+                strengthMovementVariant83?.Invoke(__value82);
             }
-            else if (IsStrengthMovementVariant84)
+            else if (StrengthMovementVariant84 is { } __value83)
             {
-                strengthMovementVariant84?.Invoke(StrengthMovementVariant84!);
+                strengthMovementVariant84?.Invoke(__value83);
             }
-            else if (IsStrengthMovementVariant85)
+            else if (StrengthMovementVariant85 is { } __value84)
             {
-                strengthMovementVariant85?.Invoke(StrengthMovementVariant85!);
+                strengthMovementVariant85?.Invoke(__value84);
             }
-            else if (IsStrengthMovementVariant86)
+            else if (StrengthMovementVariant86 is { } __value85)
             {
-                strengthMovementVariant86?.Invoke(StrengthMovementVariant86!);
+                strengthMovementVariant86?.Invoke(__value85);
             }
-            else if (IsStrengthMovementVariant87)
+            else if (StrengthMovementVariant87 is { } __value86)
             {
-                strengthMovementVariant87?.Invoke(StrengthMovementVariant87!);
+                strengthMovementVariant87?.Invoke(__value86);
             }
-            else if (IsStrengthMovementVariant88)
+            else if (StrengthMovementVariant88 is { } __value87)
             {
-                strengthMovementVariant88?.Invoke(StrengthMovementVariant88!);
+                strengthMovementVariant88?.Invoke(__value87);
             }
-            else if (IsStrengthMovementVariant89)
+            else if (StrengthMovementVariant89 is { } __value88)
             {
-                strengthMovementVariant89?.Invoke(StrengthMovementVariant89!);
+                strengthMovementVariant89?.Invoke(__value88);
             }
-            else if (IsStrengthMovementVariant90)
+            else if (StrengthMovementVariant90 is { } __value89)
             {
-                strengthMovementVariant90?.Invoke(StrengthMovementVariant90!);
+                strengthMovementVariant90?.Invoke(__value89);
             }
-            else if (IsStrengthMovementVariant91)
+            else if (StrengthMovementVariant91 is { } __value90)
             {
-                strengthMovementVariant91?.Invoke(StrengthMovementVariant91!);
+                strengthMovementVariant91?.Invoke(__value90);
             }
-            else if (IsStrengthMovementVariant92)
+            else if (StrengthMovementVariant92 is { } __value91)
             {
-                strengthMovementVariant92?.Invoke(StrengthMovementVariant92!);
+                strengthMovementVariant92?.Invoke(__value91);
             }
-            else if (IsStrengthMovementVariant93)
+            else if (StrengthMovementVariant93 is { } __value92)
             {
-                strengthMovementVariant93?.Invoke(StrengthMovementVariant93!);
+                strengthMovementVariant93?.Invoke(__value92);
             }
-            else if (IsStrengthMovementVariant94)
+            else if (StrengthMovementVariant94 is { } __value93)
             {
-                strengthMovementVariant94?.Invoke(StrengthMovementVariant94!);
+                strengthMovementVariant94?.Invoke(__value93);
             }
-            else if (IsStrengthMovementVariant95)
+            else if (StrengthMovementVariant95 is { } __value94)
             {
-                strengthMovementVariant95?.Invoke(StrengthMovementVariant95!);
+                strengthMovementVariant95?.Invoke(__value94);
             }
-            else if (IsStrengthMovementVariant96)
+            else if (StrengthMovementVariant96 is { } __value95)
             {
-                strengthMovementVariant96?.Invoke(StrengthMovementVariant96!);
+                strengthMovementVariant96?.Invoke(__value95);
             }
-            else if (IsStrengthMovementVariant97)
+            else if (StrengthMovementVariant97 is { } __value96)
             {
-                strengthMovementVariant97?.Invoke(StrengthMovementVariant97!);
+                strengthMovementVariant97?.Invoke(__value96);
             }
-            else if (IsStrengthMovementVariant98)
+            else if (StrengthMovementVariant98 is { } __value97)
             {
-                strengthMovementVariant98?.Invoke(StrengthMovementVariant98!);
+                strengthMovementVariant98?.Invoke(__value97);
             }
-            else if (IsStrengthMovementVariant99)
+            else if (StrengthMovementVariant99 is { } __value98)
             {
-                strengthMovementVariant99?.Invoke(StrengthMovementVariant99!);
+                strengthMovementVariant99?.Invoke(__value98);
             }
-            else if (IsStrengthMovementVariant100)
+            else if (StrengthMovementVariant100 is { } __value99)
             {
-                strengthMovementVariant100?.Invoke(StrengthMovementVariant100!);
+                strengthMovementVariant100?.Invoke(__value99);
             }
-            else if (IsStrengthMovementVariant101)
+            else if (StrengthMovementVariant101 is { } __value100)
             {
-                strengthMovementVariant101?.Invoke(StrengthMovementVariant101!);
+                strengthMovementVariant101?.Invoke(__value100);
             }
-            else if (IsStrengthMovementVariant102)
+            else if (StrengthMovementVariant102 is { } __value101)
             {
-                strengthMovementVariant102?.Invoke(StrengthMovementVariant102!);
+                strengthMovementVariant102?.Invoke(__value101);
             }
-            else if (IsStrengthMovementVariant103)
+            else if (StrengthMovementVariant103 is { } __value102)
             {
-                strengthMovementVariant103?.Invoke(StrengthMovementVariant103!);
+                strengthMovementVariant103?.Invoke(__value102);
             }
-            else if (IsStrengthMovementVariant104)
+            else if (StrengthMovementVariant104 is { } __value103)
             {
-                strengthMovementVariant104?.Invoke(StrengthMovementVariant104!);
+                strengthMovementVariant104?.Invoke(__value103);
             }
-            else if (IsStrengthMovementVariant105)
+            else if (StrengthMovementVariant105 is { } __value104)
             {
-                strengthMovementVariant105?.Invoke(StrengthMovementVariant105!);
+                strengthMovementVariant105?.Invoke(__value104);
             }
-            else if (IsStrengthMovementVariant106)
+            else if (StrengthMovementVariant106 is { } __value105)
             {
-                strengthMovementVariant106?.Invoke(StrengthMovementVariant106!);
+                strengthMovementVariant106?.Invoke(__value105);
             }
-            else if (IsStrengthMovementVariant107)
+            else if (StrengthMovementVariant107 is { } __value106)
             {
-                strengthMovementVariant107?.Invoke(StrengthMovementVariant107!);
+                strengthMovementVariant107?.Invoke(__value106);
             }
-            else if (IsStrengthMovementVariant108)
+            else if (StrengthMovementVariant108 is { } __value107)
             {
-                strengthMovementVariant108?.Invoke(StrengthMovementVariant108!);
+                strengthMovementVariant108?.Invoke(__value107);
             }
-            else if (IsStrengthMovementVariant109)
+            else if (StrengthMovementVariant109 is { } __value108)
             {
-                strengthMovementVariant109?.Invoke(StrengthMovementVariant109!);
+                strengthMovementVariant109?.Invoke(__value108);
             }
-            else if (IsStrengthMovementVariant110)
+            else if (StrengthMovementVariant110 is { } __value109)
             {
-                strengthMovementVariant110?.Invoke(StrengthMovementVariant110!);
+                strengthMovementVariant110?.Invoke(__value109);
             }
-            else if (IsStrengthMovementVariant111)
+            else if (StrengthMovementVariant111 is { } __value110)
             {
-                strengthMovementVariant111?.Invoke(StrengthMovementVariant111!);
+                strengthMovementVariant111?.Invoke(__value110);
             }
-            else if (IsStrengthMovementVariant112)
+            else if (StrengthMovementVariant112 is { } __value111)
             {
-                strengthMovementVariant112?.Invoke(StrengthMovementVariant112!);
+                strengthMovementVariant112?.Invoke(__value111);
             }
-            else if (IsStrengthMovementVariant113)
+            else if (StrengthMovementVariant113 is { } __value112)
             {
-                strengthMovementVariant113?.Invoke(StrengthMovementVariant113!);
+                strengthMovementVariant113?.Invoke(__value112);
             }
-            else if (IsStrengthMovementVariant114)
+            else if (StrengthMovementVariant114 is { } __value113)
             {
-                strengthMovementVariant114?.Invoke(StrengthMovementVariant114!);
+                strengthMovementVariant114?.Invoke(__value113);
             }
-            else if (IsStrengthMovementVariant115)
+            else if (StrengthMovementVariant115 is { } __value114)
             {
-                strengthMovementVariant115?.Invoke(StrengthMovementVariant115!);
+                strengthMovementVariant115?.Invoke(__value114);
             }
-            else if (IsStrengthMovementVariant116)
+            else if (StrengthMovementVariant116 is { } __value115)
             {
-                strengthMovementVariant116?.Invoke(StrengthMovementVariant116!);
+                strengthMovementVariant116?.Invoke(__value115);
             }
-            else if (IsStrengthMovementVariant117)
+            else if (StrengthMovementVariant117 is { } __value116)
             {
-                strengthMovementVariant117?.Invoke(StrengthMovementVariant117!);
+                strengthMovementVariant117?.Invoke(__value116);
             }
-            else if (IsStrengthMovementVariant118)
+            else if (StrengthMovementVariant118 is { } __value117)
             {
-                strengthMovementVariant118?.Invoke(StrengthMovementVariant118!);
+                strengthMovementVariant118?.Invoke(__value117);
             }
-            else if (IsStrengthMovementVariant119)
+            else if (StrengthMovementVariant119 is { } __value118)
             {
-                strengthMovementVariant119?.Invoke(StrengthMovementVariant119!);
+                strengthMovementVariant119?.Invoke(__value118);
             }
-            else if (IsStrengthMovementVariant120)
+            else if (StrengthMovementVariant120 is { } __value119)
             {
-                strengthMovementVariant120?.Invoke(StrengthMovementVariant120!);
+                strengthMovementVariant120?.Invoke(__value119);
             }
-            else if (IsStrengthMovementVariant121)
+            else if (StrengthMovementVariant121 is { } __value120)
             {
-                strengthMovementVariant121?.Invoke(StrengthMovementVariant121!);
+                strengthMovementVariant121?.Invoke(__value120);
             }
-            else if (IsStrengthMovementVariant122)
+            else if (StrengthMovementVariant122 is { } __value121)
             {
-                strengthMovementVariant122?.Invoke(StrengthMovementVariant122!);
+                strengthMovementVariant122?.Invoke(__value121);
             }
-            else if (IsStrengthMovementVariant123)
+            else if (StrengthMovementVariant123 is { } __value122)
             {
-                strengthMovementVariant123?.Invoke(StrengthMovementVariant123!);
+                strengthMovementVariant123?.Invoke(__value122);
             }
-            else if (IsStrengthMovementVariant124)
+            else if (StrengthMovementVariant124 is { } __value123)
             {
-                strengthMovementVariant124?.Invoke(StrengthMovementVariant124!);
+                strengthMovementVariant124?.Invoke(__value123);
             }
-            else if (IsStrengthMovementVariant125)
+            else if (StrengthMovementVariant125 is { } __value124)
             {
-                strengthMovementVariant125?.Invoke(StrengthMovementVariant125!);
+                strengthMovementVariant125?.Invoke(__value124);
             }
-            else if (IsStrengthMovementVariant126)
+            else if (StrengthMovementVariant126 is { } __value125)
             {
-                strengthMovementVariant126?.Invoke(StrengthMovementVariant126!);
+                strengthMovementVariant126?.Invoke(__value125);
             }
-            else if (IsStrengthMovementVariant127)
+            else if (StrengthMovementVariant127 is { } __value126)
             {
-                strengthMovementVariant127?.Invoke(StrengthMovementVariant127!);
+                strengthMovementVariant127?.Invoke(__value126);
             }
-            else if (IsStrengthMovementVariant128)
+            else if (StrengthMovementVariant128 is { } __value127)
             {
-                strengthMovementVariant128?.Invoke(StrengthMovementVariant128!);
+                strengthMovementVariant128?.Invoke(__value127);
             }
-            else if (IsStrengthMovementVariant129)
+            else if (StrengthMovementVariant129 is { } __value128)
             {
-                strengthMovementVariant129?.Invoke(StrengthMovementVariant129!);
+                strengthMovementVariant129?.Invoke(__value128);
             }
-            else if (IsStrengthMovementVariant130)
+            else if (StrengthMovementVariant130 is { } __value129)
             {
-                strengthMovementVariant130?.Invoke(StrengthMovementVariant130!);
+                strengthMovementVariant130?.Invoke(__value129);
             }
-            else if (IsStrengthMovementVariant131)
+            else if (StrengthMovementVariant131 is { } __value130)
             {
-                strengthMovementVariant131?.Invoke(StrengthMovementVariant131!);
+                strengthMovementVariant131?.Invoke(__value130);
             }
-            else if (IsStrengthMovementVariant132)
+            else if (StrengthMovementVariant132 is { } __value131)
             {
-                strengthMovementVariant132?.Invoke(StrengthMovementVariant132!);
+                strengthMovementVariant132?.Invoke(__value131);
             }
-            else if (IsStrengthMovementVariant133)
+            else if (StrengthMovementVariant133 is { } __value132)
             {
-                strengthMovementVariant133?.Invoke(StrengthMovementVariant133!);
+                strengthMovementVariant133?.Invoke(__value132);
             }
-            else if (IsStrengthMovementVariant134)
+            else if (StrengthMovementVariant134 is { } __value133)
             {
-                strengthMovementVariant134?.Invoke(StrengthMovementVariant134!);
+                strengthMovementVariant134?.Invoke(__value133);
             }
-            else if (IsStrengthMovementVariant135)
+            else if (StrengthMovementVariant135 is { } __value134)
             {
-                strengthMovementVariant135?.Invoke(StrengthMovementVariant135!);
+                strengthMovementVariant135?.Invoke(__value134);
             }
-            else if (IsStrengthMovementVariant136)
+            else if (StrengthMovementVariant136 is { } __value135)
             {
-                strengthMovementVariant136?.Invoke(StrengthMovementVariant136!);
+                strengthMovementVariant136?.Invoke(__value135);
             }
-            else if (IsStrengthMovementVariant137)
+            else if (StrengthMovementVariant137 is { } __value136)
             {
-                strengthMovementVariant137?.Invoke(StrengthMovementVariant137!);
+                strengthMovementVariant137?.Invoke(__value136);
             }
-            else if (IsStrengthMovementVariant138)
+            else if (StrengthMovementVariant138 is { } __value137)
             {
-                strengthMovementVariant138?.Invoke(StrengthMovementVariant138!);
+                strengthMovementVariant138?.Invoke(__value137);
             }
-            else if (IsStrengthMovementVariant139)
+            else if (StrengthMovementVariant139 is { } __value138)
             {
-                strengthMovementVariant139?.Invoke(StrengthMovementVariant139!);
+                strengthMovementVariant139?.Invoke(__value138);
             }
-            else if (IsStrengthMovementVariant140)
+            else if (StrengthMovementVariant140 is { } __value139)
             {
-                strengthMovementVariant140?.Invoke(StrengthMovementVariant140!);
+                strengthMovementVariant140?.Invoke(__value139);
             }
-            else if (IsStrengthMovementVariant141)
+            else if (StrengthMovementVariant141 is { } __value140)
             {
-                strengthMovementVariant141?.Invoke(StrengthMovementVariant141!);
+                strengthMovementVariant141?.Invoke(__value140);
             }
-            else if (IsStrengthMovementVariant142)
+            else if (StrengthMovementVariant142 is { } __value141)
             {
-                strengthMovementVariant142?.Invoke(StrengthMovementVariant142!);
+                strengthMovementVariant142?.Invoke(__value141);
             }
-            else if (IsStrengthMovementVariant143)
+            else if (StrengthMovementVariant143 is { } __value142)
             {
-                strengthMovementVariant143?.Invoke(StrengthMovementVariant143!);
+                strengthMovementVariant143?.Invoke(__value142);
             }
-            else if (IsStrengthMovementVariant144)
+            else if (StrengthMovementVariant144 is { } __value143)
             {
-                strengthMovementVariant144?.Invoke(StrengthMovementVariant144!);
+                strengthMovementVariant144?.Invoke(__value143);
             }
-            else if (IsStrengthMovementVariant145)
+            else if (StrengthMovementVariant145 is { } __value144)
             {
-                strengthMovementVariant145?.Invoke(StrengthMovementVariant145!);
+                strengthMovementVariant145?.Invoke(__value144);
             }
-            else if (IsStrengthMovementVariant146)
+            else if (StrengthMovementVariant146 is { } __value145)
             {
-                strengthMovementVariant146?.Invoke(StrengthMovementVariant146!);
+                strengthMovementVariant146?.Invoke(__value145);
             }
-            else if (IsStrengthMovementVariant147)
+            else if (StrengthMovementVariant147 is { } __value146)
             {
-                strengthMovementVariant147?.Invoke(StrengthMovementVariant147!);
+                strengthMovementVariant147?.Invoke(__value146);
             }
-            else if (IsStrengthMovementVariant148)
+            else if (StrengthMovementVariant148 is { } __value147)
             {
-                strengthMovementVariant148?.Invoke(StrengthMovementVariant148!);
+                strengthMovementVariant148?.Invoke(__value147);
             }
-            else if (IsStrengthMovementVariant149)
+            else if (StrengthMovementVariant149 is { } __value148)
             {
-                strengthMovementVariant149?.Invoke(StrengthMovementVariant149!);
+                strengthMovementVariant149?.Invoke(__value148);
             }
-            else if (IsStrengthMovementVariant150)
+            else if (StrengthMovementVariant150 is { } __value149)
             {
-                strengthMovementVariant150?.Invoke(StrengthMovementVariant150!);
+                strengthMovementVariant150?.Invoke(__value149);
             }
-            else if (IsStrengthMovementVariant151)
+            else if (StrengthMovementVariant151 is { } __value150)
             {
-                strengthMovementVariant151?.Invoke(StrengthMovementVariant151!);
+                strengthMovementVariant151?.Invoke(__value150);
             }
-            else if (IsStrengthMovementVariant152)
+            else if (StrengthMovementVariant152 is { } __value151)
             {
-                strengthMovementVariant152?.Invoke(StrengthMovementVariant152!);
+                strengthMovementVariant152?.Invoke(__value151);
             }
-            else if (IsStrengthMovementVariant153)
+            else if (StrengthMovementVariant153 is { } __value152)
             {
-                strengthMovementVariant153?.Invoke(StrengthMovementVariant153!);
+                strengthMovementVariant153?.Invoke(__value152);
             }
-            else if (IsStrengthMovementVariant154)
+            else if (StrengthMovementVariant154 is { } __value153)
             {
-                strengthMovementVariant154?.Invoke(StrengthMovementVariant154!);
+                strengthMovementVariant154?.Invoke(__value153);
             }
-            else if (IsStrengthMovementVariant155)
+            else if (StrengthMovementVariant155 is { } __value154)
             {
-                strengthMovementVariant155?.Invoke(StrengthMovementVariant155!);
+                strengthMovementVariant155?.Invoke(__value154);
             }
-            else if (IsStrengthMovementVariant156)
+            else if (StrengthMovementVariant156 is { } __value155)
             {
-                strengthMovementVariant156?.Invoke(StrengthMovementVariant156!);
+                strengthMovementVariant156?.Invoke(__value155);
             }
-            else if (IsStrengthMovementVariant157)
+            else if (StrengthMovementVariant157 is { } __value156)
             {
-                strengthMovementVariant157?.Invoke(StrengthMovementVariant157!);
+                strengthMovementVariant157?.Invoke(__value156);
             }
-            else if (IsStrengthMovementVariant158)
+            else if (StrengthMovementVariant158 is { } __value157)
             {
-                strengthMovementVariant158?.Invoke(StrengthMovementVariant158!);
+                strengthMovementVariant158?.Invoke(__value157);
             }
-            else if (IsStrengthMovementVariant159)
+            else if (StrengthMovementVariant159 is { } __value158)
             {
-                strengthMovementVariant159?.Invoke(StrengthMovementVariant159!);
+                strengthMovementVariant159?.Invoke(__value158);
             }
-            else if (IsStrengthMovementVariant160)
+            else if (StrengthMovementVariant160 is { } __value159)
             {
-                strengthMovementVariant160?.Invoke(StrengthMovementVariant160!);
+                strengthMovementVariant160?.Invoke(__value159);
             }
-            else if (IsStrengthMovementVariant161)
+            else if (StrengthMovementVariant161 is { } __value160)
             {
-                strengthMovementVariant161?.Invoke(StrengthMovementVariant161!);
+                strengthMovementVariant161?.Invoke(__value160);
             }
-            else if (IsStrengthMovementVariant162)
+            else if (StrengthMovementVariant162 is { } __value161)
             {
-                strengthMovementVariant162?.Invoke(StrengthMovementVariant162!);
+                strengthMovementVariant162?.Invoke(__value161);
             }
-            else if (IsStrengthMovementVariant163)
+            else if (StrengthMovementVariant163 is { } __value162)
             {
-                strengthMovementVariant163?.Invoke(StrengthMovementVariant163!);
+                strengthMovementVariant163?.Invoke(__value162);
             }
-            else if (IsStrengthMovementVariant164)
+            else if (StrengthMovementVariant164 is { } __value163)
             {
-                strengthMovementVariant164?.Invoke(StrengthMovementVariant164!);
+                strengthMovementVariant164?.Invoke(__value163);
             }
-            else if (IsStrengthMovementVariant165)
+            else if (StrengthMovementVariant165 is { } __value164)
             {
-                strengthMovementVariant165?.Invoke(StrengthMovementVariant165!);
+                strengthMovementVariant165?.Invoke(__value164);
             }
-            else if (IsStrengthMovementVariant166)
+            else if (StrengthMovementVariant166 is { } __value165)
             {
-                strengthMovementVariant166?.Invoke(StrengthMovementVariant166!);
+                strengthMovementVariant166?.Invoke(__value165);
             }
-            else if (IsStrengthMovementVariant167)
+            else if (StrengthMovementVariant167 is { } __value166)
             {
-                strengthMovementVariant167?.Invoke(StrengthMovementVariant167!);
+                strengthMovementVariant167?.Invoke(__value166);
             }
-            else if (IsStrengthMovementVariant168)
+            else if (StrengthMovementVariant168 is { } __value167)
             {
-                strengthMovementVariant168?.Invoke(StrengthMovementVariant168!);
+                strengthMovementVariant168?.Invoke(__value167);
             }
-            else if (IsStrengthMovementVariant169)
+            else if (StrengthMovementVariant169 is { } __value168)
             {
-                strengthMovementVariant169?.Invoke(StrengthMovementVariant169!);
+                strengthMovementVariant169?.Invoke(__value168);
             }
-            else if (IsStrengthMovementVariant170)
+            else if (StrengthMovementVariant170 is { } __value169)
             {
-                strengthMovementVariant170?.Invoke(StrengthMovementVariant170!);
+                strengthMovementVariant170?.Invoke(__value169);
             }
-            else if (IsStrengthMovementVariant171)
+            else if (StrengthMovementVariant171 is { } __value170)
             {
-                strengthMovementVariant171?.Invoke(StrengthMovementVariant171!);
+                strengthMovementVariant171?.Invoke(__value170);
             }
-            else if (IsStrengthMovementVariant172)
+            else if (StrengthMovementVariant172 is { } __value171)
             {
-                strengthMovementVariant172?.Invoke(StrengthMovementVariant172!);
+                strengthMovementVariant172?.Invoke(__value171);
             }
-            else if (IsStrengthMovementVariant173)
+            else if (StrengthMovementVariant173 is { } __value172)
             {
-                strengthMovementVariant173?.Invoke(StrengthMovementVariant173!);
+                strengthMovementVariant173?.Invoke(__value172);
             }
-            else if (IsStrengthMovementVariant174)
+            else if (StrengthMovementVariant174 is { } __value173)
             {
-                strengthMovementVariant174?.Invoke(StrengthMovementVariant174!);
+                strengthMovementVariant174?.Invoke(__value173);
             }
-            else if (IsStrengthMovementVariant175)
+            else if (StrengthMovementVariant175 is { } __value174)
             {
-                strengthMovementVariant175?.Invoke(StrengthMovementVariant175!);
+                strengthMovementVariant175?.Invoke(__value174);
             }
-            else if (IsStrengthMovementVariant176)
+            else if (StrengthMovementVariant176 is { } __value175)
             {
-                strengthMovementVariant176?.Invoke(StrengthMovementVariant176!);
+                strengthMovementVariant176?.Invoke(__value175);
             }
         }
 

@@ -43,8 +43,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthGripWidthVariant1 PickStrengthGripWidthVariant1() => IsStrengthGripWidthVariant1
-            ? StrengthGripWidthVariant1!.Value
+        public global::Terra.StrengthGripWidthVariant1 PickStrengthGripWidthVariant1() => StrengthGripWidthVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthGripWidthVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -80,8 +80,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthGripWidthVariant2 PickStrengthGripWidthVariant2() => IsStrengthGripWidthVariant2
-            ? StrengthGripWidthVariant2!.Value
+        public global::Terra.StrengthGripWidthVariant2 PickStrengthGripWidthVariant2() => StrengthGripWidthVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthGripWidthVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -117,8 +117,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthGripWidthVariant3 PickStrengthGripWidthVariant3() => IsStrengthGripWidthVariant3
-            ? StrengthGripWidthVariant3!.Value
+        public global::Terra.StrengthGripWidthVariant3 PickStrengthGripWidthVariant3() => StrengthGripWidthVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthGripWidthVariant3' but the value was {ToString()}.");
 
         /// <summary>
@@ -154,8 +154,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public string PickStrengthGripWidthVariant4() => IsStrengthGripWidthVariant4
-            ? StrengthGripWidthVariant4!
+        public string PickStrengthGripWidthVariant4() => StrengthGripWidthVariant4 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthGripWidthVariant4' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -308,21 +308,21 @@ namespace Terra
                 Validate();
             }
 
-            if (IsStrengthGripWidthVariant1 && strengthGripWidthVariant1 != null)
+            if (StrengthGripWidthVariant1 is { } __value0 && strengthGripWidthVariant1 != null)
             {
-                return strengthGripWidthVariant1(StrengthGripWidthVariant1!);
+                return strengthGripWidthVariant1(__value0);
             }
-            else if (IsStrengthGripWidthVariant2 && strengthGripWidthVariant2 != null)
+            else if (StrengthGripWidthVariant2 is { } __value1 && strengthGripWidthVariant2 != null)
             {
-                return strengthGripWidthVariant2(StrengthGripWidthVariant2!);
+                return strengthGripWidthVariant2(__value1);
             }
-            else if (IsStrengthGripWidthVariant3 && strengthGripWidthVariant3 != null)
+            else if (StrengthGripWidthVariant3 is { } __value2 && strengthGripWidthVariant3 != null)
             {
-                return strengthGripWidthVariant3(StrengthGripWidthVariant3!);
+                return strengthGripWidthVariant3(__value2);
             }
-            else if (IsStrengthGripWidthVariant4 && strengthGripWidthVariant4 != null)
+            else if (StrengthGripWidthVariant4 is { } __value3 && strengthGripWidthVariant4 != null)
             {
-                return strengthGripWidthVariant4(StrengthGripWidthVariant4!);
+                return strengthGripWidthVariant4(__value3);
             }
 
             return default(TResult);
@@ -346,21 +346,21 @@ namespace Terra
                 Validate();
             }
 
-            if (IsStrengthGripWidthVariant1)
+            if (StrengthGripWidthVariant1 is { } __value0)
             {
-                strengthGripWidthVariant1?.Invoke(StrengthGripWidthVariant1!);
+                strengthGripWidthVariant1?.Invoke(__value0);
             }
-            else if (IsStrengthGripWidthVariant2)
+            else if (StrengthGripWidthVariant2 is { } __value1)
             {
-                strengthGripWidthVariant2?.Invoke(StrengthGripWidthVariant2!);
+                strengthGripWidthVariant2?.Invoke(__value1);
             }
-            else if (IsStrengthGripWidthVariant3)
+            else if (StrengthGripWidthVariant3 is { } __value2)
             {
-                strengthGripWidthVariant3?.Invoke(StrengthGripWidthVariant3!);
+                strengthGripWidthVariant3?.Invoke(__value2);
             }
-            else if (IsStrengthGripWidthVariant4)
+            else if (StrengthGripWidthVariant4 is { } __value3)
             {
-                strengthGripWidthVariant4?.Invoke(StrengthGripWidthVariant4!);
+                strengthGripWidthVariant4?.Invoke(__value3);
             }
         }
 
@@ -379,21 +379,21 @@ namespace Terra
                 Validate();
             }
 
-            if (IsStrengthGripWidthVariant1)
+            if (StrengthGripWidthVariant1 is { } __value0)
             {
-                strengthGripWidthVariant1?.Invoke(StrengthGripWidthVariant1!);
+                strengthGripWidthVariant1?.Invoke(__value0);
             }
-            else if (IsStrengthGripWidthVariant2)
+            else if (StrengthGripWidthVariant2 is { } __value1)
             {
-                strengthGripWidthVariant2?.Invoke(StrengthGripWidthVariant2!);
+                strengthGripWidthVariant2?.Invoke(__value1);
             }
-            else if (IsStrengthGripWidthVariant3)
+            else if (StrengthGripWidthVariant3 is { } __value2)
             {
-                strengthGripWidthVariant3?.Invoke(StrengthGripWidthVariant3!);
+                strengthGripWidthVariant3?.Invoke(__value2);
             }
-            else if (IsStrengthGripWidthVariant4)
+            else if (StrengthGripWidthVariant4 is { } __value3)
             {
-                strengthGripWidthVariant4?.Invoke(StrengthGripWidthVariant4!);
+                strengthGripWidthVariant4?.Invoke(__value3);
             }
         }
 

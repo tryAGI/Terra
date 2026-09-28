@@ -394,43 +394,43 @@ namespace Terra.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.SwimStrokeTypeVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.SwimStrokeTypeVariant1> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.SwimStrokeTypeVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SwimStrokeTypeVariant1!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSwimStrokeTypeVariant1(), typeInfo);
             }
             else if (value.IsSwimStrokeTypeVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.SwimStrokeTypeVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.SwimStrokeTypeVariant2> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.SwimStrokeTypeVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SwimStrokeTypeVariant2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSwimStrokeTypeVariant2(), typeInfo);
             }
             else if (value.IsSwimStrokeTypeVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.SwimStrokeTypeVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.SwimStrokeTypeVariant3> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.SwimStrokeTypeVariant3).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SwimStrokeTypeVariant3!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSwimStrokeTypeVariant3(), typeInfo);
             }
             else if (value.IsSwimStrokeTypeVariant4)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.SwimStrokeTypeVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.SwimStrokeTypeVariant4> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.SwimStrokeTypeVariant4).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SwimStrokeTypeVariant4!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSwimStrokeTypeVariant4(), typeInfo);
             }
             else if (value.IsSwimStrokeTypeVariant5)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.SwimStrokeTypeVariant5), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.SwimStrokeTypeVariant5> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.SwimStrokeTypeVariant5).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SwimStrokeTypeVariant5!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSwimStrokeTypeVariant5(), typeInfo);
             }
             else if (value.IsSwimStrokeTypeVariant6)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.SwimStrokeTypeVariant6), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.SwimStrokeTypeVariant6> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.SwimStrokeTypeVariant6).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SwimStrokeTypeVariant6!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSwimStrokeTypeVariant6(), typeInfo);
             }
             else if (value.IsSwimStrokeTypeVariant7)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.SwimStrokeTypeVariant7), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.SwimStrokeTypeVariant7> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.SwimStrokeTypeVariant7).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SwimStrokeTypeVariant7!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSwimStrokeTypeVariant7(), typeInfo);
             }
         }
     }

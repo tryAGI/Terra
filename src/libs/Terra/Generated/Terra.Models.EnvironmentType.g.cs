@@ -42,8 +42,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.EnvironmentTypeVariant1 PickEnvironmentTypeVariant1() => IsEnvironmentTypeVariant1
-            ? EnvironmentTypeVariant1!.Value
+        public global::Terra.EnvironmentTypeVariant1 PickEnvironmentTypeVariant1() => EnvironmentTypeVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'EnvironmentTypeVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.EnvironmentTypeVariant2 PickEnvironmentTypeVariant2() => IsEnvironmentTypeVariant2
-            ? EnvironmentTypeVariant2!.Value
+        public global::Terra.EnvironmentTypeVariant2 PickEnvironmentTypeVariant2() => EnvironmentTypeVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'EnvironmentTypeVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.EnvironmentTypeVariant3 PickEnvironmentTypeVariant3() => IsEnvironmentTypeVariant3
-            ? EnvironmentTypeVariant3!.Value
+        public global::Terra.EnvironmentTypeVariant3 PickEnvironmentTypeVariant3() => EnvironmentTypeVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'EnvironmentTypeVariant3' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -242,17 +242,17 @@ namespace Terra
                 Validate();
             }
 
-            if (IsEnvironmentTypeVariant1 && environmentTypeVariant1 != null)
+            if (EnvironmentTypeVariant1 is { } __value0 && environmentTypeVariant1 != null)
             {
-                return environmentTypeVariant1(EnvironmentTypeVariant1!);
+                return environmentTypeVariant1(__value0);
             }
-            else if (IsEnvironmentTypeVariant2 && environmentTypeVariant2 != null)
+            else if (EnvironmentTypeVariant2 is { } __value1 && environmentTypeVariant2 != null)
             {
-                return environmentTypeVariant2(EnvironmentTypeVariant2!);
+                return environmentTypeVariant2(__value1);
             }
-            else if (IsEnvironmentTypeVariant3 && environmentTypeVariant3 != null)
+            else if (EnvironmentTypeVariant3 is { } __value2 && environmentTypeVariant3 != null)
             {
-                return environmentTypeVariant3(EnvironmentTypeVariant3!);
+                return environmentTypeVariant3(__value2);
             }
 
             return default(TResult);
@@ -274,17 +274,17 @@ namespace Terra
                 Validate();
             }
 
-            if (IsEnvironmentTypeVariant1)
+            if (EnvironmentTypeVariant1 is { } __value0)
             {
-                environmentTypeVariant1?.Invoke(EnvironmentTypeVariant1!);
+                environmentTypeVariant1?.Invoke(__value0);
             }
-            else if (IsEnvironmentTypeVariant2)
+            else if (EnvironmentTypeVariant2 is { } __value1)
             {
-                environmentTypeVariant2?.Invoke(EnvironmentTypeVariant2!);
+                environmentTypeVariant2?.Invoke(__value1);
             }
-            else if (IsEnvironmentTypeVariant3)
+            else if (EnvironmentTypeVariant3 is { } __value2)
             {
-                environmentTypeVariant3?.Invoke(EnvironmentTypeVariant3!);
+                environmentTypeVariant3?.Invoke(__value2);
             }
         }
 
@@ -302,17 +302,17 @@ namespace Terra
                 Validate();
             }
 
-            if (IsEnvironmentTypeVariant1)
+            if (EnvironmentTypeVariant1 is { } __value0)
             {
-                environmentTypeVariant1?.Invoke(EnvironmentTypeVariant1!);
+                environmentTypeVariant1?.Invoke(__value0);
             }
-            else if (IsEnvironmentTypeVariant2)
+            else if (EnvironmentTypeVariant2 is { } __value1)
             {
-                environmentTypeVariant2?.Invoke(EnvironmentTypeVariant2!);
+                environmentTypeVariant2?.Invoke(__value1);
             }
-            else if (IsEnvironmentTypeVariant3)
+            else if (EnvironmentTypeVariant3 is { } __value2)
             {
-                environmentTypeVariant3?.Invoke(EnvironmentTypeVariant3!);
+                environmentTypeVariant3?.Invoke(__value2);
             }
         }
 

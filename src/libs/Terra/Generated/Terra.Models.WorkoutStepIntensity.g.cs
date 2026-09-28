@@ -42,8 +42,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.WorkoutStepIntensityVariant1 PickWorkoutStepIntensityVariant1() => IsWorkoutStepIntensityVariant1
-            ? WorkoutStepIntensityVariant1!.Value
+        public global::Terra.WorkoutStepIntensityVariant1 PickWorkoutStepIntensityVariant1() => WorkoutStepIntensityVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepIntensityVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.WorkoutStepIntensityVariant2 PickWorkoutStepIntensityVariant2() => IsWorkoutStepIntensityVariant2
-            ? WorkoutStepIntensityVariant2!.Value
+        public global::Terra.WorkoutStepIntensityVariant2 PickWorkoutStepIntensityVariant2() => WorkoutStepIntensityVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepIntensityVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.WorkoutStepIntensityVariant3 PickWorkoutStepIntensityVariant3() => IsWorkoutStepIntensityVariant3
-            ? WorkoutStepIntensityVariant3!.Value
+        public global::Terra.WorkoutStepIntensityVariant3 PickWorkoutStepIntensityVariant3() => WorkoutStepIntensityVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepIntensityVariant3' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.WorkoutStepIntensityVariant4 PickWorkoutStepIntensityVariant4() => IsWorkoutStepIntensityVariant4
-            ? WorkoutStepIntensityVariant4!.Value
+        public global::Terra.WorkoutStepIntensityVariant4 PickWorkoutStepIntensityVariant4() => WorkoutStepIntensityVariant4 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepIntensityVariant4' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.WorkoutStepIntensityVariant5 PickWorkoutStepIntensityVariant5() => IsWorkoutStepIntensityVariant5
-            ? WorkoutStepIntensityVariant5!.Value
+        public global::Terra.WorkoutStepIntensityVariant5 PickWorkoutStepIntensityVariant5() => WorkoutStepIntensityVariant5 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepIntensityVariant5' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -372,25 +372,25 @@ namespace Terra
                 Validate();
             }
 
-            if (IsWorkoutStepIntensityVariant1 && workoutStepIntensityVariant1 != null)
+            if (WorkoutStepIntensityVariant1 is { } __value0 && workoutStepIntensityVariant1 != null)
             {
-                return workoutStepIntensityVariant1(WorkoutStepIntensityVariant1!);
+                return workoutStepIntensityVariant1(__value0);
             }
-            else if (IsWorkoutStepIntensityVariant2 && workoutStepIntensityVariant2 != null)
+            else if (WorkoutStepIntensityVariant2 is { } __value1 && workoutStepIntensityVariant2 != null)
             {
-                return workoutStepIntensityVariant2(WorkoutStepIntensityVariant2!);
+                return workoutStepIntensityVariant2(__value1);
             }
-            else if (IsWorkoutStepIntensityVariant3 && workoutStepIntensityVariant3 != null)
+            else if (WorkoutStepIntensityVariant3 is { } __value2 && workoutStepIntensityVariant3 != null)
             {
-                return workoutStepIntensityVariant3(WorkoutStepIntensityVariant3!);
+                return workoutStepIntensityVariant3(__value2);
             }
-            else if (IsWorkoutStepIntensityVariant4 && workoutStepIntensityVariant4 != null)
+            else if (WorkoutStepIntensityVariant4 is { } __value3 && workoutStepIntensityVariant4 != null)
             {
-                return workoutStepIntensityVariant4(WorkoutStepIntensityVariant4!);
+                return workoutStepIntensityVariant4(__value3);
             }
-            else if (IsWorkoutStepIntensityVariant5 && workoutStepIntensityVariant5 != null)
+            else if (WorkoutStepIntensityVariant5 is { } __value4 && workoutStepIntensityVariant5 != null)
             {
-                return workoutStepIntensityVariant5(WorkoutStepIntensityVariant5!);
+                return workoutStepIntensityVariant5(__value4);
             }
 
             return default(TResult);
@@ -416,25 +416,25 @@ namespace Terra
                 Validate();
             }
 
-            if (IsWorkoutStepIntensityVariant1)
+            if (WorkoutStepIntensityVariant1 is { } __value0)
             {
-                workoutStepIntensityVariant1?.Invoke(WorkoutStepIntensityVariant1!);
+                workoutStepIntensityVariant1?.Invoke(__value0);
             }
-            else if (IsWorkoutStepIntensityVariant2)
+            else if (WorkoutStepIntensityVariant2 is { } __value1)
             {
-                workoutStepIntensityVariant2?.Invoke(WorkoutStepIntensityVariant2!);
+                workoutStepIntensityVariant2?.Invoke(__value1);
             }
-            else if (IsWorkoutStepIntensityVariant3)
+            else if (WorkoutStepIntensityVariant3 is { } __value2)
             {
-                workoutStepIntensityVariant3?.Invoke(WorkoutStepIntensityVariant3!);
+                workoutStepIntensityVariant3?.Invoke(__value2);
             }
-            else if (IsWorkoutStepIntensityVariant4)
+            else if (WorkoutStepIntensityVariant4 is { } __value3)
             {
-                workoutStepIntensityVariant4?.Invoke(WorkoutStepIntensityVariant4!);
+                workoutStepIntensityVariant4?.Invoke(__value3);
             }
-            else if (IsWorkoutStepIntensityVariant5)
+            else if (WorkoutStepIntensityVariant5 is { } __value4)
             {
-                workoutStepIntensityVariant5?.Invoke(WorkoutStepIntensityVariant5!);
+                workoutStepIntensityVariant5?.Invoke(__value4);
             }
         }
 
@@ -454,25 +454,25 @@ namespace Terra
                 Validate();
             }
 
-            if (IsWorkoutStepIntensityVariant1)
+            if (WorkoutStepIntensityVariant1 is { } __value0)
             {
-                workoutStepIntensityVariant1?.Invoke(WorkoutStepIntensityVariant1!);
+                workoutStepIntensityVariant1?.Invoke(__value0);
             }
-            else if (IsWorkoutStepIntensityVariant2)
+            else if (WorkoutStepIntensityVariant2 is { } __value1)
             {
-                workoutStepIntensityVariant2?.Invoke(WorkoutStepIntensityVariant2!);
+                workoutStepIntensityVariant2?.Invoke(__value1);
             }
-            else if (IsWorkoutStepIntensityVariant3)
+            else if (WorkoutStepIntensityVariant3 is { } __value2)
             {
-                workoutStepIntensityVariant3?.Invoke(WorkoutStepIntensityVariant3!);
+                workoutStepIntensityVariant3?.Invoke(__value2);
             }
-            else if (IsWorkoutStepIntensityVariant4)
+            else if (WorkoutStepIntensityVariant4 is { } __value3)
             {
-                workoutStepIntensityVariant4?.Invoke(WorkoutStepIntensityVariant4!);
+                workoutStepIntensityVariant4?.Invoke(__value3);
             }
-            else if (IsWorkoutStepIntensityVariant5)
+            else if (WorkoutStepIntensityVariant5 is { } __value4)
             {
-                workoutStepIntensityVariant5?.Invoke(WorkoutStepIntensityVariant5!);
+                workoutStepIntensityVariant5?.Invoke(__value4);
             }
         }
 

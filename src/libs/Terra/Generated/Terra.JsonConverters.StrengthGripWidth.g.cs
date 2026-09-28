@@ -247,25 +247,25 @@ namespace Terra.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthGripWidthVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthGripWidthVariant1> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthGripWidthVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthGripWidthVariant1!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthGripWidthVariant1(), typeInfo);
             }
             else if (value.IsStrengthGripWidthVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthGripWidthVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthGripWidthVariant2> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthGripWidthVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthGripWidthVariant2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthGripWidthVariant2(), typeInfo);
             }
             else if (value.IsStrengthGripWidthVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthGripWidthVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthGripWidthVariant3> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthGripWidthVariant3).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthGripWidthVariant3!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthGripWidthVariant3(), typeInfo);
             }
             else if (value.IsStrengthGripWidthVariant4)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthGripWidthVariant4!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthGripWidthVariant4(), typeInfo);
             }
         }
     }

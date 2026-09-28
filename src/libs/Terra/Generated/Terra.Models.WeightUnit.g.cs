@@ -42,8 +42,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.WeightUnitVariant1 PickWeightUnitVariant1() => IsWeightUnitVariant1
-            ? WeightUnitVariant1!.Value
+        public global::Terra.WeightUnitVariant1 PickWeightUnitVariant1() => WeightUnitVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WeightUnitVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.WeightUnitVariant2 PickWeightUnitVariant2() => IsWeightUnitVariant2
-            ? WeightUnitVariant2!.Value
+        public global::Terra.WeightUnitVariant2 PickWeightUnitVariant2() => WeightUnitVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WeightUnitVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Terra
                 Validate();
             }
 
-            if (IsWeightUnitVariant1 && weightUnitVariant1 != null)
+            if (WeightUnitVariant1 is { } __value0 && weightUnitVariant1 != null)
             {
-                return weightUnitVariant1(WeightUnitVariant1!);
+                return weightUnitVariant1(__value0);
             }
-            else if (IsWeightUnitVariant2 && weightUnitVariant2 != null)
+            else if (WeightUnitVariant2 is { } __value1 && weightUnitVariant2 != null)
             {
-                return weightUnitVariant2(WeightUnitVariant2!);
+                return weightUnitVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Terra
                 Validate();
             }
 
-            if (IsWeightUnitVariant1)
+            if (WeightUnitVariant1 is { } __value0)
             {
-                weightUnitVariant1?.Invoke(WeightUnitVariant1!);
+                weightUnitVariant1?.Invoke(__value0);
             }
-            else if (IsWeightUnitVariant2)
+            else if (WeightUnitVariant2 is { } __value1)
             {
-                weightUnitVariant2?.Invoke(WeightUnitVariant2!);
+                weightUnitVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Terra
                 Validate();
             }
 
-            if (IsWeightUnitVariant1)
+            if (WeightUnitVariant1 is { } __value0)
             {
-                weightUnitVariant1?.Invoke(WeightUnitVariant1!);
+                weightUnitVariant1?.Invoke(__value0);
             }
-            else if (IsWeightUnitVariant2)
+            else if (WeightUnitVariant2 is { } __value1)
             {
-                weightUnitVariant2?.Invoke(WeightUnitVariant2!);
+                weightUnitVariant2?.Invoke(__value1);
             }
         }
 

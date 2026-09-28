@@ -43,8 +43,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthGripOrientationVariant1 PickStrengthGripOrientationVariant1() => IsStrengthGripOrientationVariant1
-            ? StrengthGripOrientationVariant1!.Value
+        public global::Terra.StrengthGripOrientationVariant1 PickStrengthGripOrientationVariant1() => StrengthGripOrientationVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthGripOrientationVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -80,8 +80,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthGripOrientationVariant2 PickStrengthGripOrientationVariant2() => IsStrengthGripOrientationVariant2
-            ? StrengthGripOrientationVariant2!.Value
+        public global::Terra.StrengthGripOrientationVariant2 PickStrengthGripOrientationVariant2() => StrengthGripOrientationVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthGripOrientationVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -117,8 +117,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthGripOrientationVariant3 PickStrengthGripOrientationVariant3() => IsStrengthGripOrientationVariant3
-            ? StrengthGripOrientationVariant3!.Value
+        public global::Terra.StrengthGripOrientationVariant3 PickStrengthGripOrientationVariant3() => StrengthGripOrientationVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthGripOrientationVariant3' but the value was {ToString()}.");
 
         /// <summary>
@@ -154,8 +154,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthGripOrientationVariant4 PickStrengthGripOrientationVariant4() => IsStrengthGripOrientationVariant4
-            ? StrengthGripOrientationVariant4!.Value
+        public global::Terra.StrengthGripOrientationVariant4 PickStrengthGripOrientationVariant4() => StrengthGripOrientationVariant4 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthGripOrientationVariant4' but the value was {ToString()}.");
 
         /// <summary>
@@ -191,8 +191,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthGripOrientationVariant5 PickStrengthGripOrientationVariant5() => IsStrengthGripOrientationVariant5
-            ? StrengthGripOrientationVariant5!.Value
+        public global::Terra.StrengthGripOrientationVariant5 PickStrengthGripOrientationVariant5() => StrengthGripOrientationVariant5 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthGripOrientationVariant5' but the value was {ToString()}.");
 
         /// <summary>
@@ -228,8 +228,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthGripOrientationVariant6 PickStrengthGripOrientationVariant6() => IsStrengthGripOrientationVariant6
-            ? StrengthGripOrientationVariant6!.Value
+        public global::Terra.StrengthGripOrientationVariant6 PickStrengthGripOrientationVariant6() => StrengthGripOrientationVariant6 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthGripOrientationVariant6' but the value was {ToString()}.");
 
         /// <summary>
@@ -265,8 +265,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthGripOrientationVariant7 PickStrengthGripOrientationVariant7() => IsStrengthGripOrientationVariant7
-            ? StrengthGripOrientationVariant7!.Value
+        public global::Terra.StrengthGripOrientationVariant7 PickStrengthGripOrientationVariant7() => StrengthGripOrientationVariant7 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthGripOrientationVariant7' but the value was {ToString()}.");
 
         /// <summary>
@@ -302,8 +302,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthGripOrientationVariant8 PickStrengthGripOrientationVariant8() => IsStrengthGripOrientationVariant8
-            ? StrengthGripOrientationVariant8!.Value
+        public global::Terra.StrengthGripOrientationVariant8 PickStrengthGripOrientationVariant8() => StrengthGripOrientationVariant8 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthGripOrientationVariant8' but the value was {ToString()}.");
 
         /// <summary>
@@ -339,8 +339,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public string PickStrengthGripOrientationVariant9() => IsStrengthGripOrientationVariant9
-            ? StrengthGripOrientationVariant9!
+        public string PickStrengthGripOrientationVariant9() => StrengthGripOrientationVariant9 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthGripOrientationVariant9' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -633,41 +633,41 @@ namespace Terra
                 Validate();
             }
 
-            if (IsStrengthGripOrientationVariant1 && strengthGripOrientationVariant1 != null)
+            if (StrengthGripOrientationVariant1 is { } __value0 && strengthGripOrientationVariant1 != null)
             {
-                return strengthGripOrientationVariant1(StrengthGripOrientationVariant1!);
+                return strengthGripOrientationVariant1(__value0);
             }
-            else if (IsStrengthGripOrientationVariant2 && strengthGripOrientationVariant2 != null)
+            else if (StrengthGripOrientationVariant2 is { } __value1 && strengthGripOrientationVariant2 != null)
             {
-                return strengthGripOrientationVariant2(StrengthGripOrientationVariant2!);
+                return strengthGripOrientationVariant2(__value1);
             }
-            else if (IsStrengthGripOrientationVariant3 && strengthGripOrientationVariant3 != null)
+            else if (StrengthGripOrientationVariant3 is { } __value2 && strengthGripOrientationVariant3 != null)
             {
-                return strengthGripOrientationVariant3(StrengthGripOrientationVariant3!);
+                return strengthGripOrientationVariant3(__value2);
             }
-            else if (IsStrengthGripOrientationVariant4 && strengthGripOrientationVariant4 != null)
+            else if (StrengthGripOrientationVariant4 is { } __value3 && strengthGripOrientationVariant4 != null)
             {
-                return strengthGripOrientationVariant4(StrengthGripOrientationVariant4!);
+                return strengthGripOrientationVariant4(__value3);
             }
-            else if (IsStrengthGripOrientationVariant5 && strengthGripOrientationVariant5 != null)
+            else if (StrengthGripOrientationVariant5 is { } __value4 && strengthGripOrientationVariant5 != null)
             {
-                return strengthGripOrientationVariant5(StrengthGripOrientationVariant5!);
+                return strengthGripOrientationVariant5(__value4);
             }
-            else if (IsStrengthGripOrientationVariant6 && strengthGripOrientationVariant6 != null)
+            else if (StrengthGripOrientationVariant6 is { } __value5 && strengthGripOrientationVariant6 != null)
             {
-                return strengthGripOrientationVariant6(StrengthGripOrientationVariant6!);
+                return strengthGripOrientationVariant6(__value5);
             }
-            else if (IsStrengthGripOrientationVariant7 && strengthGripOrientationVariant7 != null)
+            else if (StrengthGripOrientationVariant7 is { } __value6 && strengthGripOrientationVariant7 != null)
             {
-                return strengthGripOrientationVariant7(StrengthGripOrientationVariant7!);
+                return strengthGripOrientationVariant7(__value6);
             }
-            else if (IsStrengthGripOrientationVariant8 && strengthGripOrientationVariant8 != null)
+            else if (StrengthGripOrientationVariant8 is { } __value7 && strengthGripOrientationVariant8 != null)
             {
-                return strengthGripOrientationVariant8(StrengthGripOrientationVariant8!);
+                return strengthGripOrientationVariant8(__value7);
             }
-            else if (IsStrengthGripOrientationVariant9 && strengthGripOrientationVariant9 != null)
+            else if (StrengthGripOrientationVariant9 is { } __value8 && strengthGripOrientationVariant9 != null)
             {
-                return strengthGripOrientationVariant9(StrengthGripOrientationVariant9!);
+                return strengthGripOrientationVariant9(__value8);
             }
 
             return default(TResult);
@@ -701,41 +701,41 @@ namespace Terra
                 Validate();
             }
 
-            if (IsStrengthGripOrientationVariant1)
+            if (StrengthGripOrientationVariant1 is { } __value0)
             {
-                strengthGripOrientationVariant1?.Invoke(StrengthGripOrientationVariant1!);
+                strengthGripOrientationVariant1?.Invoke(__value0);
             }
-            else if (IsStrengthGripOrientationVariant2)
+            else if (StrengthGripOrientationVariant2 is { } __value1)
             {
-                strengthGripOrientationVariant2?.Invoke(StrengthGripOrientationVariant2!);
+                strengthGripOrientationVariant2?.Invoke(__value1);
             }
-            else if (IsStrengthGripOrientationVariant3)
+            else if (StrengthGripOrientationVariant3 is { } __value2)
             {
-                strengthGripOrientationVariant3?.Invoke(StrengthGripOrientationVariant3!);
+                strengthGripOrientationVariant3?.Invoke(__value2);
             }
-            else if (IsStrengthGripOrientationVariant4)
+            else if (StrengthGripOrientationVariant4 is { } __value3)
             {
-                strengthGripOrientationVariant4?.Invoke(StrengthGripOrientationVariant4!);
+                strengthGripOrientationVariant4?.Invoke(__value3);
             }
-            else if (IsStrengthGripOrientationVariant5)
+            else if (StrengthGripOrientationVariant5 is { } __value4)
             {
-                strengthGripOrientationVariant5?.Invoke(StrengthGripOrientationVariant5!);
+                strengthGripOrientationVariant5?.Invoke(__value4);
             }
-            else if (IsStrengthGripOrientationVariant6)
+            else if (StrengthGripOrientationVariant6 is { } __value5)
             {
-                strengthGripOrientationVariant6?.Invoke(StrengthGripOrientationVariant6!);
+                strengthGripOrientationVariant6?.Invoke(__value5);
             }
-            else if (IsStrengthGripOrientationVariant7)
+            else if (StrengthGripOrientationVariant7 is { } __value6)
             {
-                strengthGripOrientationVariant7?.Invoke(StrengthGripOrientationVariant7!);
+                strengthGripOrientationVariant7?.Invoke(__value6);
             }
-            else if (IsStrengthGripOrientationVariant8)
+            else if (StrengthGripOrientationVariant8 is { } __value7)
             {
-                strengthGripOrientationVariant8?.Invoke(StrengthGripOrientationVariant8!);
+                strengthGripOrientationVariant8?.Invoke(__value7);
             }
-            else if (IsStrengthGripOrientationVariant9)
+            else if (StrengthGripOrientationVariant9 is { } __value8)
             {
-                strengthGripOrientationVariant9?.Invoke(StrengthGripOrientationVariant9!);
+                strengthGripOrientationVariant9?.Invoke(__value8);
             }
         }
 
@@ -759,41 +759,41 @@ namespace Terra
                 Validate();
             }
 
-            if (IsStrengthGripOrientationVariant1)
+            if (StrengthGripOrientationVariant1 is { } __value0)
             {
-                strengthGripOrientationVariant1?.Invoke(StrengthGripOrientationVariant1!);
+                strengthGripOrientationVariant1?.Invoke(__value0);
             }
-            else if (IsStrengthGripOrientationVariant2)
+            else if (StrengthGripOrientationVariant2 is { } __value1)
             {
-                strengthGripOrientationVariant2?.Invoke(StrengthGripOrientationVariant2!);
+                strengthGripOrientationVariant2?.Invoke(__value1);
             }
-            else if (IsStrengthGripOrientationVariant3)
+            else if (StrengthGripOrientationVariant3 is { } __value2)
             {
-                strengthGripOrientationVariant3?.Invoke(StrengthGripOrientationVariant3!);
+                strengthGripOrientationVariant3?.Invoke(__value2);
             }
-            else if (IsStrengthGripOrientationVariant4)
+            else if (StrengthGripOrientationVariant4 is { } __value3)
             {
-                strengthGripOrientationVariant4?.Invoke(StrengthGripOrientationVariant4!);
+                strengthGripOrientationVariant4?.Invoke(__value3);
             }
-            else if (IsStrengthGripOrientationVariant5)
+            else if (StrengthGripOrientationVariant5 is { } __value4)
             {
-                strengthGripOrientationVariant5?.Invoke(StrengthGripOrientationVariant5!);
+                strengthGripOrientationVariant5?.Invoke(__value4);
             }
-            else if (IsStrengthGripOrientationVariant6)
+            else if (StrengthGripOrientationVariant6 is { } __value5)
             {
-                strengthGripOrientationVariant6?.Invoke(StrengthGripOrientationVariant6!);
+                strengthGripOrientationVariant6?.Invoke(__value5);
             }
-            else if (IsStrengthGripOrientationVariant7)
+            else if (StrengthGripOrientationVariant7 is { } __value6)
             {
-                strengthGripOrientationVariant7?.Invoke(StrengthGripOrientationVariant7!);
+                strengthGripOrientationVariant7?.Invoke(__value6);
             }
-            else if (IsStrengthGripOrientationVariant8)
+            else if (StrengthGripOrientationVariant8 is { } __value7)
             {
-                strengthGripOrientationVariant8?.Invoke(StrengthGripOrientationVariant8!);
+                strengthGripOrientationVariant8?.Invoke(__value7);
             }
-            else if (IsStrengthGripOrientationVariant9)
+            else if (StrengthGripOrientationVariant9 is { } __value8)
             {
-                strengthGripOrientationVariant9?.Invoke(StrengthGripOrientationVariant9!);
+                strengthGripOrientationVariant9?.Invoke(__value8);
             }
         }
 

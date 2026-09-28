@@ -42,8 +42,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.WorkoutSport PickWorkoutSport() => IsWorkoutSport
-            ? WorkoutSport!.Value
+        public global::Terra.WorkoutSport PickWorkoutSport() => WorkoutSport is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutSport' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.PlannedWorkoutSportEnum PickEnum() => IsEnum
-            ? Enum!.Value
+        public global::Terra.PlannedWorkoutSportEnum PickEnum() => Enum is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Enum' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Terra
                 Validate();
             }
 
-            if (IsWorkoutSport && workoutSport != null)
+            if (WorkoutSport is { } __value0 && workoutSport != null)
             {
-                return workoutSport(WorkoutSport!);
+                return workoutSport(__value0);
             }
-            else if (IsEnum && @enum != null)
+            else if (Enum is { } __value1 && @enum != null)
             {
-                return @enum(Enum!);
+                return @enum(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Terra
                 Validate();
             }
 
-            if (IsWorkoutSport)
+            if (WorkoutSport is { } __value0)
             {
-                workoutSport?.Invoke(WorkoutSport!);
+                workoutSport?.Invoke(__value0);
             }
-            else if (IsEnum)
+            else if (Enum is { } __value1)
             {
-                @enum?.Invoke(Enum!);
+                @enum?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Terra
                 Validate();
             }
 
-            if (IsWorkoutSport)
+            if (WorkoutSport is { } __value0)
             {
-                workoutSport?.Invoke(WorkoutSport!);
+                workoutSport?.Invoke(__value0);
             }
-            else if (IsEnum)
+            else if (Enum is { } __value1)
             {
-                @enum?.Invoke(Enum!);
+                @enum?.Invoke(__value1);
             }
         }
 

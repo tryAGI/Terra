@@ -156,13 +156,13 @@ namespace Terra.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.LabReportCompletedEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.LabReportCompletedEvent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.LabReportCompletedEvent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CompletedEvent!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCompletedEvent(), typeInfo);
             }
             else if (value.IsFailedEvent)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.LabReportFailedEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.LabReportFailedEvent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.LabReportFailedEvent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FailedEvent!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFailedEvent(), typeInfo);
             }
         }
     }

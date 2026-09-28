@@ -639,73 +639,73 @@ namespace Terra.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthSurfaceVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthSurfaceVariant1> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthSurfaceVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthSurfaceVariant1!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthSurfaceVariant1(), typeInfo);
             }
             else if (value.IsStrengthSurfaceVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthSurfaceVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthSurfaceVariant2> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthSurfaceVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthSurfaceVariant2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthSurfaceVariant2(), typeInfo);
             }
             else if (value.IsStrengthSurfaceVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthSurfaceVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthSurfaceVariant3> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthSurfaceVariant3).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthSurfaceVariant3!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthSurfaceVariant3(), typeInfo);
             }
             else if (value.IsStrengthSurfaceVariant4)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthSurfaceVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthSurfaceVariant4> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthSurfaceVariant4).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthSurfaceVariant4!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthSurfaceVariant4(), typeInfo);
             }
             else if (value.IsStrengthSurfaceVariant5)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthSurfaceVariant5), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthSurfaceVariant5> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthSurfaceVariant5).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthSurfaceVariant5!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthSurfaceVariant5(), typeInfo);
             }
             else if (value.IsStrengthSurfaceVariant6)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthSurfaceVariant6), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthSurfaceVariant6> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthSurfaceVariant6).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthSurfaceVariant6!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthSurfaceVariant6(), typeInfo);
             }
             else if (value.IsStrengthSurfaceVariant7)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthSurfaceVariant7), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthSurfaceVariant7> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthSurfaceVariant7).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthSurfaceVariant7!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthSurfaceVariant7(), typeInfo);
             }
             else if (value.IsStrengthSurfaceVariant8)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthSurfaceVariant8), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthSurfaceVariant8> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthSurfaceVariant8).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthSurfaceVariant8!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthSurfaceVariant8(), typeInfo);
             }
             else if (value.IsStrengthSurfaceVariant9)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthSurfaceVariant9), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthSurfaceVariant9> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthSurfaceVariant9).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthSurfaceVariant9!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthSurfaceVariant9(), typeInfo);
             }
             else if (value.IsStrengthSurfaceVariant10)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthSurfaceVariant10), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthSurfaceVariant10> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthSurfaceVariant10).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthSurfaceVariant10!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthSurfaceVariant10(), typeInfo);
             }
             else if (value.IsStrengthSurfaceVariant11)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthSurfaceVariant11), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthSurfaceVariant11> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthSurfaceVariant11).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthSurfaceVariant11!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthSurfaceVariant11(), typeInfo);
             }
             else if (value.IsStrengthSurfaceVariant12)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthSurfaceVariant12!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthSurfaceVariant12(), typeInfo);
             }
         }
     }

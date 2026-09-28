@@ -42,8 +42,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.LabReportResultSource PickLabReportResultSource() => IsLabReportResultSource
-            ? LabReportResultSource!
+        public global::Terra.LabReportResultSource PickLabReportResultSource() => LabReportResultSource is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'LabReportResultSource' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -102,9 +102,9 @@ namespace Terra
                 Validate();
             }
 
-            if (IsLabReportResultSource && labReportResultSource != null)
+            if (LabReportResultSource is { } __value0 && labReportResultSource != null)
             {
-                return labReportResultSource(LabReportResultSource!);
+                return labReportResultSource(__value0);
             }
 
             return default(TResult);
@@ -122,9 +122,9 @@ namespace Terra
                 Validate();
             }
 
-            if (IsLabReportResultSource)
+            if (LabReportResultSource is { } __value0)
             {
-                labReportResultSource?.Invoke(LabReportResultSource!);
+                labReportResultSource?.Invoke(__value0);
             }
         }
 
@@ -140,9 +140,9 @@ namespace Terra
                 Validate();
             }
 
-            if (IsLabReportResultSource)
+            if (LabReportResultSource is { } __value0)
             {
-                labReportResultSource?.Invoke(LabReportResultSource!);
+                labReportResultSource?.Invoke(__value0);
             }
         }
 

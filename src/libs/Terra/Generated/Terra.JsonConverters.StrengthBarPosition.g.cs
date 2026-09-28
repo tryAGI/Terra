@@ -443,49 +443,49 @@ namespace Terra.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthBarPositionVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthBarPositionVariant1> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthBarPositionVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthBarPositionVariant1!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthBarPositionVariant1(), typeInfo);
             }
             else if (value.IsStrengthBarPositionVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthBarPositionVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthBarPositionVariant2> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthBarPositionVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthBarPositionVariant2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthBarPositionVariant2(), typeInfo);
             }
             else if (value.IsStrengthBarPositionVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthBarPositionVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthBarPositionVariant3> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthBarPositionVariant3).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthBarPositionVariant3!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthBarPositionVariant3(), typeInfo);
             }
             else if (value.IsStrengthBarPositionVariant4)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthBarPositionVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthBarPositionVariant4> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthBarPositionVariant4).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthBarPositionVariant4!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthBarPositionVariant4(), typeInfo);
             }
             else if (value.IsStrengthBarPositionVariant5)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthBarPositionVariant5), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthBarPositionVariant5> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthBarPositionVariant5).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthBarPositionVariant5!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthBarPositionVariant5(), typeInfo);
             }
             else if (value.IsStrengthBarPositionVariant6)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthBarPositionVariant6), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthBarPositionVariant6> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthBarPositionVariant6).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthBarPositionVariant6!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthBarPositionVariant6(), typeInfo);
             }
             else if (value.IsStrengthBarPositionVariant7)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthBarPositionVariant7), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthBarPositionVariant7> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthBarPositionVariant7).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthBarPositionVariant7!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthBarPositionVariant7(), typeInfo);
             }
             else if (value.IsStrengthBarPositionVariant8)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthBarPositionVariant8!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthBarPositionVariant8(), typeInfo);
             }
         }
     }
