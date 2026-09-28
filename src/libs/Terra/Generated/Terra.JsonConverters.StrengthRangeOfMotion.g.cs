@@ -443,49 +443,49 @@ namespace Terra.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthRangeOfMotionVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthRangeOfMotionVariant1> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthRangeOfMotionVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthRangeOfMotionVariant1!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthRangeOfMotionVariant1(), typeInfo);
             }
             else if (value.IsStrengthRangeOfMotionVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthRangeOfMotionVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthRangeOfMotionVariant2> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthRangeOfMotionVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthRangeOfMotionVariant2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthRangeOfMotionVariant2(), typeInfo);
             }
             else if (value.IsStrengthRangeOfMotionVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthRangeOfMotionVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthRangeOfMotionVariant3> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthRangeOfMotionVariant3).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthRangeOfMotionVariant3!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthRangeOfMotionVariant3(), typeInfo);
             }
             else if (value.IsStrengthRangeOfMotionVariant4)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthRangeOfMotionVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthRangeOfMotionVariant4> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthRangeOfMotionVariant4).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthRangeOfMotionVariant4!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthRangeOfMotionVariant4(), typeInfo);
             }
             else if (value.IsStrengthRangeOfMotionVariant5)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthRangeOfMotionVariant5), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthRangeOfMotionVariant5> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthRangeOfMotionVariant5).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthRangeOfMotionVariant5!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthRangeOfMotionVariant5(), typeInfo);
             }
             else if (value.IsStrengthRangeOfMotionVariant6)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthRangeOfMotionVariant6), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthRangeOfMotionVariant6> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthRangeOfMotionVariant6).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthRangeOfMotionVariant6!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthRangeOfMotionVariant6(), typeInfo);
             }
             else if (value.IsStrengthRangeOfMotionVariant7)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthRangeOfMotionVariant7), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthRangeOfMotionVariant7> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthRangeOfMotionVariant7).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthRangeOfMotionVariant7!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthRangeOfMotionVariant7(), typeInfo);
             }
             else if (value.IsStrengthRangeOfMotionVariant8)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthRangeOfMotionVariant8!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthRangeOfMotionVariant8(), typeInfo);
             }
         }
     }

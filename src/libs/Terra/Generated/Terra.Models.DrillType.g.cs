@@ -42,8 +42,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.DrillTypeVariant1 PickDrillTypeVariant1() => IsDrillTypeVariant1
-            ? DrillTypeVariant1!.Value
+        public global::Terra.DrillTypeVariant1 PickDrillTypeVariant1() => DrillTypeVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'DrillTypeVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.DrillTypeVariant2 PickDrillTypeVariant2() => IsDrillTypeVariant2
-            ? DrillTypeVariant2!.Value
+        public global::Terra.DrillTypeVariant2 PickDrillTypeVariant2() => DrillTypeVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'DrillTypeVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.DrillTypeVariant3 PickDrillTypeVariant3() => IsDrillTypeVariant3
-            ? DrillTypeVariant3!.Value
+        public global::Terra.DrillTypeVariant3 PickDrillTypeVariant3() => DrillTypeVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'DrillTypeVariant3' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -242,17 +242,17 @@ namespace Terra
                 Validate();
             }
 
-            if (IsDrillTypeVariant1 && drillTypeVariant1 != null)
+            if (DrillTypeVariant1 is { } __value0 && drillTypeVariant1 != null)
             {
-                return drillTypeVariant1(DrillTypeVariant1!);
+                return drillTypeVariant1(__value0);
             }
-            else if (IsDrillTypeVariant2 && drillTypeVariant2 != null)
+            else if (DrillTypeVariant2 is { } __value1 && drillTypeVariant2 != null)
             {
-                return drillTypeVariant2(DrillTypeVariant2!);
+                return drillTypeVariant2(__value1);
             }
-            else if (IsDrillTypeVariant3 && drillTypeVariant3 != null)
+            else if (DrillTypeVariant3 is { } __value2 && drillTypeVariant3 != null)
             {
-                return drillTypeVariant3(DrillTypeVariant3!);
+                return drillTypeVariant3(__value2);
             }
 
             return default(TResult);
@@ -274,17 +274,17 @@ namespace Terra
                 Validate();
             }
 
-            if (IsDrillTypeVariant1)
+            if (DrillTypeVariant1 is { } __value0)
             {
-                drillTypeVariant1?.Invoke(DrillTypeVariant1!);
+                drillTypeVariant1?.Invoke(__value0);
             }
-            else if (IsDrillTypeVariant2)
+            else if (DrillTypeVariant2 is { } __value1)
             {
-                drillTypeVariant2?.Invoke(DrillTypeVariant2!);
+                drillTypeVariant2?.Invoke(__value1);
             }
-            else if (IsDrillTypeVariant3)
+            else if (DrillTypeVariant3 is { } __value2)
             {
-                drillTypeVariant3?.Invoke(DrillTypeVariant3!);
+                drillTypeVariant3?.Invoke(__value2);
             }
         }
 
@@ -302,17 +302,17 @@ namespace Terra
                 Validate();
             }
 
-            if (IsDrillTypeVariant1)
+            if (DrillTypeVariant1 is { } __value0)
             {
-                drillTypeVariant1?.Invoke(DrillTypeVariant1!);
+                drillTypeVariant1?.Invoke(__value0);
             }
-            else if (IsDrillTypeVariant2)
+            else if (DrillTypeVariant2 is { } __value1)
             {
-                drillTypeVariant2?.Invoke(DrillTypeVariant2!);
+                drillTypeVariant2?.Invoke(__value1);
             }
-            else if (IsDrillTypeVariant3)
+            else if (DrillTypeVariant3 is { } __value2)
             {
-                drillTypeVariant3?.Invoke(DrillTypeVariant3!);
+                drillTypeVariant3?.Invoke(__value2);
             }
         }
 

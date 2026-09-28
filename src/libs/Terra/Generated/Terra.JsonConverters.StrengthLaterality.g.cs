@@ -296,31 +296,31 @@ namespace Terra.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthLateralityVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthLateralityVariant1> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthLateralityVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthLateralityVariant1!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthLateralityVariant1(), typeInfo);
             }
             else if (value.IsStrengthLateralityVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthLateralityVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthLateralityVariant2> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthLateralityVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthLateralityVariant2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthLateralityVariant2(), typeInfo);
             }
             else if (value.IsStrengthLateralityVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthLateralityVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthLateralityVariant3> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthLateralityVariant3).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthLateralityVariant3!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthLateralityVariant3(), typeInfo);
             }
             else if (value.IsStrengthLateralityVariant4)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthLateralityVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthLateralityVariant4> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthLateralityVariant4).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthLateralityVariant4!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthLateralityVariant4(), typeInfo);
             }
             else if (value.IsStrengthLateralityVariant5)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthLateralityVariant5!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthLateralityVariant5(), typeInfo);
             }
         }
     }

@@ -247,25 +247,25 @@ namespace Terra.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthSourceVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthSourceVariant1> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthSourceVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthSourceVariant1!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthSourceVariant1(), typeInfo);
             }
             else if (value.IsStrengthSourceVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthSourceVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthSourceVariant2> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthSourceVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthSourceVariant2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthSourceVariant2(), typeInfo);
             }
             else if (value.IsStrengthSourceVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthSourceVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthSourceVariant3> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthSourceVariant3).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthSourceVariant3!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthSourceVariant3(), typeInfo);
             }
             else if (value.IsStrengthSourceVariant4)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthSourceVariant4!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthSourceVariant4(), typeInfo);
             }
         }
     }

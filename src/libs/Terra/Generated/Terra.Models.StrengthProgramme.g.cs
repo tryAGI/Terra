@@ -43,8 +43,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthProgrammeVariant1 PickStrengthProgrammeVariant1() => IsStrengthProgrammeVariant1
-            ? StrengthProgrammeVariant1!.Value
+        public global::Terra.StrengthProgrammeVariant1 PickStrengthProgrammeVariant1() => StrengthProgrammeVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthProgrammeVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -80,8 +80,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthProgrammeVariant2 PickStrengthProgrammeVariant2() => IsStrengthProgrammeVariant2
-            ? StrengthProgrammeVariant2!.Value
+        public global::Terra.StrengthProgrammeVariant2 PickStrengthProgrammeVariant2() => StrengthProgrammeVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthProgrammeVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -117,8 +117,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public string PickStrengthProgrammeVariant3() => IsStrengthProgrammeVariant3
-            ? StrengthProgrammeVariant3!
+        public string PickStrengthProgrammeVariant3() => StrengthProgrammeVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthProgrammeVariant3' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -243,17 +243,17 @@ namespace Terra
                 Validate();
             }
 
-            if (IsStrengthProgrammeVariant1 && strengthProgrammeVariant1 != null)
+            if (StrengthProgrammeVariant1 is { } __value0 && strengthProgrammeVariant1 != null)
             {
-                return strengthProgrammeVariant1(StrengthProgrammeVariant1!);
+                return strengthProgrammeVariant1(__value0);
             }
-            else if (IsStrengthProgrammeVariant2 && strengthProgrammeVariant2 != null)
+            else if (StrengthProgrammeVariant2 is { } __value1 && strengthProgrammeVariant2 != null)
             {
-                return strengthProgrammeVariant2(StrengthProgrammeVariant2!);
+                return strengthProgrammeVariant2(__value1);
             }
-            else if (IsStrengthProgrammeVariant3 && strengthProgrammeVariant3 != null)
+            else if (StrengthProgrammeVariant3 is { } __value2 && strengthProgrammeVariant3 != null)
             {
-                return strengthProgrammeVariant3(StrengthProgrammeVariant3!);
+                return strengthProgrammeVariant3(__value2);
             }
 
             return default(TResult);
@@ -275,17 +275,17 @@ namespace Terra
                 Validate();
             }
 
-            if (IsStrengthProgrammeVariant1)
+            if (StrengthProgrammeVariant1 is { } __value0)
             {
-                strengthProgrammeVariant1?.Invoke(StrengthProgrammeVariant1!);
+                strengthProgrammeVariant1?.Invoke(__value0);
             }
-            else if (IsStrengthProgrammeVariant2)
+            else if (StrengthProgrammeVariant2 is { } __value1)
             {
-                strengthProgrammeVariant2?.Invoke(StrengthProgrammeVariant2!);
+                strengthProgrammeVariant2?.Invoke(__value1);
             }
-            else if (IsStrengthProgrammeVariant3)
+            else if (StrengthProgrammeVariant3 is { } __value2)
             {
-                strengthProgrammeVariant3?.Invoke(StrengthProgrammeVariant3!);
+                strengthProgrammeVariant3?.Invoke(__value2);
             }
         }
 
@@ -303,17 +303,17 @@ namespace Terra
                 Validate();
             }
 
-            if (IsStrengthProgrammeVariant1)
+            if (StrengthProgrammeVariant1 is { } __value0)
             {
-                strengthProgrammeVariant1?.Invoke(StrengthProgrammeVariant1!);
+                strengthProgrammeVariant1?.Invoke(__value0);
             }
-            else if (IsStrengthProgrammeVariant2)
+            else if (StrengthProgrammeVariant2 is { } __value1)
             {
-                strengthProgrammeVariant2?.Invoke(StrengthProgrammeVariant2!);
+                strengthProgrammeVariant2?.Invoke(__value1);
             }
-            else if (IsStrengthProgrammeVariant3)
+            else if (StrengthProgrammeVariant3 is { } __value2)
             {
-                strengthProgrammeVariant3?.Invoke(StrengthProgrammeVariant3!);
+                strengthProgrammeVariant3?.Invoke(__value2);
             }
         }
 

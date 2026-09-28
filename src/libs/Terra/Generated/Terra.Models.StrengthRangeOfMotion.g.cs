@@ -43,8 +43,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthRangeOfMotionVariant1 PickStrengthRangeOfMotionVariant1() => IsStrengthRangeOfMotionVariant1
-            ? StrengthRangeOfMotionVariant1!.Value
+        public global::Terra.StrengthRangeOfMotionVariant1 PickStrengthRangeOfMotionVariant1() => StrengthRangeOfMotionVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthRangeOfMotionVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -80,8 +80,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthRangeOfMotionVariant2 PickStrengthRangeOfMotionVariant2() => IsStrengthRangeOfMotionVariant2
-            ? StrengthRangeOfMotionVariant2!.Value
+        public global::Terra.StrengthRangeOfMotionVariant2 PickStrengthRangeOfMotionVariant2() => StrengthRangeOfMotionVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthRangeOfMotionVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -117,8 +117,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthRangeOfMotionVariant3 PickStrengthRangeOfMotionVariant3() => IsStrengthRangeOfMotionVariant3
-            ? StrengthRangeOfMotionVariant3!.Value
+        public global::Terra.StrengthRangeOfMotionVariant3 PickStrengthRangeOfMotionVariant3() => StrengthRangeOfMotionVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthRangeOfMotionVariant3' but the value was {ToString()}.");
 
         /// <summary>
@@ -154,8 +154,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthRangeOfMotionVariant4 PickStrengthRangeOfMotionVariant4() => IsStrengthRangeOfMotionVariant4
-            ? StrengthRangeOfMotionVariant4!.Value
+        public global::Terra.StrengthRangeOfMotionVariant4 PickStrengthRangeOfMotionVariant4() => StrengthRangeOfMotionVariant4 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthRangeOfMotionVariant4' but the value was {ToString()}.");
 
         /// <summary>
@@ -191,8 +191,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthRangeOfMotionVariant5 PickStrengthRangeOfMotionVariant5() => IsStrengthRangeOfMotionVariant5
-            ? StrengthRangeOfMotionVariant5!.Value
+        public global::Terra.StrengthRangeOfMotionVariant5 PickStrengthRangeOfMotionVariant5() => StrengthRangeOfMotionVariant5 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthRangeOfMotionVariant5' but the value was {ToString()}.");
 
         /// <summary>
@@ -228,8 +228,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthRangeOfMotionVariant6 PickStrengthRangeOfMotionVariant6() => IsStrengthRangeOfMotionVariant6
-            ? StrengthRangeOfMotionVariant6!.Value
+        public global::Terra.StrengthRangeOfMotionVariant6 PickStrengthRangeOfMotionVariant6() => StrengthRangeOfMotionVariant6 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthRangeOfMotionVariant6' but the value was {ToString()}.");
 
         /// <summary>
@@ -265,8 +265,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.StrengthRangeOfMotionVariant7 PickStrengthRangeOfMotionVariant7() => IsStrengthRangeOfMotionVariant7
-            ? StrengthRangeOfMotionVariant7!.Value
+        public global::Terra.StrengthRangeOfMotionVariant7 PickStrengthRangeOfMotionVariant7() => StrengthRangeOfMotionVariant7 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthRangeOfMotionVariant7' but the value was {ToString()}.");
 
         /// <summary>
@@ -302,8 +302,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public string PickStrengthRangeOfMotionVariant8() => IsStrengthRangeOfMotionVariant8
-            ? StrengthRangeOfMotionVariant8!
+        public string PickStrengthRangeOfMotionVariant8() => StrengthRangeOfMotionVariant8 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StrengthRangeOfMotionVariant8' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -568,37 +568,37 @@ namespace Terra
                 Validate();
             }
 
-            if (IsStrengthRangeOfMotionVariant1 && strengthRangeOfMotionVariant1 != null)
+            if (StrengthRangeOfMotionVariant1 is { } __value0 && strengthRangeOfMotionVariant1 != null)
             {
-                return strengthRangeOfMotionVariant1(StrengthRangeOfMotionVariant1!);
+                return strengthRangeOfMotionVariant1(__value0);
             }
-            else if (IsStrengthRangeOfMotionVariant2 && strengthRangeOfMotionVariant2 != null)
+            else if (StrengthRangeOfMotionVariant2 is { } __value1 && strengthRangeOfMotionVariant2 != null)
             {
-                return strengthRangeOfMotionVariant2(StrengthRangeOfMotionVariant2!);
+                return strengthRangeOfMotionVariant2(__value1);
             }
-            else if (IsStrengthRangeOfMotionVariant3 && strengthRangeOfMotionVariant3 != null)
+            else if (StrengthRangeOfMotionVariant3 is { } __value2 && strengthRangeOfMotionVariant3 != null)
             {
-                return strengthRangeOfMotionVariant3(StrengthRangeOfMotionVariant3!);
+                return strengthRangeOfMotionVariant3(__value2);
             }
-            else if (IsStrengthRangeOfMotionVariant4 && strengthRangeOfMotionVariant4 != null)
+            else if (StrengthRangeOfMotionVariant4 is { } __value3 && strengthRangeOfMotionVariant4 != null)
             {
-                return strengthRangeOfMotionVariant4(StrengthRangeOfMotionVariant4!);
+                return strengthRangeOfMotionVariant4(__value3);
             }
-            else if (IsStrengthRangeOfMotionVariant5 && strengthRangeOfMotionVariant5 != null)
+            else if (StrengthRangeOfMotionVariant5 is { } __value4 && strengthRangeOfMotionVariant5 != null)
             {
-                return strengthRangeOfMotionVariant5(StrengthRangeOfMotionVariant5!);
+                return strengthRangeOfMotionVariant5(__value4);
             }
-            else if (IsStrengthRangeOfMotionVariant6 && strengthRangeOfMotionVariant6 != null)
+            else if (StrengthRangeOfMotionVariant6 is { } __value5 && strengthRangeOfMotionVariant6 != null)
             {
-                return strengthRangeOfMotionVariant6(StrengthRangeOfMotionVariant6!);
+                return strengthRangeOfMotionVariant6(__value5);
             }
-            else if (IsStrengthRangeOfMotionVariant7 && strengthRangeOfMotionVariant7 != null)
+            else if (StrengthRangeOfMotionVariant7 is { } __value6 && strengthRangeOfMotionVariant7 != null)
             {
-                return strengthRangeOfMotionVariant7(StrengthRangeOfMotionVariant7!);
+                return strengthRangeOfMotionVariant7(__value6);
             }
-            else if (IsStrengthRangeOfMotionVariant8 && strengthRangeOfMotionVariant8 != null)
+            else if (StrengthRangeOfMotionVariant8 is { } __value7 && strengthRangeOfMotionVariant8 != null)
             {
-                return strengthRangeOfMotionVariant8(StrengthRangeOfMotionVariant8!);
+                return strengthRangeOfMotionVariant8(__value7);
             }
 
             return default(TResult);
@@ -630,37 +630,37 @@ namespace Terra
                 Validate();
             }
 
-            if (IsStrengthRangeOfMotionVariant1)
+            if (StrengthRangeOfMotionVariant1 is { } __value0)
             {
-                strengthRangeOfMotionVariant1?.Invoke(StrengthRangeOfMotionVariant1!);
+                strengthRangeOfMotionVariant1?.Invoke(__value0);
             }
-            else if (IsStrengthRangeOfMotionVariant2)
+            else if (StrengthRangeOfMotionVariant2 is { } __value1)
             {
-                strengthRangeOfMotionVariant2?.Invoke(StrengthRangeOfMotionVariant2!);
+                strengthRangeOfMotionVariant2?.Invoke(__value1);
             }
-            else if (IsStrengthRangeOfMotionVariant3)
+            else if (StrengthRangeOfMotionVariant3 is { } __value2)
             {
-                strengthRangeOfMotionVariant3?.Invoke(StrengthRangeOfMotionVariant3!);
+                strengthRangeOfMotionVariant3?.Invoke(__value2);
             }
-            else if (IsStrengthRangeOfMotionVariant4)
+            else if (StrengthRangeOfMotionVariant4 is { } __value3)
             {
-                strengthRangeOfMotionVariant4?.Invoke(StrengthRangeOfMotionVariant4!);
+                strengthRangeOfMotionVariant4?.Invoke(__value3);
             }
-            else if (IsStrengthRangeOfMotionVariant5)
+            else if (StrengthRangeOfMotionVariant5 is { } __value4)
             {
-                strengthRangeOfMotionVariant5?.Invoke(StrengthRangeOfMotionVariant5!);
+                strengthRangeOfMotionVariant5?.Invoke(__value4);
             }
-            else if (IsStrengthRangeOfMotionVariant6)
+            else if (StrengthRangeOfMotionVariant6 is { } __value5)
             {
-                strengthRangeOfMotionVariant6?.Invoke(StrengthRangeOfMotionVariant6!);
+                strengthRangeOfMotionVariant6?.Invoke(__value5);
             }
-            else if (IsStrengthRangeOfMotionVariant7)
+            else if (StrengthRangeOfMotionVariant7 is { } __value6)
             {
-                strengthRangeOfMotionVariant7?.Invoke(StrengthRangeOfMotionVariant7!);
+                strengthRangeOfMotionVariant7?.Invoke(__value6);
             }
-            else if (IsStrengthRangeOfMotionVariant8)
+            else if (StrengthRangeOfMotionVariant8 is { } __value7)
             {
-                strengthRangeOfMotionVariant8?.Invoke(StrengthRangeOfMotionVariant8!);
+                strengthRangeOfMotionVariant8?.Invoke(__value7);
             }
         }
 
@@ -683,37 +683,37 @@ namespace Terra
                 Validate();
             }
 
-            if (IsStrengthRangeOfMotionVariant1)
+            if (StrengthRangeOfMotionVariant1 is { } __value0)
             {
-                strengthRangeOfMotionVariant1?.Invoke(StrengthRangeOfMotionVariant1!);
+                strengthRangeOfMotionVariant1?.Invoke(__value0);
             }
-            else if (IsStrengthRangeOfMotionVariant2)
+            else if (StrengthRangeOfMotionVariant2 is { } __value1)
             {
-                strengthRangeOfMotionVariant2?.Invoke(StrengthRangeOfMotionVariant2!);
+                strengthRangeOfMotionVariant2?.Invoke(__value1);
             }
-            else if (IsStrengthRangeOfMotionVariant3)
+            else if (StrengthRangeOfMotionVariant3 is { } __value2)
             {
-                strengthRangeOfMotionVariant3?.Invoke(StrengthRangeOfMotionVariant3!);
+                strengthRangeOfMotionVariant3?.Invoke(__value2);
             }
-            else if (IsStrengthRangeOfMotionVariant4)
+            else if (StrengthRangeOfMotionVariant4 is { } __value3)
             {
-                strengthRangeOfMotionVariant4?.Invoke(StrengthRangeOfMotionVariant4!);
+                strengthRangeOfMotionVariant4?.Invoke(__value3);
             }
-            else if (IsStrengthRangeOfMotionVariant5)
+            else if (StrengthRangeOfMotionVariant5 is { } __value4)
             {
-                strengthRangeOfMotionVariant5?.Invoke(StrengthRangeOfMotionVariant5!);
+                strengthRangeOfMotionVariant5?.Invoke(__value4);
             }
-            else if (IsStrengthRangeOfMotionVariant6)
+            else if (StrengthRangeOfMotionVariant6 is { } __value5)
             {
-                strengthRangeOfMotionVariant6?.Invoke(StrengthRangeOfMotionVariant6!);
+                strengthRangeOfMotionVariant6?.Invoke(__value5);
             }
-            else if (IsStrengthRangeOfMotionVariant7)
+            else if (StrengthRangeOfMotionVariant7 is { } __value6)
             {
-                strengthRangeOfMotionVariant7?.Invoke(StrengthRangeOfMotionVariant7!);
+                strengthRangeOfMotionVariant7?.Invoke(__value6);
             }
-            else if (IsStrengthRangeOfMotionVariant8)
+            else if (StrengthRangeOfMotionVariant8 is { } __value7)
             {
-                strengthRangeOfMotionVariant8?.Invoke(StrengthRangeOfMotionVariant8!);
+                strengthRangeOfMotionVariant8?.Invoke(__value7);
             }
         }
 

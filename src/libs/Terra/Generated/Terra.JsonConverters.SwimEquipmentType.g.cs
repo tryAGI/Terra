@@ -345,37 +345,37 @@ namespace Terra.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.SwimEquipmentTypeVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.SwimEquipmentTypeVariant1> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.SwimEquipmentTypeVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SwimEquipmentTypeVariant1!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSwimEquipmentTypeVariant1(), typeInfo);
             }
             else if (value.IsSwimEquipmentTypeVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.SwimEquipmentTypeVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.SwimEquipmentTypeVariant2> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.SwimEquipmentTypeVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SwimEquipmentTypeVariant2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSwimEquipmentTypeVariant2(), typeInfo);
             }
             else if (value.IsSwimEquipmentTypeVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.SwimEquipmentTypeVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.SwimEquipmentTypeVariant3> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.SwimEquipmentTypeVariant3).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SwimEquipmentTypeVariant3!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSwimEquipmentTypeVariant3(), typeInfo);
             }
             else if (value.IsSwimEquipmentTypeVariant4)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.SwimEquipmentTypeVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.SwimEquipmentTypeVariant4> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.SwimEquipmentTypeVariant4).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SwimEquipmentTypeVariant4!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSwimEquipmentTypeVariant4(), typeInfo);
             }
             else if (value.IsSwimEquipmentTypeVariant5)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.SwimEquipmentTypeVariant5), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.SwimEquipmentTypeVariant5> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.SwimEquipmentTypeVariant5).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SwimEquipmentTypeVariant5!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSwimEquipmentTypeVariant5(), typeInfo);
             }
             else if (value.IsSwimEquipmentTypeVariant6)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.SwimEquipmentTypeVariant6), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.SwimEquipmentTypeVariant6> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.SwimEquipmentTypeVariant6).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SwimEquipmentTypeVariant6!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSwimEquipmentTypeVariant6(), typeInfo);
             }
         }
     }

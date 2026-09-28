@@ -198,19 +198,19 @@ namespace Terra.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthProgrammeVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthProgrammeVariant1> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthProgrammeVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthProgrammeVariant1!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthProgrammeVariant1(), typeInfo);
             }
             else if (value.IsStrengthProgrammeVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthProgrammeVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthProgrammeVariant2> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthProgrammeVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthProgrammeVariant2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthProgrammeVariant2(), typeInfo);
             }
             else if (value.IsStrengthProgrammeVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthProgrammeVariant3!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthProgrammeVariant3(), typeInfo);
             }
         }
     }

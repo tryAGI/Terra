@@ -42,8 +42,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.AuthSuccessEvent PickAuthSuccess() => IsAuthSuccess
-            ? AuthSuccess!
+        public global::Terra.AuthSuccessEvent PickAuthSuccess() => AuthSuccess is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AuthSuccess' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.AuthErrorEvent PickAuthError() => IsAuthError
-            ? AuthError!
+        public global::Terra.AuthErrorEvent PickAuthError() => AuthError is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AuthError' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.DeauthEvent PickDeauth() => IsDeauth
-            ? Deauth!
+        public global::Terra.DeauthEvent PickDeauth() => Deauth is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Deauth' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.UserReauthEvent PickUserReauth() => IsUserReauth
-            ? UserReauth!
+        public global::Terra.UserReauthEvent PickUserReauth() => UserReauth is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UserReauth' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.AccessRevokedEvent PickAccessRevoked() => IsAccessRevoked
-            ? AccessRevoked!
+        public global::Terra.AccessRevokedEvent PickAccessRevoked() => AccessRevoked is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AccessRevoked' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.ConnectionErrorEvent PickConnectionError() => IsConnectionError
-            ? ConnectionError!
+        public global::Terra.ConnectionErrorEvent PickConnectionError() => ConnectionError is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ConnectionError' but the value was {ToString()}.");
 
         /// <summary>
@@ -264,8 +264,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.PermissionChangeEvent PickPermissionChange() => IsPermissionChange
-            ? PermissionChange!
+        public global::Terra.PermissionChangeEvent PickPermissionChange() => PermissionChange is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PermissionChange' but the value was {ToString()}.");
 
         /// <summary>
@@ -301,8 +301,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.LargeRequestProcessingEvent PickLargeRequestProcessing() => IsLargeRequestProcessing
-            ? LargeRequestProcessing!
+        public global::Terra.LargeRequestProcessingEvent PickLargeRequestProcessing() => LargeRequestProcessing is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'LargeRequestProcessing' but the value was {ToString()}.");
 
         /// <summary>
@@ -338,8 +338,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.LargeRequestSendingEvent PickLargeRequestSending() => IsLargeRequestSending
-            ? LargeRequestSending!
+        public global::Terra.LargeRequestSendingEvent PickLargeRequestSending() => LargeRequestSending is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'LargeRequestSending' but the value was {ToString()}.");
 
         /// <summary>
@@ -375,8 +375,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.ActivityEvent PickActivity() => IsActivity
-            ? Activity!
+        public global::Terra.ActivityEvent PickActivity() => Activity is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Activity' but the value was {ToString()}.");
 
         /// <summary>
@@ -412,8 +412,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.AthleteEvent PickAthlete() => IsAthlete
-            ? Athlete!
+        public global::Terra.AthleteEvent PickAthlete() => Athlete is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Athlete' but the value was {ToString()}.");
 
         /// <summary>
@@ -449,8 +449,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.BodyEvent PickBody() => IsBody
-            ? Body!
+        public global::Terra.BodyEvent PickBody() => Body is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Body' but the value was {ToString()}.");
 
         /// <summary>
@@ -486,8 +486,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.DailyEvent PickDaily() => IsDaily
-            ? Daily!
+        public global::Terra.DailyEvent PickDaily() => Daily is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Daily' but the value was {ToString()}.");
 
         /// <summary>
@@ -523,8 +523,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.MenstruationEvent PickMenstruation() => IsMenstruation
-            ? Menstruation!
+        public global::Terra.MenstruationEvent PickMenstruation() => Menstruation is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Menstruation' but the value was {ToString()}.");
 
         /// <summary>
@@ -560,8 +560,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.NutritionEvent PickNutrition() => IsNutrition
-            ? Nutrition!
+        public global::Terra.NutritionEvent PickNutrition() => Nutrition is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Nutrition' but the value was {ToString()}.");
 
         /// <summary>
@@ -597,8 +597,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.SleepEvent PickSleep() => IsSleep
-            ? Sleep!
+        public global::Terra.SleepEvent PickSleep() => Sleep is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Sleep' but the value was {ToString()}.");
 
         /// <summary>
@@ -634,8 +634,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.PlannedWorkoutEvent PickPlannedWorkout() => IsPlannedWorkout
-            ? PlannedWorkout!
+        public global::Terra.PlannedWorkoutEvent PickPlannedWorkout() => PlannedWorkout is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PlannedWorkout' but the value was {ToString()}.");
 
         /// <summary>
@@ -671,8 +671,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.HormoneEvent PickHormone() => IsHormone
-            ? Hormone!
+        public global::Terra.HormoneEvent PickHormone() => Hormone is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Hormone' but the value was {ToString()}.");
 
         /// <summary>
@@ -708,8 +708,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.HealthObservationEvent PickHealthObservation() => IsHealthObservation
-            ? HealthObservation!
+        public global::Terra.HealthObservationEvent PickHealthObservation() => HealthObservation is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'HealthObservation' but the value was {ToString()}.");
 
         /// <summary>
@@ -745,8 +745,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.LabReportCompletedEvent PickLabReportCompleted() => IsLabReportCompleted
-            ? LabReportCompleted!
+        public global::Terra.LabReportCompletedEvent PickLabReportCompleted() => LabReportCompleted is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'LabReportCompleted' but the value was {ToString()}.");
 
         /// <summary>
@@ -782,8 +782,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.LabReportFailedEvent PickLabReportFailed() => IsLabReportFailed
-            ? LabReportFailed!
+        public global::Terra.LabReportFailedEvent PickLabReportFailed() => LabReportFailed is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'LabReportFailed' but the value was {ToString()}.");
 
         /// <summary>
@@ -819,8 +819,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.S3PayloadEvent PickS3Payload() => IsS3Payload
-            ? S3Payload!
+        public global::Terra.S3PayloadEvent PickS3Payload() => S3Payload is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'S3Payload' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -1477,93 +1477,93 @@ namespace Terra
                 Validate();
             }
 
-            if (IsAuthSuccess && authSuccess != null)
+            if (AuthSuccess is { } __value0 && authSuccess != null)
             {
-                return authSuccess(AuthSuccess!);
+                return authSuccess(__value0);
             }
-            else if (IsAuthError && authError != null)
+            else if (AuthError is { } __value1 && authError != null)
             {
-                return authError(AuthError!);
+                return authError(__value1);
             }
-            else if (IsDeauth && deauth != null)
+            else if (Deauth is { } __value2 && deauth != null)
             {
-                return deauth(Deauth!);
+                return deauth(__value2);
             }
-            else if (IsUserReauth && userReauth != null)
+            else if (UserReauth is { } __value3 && userReauth != null)
             {
-                return userReauth(UserReauth!);
+                return userReauth(__value3);
             }
-            else if (IsAccessRevoked && accessRevoked != null)
+            else if (AccessRevoked is { } __value4 && accessRevoked != null)
             {
-                return accessRevoked(AccessRevoked!);
+                return accessRevoked(__value4);
             }
-            else if (IsConnectionError && connectionError != null)
+            else if (ConnectionError is { } __value5 && connectionError != null)
             {
-                return connectionError(ConnectionError!);
+                return connectionError(__value5);
             }
-            else if (IsPermissionChange && permissionChange != null)
+            else if (PermissionChange is { } __value6 && permissionChange != null)
             {
-                return permissionChange(PermissionChange!);
+                return permissionChange(__value6);
             }
-            else if (IsLargeRequestProcessing && largeRequestProcessing != null)
+            else if (LargeRequestProcessing is { } __value7 && largeRequestProcessing != null)
             {
-                return largeRequestProcessing(LargeRequestProcessing!);
+                return largeRequestProcessing(__value7);
             }
-            else if (IsLargeRequestSending && largeRequestSending != null)
+            else if (LargeRequestSending is { } __value8 && largeRequestSending != null)
             {
-                return largeRequestSending(LargeRequestSending!);
+                return largeRequestSending(__value8);
             }
-            else if (IsActivity && activity != null)
+            else if (Activity is { } __value9 && activity != null)
             {
-                return activity(Activity!);
+                return activity(__value9);
             }
-            else if (IsAthlete && athlete != null)
+            else if (Athlete is { } __value10 && athlete != null)
             {
-                return athlete(Athlete!);
+                return athlete(__value10);
             }
-            else if (IsBody && body != null)
+            else if (Body is { } __value11 && body != null)
             {
-                return body(Body!);
+                return body(__value11);
             }
-            else if (IsDaily && daily != null)
+            else if (Daily is { } __value12 && daily != null)
             {
-                return daily(Daily!);
+                return daily(__value12);
             }
-            else if (IsMenstruation && menstruation != null)
+            else if (Menstruation is { } __value13 && menstruation != null)
             {
-                return menstruation(Menstruation!);
+                return menstruation(__value13);
             }
-            else if (IsNutrition && nutrition != null)
+            else if (Nutrition is { } __value14 && nutrition != null)
             {
-                return nutrition(Nutrition!);
+                return nutrition(__value14);
             }
-            else if (IsSleep && sleep != null)
+            else if (Sleep is { } __value15 && sleep != null)
             {
-                return sleep(Sleep!);
+                return sleep(__value15);
             }
-            else if (IsPlannedWorkout && plannedWorkout != null)
+            else if (PlannedWorkout is { } __value16 && plannedWorkout != null)
             {
-                return plannedWorkout(PlannedWorkout!);
+                return plannedWorkout(__value16);
             }
-            else if (IsHormone && hormone != null)
+            else if (Hormone is { } __value17 && hormone != null)
             {
-                return hormone(Hormone!);
+                return hormone(__value17);
             }
-            else if (IsHealthObservation && healthObservation != null)
+            else if (HealthObservation is { } __value18 && healthObservation != null)
             {
-                return healthObservation(HealthObservation!);
+                return healthObservation(__value18);
             }
-            else if (IsLabReportCompleted && labReportCompleted != null)
+            else if (LabReportCompleted is { } __value19 && labReportCompleted != null)
             {
-                return labReportCompleted(LabReportCompleted!);
+                return labReportCompleted(__value19);
             }
-            else if (IsLabReportFailed && labReportFailed != null)
+            else if (LabReportFailed is { } __value20 && labReportFailed != null)
             {
-                return labReportFailed(LabReportFailed!);
+                return labReportFailed(__value20);
             }
-            else if (IsS3Payload && s3Payload != null)
+            else if (S3Payload is { } __value21 && s3Payload != null)
             {
-                return s3Payload(S3Payload!);
+                return s3Payload(__value21);
             }
 
             return default(TResult);
@@ -1623,93 +1623,93 @@ namespace Terra
                 Validate();
             }
 
-            if (IsAuthSuccess)
+            if (AuthSuccess is { } __value0)
             {
-                authSuccess?.Invoke(AuthSuccess!);
+                authSuccess?.Invoke(__value0);
             }
-            else if (IsAuthError)
+            else if (AuthError is { } __value1)
             {
-                authError?.Invoke(AuthError!);
+                authError?.Invoke(__value1);
             }
-            else if (IsDeauth)
+            else if (Deauth is { } __value2)
             {
-                deauth?.Invoke(Deauth!);
+                deauth?.Invoke(__value2);
             }
-            else if (IsUserReauth)
+            else if (UserReauth is { } __value3)
             {
-                userReauth?.Invoke(UserReauth!);
+                userReauth?.Invoke(__value3);
             }
-            else if (IsAccessRevoked)
+            else if (AccessRevoked is { } __value4)
             {
-                accessRevoked?.Invoke(AccessRevoked!);
+                accessRevoked?.Invoke(__value4);
             }
-            else if (IsConnectionError)
+            else if (ConnectionError is { } __value5)
             {
-                connectionError?.Invoke(ConnectionError!);
+                connectionError?.Invoke(__value5);
             }
-            else if (IsPermissionChange)
+            else if (PermissionChange is { } __value6)
             {
-                permissionChange?.Invoke(PermissionChange!);
+                permissionChange?.Invoke(__value6);
             }
-            else if (IsLargeRequestProcessing)
+            else if (LargeRequestProcessing is { } __value7)
             {
-                largeRequestProcessing?.Invoke(LargeRequestProcessing!);
+                largeRequestProcessing?.Invoke(__value7);
             }
-            else if (IsLargeRequestSending)
+            else if (LargeRequestSending is { } __value8)
             {
-                largeRequestSending?.Invoke(LargeRequestSending!);
+                largeRequestSending?.Invoke(__value8);
             }
-            else if (IsActivity)
+            else if (Activity is { } __value9)
             {
-                activity?.Invoke(Activity!);
+                activity?.Invoke(__value9);
             }
-            else if (IsAthlete)
+            else if (Athlete is { } __value10)
             {
-                athlete?.Invoke(Athlete!);
+                athlete?.Invoke(__value10);
             }
-            else if (IsBody)
+            else if (Body is { } __value11)
             {
-                body?.Invoke(Body!);
+                body?.Invoke(__value11);
             }
-            else if (IsDaily)
+            else if (Daily is { } __value12)
             {
-                daily?.Invoke(Daily!);
+                daily?.Invoke(__value12);
             }
-            else if (IsMenstruation)
+            else if (Menstruation is { } __value13)
             {
-                menstruation?.Invoke(Menstruation!);
+                menstruation?.Invoke(__value13);
             }
-            else if (IsNutrition)
+            else if (Nutrition is { } __value14)
             {
-                nutrition?.Invoke(Nutrition!);
+                nutrition?.Invoke(__value14);
             }
-            else if (IsSleep)
+            else if (Sleep is { } __value15)
             {
-                sleep?.Invoke(Sleep!);
+                sleep?.Invoke(__value15);
             }
-            else if (IsPlannedWorkout)
+            else if (PlannedWorkout is { } __value16)
             {
-                plannedWorkout?.Invoke(PlannedWorkout!);
+                plannedWorkout?.Invoke(__value16);
             }
-            else if (IsHormone)
+            else if (Hormone is { } __value17)
             {
-                hormone?.Invoke(Hormone!);
+                hormone?.Invoke(__value17);
             }
-            else if (IsHealthObservation)
+            else if (HealthObservation is { } __value18)
             {
-                healthObservation?.Invoke(HealthObservation!);
+                healthObservation?.Invoke(__value18);
             }
-            else if (IsLabReportCompleted)
+            else if (LabReportCompleted is { } __value19)
             {
-                labReportCompleted?.Invoke(LabReportCompleted!);
+                labReportCompleted?.Invoke(__value19);
             }
-            else if (IsLabReportFailed)
+            else if (LabReportFailed is { } __value20)
             {
-                labReportFailed?.Invoke(LabReportFailed!);
+                labReportFailed?.Invoke(__value20);
             }
-            else if (IsS3Payload)
+            else if (S3Payload is { } __value21)
             {
-                s3Payload?.Invoke(S3Payload!);
+                s3Payload?.Invoke(__value21);
             }
         }
 
@@ -1746,93 +1746,93 @@ namespace Terra
                 Validate();
             }
 
-            if (IsAuthSuccess)
+            if (AuthSuccess is { } __value0)
             {
-                authSuccess?.Invoke(AuthSuccess!);
+                authSuccess?.Invoke(__value0);
             }
-            else if (IsAuthError)
+            else if (AuthError is { } __value1)
             {
-                authError?.Invoke(AuthError!);
+                authError?.Invoke(__value1);
             }
-            else if (IsDeauth)
+            else if (Deauth is { } __value2)
             {
-                deauth?.Invoke(Deauth!);
+                deauth?.Invoke(__value2);
             }
-            else if (IsUserReauth)
+            else if (UserReauth is { } __value3)
             {
-                userReauth?.Invoke(UserReauth!);
+                userReauth?.Invoke(__value3);
             }
-            else if (IsAccessRevoked)
+            else if (AccessRevoked is { } __value4)
             {
-                accessRevoked?.Invoke(AccessRevoked!);
+                accessRevoked?.Invoke(__value4);
             }
-            else if (IsConnectionError)
+            else if (ConnectionError is { } __value5)
             {
-                connectionError?.Invoke(ConnectionError!);
+                connectionError?.Invoke(__value5);
             }
-            else if (IsPermissionChange)
+            else if (PermissionChange is { } __value6)
             {
-                permissionChange?.Invoke(PermissionChange!);
+                permissionChange?.Invoke(__value6);
             }
-            else if (IsLargeRequestProcessing)
+            else if (LargeRequestProcessing is { } __value7)
             {
-                largeRequestProcessing?.Invoke(LargeRequestProcessing!);
+                largeRequestProcessing?.Invoke(__value7);
             }
-            else if (IsLargeRequestSending)
+            else if (LargeRequestSending is { } __value8)
             {
-                largeRequestSending?.Invoke(LargeRequestSending!);
+                largeRequestSending?.Invoke(__value8);
             }
-            else if (IsActivity)
+            else if (Activity is { } __value9)
             {
-                activity?.Invoke(Activity!);
+                activity?.Invoke(__value9);
             }
-            else if (IsAthlete)
+            else if (Athlete is { } __value10)
             {
-                athlete?.Invoke(Athlete!);
+                athlete?.Invoke(__value10);
             }
-            else if (IsBody)
+            else if (Body is { } __value11)
             {
-                body?.Invoke(Body!);
+                body?.Invoke(__value11);
             }
-            else if (IsDaily)
+            else if (Daily is { } __value12)
             {
-                daily?.Invoke(Daily!);
+                daily?.Invoke(__value12);
             }
-            else if (IsMenstruation)
+            else if (Menstruation is { } __value13)
             {
-                menstruation?.Invoke(Menstruation!);
+                menstruation?.Invoke(__value13);
             }
-            else if (IsNutrition)
+            else if (Nutrition is { } __value14)
             {
-                nutrition?.Invoke(Nutrition!);
+                nutrition?.Invoke(__value14);
             }
-            else if (IsSleep)
+            else if (Sleep is { } __value15)
             {
-                sleep?.Invoke(Sleep!);
+                sleep?.Invoke(__value15);
             }
-            else if (IsPlannedWorkout)
+            else if (PlannedWorkout is { } __value16)
             {
-                plannedWorkout?.Invoke(PlannedWorkout!);
+                plannedWorkout?.Invoke(__value16);
             }
-            else if (IsHormone)
+            else if (Hormone is { } __value17)
             {
-                hormone?.Invoke(Hormone!);
+                hormone?.Invoke(__value17);
             }
-            else if (IsHealthObservation)
+            else if (HealthObservation is { } __value18)
             {
-                healthObservation?.Invoke(HealthObservation!);
+                healthObservation?.Invoke(__value18);
             }
-            else if (IsLabReportCompleted)
+            else if (LabReportCompleted is { } __value19)
             {
-                labReportCompleted?.Invoke(LabReportCompleted!);
+                labReportCompleted?.Invoke(__value19);
             }
-            else if (IsLabReportFailed)
+            else if (LabReportFailed is { } __value20)
             {
-                labReportFailed?.Invoke(LabReportFailed!);
+                labReportFailed?.Invoke(__value20);
             }
-            else if (IsS3Payload)
+            else if (S3Payload is { } __value21)
             {
-                s3Payload?.Invoke(S3Payload!);
+                s3Payload?.Invoke(__value21);
             }
         }
 

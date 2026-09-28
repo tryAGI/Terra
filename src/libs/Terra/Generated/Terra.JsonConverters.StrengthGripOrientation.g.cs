@@ -492,55 +492,55 @@ namespace Terra.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthGripOrientationVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthGripOrientationVariant1> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthGripOrientationVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthGripOrientationVariant1!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthGripOrientationVariant1(), typeInfo);
             }
             else if (value.IsStrengthGripOrientationVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthGripOrientationVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthGripOrientationVariant2> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthGripOrientationVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthGripOrientationVariant2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthGripOrientationVariant2(), typeInfo);
             }
             else if (value.IsStrengthGripOrientationVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthGripOrientationVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthGripOrientationVariant3> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthGripOrientationVariant3).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthGripOrientationVariant3!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthGripOrientationVariant3(), typeInfo);
             }
             else if (value.IsStrengthGripOrientationVariant4)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthGripOrientationVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthGripOrientationVariant4> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthGripOrientationVariant4).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthGripOrientationVariant4!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthGripOrientationVariant4(), typeInfo);
             }
             else if (value.IsStrengthGripOrientationVariant5)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthGripOrientationVariant5), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthGripOrientationVariant5> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthGripOrientationVariant5).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthGripOrientationVariant5!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthGripOrientationVariant5(), typeInfo);
             }
             else if (value.IsStrengthGripOrientationVariant6)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthGripOrientationVariant6), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthGripOrientationVariant6> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthGripOrientationVariant6).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthGripOrientationVariant6!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthGripOrientationVariant6(), typeInfo);
             }
             else if (value.IsStrengthGripOrientationVariant7)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthGripOrientationVariant7), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthGripOrientationVariant7> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthGripOrientationVariant7).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthGripOrientationVariant7!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthGripOrientationVariant7(), typeInfo);
             }
             else if (value.IsStrengthGripOrientationVariant8)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.StrengthGripOrientationVariant8), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.StrengthGripOrientationVariant8> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.StrengthGripOrientationVariant8).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthGripOrientationVariant8!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthGripOrientationVariant8(), typeInfo);
             }
             else if (value.IsStrengthGripOrientationVariant9)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StrengthGripOrientationVariant9!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStrengthGripOrientationVariant9(), typeInfo);
             }
         }
     }

@@ -786,91 +786,91 @@ namespace Terra.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.WorkoutSportVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.WorkoutSportVariant1> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.WorkoutSportVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkoutSportVariant1!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickWorkoutSportVariant1(), typeInfo);
             }
             else if (value.IsWorkoutSportVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.WorkoutSportVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.WorkoutSportVariant2> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.WorkoutSportVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkoutSportVariant2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickWorkoutSportVariant2(), typeInfo);
             }
             else if (value.IsWorkoutSportVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.WorkoutSportVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.WorkoutSportVariant3> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.WorkoutSportVariant3).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkoutSportVariant3!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickWorkoutSportVariant3(), typeInfo);
             }
             else if (value.IsWorkoutSportVariant4)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.WorkoutSportVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.WorkoutSportVariant4> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.WorkoutSportVariant4).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkoutSportVariant4!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickWorkoutSportVariant4(), typeInfo);
             }
             else if (value.IsWorkoutSportVariant5)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.WorkoutSportVariant5), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.WorkoutSportVariant5> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.WorkoutSportVariant5).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkoutSportVariant5!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickWorkoutSportVariant5(), typeInfo);
             }
             else if (value.IsWorkoutSportVariant6)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.WorkoutSportVariant6), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.WorkoutSportVariant6> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.WorkoutSportVariant6).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkoutSportVariant6!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickWorkoutSportVariant6(), typeInfo);
             }
             else if (value.IsWorkoutSportVariant7)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.WorkoutSportVariant7), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.WorkoutSportVariant7> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.WorkoutSportVariant7).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkoutSportVariant7!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickWorkoutSportVariant7(), typeInfo);
             }
             else if (value.IsWorkoutSportVariant8)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.WorkoutSportVariant8), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.WorkoutSportVariant8> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.WorkoutSportVariant8).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkoutSportVariant8!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickWorkoutSportVariant8(), typeInfo);
             }
             else if (value.IsWorkoutSportVariant9)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.WorkoutSportVariant9), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.WorkoutSportVariant9> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.WorkoutSportVariant9).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkoutSportVariant9!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickWorkoutSportVariant9(), typeInfo);
             }
             else if (value.IsWorkoutSportVariant10)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.WorkoutSportVariant10), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.WorkoutSportVariant10> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.WorkoutSportVariant10).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkoutSportVariant10!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickWorkoutSportVariant10(), typeInfo);
             }
             else if (value.IsWorkoutSportVariant11)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.WorkoutSportVariant11), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.WorkoutSportVariant11> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.WorkoutSportVariant11).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkoutSportVariant11!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickWorkoutSportVariant11(), typeInfo);
             }
             else if (value.IsWorkoutSportVariant12)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.WorkoutSportVariant12), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.WorkoutSportVariant12> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.WorkoutSportVariant12).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkoutSportVariant12!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickWorkoutSportVariant12(), typeInfo);
             }
             else if (value.IsWorkoutSportVariant13)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.WorkoutSportVariant13), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.WorkoutSportVariant13> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.WorkoutSportVariant13).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkoutSportVariant13!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickWorkoutSportVariant13(), typeInfo);
             }
             else if (value.IsWorkoutSportVariant14)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.WorkoutSportVariant14), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.WorkoutSportVariant14> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.WorkoutSportVariant14).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkoutSportVariant14!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickWorkoutSportVariant14(), typeInfo);
             }
             else if (value.IsWorkoutSportVariant15)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.WorkoutSportVariant15), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.WorkoutSportVariant15> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.WorkoutSportVariant15).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkoutSportVariant15!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickWorkoutSportVariant15(), typeInfo);
             }
         }
     }

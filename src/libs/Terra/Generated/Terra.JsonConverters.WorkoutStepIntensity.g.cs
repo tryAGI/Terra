@@ -296,31 +296,31 @@ namespace Terra.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.WorkoutStepIntensityVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.WorkoutStepIntensityVariant1> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.WorkoutStepIntensityVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkoutStepIntensityVariant1!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickWorkoutStepIntensityVariant1(), typeInfo);
             }
             else if (value.IsWorkoutStepIntensityVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.WorkoutStepIntensityVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.WorkoutStepIntensityVariant2> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.WorkoutStepIntensityVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkoutStepIntensityVariant2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickWorkoutStepIntensityVariant2(), typeInfo);
             }
             else if (value.IsWorkoutStepIntensityVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.WorkoutStepIntensityVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.WorkoutStepIntensityVariant3> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.WorkoutStepIntensityVariant3).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkoutStepIntensityVariant3!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickWorkoutStepIntensityVariant3(), typeInfo);
             }
             else if (value.IsWorkoutStepIntensityVariant4)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.WorkoutStepIntensityVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.WorkoutStepIntensityVariant4> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.WorkoutStepIntensityVariant4).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkoutStepIntensityVariant4!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickWorkoutStepIntensityVariant4(), typeInfo);
             }
             else if (value.IsWorkoutStepIntensityVariant5)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Terra.WorkoutStepIntensityVariant5), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Terra.WorkoutStepIntensityVariant5> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Terra.WorkoutStepIntensityVariant5).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkoutStepIntensityVariant5!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickWorkoutStepIntensityVariant5(), typeInfo);
             }
         }
     }

@@ -42,8 +42,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.WorkoutStepTargetTypeVariant1 PickWorkoutStepTargetTypeVariant1() => IsWorkoutStepTargetTypeVariant1
-            ? WorkoutStepTargetTypeVariant1!.Value
+        public global::Terra.WorkoutStepTargetTypeVariant1 PickWorkoutStepTargetTypeVariant1() => WorkoutStepTargetTypeVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepTargetTypeVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.WorkoutStepTargetTypeVariant2 PickWorkoutStepTargetTypeVariant2() => IsWorkoutStepTargetTypeVariant2
-            ? WorkoutStepTargetTypeVariant2!.Value
+        public global::Terra.WorkoutStepTargetTypeVariant2 PickWorkoutStepTargetTypeVariant2() => WorkoutStepTargetTypeVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepTargetTypeVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.WorkoutStepTargetTypeVariant3 PickWorkoutStepTargetTypeVariant3() => IsWorkoutStepTargetTypeVariant3
-            ? WorkoutStepTargetTypeVariant3!.Value
+        public global::Terra.WorkoutStepTargetTypeVariant3 PickWorkoutStepTargetTypeVariant3() => WorkoutStepTargetTypeVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepTargetTypeVariant3' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.WorkoutStepTargetTypeVariant4 PickWorkoutStepTargetTypeVariant4() => IsWorkoutStepTargetTypeVariant4
-            ? WorkoutStepTargetTypeVariant4!.Value
+        public global::Terra.WorkoutStepTargetTypeVariant4 PickWorkoutStepTargetTypeVariant4() => WorkoutStepTargetTypeVariant4 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepTargetTypeVariant4' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.WorkoutStepTargetTypeVariant5 PickWorkoutStepTargetTypeVariant5() => IsWorkoutStepTargetTypeVariant5
-            ? WorkoutStepTargetTypeVariant5!.Value
+        public global::Terra.WorkoutStepTargetTypeVariant5 PickWorkoutStepTargetTypeVariant5() => WorkoutStepTargetTypeVariant5 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepTargetTypeVariant5' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.WorkoutStepTargetTypeVariant6 PickWorkoutStepTargetTypeVariant6() => IsWorkoutStepTargetTypeVariant6
-            ? WorkoutStepTargetTypeVariant6!.Value
+        public global::Terra.WorkoutStepTargetTypeVariant6 PickWorkoutStepTargetTypeVariant6() => WorkoutStepTargetTypeVariant6 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepTargetTypeVariant6' but the value was {ToString()}.");
 
         /// <summary>
@@ -264,8 +264,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.WorkoutStepTargetTypeVariant7 PickWorkoutStepTargetTypeVariant7() => IsWorkoutStepTargetTypeVariant7
-            ? WorkoutStepTargetTypeVariant7!.Value
+        public global::Terra.WorkoutStepTargetTypeVariant7 PickWorkoutStepTargetTypeVariant7() => WorkoutStepTargetTypeVariant7 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepTargetTypeVariant7' but the value was {ToString()}.");
 
         /// <summary>
@@ -301,8 +301,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.WorkoutStepTargetTypeVariant8 PickWorkoutStepTargetTypeVariant8() => IsWorkoutStepTargetTypeVariant8
-            ? WorkoutStepTargetTypeVariant8!.Value
+        public global::Terra.WorkoutStepTargetTypeVariant8 PickWorkoutStepTargetTypeVariant8() => WorkoutStepTargetTypeVariant8 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepTargetTypeVariant8' but the value was {ToString()}.");
 
         /// <summary>
@@ -338,8 +338,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.WorkoutStepTargetTypeVariant9 PickWorkoutStepTargetTypeVariant9() => IsWorkoutStepTargetTypeVariant9
-            ? WorkoutStepTargetTypeVariant9!.Value
+        public global::Terra.WorkoutStepTargetTypeVariant9 PickWorkoutStepTargetTypeVariant9() => WorkoutStepTargetTypeVariant9 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepTargetTypeVariant9' but the value was {ToString()}.");
 
         /// <summary>
@@ -375,8 +375,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.WorkoutStepTargetTypeVariant10 PickWorkoutStepTargetTypeVariant10() => IsWorkoutStepTargetTypeVariant10
-            ? WorkoutStepTargetTypeVariant10!.Value
+        public global::Terra.WorkoutStepTargetTypeVariant10 PickWorkoutStepTargetTypeVariant10() => WorkoutStepTargetTypeVariant10 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepTargetTypeVariant10' but the value was {ToString()}.");
 
         /// <summary>
@@ -412,8 +412,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.WorkoutStepTargetTypeVariant11 PickWorkoutStepTargetTypeVariant11() => IsWorkoutStepTargetTypeVariant11
-            ? WorkoutStepTargetTypeVariant11!.Value
+        public global::Terra.WorkoutStepTargetTypeVariant11 PickWorkoutStepTargetTypeVariant11() => WorkoutStepTargetTypeVariant11 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepTargetTypeVariant11' but the value was {ToString()}.");
 
         /// <summary>
@@ -449,8 +449,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.WorkoutStepTargetTypeVariant12 PickWorkoutStepTargetTypeVariant12() => IsWorkoutStepTargetTypeVariant12
-            ? WorkoutStepTargetTypeVariant12!.Value
+        public global::Terra.WorkoutStepTargetTypeVariant12 PickWorkoutStepTargetTypeVariant12() => WorkoutStepTargetTypeVariant12 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepTargetTypeVariant12' but the value was {ToString()}.");
 
         /// <summary>
@@ -486,8 +486,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.WorkoutStepTargetTypeVariant13 PickWorkoutStepTargetTypeVariant13() => IsWorkoutStepTargetTypeVariant13
-            ? WorkoutStepTargetTypeVariant13!.Value
+        public global::Terra.WorkoutStepTargetTypeVariant13 PickWorkoutStepTargetTypeVariant13() => WorkoutStepTargetTypeVariant13 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepTargetTypeVariant13' but the value was {ToString()}.");
 
         /// <summary>
@@ -523,8 +523,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.WorkoutStepTargetTypeVariant14 PickWorkoutStepTargetTypeVariant14() => IsWorkoutStepTargetTypeVariant14
-            ? WorkoutStepTargetTypeVariant14!.Value
+        public global::Terra.WorkoutStepTargetTypeVariant14 PickWorkoutStepTargetTypeVariant14() => WorkoutStepTargetTypeVariant14 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepTargetTypeVariant14' but the value was {ToString()}.");
 
         /// <summary>
@@ -560,8 +560,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.WorkoutStepTargetTypeVariant15 PickWorkoutStepTargetTypeVariant15() => IsWorkoutStepTargetTypeVariant15
-            ? WorkoutStepTargetTypeVariant15!.Value
+        public global::Terra.WorkoutStepTargetTypeVariant15 PickWorkoutStepTargetTypeVariant15() => WorkoutStepTargetTypeVariant15 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepTargetTypeVariant15' but the value was {ToString()}.");
 
         /// <summary>
@@ -597,8 +597,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.WorkoutStepTargetTypeVariant16 PickWorkoutStepTargetTypeVariant16() => IsWorkoutStepTargetTypeVariant16
-            ? WorkoutStepTargetTypeVariant16!.Value
+        public global::Terra.WorkoutStepTargetTypeVariant16 PickWorkoutStepTargetTypeVariant16() => WorkoutStepTargetTypeVariant16 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepTargetTypeVariant16' but the value was {ToString()}.");
 
         /// <summary>
@@ -634,8 +634,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.WorkoutStepTargetTypeVariant17 PickWorkoutStepTargetTypeVariant17() => IsWorkoutStepTargetTypeVariant17
-            ? WorkoutStepTargetTypeVariant17!.Value
+        public global::Terra.WorkoutStepTargetTypeVariant17 PickWorkoutStepTargetTypeVariant17() => WorkoutStepTargetTypeVariant17 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepTargetTypeVariant17' but the value was {ToString()}.");
 
         /// <summary>
@@ -671,8 +671,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.WorkoutStepTargetTypeVariant18 PickWorkoutStepTargetTypeVariant18() => IsWorkoutStepTargetTypeVariant18
-            ? WorkoutStepTargetTypeVariant18!.Value
+        public global::Terra.WorkoutStepTargetTypeVariant18 PickWorkoutStepTargetTypeVariant18() => WorkoutStepTargetTypeVariant18 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepTargetTypeVariant18' but the value was {ToString()}.");
 
         /// <summary>
@@ -708,8 +708,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.WorkoutStepTargetTypeVariant19 PickWorkoutStepTargetTypeVariant19() => IsWorkoutStepTargetTypeVariant19
-            ? WorkoutStepTargetTypeVariant19!.Value
+        public global::Terra.WorkoutStepTargetTypeVariant19 PickWorkoutStepTargetTypeVariant19() => WorkoutStepTargetTypeVariant19 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkoutStepTargetTypeVariant19' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -1282,81 +1282,81 @@ namespace Terra
                 Validate();
             }
 
-            if (IsWorkoutStepTargetTypeVariant1 && workoutStepTargetTypeVariant1 != null)
+            if (WorkoutStepTargetTypeVariant1 is { } __value0 && workoutStepTargetTypeVariant1 != null)
             {
-                return workoutStepTargetTypeVariant1(WorkoutStepTargetTypeVariant1!);
+                return workoutStepTargetTypeVariant1(__value0);
             }
-            else if (IsWorkoutStepTargetTypeVariant2 && workoutStepTargetTypeVariant2 != null)
+            else if (WorkoutStepTargetTypeVariant2 is { } __value1 && workoutStepTargetTypeVariant2 != null)
             {
-                return workoutStepTargetTypeVariant2(WorkoutStepTargetTypeVariant2!);
+                return workoutStepTargetTypeVariant2(__value1);
             }
-            else if (IsWorkoutStepTargetTypeVariant3 && workoutStepTargetTypeVariant3 != null)
+            else if (WorkoutStepTargetTypeVariant3 is { } __value2 && workoutStepTargetTypeVariant3 != null)
             {
-                return workoutStepTargetTypeVariant3(WorkoutStepTargetTypeVariant3!);
+                return workoutStepTargetTypeVariant3(__value2);
             }
-            else if (IsWorkoutStepTargetTypeVariant4 && workoutStepTargetTypeVariant4 != null)
+            else if (WorkoutStepTargetTypeVariant4 is { } __value3 && workoutStepTargetTypeVariant4 != null)
             {
-                return workoutStepTargetTypeVariant4(WorkoutStepTargetTypeVariant4!);
+                return workoutStepTargetTypeVariant4(__value3);
             }
-            else if (IsWorkoutStepTargetTypeVariant5 && workoutStepTargetTypeVariant5 != null)
+            else if (WorkoutStepTargetTypeVariant5 is { } __value4 && workoutStepTargetTypeVariant5 != null)
             {
-                return workoutStepTargetTypeVariant5(WorkoutStepTargetTypeVariant5!);
+                return workoutStepTargetTypeVariant5(__value4);
             }
-            else if (IsWorkoutStepTargetTypeVariant6 && workoutStepTargetTypeVariant6 != null)
+            else if (WorkoutStepTargetTypeVariant6 is { } __value5 && workoutStepTargetTypeVariant6 != null)
             {
-                return workoutStepTargetTypeVariant6(WorkoutStepTargetTypeVariant6!);
+                return workoutStepTargetTypeVariant6(__value5);
             }
-            else if (IsWorkoutStepTargetTypeVariant7 && workoutStepTargetTypeVariant7 != null)
+            else if (WorkoutStepTargetTypeVariant7 is { } __value6 && workoutStepTargetTypeVariant7 != null)
             {
-                return workoutStepTargetTypeVariant7(WorkoutStepTargetTypeVariant7!);
+                return workoutStepTargetTypeVariant7(__value6);
             }
-            else if (IsWorkoutStepTargetTypeVariant8 && workoutStepTargetTypeVariant8 != null)
+            else if (WorkoutStepTargetTypeVariant8 is { } __value7 && workoutStepTargetTypeVariant8 != null)
             {
-                return workoutStepTargetTypeVariant8(WorkoutStepTargetTypeVariant8!);
+                return workoutStepTargetTypeVariant8(__value7);
             }
-            else if (IsWorkoutStepTargetTypeVariant9 && workoutStepTargetTypeVariant9 != null)
+            else if (WorkoutStepTargetTypeVariant9 is { } __value8 && workoutStepTargetTypeVariant9 != null)
             {
-                return workoutStepTargetTypeVariant9(WorkoutStepTargetTypeVariant9!);
+                return workoutStepTargetTypeVariant9(__value8);
             }
-            else if (IsWorkoutStepTargetTypeVariant10 && workoutStepTargetTypeVariant10 != null)
+            else if (WorkoutStepTargetTypeVariant10 is { } __value9 && workoutStepTargetTypeVariant10 != null)
             {
-                return workoutStepTargetTypeVariant10(WorkoutStepTargetTypeVariant10!);
+                return workoutStepTargetTypeVariant10(__value9);
             }
-            else if (IsWorkoutStepTargetTypeVariant11 && workoutStepTargetTypeVariant11 != null)
+            else if (WorkoutStepTargetTypeVariant11 is { } __value10 && workoutStepTargetTypeVariant11 != null)
             {
-                return workoutStepTargetTypeVariant11(WorkoutStepTargetTypeVariant11!);
+                return workoutStepTargetTypeVariant11(__value10);
             }
-            else if (IsWorkoutStepTargetTypeVariant12 && workoutStepTargetTypeVariant12 != null)
+            else if (WorkoutStepTargetTypeVariant12 is { } __value11 && workoutStepTargetTypeVariant12 != null)
             {
-                return workoutStepTargetTypeVariant12(WorkoutStepTargetTypeVariant12!);
+                return workoutStepTargetTypeVariant12(__value11);
             }
-            else if (IsWorkoutStepTargetTypeVariant13 && workoutStepTargetTypeVariant13 != null)
+            else if (WorkoutStepTargetTypeVariant13 is { } __value12 && workoutStepTargetTypeVariant13 != null)
             {
-                return workoutStepTargetTypeVariant13(WorkoutStepTargetTypeVariant13!);
+                return workoutStepTargetTypeVariant13(__value12);
             }
-            else if (IsWorkoutStepTargetTypeVariant14 && workoutStepTargetTypeVariant14 != null)
+            else if (WorkoutStepTargetTypeVariant14 is { } __value13 && workoutStepTargetTypeVariant14 != null)
             {
-                return workoutStepTargetTypeVariant14(WorkoutStepTargetTypeVariant14!);
+                return workoutStepTargetTypeVariant14(__value13);
             }
-            else if (IsWorkoutStepTargetTypeVariant15 && workoutStepTargetTypeVariant15 != null)
+            else if (WorkoutStepTargetTypeVariant15 is { } __value14 && workoutStepTargetTypeVariant15 != null)
             {
-                return workoutStepTargetTypeVariant15(WorkoutStepTargetTypeVariant15!);
+                return workoutStepTargetTypeVariant15(__value14);
             }
-            else if (IsWorkoutStepTargetTypeVariant16 && workoutStepTargetTypeVariant16 != null)
+            else if (WorkoutStepTargetTypeVariant16 is { } __value15 && workoutStepTargetTypeVariant16 != null)
             {
-                return workoutStepTargetTypeVariant16(WorkoutStepTargetTypeVariant16!);
+                return workoutStepTargetTypeVariant16(__value15);
             }
-            else if (IsWorkoutStepTargetTypeVariant17 && workoutStepTargetTypeVariant17 != null)
+            else if (WorkoutStepTargetTypeVariant17 is { } __value16 && workoutStepTargetTypeVariant17 != null)
             {
-                return workoutStepTargetTypeVariant17(WorkoutStepTargetTypeVariant17!);
+                return workoutStepTargetTypeVariant17(__value16);
             }
-            else if (IsWorkoutStepTargetTypeVariant18 && workoutStepTargetTypeVariant18 != null)
+            else if (WorkoutStepTargetTypeVariant18 is { } __value17 && workoutStepTargetTypeVariant18 != null)
             {
-                return workoutStepTargetTypeVariant18(WorkoutStepTargetTypeVariant18!);
+                return workoutStepTargetTypeVariant18(__value17);
             }
-            else if (IsWorkoutStepTargetTypeVariant19 && workoutStepTargetTypeVariant19 != null)
+            else if (WorkoutStepTargetTypeVariant19 is { } __value18 && workoutStepTargetTypeVariant19 != null)
             {
-                return workoutStepTargetTypeVariant19(WorkoutStepTargetTypeVariant19!);
+                return workoutStepTargetTypeVariant19(__value18);
             }
 
             return default(TResult);
@@ -1410,81 +1410,81 @@ namespace Terra
                 Validate();
             }
 
-            if (IsWorkoutStepTargetTypeVariant1)
+            if (WorkoutStepTargetTypeVariant1 is { } __value0)
             {
-                workoutStepTargetTypeVariant1?.Invoke(WorkoutStepTargetTypeVariant1!);
+                workoutStepTargetTypeVariant1?.Invoke(__value0);
             }
-            else if (IsWorkoutStepTargetTypeVariant2)
+            else if (WorkoutStepTargetTypeVariant2 is { } __value1)
             {
-                workoutStepTargetTypeVariant2?.Invoke(WorkoutStepTargetTypeVariant2!);
+                workoutStepTargetTypeVariant2?.Invoke(__value1);
             }
-            else if (IsWorkoutStepTargetTypeVariant3)
+            else if (WorkoutStepTargetTypeVariant3 is { } __value2)
             {
-                workoutStepTargetTypeVariant3?.Invoke(WorkoutStepTargetTypeVariant3!);
+                workoutStepTargetTypeVariant3?.Invoke(__value2);
             }
-            else if (IsWorkoutStepTargetTypeVariant4)
+            else if (WorkoutStepTargetTypeVariant4 is { } __value3)
             {
-                workoutStepTargetTypeVariant4?.Invoke(WorkoutStepTargetTypeVariant4!);
+                workoutStepTargetTypeVariant4?.Invoke(__value3);
             }
-            else if (IsWorkoutStepTargetTypeVariant5)
+            else if (WorkoutStepTargetTypeVariant5 is { } __value4)
             {
-                workoutStepTargetTypeVariant5?.Invoke(WorkoutStepTargetTypeVariant5!);
+                workoutStepTargetTypeVariant5?.Invoke(__value4);
             }
-            else if (IsWorkoutStepTargetTypeVariant6)
+            else if (WorkoutStepTargetTypeVariant6 is { } __value5)
             {
-                workoutStepTargetTypeVariant6?.Invoke(WorkoutStepTargetTypeVariant6!);
+                workoutStepTargetTypeVariant6?.Invoke(__value5);
             }
-            else if (IsWorkoutStepTargetTypeVariant7)
+            else if (WorkoutStepTargetTypeVariant7 is { } __value6)
             {
-                workoutStepTargetTypeVariant7?.Invoke(WorkoutStepTargetTypeVariant7!);
+                workoutStepTargetTypeVariant7?.Invoke(__value6);
             }
-            else if (IsWorkoutStepTargetTypeVariant8)
+            else if (WorkoutStepTargetTypeVariant8 is { } __value7)
             {
-                workoutStepTargetTypeVariant8?.Invoke(WorkoutStepTargetTypeVariant8!);
+                workoutStepTargetTypeVariant8?.Invoke(__value7);
             }
-            else if (IsWorkoutStepTargetTypeVariant9)
+            else if (WorkoutStepTargetTypeVariant9 is { } __value8)
             {
-                workoutStepTargetTypeVariant9?.Invoke(WorkoutStepTargetTypeVariant9!);
+                workoutStepTargetTypeVariant9?.Invoke(__value8);
             }
-            else if (IsWorkoutStepTargetTypeVariant10)
+            else if (WorkoutStepTargetTypeVariant10 is { } __value9)
             {
-                workoutStepTargetTypeVariant10?.Invoke(WorkoutStepTargetTypeVariant10!);
+                workoutStepTargetTypeVariant10?.Invoke(__value9);
             }
-            else if (IsWorkoutStepTargetTypeVariant11)
+            else if (WorkoutStepTargetTypeVariant11 is { } __value10)
             {
-                workoutStepTargetTypeVariant11?.Invoke(WorkoutStepTargetTypeVariant11!);
+                workoutStepTargetTypeVariant11?.Invoke(__value10);
             }
-            else if (IsWorkoutStepTargetTypeVariant12)
+            else if (WorkoutStepTargetTypeVariant12 is { } __value11)
             {
-                workoutStepTargetTypeVariant12?.Invoke(WorkoutStepTargetTypeVariant12!);
+                workoutStepTargetTypeVariant12?.Invoke(__value11);
             }
-            else if (IsWorkoutStepTargetTypeVariant13)
+            else if (WorkoutStepTargetTypeVariant13 is { } __value12)
             {
-                workoutStepTargetTypeVariant13?.Invoke(WorkoutStepTargetTypeVariant13!);
+                workoutStepTargetTypeVariant13?.Invoke(__value12);
             }
-            else if (IsWorkoutStepTargetTypeVariant14)
+            else if (WorkoutStepTargetTypeVariant14 is { } __value13)
             {
-                workoutStepTargetTypeVariant14?.Invoke(WorkoutStepTargetTypeVariant14!);
+                workoutStepTargetTypeVariant14?.Invoke(__value13);
             }
-            else if (IsWorkoutStepTargetTypeVariant15)
+            else if (WorkoutStepTargetTypeVariant15 is { } __value14)
             {
-                workoutStepTargetTypeVariant15?.Invoke(WorkoutStepTargetTypeVariant15!);
+                workoutStepTargetTypeVariant15?.Invoke(__value14);
             }
-            else if (IsWorkoutStepTargetTypeVariant16)
+            else if (WorkoutStepTargetTypeVariant16 is { } __value15)
             {
-                workoutStepTargetTypeVariant16?.Invoke(WorkoutStepTargetTypeVariant16!);
+                workoutStepTargetTypeVariant16?.Invoke(__value15);
             }
-            else if (IsWorkoutStepTargetTypeVariant17)
+            else if (WorkoutStepTargetTypeVariant17 is { } __value16)
             {
-                workoutStepTargetTypeVariant17?.Invoke(WorkoutStepTargetTypeVariant17!);
+                workoutStepTargetTypeVariant17?.Invoke(__value16);
             }
-            else if (IsWorkoutStepTargetTypeVariant18)
+            else if (WorkoutStepTargetTypeVariant18 is { } __value17)
             {
-                workoutStepTargetTypeVariant18?.Invoke(WorkoutStepTargetTypeVariant18!);
+                workoutStepTargetTypeVariant18?.Invoke(__value17);
             }
-            else if (IsWorkoutStepTargetTypeVariant19)
+            else if (WorkoutStepTargetTypeVariant19 is { } __value18)
             {
-                workoutStepTargetTypeVariant19?.Invoke(WorkoutStepTargetTypeVariant19!);
+                workoutStepTargetTypeVariant19?.Invoke(__value18);
             }
         }
 
@@ -1518,81 +1518,81 @@ namespace Terra
                 Validate();
             }
 
-            if (IsWorkoutStepTargetTypeVariant1)
+            if (WorkoutStepTargetTypeVariant1 is { } __value0)
             {
-                workoutStepTargetTypeVariant1?.Invoke(WorkoutStepTargetTypeVariant1!);
+                workoutStepTargetTypeVariant1?.Invoke(__value0);
             }
-            else if (IsWorkoutStepTargetTypeVariant2)
+            else if (WorkoutStepTargetTypeVariant2 is { } __value1)
             {
-                workoutStepTargetTypeVariant2?.Invoke(WorkoutStepTargetTypeVariant2!);
+                workoutStepTargetTypeVariant2?.Invoke(__value1);
             }
-            else if (IsWorkoutStepTargetTypeVariant3)
+            else if (WorkoutStepTargetTypeVariant3 is { } __value2)
             {
-                workoutStepTargetTypeVariant3?.Invoke(WorkoutStepTargetTypeVariant3!);
+                workoutStepTargetTypeVariant3?.Invoke(__value2);
             }
-            else if (IsWorkoutStepTargetTypeVariant4)
+            else if (WorkoutStepTargetTypeVariant4 is { } __value3)
             {
-                workoutStepTargetTypeVariant4?.Invoke(WorkoutStepTargetTypeVariant4!);
+                workoutStepTargetTypeVariant4?.Invoke(__value3);
             }
-            else if (IsWorkoutStepTargetTypeVariant5)
+            else if (WorkoutStepTargetTypeVariant5 is { } __value4)
             {
-                workoutStepTargetTypeVariant5?.Invoke(WorkoutStepTargetTypeVariant5!);
+                workoutStepTargetTypeVariant5?.Invoke(__value4);
             }
-            else if (IsWorkoutStepTargetTypeVariant6)
+            else if (WorkoutStepTargetTypeVariant6 is { } __value5)
             {
-                workoutStepTargetTypeVariant6?.Invoke(WorkoutStepTargetTypeVariant6!);
+                workoutStepTargetTypeVariant6?.Invoke(__value5);
             }
-            else if (IsWorkoutStepTargetTypeVariant7)
+            else if (WorkoutStepTargetTypeVariant7 is { } __value6)
             {
-                workoutStepTargetTypeVariant7?.Invoke(WorkoutStepTargetTypeVariant7!);
+                workoutStepTargetTypeVariant7?.Invoke(__value6);
             }
-            else if (IsWorkoutStepTargetTypeVariant8)
+            else if (WorkoutStepTargetTypeVariant8 is { } __value7)
             {
-                workoutStepTargetTypeVariant8?.Invoke(WorkoutStepTargetTypeVariant8!);
+                workoutStepTargetTypeVariant8?.Invoke(__value7);
             }
-            else if (IsWorkoutStepTargetTypeVariant9)
+            else if (WorkoutStepTargetTypeVariant9 is { } __value8)
             {
-                workoutStepTargetTypeVariant9?.Invoke(WorkoutStepTargetTypeVariant9!);
+                workoutStepTargetTypeVariant9?.Invoke(__value8);
             }
-            else if (IsWorkoutStepTargetTypeVariant10)
+            else if (WorkoutStepTargetTypeVariant10 is { } __value9)
             {
-                workoutStepTargetTypeVariant10?.Invoke(WorkoutStepTargetTypeVariant10!);
+                workoutStepTargetTypeVariant10?.Invoke(__value9);
             }
-            else if (IsWorkoutStepTargetTypeVariant11)
+            else if (WorkoutStepTargetTypeVariant11 is { } __value10)
             {
-                workoutStepTargetTypeVariant11?.Invoke(WorkoutStepTargetTypeVariant11!);
+                workoutStepTargetTypeVariant11?.Invoke(__value10);
             }
-            else if (IsWorkoutStepTargetTypeVariant12)
+            else if (WorkoutStepTargetTypeVariant12 is { } __value11)
             {
-                workoutStepTargetTypeVariant12?.Invoke(WorkoutStepTargetTypeVariant12!);
+                workoutStepTargetTypeVariant12?.Invoke(__value11);
             }
-            else if (IsWorkoutStepTargetTypeVariant13)
+            else if (WorkoutStepTargetTypeVariant13 is { } __value12)
             {
-                workoutStepTargetTypeVariant13?.Invoke(WorkoutStepTargetTypeVariant13!);
+                workoutStepTargetTypeVariant13?.Invoke(__value12);
             }
-            else if (IsWorkoutStepTargetTypeVariant14)
+            else if (WorkoutStepTargetTypeVariant14 is { } __value13)
             {
-                workoutStepTargetTypeVariant14?.Invoke(WorkoutStepTargetTypeVariant14!);
+                workoutStepTargetTypeVariant14?.Invoke(__value13);
             }
-            else if (IsWorkoutStepTargetTypeVariant15)
+            else if (WorkoutStepTargetTypeVariant15 is { } __value14)
             {
-                workoutStepTargetTypeVariant15?.Invoke(WorkoutStepTargetTypeVariant15!);
+                workoutStepTargetTypeVariant15?.Invoke(__value14);
             }
-            else if (IsWorkoutStepTargetTypeVariant16)
+            else if (WorkoutStepTargetTypeVariant16 is { } __value15)
             {
-                workoutStepTargetTypeVariant16?.Invoke(WorkoutStepTargetTypeVariant16!);
+                workoutStepTargetTypeVariant16?.Invoke(__value15);
             }
-            else if (IsWorkoutStepTargetTypeVariant17)
+            else if (WorkoutStepTargetTypeVariant17 is { } __value16)
             {
-                workoutStepTargetTypeVariant17?.Invoke(WorkoutStepTargetTypeVariant17!);
+                workoutStepTargetTypeVariant17?.Invoke(__value16);
             }
-            else if (IsWorkoutStepTargetTypeVariant18)
+            else if (WorkoutStepTargetTypeVariant18 is { } __value17)
             {
-                workoutStepTargetTypeVariant18?.Invoke(WorkoutStepTargetTypeVariant18!);
+                workoutStepTargetTypeVariant18?.Invoke(__value17);
             }
-            else if (IsWorkoutStepTargetTypeVariant19)
+            else if (WorkoutStepTargetTypeVariant19 is { } __value18)
             {
-                workoutStepTargetTypeVariant19?.Invoke(WorkoutStepTargetTypeVariant19!);
+                workoutStepTargetTypeVariant19?.Invoke(__value18);
             }
         }
 

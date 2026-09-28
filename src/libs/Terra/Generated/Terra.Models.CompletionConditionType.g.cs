@@ -42,8 +42,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.CompletionConditionTypeVariant1 PickCompletionConditionTypeVariant1() => IsCompletionConditionTypeVariant1
-            ? CompletionConditionTypeVariant1!.Value
+        public global::Terra.CompletionConditionTypeVariant1 PickCompletionConditionTypeVariant1() => CompletionConditionTypeVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CompletionConditionTypeVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.CompletionConditionTypeVariant2 PickCompletionConditionTypeVariant2() => IsCompletionConditionTypeVariant2
-            ? CompletionConditionTypeVariant2!.Value
+        public global::Terra.CompletionConditionTypeVariant2 PickCompletionConditionTypeVariant2() => CompletionConditionTypeVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CompletionConditionTypeVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.CompletionConditionTypeVariant3 PickCompletionConditionTypeVariant3() => IsCompletionConditionTypeVariant3
-            ? CompletionConditionTypeVariant3!.Value
+        public global::Terra.CompletionConditionTypeVariant3 PickCompletionConditionTypeVariant3() => CompletionConditionTypeVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CompletionConditionTypeVariant3' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.CompletionConditionTypeVariant4 PickCompletionConditionTypeVariant4() => IsCompletionConditionTypeVariant4
-            ? CompletionConditionTypeVariant4!.Value
+        public global::Terra.CompletionConditionTypeVariant4 PickCompletionConditionTypeVariant4() => CompletionConditionTypeVariant4 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CompletionConditionTypeVariant4' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.CompletionConditionTypeVariant5 PickCompletionConditionTypeVariant5() => IsCompletionConditionTypeVariant5
-            ? CompletionConditionTypeVariant5!.Value
+        public global::Terra.CompletionConditionTypeVariant5 PickCompletionConditionTypeVariant5() => CompletionConditionTypeVariant5 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CompletionConditionTypeVariant5' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.CompletionConditionTypeVariant6 PickCompletionConditionTypeVariant6() => IsCompletionConditionTypeVariant6
-            ? CompletionConditionTypeVariant6!.Value
+        public global::Terra.CompletionConditionTypeVariant6 PickCompletionConditionTypeVariant6() => CompletionConditionTypeVariant6 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CompletionConditionTypeVariant6' but the value was {ToString()}.");
 
         /// <summary>
@@ -264,8 +264,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.CompletionConditionTypeVariant7 PickCompletionConditionTypeVariant7() => IsCompletionConditionTypeVariant7
-            ? CompletionConditionTypeVariant7!.Value
+        public global::Terra.CompletionConditionTypeVariant7 PickCompletionConditionTypeVariant7() => CompletionConditionTypeVariant7 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CompletionConditionTypeVariant7' but the value was {ToString()}.");
 
         /// <summary>
@@ -301,8 +301,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.CompletionConditionTypeVariant8 PickCompletionConditionTypeVariant8() => IsCompletionConditionTypeVariant8
-            ? CompletionConditionTypeVariant8!.Value
+        public global::Terra.CompletionConditionTypeVariant8 PickCompletionConditionTypeVariant8() => CompletionConditionTypeVariant8 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CompletionConditionTypeVariant8' but the value was {ToString()}.");
 
         /// <summary>
@@ -338,8 +338,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.CompletionConditionTypeVariant9 PickCompletionConditionTypeVariant9() => IsCompletionConditionTypeVariant9
-            ? CompletionConditionTypeVariant9!.Value
+        public global::Terra.CompletionConditionTypeVariant9 PickCompletionConditionTypeVariant9() => CompletionConditionTypeVariant9 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CompletionConditionTypeVariant9' but the value was {ToString()}.");
 
         /// <summary>
@@ -375,8 +375,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.CompletionConditionTypeVariant10 PickCompletionConditionTypeVariant10() => IsCompletionConditionTypeVariant10
-            ? CompletionConditionTypeVariant10!.Value
+        public global::Terra.CompletionConditionTypeVariant10 PickCompletionConditionTypeVariant10() => CompletionConditionTypeVariant10 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CompletionConditionTypeVariant10' but the value was {ToString()}.");
 
         /// <summary>
@@ -412,8 +412,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.CompletionConditionTypeVariant11 PickCompletionConditionTypeVariant11() => IsCompletionConditionTypeVariant11
-            ? CompletionConditionTypeVariant11!.Value
+        public global::Terra.CompletionConditionTypeVariant11 PickCompletionConditionTypeVariant11() => CompletionConditionTypeVariant11 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CompletionConditionTypeVariant11' but the value was {ToString()}.");
 
         /// <summary>
@@ -449,8 +449,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.CompletionConditionTypeVariant12 PickCompletionConditionTypeVariant12() => IsCompletionConditionTypeVariant12
-            ? CompletionConditionTypeVariant12!.Value
+        public global::Terra.CompletionConditionTypeVariant12 PickCompletionConditionTypeVariant12() => CompletionConditionTypeVariant12 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CompletionConditionTypeVariant12' but the value was {ToString()}.");
 
         /// <summary>
@@ -486,8 +486,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.CompletionConditionTypeVariant13 PickCompletionConditionTypeVariant13() => IsCompletionConditionTypeVariant13
-            ? CompletionConditionTypeVariant13!.Value
+        public global::Terra.CompletionConditionTypeVariant13 PickCompletionConditionTypeVariant13() => CompletionConditionTypeVariant13 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CompletionConditionTypeVariant13' but the value was {ToString()}.");
 
         /// <summary>
@@ -523,8 +523,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.CompletionConditionTypeVariant14 PickCompletionConditionTypeVariant14() => IsCompletionConditionTypeVariant14
-            ? CompletionConditionTypeVariant14!.Value
+        public global::Terra.CompletionConditionTypeVariant14 PickCompletionConditionTypeVariant14() => CompletionConditionTypeVariant14 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CompletionConditionTypeVariant14' but the value was {ToString()}.");
 
         /// <summary>
@@ -560,8 +560,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.CompletionConditionTypeVariant15 PickCompletionConditionTypeVariant15() => IsCompletionConditionTypeVariant15
-            ? CompletionConditionTypeVariant15!.Value
+        public global::Terra.CompletionConditionTypeVariant15 PickCompletionConditionTypeVariant15() => CompletionConditionTypeVariant15 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CompletionConditionTypeVariant15' but the value was {ToString()}.");
 
         /// <summary>
@@ -597,8 +597,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.CompletionConditionTypeVariant16 PickCompletionConditionTypeVariant16() => IsCompletionConditionTypeVariant16
-            ? CompletionConditionTypeVariant16!.Value
+        public global::Terra.CompletionConditionTypeVariant16 PickCompletionConditionTypeVariant16() => CompletionConditionTypeVariant16 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CompletionConditionTypeVariant16' but the value was {ToString()}.");
 
         /// <summary>
@@ -634,8 +634,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.CompletionConditionTypeVariant17 PickCompletionConditionTypeVariant17() => IsCompletionConditionTypeVariant17
-            ? CompletionConditionTypeVariant17!.Value
+        public global::Terra.CompletionConditionTypeVariant17 PickCompletionConditionTypeVariant17() => CompletionConditionTypeVariant17 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CompletionConditionTypeVariant17' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -1152,73 +1152,73 @@ namespace Terra
                 Validate();
             }
 
-            if (IsCompletionConditionTypeVariant1 && completionConditionTypeVariant1 != null)
+            if (CompletionConditionTypeVariant1 is { } __value0 && completionConditionTypeVariant1 != null)
             {
-                return completionConditionTypeVariant1(CompletionConditionTypeVariant1!);
+                return completionConditionTypeVariant1(__value0);
             }
-            else if (IsCompletionConditionTypeVariant2 && completionConditionTypeVariant2 != null)
+            else if (CompletionConditionTypeVariant2 is { } __value1 && completionConditionTypeVariant2 != null)
             {
-                return completionConditionTypeVariant2(CompletionConditionTypeVariant2!);
+                return completionConditionTypeVariant2(__value1);
             }
-            else if (IsCompletionConditionTypeVariant3 && completionConditionTypeVariant3 != null)
+            else if (CompletionConditionTypeVariant3 is { } __value2 && completionConditionTypeVariant3 != null)
             {
-                return completionConditionTypeVariant3(CompletionConditionTypeVariant3!);
+                return completionConditionTypeVariant3(__value2);
             }
-            else if (IsCompletionConditionTypeVariant4 && completionConditionTypeVariant4 != null)
+            else if (CompletionConditionTypeVariant4 is { } __value3 && completionConditionTypeVariant4 != null)
             {
-                return completionConditionTypeVariant4(CompletionConditionTypeVariant4!);
+                return completionConditionTypeVariant4(__value3);
             }
-            else if (IsCompletionConditionTypeVariant5 && completionConditionTypeVariant5 != null)
+            else if (CompletionConditionTypeVariant5 is { } __value4 && completionConditionTypeVariant5 != null)
             {
-                return completionConditionTypeVariant5(CompletionConditionTypeVariant5!);
+                return completionConditionTypeVariant5(__value4);
             }
-            else if (IsCompletionConditionTypeVariant6 && completionConditionTypeVariant6 != null)
+            else if (CompletionConditionTypeVariant6 is { } __value5 && completionConditionTypeVariant6 != null)
             {
-                return completionConditionTypeVariant6(CompletionConditionTypeVariant6!);
+                return completionConditionTypeVariant6(__value5);
             }
-            else if (IsCompletionConditionTypeVariant7 && completionConditionTypeVariant7 != null)
+            else if (CompletionConditionTypeVariant7 is { } __value6 && completionConditionTypeVariant7 != null)
             {
-                return completionConditionTypeVariant7(CompletionConditionTypeVariant7!);
+                return completionConditionTypeVariant7(__value6);
             }
-            else if (IsCompletionConditionTypeVariant8 && completionConditionTypeVariant8 != null)
+            else if (CompletionConditionTypeVariant8 is { } __value7 && completionConditionTypeVariant8 != null)
             {
-                return completionConditionTypeVariant8(CompletionConditionTypeVariant8!);
+                return completionConditionTypeVariant8(__value7);
             }
-            else if (IsCompletionConditionTypeVariant9 && completionConditionTypeVariant9 != null)
+            else if (CompletionConditionTypeVariant9 is { } __value8 && completionConditionTypeVariant9 != null)
             {
-                return completionConditionTypeVariant9(CompletionConditionTypeVariant9!);
+                return completionConditionTypeVariant9(__value8);
             }
-            else if (IsCompletionConditionTypeVariant10 && completionConditionTypeVariant10 != null)
+            else if (CompletionConditionTypeVariant10 is { } __value9 && completionConditionTypeVariant10 != null)
             {
-                return completionConditionTypeVariant10(CompletionConditionTypeVariant10!);
+                return completionConditionTypeVariant10(__value9);
             }
-            else if (IsCompletionConditionTypeVariant11 && completionConditionTypeVariant11 != null)
+            else if (CompletionConditionTypeVariant11 is { } __value10 && completionConditionTypeVariant11 != null)
             {
-                return completionConditionTypeVariant11(CompletionConditionTypeVariant11!);
+                return completionConditionTypeVariant11(__value10);
             }
-            else if (IsCompletionConditionTypeVariant12 && completionConditionTypeVariant12 != null)
+            else if (CompletionConditionTypeVariant12 is { } __value11 && completionConditionTypeVariant12 != null)
             {
-                return completionConditionTypeVariant12(CompletionConditionTypeVariant12!);
+                return completionConditionTypeVariant12(__value11);
             }
-            else if (IsCompletionConditionTypeVariant13 && completionConditionTypeVariant13 != null)
+            else if (CompletionConditionTypeVariant13 is { } __value12 && completionConditionTypeVariant13 != null)
             {
-                return completionConditionTypeVariant13(CompletionConditionTypeVariant13!);
+                return completionConditionTypeVariant13(__value12);
             }
-            else if (IsCompletionConditionTypeVariant14 && completionConditionTypeVariant14 != null)
+            else if (CompletionConditionTypeVariant14 is { } __value13 && completionConditionTypeVariant14 != null)
             {
-                return completionConditionTypeVariant14(CompletionConditionTypeVariant14!);
+                return completionConditionTypeVariant14(__value13);
             }
-            else if (IsCompletionConditionTypeVariant15 && completionConditionTypeVariant15 != null)
+            else if (CompletionConditionTypeVariant15 is { } __value14 && completionConditionTypeVariant15 != null)
             {
-                return completionConditionTypeVariant15(CompletionConditionTypeVariant15!);
+                return completionConditionTypeVariant15(__value14);
             }
-            else if (IsCompletionConditionTypeVariant16 && completionConditionTypeVariant16 != null)
+            else if (CompletionConditionTypeVariant16 is { } __value15 && completionConditionTypeVariant16 != null)
             {
-                return completionConditionTypeVariant16(CompletionConditionTypeVariant16!);
+                return completionConditionTypeVariant16(__value15);
             }
-            else if (IsCompletionConditionTypeVariant17 && completionConditionTypeVariant17 != null)
+            else if (CompletionConditionTypeVariant17 is { } __value16 && completionConditionTypeVariant17 != null)
             {
-                return completionConditionTypeVariant17(CompletionConditionTypeVariant17!);
+                return completionConditionTypeVariant17(__value16);
             }
 
             return default(TResult);
@@ -1268,73 +1268,73 @@ namespace Terra
                 Validate();
             }
 
-            if (IsCompletionConditionTypeVariant1)
+            if (CompletionConditionTypeVariant1 is { } __value0)
             {
-                completionConditionTypeVariant1?.Invoke(CompletionConditionTypeVariant1!);
+                completionConditionTypeVariant1?.Invoke(__value0);
             }
-            else if (IsCompletionConditionTypeVariant2)
+            else if (CompletionConditionTypeVariant2 is { } __value1)
             {
-                completionConditionTypeVariant2?.Invoke(CompletionConditionTypeVariant2!);
+                completionConditionTypeVariant2?.Invoke(__value1);
             }
-            else if (IsCompletionConditionTypeVariant3)
+            else if (CompletionConditionTypeVariant3 is { } __value2)
             {
-                completionConditionTypeVariant3?.Invoke(CompletionConditionTypeVariant3!);
+                completionConditionTypeVariant3?.Invoke(__value2);
             }
-            else if (IsCompletionConditionTypeVariant4)
+            else if (CompletionConditionTypeVariant4 is { } __value3)
             {
-                completionConditionTypeVariant4?.Invoke(CompletionConditionTypeVariant4!);
+                completionConditionTypeVariant4?.Invoke(__value3);
             }
-            else if (IsCompletionConditionTypeVariant5)
+            else if (CompletionConditionTypeVariant5 is { } __value4)
             {
-                completionConditionTypeVariant5?.Invoke(CompletionConditionTypeVariant5!);
+                completionConditionTypeVariant5?.Invoke(__value4);
             }
-            else if (IsCompletionConditionTypeVariant6)
+            else if (CompletionConditionTypeVariant6 is { } __value5)
             {
-                completionConditionTypeVariant6?.Invoke(CompletionConditionTypeVariant6!);
+                completionConditionTypeVariant6?.Invoke(__value5);
             }
-            else if (IsCompletionConditionTypeVariant7)
+            else if (CompletionConditionTypeVariant7 is { } __value6)
             {
-                completionConditionTypeVariant7?.Invoke(CompletionConditionTypeVariant7!);
+                completionConditionTypeVariant7?.Invoke(__value6);
             }
-            else if (IsCompletionConditionTypeVariant8)
+            else if (CompletionConditionTypeVariant8 is { } __value7)
             {
-                completionConditionTypeVariant8?.Invoke(CompletionConditionTypeVariant8!);
+                completionConditionTypeVariant8?.Invoke(__value7);
             }
-            else if (IsCompletionConditionTypeVariant9)
+            else if (CompletionConditionTypeVariant9 is { } __value8)
             {
-                completionConditionTypeVariant9?.Invoke(CompletionConditionTypeVariant9!);
+                completionConditionTypeVariant9?.Invoke(__value8);
             }
-            else if (IsCompletionConditionTypeVariant10)
+            else if (CompletionConditionTypeVariant10 is { } __value9)
             {
-                completionConditionTypeVariant10?.Invoke(CompletionConditionTypeVariant10!);
+                completionConditionTypeVariant10?.Invoke(__value9);
             }
-            else if (IsCompletionConditionTypeVariant11)
+            else if (CompletionConditionTypeVariant11 is { } __value10)
             {
-                completionConditionTypeVariant11?.Invoke(CompletionConditionTypeVariant11!);
+                completionConditionTypeVariant11?.Invoke(__value10);
             }
-            else if (IsCompletionConditionTypeVariant12)
+            else if (CompletionConditionTypeVariant12 is { } __value11)
             {
-                completionConditionTypeVariant12?.Invoke(CompletionConditionTypeVariant12!);
+                completionConditionTypeVariant12?.Invoke(__value11);
             }
-            else if (IsCompletionConditionTypeVariant13)
+            else if (CompletionConditionTypeVariant13 is { } __value12)
             {
-                completionConditionTypeVariant13?.Invoke(CompletionConditionTypeVariant13!);
+                completionConditionTypeVariant13?.Invoke(__value12);
             }
-            else if (IsCompletionConditionTypeVariant14)
+            else if (CompletionConditionTypeVariant14 is { } __value13)
             {
-                completionConditionTypeVariant14?.Invoke(CompletionConditionTypeVariant14!);
+                completionConditionTypeVariant14?.Invoke(__value13);
             }
-            else if (IsCompletionConditionTypeVariant15)
+            else if (CompletionConditionTypeVariant15 is { } __value14)
             {
-                completionConditionTypeVariant15?.Invoke(CompletionConditionTypeVariant15!);
+                completionConditionTypeVariant15?.Invoke(__value14);
             }
-            else if (IsCompletionConditionTypeVariant16)
+            else if (CompletionConditionTypeVariant16 is { } __value15)
             {
-                completionConditionTypeVariant16?.Invoke(CompletionConditionTypeVariant16!);
+                completionConditionTypeVariant16?.Invoke(__value15);
             }
-            else if (IsCompletionConditionTypeVariant17)
+            else if (CompletionConditionTypeVariant17 is { } __value16)
             {
-                completionConditionTypeVariant17?.Invoke(CompletionConditionTypeVariant17!);
+                completionConditionTypeVariant17?.Invoke(__value16);
             }
         }
 
@@ -1366,73 +1366,73 @@ namespace Terra
                 Validate();
             }
 
-            if (IsCompletionConditionTypeVariant1)
+            if (CompletionConditionTypeVariant1 is { } __value0)
             {
-                completionConditionTypeVariant1?.Invoke(CompletionConditionTypeVariant1!);
+                completionConditionTypeVariant1?.Invoke(__value0);
             }
-            else if (IsCompletionConditionTypeVariant2)
+            else if (CompletionConditionTypeVariant2 is { } __value1)
             {
-                completionConditionTypeVariant2?.Invoke(CompletionConditionTypeVariant2!);
+                completionConditionTypeVariant2?.Invoke(__value1);
             }
-            else if (IsCompletionConditionTypeVariant3)
+            else if (CompletionConditionTypeVariant3 is { } __value2)
             {
-                completionConditionTypeVariant3?.Invoke(CompletionConditionTypeVariant3!);
+                completionConditionTypeVariant3?.Invoke(__value2);
             }
-            else if (IsCompletionConditionTypeVariant4)
+            else if (CompletionConditionTypeVariant4 is { } __value3)
             {
-                completionConditionTypeVariant4?.Invoke(CompletionConditionTypeVariant4!);
+                completionConditionTypeVariant4?.Invoke(__value3);
             }
-            else if (IsCompletionConditionTypeVariant5)
+            else if (CompletionConditionTypeVariant5 is { } __value4)
             {
-                completionConditionTypeVariant5?.Invoke(CompletionConditionTypeVariant5!);
+                completionConditionTypeVariant5?.Invoke(__value4);
             }
-            else if (IsCompletionConditionTypeVariant6)
+            else if (CompletionConditionTypeVariant6 is { } __value5)
             {
-                completionConditionTypeVariant6?.Invoke(CompletionConditionTypeVariant6!);
+                completionConditionTypeVariant6?.Invoke(__value5);
             }
-            else if (IsCompletionConditionTypeVariant7)
+            else if (CompletionConditionTypeVariant7 is { } __value6)
             {
-                completionConditionTypeVariant7?.Invoke(CompletionConditionTypeVariant7!);
+                completionConditionTypeVariant7?.Invoke(__value6);
             }
-            else if (IsCompletionConditionTypeVariant8)
+            else if (CompletionConditionTypeVariant8 is { } __value7)
             {
-                completionConditionTypeVariant8?.Invoke(CompletionConditionTypeVariant8!);
+                completionConditionTypeVariant8?.Invoke(__value7);
             }
-            else if (IsCompletionConditionTypeVariant9)
+            else if (CompletionConditionTypeVariant9 is { } __value8)
             {
-                completionConditionTypeVariant9?.Invoke(CompletionConditionTypeVariant9!);
+                completionConditionTypeVariant9?.Invoke(__value8);
             }
-            else if (IsCompletionConditionTypeVariant10)
+            else if (CompletionConditionTypeVariant10 is { } __value9)
             {
-                completionConditionTypeVariant10?.Invoke(CompletionConditionTypeVariant10!);
+                completionConditionTypeVariant10?.Invoke(__value9);
             }
-            else if (IsCompletionConditionTypeVariant11)
+            else if (CompletionConditionTypeVariant11 is { } __value10)
             {
-                completionConditionTypeVariant11?.Invoke(CompletionConditionTypeVariant11!);
+                completionConditionTypeVariant11?.Invoke(__value10);
             }
-            else if (IsCompletionConditionTypeVariant12)
+            else if (CompletionConditionTypeVariant12 is { } __value11)
             {
-                completionConditionTypeVariant12?.Invoke(CompletionConditionTypeVariant12!);
+                completionConditionTypeVariant12?.Invoke(__value11);
             }
-            else if (IsCompletionConditionTypeVariant13)
+            else if (CompletionConditionTypeVariant13 is { } __value12)
             {
-                completionConditionTypeVariant13?.Invoke(CompletionConditionTypeVariant13!);
+                completionConditionTypeVariant13?.Invoke(__value12);
             }
-            else if (IsCompletionConditionTypeVariant14)
+            else if (CompletionConditionTypeVariant14 is { } __value13)
             {
-                completionConditionTypeVariant14?.Invoke(CompletionConditionTypeVariant14!);
+                completionConditionTypeVariant14?.Invoke(__value13);
             }
-            else if (IsCompletionConditionTypeVariant15)
+            else if (CompletionConditionTypeVariant15 is { } __value14)
             {
-                completionConditionTypeVariant15?.Invoke(CompletionConditionTypeVariant15!);
+                completionConditionTypeVariant15?.Invoke(__value14);
             }
-            else if (IsCompletionConditionTypeVariant16)
+            else if (CompletionConditionTypeVariant16 is { } __value15)
             {
-                completionConditionTypeVariant16?.Invoke(CompletionConditionTypeVariant16!);
+                completionConditionTypeVariant16?.Invoke(__value15);
             }
-            else if (IsCompletionConditionTypeVariant17)
+            else if (CompletionConditionTypeVariant17 is { } __value16)
             {
-                completionConditionTypeVariant17?.Invoke(CompletionConditionTypeVariant17!);
+                completionConditionTypeVariant17?.Invoke(__value16);
             }
         }
 

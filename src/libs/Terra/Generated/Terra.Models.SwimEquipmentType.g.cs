@@ -42,8 +42,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.SwimEquipmentTypeVariant1 PickSwimEquipmentTypeVariant1() => IsSwimEquipmentTypeVariant1
-            ? SwimEquipmentTypeVariant1!.Value
+        public global::Terra.SwimEquipmentTypeVariant1 PickSwimEquipmentTypeVariant1() => SwimEquipmentTypeVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SwimEquipmentTypeVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.SwimEquipmentTypeVariant2 PickSwimEquipmentTypeVariant2() => IsSwimEquipmentTypeVariant2
-            ? SwimEquipmentTypeVariant2!.Value
+        public global::Terra.SwimEquipmentTypeVariant2 PickSwimEquipmentTypeVariant2() => SwimEquipmentTypeVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SwimEquipmentTypeVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.SwimEquipmentTypeVariant3 PickSwimEquipmentTypeVariant3() => IsSwimEquipmentTypeVariant3
-            ? SwimEquipmentTypeVariant3!.Value
+        public global::Terra.SwimEquipmentTypeVariant3 PickSwimEquipmentTypeVariant3() => SwimEquipmentTypeVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SwimEquipmentTypeVariant3' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.SwimEquipmentTypeVariant4 PickSwimEquipmentTypeVariant4() => IsSwimEquipmentTypeVariant4
-            ? SwimEquipmentTypeVariant4!.Value
+        public global::Terra.SwimEquipmentTypeVariant4 PickSwimEquipmentTypeVariant4() => SwimEquipmentTypeVariant4 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SwimEquipmentTypeVariant4' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.SwimEquipmentTypeVariant5 PickSwimEquipmentTypeVariant5() => IsSwimEquipmentTypeVariant5
-            ? SwimEquipmentTypeVariant5!.Value
+        public global::Terra.SwimEquipmentTypeVariant5 PickSwimEquipmentTypeVariant5() => SwimEquipmentTypeVariant5 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SwimEquipmentTypeVariant5' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Terra
         /// <summary>
         ///
         /// </summary>
-        public global::Terra.SwimEquipmentTypeVariant6 PickSwimEquipmentTypeVariant6() => IsSwimEquipmentTypeVariant6
-            ? SwimEquipmentTypeVariant6!.Value
+        public global::Terra.SwimEquipmentTypeVariant6 PickSwimEquipmentTypeVariant6() => SwimEquipmentTypeVariant6 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SwimEquipmentTypeVariant6' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -437,29 +437,29 @@ namespace Terra
                 Validate();
             }
 
-            if (IsSwimEquipmentTypeVariant1 && swimEquipmentTypeVariant1 != null)
+            if (SwimEquipmentTypeVariant1 is { } __value0 && swimEquipmentTypeVariant1 != null)
             {
-                return swimEquipmentTypeVariant1(SwimEquipmentTypeVariant1!);
+                return swimEquipmentTypeVariant1(__value0);
             }
-            else if (IsSwimEquipmentTypeVariant2 && swimEquipmentTypeVariant2 != null)
+            else if (SwimEquipmentTypeVariant2 is { } __value1 && swimEquipmentTypeVariant2 != null)
             {
-                return swimEquipmentTypeVariant2(SwimEquipmentTypeVariant2!);
+                return swimEquipmentTypeVariant2(__value1);
             }
-            else if (IsSwimEquipmentTypeVariant3 && swimEquipmentTypeVariant3 != null)
+            else if (SwimEquipmentTypeVariant3 is { } __value2 && swimEquipmentTypeVariant3 != null)
             {
-                return swimEquipmentTypeVariant3(SwimEquipmentTypeVariant3!);
+                return swimEquipmentTypeVariant3(__value2);
             }
-            else if (IsSwimEquipmentTypeVariant4 && swimEquipmentTypeVariant4 != null)
+            else if (SwimEquipmentTypeVariant4 is { } __value3 && swimEquipmentTypeVariant4 != null)
             {
-                return swimEquipmentTypeVariant4(SwimEquipmentTypeVariant4!);
+                return swimEquipmentTypeVariant4(__value3);
             }
-            else if (IsSwimEquipmentTypeVariant5 && swimEquipmentTypeVariant5 != null)
+            else if (SwimEquipmentTypeVariant5 is { } __value4 && swimEquipmentTypeVariant5 != null)
             {
-                return swimEquipmentTypeVariant5(SwimEquipmentTypeVariant5!);
+                return swimEquipmentTypeVariant5(__value4);
             }
-            else if (IsSwimEquipmentTypeVariant6 && swimEquipmentTypeVariant6 != null)
+            else if (SwimEquipmentTypeVariant6 is { } __value5 && swimEquipmentTypeVariant6 != null)
             {
-                return swimEquipmentTypeVariant6(SwimEquipmentTypeVariant6!);
+                return swimEquipmentTypeVariant6(__value5);
             }
 
             return default(TResult);
@@ -487,29 +487,29 @@ namespace Terra
                 Validate();
             }
 
-            if (IsSwimEquipmentTypeVariant1)
+            if (SwimEquipmentTypeVariant1 is { } __value0)
             {
-                swimEquipmentTypeVariant1?.Invoke(SwimEquipmentTypeVariant1!);
+                swimEquipmentTypeVariant1?.Invoke(__value0);
             }
-            else if (IsSwimEquipmentTypeVariant2)
+            else if (SwimEquipmentTypeVariant2 is { } __value1)
             {
-                swimEquipmentTypeVariant2?.Invoke(SwimEquipmentTypeVariant2!);
+                swimEquipmentTypeVariant2?.Invoke(__value1);
             }
-            else if (IsSwimEquipmentTypeVariant3)
+            else if (SwimEquipmentTypeVariant3 is { } __value2)
             {
-                swimEquipmentTypeVariant3?.Invoke(SwimEquipmentTypeVariant3!);
+                swimEquipmentTypeVariant3?.Invoke(__value2);
             }
-            else if (IsSwimEquipmentTypeVariant4)
+            else if (SwimEquipmentTypeVariant4 is { } __value3)
             {
-                swimEquipmentTypeVariant4?.Invoke(SwimEquipmentTypeVariant4!);
+                swimEquipmentTypeVariant4?.Invoke(__value3);
             }
-            else if (IsSwimEquipmentTypeVariant5)
+            else if (SwimEquipmentTypeVariant5 is { } __value4)
             {
-                swimEquipmentTypeVariant5?.Invoke(SwimEquipmentTypeVariant5!);
+                swimEquipmentTypeVariant5?.Invoke(__value4);
             }
-            else if (IsSwimEquipmentTypeVariant6)
+            else if (SwimEquipmentTypeVariant6 is { } __value5)
             {
-                swimEquipmentTypeVariant6?.Invoke(SwimEquipmentTypeVariant6!);
+                swimEquipmentTypeVariant6?.Invoke(__value5);
             }
         }
 
@@ -530,29 +530,29 @@ namespace Terra
                 Validate();
             }
 
-            if (IsSwimEquipmentTypeVariant1)
+            if (SwimEquipmentTypeVariant1 is { } __value0)
             {
-                swimEquipmentTypeVariant1?.Invoke(SwimEquipmentTypeVariant1!);
+                swimEquipmentTypeVariant1?.Invoke(__value0);
             }
-            else if (IsSwimEquipmentTypeVariant2)
+            else if (SwimEquipmentTypeVariant2 is { } __value1)
             {
-                swimEquipmentTypeVariant2?.Invoke(SwimEquipmentTypeVariant2!);
+                swimEquipmentTypeVariant2?.Invoke(__value1);
             }
-            else if (IsSwimEquipmentTypeVariant3)
+            else if (SwimEquipmentTypeVariant3 is { } __value2)
             {
-                swimEquipmentTypeVariant3?.Invoke(SwimEquipmentTypeVariant3!);
+                swimEquipmentTypeVariant3?.Invoke(__value2);
             }
-            else if (IsSwimEquipmentTypeVariant4)
+            else if (SwimEquipmentTypeVariant4 is { } __value3)
             {
-                swimEquipmentTypeVariant4?.Invoke(SwimEquipmentTypeVariant4!);
+                swimEquipmentTypeVariant4?.Invoke(__value3);
             }
-            else if (IsSwimEquipmentTypeVariant5)
+            else if (SwimEquipmentTypeVariant5 is { } __value4)
             {
-                swimEquipmentTypeVariant5?.Invoke(SwimEquipmentTypeVariant5!);
+                swimEquipmentTypeVariant5?.Invoke(__value4);
             }
-            else if (IsSwimEquipmentTypeVariant6)
+            else if (SwimEquipmentTypeVariant6 is { } __value5)
             {
-                swimEquipmentTypeVariant6?.Invoke(SwimEquipmentTypeVariant6!);
+                swimEquipmentTypeVariant6?.Invoke(__value5);
             }
         }
 
