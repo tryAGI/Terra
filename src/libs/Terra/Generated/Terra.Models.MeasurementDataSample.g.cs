@@ -113,6 +113,22 @@ namespace Terra
         public double? WaterPercentage { get; set; }
 
         /// <summary>
+        /// Mass of fluid in the user's body. Reported instead of water_percentage by sources that measure water as a mass; converting between the two needs a total body weight, which is a separate reading and often absent.<br/>
+        /// Example: 38600
+        /// </summary>
+        /// <example>38600</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("water_mass_g")]
+        public double? WaterMassG { get; set; }
+
+        /// <summary>
+        /// Circumference of the user's waist.<br/>
+        /// Example: 84.5
+        /// </summary>
+        /// <example>84.5</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("waist_circumference_cm")]
+        public double? WaistCircumferenceCm { get; set; }
+
+        /// <summary>
         /// Quantity of insulin administered to the user.<br/>
         /// Example: 10.5
         /// </summary>
@@ -219,6 +235,14 @@ namespace Terra
         /// Total amount of fluid in the user's body.<br/>
         /// Example: 60.5
         /// </param>
+        /// <param name="waterMassG">
+        /// Mass of fluid in the user's body. Reported instead of water_percentage by sources that measure water as a mass; converting between the two needs a total body weight, which is a separate reading and often absent.<br/>
+        /// Example: 38600
+        /// </param>
+        /// <param name="waistCircumferenceCm">
+        /// Circumference of the user's waist.<br/>
+        /// Example: 84.5
+        /// </param>
         /// <param name="insulinUnits">
         /// Quantity of insulin administered to the user.<br/>
         /// Example: 10.5
@@ -259,6 +283,8 @@ namespace Terra
             double? muscleMassG,
             double? leanMassG,
             double? waterPercentage,
+            double? waterMassG,
+            double? waistCircumferenceCm,
             double? insulinUnits,
             string? insulinType,
             string? urineColor,
@@ -279,6 +305,8 @@ namespace Terra
             this.MuscleMassG = muscleMassG;
             this.LeanMassG = leanMassG;
             this.WaterPercentage = waterPercentage;
+            this.WaterMassG = waterMassG;
+            this.WaistCircumferenceCm = waistCircumferenceCm;
             this.InsulinUnits = insulinUnits;
             this.InsulinType = insulinType;
             this.UrineColor = urineColor;

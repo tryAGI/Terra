@@ -49,6 +49,12 @@ namespace Terra
         public string? CoercionWarnings { get; set; }
 
         /// <summary>
+        /// Time the session was reported complete by the user's device. Null until a device reports it.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("completed_at")]
+        public global::System.DateTime? CompletedAt { get; set; }
+
+        /// <summary>
         /// Adjustments made when the template could not be represented exactly on the provider. Empty when the push was exact.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("warnings")]
@@ -82,6 +88,9 @@ namespace Terra
         /// <param name="providerWorkoutId">
         /// Identifier assigned by the provider, once pushed.
         /// </param>
+        /// <param name="completedAt">
+        /// Time the session was reported complete by the user's device. Null until a device reports it.
+        /// </param>
         /// <param name="warnings">
         /// Adjustments made when the template could not be represented exactly on the provider. Empty when the push was exact.
         /// </param>
@@ -97,6 +106,7 @@ namespace Terra
             bool? isExternal,
             string? workoutId,
             string? providerWorkoutId,
+            global::System.DateTime? completedAt,
             global::System.Collections.Generic.IList<global::Terra.CoercionWarning>? warnings,
             global::Terra.PlannedWorkoutBody? workout)
         {
@@ -105,6 +115,7 @@ namespace Terra
             this.IsExternal = isExternal;
             this.WorkoutId = workoutId;
             this.ProviderWorkoutId = providerWorkoutId;
+            this.CompletedAt = completedAt;
             this.Warnings = warnings;
             this.Workout = workout;
         }
