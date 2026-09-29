@@ -69,6 +69,12 @@ namespace Terra
         public required bool IsExternal { get; set; }
 
         /// <summary>
+        /// Time the session was reported complete by the user's device (RFC 3339, whole seconds, UTC). Null until a device reports it.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("completed_at")]
+        public string? CompletedAt { get; set; }
+
+        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("athlete_metrics")]
@@ -120,6 +126,9 @@ namespace Terra
         /// <param name="lastUpdatedAt">
         /// Last update time (RFC 3339). Null for external workouts.
         /// </param>
+        /// <param name="completedAt">
+        /// Time the session was reported complete by the user's device (RFC 3339, whole seconds, UTC). Null until a device reports it.
+        /// </param>
         /// <param name="athleteMetrics"></param>
         /// <param name="workout">
         /// The workout body, in the same shape for Terra-created and external workouts. Null when a Terra-created workout's body could not be loaded (a warning at path `workout` says why); for an external workout whose steps could not be fetched from the provider, the header fields are present, `step_blocks` is empty and a warning at path `step_blocks` says why.
@@ -136,6 +145,7 @@ namespace Terra
             string? providerWorkoutId,
             string? createdAt,
             string? lastUpdatedAt,
+            string? completedAt,
             global::Terra.AthleteMetrics? athleteMetrics,
             global::Terra.PlannedWorkoutBody? workout)
         {
@@ -147,6 +157,7 @@ namespace Terra
             this.CreatedAt = createdAt;
             this.LastUpdatedAt = lastUpdatedAt;
             this.IsExternal = isExternal;
+            this.CompletedAt = completedAt;
             this.AthleteMetrics = athleteMetrics;
             this.Workout = workout;
         }
