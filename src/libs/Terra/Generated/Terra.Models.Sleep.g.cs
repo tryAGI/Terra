@@ -15,6 +15,12 @@ namespace Terra
         public global::Terra.SleepDataEnrichment? DataEnrichment { get; set; }
 
         /// <summary>
+        /// Personal 30-day baselines and trends for the user as of this session (trends product). Null for customers without the product enabled.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("trends")]
+        public global::Terra.TrendsData? Trends { get; set; }
+
+        /// <summary>
         /// Object containing information on the device which recorded data for the payload.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("device_data")]
@@ -76,6 +82,9 @@ namespace Terra
         /// <param name="dataEnrichment">
         /// Object containing additional enrichment data for the sleep session.
         /// </param>
+        /// <param name="trends">
+        /// Personal 30-day baselines and trends for the user as of this session (trends product). Null for customers without the product enabled.
+        /// </param>
         /// <param name="deviceData">
         /// Object containing information on the device which recorded data for the payload.
         /// </param>
@@ -103,6 +112,7 @@ namespace Terra
         public Sleep(
             global::Terra.SleepMetadata metadata,
             global::Terra.SleepDataEnrichment? dataEnrichment,
+            global::Terra.TrendsData? trends,
             global::Terra.DeviceData? deviceData,
             global::Terra.HeartRateData? heartRateData,
             global::Terra.ReadinessData? readinessData,
@@ -112,6 +122,7 @@ namespace Terra
             global::Terra.SleepTemperatureData? temperatureData)
         {
             this.DataEnrichment = dataEnrichment;
+            this.Trends = trends;
             this.DeviceData = deviceData;
             this.HeartRateData = heartRateData;
             this.Metadata = metadata ?? throw new global::System.ArgumentNullException(nameof(metadata));
