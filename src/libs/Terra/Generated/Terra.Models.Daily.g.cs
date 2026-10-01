@@ -27,6 +27,12 @@ namespace Terra
         public global::Terra.DailyDataEnrichment? DataEnrichment { get; set; }
 
         /// <summary>
+        /// Personal 30-day baselines and trends for the user as of this day (trends product). Null for customers without the product enabled.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("trends")]
+        public global::Terra.TrendsData? Trends { get; set; }
+
+        /// <summary>
         /// Object containing information on the device which recorded data for the day.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("device_data")]
@@ -106,6 +112,9 @@ namespace Terra
         /// <param name="dataEnrichment">
         /// Object containing additional enrichment data for the day.
         /// </param>
+        /// <param name="trends">
+        /// Personal 30-day baselines and trends for the user as of this day (trends product). Null for customers without the product enabled.
+        /// </param>
         /// <param name="deviceData">
         /// Object containing information on the device which recorded data for the day.
         /// </param>
@@ -141,6 +150,7 @@ namespace Terra
             global::Terra.ActiveDurationsData? activeDurationsData,
             global::Terra.CaloriesData? caloriesData,
             global::Terra.DailyDataEnrichment? dataEnrichment,
+            global::Terra.TrendsData? trends,
             global::Terra.DeviceData? deviceData,
             global::Terra.DailyDistanceData? distanceData,
             global::Terra.HeartRateData? heartRateData,
@@ -154,6 +164,7 @@ namespace Terra
             this.ActiveDurationsData = activeDurationsData;
             this.CaloriesData = caloriesData;
             this.DataEnrichment = dataEnrichment;
+            this.Trends = trends;
             this.DeviceData = deviceData;
             this.DistanceData = distanceData;
             this.HeartRateData = heartRateData;

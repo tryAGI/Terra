@@ -8,7 +8,7 @@ info:
 
     '
   title: TerraAPI
-  version: 2026.09.29
+  version: 2026.10.01
   license:
     name: Apache-2.0
     url: https://github.com/tryterra/openapi/blob/master/LICENSE
@@ -3254,6 +3254,11 @@ components:
           - $ref: '#/components/schemas/DailyDataEnrichment'
           - type: 'null'
           description: Object containing additional enrichment data for the day.
+        trends:
+          anyOf:
+          - $ref: '#/components/schemas/TrendsData'
+          - type: 'null'
+          description: Personal 30-day baselines and trends for the user as of this day (trends product). Null for customers without the product enabled.
         device_data:
           anyOf:
           - $ref: '#/components/schemas/DeviceData'
@@ -3437,6 +3442,11 @@ components:
           - $ref: '#/components/schemas/SleepDataEnrichment'
           - type: 'null'
           description: Object containing additional enrichment data for the sleep session.
+        trends:
+          anyOf:
+          - $ref: '#/components/schemas/TrendsData'
+          - type: 'null'
+          description: Personal 30-day baselines and trends for the user as of this session (trends product). Null for customers without the product enabled.
         device_data:
           anyOf:
           - $ref: '#/components/schemas/DeviceData'
@@ -7756,6 +7766,87 @@ components:
           properties: {}
           unevaluatedProperties:
             type: number
+    MetricTrend:
+      type: object
+      properties:
+        baseline:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Median of the trailing window, in the metric's own units (bpm, ms, seconds).
+          example: 52
+        average:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Mean of the trailing window.
+          example: 53.5
+        previous_average:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Mean of the window immediately preceding the trailing window.
+          example: 50
+        delta:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: average minus previous_average. Present only when both averages are.
+          example: 3.5
+        days_with_data:
+          type: integer
+          minimum: -2147483648
+          maximum: 2147483647
+          description: Number of days with data in the trailing window.
+          example: 28
+        previous_days_with_data:
+          type: integer
+          minimum: -2147483648
+          maximum: 2147483647
+          description: Number of days with data in the preceding window.
+          example: 30
+      required:
+      - days_with_data
+      - previous_days_with_data
+      description: Personal trend for one metric, computed by Terra from the user's own stored daily values. Both windows are trailing calendar-day windows that end the day BEFORE the record's own local
+        day, so the record's value is never inside its own baseline. Statistics are absent (null) when the window has no data; the day counts say how much history stands behind each number.
+    TrendsData:
+      type: object
+      properties:
+        window_days:
+          type: integer
+          minimum: -2147483648
+          maximum: 2147483647
+          description: Length of each window in days.
+          example: 30
+        window_end:
+          type: string
+          description: 'Inclusive ISO date (yyyy-mm-dd) the trailing window ends on: the last completed local day before the record''s own.'
+          example: '2026-09-15'
+        resting_heart_rate:
+          anyOf:
+          - $ref: '#/components/schemas/MetricTrend'
+          - type: 'null'
+          description: 'Resting heart rate trend, in bpm. Source: daily summaries.'
+        hrv_rmssd:
+          anyOf:
+          - $ref: '#/components/schemas/MetricTrend'
+          - type: 'null'
+          description: 'Heart-rate variability (RMSSD) trend, in ms. Source: sleep sessions.'
+        hrv_sdnn:
+          anyOf:
+          - $ref: '#/components/schemas/MetricTrend'
+          - type: 'null'
+          description: 'Heart-rate variability (SDNN) trend, in ms. Source: sleep sessions. Apple Health reports SDNN rather than RMSSD.'
+        sleep_duration:
+          anyOf:
+          - $ref: '#/components/schemas/MetricTrend'
+          - type: 'null'
+          description: 'Time asleep per session trend, in seconds (matches sleep_durations_data.asleep_time). Source: sleep sessions.'
+      required:
+      - window_days
+      - window_end
+      description: Personal baselines and trends for the user, as of the record. Present on sleep and daily payloads for customers with the trends product enabled; null otherwise.
     DailyDistanceData:
       type: object
       properties:
