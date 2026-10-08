@@ -15,8 +15,10 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(double))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.Problem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WidgetSessionParams))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationAuthenticateUserRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationAuthenticateUserRequestSdkApp), TypeInfoPropertyName = "AuthenticationAuthenticateUserRequestSdkApp2")]
@@ -28,10 +30,12 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationDeauthenticateUserResponseStatus), TypeInfoPropertyName = "AuthenticationDeauthenticateUserResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationCreateAuthTokenResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationGenerateAuthTokenResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationAuthenticateUserRequestSdkApp?), TypeInfoPropertyName = "NullableAuthenticationAuthenticateUserRequestSdkApp2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationAuthenticateUserResponseStatus?), TypeInfoPropertyName = "NullableAuthenticationAuthenticateUserResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationGenerateWidgetSessionResponseStatus?), TypeInfoPropertyName = "NullableAuthenticationGenerateWidgetSessionResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AuthenticationDeauthenticateUserResponseStatus?), TypeInfoPropertyName = "NullableAuthenticationDeauthenticateUserResponseStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
     internal sealed partial class AuthenticationSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

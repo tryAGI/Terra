@@ -42,6 +42,12 @@ namespace Terra
         public double? ExpiresIn { get; set; }
 
         /// <summary>
+        /// present when part of the request could not be honoured, such as requested providers that are unknown or not enabled
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("warnings")]
+        public global::System.Collections.Generic.IList<string>? Warnings { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -66,6 +72,9 @@ namespace Terra
         /// a number in seconds depicting how long the url is valid for<br/>
         /// Example: 900
         /// </param>
+        /// <param name="warnings">
+        /// present when part of the request could not be honoured, such as requested providers that are unknown or not enabled
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -73,12 +82,14 @@ namespace Terra
             string? sessionId,
             string? url,
             global::Terra.AuthenticationGenerateWidgetSessionResponseStatus? status,
-            double? expiresIn)
+            double? expiresIn,
+            global::System.Collections.Generic.IList<string>? warnings)
         {
             this.SessionId = sessionId;
             this.Url = url;
             this.Status = status;
             this.ExpiresIn = expiresIn;
+            this.Warnings = warnings;
         }
 
         /// <summary>
