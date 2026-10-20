@@ -1,6 +1,4 @@
 
-#pragma warning disable CS0618 // Type or member is obsolete
-
 #nullable enable
 
 namespace Terra
@@ -37,15 +35,6 @@ namespace Terra
         /// <example>91</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("day_avg_detailed_blood_glucose_mg_per_dL")]
         public double? DayAvgDetailedBloodGlucoseMgPerDL { get; set; }
-
-        /// <summary>
-        /// Deprecated lower-case alias of day_avg_blood_glucose_mg_per_dL, retained for backwards compatibility. Always carries the same value as that field.<br/>
-        /// Example: 92.5
-        /// </summary>
-        /// <example>92.5</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("day_avg_blood_glucose_mg_per_dl")]
-        [global::System.Obsolete("This property marked as deprecated.")]
-        public double? DayAvgBloodGlucoseMgPerDl2 { get; set; }
 
         /// <summary>
         /// GMI (Glucose Management Indicator) is a metric derived from continuous glucose monitoring (CGM) data that estimates average glucose levels to help guide diabetes management, without implying a precise match to laboratory A1C.

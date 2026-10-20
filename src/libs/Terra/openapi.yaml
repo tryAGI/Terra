@@ -8,7 +8,7 @@ info:
 
     '
   title: TerraAPI
-  version: 2026.10.08.1
+  version: 2026.10.20
   license:
     name: Apache-2.0
     url: https://github.com/tryterra/openapi/blob/master/LICENSE
@@ -7689,13 +7689,6 @@ components:
           - type: 'null'
           description: User's average glucose level throughout the day, computed from the higher-frequency detailed sample stream.
           example: 91
-        day_avg_blood_glucose_mg_per_dl:
-          anyOf:
-          - type: number
-          - type: 'null'
-          description: Deprecated lower-case alias of day_avg_blood_glucose_mg_per_dL, retained for backwards compatibility. Always carries the same value as that field.
-          deprecated: true
-          example: 92.5
         gmi:
           anyOf:
           - type: number

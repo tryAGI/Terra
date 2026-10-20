@@ -359,6 +359,10 @@ namespace Terra.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 1)
@@ -375,6 +379,10 @@ namespace Terra.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -393,6 +401,10 @@ namespace Terra.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 3)
@@ -409,6 +421,10 @@ namespace Terra.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -427,6 +443,10 @@ namespace Terra.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 5)
@@ -443,6 +463,10 @@ namespace Terra.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -461,6 +485,10 @@ namespace Terra.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 7)
@@ -477,6 +505,10 @@ namespace Terra.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -495,6 +527,10 @@ namespace Terra.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 9)
@@ -511,6 +547,10 @@ namespace Terra.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -529,6 +569,10 @@ namespace Terra.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 11)
@@ -545,6 +589,10 @@ namespace Terra.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -563,6 +611,10 @@ namespace Terra.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 13)
@@ -579,6 +631,10 @@ namespace Terra.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -597,6 +653,10 @@ namespace Terra.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 15)
@@ -613,6 +673,10 @@ namespace Terra.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -631,6 +695,10 @@ namespace Terra.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 17)
@@ -647,6 +715,10 @@ namespace Terra.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -665,6 +737,10 @@ namespace Terra.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 19)
@@ -681,6 +757,10 @@ namespace Terra.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -699,6 +779,10 @@ namespace Terra.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 21)
@@ -715,6 +799,10 @@ namespace Terra.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -733,6 +821,10 @@ namespace Terra.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 23)
@@ -749,6 +841,10 @@ namespace Terra.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
             }
@@ -768,6 +864,10 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
@@ -784,6 +884,10 @@ namespace Terra.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -802,6 +906,10 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
@@ -818,6 +926,10 @@ namespace Terra.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -836,6 +948,10 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
@@ -852,6 +968,10 @@ namespace Terra.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -870,6 +990,10 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
@@ -886,6 +1010,10 @@ namespace Terra.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -904,6 +1032,10 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
@@ -920,6 +1052,10 @@ namespace Terra.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -938,6 +1074,10 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
@@ -954,6 +1094,10 @@ namespace Terra.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -972,6 +1116,10 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
@@ -988,6 +1136,10 @@ namespace Terra.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1006,6 +1158,10 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
@@ -1022,6 +1178,10 @@ namespace Terra.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1040,6 +1200,10 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
@@ -1056,6 +1220,10 @@ namespace Terra.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1074,6 +1242,10 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
@@ -1090,6 +1262,10 @@ namespace Terra.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1108,6 +1284,10 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
@@ -1124,6 +1304,10 @@ namespace Terra.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1142,6 +1326,10 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (strengthMuscleVariant1 == null && strengthMuscleVariant2 == null && strengthMuscleVariant3 == null && strengthMuscleVariant4 == null && strengthMuscleVariant5 == null && strengthMuscleVariant6 == null && strengthMuscleVariant7 == null && strengthMuscleVariant8 == null && strengthMuscleVariant9 == null && strengthMuscleVariant10 == null && strengthMuscleVariant11 == null && strengthMuscleVariant12 == null && strengthMuscleVariant13 == null && strengthMuscleVariant14 == null && strengthMuscleVariant15 == null && strengthMuscleVariant16 == null && strengthMuscleVariant17 == null && strengthMuscleVariant18 == null && strengthMuscleVariant19 == null && strengthMuscleVariant20 == null && strengthMuscleVariant21 == null && strengthMuscleVariant22 == null && strengthMuscleVariant23 == null && strengthMuscleVariant24 == null)
@@ -1158,6 +1346,10 @@ namespace Terra.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
