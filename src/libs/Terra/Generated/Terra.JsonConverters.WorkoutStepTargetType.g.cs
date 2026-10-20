@@ -294,6 +294,10 @@ namespace Terra.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 1)
@@ -310,6 +314,10 @@ namespace Terra.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -328,6 +336,10 @@ namespace Terra.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 3)
@@ -344,6 +356,10 @@ namespace Terra.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -362,6 +378,10 @@ namespace Terra.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 5)
@@ -378,6 +398,10 @@ namespace Terra.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -396,6 +420,10 @@ namespace Terra.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 7)
@@ -412,6 +440,10 @@ namespace Terra.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -430,6 +462,10 @@ namespace Terra.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 9)
@@ -446,6 +482,10 @@ namespace Terra.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -464,6 +504,10 @@ namespace Terra.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 11)
@@ -480,6 +524,10 @@ namespace Terra.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -498,6 +546,10 @@ namespace Terra.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 13)
@@ -514,6 +566,10 @@ namespace Terra.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -532,6 +588,10 @@ namespace Terra.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 15)
@@ -548,6 +608,10 @@ namespace Terra.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -566,6 +630,10 @@ namespace Terra.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 17)
@@ -583,6 +651,10 @@ namespace Terra.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 18)
@@ -599,6 +671,10 @@ namespace Terra.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
             }
@@ -618,6 +694,10 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (workoutStepTargetTypeVariant1 == null && workoutStepTargetTypeVariant2 == null && workoutStepTargetTypeVariant3 == null && workoutStepTargetTypeVariant4 == null && workoutStepTargetTypeVariant5 == null && workoutStepTargetTypeVariant6 == null && workoutStepTargetTypeVariant7 == null && workoutStepTargetTypeVariant8 == null && workoutStepTargetTypeVariant9 == null && workoutStepTargetTypeVariant10 == null && workoutStepTargetTypeVariant11 == null && workoutStepTargetTypeVariant12 == null && workoutStepTargetTypeVariant13 == null && workoutStepTargetTypeVariant14 == null && workoutStepTargetTypeVariant15 == null && workoutStepTargetTypeVariant16 == null && workoutStepTargetTypeVariant17 == null && workoutStepTargetTypeVariant18 == null && workoutStepTargetTypeVariant19 == null)
@@ -634,6 +714,10 @@ namespace Terra.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -652,6 +736,10 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (workoutStepTargetTypeVariant1 == null && workoutStepTargetTypeVariant2 == null && workoutStepTargetTypeVariant3 == null && workoutStepTargetTypeVariant4 == null && workoutStepTargetTypeVariant5 == null && workoutStepTargetTypeVariant6 == null && workoutStepTargetTypeVariant7 == null && workoutStepTargetTypeVariant8 == null && workoutStepTargetTypeVariant9 == null && workoutStepTargetTypeVariant10 == null && workoutStepTargetTypeVariant11 == null && workoutStepTargetTypeVariant12 == null && workoutStepTargetTypeVariant13 == null && workoutStepTargetTypeVariant14 == null && workoutStepTargetTypeVariant15 == null && workoutStepTargetTypeVariant16 == null && workoutStepTargetTypeVariant17 == null && workoutStepTargetTypeVariant18 == null && workoutStepTargetTypeVariant19 == null)
@@ -668,6 +756,10 @@ namespace Terra.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -686,6 +778,10 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (workoutStepTargetTypeVariant1 == null && workoutStepTargetTypeVariant2 == null && workoutStepTargetTypeVariant3 == null && workoutStepTargetTypeVariant4 == null && workoutStepTargetTypeVariant5 == null && workoutStepTargetTypeVariant6 == null && workoutStepTargetTypeVariant7 == null && workoutStepTargetTypeVariant8 == null && workoutStepTargetTypeVariant9 == null && workoutStepTargetTypeVariant10 == null && workoutStepTargetTypeVariant11 == null && workoutStepTargetTypeVariant12 == null && workoutStepTargetTypeVariant13 == null && workoutStepTargetTypeVariant14 == null && workoutStepTargetTypeVariant15 == null && workoutStepTargetTypeVariant16 == null && workoutStepTargetTypeVariant17 == null && workoutStepTargetTypeVariant18 == null && workoutStepTargetTypeVariant19 == null)
@@ -702,6 +798,10 @@ namespace Terra.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -720,6 +820,10 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (workoutStepTargetTypeVariant1 == null && workoutStepTargetTypeVariant2 == null && workoutStepTargetTypeVariant3 == null && workoutStepTargetTypeVariant4 == null && workoutStepTargetTypeVariant5 == null && workoutStepTargetTypeVariant6 == null && workoutStepTargetTypeVariant7 == null && workoutStepTargetTypeVariant8 == null && workoutStepTargetTypeVariant9 == null && workoutStepTargetTypeVariant10 == null && workoutStepTargetTypeVariant11 == null && workoutStepTargetTypeVariant12 == null && workoutStepTargetTypeVariant13 == null && workoutStepTargetTypeVariant14 == null && workoutStepTargetTypeVariant15 == null && workoutStepTargetTypeVariant16 == null && workoutStepTargetTypeVariant17 == null && workoutStepTargetTypeVariant18 == null && workoutStepTargetTypeVariant19 == null)
@@ -736,6 +840,10 @@ namespace Terra.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -754,6 +862,10 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (workoutStepTargetTypeVariant1 == null && workoutStepTargetTypeVariant2 == null && workoutStepTargetTypeVariant3 == null && workoutStepTargetTypeVariant4 == null && workoutStepTargetTypeVariant5 == null && workoutStepTargetTypeVariant6 == null && workoutStepTargetTypeVariant7 == null && workoutStepTargetTypeVariant8 == null && workoutStepTargetTypeVariant9 == null && workoutStepTargetTypeVariant10 == null && workoutStepTargetTypeVariant11 == null && workoutStepTargetTypeVariant12 == null && workoutStepTargetTypeVariant13 == null && workoutStepTargetTypeVariant14 == null && workoutStepTargetTypeVariant15 == null && workoutStepTargetTypeVariant16 == null && workoutStepTargetTypeVariant17 == null && workoutStepTargetTypeVariant18 == null && workoutStepTargetTypeVariant19 == null)
@@ -770,6 +882,10 @@ namespace Terra.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -788,6 +904,10 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (workoutStepTargetTypeVariant1 == null && workoutStepTargetTypeVariant2 == null && workoutStepTargetTypeVariant3 == null && workoutStepTargetTypeVariant4 == null && workoutStepTargetTypeVariant5 == null && workoutStepTargetTypeVariant6 == null && workoutStepTargetTypeVariant7 == null && workoutStepTargetTypeVariant8 == null && workoutStepTargetTypeVariant9 == null && workoutStepTargetTypeVariant10 == null && workoutStepTargetTypeVariant11 == null && workoutStepTargetTypeVariant12 == null && workoutStepTargetTypeVariant13 == null && workoutStepTargetTypeVariant14 == null && workoutStepTargetTypeVariant15 == null && workoutStepTargetTypeVariant16 == null && workoutStepTargetTypeVariant17 == null && workoutStepTargetTypeVariant18 == null && workoutStepTargetTypeVariant19 == null)
@@ -804,6 +924,10 @@ namespace Terra.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -822,6 +946,10 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (workoutStepTargetTypeVariant1 == null && workoutStepTargetTypeVariant2 == null && workoutStepTargetTypeVariant3 == null && workoutStepTargetTypeVariant4 == null && workoutStepTargetTypeVariant5 == null && workoutStepTargetTypeVariant6 == null && workoutStepTargetTypeVariant7 == null && workoutStepTargetTypeVariant8 == null && workoutStepTargetTypeVariant9 == null && workoutStepTargetTypeVariant10 == null && workoutStepTargetTypeVariant11 == null && workoutStepTargetTypeVariant12 == null && workoutStepTargetTypeVariant13 == null && workoutStepTargetTypeVariant14 == null && workoutStepTargetTypeVariant15 == null && workoutStepTargetTypeVariant16 == null && workoutStepTargetTypeVariant17 == null && workoutStepTargetTypeVariant18 == null && workoutStepTargetTypeVariant19 == null)
@@ -838,6 +966,10 @@ namespace Terra.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -856,6 +988,10 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (workoutStepTargetTypeVariant1 == null && workoutStepTargetTypeVariant2 == null && workoutStepTargetTypeVariant3 == null && workoutStepTargetTypeVariant4 == null && workoutStepTargetTypeVariant5 == null && workoutStepTargetTypeVariant6 == null && workoutStepTargetTypeVariant7 == null && workoutStepTargetTypeVariant8 == null && workoutStepTargetTypeVariant9 == null && workoutStepTargetTypeVariant10 == null && workoutStepTargetTypeVariant11 == null && workoutStepTargetTypeVariant12 == null && workoutStepTargetTypeVariant13 == null && workoutStepTargetTypeVariant14 == null && workoutStepTargetTypeVariant15 == null && workoutStepTargetTypeVariant16 == null && workoutStepTargetTypeVariant17 == null && workoutStepTargetTypeVariant18 == null && workoutStepTargetTypeVariant19 == null)
@@ -872,6 +1008,10 @@ namespace Terra.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -890,6 +1030,10 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (workoutStepTargetTypeVariant1 == null && workoutStepTargetTypeVariant2 == null && workoutStepTargetTypeVariant3 == null && workoutStepTargetTypeVariant4 == null && workoutStepTargetTypeVariant5 == null && workoutStepTargetTypeVariant6 == null && workoutStepTargetTypeVariant7 == null && workoutStepTargetTypeVariant8 == null && workoutStepTargetTypeVariant9 == null && workoutStepTargetTypeVariant10 == null && workoutStepTargetTypeVariant11 == null && workoutStepTargetTypeVariant12 == null && workoutStepTargetTypeVariant13 == null && workoutStepTargetTypeVariant14 == null && workoutStepTargetTypeVariant15 == null && workoutStepTargetTypeVariant16 == null && workoutStepTargetTypeVariant17 == null && workoutStepTargetTypeVariant18 == null && workoutStepTargetTypeVariant19 == null)
@@ -907,6 +1051,10 @@ namespace Terra.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (workoutStepTargetTypeVariant1 == null && workoutStepTargetTypeVariant2 == null && workoutStepTargetTypeVariant3 == null && workoutStepTargetTypeVariant4 == null && workoutStepTargetTypeVariant5 == null && workoutStepTargetTypeVariant6 == null && workoutStepTargetTypeVariant7 == null && workoutStepTargetTypeVariant8 == null && workoutStepTargetTypeVariant9 == null && workoutStepTargetTypeVariant10 == null && workoutStepTargetTypeVariant11 == null && workoutStepTargetTypeVariant12 == null && workoutStepTargetTypeVariant13 == null && workoutStepTargetTypeVariant14 == null && workoutStepTargetTypeVariant15 == null && workoutStepTargetTypeVariant16 == null && workoutStepTargetTypeVariant17 == null && workoutStepTargetTypeVariant18 == null && workoutStepTargetTypeVariant19 == null)
@@ -923,6 +1071,10 @@ namespace Terra.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
