@@ -4,7 +4,7 @@
 namespace Terra
 {
     /// <summary>
-    ///
+    /// The report list as API version 2026-03-24 serves it: up to 500 sessions, newest first, with no pagination.
     /// </summary>
     public sealed partial class LabReportListResponse
     {

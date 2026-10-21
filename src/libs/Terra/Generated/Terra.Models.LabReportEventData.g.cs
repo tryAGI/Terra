@@ -23,7 +23,7 @@ namespace Terra
         public string? ReferenceId { get; set; }
 
         /// <summary>
-        /// Returned by the upload endpoint. A single upload may fan out to multiple sessions.
+        /// What kind of report a session holds. Closed set: a session is classified on upload and lands in exactly one of these.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("report_type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Terra.JsonConverters.ReportTypeJsonConverter))]
@@ -92,7 +92,7 @@ namespace Terra
         /// Your external reference; omitted if not set.
         /// </param>
         /// <param name="reportType">
-        /// Returned by the upload endpoint. A single upload may fan out to multiple sessions.
+        /// What kind of report a session holds. Closed set: a session is classified on upload and lands in exactly one of these.
         /// </param>
         /// <param name="reportDate">
         /// Date printed on the report (YYYY-MM-DD); omitted if not extracted.

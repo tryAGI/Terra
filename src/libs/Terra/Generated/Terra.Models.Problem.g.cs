@@ -36,7 +36,7 @@ namespace Terra
         public required string Instance { get; set; }
 
         /// <summary>
-        /// Stable error classification. Product gates return entitlement_required (403), environment_disabled (403), or authorization_unavailable (503).
+        /// Stable error classification. Product gates return entitlement_required (403), environment_disabled (403), or authorization_unavailable (503). Report uploads return validation_failed, unsupported_file_type or too_many_files (400), and payload_too_large (413).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("code")]
         public string? Code { get; set; }
@@ -77,7 +77,7 @@ namespace Terra
         /// Example: /api/v2/activity?user_id=d4aba475-f714-4663-88fe-28f18b8599b0&amp;to_webhook=false
         /// </param>
         /// <param name="code">
-        /// Stable error classification. Product gates return entitlement_required (403), environment_disabled (403), or authorization_unavailable (503).
+        /// Stable error classification. Product gates return entitlement_required (403), environment_disabled (403), or authorization_unavailable (503). Report uploads return validation_failed, unsupported_file_type or too_many_files (400), and payload_too_large (413).
         /// </param>
         /// <param name="product">
         /// The product checked by the authorization gate, when classified.

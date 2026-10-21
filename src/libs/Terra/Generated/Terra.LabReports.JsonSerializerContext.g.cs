@@ -17,13 +17,16 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(object))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(double))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.Problem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportUploadResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportReprocessResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportListResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.LabReportSession>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportSession))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportListPage))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.ReportType), TypeInfoPropertyName = "ReportType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(long))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.LabReportStatusEntry>))]
@@ -32,6 +35,7 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportResult))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.LabReportPanel>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportPanel))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportEventError))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportResultSource))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportBiomarker))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportMeasurement))]
@@ -54,12 +58,15 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportsUploadRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.ReportsListReportType), TypeInfoPropertyName = "ReportsListReportType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportsListReportType), TypeInfoPropertyName = "LabReportsListReportType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.LabReportListPage, global::Terra.LabReportListResponse>), TypeInfoPropertyName = "OneOfLabReportListPageLabReportListResponse2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.ReportType?), TypeInfoPropertyName = "NullableReportType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(long?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AnatomicalRegion?), TypeInfoPropertyName = "NullableAnatomicalRegion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.ReportsListReportType?), TypeInfoPropertyName = "NullableReportsListReportType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportsListReportType?), TypeInfoPropertyName = "NullableLabReportsListReportType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.LabReportListPage, global::Terra.LabReportListResponse>?), TypeInfoPropertyName = "NullableOneOfLabReportListPageLabReportListResponse2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.LabReportSession>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.LabReportStatusEntry>))]
@@ -127,6 +134,8 @@ namespace Terra
             options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<int?, global::System.DateTime?>());
             options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<int?, global::System.DateTime?>());
             options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<int?, global::System.DateTime?>());
+            options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.LabReportListPage, global::Terra.LabReportListResponse>());
+            options.Converters.Add(new global::Terra.JsonConverters.OneOfJsonConverter<global::Terra.LabReportListPage, global::Terra.LabReportListResponse>());
             options.Converters.Add(new global::Terra.JsonConverters.UnixTimestampJsonConverter());
             options.Converters.Add(new LazyEnumJsonConverterFactory());
         }

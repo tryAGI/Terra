@@ -27,10 +27,12 @@ namespace Terra
             };
         partial void PrepareReportsGetArguments(
             global::System.Net.Http.HttpClient httpClient,
+            ref global::System.DateTime? xTerraVersion,
             ref string sessionId);
         partial void PrepareReportsGetRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
+            global::System.DateTime? xTerraVersion,
             string sessionId);
         partial void ProcessReportsGetResponse(
             global::System.Net.Http.HttpClient httpClient,
@@ -45,17 +47,20 @@ namespace Terra
         /// Retrieve a lab report session<br/>
         /// Retrieve a report's metadata, results, reference ranges, and status history. Immutable and cacheable — presigned file URLs and mutable per-destination delivery state live on the `/files` and `/deliveries` sub-resources.
         /// </summary>
+        /// <param name="xTerraVersion"></param>
         /// <param name="sessionId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Terra.LabReportSession> ReportsGetAsync(
             string sessionId,
+            global::System.DateTime? xTerraVersion = default,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             var __response = await ReportsGetAsResponseAsync(
                 sessionId: sessionId,
+                xTerraVersion: xTerraVersion,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -66,12 +71,14 @@ namespace Terra
         /// Retrieve a lab report session<br/>
         /// Retrieve a report's metadata, results, reference ranges, and status history. Immutable and cacheable — presigned file URLs and mutable per-destination delivery state live on the `/files` and `/deliveries` sub-resources.
         /// </summary>
+        /// <param name="xTerraVersion"></param>
         /// <param name="sessionId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse<global::Terra.LabReportSession>> ReportsGetAsResponseAsync(
             string sessionId,
+            global::System.DateTime? xTerraVersion = default,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -79,6 +86,7 @@ namespace Terra
                 client: HttpClient);
             PrepareReportsGetArguments(
                 httpClient: HttpClient,
+                xTerraVersion: ref xTerraVersion,
                 sessionId: ref sessionId);
 
 
@@ -136,6 +144,12 @@ namespace Terra
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
                 }
             }
+
+            if (xTerraVersion != default)
+            {
+                __httpRequest.Headers.TryAddWithoutValidation("X-Terra-Version", xTerraVersion.ToString());
+            }
+
                 global::Terra.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,
                     clientHeaders: Options.Headers,
@@ -147,6 +161,7 @@ namespace Terra
                 PrepareReportsGetRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
+                    xTerraVersion: xTerraVersion,
                     sessionId: sessionId);
 
                 return __httpRequest;

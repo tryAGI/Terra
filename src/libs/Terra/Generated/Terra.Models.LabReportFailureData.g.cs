@@ -23,7 +23,7 @@ namespace Terra
         public string? ReferenceId { get; set; }
 
         /// <summary>
-        /// Structured failure reason. retriable tells you whether re-submitting the same input could succeed (a transient internal fault) or the input must change first (e.g. an unreadable file).
+        /// Structured failure reason, on the lab_report.failed webhook and on a failed session.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("error")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -42,7 +42,7 @@ namespace Terra
         /// Example: 297405620317847552
         /// </param>
         /// <param name="error">
-        /// Structured failure reason. retriable tells you whether re-submitting the same input could succeed (a transient internal fault) or the input must change first (e.g. an unreadable file).
+        /// Structured failure reason, on the lab_report.failed webhook and on a failed session.
         /// </param>
         /// <param name="referenceId">
         /// Your external reference; omitted if not set.

@@ -29,7 +29,7 @@ namespace Terra
         public string? ReferenceId { get; set; }
 
         /// <summary>
-        /// Returned by the upload endpoint. A single upload may fan out to multiple sessions.
+        /// What kind of report a session holds. Closed set: a session is classified on upload and lands in exactly one of these.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("report_type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Terra.JsonConverters.ReportTypeJsonConverter))]
@@ -37,7 +37,7 @@ namespace Terra
         public required global::Terra.ReportType ReportType { get; set; }
 
         /// <summary>
-        /// Current status as a clean lowercase string (open enum), e.g. processing, sent, partially_sent, failed.<br/>
+        /// Current status as a clean lowercase string (open enum — handle unknown values gracefully). In flight: processing, processed, standardizing, standardized, sending, and retry_scheduled (waiting to retry after a temporary model-provider error; the report is still being worked on). Terminal: sent, partially_sent (delivered to some destinations), delivery_failed (processed and results available, but no destination accepted the delivery), failed (see error), cancelled, deleted.<br/>
         /// Example: sent
         /// </summary>
         /// <example>sent</example>
@@ -157,6 +157,12 @@ namespace Terra
         public string? ReportNotes { get; set; }
 
         /// <summary>
+        /// Structured failure reason, on the lab_report.failed webhook and on a failed session.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("error")]
+        public global::Terra.LabReportEventError? Error { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -169,10 +175,10 @@ namespace Terra
         /// Example: 297405620317847552
         /// </param>
         /// <param name="reportType">
-        /// Returned by the upload endpoint. A single upload may fan out to multiple sessions.
+        /// What kind of report a session holds. Closed set: a session is classified on upload and lands in exactly one of these.
         /// </param>
         /// <param name="currentStatus">
-        /// Current status as a clean lowercase string (open enum), e.g. processing, sent, partially_sent, failed.<br/>
+        /// Current status as a clean lowercase string (open enum — handle unknown values gracefully). In flight: processing, processed, standardizing, standardized, sending, and retry_scheduled (waiting to retry after a temporary model-provider error; the report is still being worked on). Terminal: sent, partially_sent (delivered to some destinations), delivery_failed (processed and results available, but no destination accepted the delivery), failed (see error), cancelled, deleted.<br/>
         /// Example: sent
         /// </param>
         /// <param name="uploadId"></param>
@@ -216,6 +222,9 @@ namespace Terra
         /// Report-level panels that results reference by panel_id. Omitted if the report has no panel grouping.
         /// </param>
         /// <param name="reportNotes"></param>
+        /// <param name="error">
+        /// Structured failure reason, on the lab_report.failed webhook and on a failed session.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -242,7 +251,8 @@ namespace Terra
             global::System.Collections.Generic.IList<global::Terra.LabReportStatusEntry>? statusHistory,
             global::System.Collections.Generic.IList<global::Terra.LabReportResult>? results,
             global::System.Collections.Generic.IList<global::Terra.LabReportPanel>? panels,
-            string? reportNotes)
+            string? reportNotes,
+            global::Terra.LabReportEventError? error)
         {
             this.SessionId = sessionId ?? throw new global::System.ArgumentNullException(nameof(sessionId));
             this.UploadId = uploadId;
@@ -267,6 +277,7 @@ namespace Terra
             this.Results = results;
             this.Panels = panels;
             this.ReportNotes = reportNotes;
+            this.Error = error;
         }
 
         /// <summary>
