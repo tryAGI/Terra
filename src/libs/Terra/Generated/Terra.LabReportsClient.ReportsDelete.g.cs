@@ -27,10 +27,12 @@ namespace Terra
             };
         partial void PrepareReportsDeleteArguments(
             global::System.Net.Http.HttpClient httpClient,
+            ref global::System.DateTime? xTerraVersion,
             ref string sessionId);
         partial void PrepareReportsDeleteRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
+            global::System.DateTime? xTerraVersion,
             string sessionId);
         partial void ProcessReportsDeleteResponse(
             global::System.Net.Http.HttpClient httpClient,
@@ -38,33 +40,38 @@ namespace Terra
 
         /// <summary>
         /// Delete a lab report session<br/>
-        /// Soft-delete a session. It is marked deleted immediately; associated storage is cleaned up by a background process.
+        /// Delete a session. It is removed from the API immediately: every read of it returns 404. Its files, results and Terra's copies of them are erased from active systems within 30 days (target 24 hours), and backups expire within 10 days. Works without Lab Reports access.
         /// </summary>
+        /// <param name="xTerraVersion"></param>
         /// <param name="sessionId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
         public async global::System.Threading.Tasks.Task ReportsDeleteAsync(
             string sessionId,
+            global::System.DateTime? xTerraVersion = default,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             await ReportsDeleteAsResponseAsync(
                 sessionId: sessionId,
+                xTerraVersion: xTerraVersion,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
         }
         /// <summary>
         /// Delete a lab report session<br/>
-        /// Soft-delete a session. It is marked deleted immediately; associated storage is cleaned up by a background process.
+        /// Delete a session. It is removed from the API immediately: every read of it returns 404. Its files, results and Terra's copies of them are erased from active systems within 30 days (target 24 hours), and backups expire within 10 days. Works without Lab Reports access.
         /// </summary>
+        /// <param name="xTerraVersion"></param>
         /// <param name="sessionId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse> ReportsDeleteAsResponseAsync(
             string sessionId,
+            global::System.DateTime? xTerraVersion = default,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -72,6 +79,7 @@ namespace Terra
                 client: HttpClient);
             PrepareReportsDeleteArguments(
                 httpClient: HttpClient,
+                xTerraVersion: ref xTerraVersion,
                 sessionId: ref sessionId);
 
 
@@ -129,6 +137,12 @@ namespace Terra
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
                 }
             }
+
+            if (xTerraVersion != default)
+            {
+                __httpRequest.Headers.TryAddWithoutValidation("X-Terra-Version", xTerraVersion.ToString());
+            }
+
                 global::Terra.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,
                     clientHeaders: Options.Headers,
@@ -140,6 +154,7 @@ namespace Terra
                 PrepareReportsDeleteRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
+                    xTerraVersion: xTerraVersion,
                     sessionId: sessionId);
 
                 return __httpRequest;

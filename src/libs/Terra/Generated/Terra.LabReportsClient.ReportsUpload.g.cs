@@ -27,11 +27,13 @@ namespace Terra
             };
         partial void PrepareReportsUploadArguments(
             global::System.Net.Http.HttpClient httpClient,
+            ref global::System.DateTime? xTerraVersion,
             ref string? referenceId,
             global::Terra.ReportsUploadRequest request);
         partial void PrepareReportsUploadRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
+            global::System.DateTime? xTerraVersion,
             string? referenceId,
             global::Terra.ReportsUploadRequest request);
         partial void ProcessReportsUploadResponse(
@@ -45,8 +47,9 @@ namespace Terra
 
         /// <summary>
         /// Upload a report<br/>
-        /// Upload a single report file (PDF, PNG, JPEG, GIF, or WebP) as multipart form data. Both clinical lab reports and DXA body-composition/bone-density scans go to this endpoint — Terra identifies which it is from the file, so there is no parameter to declare the type; read `report_type` off the session or the webhook. Returns an `upload_id`; a single upload may fan out to multiple sessions, so learn the `session_id`(s) from the webhook events or from `GET /reports?upload_id=...`.
+        /// Upload one report as multipart form data: one `file` part, or one per page for a report photographed page by page, sent in page order. Each file may be a PDF or a PNG, JPEG, GIF, WebP or HEIC/HEIF image, and is identified by its contents rather than its name or declared type. All the files of an upload are read as one report and produce one session, so upload separate reports separately. Both clinical lab reports and DXA body-composition/bone-density scans go to this endpoint — Terra identifies which it is from the file, so there is no parameter to declare the type; read `report_type` off the session or the webhook. Returns an `upload_id`; learn the `session_id` from the webhook events or from `GET /reports?upload_id=...`.
         /// </summary>
+        /// <param name="xTerraVersion"></param>
         /// <param name="referenceId"></param>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -55,6 +58,7 @@ namespace Terra
         public async global::System.Threading.Tasks.Task<global::Terra.LabReportUploadResponse> ReportsUploadAsync(
 
             global::Terra.ReportsUploadRequest request,
+            global::System.DateTime? xTerraVersion = default,
             string? referenceId = default,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -62,6 +66,7 @@ namespace Terra
             var __response = await ReportsUploadAsResponseAsync(
 
                 request: request,
+                xTerraVersion: xTerraVersion,
                 referenceId: referenceId,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
@@ -71,8 +76,9 @@ namespace Terra
         }
         /// <summary>
         /// Upload a report<br/>
-        /// Upload a single report file (PDF, PNG, JPEG, GIF, or WebP) as multipart form data. Both clinical lab reports and DXA body-composition/bone-density scans go to this endpoint — Terra identifies which it is from the file, so there is no parameter to declare the type; read `report_type` off the session or the webhook. Returns an `upload_id`; a single upload may fan out to multiple sessions, so learn the `session_id`(s) from the webhook events or from `GET /reports?upload_id=...`.
+        /// Upload one report as multipart form data: one `file` part, or one per page for a report photographed page by page, sent in page order. Each file may be a PDF or a PNG, JPEG, GIF, WebP or HEIC/HEIF image, and is identified by its contents rather than its name or declared type. All the files of an upload are read as one report and produce one session, so upload separate reports separately. Both clinical lab reports and DXA body-composition/bone-density scans go to this endpoint — Terra identifies which it is from the file, so there is no parameter to declare the type; read `report_type` off the session or the webhook. Returns an `upload_id`; learn the `session_id` from the webhook events or from `GET /reports?upload_id=...`.
         /// </summary>
+        /// <param name="xTerraVersion"></param>
         /// <param name="referenceId"></param>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -81,6 +87,7 @@ namespace Terra
         public async global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse<global::Terra.LabReportUploadResponse>> ReportsUploadAsResponseAsync(
 
             global::Terra.ReportsUploadRequest request,
+            global::System.DateTime? xTerraVersion = default,
             string? referenceId = default,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -91,6 +98,7 @@ namespace Terra
                 client: HttpClient);
             PrepareReportsUploadArguments(
                 httpClient: HttpClient,
+                xTerraVersion: ref xTerraVersion,
                 referenceId: ref referenceId,
                 request: request);
 
@@ -153,6 +161,12 @@ namespace Terra
                 }
             }
 
+            if (xTerraVersion != default)
+            {
+                __httpRequest.Headers.TryAddWithoutValidation("X-Terra-Version", xTerraVersion.ToString());
+            }
+
+
                             var __httpRequestContent = new global::System.Net.Http.MultipartFormDataContent();
                             var __contentFile = new global::System.Net.Http.ByteArrayContent(request.File ?? global::System.Array.Empty<byte>());
                             __contentFile.Headers.ContentType = new global::System.Net.Http.Headers.MediaTypeHeaderValue(
@@ -205,6 +219,7 @@ namespace Terra
                 PrepareReportsUploadRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
+                    xTerraVersion: xTerraVersion,
                     referenceId: referenceId,
                     request: request);
 
@@ -385,7 +400,7 @@ namespace Terra
                                 retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
-                            // One or more parameters is malformed. The `detail` field describes the specific problem.
+                            // The upload was refused. `code` says why: `validation_failed` (no `file` part, an empty file, a part without a filename, or a malformed form), `unsupported_file_type` (a file is not a PDF or a supported image; `detail` names the type its contents show), or `too_many_files` (more than 20 files).
                             if ((int)__response.StatusCode == 400)
                             {
                                 string? __content_400 = null;
@@ -496,7 +511,7 @@ namespace Terra
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // The uploaded payload exceeds the size limit.
+                            // `code: payload_too_large`: a file is over 20 MB, the upload is over 50 MB in total, or its PDFs are over 22.5 MB together, more than can be read as one report.
                             if ((int)__response.StatusCode == 413)
                             {
                                 string? __content_413 = null;
@@ -668,14 +683,15 @@ namespace Terra
         }
         /// <summary>
         /// Upload a report<br/>
-        /// Upload a single report file (PDF, PNG, JPEG, GIF, or WebP) as multipart form data. Both clinical lab reports and DXA body-composition/bone-density scans go to this endpoint — Terra identifies which it is from the file, so there is no parameter to declare the type; read `report_type` off the session or the webhook. Returns an `upload_id`; a single upload may fan out to multiple sessions, so learn the `session_id`(s) from the webhook events or from `GET /reports?upload_id=...`.
+        /// Upload one report as multipart form data: one `file` part, or one per page for a report photographed page by page, sent in page order. Each file may be a PDF or a PNG, JPEG, GIF, WebP or HEIC/HEIF image, and is identified by its contents rather than its name or declared type. All the files of an upload are read as one report and produce one session, so upload separate reports separately. Both clinical lab reports and DXA body-composition/bone-density scans go to this endpoint — Terra identifies which it is from the file, so there is no parameter to declare the type; read `report_type` off the session or the webhook. Returns an `upload_id`; learn the `session_id` from the webhook events or from `GET /reports?upload_id=...`.
         /// </summary>
+        /// <param name="xTerraVersion"></param>
         /// <param name="referenceId"></param>
         /// <param name="file">
-        /// The lab report file (PDF, PNG, JPEG, GIF, or WebP; max 20 MB).
+        /// A file of the report: a PDF or a PNG, JPEG, GIF, WebP or HEIC/HEIF image. Repeat the `file` part, up to 20 times, to send a report's pages as separate files, in the order of the pages. At most 20 MB per file and 50 MB per upload, of which at most 22.5 MB PDF. Files are stored as uploaded, so a HEIC photo keeps its EXIF metadata, location included; strip it before uploading if that matters.
         /// </param>
         /// <param name="filename">
-        /// The lab report file (PDF, PNG, JPEG, GIF, or WebP; max 20 MB).
+        /// A file of the report: a PDF or a PNG, JPEG, GIF, WebP or HEIC/HEIF image. Repeat the `file` part, up to 20 times, to send a report's pages as separate files, in the order of the pages. At most 20 MB per file and 50 MB per upload, of which at most 22.5 MB PDF. Files are stored as uploaded, so a HEIC photo keeps its EXIF metadata, location included; strip it before uploading if that matters.
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -683,6 +699,7 @@ namespace Terra
         public async global::System.Threading.Tasks.Task<global::Terra.LabReportUploadResponse> ReportsUploadAsync(
             byte[] file,
             string filename,
+            global::System.DateTime? xTerraVersion = default,
             string? referenceId = default,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -694,6 +711,7 @@ namespace Terra
             };
 
             return await ReportsUploadAsync(
+                xTerraVersion: xTerraVersion,
                 referenceId: referenceId,
                 request: __request,
                 requestOptions: requestOptions,
@@ -702,14 +720,15 @@ namespace Terra
 
         /// <summary>
         /// Upload a report<br/>
-        /// Upload a single report file (PDF, PNG, JPEG, GIF, or WebP) as multipart form data. Both clinical lab reports and DXA body-composition/bone-density scans go to this endpoint — Terra identifies which it is from the file, so there is no parameter to declare the type; read `report_type` off the session or the webhook. Returns an `upload_id`; a single upload may fan out to multiple sessions, so learn the `session_id`(s) from the webhook events or from `GET /reports?upload_id=...`.
+        /// Upload one report as multipart form data: one `file` part, or one per page for a report photographed page by page, sent in page order. Each file may be a PDF or a PNG, JPEG, GIF, WebP or HEIC/HEIF image, and is identified by its contents rather than its name or declared type. All the files of an upload are read as one report and produce one session, so upload separate reports separately. Both clinical lab reports and DXA body-composition/bone-density scans go to this endpoint — Terra identifies which it is from the file, so there is no parameter to declare the type; read `report_type` off the session or the webhook. Returns an `upload_id`; learn the `session_id` from the webhook events or from `GET /reports?upload_id=...`.
         /// </summary>
+        /// <param name="xTerraVersion"></param>
         /// <param name="referenceId"></param>
         /// <param name="file">
-        /// The lab report file (PDF, PNG, JPEG, GIF, or WebP; max 20 MB).
+        /// A file of the report: a PDF or a PNG, JPEG, GIF, WebP or HEIC/HEIF image. Repeat the `file` part, up to 20 times, to send a report's pages as separate files, in the order of the pages. At most 20 MB per file and 50 MB per upload, of which at most 22.5 MB PDF. Files are stored as uploaded, so a HEIC photo keeps its EXIF metadata, location included; strip it before uploading if that matters.
         /// </param>
         /// <param name="filename">
-        /// The lab report file (PDF, PNG, JPEG, GIF, or WebP; max 20 MB).
+        /// A file of the report: a PDF or a PNG, JPEG, GIF, WebP or HEIC/HEIF image. Repeat the `file` part, up to 20 times, to send a report's pages as separate files, in the order of the pages. At most 20 MB per file and 50 MB per upload, of which at most 22.5 MB PDF. Files are stored as uploaded, so a HEIC photo keeps its EXIF metadata, location included; strip it before uploading if that matters.
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -717,6 +736,7 @@ namespace Terra
         public async global::System.Threading.Tasks.Task<global::Terra.LabReportUploadResponse> ReportsUploadAsync(
             global::System.IO.Stream file,
             string filename,
+            global::System.DateTime? xTerraVersion = default,
             string? referenceId = default,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -732,6 +752,7 @@ namespace Terra
                 client: HttpClient);
             PrepareReportsUploadArguments(
                 httpClient: HttpClient,
+                xTerraVersion: ref xTerraVersion,
                 referenceId: ref referenceId,
                 request: request);
 
@@ -794,6 +815,12 @@ namespace Terra
                 }
             }
 
+            if (xTerraVersion != default)
+            {
+                __httpRequest.Headers.TryAddWithoutValidation("X-Terra-Version", xTerraVersion.ToString());
+            }
+
+
                             var __httpRequestContent = new global::System.Net.Http.MultipartFormDataContent();
                             var __contentFile = new global::System.Net.Http.StreamContent(file);
                             __contentFile.Headers.ContentType = new global::System.Net.Http.Headers.MediaTypeHeaderValue(
@@ -846,6 +873,7 @@ namespace Terra
                 PrepareReportsUploadRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
+                    xTerraVersion: xTerraVersion,
                     referenceId: referenceId,
                     request: request);
 
@@ -1026,7 +1054,7 @@ namespace Terra
                                 retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
-                            // One or more parameters is malformed. The `detail` field describes the specific problem.
+                            // The upload was refused. `code` says why: `validation_failed` (no `file` part, an empty file, a part without a filename, or a malformed form), `unsupported_file_type` (a file is not a PDF or a supported image; `detail` names the type its contents show), or `too_many_files` (more than 20 files).
                             if ((int)__response.StatusCode == 400)
                             {
                                 string? __content_400 = null;
@@ -1137,7 +1165,7 @@ namespace Terra
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // The uploaded payload exceeds the size limit.
+                            // `code: payload_too_large`: a file is over 20 MB, the upload is over 50 MB in total, or its PDFs are over 22.5 MB together, more than can be read as one report.
                             if ((int)__response.StatusCode == 413)
                             {
                                 string? __content_413 = null;
@@ -1301,14 +1329,15 @@ namespace Terra
         }
         /// <summary>
         /// Upload a report<br/>
-        /// Upload a single report file (PDF, PNG, JPEG, GIF, or WebP) as multipart form data. Both clinical lab reports and DXA body-composition/bone-density scans go to this endpoint — Terra identifies which it is from the file, so there is no parameter to declare the type; read `report_type` off the session or the webhook. Returns an `upload_id`; a single upload may fan out to multiple sessions, so learn the `session_id`(s) from the webhook events or from `GET /reports?upload_id=...`.
+        /// Upload one report as multipart form data: one `file` part, or one per page for a report photographed page by page, sent in page order. Each file may be a PDF or a PNG, JPEG, GIF, WebP or HEIC/HEIF image, and is identified by its contents rather than its name or declared type. All the files of an upload are read as one report and produce one session, so upload separate reports separately. Both clinical lab reports and DXA body-composition/bone-density scans go to this endpoint — Terra identifies which it is from the file, so there is no parameter to declare the type; read `report_type` off the session or the webhook. Returns an `upload_id`; learn the `session_id` from the webhook events or from `GET /reports?upload_id=...`.
         /// </summary>
+        /// <param name="xTerraVersion"></param>
         /// <param name="referenceId"></param>
         /// <param name="file">
-        /// The lab report file (PDF, PNG, JPEG, GIF, or WebP; max 20 MB).
+        /// A file of the report: a PDF or a PNG, JPEG, GIF, WebP or HEIC/HEIF image. Repeat the `file` part, up to 20 times, to send a report's pages as separate files, in the order of the pages. At most 20 MB per file and 50 MB per upload, of which at most 22.5 MB PDF. Files are stored as uploaded, so a HEIC photo keeps its EXIF metadata, location included; strip it before uploading if that matters.
         /// </param>
         /// <param name="filename">
-        /// The lab report file (PDF, PNG, JPEG, GIF, or WebP; max 20 MB).
+        /// A file of the report: a PDF or a PNG, JPEG, GIF, WebP or HEIC/HEIF image. Repeat the `file` part, up to 20 times, to send a report's pages as separate files, in the order of the pages. At most 20 MB per file and 50 MB per upload, of which at most 22.5 MB PDF. Files are stored as uploaded, so a HEIC photo keeps its EXIF metadata, location included; strip it before uploading if that matters.
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -1316,6 +1345,7 @@ namespace Terra
         public async global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse<global::Terra.LabReportUploadResponse>> ReportsUploadAsResponseAsync(
             global::System.IO.Stream file,
             string filename,
+            global::System.DateTime? xTerraVersion = default,
             string? referenceId = default,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -1331,6 +1361,7 @@ namespace Terra
                 client: HttpClient);
             PrepareReportsUploadArguments(
                 httpClient: HttpClient,
+                xTerraVersion: ref xTerraVersion,
                 referenceId: ref referenceId,
                 request: request);
 
@@ -1393,6 +1424,12 @@ namespace Terra
                 }
             }
 
+            if (xTerraVersion != default)
+            {
+                __httpRequest.Headers.TryAddWithoutValidation("X-Terra-Version", xTerraVersion.ToString());
+            }
+
+
                             var __httpRequestContent = new global::System.Net.Http.MultipartFormDataContent();
                             var __contentFile = new global::System.Net.Http.StreamContent(file);
                             __contentFile.Headers.ContentType = new global::System.Net.Http.Headers.MediaTypeHeaderValue(
@@ -1445,6 +1482,7 @@ namespace Terra
                 PrepareReportsUploadRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
+                    xTerraVersion: xTerraVersion,
                     referenceId: referenceId,
                     request: request);
 
@@ -1625,7 +1663,7 @@ namespace Terra
                                 retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
-                            // One or more parameters is malformed. The `detail` field describes the specific problem.
+                            // The upload was refused. `code` says why: `validation_failed` (no `file` part, an empty file, a part without a filename, or a malformed form), `unsupported_file_type` (a file is not a PDF or a supported image; `detail` names the type its contents show), or `too_many_files` (more than 20 files).
                             if ((int)__response.StatusCode == 400)
                             {
                                 string? __content_400 = null;
@@ -1736,7 +1774,7 @@ namespace Terra
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // The uploaded payload exceeds the size limit.
+                            // `code: payload_too_large`: a file is over 20 MB, the upload is over 50 MB in total, or its PDFs are over 22.5 MB together, more than can be read as one report.
                             if ((int)__response.StatusCode == 413)
                             {
                                 string? __content_413 = null;

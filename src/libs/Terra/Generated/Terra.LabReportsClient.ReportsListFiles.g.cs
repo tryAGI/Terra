@@ -27,10 +27,12 @@ namespace Terra
             };
         partial void PrepareReportsListFilesArguments(
             global::System.Net.Http.HttpClient httpClient,
+            ref global::System.DateTime? xTerraVersion,
             ref string sessionId);
         partial void PrepareReportsListFilesRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
+            global::System.DateTime? xTerraVersion,
             string sessionId);
         partial void ProcessReportsListFilesResponse(
             global::System.Net.Http.HttpClient httpClient,
@@ -45,17 +47,20 @@ namespace Terra
         /// List input files<br/>
         /// The uploaded input files and report thumbnail, with freshly minted presigned download URLs. URLs expire; fetch again to mint new ones.
         /// </summary>
+        /// <param name="xTerraVersion"></param>
         /// <param name="sessionId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Terra.LabReportFilesResponse> ReportsListFilesAsync(
             string sessionId,
+            global::System.DateTime? xTerraVersion = default,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             var __response = await ReportsListFilesAsResponseAsync(
                 sessionId: sessionId,
+                xTerraVersion: xTerraVersion,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -66,12 +71,14 @@ namespace Terra
         /// List input files<br/>
         /// The uploaded input files and report thumbnail, with freshly minted presigned download URLs. URLs expire; fetch again to mint new ones.
         /// </summary>
+        /// <param name="xTerraVersion"></param>
         /// <param name="sessionId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse<global::Terra.LabReportFilesResponse>> ReportsListFilesAsResponseAsync(
             string sessionId,
+            global::System.DateTime? xTerraVersion = default,
             global::Terra.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -79,6 +86,7 @@ namespace Terra
                 client: HttpClient);
             PrepareReportsListFilesArguments(
                 httpClient: HttpClient,
+                xTerraVersion: ref xTerraVersion,
                 sessionId: ref sessionId);
 
 
@@ -136,6 +144,12 @@ namespace Terra
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
                 }
             }
+
+            if (xTerraVersion != default)
+            {
+                __httpRequest.Headers.TryAddWithoutValidation("X-Terra-Version", xTerraVersion.ToString());
+            }
+
                 global::Terra.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,
                     clientHeaders: Options.Headers,
@@ -147,6 +161,7 @@ namespace Terra
                 PrepareReportsListFilesRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
+                    xTerraVersion: xTerraVersion,
                     sessionId: sessionId);
 
                 return __httpRequest;

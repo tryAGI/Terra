@@ -27,6 +27,9 @@ namespace Terra
             };
         partial void PrepareReportsListArguments(
             global::System.Net.Http.HttpClient httpClient,
+            ref global::System.DateTime? xTerraVersion,
+            ref int? limit,
+            ref string? cursor,
             ref string? referenceId,
             ref global::Terra.ReportsListReportType? reportType,
             ref string? uploadId,
@@ -37,6 +40,9 @@ namespace Terra
         partial void PrepareReportsListRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
+            global::System.DateTime? xTerraVersion,
+            int? limit,
+            string? cursor,
             string? referenceId,
             global::Terra.ReportsListReportType? reportType,
             string? uploadId,
@@ -57,6 +63,11 @@ namespace Terra
         /// List report sessions<br/>
         /// List report sessions for your account — both lab reports and scans — with optional reference, upload, and inclusive date-range filters. Use the date filters to narrow large result sets, and read `report_type` on each session to tell a lab panel from a scan.
         /// </summary>
+        /// <param name="xTerraVersion"></param>
+        /// <param name="limit">
+        /// Default Value: 50
+        /// </param>
+        /// <param name="cursor"></param>
         /// <param name="referenceId"></param>
         /// <param name="reportType"></param>
         /// <param name="uploadId"></param>
@@ -67,7 +78,10 @@ namespace Terra
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Terra.LabReportListResponse> ReportsListAsync(
+        public async global::System.Threading.Tasks.Task<global::Terra.OneOf<global::Terra.LabReportListPage, global::Terra.LabReportListResponse>> ReportsListAsync(
+            global::System.DateTime? xTerraVersion = default,
+            int? limit = default,
+            string? cursor = default,
             string? referenceId = default,
             global::Terra.ReportsListReportType? reportType = default,
             string? uploadId = default,
@@ -79,6 +93,9 @@ namespace Terra
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             var __response = await ReportsListAsResponseAsync(
+                xTerraVersion: xTerraVersion,
+                limit: limit,
+                cursor: cursor,
                 referenceId: referenceId,
                 reportType: reportType,
                 uploadId: uploadId,
@@ -96,6 +113,11 @@ namespace Terra
         /// List report sessions<br/>
         /// List report sessions for your account — both lab reports and scans — with optional reference, upload, and inclusive date-range filters. Use the date filters to narrow large result sets, and read `report_type` on each session to tell a lab panel from a scan.
         /// </summary>
+        /// <param name="xTerraVersion"></param>
+        /// <param name="limit">
+        /// Default Value: 50
+        /// </param>
+        /// <param name="cursor"></param>
         /// <param name="referenceId"></param>
         /// <param name="reportType"></param>
         /// <param name="uploadId"></param>
@@ -106,7 +128,10 @@ namespace Terra
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse<global::Terra.LabReportListResponse>> ReportsListAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse<global::Terra.OneOf<global::Terra.LabReportListPage, global::Terra.LabReportListResponse>>> ReportsListAsResponseAsync(
+            global::System.DateTime? xTerraVersion = default,
+            int? limit = default,
+            string? cursor = default,
             string? referenceId = default,
             global::Terra.ReportsListReportType? reportType = default,
             string? uploadId = default,
@@ -121,6 +146,9 @@ namespace Terra
                 client: HttpClient);
             PrepareReportsListArguments(
                 httpClient: HttpClient,
+                xTerraVersion: ref xTerraVersion,
+                limit: ref limit,
+                cursor: ref cursor,
                 referenceId: ref referenceId,
                 reportType: ref reportType,
                 uploadId: ref uploadId,
@@ -156,6 +184,8 @@ namespace Terra
                                 path: "/reports",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
+                                .AddOptionalParameter("limit", limit?.ToString())
+                                .AddOptionalParameter("cursor", cursor)
                                 .AddOptionalParameter("reference_id", referenceId)
                                 .AddOptionalParameter("report_type", reportType?.ToValueString())
                                 .AddOptionalParameter("upload_id", uploadId)
@@ -193,6 +223,12 @@ namespace Terra
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
                 }
             }
+
+            if (xTerraVersion != default)
+            {
+                __httpRequest.Headers.TryAddWithoutValidation("X-Terra-Version", xTerraVersion.ToString());
+            }
+
                 global::Terra.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,
                     clientHeaders: Options.Headers,
@@ -204,6 +240,9 @@ namespace Terra
                 PrepareReportsListRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
+                    xTerraVersion: xTerraVersion,
+                    limit: limit,
+                    cursor: cursor,
                     referenceId: referenceId,
                     reportType: reportType,
                     uploadId: uploadId,
@@ -500,7 +539,7 @@ namespace Terra
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // Current product authorization is unavailable; retry after the service recovers.
+                            // Current product authorization or the environment's API version pin is unavailable (code `authorization_unavailable`), or paging is briefly unavailable while a deploy rolls out (code `service_unavailable`). Retry.
                             if ((int)__response.StatusCode == 503)
                             {
                                 string? __content_503 = null;
@@ -559,9 +598,9 @@ namespace Terra
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Terra.LabReportListResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Terra.OneOf<global::Terra.LabReportListPage, global::Terra.LabReportListResponse>.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Terra.AutoSDKHttpResponse<global::Terra.LabReportListResponse>(
+                                    return new global::Terra.AutoSDKHttpResponse<global::Terra.OneOf<global::Terra.LabReportListPage, global::Terra.LabReportListResponse>>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Terra.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -591,9 +630,9 @@ namespace Terra
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Terra.LabReportListResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Terra.OneOf<global::Terra.LabReportListPage, global::Terra.LabReportListResponse>.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Terra.AutoSDKHttpResponse<global::Terra.LabReportListResponse>(
+                                    return new global::Terra.AutoSDKHttpResponse<global::Terra.OneOf<global::Terra.LabReportListPage, global::Terra.LabReportListResponse>>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Terra.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,

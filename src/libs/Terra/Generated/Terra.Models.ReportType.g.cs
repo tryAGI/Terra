@@ -4,7 +4,7 @@
 namespace Terra
 {
     /// <summary>
-    /// Returned by the upload endpoint. A single upload may fan out to multiple sessions.
+    /// What kind of report a session holds. Closed set: a session is classified on upload and lands in exactly one of these.
     /// </summary>
     public enum ReportType
     {

@@ -22,6 +22,14 @@ namespace Terra
         public required string PresignedUrl { get; set; }
 
         /// <summary>
+        /// An uploaded file's content type. Present on files only.<br/>
+        /// Example: image/heic
+        /// </summary>
+        /// <example>image/heic</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("content_type")]
+        public string? ContentType { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -32,15 +40,21 @@ namespace Terra
         /// </summary>
         /// <param name="presignedUrl"></param>
         /// <param name="filename"></param>
+        /// <param name="contentType">
+        /// An uploaded file's content type. Present on files only.<br/>
+        /// Example: image/heic
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public LabReportFile(
             string presignedUrl,
-            string? filename)
+            string? filename,
+            string? contentType)
         {
             this.Filename = filename;
             this.PresignedUrl = presignedUrl ?? throw new global::System.ArgumentNullException(nameof(presignedUrl));
+            this.ContentType = contentType;
         }
 
         /// <summary>

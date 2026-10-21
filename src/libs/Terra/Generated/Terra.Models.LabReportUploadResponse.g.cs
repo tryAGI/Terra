@@ -4,7 +4,7 @@
 namespace Terra
 {
     /// <summary>
-    ///
+    /// Returned by the upload endpoint. Every file of an upload belongs to one report, read in the order the files were sent.
     /// </summary>
     public sealed partial class LabReportUploadResponse
     {
