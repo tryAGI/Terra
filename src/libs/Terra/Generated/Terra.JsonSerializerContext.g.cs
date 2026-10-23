@@ -157,6 +157,7 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.LabReportFile>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportFile))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportArtifactsResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UnauthorizedProblem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.ActivityLevelSample))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.ActivityLevelSample>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CalorieSample))]
@@ -508,7 +509,6 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTempoVariant7), TypeInfoPropertyName = "StrengthTempoVariant72")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTempoVariant8), TypeInfoPropertyName = "StrengthTempoVariant82")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthRangeOfMotion), TypeInfoPropertyName = "StrengthRangeOfMotion2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthRangeOfMotionVariant1), TypeInfoPropertyName = "StrengthRangeOfMotionVariant12")]
     internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -519,6 +519,7 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
     )]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthRangeOfMotionVariant1), TypeInfoPropertyName = "StrengthRangeOfMotionVariant12")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthRangeOfMotionVariant2), TypeInfoPropertyName = "StrengthRangeOfMotionVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthRangeOfMotionVariant3), TypeInfoPropertyName = "StrengthRangeOfMotionVariant32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthRangeOfMotionVariant4), TypeInfoPropertyName = "StrengthRangeOfMotionVariant42")]
@@ -1018,7 +1019,6 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant164?), TypeInfoPropertyName = "NullableStrengthMovementVariant1642")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant165?), TypeInfoPropertyName = "NullableStrengthMovementVariant1652")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant166?), TypeInfoPropertyName = "NullableStrengthMovementVariant1662")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant167?), TypeInfoPropertyName = "NullableStrengthMovementVariant1672")]
     internal sealed partial class SourceGenerationContextChunk1 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -1029,6 +1029,7 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
     )]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant167?), TypeInfoPropertyName = "NullableStrengthMovementVariant1672")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant168?), TypeInfoPropertyName = "NullableStrengthMovementVariant1682")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant169?), TypeInfoPropertyName = "NullableStrengthMovementVariant1692")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant170?), TypeInfoPropertyName = "NullableStrengthMovementVariant1702")]

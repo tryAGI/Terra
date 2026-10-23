@@ -393,24 +393,24 @@ namespace Terra
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // Authentication credentials are missing or invalid.
+                            // The credential is missing, invalid, expired or revoked (code `unauthorized`).
                             if ((int)__response.StatusCode == 401)
                             {
                                 string? __content_401 = null;
                                 global::System.Exception? __exception_401 = null;
-                                global::Terra.Problem? __value_401 = null;
+                                global::Terra.UnauthorizedProblem? __value_401 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_401 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_401 = global::Terra.Problem.FromJson(__content_401, JsonSerializerContext);
+                                        __value_401 = global::Terra.UnauthorizedProblem.FromJson(__content_401, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_401 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_401 = global::Terra.Problem.FromJson(__content_401, JsonSerializerContext);
+                                        __value_401 = global::Terra.UnauthorizedProblem.FromJson(__content_401, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -419,7 +419,7 @@ namespace Terra
                                 }
 
 
-                                throw global::Terra.ApiException<global::Terra.Problem>.Create(
+                                throw global::Terra.ApiException<global::Terra.UnauthorizedProblem>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_401 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_401,
@@ -504,7 +504,7 @@ namespace Terra
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // Current product authorization is unavailable; retry after the service recovers.
+                            // The credential or the product access could not be checked (code `authorization_unavailable`). Retry after the service recovers.
                             if ((int)__response.StatusCode == 503)
                             {
                                 string? __content_503 = null;

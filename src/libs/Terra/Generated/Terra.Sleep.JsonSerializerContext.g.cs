@@ -35,6 +35,7 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SleepScores))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SleepDurationsData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.SleepTemperatureData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UnauthorizedProblem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.RecordFloat))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.DeviceDataType), TypeInfoPropertyName = "DeviceDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OtherDeviceData))]

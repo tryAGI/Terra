@@ -1,0 +1,117 @@
+
+#nullable enable
+
+namespace Terra
+{
+    /// <summary>
+    /// A refused credential, always with its code.
+    /// </summary>
+    public sealed partial class UnauthorizedProblem
+    {
+        /// <summary>
+        /// A URI reference identifying the problem type. Defaults to `about:blank`.<br/>
+        /// Example: about:blank
+        /// </summary>
+        /// <example>about:blank</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Type { get; set; }
+
+        /// <summary>
+        /// A short, human-readable summary of the problem type (the lowercased HTTP status text).<br/>
+        /// Example: unauthorized
+        /// </summary>
+        /// <example>unauthorized</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("title")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Title { get; set; }
+
+        /// <summary>
+        /// The request path, including any query string, that produced this problem.<br/>
+        /// Example: /api/v2/activity?user_id=d4aba475-f714-4663-88fe-28f18b8599b0&amp;to_webhook=false
+        /// </summary>
+        /// <example>/api/v2/activity?user_id=d4aba475-f714-4663-88fe-28f18b8599b0&amp;to_webhook=false</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("instance")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Instance { get; set; }
+
+        /// <summary>
+        /// Stable error classification: branch on this, not on `detail`. A refused credential returns unauthorized (401: missing, invalid, expired or revoked), scope_missing (403: the credential lacks the scope the operation requires) or audience_restricted (403: the credential is not granted for this dev-id). authorization_unavailable (503) means the credential or the product access could not be checked; retry later. Product gates return entitlement_required (403) or environment_disabled (403). service_unavailable (503) means the request never reached the service; dependency_failed (502 or 504) means the service did not complete it, though it may already have acted on it. Report uploads return validation_failed, unsupported_file_type or too_many_files (400), and payload_too_large (413).
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("code")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Code { get; set; }
+
+        /// <summary>
+        /// The product checked by the authorization gate, when classified.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("product")]
+        public string? Product { get; set; }
+
+        /// <summary>
+        /// A human-readable explanation specific to this occurrence of the problem.<br/>
+        /// Example: dev-id or x-api-key headers are missing
+        /// </summary>
+        /// <example>dev-id or x-api-key headers are missing</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("detail")]
+        public string? Detail { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="UnauthorizedProblem" /> class.
+        /// </summary>
+        /// <param name="type">
+        /// A URI reference identifying the problem type. Defaults to `about:blank`.<br/>
+        /// Example: about:blank
+        /// </param>
+        /// <param name="title">
+        /// A short, human-readable summary of the problem type (the lowercased HTTP status text).<br/>
+        /// Example: unauthorized
+        /// </param>
+        /// <param name="instance">
+        /// The request path, including any query string, that produced this problem.<br/>
+        /// Example: /api/v2/activity?user_id=d4aba475-f714-4663-88fe-28f18b8599b0&amp;to_webhook=false
+        /// </param>
+        /// <param name="code">
+        /// Stable error classification: branch on this, not on `detail`. A refused credential returns unauthorized (401: missing, invalid, expired or revoked), scope_missing (403: the credential lacks the scope the operation requires) or audience_restricted (403: the credential is not granted for this dev-id). authorization_unavailable (503) means the credential or the product access could not be checked; retry later. Product gates return entitlement_required (403) or environment_disabled (403). service_unavailable (503) means the request never reached the service; dependency_failed (502 or 504) means the service did not complete it, though it may already have acted on it. Report uploads return validation_failed, unsupported_file_type or too_many_files (400), and payload_too_large (413).
+        /// </param>
+        /// <param name="product">
+        /// The product checked by the authorization gate, when classified.
+        /// </param>
+        /// <param name="detail">
+        /// A human-readable explanation specific to this occurrence of the problem.<br/>
+        /// Example: dev-id or x-api-key headers are missing
+        /// </param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public UnauthorizedProblem(
+            string type,
+            string title,
+            string instance,
+            string code,
+            string? product,
+            string? detail)
+        {
+            this.Type = type ?? throw new global::System.ArgumentNullException(nameof(type));
+            this.Title = title ?? throw new global::System.ArgumentNullException(nameof(title));
+            this.Instance = instance ?? throw new global::System.ArgumentNullException(nameof(instance));
+            this.Code = code ?? throw new global::System.ArgumentNullException(nameof(code));
+            this.Product = product;
+            this.Detail = detail;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="UnauthorizedProblem" /> class.
+        /// </summary>
+        public UnauthorizedProblem()
+        {
+        }
+
+    }
+}

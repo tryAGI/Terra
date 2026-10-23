@@ -32,6 +32,7 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.Problem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(long))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UnauthorizedProblem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.EnvironmentTypeVariant1), TypeInfoPropertyName = "EnvironmentTypeVariant12")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.EnvironmentTypeVariant2), TypeInfoPropertyName = "EnvironmentTypeVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.EnvironmentTypeVariant3), TypeInfoPropertyName = "EnvironmentTypeVariant32")]

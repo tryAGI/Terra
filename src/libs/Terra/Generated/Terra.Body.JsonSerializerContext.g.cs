@@ -36,6 +36,7 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.BodyMetadata))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.TemperatureData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.GlucoseData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UnauthorizedProblem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.DeviceDataType), TypeInfoPropertyName = "DeviceDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OtherDeviceData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.DeviceDataType>))]
