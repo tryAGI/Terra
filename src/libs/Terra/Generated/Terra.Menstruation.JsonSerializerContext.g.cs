@@ -27,6 +27,7 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.Menstruation))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.MenstruationMetadata))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.MenstruationData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UnauthorizedProblem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.MenstruationFlowSample))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.MenstruationIntervalSample))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.MenstruationFlowSample>))]

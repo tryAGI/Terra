@@ -53,6 +53,7 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportFilesResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.LabReportFile>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportFile))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UnauthorizedProblem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(byte[]))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.ReportsUploadRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.LabReportsUploadRequest))]

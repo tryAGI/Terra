@@ -31,6 +31,7 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.Meal))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.NutritionMetadata))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.NutritionSummary))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UnauthorizedProblem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.NutritionMicros))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.NutritionQuantity))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.NutritionMacros))]

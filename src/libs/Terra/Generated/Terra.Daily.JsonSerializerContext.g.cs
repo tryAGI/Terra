@@ -39,6 +39,7 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.ScoresData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StressData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.TagData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UnauthorizedProblem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.ActivityLevelSample))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.ActivityLevelSample>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CalorieSample))]

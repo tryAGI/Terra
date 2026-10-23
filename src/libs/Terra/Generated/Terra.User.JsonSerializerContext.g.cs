@@ -21,6 +21,7 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.TerraUser))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UnauthorizedProblem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.UserGetResponse2, global::System.Collections.Generic.IList<global::Terra.TerraUser>>), TypeInfoPropertyName = "OneOfUserGetResponse2IListTerraUser2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.UserGetResponse2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AllOf<global::Terra.TerraUser, global::Terra.UserGetResponseUser>), TypeInfoPropertyName = "AllOfTerraUserUserGetResponseUser2")]
