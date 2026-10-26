@@ -29,6 +29,8 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.CoercionWarning>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.CoercionWarning))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.PlannedWorkoutBody))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.PlannedWorkoutUpdateResult))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.PlannedWorkoutUpdateResultStatus), TypeInfoPropertyName = "PlannedWorkoutUpdateResultStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.PlannedWorkoutSport), TypeInfoPropertyName = "PlannedWorkoutSport2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.Problem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WidgetSessionParams))]
@@ -507,8 +509,6 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTempoVariant4), TypeInfoPropertyName = "StrengthTempoVariant42")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTempoVariant5), TypeInfoPropertyName = "StrengthTempoVariant52")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTempoVariant6), TypeInfoPropertyName = "StrengthTempoVariant62")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTempoVariant7), TypeInfoPropertyName = "StrengthTempoVariant72")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTempoVariant8), TypeInfoPropertyName = "StrengthTempoVariant82")]
     internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -519,6 +519,8 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
     )]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTempoVariant7), TypeInfoPropertyName = "StrengthTempoVariant72")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthTempoVariant8), TypeInfoPropertyName = "StrengthTempoVariant82")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthRangeOfMotion), TypeInfoPropertyName = "StrengthRangeOfMotion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthRangeOfMotionVariant1), TypeInfoPropertyName = "StrengthRangeOfMotionVariant12")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthRangeOfMotionVariant2), TypeInfoPropertyName = "StrengthRangeOfMotionVariant22")]
@@ -828,6 +830,10 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutsCreateWorkoutResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutsCreateWorkoutResponseStatus), TypeInfoPropertyName = "WorkoutsCreateWorkoutResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.WorkoutTemplate>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutsUpdateWorkoutResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutsUpdateWorkoutResponseStatus), TypeInfoPropertyName = "WorkoutsUpdateWorkoutResponseStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Terra.PlannedWorkoutUpdateResult>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutsUpdateWorkoutResponse2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutsDeleteWorkoutResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutsPlanWorkoutResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutsPlanWorkoutResponseStatus), TypeInfoPropertyName = "WorkoutsPlanWorkoutResponseStatus2")]
@@ -846,6 +852,7 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutSport?), TypeInfoPropertyName = "NullableWorkoutSport2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.PlannedWorkoutUpdateResultStatus?), TypeInfoPropertyName = "NullablePlannedWorkoutUpdateResultStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.PlannedWorkoutSport?), TypeInfoPropertyName = "NullablePlannedWorkoutSport2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.DataSentToWebhookStatus?), TypeInfoPropertyName = "NullableDataSentToWebhookStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int?))]
@@ -1012,13 +1019,6 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant154?), TypeInfoPropertyName = "NullableStrengthMovementVariant1542")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant155?), TypeInfoPropertyName = "NullableStrengthMovementVariant1552")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant156?), TypeInfoPropertyName = "NullableStrengthMovementVariant1562")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant157?), TypeInfoPropertyName = "NullableStrengthMovementVariant1572")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant158?), TypeInfoPropertyName = "NullableStrengthMovementVariant1582")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant159?), TypeInfoPropertyName = "NullableStrengthMovementVariant1592")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant160?), TypeInfoPropertyName = "NullableStrengthMovementVariant1602")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant161?), TypeInfoPropertyName = "NullableStrengthMovementVariant1612")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant162?), TypeInfoPropertyName = "NullableStrengthMovementVariant1622")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant163?), TypeInfoPropertyName = "NullableStrengthMovementVariant1632")]
     internal sealed partial class SourceGenerationContextChunk1 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -1029,6 +1029,13 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
     )]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant157?), TypeInfoPropertyName = "NullableStrengthMovementVariant1572")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant158?), TypeInfoPropertyName = "NullableStrengthMovementVariant1582")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant159?), TypeInfoPropertyName = "NullableStrengthMovementVariant1592")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant160?), TypeInfoPropertyName = "NullableStrengthMovementVariant1602")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant161?), TypeInfoPropertyName = "NullableStrengthMovementVariant1612")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant162?), TypeInfoPropertyName = "NullableStrengthMovementVariant1622")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant163?), TypeInfoPropertyName = "NullableStrengthMovementVariant1632")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant164?), TypeInfoPropertyName = "NullableStrengthMovementVariant1642")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant165?), TypeInfoPropertyName = "NullableStrengthMovementVariant1652")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.StrengthMovementVariant166?), TypeInfoPropertyName = "NullableStrengthMovementVariant1662")]
@@ -1354,6 +1361,7 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.NutritionGetResponse2, global::Terra.DataSentToWebhook>?), TypeInfoPropertyName = "NullableOneOfNutritionGetResponse2DataSentToWebhook2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.SleepGetResponse2, global::Terra.DataSentToWebhook>?), TypeInfoPropertyName = "NullableOneOfSleepGetResponse2DataSentToWebhook2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutsCreateWorkoutResponseStatus?), TypeInfoPropertyName = "NullableWorkoutsCreateWorkoutResponseStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutsUpdateWorkoutResponseStatus?), TypeInfoPropertyName = "NullableWorkoutsUpdateWorkoutResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.WorkoutsPlanWorkoutResponseStatus?), TypeInfoPropertyName = "NullableWorkoutsPlanWorkoutResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.UserGetResponse2, global::System.Collections.Generic.IList<global::Terra.TerraUser>>?), TypeInfoPropertyName = "NullableOneOfUserGetResponse2IListTerraUser2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.AllOf<global::Terra.TerraUser, global::Terra.UserGetResponseUser>?), TypeInfoPropertyName = "NullableAllOfTerraUserUserGetResponseUser2")]
@@ -1442,6 +1450,7 @@ namespace Terra
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.ObservationComponent>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.HealthObservation>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.WorkoutTemplate>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.PlannedWorkoutUpdateResult>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Terra.OneOf<global::Terra.UserGetResponse2, global::System.Collections.Generic.List<global::Terra.TerraUser>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Terra.TerraUser>))]
     internal sealed partial class SourceGenerationContextChunk2 : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -1557,7 +1566,11 @@ namespace Terra
             public override bool CanConvert(global::System.Type typeToConvert)
             {
                 return
-                    typeToConvert == typeof(global::Terra.DataSentToWebhookStatus)
+                    typeToConvert == typeof(global::Terra.PlannedWorkoutUpdateResultStatus)
+
+                    || typeToConvert == typeof(global::Terra.PlannedWorkoutUpdateResultStatus?)
+
+                    || typeToConvert == typeof(global::Terra.DataSentToWebhookStatus)
 
                     || typeToConvert == typeof(global::Terra.DataSentToWebhookStatus?)
 
@@ -3393,6 +3406,10 @@ namespace Terra
 
                     || typeToConvert == typeof(global::Terra.WorkoutsCreateWorkoutResponseStatus?)
 
+                    || typeToConvert == typeof(global::Terra.WorkoutsUpdateWorkoutResponseStatus)
+
+                    || typeToConvert == typeof(global::Terra.WorkoutsUpdateWorkoutResponseStatus?)
+
                     || typeToConvert == typeof(global::Terra.WorkoutsPlanWorkoutResponseStatus)
 
                     || typeToConvert == typeof(global::Terra.WorkoutsPlanWorkoutResponseStatus?)
@@ -3414,6 +3431,16 @@ namespace Terra
                 global::System.Type typeToConvert,
                 global::System.Text.Json.JsonSerializerOptions options)
             {
+                if (typeToConvert == typeof(global::Terra.PlannedWorkoutUpdateResultStatus))
+                {
+                    return new global::Terra.JsonConverters.PlannedWorkoutUpdateResultStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.PlannedWorkoutUpdateResultStatus?))
+                {
+                    return new global::Terra.JsonConverters.PlannedWorkoutUpdateResultStatusNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::Terra.DataSentToWebhookStatus))
                 {
                     return new global::Terra.JsonConverters.DataSentToWebhookStatusJsonConverter();
@@ -8002,6 +8029,16 @@ namespace Terra
                 if (typeToConvert == typeof(global::Terra.WorkoutsCreateWorkoutResponseStatus?))
                 {
                     return new global::Terra.JsonConverters.WorkoutsCreateWorkoutResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutsUpdateWorkoutResponseStatus))
+                {
+                    return new global::Terra.JsonConverters.WorkoutsUpdateWorkoutResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Terra.WorkoutsUpdateWorkoutResponseStatus?))
+                {
+                    return new global::Terra.JsonConverters.WorkoutsUpdateWorkoutResponseStatusNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Terra.WorkoutsPlanWorkoutResponseStatus))
