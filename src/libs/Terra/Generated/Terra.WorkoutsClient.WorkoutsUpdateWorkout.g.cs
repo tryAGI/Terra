@@ -52,7 +52,7 @@ namespace Terra
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Terra.WorkoutsUpdateWorkoutResponse> WorkoutsUpdateWorkoutAsync(
+        public async global::System.Threading.Tasks.Task<global::Terra.WorkoutUpdateResponse> WorkoutsUpdateWorkoutAsync(
             long workoutId,
 
             global::Terra.WorkoutTemplate request,
@@ -78,7 +78,7 @@ namespace Terra
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse<global::Terra.WorkoutsUpdateWorkoutResponse>> WorkoutsUpdateWorkoutAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse<global::Terra.WorkoutUpdateResponse>> WorkoutsUpdateWorkoutAsResponseAsync(
             long workoutId,
 
             global::Terra.WorkoutTemplate request,
@@ -590,9 +590,9 @@ namespace Terra
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Terra.WorkoutsUpdateWorkoutResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Terra.WorkoutUpdateResponse.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Terra.AutoSDKHttpResponse<global::Terra.WorkoutsUpdateWorkoutResponse>(
+                                    return new global::Terra.AutoSDKHttpResponse<global::Terra.WorkoutUpdateResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Terra.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -622,9 +622,9 @@ namespace Terra
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Terra.WorkoutsUpdateWorkoutResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Terra.WorkoutUpdateResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Terra.AutoSDKHttpResponse<global::Terra.WorkoutsUpdateWorkoutResponse>(
+                                    return new global::Terra.AutoSDKHttpResponse<global::Terra.WorkoutUpdateResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Terra.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -704,7 +704,7 @@ namespace Terra
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Terra.WorkoutsUpdateWorkoutResponse> WorkoutsUpdateWorkoutAsync(
+        public async global::System.Threading.Tasks.Task<global::Terra.WorkoutUpdateResponse> WorkoutsUpdateWorkoutAsync(
             long workoutId,
             string name,
             global::System.Collections.Generic.IList<global::Terra.StepBlock> stepBlocks,

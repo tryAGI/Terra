@@ -13,7 +13,7 @@ namespace Terra
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Terra.WorkoutsUpdateWorkoutResponse> WorkoutsUpdateWorkoutAsync(
+        global::System.Threading.Tasks.Task<global::Terra.WorkoutUpdateResponse> WorkoutsUpdateWorkoutAsync(
             long workoutId,
 
             global::Terra.WorkoutTemplate request,
@@ -28,7 +28,7 @@ namespace Terra
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Terra.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse<global::Terra.WorkoutsUpdateWorkoutResponse>> WorkoutsUpdateWorkoutAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Terra.AutoSDKHttpResponse<global::Terra.WorkoutUpdateResponse>> WorkoutsUpdateWorkoutAsResponseAsync(
             long workoutId,
 
             global::Terra.WorkoutTemplate request,
@@ -74,7 +74,7 @@ namespace Terra
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Terra.WorkoutsUpdateWorkoutResponse> WorkoutsUpdateWorkoutAsync(
+        global::System.Threading.Tasks.Task<global::Terra.WorkoutUpdateResponse> WorkoutsUpdateWorkoutAsync(
             long workoutId,
             string name,
             global::System.Collections.Generic.IList<global::Terra.StepBlock> stepBlocks,
