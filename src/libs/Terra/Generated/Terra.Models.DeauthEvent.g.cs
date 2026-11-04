@@ -37,6 +37,12 @@ namespace Terra
         public required string Message { get; set; }
 
         /// <summary>
+        /// Why the user was deauthenticated, when Terra knows more than that it was requested. `last_device_disconnected`: the last device linked to the user through the mobile SDK disconnected. Absent for a deauthentication you requested.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
+        public string? Reason { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -53,6 +59,9 @@ namespace Terra
         /// <param name="status">
         /// Status of deauthentication
         /// </param>
+        /// <param name="reason">
+        /// Why the user was deauthenticated, when Terra knows more than that it was requested. `last_device_disconnected`: the last device linked to the user through the mobile SDK disconnected. Absent for a deauthentication you requested.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -60,12 +69,14 @@ namespace Terra
             global::Terra.TerraUser user,
             string message,
             global::Terra.DeauthEventType type,
-            global::Terra.DeauthEventStatus status)
+            global::Terra.DeauthEventStatus status,
+            string? reason)
         {
             this.Type = type;
             this.User = user ?? throw new global::System.ArgumentNullException(nameof(user));
             this.Status = status;
             this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
+            this.Reason = reason;
         }
 
         /// <summary>
