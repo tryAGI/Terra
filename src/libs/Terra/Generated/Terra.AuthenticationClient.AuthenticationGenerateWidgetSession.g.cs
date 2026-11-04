@@ -639,7 +639,7 @@ namespace Terra
         /// Example: https://myapp.com/failure
         /// </param>
         /// <param name="useTerraAvengersApp">
-        /// Allow Apple Health connections through the Terra mobile app<br/>
+        /// Complete Apple Health connections in the Terra Avengers app instead of your own app. On the widget session endpoint, sdk_app takes precedence where both apply.<br/>
         /// Example: false
         /// </param>
         /// <param name="connectedUids">

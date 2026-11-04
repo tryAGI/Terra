@@ -4,7 +4,7 @@
 namespace Terra
 {
     /// <summary>
-    /// Which Terra reference app an SDK authentication link hands the end user to. For APPLE_HEALTH, omit to use Terra Avengers. For HEALTH_CONNECT and SAMSUNG, "grip" is required; any other value or omitting it is rejected with a 400. The link carries a resource query parameter (APPLE, HEALTH_CONNECT or SAMSUNG) naming the connection the app opens. Sending this for any other resource has no effect.
+    /// Which Terra reference app an SDK authentication link hands the end user to. For APPLE_HEALTH, "avengers" or "grip" is required; omitting it is rejected with a 400 unless the legacy use_terra_avengers_app is true, which selects Terra Avengers. For HEALTH_CONNECT and SAMSUNG, "grip" is required; any other value or omitting it is rejected with a 400. The link carries a resource query parameter (APPLE, HEALTH_CONNECT or SAMSUNG) naming the connection the app opens. Sending this for any other resource has no effect.
     /// </summary>
     public enum AuthenticationAuthenticateUserRequestSdkApp
     {

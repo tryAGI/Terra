@@ -15,7 +15,7 @@ info:
 
     '
   title: TerraAPI
-  version: 2026.11.03
+  version: 2026.11.04.1
   license:
     name: Apache-2.0
     url: https://github.com/tryterra/openapi/blob/master/LICENSE
@@ -64,9 +64,9 @@ paths:
                   enum:
                   - avengers
                   - grip
-                  description: Which Terra reference app an SDK authentication link hands the end user to. For APPLE_HEALTH, omit to use Terra Avengers. For HEALTH_CONNECT and SAMSUNG, "grip" is required;
-                    any other value or omitting it is rejected with a 400. The link carries a resource query parameter (APPLE, HEALTH_CONNECT or SAMSUNG) naming the connection the app opens. Sending this
-                    for any other resource has no effect.
+                  description: Which Terra reference app an SDK authentication link hands the end user to. For APPLE_HEALTH, "avengers" or "grip" is required; omitting it is rejected with a 400 unless the
+                    legacy use_terra_avengers_app is true, which selects Terra Avengers. For HEALTH_CONNECT and SAMSUNG, "grip" is required; any other value or omitting it is rejected with a 400. The link
+                    carries a resource query parameter (APPLE, HEALTH_CONNECT or SAMSUNG) naming the connection the app opens. Sending this for any other resource has no effect.
         required: false
       responses:
         '200':
@@ -3281,7 +3281,7 @@ components:
           example: https://myapp.com/failure
         use_terra_avengers_app:
           type: boolean
-          description: Allow Apple Health connections through the Terra mobile app
+          description: Complete Apple Health connections in the Terra Avengers app instead of your own app. On the widget session endpoint, sdk_app takes precedence where both apply.
           example: false
         connected_uids:
           type: array
@@ -9818,20 +9818,22 @@ components:
           anyOf:
           - type: number
           - type: 'null'
-          description: Single target value
+          description: Single target value, in the unit for target_type
         value_low:
           anyOf:
           - type: number
           - type: 'null'
-          description: Lower bound of the target range
+          description: Lower bound of the target range, in the unit for target_type. For pace, the lower number is the faster pace
         value_high:
           anyOf:
           - type: number
           - type: 'null'
-          description: Upper bound of the target range
+          description: Upper bound of the target range, in the unit for target_type
       required:
       - target_type
-      description: Target intensity range for a step (e.g. heart-rate or power zone)
+      description: 'Target intensity range for a step (e.g. heart-rate or power zone). The unit of value, value_low and value_high depends on target_type: heart_rate in BPM; power in watts; speed in metres
+        per second; pace in seconds per kilometre, so 4:30/km is 270, not 4.5; cadence in rpm or steps per minute; rpe from 1 to 10; heart_rate_zone (1-5) and power_zone (1-7) as zone numbers; the *_percentage
+        types in percent of the athlete parameter given when planning (max_heart_rate, threshold_heart_rate, ftp or threshold_speed).'
     WorkoutStepIntensity:
       anyOf:
       - type: string
