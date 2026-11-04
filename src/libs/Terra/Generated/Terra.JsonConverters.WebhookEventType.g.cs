@@ -56,6 +56,7 @@ namespace Terra.JsonConverters
             if (__jsonProps.Contains("type")) __score1++;
             var __score2 = 0;
             if (__jsonProps.Contains("message")) __score2++;
+            if (__jsonProps.Contains("reason")) __score2++;
             if (__jsonProps.Contains("status")) __score2++;
             if (__jsonProps.Contains("type")) __score2++;
             if (__jsonProps.Contains("user")) __score2++;
