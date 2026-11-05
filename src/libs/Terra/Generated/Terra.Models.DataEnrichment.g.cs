@@ -65,6 +65,42 @@ namespace Terra
         public global::Terra.RecordFloat? TrimpContributors { get; set; }
 
         /// <summary>
+        /// Estimated VO2max for the workout, in ml/kg/min. Absent when the workout gave too little reliable data.<br/>
+        /// Example: 48.2
+        /// </summary>
+        /// <example>48.2</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("vo2max")]
+        public double? Vo2max { get; set; }
+
+        /// <summary>
+        /// The heart-rate anchors behind the VO2max estimate, in bpm: hr_max and hr_rest.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("vo2max_contributors")]
+        public global::Terra.RecordFloat? Vo2maxContributors { get; set; }
+
+        /// <summary>
+        /// Confidence in the VO2max estimate: GREEN (reliable) or AMBER (treat as an estimate).<br/>
+        /// Example: GREEN
+        /// </summary>
+        /// <example>GREEN</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("vo2max_traffic_light")]
+        public string? Vo2maxTrafficLight { get; set; }
+
+        /// <summary>
+        /// How the VO2max was estimated: RUN (pace and gradient) or RIDE (power-meter power and body weight).<br/>
+        /// Example: RUN
+        /// </summary>
+        /// <example>RUN</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("vo2max_method")]
+        public string? Vo2maxMethod { get; set; }
+
+        /// <summary>
+        /// Why the VO2max confidence is not GREEN, or which input was a stand-in: HR_MAX_ESTIMATED, NO_NEAR_MAX_EFFORT, LIMITED_SAMPLES, RESTING_HR_NOT_MEASURED.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("vo2max_reasons")]
+        public global::System.Collections.Generic.IList<string>? Vo2maxReasons { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -101,6 +137,24 @@ namespace Terra
         /// <param name="trimpContributors">
         /// Map of contributing factor name to its weighted contribution to the TRIMP score.
         /// </param>
+        /// <param name="vo2max">
+        /// Estimated VO2max for the workout, in ml/kg/min. Absent when the workout gave too little reliable data.<br/>
+        /// Example: 48.2
+        /// </param>
+        /// <param name="vo2maxContributors">
+        /// The heart-rate anchors behind the VO2max estimate, in bpm: hr_max and hr_rest.
+        /// </param>
+        /// <param name="vo2maxTrafficLight">
+        /// Confidence in the VO2max estimate: GREEN (reliable) or AMBER (treat as an estimate).<br/>
+        /// Example: GREEN
+        /// </param>
+        /// <param name="vo2maxMethod">
+        /// How the VO2max was estimated: RUN (pace and gradient) or RIDE (power-meter power and body weight).<br/>
+        /// Example: RUN
+        /// </param>
+        /// <param name="vo2maxReasons">
+        /// Why the VO2max confidence is not GREEN, or which input was a stand-in: HR_MAX_ESTIMATED, NO_NEAR_MAX_EFFORT, LIMITED_SAMPLES, RESTING_HR_NOT_MEASURED.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -112,7 +166,12 @@ namespace Terra
             double? rcrsScore,
             global::Terra.RecordFloat? rcrsContributors,
             double? trimpScore,
-            global::Terra.RecordFloat? trimpContributors)
+            global::Terra.RecordFloat? trimpContributors,
+            double? vo2max,
+            global::Terra.RecordFloat? vo2maxContributors,
+            string? vo2maxTrafficLight,
+            string? vo2maxMethod,
+            global::System.Collections.Generic.IList<string>? vo2maxReasons)
         {
             this.EfficiencyScore = efficiencyScore;
             this.EfficiencyContributors = efficiencyContributors;
@@ -122,6 +181,11 @@ namespace Terra
             this.RcrsContributors = rcrsContributors;
             this.TrimpScore = trimpScore;
             this.TrimpContributors = trimpContributors;
+            this.Vo2max = vo2max;
+            this.Vo2maxContributors = vo2maxContributors;
+            this.Vo2maxTrafficLight = vo2maxTrafficLight;
+            this.Vo2maxMethod = vo2maxMethod;
+            this.Vo2maxReasons = vo2maxReasons;
         }
 
         /// <summary>

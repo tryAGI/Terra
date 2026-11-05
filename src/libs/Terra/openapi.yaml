@@ -15,7 +15,7 @@ info:
 
     '
   title: TerraAPI
-  version: 2026.11.04.1
+  version: 2026.11.05
   license:
     name: Apache-2.0
     url: https://github.com/tryterra/openapi/blob/master/LICENSE
@@ -4700,6 +4700,36 @@ components:
           - $ref: '#/components/schemas/RecordFloat'
           - type: 'null'
           description: Map of contributing factor name to its weighted contribution to the TRIMP score.
+        vo2max:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Estimated VO2max for the workout, in ml/kg/min. Absent when the workout gave too little reliable data.
+          example: 48.2
+        vo2max_contributors:
+          anyOf:
+          - $ref: '#/components/schemas/RecordFloat'
+          - type: 'null'
+          description: 'The heart-rate anchors behind the VO2max estimate, in bpm: hr_max and hr_rest.'
+        vo2max_traffic_light:
+          anyOf:
+          - type: string
+          - type: 'null'
+          description: 'Confidence in the VO2max estimate: GREEN (reliable) or AMBER (treat as an estimate).'
+          example: GREEN
+        vo2max_method:
+          anyOf:
+          - type: string
+          - type: 'null'
+          description: 'How the VO2max was estimated: RUN (pace and gradient) or RIDE (power-meter power and body weight).'
+          example: RUN
+        vo2max_reasons:
+          anyOf:
+          - type: array
+            items:
+              type: string
+          - type: 'null'
+          description: 'Why the VO2max confidence is not GREEN, or which input was a stand-in: HR_MAX_ESTIMATED, NO_NEAR_MAX_EFFORT, LIMITED_SAMPLES, RESTING_HR_NOT_MEASURED.'
       $defs:
         RecordFloat:
           type: object
@@ -8209,6 +8239,36 @@ components:
           - $ref: '#/components/schemas/RecordFloat'
           - type: 'null'
           description: Map of contributing factor name to its weighted contribution to the v2 total stress score.
+        vo2max:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Resting VO2max estimate for the day, in ml/kg/min, from the ratio of max to measured resting heart rate. Absent without a measured resting heart rate in the last 30 days.
+          example: 46.5
+        vo2max_contributors:
+          anyOf:
+          - $ref: '#/components/schemas/RecordFloat'
+          - type: 'null'
+          description: 'The heart-rate anchors behind the VO2max estimate, in bpm: hr_max and hr_rest.'
+        vo2max_traffic_light:
+          anyOf:
+          - type: string
+          - type: 'null'
+          description: 'Confidence in the VO2max estimate. A resting estimate is always AMBER: no workout near max heart rate backs it.'
+          example: AMBER
+        vo2max_method:
+          anyOf:
+          - type: string
+          - type: 'null'
+          description: 'How the VO2max was estimated: REST (resting and max heart rate).'
+          example: REST
+        vo2max_reasons:
+          anyOf:
+          - type: array
+            items:
+              type: string
+          - type: 'null'
+          description: 'Why the VO2max confidence is not GREEN: RESTING_ESTIMATE, and HR_MAX_ESTIMATED when max heart rate came from age.'
       $defs:
         RecordFloat:
           type: object
