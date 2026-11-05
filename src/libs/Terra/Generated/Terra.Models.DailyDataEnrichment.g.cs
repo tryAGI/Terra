@@ -101,6 +101,42 @@ namespace Terra
         public global::Terra.RecordFloat? TotalStressScoreV2Contributors { get; set; }
 
         /// <summary>
+        /// Resting VO2max estimate for the day, in ml/kg/min, from the ratio of max to measured resting heart rate. Absent without a measured resting heart rate in the last 30 days.<br/>
+        /// Example: 46.5
+        /// </summary>
+        /// <example>46.5</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("vo2max")]
+        public double? Vo2max { get; set; }
+
+        /// <summary>
+        /// The heart-rate anchors behind the VO2max estimate, in bpm: hr_max and hr_rest.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("vo2max_contributors")]
+        public global::Terra.RecordFloat? Vo2maxContributors { get; set; }
+
+        /// <summary>
+        /// Confidence in the VO2max estimate. A resting estimate is always AMBER: no workout near max heart rate backs it.<br/>
+        /// Example: AMBER
+        /// </summary>
+        /// <example>AMBER</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("vo2max_traffic_light")]
+        public string? Vo2maxTrafficLight { get; set; }
+
+        /// <summary>
+        /// How the VO2max was estimated: REST (resting and max heart rate).<br/>
+        /// Example: REST
+        /// </summary>
+        /// <example>REST</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("vo2max_method")]
+        public string? Vo2maxMethod { get; set; }
+
+        /// <summary>
+        /// Why the VO2max confidence is not GREEN: RESTING_ESTIMATE, and HR_MAX_ESTIMATED when max heart rate came from age.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("vo2max_reasons")]
+        public global::System.Collections.Generic.IList<string>? Vo2maxReasons { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -155,6 +191,24 @@ namespace Terra
         /// <param name="totalStressScoreV2Contributors">
         /// Map of contributing factor name to its weighted contribution to the v2 total stress score.
         /// </param>
+        /// <param name="vo2max">
+        /// Resting VO2max estimate for the day, in ml/kg/min, from the ratio of max to measured resting heart rate. Absent without a measured resting heart rate in the last 30 days.<br/>
+        /// Example: 46.5
+        /// </param>
+        /// <param name="vo2maxContributors">
+        /// The heart-rate anchors behind the VO2max estimate, in bpm: hr_max and hr_rest.
+        /// </param>
+        /// <param name="vo2maxTrafficLight">
+        /// Confidence in the VO2max estimate. A resting estimate is always AMBER: no workout near max heart rate backs it.<br/>
+        /// Example: AMBER
+        /// </param>
+        /// <param name="vo2maxMethod">
+        /// How the VO2max was estimated: REST (resting and max heart rate).<br/>
+        /// Example: REST
+        /// </param>
+        /// <param name="vo2maxReasons">
+        /// Why the VO2max confidence is not GREEN: RESTING_ESTIMATE, and HR_MAX_ESTIMATED when max heart rate came from age.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -171,7 +225,12 @@ namespace Terra
             string? strainTrafficLight,
             global::Terra.RecordFloat? strainContributors,
             double? totalStressScoreV2,
-            global::Terra.RecordFloat? totalStressScoreV2Contributors)
+            global::Terra.RecordFloat? totalStressScoreV2Contributors,
+            double? vo2max,
+            global::Terra.RecordFloat? vo2maxContributors,
+            string? vo2maxTrafficLight,
+            string? vo2maxMethod,
+            global::System.Collections.Generic.IList<string>? vo2maxReasons)
         {
             this.TotalStressScore = totalStressScore;
             this.StressContributors = stressContributors;
@@ -186,6 +245,11 @@ namespace Terra
             this.StrainContributors = strainContributors;
             this.TotalStressScoreV2 = totalStressScoreV2;
             this.TotalStressScoreV2Contributors = totalStressScoreV2Contributors;
+            this.Vo2max = vo2max;
+            this.Vo2maxContributors = vo2maxContributors;
+            this.Vo2maxTrafficLight = vo2maxTrafficLight;
+            this.Vo2maxMethod = vo2maxMethod;
+            this.Vo2maxReasons = vo2maxReasons;
         }
 
         /// <summary>
